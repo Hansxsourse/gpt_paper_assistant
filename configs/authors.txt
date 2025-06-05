@@ -4,8 +4,3 @@ Li Fei-Fei, 48004138
 # MIT CV faculty.
 Kaiming He, 39353098
 
-# Umich CV faculty 
-Jason Corso, 3587688
-
-# Umass CV faculty
-Chuang Gan, 144158271
