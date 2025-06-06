@@ -1,194 +1,120 @@
 {
-    "2506.04213": {
+    "2506.04277": {
         "authors": [
-            "Xuanhua He",
-            "Quande Liu",
-            "Zixuan Ye",
-            "Wecai Ye",
-            "Qiulin Wang",
-            "Xintao Wang",
-            "Qifeng Chen",
-            "Pengfei Wan",
-            "Di Zhang",
-            "Kun Gai"
+            "Yi Lu",
+            "Jiawang Cao",
+            "Yongliang Wu",
+            "Bozheng Li",
+            "Licheng Tang",
+            "Yangguang Ji",
+            "Chong Wu",
+            "Jay Wu",
+            "Wenbo Zhu"
         ],
-        "title": "FullDiT2: Efficient In-Context Conditioning for Video Diffusion Transformers",
-        "abstract": "arXiv:2506.04213v1 Announce Type: new  Abstract: Fine-grained and efficient controllability on video diffusion transformers has raised increasing desires for the applicability. Recently, In-context Conditioning emerged as a powerful paradigm for unified conditional video generation, which enables diverse controls by concatenating varying context conditioning signals with noisy video latents into a long unified token sequence and jointly processing them via full-attention, e.g., FullDiT. Despite their effectiveness, these methods face quadratic computation overhead as task complexity increases, hindering practical deployment. In this paper, we study the efficiency bottleneck neglected in original in-context conditioning video generation framework. We begin with systematic analysis to identify two key sources of the computation inefficiencies: the inherent redundancy within context condition tokens and the computational redundancy in context-latent interactions throughout the diffusion process. Based on these insights, we propose FullDiT2, an efficient in-context conditioning framework for general controllability in both video generation and editing tasks, which innovates from two key perspectives. Firstly, to address the token redundancy, FullDiT2 leverages a dynamic token selection mechanism to adaptively identify important context tokens, reducing the sequence length for unified full-attention. Additionally, a selective context caching mechanism is devised to minimize redundant interactions between condition tokens and video latents. Extensive experiments on six diverse conditional video editing and generation tasks demonstrate that FullDiT2 achieves significant computation reduction and 2-3 times speedup in averaged time cost per diffusion step, with minimal degradation or even higher performance in video generation quality. The project page is at \\href{https://fulldit2.github.io/}{https://fulldit2.github.io/}.",
-        "arxiv_id": "2506.04213",
-        "ARXIVID": "2506.04213",
-        "COMMENT": "Matches criterion 2: Unified Diffusion Models for video generation and editing tasks.",
-        "RELEVANCE": 5,
-        "NOVELTY": 7
-    },
-    "2506.04225": {
-        "authors": [
-            "Tianyu Huang",
-            "Wangguandong Zheng",
-            "Tengfei Wang",
-            "Yuhao Liu",
-            "Zhenwei Wang",
-            "Junta Wu",
-            "Jie Jiang",
-            "Hui Li",
-            "Rynson W. H. Lau",
-            "Wangmeng Zuo",
-            "Chunchao Guo"
-        ],
-        "title": "Voyager: Long-Range and World-Consistent Video Diffusion for Explorable 3D Scene Generation",
-        "abstract": "arXiv:2506.04225v1 Announce Type: new  Abstract: Real-world applications like video gaming and virtual reality often demand the ability to model 3D scenes that users can explore along custom camera trajectories. While significant progress has been made in generating 3D objects from text or images, creating long-range, 3D-consistent, explorable 3D scenes remains a complex and challenging problem. In this work, we present Voyager, a novel video diffusion framework that generates world-consistent 3D point-cloud sequences from a single image with user-defined camera path. Unlike existing approaches, Voyager achieves end-to-end scene generation and reconstruction with inherent consistency across frames, eliminating the need for 3D reconstruction pipelines (e.g., structure-from-motion or multi-view stereo). Our method integrates three key components: 1) World-Consistent Video Diffusion: A unified architecture that jointly generates aligned RGB and depth video sequences, conditioned on existing world observation to ensure global coherence 2) Long-Range World Exploration: An efficient world cache with point culling and an auto-regressive inference with smooth video sampling for iterative scene extension with context-aware consistency, and 3) Scalable Data Engine: A video reconstruction pipeline that automates camera pose estimation and metric depth prediction for arbitrary videos, enabling large-scale, diverse training data curation without manual 3D annotations. Collectively, these designs result in a clear improvement over existing methods in visual quality and geometric accuracy, with versatile applications.",
-        "arxiv_id": "2506.04225",
-        "ARXIVID": "2506.04225",
-        "COMMENT": "Matches criterion 2: Unified Diffusion Models for multiple vision tasks including image generation and depth estimation.",
-        "RELEVANCE": 5,
-        "NOVELTY": 7
-    },
-    "2506.04228": {
-        "authors": [
-            "Sihui Ji",
-            "Hao Luo",
-            "Xi Chen",
-            "Yuanpeng Tu",
-            "Yiyang Wang",
-            "Hengshuang Zhao"
-        ],
-        "title": "LayerFlow: A Unified Model for Layer-aware Video Generation",
-        "abstract": "arXiv:2506.04228v1 Announce Type: new  Abstract: We present LayerFlow, a unified solution for layer-aware video generation. Given per-layer prompts, LayerFlow generates videos for the transparent foreground, clean background, and blended scene. It also supports versatile variants like decomposing a blended video or generating the background for the given foreground and vice versa. Starting from a text-to-video diffusion transformer, we organize the videos for different layers as sub-clips, and leverage layer embeddings to distinguish each clip and the corresponding layer-wise prompts. In this way, we seamlessly support the aforementioned variants in one unified framework. For the lack of high-quality layer-wise training videos, we design a multi-stage training strategy to accommodate static images with high-quality layer annotations. Specifically, we first train the model with low-quality video data. Then, we tune a motion LoRA to make the model compatible with static frames. Afterward, we train the content LoRA on the mixture of image data with high-quality layered images along with copy-pasted video data. During inference, we remove the motion LoRA thus generating smooth videos with desired layers.",
-        "arxiv_id": "2506.04228",
-        "ARXIVID": "2506.04228",
-        "COMMENT": "Matches criteria 1 closely: unified framework for video generation with layer-aware segmentation.",
+        "title": "RSVP: Reasoning Segmentation via Visual Prompting and Multi-modal Chain-of-Thought",
+        "abstract": "arXiv:2506.04277v1 Announce Type: new  Abstract: Multi-modal Large Language Models (MLLMs) have demonstrated remarkable reasoning capability while lack explicit mechanisms for visual grounding and segmentation, creating a gap between cognitive reasoning and visual perception. To bridge this gap, we introduce Reasoning Segmentation via Visual Prompting (RSVP), a novel framework that unifies multi-step multimodal reasoning with grounded visual understanding. RSVP is a two-stage structuralized framework that integrates reasoning-driven localization with segmentation refinement. In the reasoning stage, RSVP employs multimodal chain-of-thought visual prompts to help MLLMs understand queries and infer targets, generating interpretable region proposals that enhance visual grounding. In segmentation stage, RSVP refines these proposals with a Vision-Language Segmentation Module (VLSM), seamlessly integrates textual and visual cues to produce precise segmentation masks. By explicitly modelling the interaction between multimodal reasoning and segmentation, RSVP introduces a new paradigm for interpretable reasoning segmentation. It exploits MLLMs' inherent localization capabilities, enabling the models to not only reason about objects but also generate structured visual representations. Our extensive experiments demonstrate that RSVP achieves state-of-the-art performance, surpasses state-of-the-art methods by up to +6.5 gIoU and +9.2 cIoU on ReasonSeg, and achieves 49.7 mAP on SegInW under zero-shot settings. These results validate RSVP as an effective and scalable framework for integrating cognitive reasoning with structured visual understanding.",
+        "arxiv_id": "2506.04277",
+        "ARXIVID": "2506.04277",
+        "COMMENT": "Matches criterion 1: Unified Image/Video Generation and Segmentation.",
         "RELEVANCE": 5,
         "NOVELTY": 6
     },
-    "2506.03517": {
+    "2506.04641": {
         "authors": [
-            "Ziyi Wu",
-            "Anil Kag",
-            "Ivan Skorokhodov",
-            "Willi Menapace",
-            "Ashkan Mirzaei",
-            "Igor Gilitschenski",
-            "Sergey Tulyakov",
-            "Aliaksandr Siarohin"
+            "Qiming Hu",
+            "Linlong Fan",
+            "Yiyan Luo",
+            "Yuhang Yu",
+            "Xiaojie Guo",
+            "Qingnan Fan"
         ],
-        "title": "DenseDPO: Fine-Grained Temporal Preference Optimization for Video Diffusion Models",
-        "abstract": "arXiv:2506.03517v1 Announce Type: new  Abstract: Direct Preference Optimization (DPO) has recently been applied as a post-training technique for text-to-video diffusion models. To obtain training data, annotators are asked to provide preferences between two videos generated from independent noise. However, this approach prohibits fine-grained comparisons, and we point out that it biases the annotators towards low-motion clips as they often contain fewer visual artifacts. In this work, we introduce DenseDPO, a method that addresses these shortcomings by making three contributions. First, we create each video pair for DPO by denoising corrupted copies of a ground truth video. This results in aligned pairs with similar motion structures while differing in local details, effectively neutralizing the motion bias. Second, we leverage the resulting temporal alignment to label preferences on short segments rather than entire clips, yielding a denser and more precise learning signal. With only one-third of the labeled data, DenseDPO greatly improves motion generation over vanilla DPO, while matching it in text alignment, visual quality, and temporal consistency. Finally, we show that DenseDPO unlocks automatic preference annotation using off-the-shelf Vision Language Models (VLMs): GPT accurately predicts segment-level preferences similar to task-specifically fine-tuned video reward models, and DenseDPO trained on these labels achieves performance close to using human labels.",
-        "arxiv_id": "2506.03517",
-        "ARXIVID": "2506.03517",
-        "COMMENT": "Does not match any specific criteria.",
-        "RELEVANCE": 3,
+        "title": "Text-Aware Real-World Image Super-Resolution via Diffusion Model with Joint Segmentation Decoders",
+        "abstract": "arXiv:2506.04641v1 Announce Type: new  Abstract: The introduction of generative models has significantly advanced image super-resolution (SR) in handling real-world degradations. However, they often incur fidelity-related issues, particularly distorting textual structures. In this paper, we introduce a novel diffusion-based SR framework, namely TADiSR, which integrates text-aware attention and joint segmentation decoders to recover not only natural details but also the structural fidelity of text regions in degraded real-world images. Moreover, we propose a complete pipeline for synthesizing high-quality images with fine-grained full-image text masks, combining realistic foreground text regions with detailed background content. Extensive experiments demonstrate that our approach substantially enhances text legibility in super-resolved images, achieving state-of-the-art performance across multiple evaluation metrics and exhibiting strong generalization to real-world scenarios. Our code is available at \\href{https://github.com/mingcv/TADiSR}{here}.",
+        "arxiv_id": "2506.04641",
+        "ARXIVID": "2506.04641",
+        "COMMENT": "Matches criterion 2: Unified Diffusion Models.",
+        "RELEVANCE": 5,
         "NOVELTY": 6
     },
-    "2506.03591": {
+    "2506.04956": {
         "authors": [
-            "Jiaxing Zhang",
-            "Xinyi Zeng",
-            "Hao Tang"
+            "Huihan Wang",
+            "Zhiwen Yang",
+            "Hui Zhang",
+            "Dan Zhao",
+            "Bingzheng Wei",
+            "Yan Xu"
         ],
-        "title": "Resolving Task Objective Conflicts in Unified Multimodal Understanding and Generation via Task-Aware Mixture-of-Experts",
-        "abstract": "arXiv:2506.03591v1 Announce Type: new  Abstract: Unified multimodal large language models (MLLMs) based on end-to-end autoregressive (AR) transformers effectively integrate both understanding and generation tasks within a single framework. However, intrinsic Task Objective Conflicts between high-level semantic abstraction in understanding and fine-grained detail preservation in generation pose significant challenges, often leading to suboptimal trade-offs and task interference. Existing solutions, such as decoupling shared visual encoders, fall short of fundamentally resolving these conflicts due to inherent AR architecture. In this paper, we propose a novel approach that decouples internal components of AR to resolve task objective conflicts. Specifically, we design UTAMoE, a Unified Task-Aware Mixture-of-Experts (MoE) framework that decouples internal AR modules via a Task-Aware MoE Layer to create task-specific optimization subpaths. To enhance task differentiation while maintaining overall coordination, we introduce a novel Two-Stage Training Strategy. Extensive experiments on multimodal benchmarks demonstrate that UTAMoE mitigates task objective conflicts, achieving state-of-the-art performance across various tasks. Visualizations and ablation studies further validate the effectiveness of our approach.",
-        "arxiv_id": "2506.03591",
-        "ARXIVID": "2506.03591",
-        "COMMENT": "Does not match any specific criteria.",
-        "RELEVANCE": 3,
-        "NOVELTY": 6
-    },
-    "2506.03872": {
-        "authors": [
-            "Yang Xiao",
-            "Guoan Xu",
-            "Qiang Wu",
-            "Wenjing Jia"
-        ],
-        "title": "JointSplat: Probabilistic Joint Flow-Depth Optimization for Sparse-View Gaussian Splatting",
-        "abstract": "arXiv:2506.03872v1 Announce Type: new  Abstract: Reconstructing 3D scenes from sparse viewpoints is a long-standing challenge with wide applications. Recent advances in feed-forward 3D Gaussian sparse-view reconstruction methods provide an efficient solution for real-time novel view synthesis by leveraging geometric priors learned from large-scale multi-view datasets and computing 3D Gaussian centers via back-projection. Despite offering strong geometric cues, both feed-forward multi-view depth estimation and flow-depth joint estimation face key limitations: the former suffers from mislocation and artifact issues in low-texture or repetitive regions, while the latter is prone to local noise and global inconsistency due to unreliable matches when ground-truth flow supervision is unavailable. To overcome this, we propose JointSplat, a unified framework that leverages the complementarity between optical flow and depth via a novel probabilistic optimization mechanism. Specifically, this pixel-level mechanism scales the information fusion between depth and flow based on the matching probability of optical flow during training. Building upon the above mechanism, we further propose a novel multi-view depth-consistency loss to leverage the reliability of supervision while suppressing misleading gradients in uncertain areas. Evaluated on RealEstate10K and ACID, JointSplat consistently outperforms state-of-the-art (SOTA) methods, demonstrating the effectiveness and robustness of our proposed probabilistic joint flow-depth optimization approach for high-fidelity sparse-view 3D reconstruction.",
-        "arxiv_id": "2506.03872",
-        "ARXIVID": "2506.03872",
-        "COMMENT": "Does not match any specific criteria.",
-        "RELEVANCE": 3,
-        "NOVELTY": 6
-    },
-    "2506.04216": {
-        "authors": [
-            "Zixuan Ye",
-            "Xuanhua He",
-            "Quande Liu",
-            "Qiulin Wang",
-            "Xintao Wang",
-            "Pengfei Wan",
-            "Di Zhang",
-            "Kun Gai",
-            "Qifeng Chen",
-            "Wenhan Luo"
-        ],
-        "title": "UNIC: Unified In-Context Video Editing",
-        "abstract": "arXiv:2506.04216v1 Announce Type: new  Abstract: Recent advances in text-to-video generation have sparked interest in generative video editing tasks. Previous methods often rely on task-specific architectures (e.g., additional adapter modules) or dedicated customizations (e.g., DDIM inversion), which limit the integration of versatile editing conditions and the unification of various editing tasks. In this paper, we introduce UNified In-Context Video Editing (UNIC), a simple yet effective framework that unifies diverse video editing tasks within a single model in an in-context manner. To achieve this unification, we represent the inputs of various video editing tasks as three types of tokens: the source video tokens, the noisy video latent, and the multi-modal conditioning tokens that vary according to the specific editing task. Based on this formulation, our key insight is to integrate these three types into a single consecutive token sequence and jointly model them using the native attention operations of DiT, thereby eliminating the need for task-specific adapter designs. Nevertheless, direct task unification under this framework is challenging, leading to severe token collisions and task confusion due to the varying video lengths and diverse condition modalities across tasks. To address these, we introduce task-aware RoPE to facilitate consistent temporal positional encoding, and condition bias that enables the model to clearly differentiate different editing tasks. This allows our approach to adaptively perform different video editing tasks by referring the source video and varying condition tokens \"in context\", and support flexible task composition. To validate our method, we construct a unified video editing benchmark containing six representative video editing tasks. Results demonstrate that our unified approach achieves superior performance on each task and exhibits emergent task composition abilities.",
-        "arxiv_id": "2506.04216",
-        "ARXIVID": "2506.04216",
-        "COMMENT": "Does not match any specific criteria.",
-        "RELEVANCE": 3,
-        "NOVELTY": 6
-    },
-    "2506.03596": {
-        "authors": [
-            "Feng Han",
-            "Yang Jiao",
-            "Shaoxiang Chen",
-            "Junhao Xu",
-            "Jingjing Chen",
-            "Yu-Gang Jiang"
-        ],
-        "title": "ControlThinker: Unveiling Latent Semantics for Controllable Image Generation through Visual Reasoning",
-        "abstract": "arXiv:2506.03596v1 Announce Type: new  Abstract: The field of controllable image generation has seen significant advancements, with various architectures improving generation layout consistency with control signals. However, contemporary methods still face challenges in bridging the semantic gap between input text prompts with sparse semantics and the target images, often over-relying on low-level control signals to infer regional details. To address this challenge, we propose ControlThinker, a novel framework that employs a \"comprehend-then-generate\" paradigm. Firstly, by incentivizing the visual reasoning capability of a MLLM, latent semantics from control images are mined to enrich text prompts. This enriched semantic understanding then seamlessly aids in image generation without the need for additional complex modifications. To further tackle the uncertainty arising from the ambiguity of control images, we encourage broader exploration of reasoning trajectories and select the optimal one using a metric-based output reward model (ORM). Extensive experimental results demonstrate that ControlThinker effectively mitigates the semantic gap between raw text prompts and target images, resulting in improved visual quality and semantic consistency across a wide range of benchmarks. The code and models are available at https://github.com/Maplebb/ControlThinker.",
-        "arxiv_id": "2506.03596",
-        "ARXIVID": "2506.03596",
-        "COMMENT": "Does not match any specific criteria.",
-        "RELEVANCE": 3,
-        "NOVELTY": 6
-    },
-    "2506.03583": {
-        "authors": [
-            "Zhigang Yang",
-            "Huiguang Yao",
-            "Linmao Tian",
-            "Xuezhi Zhao",
-            "Qiang Li",
-            "Qi Wang"
-        ],
-        "title": "A Large-Scale Referring Remote Sensing Image Segmentation Dataset and Benchmark",
-        "abstract": "arXiv:2506.03583v1 Announce Type: new  Abstract: Referring Remote Sensing Image Segmentation is a complex and challenging task that integrates the paradigms of computer vision and natural language processing. Existing datasets for RRSIS suffer from critical limitations in resolution, scene diversity, and category coverage, which hinders the generalization and real-world applicability of refer segmentation models. To facilitate the development of this field, we introduce NWPU-Refer, the largest and most diverse RRSIS dataset to date, comprising 15,003 high-resolution images (1024-2048px) spanning 30+ countries with 49,745 annotated targets supporting single-object, multi-object, and non-object segmentation scenarios. Additionally, we propose the Multi-scale Referring Segmentation Network (MRSNet), a novel framework tailored for the unique demands of RRSIS. MRSNet introduces two key innovations: (1) an Intra-scale Feature Interaction Module (IFIM) that captures fine-grained details within each encoder stage, and (2) a Hierarchical Feature Interaction Module (HFIM) to enable seamless cross-scale feature fusion, preserving spatial integrity while enhancing discriminative power. Extensive experiments conducte on the proposed NWPU-Refer dataset demonstrate that MRSNet achieves state-of-the-art performance across multiple evaluation metrics, validating its effectiveness. The dataset and code are publicly available at https://github.com/CVer-Yang/NWPU-Refer.",
-        "arxiv_id": "2506.03583",
-        "ARXIVID": "2506.03583",
-        "COMMENT": "Does not match any specific criteria.",
+        "title": "FEAT: Full-Dimensional Efficient Attention Transformer for Medical Video Generation",
+        "abstract": "arXiv:2506.04956v1 Announce Type: new  Abstract: Synthesizing high-quality dynamic medical videos remains a significant challenge due to the need for modeling both spatial consistency and temporal dynamics. Existing Transformer-based approaches face critical limitations, including insufficient channel interactions, high computational complexity from self-attention, and coarse denoising guidance from timestep embeddings when handling varying noise levels. In this work, we propose FEAT, a full-dimensional efficient attention Transformer, which addresses these issues through three key innovations: (1) a unified paradigm with sequential spatial-temporal-channel attention mechanisms to capture global dependencies across all dimensions, (2) a linear-complexity design for attention mechanisms in each dimension, utilizing weighted key-value attention and global channel attention, and (3) a residual value guidance module that provides fine-grained pixel-level guidance to adapt to different noise levels. We evaluate FEAT on standard benchmarks and downstream tasks, demonstrating that FEAT-S, with only 23\\% of the parameters of the state-of-the-art model Endora, achieves comparable or even superior performance. Furthermore, FEAT-L surpasses all comparison methods across multiple datasets, showcasing both superior effectiveness and scalability. Code is available at https://github.com/Yaziwel/FEAT.",
+        "arxiv_id": "2506.04956",
+        "ARXIVID": "2506.04956",
+        "COMMENT": "No criteria match closely.",
         "RELEVANCE": 3,
         "NOVELTY": 5
     },
-    "2506.04134": {
+    "2506.05336": {
         "authors": [
-            "Jinting Wang",
-            "Shan Yang",
-            "Li Liu"
+            "Ghazi Shazan Ahmad",
+            "Ahmed Heakl",
+            "Hanan Gani",
+            "Abdelrahman Shaker",
+            "Zhiqiang Shen",
+            "Ranjay Krishna",
+            "Fahad Shahbaz Khan",
+            "Salman Khan"
         ],
-        "title": "UniCUE: Unified Recognition and Generation Framework for Chinese Cued Speech Video-to-Speech Generation",
-        "abstract": "arXiv:2506.04134v1 Announce Type: new  Abstract: Cued Speech (CS) enhances lipreading through hand coding, providing precise speech perception support for the hearing-impaired. CS Video-to-Speech generation (CSV2S) task aims to convert the CS visual expressions (CS videos) of hearing-impaired individuals into comprehensible speech signals. Direct generation of speech from CS video (called single CSV2S) yields poor performance due to insufficient CS data. Current research mostly focuses on CS Recognition (CSR), which convert video content into linguistic text. Based on this, one straightforward way of CSV2S is to combine CSR with a Text-to-Speech system. This combined architecture relies on text as an intermediate medium for stepwise cross-modal alignment, which may lead to error propagation and temporal misalignment between speech and video dynamics. To address these challenges, we propose a novel approach that directly generates speech from CS videos without relying on intermediate text. Building upon this, we propose UniCUE, the first unified framework for CSV2S, whose core innovation lies in the integration of the CSR task that provides fine-grained visual-semantic information to facilitate speech generation from CS videos. More precisely, (1) a novel fine-grained semantic alignment pool to ensure precise mapping between visual features and speech contents; (2) a VisioPhonetic adapter to bridge cross-task representations, ensuring seamless compatibility between two distinct tasks (i.e., CSV2S and CSR); (3) a pose-aware visual processor is introduced to enhance fine-grained spatiotemporal correlations between lip and hand movements in CS video. Experiments on our new established Chinese CS dataset (14 cuers1: 8 hearing-impaired and 6 normal-hearing) show that our UniCUE significantly reduces Word Error Rate by 78.3% and improves lip-speech synchronization by 32% compared to the single CSV2S.",
-        "arxiv_id": "2506.04134",
-        "ARXIVID": "2506.04134",
-        "COMMENT": "Does not match any specific criteria.",
+        "title": "VideoMolmo: Spatio-Temporal Grounding Meets Pointing",
+        "abstract": "arXiv:2506.05336v1 Announce Type: new  Abstract: Spatio-temporal localization is vital for precise interactions across diverse domains, from biological research to autonomous navigation and interactive interfaces. Current video-based approaches, while proficient in tracking, lack the sophisticated reasoning capabilities of large language models, limiting their contextual understanding and generalization. We introduce VideoMolmo, a large multimodal model tailored for fine-grained spatio-temporal pointing conditioned on textual descriptions. Building upon the Molmo architecture, VideoMolmo incorporates a temporal module utilizing an attention mechanism to condition each frame on preceding frames, ensuring temporal consistency. Additionally, our novel temporal mask fusion pipeline employs SAM2 for bidirectional point propagation, significantly enhancing coherence across video sequences. This two-step decomposition, i.e., first using the LLM to generate precise pointing coordinates, then relying on a sequential mask-fusion module to produce coherent segmentation, not only simplifies the task for the language model but also enhances interpretability. Due to the lack of suitable datasets, we curate a comprehensive dataset comprising 72k video-caption pairs annotated with 100k object points. To evaluate the generalization of VideoMolmo, we introduce VPoS-Bench, a challenging out-of-distribution benchmark spanning five real-world scenarios: Cell Tracking, Egocentric Vision, Autonomous Driving, Video-GUI Interaction, and Robotics. We also evaluate our model on Referring Video Object Segmentation (Refer-VOS) and Reasoning VOS tasks. In comparison to existing models, VideoMolmo substantially improves spatio-temporal pointing accuracy and reasoning capability. Our code and models are publicly available at https://github.com/mbzuai-oryx/VideoMolmo.",
+        "arxiv_id": "2506.05336",
+        "ARXIVID": "2506.05336",
+        "COMMENT": "No criteria match closely.",
         "RELEVANCE": 3,
         "NOVELTY": 5
     },
-    "2506.03211": {
+    "2506.04648": {
         "authors": [
-            "Wanting Yang",
-            "Zehui Xiong",
-            "Qianqian Yang",
-            "Ping Zhang",
-            "Merouane Debbah",
-            "Rahim Tafazolli"
+            "Akide Liu",
+            "Zeyu Zhang",
+            "Zhexin Li",
+            "Xuehai Bai",
+            "Yizeng Han",
+            "Jiasheng Tang",
+            "Yuanjie Xing",
+            "Jichao Wu",
+            "Mingyang Yang",
+            "Weihua Chen",
+            "Jiahao He",
+            "Yuanyu He",
+            "Fan Wang",
+            "Gholamreza Haffari",
+            "Bohan Zhuang"
         ],
-        "title": "Channel-adaptive Cross-modal Generative Semantic Communication for Point Cloud Transmission",
-        "abstract": "arXiv:2506.03211v1 Announce Type: new  Abstract: With the rapid development of autonomous driving and extended reality, efficient transmission of point clouds (PCs) has become increasingly important. In this context, we propose a novel channel-adaptive cross-modal generative semantic communication (SemCom) for PC transmission, called GenSeC-PC. GenSeC-PC employs a semantic encoder that fuses images and point clouds, where images serve as non-transmitted side information. Meanwhile, the decoder is built upon the backbone of PointDif. Such a cross-modal design not only ensures high compression efficiency but also delivers superior reconstruction performance compared to PointDif. Moreover, to ensure robust transmission and reduce system complexity, we design a streamlined and asymmetric channel-adaptive joint semantic-channel coding architecture, where only the encoder needs the feedback of average signal-to-noise ratio (SNR) and available bandwidth. In addition, rectified denoising diffusion implicit models is employed to accelerate the decoding process to the millisecond level, enabling real-time PC communication. Unlike existing methods, GenSeC-PC leverages generative priors to ensure reliable reconstruction even from noisy or incomplete source PCs. More importantly, it supports fully analog transmission, improving compression efficiency by eliminating the need for error-free side information transmission common in prior SemCom approaches. Simulation results confirm the effectiveness of cross-modal semantic extraction and dual-metric guided fine-tuning, highlighting the framework's robustness across diverse conditions, including low SNR, bandwidth limitations, varying numbers of 2D images, and previously unseen objects.",
-        "arxiv_id": "2506.03211",
-        "ARXIVID": "2506.03211",
+        "title": "FPSAttention: Training-Aware FP8 and Sparsity Co-Design for Fast Video Diffusion",
+        "abstract": "arXiv:2506.04648v1 Announce Type: new  Abstract: Diffusion generative models have become the standard for producing high-quality, coherent video content, yet their slow inference speeds and high computational demands hinder practical deployment. Although both quantization and sparsity can independently accelerate inference while maintaining generation quality, naively combining these techniques in existing training-free approaches leads to significant performance degradation due to the lack of joint optimization.We introduce FPSAttention, a novel training-aware co-design of FP8 quantization and sparsity for video generation, with a focus on the 3D bi-directional attention mechanism. Our approach features three key innovations: 1) A unified 3D tile-wise granularity that simultaneously supports both quantization and sparsity; 2) A denoising step-aware strategy that adapts to the noise schedule, addressing the strong correlation between quantization/sparsity errors and denoising steps; 3) A native, hardware-friendly kernel that leverages FlashAttention and is implemented with optimized Hopper architecture features for highly efficient execution. Trained on Wan2.1's 1.3B and 14B models and evaluated on the VBench benchmark, FPSAttention achieves a 7.09x kernel speedup for attention operations and a 4.96x end-to-end speedup for video generation compared to the BF16 baseline at 720p resolution-without sacrificing generation quality.",
+        "arxiv_id": "2506.04648",
+        "ARXIVID": "2506.04648",
+        "COMMENT": "No criteria match closely.",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2506.05302": {
+        "authors": [
+            "Weifeng Lin",
+            "Xinyu Wei",
+            "Ruichuan An",
+            "Tianhe Ren",
+            "Tingwei Chen",
+            "Renrui Zhang",
+            "Ziyu Guo",
+            "Wentao Zhang",
+            "Lei Zhang",
+            "Hongsheng Li"
+        ],
+        "title": "Perceive Anything: Recognize, Explain, Caption, and Segment Anything in Images and Videos",
+        "abstract": "arXiv:2506.05302v1 Announce Type: new  Abstract: We present Perceive Anything Model (PAM), a conceptually straightforward and efficient framework for comprehensive region-level visual understanding in images and videos. Our approach extends the powerful segmentation model SAM 2 by integrating Large Language Models (LLMs), enabling simultaneous object segmentation with the generation of diverse, region-specific semantic outputs, including categories, label definition, functional explanations, and detailed captions. A key component, Semantic Perceiver, is introduced to efficiently transform SAM 2's rich visual features, which inherently carry general vision, localization, and semantic priors into multi-modal tokens for LLM comprehension. To support robust multi-granularity understanding, we also develop a dedicated data refinement and augmentation pipeline, yielding a high-quality dataset of 1.5M image and 0.6M video region-semantic annotations, including novel region-level streaming video caption data. PAM is designed for lightweightness and efficiency, while also demonstrates strong performance across a diverse range of region understanding tasks. It runs 1.2-2.4x faster and consumes less GPU memory than prior approaches, offering a practical solution for real-world applications. We believe that our effective approach will serve as a strong baseline for future research in region-level visual understanding.",
+        "arxiv_id": "2506.05302",
+        "ARXIVID": "2506.05302",
         "COMMENT": "No criteria match closely.",
         "RELEVANCE": 3,
         "NOVELTY": 4
