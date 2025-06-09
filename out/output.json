@@ -1,122 +1,22 @@
 {
-    "2506.04277": {
+    "2506.06023": {
         "authors": [
-            "Yi Lu",
-            "Jiawang Cao",
-            "Yongliang Wu",
-            "Bozheng Li",
-            "Licheng Tang",
-            "Yangguang Ji",
-            "Chong Wu",
-            "Jay Wu",
-            "Wenbo Zhu"
+            "Xingchang Huang",
+            "Ashish Kumar Singh",
+            "Florian Dubost",
+            "Cristina Nader Vasconcelos",
+            "Sakar Khattar",
+            "Liang Shi",
+            "Christian Theobalt",
+            "Cengiz Oztireli",
+            "Gurprit Singh"
         ],
-        "title": "RSVP: Reasoning Segmentation via Visual Prompting and Multi-modal Chain-of-Thought",
-        "abstract": "arXiv:2506.04277v1 Announce Type: new  Abstract: Multi-modal Large Language Models (MLLMs) have demonstrated remarkable reasoning capability while lack explicit mechanisms for visual grounding and segmentation, creating a gap between cognitive reasoning and visual perception. To bridge this gap, we introduce Reasoning Segmentation via Visual Prompting (RSVP), a novel framework that unifies multi-step multimodal reasoning with grounded visual understanding. RSVP is a two-stage structuralized framework that integrates reasoning-driven localization with segmentation refinement. In the reasoning stage, RSVP employs multimodal chain-of-thought visual prompts to help MLLMs understand queries and infer targets, generating interpretable region proposals that enhance visual grounding. In segmentation stage, RSVP refines these proposals with a Vision-Language Segmentation Module (VLSM), seamlessly integrates textual and visual cues to produce precise segmentation masks. By explicitly modelling the interaction between multimodal reasoning and segmentation, RSVP introduces a new paradigm for interpretable reasoning segmentation. It exploits MLLMs' inherent localization capabilities, enabling the models to not only reason about objects but also generate structured visual representations. Our extensive experiments demonstrate that RSVP achieves state-of-the-art performance, surpasses state-of-the-art methods by up to +6.5 gIoU and +9.2 cIoU on ReasonSeg, and achieves 49.7 mAP on SegInW under zero-shot settings. These results validate RSVP as an effective and scalable framework for integrating cognitive reasoning with structured visual understanding.",
-        "arxiv_id": "2506.04277",
-        "ARXIVID": "2506.04277",
-        "COMMENT": "Matches criterion 1: Unified Image/Video Generation and Segmentation.",
-        "RELEVANCE": 5,
-        "NOVELTY": 6
-    },
-    "2506.04641": {
-        "authors": [
-            "Qiming Hu",
-            "Linlong Fan",
-            "Yiyan Luo",
-            "Yuhang Yu",
-            "Xiaojie Guo",
-            "Qingnan Fan"
-        ],
-        "title": "Text-Aware Real-World Image Super-Resolution via Diffusion Model with Joint Segmentation Decoders",
-        "abstract": "arXiv:2506.04641v1 Announce Type: new  Abstract: The introduction of generative models has significantly advanced image super-resolution (SR) in handling real-world degradations. However, they often incur fidelity-related issues, particularly distorting textual structures. In this paper, we introduce a novel diffusion-based SR framework, namely TADiSR, which integrates text-aware attention and joint segmentation decoders to recover not only natural details but also the structural fidelity of text regions in degraded real-world images. Moreover, we propose a complete pipeline for synthesizing high-quality images with fine-grained full-image text masks, combining realistic foreground text regions with detailed background content. Extensive experiments demonstrate that our approach substantially enhances text legibility in super-resolved images, achieving state-of-the-art performance across multiple evaluation metrics and exhibiting strong generalization to real-world scenarios. Our code is available at \\href{https://github.com/mingcv/TADiSR}{here}.",
-        "arxiv_id": "2506.04641",
-        "ARXIVID": "2506.04641",
-        "COMMENT": "Matches criterion 2: Unified Diffusion Models.",
-        "RELEVANCE": 5,
-        "NOVELTY": 6
-    },
-    "2506.04956": {
-        "authors": [
-            "Huihan Wang",
-            "Zhiwen Yang",
-            "Hui Zhang",
-            "Dan Zhao",
-            "Bingzheng Wei",
-            "Yan Xu"
-        ],
-        "title": "FEAT: Full-Dimensional Efficient Attention Transformer for Medical Video Generation",
-        "abstract": "arXiv:2506.04956v1 Announce Type: new  Abstract: Synthesizing high-quality dynamic medical videos remains a significant challenge due to the need for modeling both spatial consistency and temporal dynamics. Existing Transformer-based approaches face critical limitations, including insufficient channel interactions, high computational complexity from self-attention, and coarse denoising guidance from timestep embeddings when handling varying noise levels. In this work, we propose FEAT, a full-dimensional efficient attention Transformer, which addresses these issues through three key innovations: (1) a unified paradigm with sequential spatial-temporal-channel attention mechanisms to capture global dependencies across all dimensions, (2) a linear-complexity design for attention mechanisms in each dimension, utilizing weighted key-value attention and global channel attention, and (3) a residual value guidance module that provides fine-grained pixel-level guidance to adapt to different noise levels. We evaluate FEAT on standard benchmarks and downstream tasks, demonstrating that FEAT-S, with only 23\\% of the parameters of the state-of-the-art model Endora, achieves comparable or even superior performance. Furthermore, FEAT-L surpasses all comparison methods across multiple datasets, showcasing both superior effectiveness and scalability. Code is available at https://github.com/Yaziwel/FEAT.",
-        "arxiv_id": "2506.04956",
-        "ARXIVID": "2506.04956",
-        "COMMENT": "No criteria match closely.",
+        "title": "Restereo: Diffusion stereo video generation and restoration",
+        "abstract": "arXiv:2506.06023v1 Announce Type: new  Abstract: Stereo video generation has been gaining increasing attention with recent advancements in video diffusion models. However, most existing methods focus on generating 3D stereoscopic videos from monocular 2D videos. These approaches typically assume that the input monocular video is of high quality, making the task primarily about inpainting occluded regions in the warped video while preserving disoccluded areas. In this paper, we introduce a new pipeline that not only generates stereo videos but also enhances both left-view and right-view videos consistently with a single model. Our approach achieves this by fine-tuning the model on degraded data for restoration, as well as conditioning the model on warped masks for consistent stereo generation. As a result, our method can be fine-tuned on a relatively small synthetic stereo video datasets and applied to low-quality real-world videos, performing both stereo video generation and restoration. Experiments demonstrate that our method outperforms existing approaches both qualitatively and quantitatively in stereo video generation from low-resolution inputs.",
+        "arxiv_id": "2506.06023",
+        "ARXIVID": "2506.06023",
+        "COMMENT": "Matches criteria 2 closely as it discusses a diffusion model for stereo video generation and restoration, but does not mention multi-task learning or segmentation.",
         "RELEVANCE": 3,
         "NOVELTY": 5
-    },
-    "2506.05336": {
-        "authors": [
-            "Ghazi Shazan Ahmad",
-            "Ahmed Heakl",
-            "Hanan Gani",
-            "Abdelrahman Shaker",
-            "Zhiqiang Shen",
-            "Ranjay Krishna",
-            "Fahad Shahbaz Khan",
-            "Salman Khan"
-        ],
-        "title": "VideoMolmo: Spatio-Temporal Grounding Meets Pointing",
-        "abstract": "arXiv:2506.05336v1 Announce Type: new  Abstract: Spatio-temporal localization is vital for precise interactions across diverse domains, from biological research to autonomous navigation and interactive interfaces. Current video-based approaches, while proficient in tracking, lack the sophisticated reasoning capabilities of large language models, limiting their contextual understanding and generalization. We introduce VideoMolmo, a large multimodal model tailored for fine-grained spatio-temporal pointing conditioned on textual descriptions. Building upon the Molmo architecture, VideoMolmo incorporates a temporal module utilizing an attention mechanism to condition each frame on preceding frames, ensuring temporal consistency. Additionally, our novel temporal mask fusion pipeline employs SAM2 for bidirectional point propagation, significantly enhancing coherence across video sequences. This two-step decomposition, i.e., first using the LLM to generate precise pointing coordinates, then relying on a sequential mask-fusion module to produce coherent segmentation, not only simplifies the task for the language model but also enhances interpretability. Due to the lack of suitable datasets, we curate a comprehensive dataset comprising 72k video-caption pairs annotated with 100k object points. To evaluate the generalization of VideoMolmo, we introduce VPoS-Bench, a challenging out-of-distribution benchmark spanning five real-world scenarios: Cell Tracking, Egocentric Vision, Autonomous Driving, Video-GUI Interaction, and Robotics. We also evaluate our model on Referring Video Object Segmentation (Refer-VOS) and Reasoning VOS tasks. In comparison to existing models, VideoMolmo substantially improves spatio-temporal pointing accuracy and reasoning capability. Our code and models are publicly available at https://github.com/mbzuai-oryx/VideoMolmo.",
-        "arxiv_id": "2506.05336",
-        "ARXIVID": "2506.05336",
-        "COMMENT": "No criteria match closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2506.04648": {
-        "authors": [
-            "Akide Liu",
-            "Zeyu Zhang",
-            "Zhexin Li",
-            "Xuehai Bai",
-            "Yizeng Han",
-            "Jiasheng Tang",
-            "Yuanjie Xing",
-            "Jichao Wu",
-            "Mingyang Yang",
-            "Weihua Chen",
-            "Jiahao He",
-            "Yuanyu He",
-            "Fan Wang",
-            "Gholamreza Haffari",
-            "Bohan Zhuang"
-        ],
-        "title": "FPSAttention: Training-Aware FP8 and Sparsity Co-Design for Fast Video Diffusion",
-        "abstract": "arXiv:2506.04648v1 Announce Type: new  Abstract: Diffusion generative models have become the standard for producing high-quality, coherent video content, yet their slow inference speeds and high computational demands hinder practical deployment. Although both quantization and sparsity can independently accelerate inference while maintaining generation quality, naively combining these techniques in existing training-free approaches leads to significant performance degradation due to the lack of joint optimization.We introduce FPSAttention, a novel training-aware co-design of FP8 quantization and sparsity for video generation, with a focus on the 3D bi-directional attention mechanism. Our approach features three key innovations: 1) A unified 3D tile-wise granularity that simultaneously supports both quantization and sparsity; 2) A denoising step-aware strategy that adapts to the noise schedule, addressing the strong correlation between quantization/sparsity errors and denoising steps; 3) A native, hardware-friendly kernel that leverages FlashAttention and is implemented with optimized Hopper architecture features for highly efficient execution. Trained on Wan2.1's 1.3B and 14B models and evaluated on the VBench benchmark, FPSAttention achieves a 7.09x kernel speedup for attention operations and a 4.96x end-to-end speedup for video generation compared to the BF16 baseline at 720p resolution-without sacrificing generation quality.",
-        "arxiv_id": "2506.04648",
-        "ARXIVID": "2506.04648",
-        "COMMENT": "No criteria match closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2506.05302": {
-        "authors": [
-            "Weifeng Lin",
-            "Xinyu Wei",
-            "Ruichuan An",
-            "Tianhe Ren",
-            "Tingwei Chen",
-            "Renrui Zhang",
-            "Ziyu Guo",
-            "Wentao Zhang",
-            "Lei Zhang",
-            "Hongsheng Li"
-        ],
-        "title": "Perceive Anything: Recognize, Explain, Caption, and Segment Anything in Images and Videos",
-        "abstract": "arXiv:2506.05302v1 Announce Type: new  Abstract: We present Perceive Anything Model (PAM), a conceptually straightforward and efficient framework for comprehensive region-level visual understanding in images and videos. Our approach extends the powerful segmentation model SAM 2 by integrating Large Language Models (LLMs), enabling simultaneous object segmentation with the generation of diverse, region-specific semantic outputs, including categories, label definition, functional explanations, and detailed captions. A key component, Semantic Perceiver, is introduced to efficiently transform SAM 2's rich visual features, which inherently carry general vision, localization, and semantic priors into multi-modal tokens for LLM comprehension. To support robust multi-granularity understanding, we also develop a dedicated data refinement and augmentation pipeline, yielding a high-quality dataset of 1.5M image and 0.6M video region-semantic annotations, including novel region-level streaming video caption data. PAM is designed for lightweightness and efficiency, while also demonstrates strong performance across a diverse range of region understanding tasks. It runs 1.2-2.4x faster and consumes less GPU memory than prior approaches, offering a practical solution for real-world applications. We believe that our effective approach will serve as a strong baseline for future research in region-level visual understanding.",
-        "arxiv_id": "2506.05302",
-        "ARXIVID": "2506.05302",
-        "COMMENT": "No criteria match closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 4
     }
 }
