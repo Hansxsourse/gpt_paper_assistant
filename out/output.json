@@ -1,258 +1,35 @@
 {
-    "2506.06830": {
+    "2506.08632": {
         "authors": [
-            "Guankun Wang",
-            "Rui Tang",
-            "Mengya Xu",
-            "Long Bai",
-            "Huxin Gao",
-            "Hongliang Ren"
+            "Yang Bai",
+            "Liudi Yang",
+            "George Eskandar",
+            "Fengyi Shen",
+            "Dong Chen",
+            "Mohammad Altillawi",
+            "Ziyuan Liu",
+            "Gitta Kutyniok"
         ],
-        "title": "EndoARSS: Adapting Spatially-Aware Foundation Model for Efficient Activity Recognition and Semantic Segmentation in Endoscopic Surgery",
-        "abstract": "arXiv:2506.06830v1 Announce Type: new  Abstract: Endoscopic surgery is the gold standard for robotic-assisted minimally invasive surgery, offering significant advantages in early disease detection and precise interventions. However, the complexity of surgical scenes, characterized by high variability in different surgical activity scenarios and confused image features between targets and the background, presents challenges for surgical environment understanding. Traditional deep learning models often struggle with cross-activity interference, leading to suboptimal performance in each downstream task. To address this limitation, we explore multi-task learning, which utilizes the interrelated features between tasks to enhance overall task performance. In this paper, we propose EndoARSS, a novel multi-task learning framework specifically designed for endoscopy surgery activity recognition and semantic segmentation. Built upon the DINOv2 foundation model, our approach integrates Low-Rank Adaptation to facilitate efficient fine-tuning while incorporating Task Efficient Shared Low-Rank Adapters to mitigate gradient conflicts across diverse tasks. Additionally, we introduce the Spatially-Aware Multi-Scale Attention that enhances feature representation discrimination by enabling cross-spatial learning of global information. In order to evaluate the effectiveness of our framework, we present three novel datasets, MTLESD, MTLEndovis and MTLEndovis-Gen, tailored for endoscopic surgery scenarios with detailed annotations for both activity recognition and semantic segmentation tasks. Extensive experiments demonstrate that EndoARSS achieves remarkable performance across multiple benchmarks, significantly improving both accuracy and robustness in comparison to existing models. These results underscore the potential of EndoARSS to advance AI-driven endoscopic surgical systems, offering valuable insights for enhancing surgical safety and efficiency.",
-        "arxiv_id": "2506.06830",
-        "ARXIVID": "2506.06830",
-        "COMMENT": "Matches criteria 1 closely as it proposes a multi-task learning framework for joint activity recognition and semantic segmentation.",
+        "title": "RoboSwap: A GAN-driven Video Diffusion Framework For Unsupervised Robot Arm Swapping",
+        "abstract": "arXiv:2506.08632v1 Announce Type: new  Abstract: Recent advancements in generative models have revolutionized video synthesis and editing. However, the scarcity of diverse, high-quality datasets continues to hinder video-conditioned robotic learning, limiting cross-platform generalization. In this work, we address the challenge of swapping a robotic arm in one video with another: a key step for crossembodiment learning. Unlike previous methods that depend on paired video demonstrations in the same environmental settings, our proposed framework, RoboSwap, operates on unpaired data from diverse environments, alleviating the data collection needs. RoboSwap introduces a novel video editing pipeline integrating both GANs and diffusion models, combining their isolated advantages. Specifically, we segment robotic arms from their backgrounds and train an unpaired GAN model to translate one robotic arm to another. The translated arm is blended with the original video background and refined with a diffusion model to enhance coherence, motion realism and object interaction. The GAN and diffusion stages are trained independently. Our experiments demonstrate that RoboSwap outperforms state-of-the-art video and image editing models on three benchmarks in terms of both structural coherence and motion consistency, thereby offering a robust solution for generating reliable, cross-embodiment data in robotic learning.",
+        "arxiv_id": "2506.08632",
+        "ARXIVID": "2506.08632",
+        "COMMENT": "Criteria 1: The paper describes a framework that integrates GANs and diffusion models for video editing, involving segmentation and generation tasks.",
         "RELEVANCE": 5,
         "NOVELTY": 6
     },
-    "2506.07280": {
+    "2506.08351": {
         "authors": [
-            "Pablo Acuaviva",
-            "Aram Davtyan",
-            "Mariam Hassan",
-            "Sebastian Stapf",
-            "Ahmad Rahimi",
-            "Alexandre Alahi",
-            "Paolo Favaro"
+            "Huixuan Zhang",
+            "Junzhe Zhang",
+            "Xiaojun Wan"
         ],
-        "title": "From Generation to Generalization: Emergent Few-Shot Learning in Video Diffusion Models",
-        "abstract": "arXiv:2506.07280v1 Announce Type: new  Abstract: Video Diffusion Models (VDMs) have emerged as powerful generative tools, capable of synthesizing high-quality spatiotemporal content. Yet, their potential goes far beyond mere video generation. We argue that the training dynamics of VDMs, driven by the need to model coherent sequences, naturally pushes them to internalize structured representations and an implicit understanding of the visual world. To probe the extent of this internal knowledge, we introduce a few-shot fine-tuning framework that repurposes VDMs for new tasks using only a handful of examples. Our method transforms each task into a visual transition, enabling the training of LoRA weights on short input-output sequences without altering the generative interface of a frozen VDM. Despite minimal supervision, the model exhibits strong generalization across diverse tasks, from low-level vision (for example, segmentation and pose estimation) to high-level reasoning (for example, on ARC-AGI). These results reframe VDMs as more than generative engines. They are adaptable visual learners with the potential to serve as the backbone for future foundation models in vision.",
-        "arxiv_id": "2506.07280",
-        "ARXIVID": "2506.07280",
-        "COMMENT": "Matches criteria 2 closely as it discusses a video diffusion model capable of handling multiple vision tasks, including segmentation.",
-        "RELEVANCE": 5,
-        "NOVELTY": 6
-    },
-    "2506.07698": {
-        "authors": [
-            "Yuxiao Yang",
-            "Peihao Li",
-            "Yuhong Zhang",
-            "Junzhe Lu",
-            "Xianglong He",
-            "Minghan Qin",
-            "Weitao Wang",
-            "Haoqian Wang"
-        ],
-        "title": "NOVA3D: Normal Aligned Video Diffusion Model for Single Image to 3D Generation",
-        "abstract": "arXiv:2506.07698v1 Announce Type: new  Abstract: 3D AI-generated content (AIGC) has made it increasingly accessible for anyone to become a 3D content creator. While recent methods leverage Score Distillation Sampling to distill 3D objects from pretrained image diffusion models, they often suffer from inadequate 3D priors, leading to insufficient multi-view consistency. In this work, we introduce NOVA3D, an innovative single-image-to-3D generation framework. Our key insight lies in leveraging strong 3D priors from a pretrained video diffusion model and integrating geometric information during multi-view video fine-tuning. To facilitate information exchange between color and geometric domains, we propose the Geometry-Temporal Alignment (GTA) attention mechanism, thereby improving generalization and multi-view consistency. Moreover, we introduce the de-conflict geometry fusion algorithm, which improves texture fidelity by addressing multi-view inaccuracies and resolving discrepancies in pose alignment. Extensive experiments validate the superiority of NOVA3D over existing baselines.",
-        "arxiv_id": "2506.07698",
-        "ARXIVID": "2506.07698",
-        "COMMENT": "Does not match any specific criteria closely.",
+        "title": "How Much To Guide: Revisiting Adaptive Guidance in Classifier-Free Guidance Text-to-Vision Diffusion Models",
+        "abstract": "arXiv:2506.08351v1 Announce Type: new  Abstract: With the rapid development of text-to-vision generation diffusion models, classifier-free guidance has emerged as the most prevalent method for conditioning. However, this approach inherently requires twice as many steps for model forwarding compared to unconditional generation, resulting in significantly higher costs. While previous study has introduced the concept of adaptive guidance, it lacks solid analysis and empirical results, making previous method unable to be applied to general diffusion models. In this work, we present another perspective of applying adaptive guidance and propose Step AG, which is a simple, universally applicable adaptive guidance strategy. Our evaluations focus on both image quality and image-text alignment. whose results indicate that restricting classifier-free guidance to the first several denoising steps is sufficient for generating high-quality, well-conditioned images, achieving an average speedup of 20% to 30%. Such improvement is consistent across different settings such as inference steps, and various models including video generation models, highlighting the superiority of our method.",
+        "arxiv_id": "2506.08351",
+        "ARXIVID": "2506.08351",
+        "COMMENT": "",
         "RELEVANCE": 3,
-        "NOVELTY": 6
-    },
-    "2506.08015": {
-        "authors": [
-            "Zhen Xu",
-            "Zhengqin Li",
-            "Zhao Dong",
-            "Xiaowei Zhou",
-            "Richard Newcombe",
-            "Zhaoyang Lv"
-        ],
-        "title": "4DGT: Learning a 4D Gaussian Transformer Using Real-World Monocular Videos",
-        "abstract": "arXiv:2506.08015v1 Announce Type: new  Abstract: We propose 4DGT, a 4D Gaussian-based Transformer model for dynamic scene reconstruction, trained entirely on real-world monocular posed videos. Using 4D Gaussian as an inductive bias, 4DGT unifies static and dynamic components, enabling the modeling of complex, time-varying environments with varying object lifespans. We proposed a novel density control strategy in training, which enables our 4DGT to handle longer space-time input and remain efficient rendering at runtime. Our model processes 64 consecutive posed frames in a rolling-window fashion, predicting consistent 4D Gaussians in the scene. Unlike optimization-based methods, 4DGT performs purely feed-forward inference, reducing reconstruction time from hours to seconds and scaling effectively to long video sequences. Trained only on large-scale monocular posed video datasets, 4DGT can outperform prior Gaussian-based networks significantly in real-world videos and achieve on-par accuracy with optimization-based methods on cross-domain videos. Project page: https://4dgt.github.io",
-        "arxiv_id": "2506.08015",
-        "ARXIVID": "2506.08015",
-        "COMMENT": "Does not match any specific criteria closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 6
-    },
-    "2506.07999": {
-        "authors": [
-            "Junhao Chen",
-            "Yulia Tsvetkov",
-            "Xiaochuang Han"
-        ],
-        "title": "MADFormer: Mixed Autoregressive and Diffusion Transformers for Continuous Image Generation",
-        "abstract": "arXiv:2506.07999v1 Announce Type: new  Abstract: Recent progress in multimodal generation has increasingly combined autoregressive (AR) and diffusion-based approaches, leveraging their complementary strengths: AR models capture long-range dependencies and produce fluent, context-aware outputs, while diffusion models operate in continuous latent spaces to refine high-fidelity visual details. However, existing hybrids often lack systematic guidance on how and why to allocate model capacity between these paradigms. In this work, we introduce MADFormer, a Mixed Autoregressive and Diffusion Transformer that serves as a testbed for analyzing AR-diffusion trade-offs. MADFormer partitions image generation into spatial blocks, using AR layers for one-pass global conditioning across blocks and diffusion layers for iterative local refinement within each block. Through controlled experiments on FFHQ-1024 and ImageNet, we identify two key insights: (1) block-wise partitioning significantly improves performance on high-resolution images, and (2) vertically mixing AR and diffusion layers yields better quality-efficiency balances--improving FID by up to 75% under constrained inference compute. Our findings offer practical design principles for future hybrid generative models.",
-        "arxiv_id": "2506.07999",
-        "ARXIVID": "2506.07999",
-        "COMMENT": "Does not match any specific criteria closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 6
-    },
-    "2506.06966": {
-        "authors": [
-            "Siyuan Jing",
-            "Guangxue Wang",
-            "Haoyang Zhai",
-            "Qin Tao",
-            "Jun Yang",
-            "Bing Wang",
-            "Peng Jin"
-        ],
-        "title": "Dual-view Spatio-Temporal Feature Fusion with CNN-Transformer Hybrid Network for Chinese Isolated Sign Language Recognition",
-        "abstract": "arXiv:2506.06966v1 Announce Type: new  Abstract: Due to the emergence of many sign language datasets, isolated sign language recognition (ISLR) has made significant progress in recent years. In addition, the development of various advanced deep neural networks is another reason for this breakthrough. However, challenges remain in applying the technique in the real world. First, existing sign language datasets do not cover the whole sign vocabulary. Second, most of the sign language datasets provide only single view RGB videos, which makes it difficult to handle hand occlusions when performing ISLR. To fill this gap, this paper presents a dual-view sign language dataset for ISLR named NationalCSL-DP, which fully covers the Chinese national sign language vocabulary. The dataset consists of 134140 sign videos recorded by ten signers with respect to two vertical views, namely, the front side and the left side. Furthermore, a CNN transformer network is also proposed as a strong baseline and an extremely simple but effective fusion strategy for prediction. Extensive experiments were conducted to prove the effectiveness of the datasets as well as the baseline. The results show that the proposed fusion strategy can significantly increase the performance of the ISLR, but it is not easy for the sequence-to-sequence model, regardless of whether the early-fusion or late-fusion strategy is applied, to learn the complementary features from the sign videos of two vertical views.",
-        "arxiv_id": "2506.06966",
-        "ARXIVID": "2506.06966",
-        "COMMENT": "Does not match any specific criteria closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2506.07986": {
-        "authors": [
-            "Zhengyao Lv",
-            "Tianlin Pan",
-            "Chenyang Si",
-            "Zhaoxi Chen",
-            "Wangmeng Zuo",
-            "Ziwei Liu",
-            "Kwan-Yee K. Wong"
-        ],
-        "title": "Rethinking Cross-Modal Interaction in Multimodal Diffusion Transformers",
-        "abstract": "arXiv:2506.07986v1 Announce Type: new  Abstract: Multimodal Diffusion Transformers (MM-DiTs) have achieved remarkable progress in text-driven visual generation. However, even state-of-the-art MM-DiT models like FLUX struggle with achieving precise alignment between text prompts and generated content. We identify two key issues in the attention mechanism of MM-DiT, namely 1) the suppression of cross-modal attention due to token imbalance between visual and textual modalities and 2) the lack of timestep-aware attention weighting, which hinder the alignment. To address these issues, we propose \\textbf{Temperature-Adjusted Cross-modal Attention (TACA)}, a parameter-efficient method that dynamically rebalances multimodal interactions through temperature scaling and timestep-dependent adjustment. When combined with LoRA fine-tuning, TACA significantly enhances text-image alignment on the T2I-CompBench benchmark with minimal computational overhead. We tested TACA on state-of-the-art models like FLUX and SD3.5, demonstrating its ability to improve image-text alignment in terms of object appearance, attribute binding, and spatial relationships. Our findings highlight the importance of balancing cross-modal attention in improving semantic fidelity in text-to-image diffusion models. Our codes are publicly available at \\href{https://github.com/Vchitect/TACA}",
-        "arxiv_id": "2506.07986",
-        "ARXIVID": "2506.07986",
-        "COMMENT": "Does not match any specific criteria closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2506.07826": {
-        "authors": [
-            "William Ljungbergh",
-            "Bernardo Taveira",
-            "Wenzhao Zheng",
-            "Adam Tonderski",
-            "Chensheng Peng",
-            "Fredrik Kahl",
-            "Christoffer Petersson",
-            "Michael Felsberg",
-            "Kurt Keutzer",
-            "Masayoshi Tomizuka",
-            "Wei Zhan"
-        ],
-        "title": "R3D2: Realistic 3D Asset Insertion via Diffusion for Autonomous Driving Simulation",
-        "abstract": "arXiv:2506.07826v1 Announce Type: new  Abstract: Validating autonomous driving (AD) systems requires diverse and safety-critical testing, making photorealistic virtual environments essential. Traditional simulation platforms, while controllable, are resource-intensive to scale and often suffer from a domain gap with real-world data. In contrast, neural reconstruction methods like 3D Gaussian Splatting (3DGS) offer a scalable solution for creating photorealistic digital twins of real-world driving scenes. However, they struggle with dynamic object manipulation and reusability as their per-scene optimization-based methodology tends to result in incomplete object models with integrated illumination effects. This paper introduces R3D2, a lightweight, one-step diffusion model designed to overcome these limitations and enable realistic insertion of complete 3D assets into existing scenes by generating plausible rendering effects-such as shadows and consistent lighting-in real time. This is achieved by training R3D2 on a novel dataset: 3DGS object assets are generated from in-the-wild AD data using an image-conditioned 3D generative model, and then synthetically placed into neural rendering-based virtual environments, allowing R3D2 to learn realistic integration. Quantitative and qualitative evaluations demonstrate that R3D2 significantly enhances the realism of inserted assets, enabling use-cases like text-to-3D asset insertion and cross-scene/dataset object transfer, allowing for true scalability in AD validation. To promote further research in scalable and realistic AD simulation, we will release our dataset and code, see https://research.zenseact.com/publications/R3D2/.",
-        "arxiv_id": "2506.07826",
-        "ARXIVID": "2506.07826",
-        "COMMENT": "Does not match any specific criteria closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2506.07750": {
-        "authors": [
-            "Hyunsoo Kim",
-            "Donghyun Kim",
-            "Suhyun Kim"
-        ],
-        "title": "Difference Inversion: Interpolate and Isolate the Difference with Token Consistency for Image Analogy Generation",
-        "abstract": "arXiv:2506.07750v1 Announce Type: new  Abstract: How can we generate an image B' that satisfies A:A'::B:B', given the input images A,A' and B? Recent works have tackled this challenge through approaches like visual in-context learning or visual instruction. However, these methods are typically limited to specific models (e.g. InstructPix2Pix. Inpainting models) rather than general diffusion models (e.g. Stable Diffusion, SDXL). This dependency may lead to inherited biases or lower editing capabilities. In this paper, we propose Difference Inversion, a method that isolates only the difference from A and A' and applies it to B to generate a plausible B'. To address model dependency, it is crucial to structure prompts in the form of a \"Full Prompt\" suitable for input to stable diffusion models, rather than using an \"Instruction Prompt\". To this end, we accurately extract the Difference between A and A' and combine it with the prompt of B, enabling a plug-and-play application of the difference. To extract a precise difference, we first identify it through 1) Delta Interpolation. Additionally, to ensure accurate training, we propose the 2) Token Consistency Loss and 3) Zero Initialization of Token Embeddings. Our extensive experiments demonstrate that Difference Inversion outperforms existing baselines both quantitatively and qualitatively, indicating its ability to generate more feasible B' in a model-agnostic manner.",
-        "arxiv_id": "2506.07750",
-        "ARXIVID": "2506.07750",
-        "COMMENT": "Does not match any specific criteria closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2506.07643": {
-        "authors": [
-            "Jae Sung Park",
-            "Zixian Ma",
-            "Linjie Li",
-            "Chenhao Zheng",
-            "Cheng-Yu Hsieh",
-            "Ximing Lu",
-            "Khyathi Chandu",
-            "Quan Kong",
-            "Norimasa Kobori",
-            "Ali Farhadi",
-            "Yejin Choi",
-            "Ranjay Krishna"
-        ],
-        "title": "Synthetic Visual Genome",
-        "abstract": "arXiv:2506.07643v1 Announce Type: new  Abstract: Reasoning over visual relationships-spatial, functional, interactional, social, etc.-is considered to be a fundamental component of human cognition. Yet, despite the major advances in visual comprehension in multimodal language models (MLMs), precise reasoning over relationships and their generations remains a challenge. We introduce ROBIN: an MLM instruction-tuned with densely annotated relationships capable of constructing high-quality dense scene graphs at scale. To train ROBIN, we curate SVG, a synthetic scene graph dataset by completing the missing relations of selected objects in existing scene graphs using a teacher MLM and a carefully designed filtering process to ensure high-quality. To generate more accurate and rich scene graphs at scale for any image, we introduce SG-EDIT: a self-distillation framework where GPT-4o further refines ROBIN's predicted scene graphs by removing unlikely relations and/or suggesting relevant ones. In total, our dataset contains 146K images and 5.6M relationships for 2.6M objects. Results show that our ROBIN-3B model, despite being trained on less than 3 million instances, outperforms similar-size models trained on over 300 million instances on relationship understanding benchmarks, and even surpasses larger models up to 13B parameters. Notably, it achieves state-of-the-art performance in referring expression comprehension with a score of 88.9, surpassing the previous best of 87.4. Our results suggest that training on the refined scene graph data is crucial to maintaining high performance across diverse visual reasoning task.",
-        "arxiv_id": "2506.07643",
-        "ARXIVID": "2506.07643",
-        "COMMENT": "Does not match any specific criteria closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2506.07738": {
-        "authors": [
-            "Lanjiong Li",
-            "Guanhua Zhao",
-            "Lingting Zhu",
-            "Zeyu Cai",
-            "Lequan Yu",
-            "Jian Zhang",
-            "Zeyu Wang"
-        ],
-        "title": "AssetDropper: Asset Extraction via Diffusion Models with Reward-Driven Optimization",
-        "abstract": "arXiv:2506.07738v1 Announce Type: new  Abstract: Recent research on generative models has primarily focused on creating product-ready visual outputs; however, designers often favor access to standardized asset libraries, a domain that has yet to be significantly enhanced by generative capabilities. Although open-world scenes provide ample raw materials for designers, efficiently extracting high-quality, standardized assets remains a challenge. To address this, we introduce AssetDropper, the first framework designed to extract assets from reference images, providing artists with an open-world asset palette. Our model adeptly extracts a front view of selected subjects from input images, effectively handling complex scenarios such as perspective distortion and subject occlusion. We establish a synthetic dataset of more than 200,000 image-subject pairs and a real-world benchmark with thousands more for evaluation, facilitating the exploration of future research in downstream tasks. Furthermore, to ensure precise asset extraction that aligns well with the image prompts, we employ a pre-trained reward model to fulfill a closed-loop with feedback. We design the reward model to perform an inverse task that pastes the extracted assets back into the reference sources, which assists training with additional consistency and mitigates hallucination. Extensive experiments show that, with the aid of reward-driven optimization, AssetDropper achieves the state-of-the-art results in asset extraction. Project page: AssetDropper.github.io.",
-        "arxiv_id": "2506.07738",
-        "ARXIVID": "2506.07738",
-        "COMMENT": "Does not match any specific criteria closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2506.07992": {
-        "authors": [
-            "Haoguang Lu",
-            "Jiacheng Chen",
-            "Zhenguo Yang",
-            "Aurele Tohokantche Gnanha",
-            "Fu Lee Wang",
-            "Li Qing",
-            "Xudong Mao"
-        ],
-        "title": "PairEdit: Learning Semantic Variations for Exemplar-based Image Editing",
-        "abstract": "arXiv:2506.07992v1 Announce Type: new  Abstract: Recent advancements in text-guided image editing have achieved notable success by leveraging natural language prompts for fine-grained semantic control. However, certain editing semantics are challenging to specify precisely using textual descriptions alone. A practical alternative involves learning editing semantics from paired source-target examples. Existing exemplar-based editing methods still rely on text prompts describing the change within paired examples or learning implicit text-based editing instructions. In this paper, we introduce PairEdit, a novel visual editing method designed to effectively learn complex editing semantics from a limited number of image pairs or even a single image pair, without using any textual guidance. We propose a target noise prediction that explicitly models semantic variations within paired images through a guidance direction term. Moreover, we introduce a content-preserving noise schedule to facilitate more effective semantic learning. We also propose optimizing distinct LoRAs to disentangle the learning of semantic variations from content. Extensive qualitative and quantitative evaluations demonstrate that PairEdit successfully learns intricate semantics while significantly improving content consistency compared to baseline methods. Code will be available at https://github.com/xudonmao/PairEdit.",
-        "arxiv_id": "2506.07992",
-        "ARXIVID": "2506.07992",
-        "COMMENT": "Does not match any specific criteria closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2506.06826": {
-        "authors": [
-            "Chenfei Yuan",
-            "Nanshan Jia",
-            "Hangqi Li",
-            "Peter W. Glynn",
-            "Zeyu Zheng"
-        ],
-        "title": "Controllable Coupled Image Generation via Diffusion Models",
-        "abstract": "arXiv:2506.06826v1 Announce Type: new  Abstract: We provide an attention-level control method for the task of coupled image generation, where \"coupled\" means that multiple simultaneously generated images are expected to have the same or very similar backgrounds. While backgrounds coupled, the centered objects in the generated images are still expected to enjoy the flexibility raised from different text prompts. The proposed method disentangles the background and entity components in the model's cross-attention modules, attached with a sequence of time-varying weight control parameters depending on the time step of sampling. We optimize this sequence of weight control parameters with a combined objective that assesses how coupled the backgrounds are as well as text-to-image alignment and overall visual quality. Empirical results demonstrate that our method outperforms existing approaches across these criteria.",
-        "arxiv_id": "2506.06826",
-        "ARXIVID": "2506.06826",
-        "COMMENT": "Does not match any specific criteria closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2506.07497": {
-        "authors": [
-            "Xiangyu Guo",
-            "Zhanqian Wu",
-            "Kaixin Xiong",
-            "Ziyang Xu",
-            "Lijun Zhou",
-            "Gangwei Xu",
-            "Shaoqing Xu",
-            "Haiyang Sun",
-            "Bing Wang",
-            "Guang Chen",
-            "Hangjun Ye",
-            "Wenyu Liu",
-            "Xinggang Wang"
-        ],
-        "title": "Genesis: Multimodal Driving Scene Generation with Spatio-Temporal and Cross-Modal Consistency",
-        "abstract": "arXiv:2506.07497v1 Announce Type: new  Abstract: We present Genesis, a unified framework for joint generation of multi-view driving videos and LiDAR sequences with spatio-temporal and cross-modal consistency. Genesis employs a two-stage architecture that integrates a DiT-based video diffusion model with 3D-VAE encoding, and a BEV-aware LiDAR generator with NeRF-based rendering and adaptive sampling. Both modalities are directly coupled through a shared latent space, enabling coherent evolution across visual and geometric domains. To guide the generation with structured semantics, we introduce DataCrafter, a captioning module built on vision-language models that provides scene-level and instance-level supervision. Extensive experiments on the nuScenes benchmark demonstrate that Genesis achieves state-of-the-art performance across video and LiDAR metrics (FVD 16.95, FID 4.24, Chamfer 0.611), and benefits downstream tasks including segmentation and 3D detection, validating the semantic fidelity and practical utility of the generated data.",
-        "arxiv_id": "2506.07497",
-        "ARXIVID": "2506.07497",
-        "COMMENT": "Does not match any specific criteria closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
+        "NOVELTY": 4
     }
 }
