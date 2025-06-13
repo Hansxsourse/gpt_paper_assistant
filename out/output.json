@@ -1,35 +1,56 @@
 {
-    "2506.08632": {
+    "2506.10941": {
         "authors": [
-            "Yang Bai",
-            "Liudi Yang",
-            "George Eskandar",
-            "Fengyi Shen",
-            "Dong Chen",
-            "Mohammad Altillawi",
-            "Ziyuan Liu",
-            "Gitta Kutyniok"
+            "Leigang Qu",
+            "Feng Cheng",
+            "Ziyan Yang",
+            "Qi Zhao",
+            "Shanchuan Lin",
+            "Yichun Shi",
+            "Yicong Li",
+            "Wenjie Wang",
+            "Tat-Seng Chua",
+            "Lu Jiang"
         ],
-        "title": "RoboSwap: A GAN-driven Video Diffusion Framework For Unsupervised Robot Arm Swapping",
-        "abstract": "arXiv:2506.08632v1 Announce Type: new  Abstract: Recent advancements in generative models have revolutionized video synthesis and editing. However, the scarcity of diverse, high-quality datasets continues to hinder video-conditioned robotic learning, limiting cross-platform generalization. In this work, we address the challenge of swapping a robotic arm in one video with another: a key step for crossembodiment learning. Unlike previous methods that depend on paired video demonstrations in the same environmental settings, our proposed framework, RoboSwap, operates on unpaired data from diverse environments, alleviating the data collection needs. RoboSwap introduces a novel video editing pipeline integrating both GANs and diffusion models, combining their isolated advantages. Specifically, we segment robotic arms from their backgrounds and train an unpaired GAN model to translate one robotic arm to another. The translated arm is blended with the original video background and refined with a diffusion model to enhance coherence, motion realism and object interaction. The GAN and diffusion stages are trained independently. Our experiments demonstrate that RoboSwap outperforms state-of-the-art video and image editing models on three benchmarks in terms of both structural coherence and motion consistency, thereby offering a robust solution for generating reliable, cross-embodiment data in robotic learning.",
-        "arxiv_id": "2506.08632",
-        "ARXIVID": "2506.08632",
-        "COMMENT": "Criteria 1: The paper describes a framework that integrates GANs and diffusion models for video editing, involving segmentation and generation tasks.",
+        "title": "VINCIE: Unlocking In-context Image Editing from Video",
+        "abstract": "arXiv:2506.10941v1 Announce Type: new  Abstract: In-context image editing aims to modify images based on a contextual sequence comprising text and previously generated images. Existing methods typically depend on task-specific pipelines and expert models (e.g., segmentation and inpainting) to curate training data. In this work, we explore whether an in-context image editing model can be learned directly from videos. We introduce a scalable approach to annotate videos as interleaved multimodal sequences. To effectively learn from this data, we design a block-causal diffusion transformer trained on three proxy tasks: next-image prediction, current segmentation prediction, and next-segmentation prediction. Additionally, we propose a novel multi-turn image editing benchmark to advance research in this area. Extensive experiments demonstrate that our model exhibits strong in-context image editing capabilities and achieves state-of-the-art results on two multi-turn image editing benchmarks. Despite being trained exclusively on videos, our model also shows promising abilities in multi-concept composition, story generation, and chain-of-editing applications.",
+        "arxiv_id": "2506.10941",
+        "ARXIVID": "2506.10941",
+        "COMMENT": "Matches criteria 1 closely as it involves a diffusion transformer for image editing and segmentation prediction.",
+        "RELEVANCE": 5,
+        "NOVELTY": 7
+    },
+    "2506.10840": {
+        "authors": [
+            "Tianrui Zhu",
+            "Houyuan Chen",
+            "Ruihao Gong",
+            "Michele Magno",
+            "Haotong Qin",
+            "Kai Zhang"
+        ],
+        "title": "Post-Training Quantization for Video Matting",
+        "abstract": "arXiv:2506.10840v1 Announce Type: new  Abstract: Video matting is crucial for applications such as film production and virtual reality, yet deploying its computationally intensive models on resource-constrained devices presents challenges. Quantization is a key technique for model compression and acceleration. As an efficient approach, Post-Training Quantization (PTQ) is still in its nascent stages for video matting, facing significant hurdles in maintaining accuracy and temporal coherence. To address these challenges, this paper proposes a novel and general PTQ framework specifically designed for video matting models, marking, to the best of our knowledge, the first systematic attempt in this domain. Our contributions include: (1) A two-stage PTQ strategy that combines block-reconstruction-based optimization for fast, stable initial quantization and local dependency capture, followed by a global calibration of quantization parameters to minimize accuracy loss. (2) A Statistically-Driven Global Affine Calibration (GAC) method that enables the network to compensate for cumulative statistical distortions arising from factors such as neglected BN layer effects, even reducing the error of existing PTQ methods on video matting tasks up to 20%. (3) An Optical Flow Assistance (OFA) component that leverages temporal and semantic priors from frames to guide the PTQ process, enhancing the model's ability to distinguish moving foregrounds in complex scenes and ultimately achieving near full-precision performance even under ultra-low-bit quantization. Comprehensive quantitative and visual results show that our PTQ4VM achieves the state-of-the-art accuracy performance across different bit-widths compared to the existing quantization methods. We highlight that the 4-bit PTQ4VM even achieves performance close to the full-precision counterpart while enjoying 8x FLOP savings.",
+        "arxiv_id": "2506.10840",
+        "ARXIVID": "2506.10840",
+        "COMMENT": "Matches criteria 4 closely as it addresses video matting with a novel PTQ framework.",
         "RELEVANCE": 5,
         "NOVELTY": 6
     },
-    "2506.08351": {
+    "2506.10981": {
         "authors": [
-            "Huixuan Zhang",
-            "Junzhe Zhang",
-            "Xiaojun Wan"
+            "Weiliang Chen",
+            "Jiayi Bi",
+            "Yuanhui Huang",
+            "Wenzhao Zheng",
+            "Yueqi Duan"
         ],
-        "title": "How Much To Guide: Revisiting Adaptive Guidance in Classifier-Free Guidance Text-to-Vision Diffusion Models",
-        "abstract": "arXiv:2506.08351v1 Announce Type: new  Abstract: With the rapid development of text-to-vision generation diffusion models, classifier-free guidance has emerged as the most prevalent method for conditioning. However, this approach inherently requires twice as many steps for model forwarding compared to unconditional generation, resulting in significantly higher costs. While previous study has introduced the concept of adaptive guidance, it lacks solid analysis and empirical results, making previous method unable to be applied to general diffusion models. In this work, we present another perspective of applying adaptive guidance and propose Step AG, which is a simple, universally applicable adaptive guidance strategy. Our evaluations focus on both image quality and image-text alignment. whose results indicate that restricting classifier-free guidance to the first several denoising steps is sufficient for generating high-quality, well-conditioned images, achieving an average speedup of 20% to 30%. Such improvement is consistent across different settings such as inference steps, and various models including video generation models, highlighting the superiority of our method.",
-        "arxiv_id": "2506.08351",
-        "ARXIVID": "2506.08351",
+        "title": "SceneCompleter: Dense 3D Scene Completion for Generative Novel View Synthesis",
+        "abstract": "arXiv:2506.10981v1 Announce Type: new  Abstract: Generative models have gained significant attention in novel view synthesis (NVS) by alleviating the reliance on dense multi-view captures. However, existing methods typically fall into a conventional paradigm, where generative models first complete missing areas in 2D, followed by 3D recovery techniques to reconstruct the scene, which often results in overly smooth surfaces and distorted geometry, as generative models struggle to infer 3D structure solely from RGB data. In this paper, we propose SceneCompleter, a novel framework that achieves 3D-consistent generative novel view synthesis through dense 3D scene completion. SceneCompleter achieves both visual coherence and 3D-consistent generative scene completion through two key components: (1) a geometry-appearance dual-stream diffusion model that jointly synthesizes novel views in RGBD space; (2) a scene embedder that encodes a more holistic scene understanding from the reference image. By effectively fusing structural and textural information, our method demonstrates superior coherence and plausibility in generative novel view synthesis across diverse datasets. Project Page: https://chen-wl20.github.io/SceneCompleter",
+        "arxiv_id": "2506.10981",
+        "ARXIVID": "2506.10981",
         "COMMENT": "",
         "RELEVANCE": 3,
-        "NOVELTY": 4
+        "NOVELTY": 5
     }
 }
