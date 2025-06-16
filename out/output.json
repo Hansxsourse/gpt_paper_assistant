@@ -1,55 +1,67 @@
 {
-    "2506.10941": {
+    "2506.11924": {
         "authors": [
-            "Leigang Qu",
-            "Feng Cheng",
-            "Ziyan Yang",
-            "Qi Zhao",
-            "Shanchuan Lin",
-            "Yichun Shi",
-            "Yicong Li",
-            "Wenjie Wang",
-            "Tat-Seng Chua",
-            "Lu Jiang"
+            "Min-Seop Kwak",
+            "Junho Kim",
+            "Sangdoo Yun",
+            "Dongyoon Han",
+            "Taekyoung Kim",
+            "Seungryong Kim",
+            "Jin-Hwa Kim"
         ],
-        "title": "VINCIE: Unlocking In-context Image Editing from Video",
-        "abstract": "arXiv:2506.10941v1 Announce Type: new  Abstract: In-context image editing aims to modify images based on a contextual sequence comprising text and previously generated images. Existing methods typically depend on task-specific pipelines and expert models (e.g., segmentation and inpainting) to curate training data. In this work, we explore whether an in-context image editing model can be learned directly from videos. We introduce a scalable approach to annotate videos as interleaved multimodal sequences. To effectively learn from this data, we design a block-causal diffusion transformer trained on three proxy tasks: next-image prediction, current segmentation prediction, and next-segmentation prediction. Additionally, we propose a novel multi-turn image editing benchmark to advance research in this area. Extensive experiments demonstrate that our model exhibits strong in-context image editing capabilities and achieves state-of-the-art results on two multi-turn image editing benchmarks. Despite being trained exclusively on videos, our model also shows promising abilities in multi-concept composition, story generation, and chain-of-editing applications.",
-        "arxiv_id": "2506.10941",
-        "ARXIVID": "2506.10941",
-        "COMMENT": "Matches criteria 1 closely as it involves a diffusion transformer for image editing and segmentation prediction.",
+        "title": "Aligned Novel View Image and Geometry Synthesis via Cross-modal Attention Instillation",
+        "abstract": "arXiv:2506.11924v1 Announce Type: new  Abstract: We introduce a diffusion-based framework that performs aligned novel view image and geometry generation via a warping-and-inpainting methodology. Unlike prior methods that require dense posed images or pose-embedded generative models limited to in-domain views, our method leverages off-the-shelf geometry predictors to predict partial geometries viewed from reference images, and formulates novel-view synthesis as an inpainting task for both image and geometry. To ensure accurate alignment between generated images and geometry, we propose cross-modal attention distillation, where attention maps from the image diffusion branch are injected into a parallel geometry diffusion branch during both training and inference. This multi-task approach achieves synergistic effects, facilitating geometrically robust image synthesis as well as well-defined geometry prediction. We further introduce proximity-based mesh conditioning to integrate depth and normal cues, interpolating between point cloud and filtering erroneously predicted geometry from influencing the generation process. Empirically, our method achieves high-fidelity extrapolative view synthesis on both image and geometry across a range of unseen scenes, delivers competitive reconstruction quality under interpolation settings, and produces geometrically aligned colored point clouds for comprehensive 3D completion. Project page is available at https://cvlab-kaist.github.io/MoAI.",
+        "arxiv_id": "2506.11924",
+        "ARXIVID": "2506.11924",
+        "COMMENT": "Matches criterion 2: Unified Diffusion Models for multi-task vision tasks including image and geometry generation.",
         "RELEVANCE": 5,
         "NOVELTY": 7
     },
-    "2506.10840": {
+    "2506.11436": {
         "authors": [
-            "Tianrui Zhu",
-            "Houyuan Chen",
-            "Ruihao Gong",
-            "Michele Magno",
-            "Haotong Qin",
-            "Kai Zhang"
+            "Ziyang Luo",
+            "Nian Liu",
+            "Xuguang Yang",
+            "Salman Khan",
+            "Rao Muhammad Anwer",
+            "Hisham Cholakkal",
+            "Fahad Shahbaz Khan",
+            "Junwei Han"
         ],
-        "title": "Post-Training Quantization for Video Matting",
-        "abstract": "arXiv:2506.10840v1 Announce Type: new  Abstract: Video matting is crucial for applications such as film production and virtual reality, yet deploying its computationally intensive models on resource-constrained devices presents challenges. Quantization is a key technique for model compression and acceleration. As an efficient approach, Post-Training Quantization (PTQ) is still in its nascent stages for video matting, facing significant hurdles in maintaining accuracy and temporal coherence. To address these challenges, this paper proposes a novel and general PTQ framework specifically designed for video matting models, marking, to the best of our knowledge, the first systematic attempt in this domain. Our contributions include: (1) A two-stage PTQ strategy that combines block-reconstruction-based optimization for fast, stable initial quantization and local dependency capture, followed by a global calibration of quantization parameters to minimize accuracy loss. (2) A Statistically-Driven Global Affine Calibration (GAC) method that enables the network to compensate for cumulative statistical distortions arising from factors such as neglected BN layer effects, even reducing the error of existing PTQ methods on video matting tasks up to 20%. (3) An Optical Flow Assistance (OFA) component that leverages temporal and semantic priors from frames to guide the PTQ process, enhancing the model's ability to distinguish moving foregrounds in complex scenes and ultimately achieving near full-precision performance even under ultra-low-bit quantization. Comprehensive quantitative and visual results show that our PTQ4VM achieves the state-of-the-art accuracy performance across different bit-widths compared to the existing quantization methods. We highlight that the 4-bit PTQ4VM even achieves performance close to the full-precision counterpart while enjoying 8x FLOP savings.",
-        "arxiv_id": "2506.10840",
-        "ARXIVID": "2506.10840",
-        "COMMENT": "Matches criteria 4 closely as it addresses video matting with a novel PTQ framework.",
-        "RELEVANCE": 5,
+        "title": "TAViS: Text-bridged Audio-Visual Segmentation with Foundation Models",
+        "abstract": "arXiv:2506.11436v1 Announce Type: new  Abstract: Audio-Visual Segmentation (AVS) faces a fundamental challenge of effectively aligning audio and visual modalities. While recent approaches leverage foundation models to address data scarcity, they often rely on single-modality knowledge or combine foundation models in an off-the-shelf manner, failing to address the cross-modal alignment challenge. In this paper, we present TAViS, a novel framework that \\textbf{couples} the knowledge of multimodal foundation models (ImageBind) for cross-modal alignment and a segmentation foundation model (SAM2) for precise segmentation. However, effectively combining these models poses two key challenges: the difficulty in transferring the knowledge between SAM2 and ImageBind due to their different feature spaces, and the insufficiency of using only segmentation loss for supervision. To address these challenges, we introduce a text-bridged design with two key components: (1) a text-bridged hybrid prompting mechanism where pseudo text provides class prototype information while retaining modality-specific details from both audio and visual inputs, and (2) an alignment supervision strategy that leverages text as a bridge to align shared semantic concepts within audio-visual modalities. Our approach achieves superior performance on single-source, multi-source, semantic datasets, and excels in zero-shot settings.",
+        "arxiv_id": "2506.11436",
+        "ARXIVID": "2506.11436",
+        "COMMENT": "Does not match any specific criteria.",
+        "RELEVANCE": 3,
         "NOVELTY": 6
     },
-    "2506.10981": {
+    "2506.11772": {
         "authors": [
-            "Weiliang Chen",
-            "Jiayi Bi",
-            "Yuanhui Huang",
-            "Wenzhao Zheng",
-            "Yueqi Duan"
+            "Byeongchan Lee",
+            "John Won",
+            "Seunghyun Lee",
+            "Jinwoo Shin"
         ],
-        "title": "SceneCompleter: Dense 3D Scene Completion for Generative Novel View Synthesis",
-        "abstract": "arXiv:2506.10981v1 Announce Type: new  Abstract: Generative models have gained significant attention in novel view synthesis (NVS) by alleviating the reliance on dense multi-view captures. However, existing methods typically fall into a conventional paradigm, where generative models first complete missing areas in 2D, followed by 3D recovery techniques to reconstruct the scene, which often results in overly smooth surfaces and distorted geometry, as generative models struggle to infer 3D structure solely from RGB data. In this paper, we propose SceneCompleter, a novel framework that achieves 3D-consistent generative novel view synthesis through dense 3D scene completion. SceneCompleter achieves both visual coherence and 3D-consistent generative scene completion through two key components: (1) a geometry-appearance dual-stream diffusion model that jointly synthesizes novel views in RGBD space; (2) a scene embedder that encodes a more holistic scene understanding from the reference image. By effectively fusing structural and textural information, our method demonstrates superior coherence and plausibility in generative novel view synthesis across diverse datasets. Project Page: https://chen-wl20.github.io/SceneCompleter",
-        "arxiv_id": "2506.10981",
-        "ARXIVID": "2506.10981",
-        "COMMENT": "",
+        "title": "CLIP Meets Diffusion: A Synergistic Approach to Anomaly Detection",
+        "abstract": "arXiv:2506.11772v1 Announce Type: new  Abstract: Anomaly detection is a complex problem due to the ambiguity in defining anomalies, the diversity of anomaly types (e.g., local and global defect), and the scarcity of training data. As such, it necessitates a comprehensive model capable of capturing both low-level and high-level features, even with limited data. To address this, we propose CLIPFUSION, a method that leverages both discriminative and generative foundation models. Specifically, the CLIP-based discriminative model excels at capturing global features, while the diffusion-based generative model effectively captures local details, creating a synergistic and complementary approach. Notably, we introduce a methodology for utilizing cross-attention maps and feature maps extracted from diffusion models specifically for anomaly detection. Experimental results on benchmark datasets (MVTec-AD, VisA) demonstrate that CLIPFUSION consistently outperforms baseline methods, achieving outstanding performance in both anomaly segmentation and classification. We believe that our method underscores the effectiveness of multi-modal and multi-model fusion in tackling the multifaceted challenges of anomaly detection, providing a scalable solution for real-world applications.",
+        "arxiv_id": "2506.11772",
+        "ARXIVID": "2506.11772",
+        "COMMENT": "Does not match any specific criteria.",
+        "RELEVANCE": 3,
+        "NOVELTY": 6
+    },
+    "2506.11764": {
+        "authors": [
+            "Muhammad Sarmad",
+            "Arnt-B{\\o}rre Salberg",
+            "Michael Kampffmeyer"
+        ],
+        "title": "DiffFuSR: Super-Resolution of all Sentinel-2 Multispectral Bands using Diffusion Models",
+        "abstract": "arXiv:2506.11764v1 Announce Type: new  Abstract: This paper presents DiffFuSR, a modular pipeline for super-resolving all 12 spectral bands of Sentinel-2 Level-2A imagery to a unified ground sampling distance (GSD) of 2.5 meters. The pipeline comprises two stages: (i) a diffusion-based super-resolution (SR) model trained on high-resolution RGB imagery from the NAIP and WorldStrat datasets, harmonized to simulate Sentinel-2 characteristics; and (ii) a learned fusion network that upscales the remaining multispectral bands using the super-resolved RGB image as a spatial prior. We introduce a robust degradation model and contrastive degradation encoder to support blind SR. Extensive evaluations of the proposed SR pipeline on the OpenSR benchmark demonstrate that the proposed method outperforms current SOTA baselines in terms of reflectance fidelity, spectral consistency, spatial alignment, and hallucination suppression. Furthermore, the fusion network significantly outperforms classical pansharpening approaches, enabling accurate enhancement of Sentinel-2's 20 m and 60 m bands. This study underscores the power of harmonized learning with generative priors and fusion strategies to create a modular framework for Sentinel-2 SR. Our code and models can be found at https://github.com/NorskRegnesentral/DiffFuSR.",
+        "arxiv_id": "2506.11764",
+        "ARXIVID": "2506.11764",
+        "COMMENT": "Does not match any specific criteria.",
         "RELEVANCE": 3,
         "NOVELTY": 5
     }
