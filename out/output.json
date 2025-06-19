@@ -1,45 +1,46 @@
 {
-    "2506.14686": {
+    "2506.15218": {
         "authors": [
-            "Xi Chen",
-            "Hengshuang Zhao"
+            "Dan He",
+            "Weisheng Li",
+            "Guofen Wang",
+            "Yuping Huang",
+            "Shiqiang Liu"
         ],
-        "title": "FocalClick-XL: Towards Unified and High-quality Interactive Segmentation",
-        "abstract": "arXiv:2506.14686v1 Announce Type: new  Abstract: Interactive segmentation enables users to extract binary masks of target objects through simple interactions such as clicks, scribbles, and boxes. However, existing methods often support only limited interaction forms and struggle to capture fine details. In this paper, we revisit the classical coarse-to-fine design of FocalClick and introduce significant extensions. Inspired by its multi-stage strategy, we propose a novel pipeline, FocalClick-XL, to address these challenges simultaneously. Following the emerging trend of large-scale pretraining, we decompose interactive segmentation into meta-tasks that capture different levels of information -- context, object, and detail -- assigning a dedicated subnet to each level.This decomposition allows each subnet to undergo scaled pretraining with independent data and supervision, maximizing its effectiveness. To enhance flexibility, we share context- and detail-level information across different interaction forms as common knowledge while introducing a prompting layer at the object level to encode specific interaction types. As a result, FocalClick-XL achieves state-of-the-art performance on click-based benchmarks and demonstrates remarkable adaptability to diverse interaction formats, including boxes, scribbles, and coarse masks. Beyond binary mask generation, it is also capable of predicting alpha mattes with fine-grained details, making it a versatile and powerful tool for interactive segmentation.",
-        "arxiv_id": "2506.14686",
-        "ARXIVID": "2506.14686",
-        "COMMENT": "Matches criteria 3 closely as it predicts alpha mattes with fine-grained details, which is relevant to image matting.",
+        "title": "DM-FNet: Unified multimodal medical image fusion via diffusion process-trained encoder-decoder",
+        "abstract": "arXiv:2506.15218v1 Announce Type: new  Abstract: Multimodal medical image fusion (MMIF) extracts the most meaningful information from multiple source images, enabling a more comprehensive and accurate diagnosis. Achieving high-quality fusion results requires a careful balance of brightness, color, contrast, and detail; this ensures that the fused images effectively display relevant anatomical structures and reflect the functional status of the tissues. However, existing MMIF methods have limited capacity to capture detailed features during conventional training and suffer from insufficient cross-modal feature interaction, leading to suboptimal fused image quality. To address these issues, this study proposes a two-stage diffusion model-based fusion network (DM-FNet) to achieve unified MMIF. In Stage I, a diffusion process trains UNet for image reconstruction. UNet captures detailed information through progressive denoising and represents multilevel data, providing a rich set of feature representations for the subsequent fusion network. In Stage II, noisy images at various steps are input into the fusion network to enhance the model's feature recognition capability. Three key fusion modules are also integrated to process medical images from different modalities adaptively. Ultimately, the robust network structure and a hybrid loss function are integrated to harmonize the fused image's brightness, color, contrast, and detail, enhancing its quality and information density. The experimental results across various medical image types demonstrate that the proposed method performs exceptionally well regarding objective evaluation metrics. The fused image preserves appropriate brightness, a comprehensive distribution of radioactive tracers, rich textures, and clear edges. The code is available at https://github.com/HeDan-11/DM-FNet.",
+        "arxiv_id": "2506.15218",
+        "ARXIVID": "2506.15218",
+        "COMMENT": "2",
         "RELEVANCE": 5,
         "NOVELTY": 6
     },
-    "2506.14322": {
+    "2506.15564": {
         "authors": [
-            "Avigail Cohen Rimon",
-            "Mirela Ben-Chen",
-            "Or Litany"
+            "Jinheng Xie",
+            "Zhenheng Yang",
+            "Mike Zheng Shou"
         ],
-        "title": "FRIDU: Functional Map Refinement with Guided Image Diffusion",
-        "abstract": "arXiv:2506.14322v1 Announce Type: new  Abstract: We propose a novel approach for refining a given correspondence map between two shapes. A correspondence map represented as a functional map, namely a change of basis matrix, can be additionally treated as a 2D image. With this perspective, we train an image diffusion model directly in the space of functional maps, enabling it to generate accurate maps conditioned on an inaccurate initial map. The training is done purely in the functional space, and thus is highly efficient. At inference time, we use the pointwise map corresponding to the current functional map as guidance during the diffusion process. The guidance can additionally encourage different functional map objectives, such as orthogonality and commutativity with the Laplace-Beltrami operator. We show that our approach is competitive with state-of-the-art methods of map refinement and that guided diffusion models provide a promising pathway to functional map processing.",
-        "arxiv_id": "2506.14322",
-        "ARXIVID": "2506.14322",
-        "COMMENT": "Does not match any specific criteria closely. Focuses on map refinement using diffusion models, but not in a multi-task or unified framework.",
+        "title": "Show-o2: Improved Native Unified Multimodal Models",
+        "abstract": "arXiv:2506.15564v1 Announce Type: new  Abstract: This paper presents improved native unified multimodal models, \\emph{i.e.,} Show-o2, that leverage autoregressive modeling and flow matching. Built upon a 3D causal variational autoencoder space, unified visual representations are constructed through a dual-path of spatial (-temporal) fusion, enabling scalability across image and video modalities while ensuring effective multimodal understanding and generation. Based on a language model, autoregressive modeling and flow matching are natively applied to the language head and flow head, respectively, to facilitate text token prediction and image/video generation. A two-stage training recipe is designed to effectively learn and scale to larger models. The resulting Show-o2 models demonstrate versatility in handling a wide range of multimodal understanding and generation tasks across diverse modalities, including text, images, and videos. Code and models are released at https://github.com/showlab/Show-o.",
+        "arxiv_id": "2506.15564",
+        "ARXIVID": "2506.15564",
+        "COMMENT": "",
         "RELEVANCE": 3,
-        "NOVELTY": 5
+        "NOVELTY": 6
     },
-    "2506.14399": {
+    "2506.15381": {
         "authors": [
-            "Tian Xia",
-            "Fabio De Sousa Ribeiro",
-            "Rajat R Rasal",
-            "Avinash Kori",
-            "Raghav Mehta",
-            "Ben Glocker"
+            "Yujin Kim",
+            "Hyunsoo Kim",
+            "Hyunwoo J. Kim",
+            "Suhyun Kim"
         ],
-        "title": "Decoupled Classifier-Free Guidance for Counterfactual Diffusion Models",
-        "abstract": "arXiv:2506.14399v1 Announce Type: new  Abstract: Counterfactual image generation aims to simulate realistic visual outcomes under specific causal interventions. Diffusion models have recently emerged as a powerful tool for this task, combining DDIM inversion with conditional generation via classifier-free guidance (CFG). However, standard CFG applies a single global weight across all conditioning variables, which can lead to poor identity preservation and spurious attribute changes - a phenomenon known as attribute amplification. To address this, we propose Decoupled Classifier-Free Guidance (DCFG), a flexible and model-agnostic framework that introduces group-wise conditioning control. DCFG builds on an attribute-split embedding strategy that disentangles semantic inputs, enabling selective guidance on user-defined attribute groups. For counterfactual generation, we partition attributes into intervened and invariant sets based on a causal graph and apply distinct guidance to each. Experiments on CelebA-HQ, MIMIC-CXR, and EMBED show that DCFG improves intervention fidelity, mitigates unintended changes, and enhances reversibility, enabling more faithful and interpretable counterfactual image generation.",
-        "arxiv_id": "2506.14399",
-        "ARXIVID": "2506.14399",
-        "COMMENT": "Does not match any specific criteria closely. Focuses on counterfactual image generation with diffusion models, but not in a multi-task or unified framework.",
+        "title": "When Model Knowledge meets Diffusion Model: Diffusion-assisted Data-free Image Synthesis with Alignment of Domain and Class",
+        "abstract": "arXiv:2506.15381v1 Announce Type: new  Abstract: Open-source pre-trained models hold great potential for diverse applications, but their utility declines when their training data is unavailable. Data-Free Image Synthesis (DFIS) aims to generate images that approximate the learned data distribution of a pre-trained model without accessing the original data. However, existing DFIS meth ods produce samples that deviate from the training data distribution due to the lack of prior knowl edge about natural images. To overcome this limitation, we propose DDIS, the first Diffusion-assisted Data-free Image Synthesis method that leverages a text-to-image diffusion model as a powerful image prior, improving synthetic image quality. DDIS extracts knowledge about the learned distribution from the given model and uses it to guide the diffusion model, enabling the generation of images that accurately align with the training data distribution. To achieve this, we introduce Domain Alignment Guidance (DAG) that aligns the synthetic data domain with the training data domain during the diffusion sampling process. Furthermore, we optimize a single Class Alignment Token (CAT) embedding to effectively capture class-specific attributes in the training dataset. Experiments on PACS and Ima geNet demonstrate that DDIS outperforms prior DFIS methods by generating samples that better reflect the training data distribution, achieving SOTA performance in data-free applications.",
+        "arxiv_id": "2506.15381",
+        "ARXIVID": "2506.15381",
+        "COMMENT": "",
         "RELEVANCE": 3,
         "NOVELTY": 5
     }
