@@ -1,47 +1,126 @@
 {
-    "2506.15218": {
+    "2506.16806": {
         "authors": [
-            "Dan He",
-            "Weisheng Li",
-            "Guofen Wang",
-            "Yuping Huang",
-            "Shiqiang Liu"
+            "Fan Yang",
+            "Yousong Zhu",
+            "Xin Li",
+            "Yufei Zhan",
+            "Hongyin Zhao",
+            "Shurong Zheng",
+            "Yaowei Wang",
+            "Ming Tang",
+            "Jinqiao Wang"
         ],
-        "title": "DM-FNet: Unified multimodal medical image fusion via diffusion process-trained encoder-decoder",
-        "abstract": "arXiv:2506.15218v1 Announce Type: new  Abstract: Multimodal medical image fusion (MMIF) extracts the most meaningful information from multiple source images, enabling a more comprehensive and accurate diagnosis. Achieving high-quality fusion results requires a careful balance of brightness, color, contrast, and detail; this ensures that the fused images effectively display relevant anatomical structures and reflect the functional status of the tissues. However, existing MMIF methods have limited capacity to capture detailed features during conventional training and suffer from insufficient cross-modal feature interaction, leading to suboptimal fused image quality. To address these issues, this study proposes a two-stage diffusion model-based fusion network (DM-FNet) to achieve unified MMIF. In Stage I, a diffusion process trains UNet for image reconstruction. UNet captures detailed information through progressive denoising and represents multilevel data, providing a rich set of feature representations for the subsequent fusion network. In Stage II, noisy images at various steps are input into the fusion network to enhance the model's feature recognition capability. Three key fusion modules are also integrated to process medical images from different modalities adaptively. Ultimately, the robust network structure and a hybrid loss function are integrated to harmonize the fused image's brightness, color, contrast, and detail, enhancing its quality and information density. The experimental results across various medical image types demonstrate that the proposed method performs exceptionally well regarding objective evaluation metrics. The fused image preserves appropriate brightness, a comprehensive distribution of radioactive tracers, rich textures, and clear edges. The code is available at https://github.com/HeDan-11/DM-FNet.",
-        "arxiv_id": "2506.15218",
-        "ARXIVID": "2506.15218",
-        "COMMENT": "2",
-        "RELEVANCE": 5,
-        "NOVELTY": 6
+        "title": "FOCUS: Unified Vision-Language Modeling for Interactive Editing Driven by Referential Segmentation",
+        "abstract": "arXiv:2506.16806v1 Announce Type: new  Abstract: Recent Large Vision Language Models (LVLMs) demonstrate promising capabilities in unifying visual understanding and generative modeling, enabling both accurate content understanding and flexible editing. However, current approaches treat \"what to see\" and \"how to edit\" separately: they either perform isolated object segmentation or utilize segmentation masks merely as conditional prompts for local edit generation tasks, often relying on multiple disjointed models. To bridge these gaps, we introduce FOCUS, a unified LVLM that integrates segmentation-aware perception and controllable object-centric generation within an end-to-end framework. FOCUS employs a dual-branch visual encoder to simultaneously capture global semantic context and fine-grained spatial details. In addition, we leverage a MoVQGAN-based visual tokenizer to produce discrete visual tokens that enhance generation quality. To enable accurate and controllable image editing, we propose a progressive multi-stage training pipeline, where segmentation masks are jointly optimized and used as spatial condition prompts to guide the diffusion decoder. This strategy aligns visual encoding, segmentation, and generation modules, effectively bridging segmentation-aware perception with fine-grained visual synthesis. Extensive experiments across three core tasks, including multimodal understanding, referring segmentation accuracy, and controllable image generation, demonstrate that FOCUS achieves strong performance by jointly optimizing visual perception and generative capabilities.",
+        "arxiv_id": "2506.16806",
+        "ARXIVID": "2506.16806",
+        "COMMENT": "Matches criterion 1 closely with a unified framework for segmentation-aware perception and generation.",
+        "RELEVANCE": 10,
+        "NOVELTY": 7
     },
-    "2506.15564": {
+    "2506.17202": {
         "authors": [
-            "Jinheng Xie",
-            "Zhenheng Yang",
-            "Mike Zheng Shou"
+            "Teng Li",
+            "Quanfeng Lu",
+            "Lirui Zhao",
+            "Hao Li",
+            "Xizhou Zhu",
+            "Yu Qiao",
+            "Jun Zhang",
+            "Wenqi Shao"
         ],
-        "title": "Show-o2: Improved Native Unified Multimodal Models",
-        "abstract": "arXiv:2506.15564v1 Announce Type: new  Abstract: This paper presents improved native unified multimodal models, \\emph{i.e.,} Show-o2, that leverage autoregressive modeling and flow matching. Built upon a 3D causal variational autoencoder space, unified visual representations are constructed through a dual-path of spatial (-temporal) fusion, enabling scalability across image and video modalities while ensuring effective multimodal understanding and generation. Based on a language model, autoregressive modeling and flow matching are natively applied to the language head and flow head, respectively, to facilitate text token prediction and image/video generation. A two-stage training recipe is designed to effectively learn and scale to larger models. The resulting Show-o2 models demonstrate versatility in handling a wide range of multimodal understanding and generation tasks across diverse modalities, including text, images, and videos. Code and models are released at https://github.com/showlab/Show-o.",
-        "arxiv_id": "2506.15564",
-        "ARXIVID": "2506.15564",
-        "COMMENT": "",
+        "title": "UniFork: Exploring Modality Alignment for Unified Multimodal Understanding and Generation",
+        "abstract": "arXiv:2506.17202v1 Announce Type: new  Abstract: Unified image understanding and generation has emerged as a promising paradigm in multimodal artificial intelligence. Despite recent progress, the optimal architectural design for such unified models remains an open challenge. In this work, we start by analyzing the modality alignment behaviors of task-specific expert models for understanding and generation, as well as current unified models. Our analysis reveals a crucial observation: understanding tasks benefit from a progressively increasing modality alignment across network depth, which helps build up semantic information for better comprehension; In contrast, generation tasks follow a different trend: modality alignment increases in the early layers but decreases in the deep layers to recover spatial details. These divergent alignment patterns create a fundamental conflict in fully shared Transformer backbones, where a uniform representational flow often leads to performance compromises across two tasks. Motivated by this finding, we introduce UniFork, a novel Y-shaped architecture that shares the shallow layers for cross-task representation learning, while employing task-specific branches in deeper layers to avoid task interference. This design effectively balances shared learning and task specialization. Through extensive ablation experiments, we demonstrate that Unifork consistently outperforms conventional fully shared Transformer architectures, and achieves performance on par with or better than task-specific models.",
+        "arxiv_id": "2506.17202",
+        "ARXIVID": "2506.17202",
+        "COMMENT": "No criteria match closely.",
         "RELEVANCE": 3,
         "NOVELTY": 6
     },
-    "2506.15381": {
+    "2506.16742": {
         "authors": [
-            "Yujin Kim",
-            "Hyunsoo Kim",
-            "Hyunwoo J. Kim",
-            "Suhyun Kim"
+            "Md Nahiduzzaman",
+            "Ruwan Tennakoon",
+            "Steven Korevaar",
+            "Zongyuan Ge",
+            "Alireza Bab-Hadiashar"
         ],
-        "title": "When Model Knowledge meets Diffusion Model: Diffusion-assisted Data-free Image Synthesis with Alignment of Domain and Class",
-        "abstract": "arXiv:2506.15381v1 Announce Type: new  Abstract: Open-source pre-trained models hold great potential for diverse applications, but their utility declines when their training data is unavailable. Data-Free Image Synthesis (DFIS) aims to generate images that approximate the learned data distribution of a pre-trained model without accessing the original data. However, existing DFIS meth ods produce samples that deviate from the training data distribution due to the lack of prior knowl edge about natural images. To overcome this limitation, we propose DDIS, the first Diffusion-assisted Data-free Image Synthesis method that leverages a text-to-image diffusion model as a powerful image prior, improving synthetic image quality. DDIS extracts knowledge about the learned distribution from the given model and uses it to guide the diffusion model, enabling the generation of images that accurately align with the training data distribution. To achieve this, we introduce Domain Alignment Guidance (DAG) that aligns the synthetic data domain with the training data domain during the diffusion sampling process. Furthermore, we optimize a single Class Alignment Token (CAT) embedding to effectively capture class-specific attributes in the training dataset. Experiments on PACS and Ima geNet demonstrate that DDIS outperforms prior DFIS methods by generating samples that better reflect the training data distribution, achieving SOTA performance in data-free applications.",
-        "arxiv_id": "2506.15381",
-        "ARXIVID": "2506.15381",
-        "COMMENT": "",
+        "title": "Uncertainty-Aware Variational Information Pursuit for Interpretable Medical Image Analysis",
+        "abstract": "arXiv:2506.16742v1 Announce Type: new  Abstract: In medical imaging, AI decision-support systems must balance accuracy and interpretability to build user trust and support effective clinical decision-making. Recently, Variational Information Pursuit (V-IP) and its variants have emerged as interpretable-by-design modeling techniques, aiming to explain AI decisions in terms of human-understandable, clinically relevant concepts. However, existing V-IP methods overlook instance-level uncertainties in query-answer generation, which can arise from model limitations (epistemic uncertainty) or variability in expert responses (aleatoric uncertainty).   This paper introduces Uncertainty-Aware V-IP (UAV-IP), a novel framework that integrates uncertainty quantification into the V-IP process. We evaluate UAV-IP across four medical imaging datasets, PH2, Derm7pt, BrEaST, and SkinCon, demonstrating an average AUC improvement of approximately 3.2% while generating 20% more concise explanations compared to baseline V-IP, without sacrificing informativeness. These findings highlight the importance of uncertainty-aware reasoning in interpretable by design models for robust and reliable medical decision-making.",
+        "arxiv_id": "2506.16742",
+        "ARXIVID": "2506.16742",
+        "COMMENT": "No criteria match closely.",
         "RELEVANCE": 3,
         "NOVELTY": 5
+    },
+    "2506.16398": {
+        "authors": [
+            "Peixiang Huang",
+            "Yanyan Huang",
+            "Weiqin Zhao",
+            "Junjun He",
+            "Lequan Yu"
+        ],
+        "title": "HyperPath: Knowledge-Guided Hyperbolic Semantic Hierarchy Modeling for WSI Analysis",
+        "abstract": "arXiv:2506.16398v1 Announce Type: new  Abstract: Pathology is essential for cancer diagnosis, with multiple instance learning (MIL) widely used for whole slide image (WSI) analysis. WSIs exhibit a natural hierarchy -- patches, regions, and slides -- with distinct semantic associations. While some methods attempt to leverage this hierarchy for improved representation, they predominantly rely on Euclidean embeddings, which struggle to fully capture semantic hierarchies. To address this limitation, we propose HyperPath, a novel method that integrates knowledge from textual descriptions to guide the modeling of semantic hierarchies of WSIs in hyperbolic space, thereby enhancing WSI classification. Our approach adapts both visual and textual features extracted by pathology vision-language foundation models to the hyperbolic space. We design an Angular Modality Alignment Loss to ensure robust cross-modal alignment, while a Semantic Hierarchy Consistency Loss further refines feature hierarchies through entailment and contradiction relationships and thus enhance semantic coherence. The classification is performed with geodesic distance, which measures the similarity between entities in the hyperbolic semantic hierarchy. This eliminates the need for linear classifiers and enables a geometry-aware approach to WSI analysis. Extensive experiments show that our method achieves superior performance across tasks compared to existing methods, highlighting the potential of hyperbolic embeddings for WSI analysis.",
+        "arxiv_id": "2506.16398",
+        "ARXIVID": "2506.16398",
+        "COMMENT": "No criteria match closely.",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2506.16991": {
+        "authors": [
+            "Binbin Xiang",
+            "Maciej Wielgosz",
+            "Stefano Puliti",
+            "Kamil Kr\\'al",
+            "Martin Kr\\r{u}\\v{c}ek",
+            "Azim Missarov",
+            "Rasmus Astrup"
+        ],
+        "title": "ForestFormer3D: A Unified Framework for End-to-End Segmentation of Forest LiDAR 3D Point Clouds",
+        "abstract": "arXiv:2506.16991v1 Announce Type: new  Abstract: The segmentation of forest LiDAR 3D point clouds, including both individual tree and semantic segmentation, is fundamental for advancing forest management and ecological research. However, current approaches often struggle with the complexity and variability of natural forest environments. We present ForestFormer3D, a new unified and end-to-end framework designed for precise individual tree and semantic segmentation. ForestFormer3D incorporates ISA-guided query point selection, a score-based block merging strategy during inference, and a one-to-many association mechanism for effective training. By combining these new components, our model achieves state-of-the-art performance for individual tree segmentation on the newly introduced FOR-instanceV2 dataset, which spans diverse forest types and regions. Additionally, ForestFormer3D generalizes well to unseen test sets (Wytham woods and LAUTx), showcasing its robustness across different forest conditions and sensor modalities. The FOR-instanceV2 dataset and the ForestFormer3D code will be released soon.",
+        "arxiv_id": "2506.16991",
+        "ARXIVID": "2506.16991",
+        "COMMENT": "No criteria match closely.",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2506.16960": {
+        "authors": [
+            "Wenyang Luo",
+            "Haina Qin",
+            "Zewen Chen",
+            "Libin Wang",
+            "Dandan Zheng",
+            "Yuming Li",
+            "Yufan Liu",
+            "Bing Li",
+            "Weiming Hu"
+        ],
+        "title": "Visual-Instructed Degradation Diffusion for All-in-One Image Restoration",
+        "abstract": "arXiv:2506.16960v1 Announce Type: new  Abstract: Image restoration tasks like deblurring, denoising, and dehazing usually need distinct models for each degradation type, restricting their generalization in real-world scenarios with mixed or unknown degradations. In this work, we propose \\textbf{Defusion}, a novel all-in-one image restoration framework that utilizes visual instruction-guided degradation diffusion. Unlike existing methods that rely on task-specific models or ambiguous text-based priors, Defusion constructs explicit \\textbf{visual instructions} that align with the visual degradation patterns. These instructions are grounded by applying degradations to standardized visual elements, capturing intrinsic degradation features while agnostic to image semantics. Defusion then uses these visual instructions to guide a diffusion-based model that operates directly in the degradation space, where it reconstructs high-quality images by denoising the degradation effects with enhanced stability and generalizability. Comprehensive experiments demonstrate that Defusion outperforms state-of-the-art methods across diverse image restoration tasks, including complex and real-world degradations.",
+        "arxiv_id": "2506.16960",
+        "ARXIVID": "2506.16960",
+        "COMMENT": "No criteria match closely.",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2506.17159": {
+        "authors": [
+            "Qing Xu",
+            "Yuxiang Luo",
+            "Wenting Duan",
+            "Zhen Chen"
+        ],
+        "title": "Co-Seg++: Mutual Prompt-Guided Collaborative Learning for Versatile Medical Segmentation",
+        "abstract": "arXiv:2506.17159v1 Announce Type: new  Abstract: Medical image analysis is critical yet challenged by the need of jointly segmenting organs or tissues, and numerous instances for anatomical structures and tumor microenvironment analysis. Existing studies typically formulated different segmentation tasks in isolation, which overlooks the fundamental interdependencies between these tasks, leading to suboptimal segmentation performance and insufficient medical image understanding. To address this issue, we propose a Co-Seg++ framework for versatile medical segmentation. Specifically, we introduce a novel co-segmentation paradigm, allowing semantic and instance segmentation tasks to mutually enhance each other. We first devise a spatio-temporal prompt encoder (STP-Encoder) to capture long-range spatial and temporal relationships between segmentation regions and image embeddings as prior spatial constraints. Moreover, we devise a multi-task collaborative decoder (MTC-Decoder) that leverages cross-guidance to strengthen the contextual consistency of both tasks, jointly computing semantic and instance segmentation masks. Extensive experiments on diverse CT and histopathology datasets demonstrate that the proposed Co-Seg++ outperforms state-of-the-arts in the semantic, instance, and panoptic segmentation of dental anatomical structures, histopathology tissues, and nuclei instances. The source code is available at https://github.com/xq141839/Co-Seg-Plus.",
+        "arxiv_id": "2506.17159",
+        "ARXIVID": "2506.17159",
+        "COMMENT": "No criteria match closely.",
+        "RELEVANCE": 3,
+        "NOVELTY": 4
     }
 }
