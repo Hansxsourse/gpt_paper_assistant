@@ -1,126 +1,57 @@
 {
-    "2506.16806": {
+    "2506.18164": {
         "authors": [
-            "Fan Yang",
-            "Yousong Zhu",
-            "Xin Li",
-            "Yufei Zhan",
-            "Hongyin Zhao",
-            "Shurong Zheng",
-            "Yaowei Wang",
-            "Ming Tang",
-            "Jinqiao Wang"
+            "Varun Belagali",
+            "Pierre Marza",
+            "Srikar Yellapragada",
+            "Zilinghan Li",
+            "Tarak Nath Nandi",
+            "Ravi K Madduri",
+            "Joel Saltz",
+            "Stergios Christodoulidis",
+            "Maria Vakalopoulou",
+            "Dimitris Samaras"
         ],
-        "title": "FOCUS: Unified Vision-Language Modeling for Interactive Editing Driven by Referential Segmentation",
-        "abstract": "arXiv:2506.16806v1 Announce Type: new  Abstract: Recent Large Vision Language Models (LVLMs) demonstrate promising capabilities in unifying visual understanding and generative modeling, enabling both accurate content understanding and flexible editing. However, current approaches treat \"what to see\" and \"how to edit\" separately: they either perform isolated object segmentation or utilize segmentation masks merely as conditional prompts for local edit generation tasks, often relying on multiple disjointed models. To bridge these gaps, we introduce FOCUS, a unified LVLM that integrates segmentation-aware perception and controllable object-centric generation within an end-to-end framework. FOCUS employs a dual-branch visual encoder to simultaneously capture global semantic context and fine-grained spatial details. In addition, we leverage a MoVQGAN-based visual tokenizer to produce discrete visual tokens that enhance generation quality. To enable accurate and controllable image editing, we propose a progressive multi-stage training pipeline, where segmentation masks are jointly optimized and used as spatial condition prompts to guide the diffusion decoder. This strategy aligns visual encoding, segmentation, and generation modules, effectively bridging segmentation-aware perception with fine-grained visual synthesis. Extensive experiments across three core tasks, including multimodal understanding, referring segmentation accuracy, and controllable image generation, demonstrate that FOCUS achieves strong performance by jointly optimizing visual perception and generative capabilities.",
-        "arxiv_id": "2506.16806",
-        "ARXIVID": "2506.16806",
-        "COMMENT": "Matches criterion 1 closely with a unified framework for segmentation-aware perception and generation.",
-        "RELEVANCE": 10,
-        "NOVELTY": 7
+        "title": "CDG-MAE: Learning Correspondences from Diffusion Generated Views",
+        "abstract": "arXiv:2506.18164v1 Announce Type: new  Abstract: Learning dense correspondences, critical for application such as video label propagation, is hindered by tedious and unscalable manual annotation. Self-supervised methods address this by using a cross-view pretext task, often modeled with a masked autoencoder, where a masked target view is reconstructed from an anchor view. However, acquiring effective training data remains a challenge - collecting diverse video datasets is difficult and costly, while simple image crops lack necessary pose variations. This paper introduces CDG-MAE, a novel MAE-based self-supervised method that uses diverse synthetic views generated from static images via an image-conditioned diffusion model. These generated views exhibit substantial changes in pose and perspective, providing a rich training signal that overcomes the limitations of video and crop-based anchors. We present a quantitative method to evaluate local and global consistency of generated images, discussing their use for cross-view self-supervised pretraining. Furthermore, we enhance the standard single-anchor MAE setting to a multi-anchor strategy to effectively modulate the difficulty of pretext task. CDG-MAE significantly outperforms state-of-the-art MAE methods reliant only on images and substantially narrows the performance gap to video-based approaches.",
+        "arxiv_id": "2506.18164",
+        "ARXIVID": "2506.18164",
+        "COMMENT": "Matches criteria 2 closely as it discusses a diffusion model handling multiple vision tasks.",
+        "RELEVANCE": 5,
+        "NOVELTY": 6
     },
-    "2506.17202": {
+    "2506.18898": {
         "authors": [
-            "Teng Li",
-            "Quanfeng Lu",
-            "Lirui Zhao",
-            "Hao Li",
-            "Xizhou Zhu",
-            "Yu Qiao",
-            "Jun Zhang",
-            "Wenqi Shao"
+            "Jiaming Han",
+            "Hao Chen",
+            "Yang Zhao",
+            "Hanyu Wang",
+            "Qi Zhao",
+            "Ziyan Yang",
+            "Hao He",
+            "Xiangyu Yue",
+            "Lu Jiang"
         ],
-        "title": "UniFork: Exploring Modality Alignment for Unified Multimodal Understanding and Generation",
-        "abstract": "arXiv:2506.17202v1 Announce Type: new  Abstract: Unified image understanding and generation has emerged as a promising paradigm in multimodal artificial intelligence. Despite recent progress, the optimal architectural design for such unified models remains an open challenge. In this work, we start by analyzing the modality alignment behaviors of task-specific expert models for understanding and generation, as well as current unified models. Our analysis reveals a crucial observation: understanding tasks benefit from a progressively increasing modality alignment across network depth, which helps build up semantic information for better comprehension; In contrast, generation tasks follow a different trend: modality alignment increases in the early layers but decreases in the deep layers to recover spatial details. These divergent alignment patterns create a fundamental conflict in fully shared Transformer backbones, where a uniform representational flow often leads to performance compromises across two tasks. Motivated by this finding, we introduce UniFork, a novel Y-shaped architecture that shares the shallow layers for cross-task representation learning, while employing task-specific branches in deeper layers to avoid task interference. This design effectively balances shared learning and task specialization. Through extensive ablation experiments, we demonstrate that Unifork consistently outperforms conventional fully shared Transformer architectures, and achieves performance on par with or better than task-specific models.",
-        "arxiv_id": "2506.17202",
-        "ARXIVID": "2506.17202",
-        "COMMENT": "No criteria match closely.",
+        "title": "Vision as a Dialect: Unifying Visual Understanding and Generation via Text-Aligned Representations",
+        "abstract": "arXiv:2506.18898v1 Announce Type: new  Abstract: This paper presents a multimodal framework that attempts to unify visual understanding and generation within a shared discrete semantic representation. At its core is the Text-Aligned Tokenizer (TA-Tok), which converts images into discrete tokens using a text-aligned codebook projected from a large language model's (LLM) vocabulary. By integrating vision and text into a unified space with an expanded vocabulary, our multimodal LLM, Tar, enables cross-modal input and output through a shared interface, without the need for modality-specific designs. Additionally, we propose scale-adaptive encoding and decoding to balance efficiency and visual detail, along with a generative de-tokenizer to produce high-fidelity visual outputs. To address diverse decoding needs, we utilize two complementary de-tokenizers: a fast autoregressive model and a diffusion-based model. To enhance modality fusion, we investigate advanced pre-training tasks, demonstrating improvements in both visual understanding and generation. Experiments across benchmarks show that Tar matches or surpasses existing multimodal LLM methods, achieving faster convergence and greater training efficiency. Code, models, and data are available at https://tar.csuhan.com",
+        "arxiv_id": "2506.18898",
+        "ARXIVID": "2506.18898",
+        "COMMENT": "",
         "RELEVANCE": 3,
         "NOVELTY": 6
     },
-    "2506.16742": {
+    "2506.17837": {
         "authors": [
-            "Md Nahiduzzaman",
-            "Ruwan Tennakoon",
-            "Steven Korevaar",
-            "Zongyuan Ge",
-            "Alireza Bab-Hadiashar"
+            "Assefa Wahd",
+            "Jacob Jaremko",
+            "Abhilash Hareendranathan"
         ],
-        "title": "Uncertainty-Aware Variational Information Pursuit for Interpretable Medical Image Analysis",
-        "abstract": "arXiv:2506.16742v1 Announce Type: new  Abstract: In medical imaging, AI decision-support systems must balance accuracy and interpretability to build user trust and support effective clinical decision-making. Recently, Variational Information Pursuit (V-IP) and its variants have emerged as interpretable-by-design modeling techniques, aiming to explain AI decisions in terms of human-understandable, clinically relevant concepts. However, existing V-IP methods overlook instance-level uncertainties in query-answer generation, which can arise from model limitations (epistemic uncertainty) or variability in expert responses (aleatoric uncertainty).   This paper introduces Uncertainty-Aware V-IP (UAV-IP), a novel framework that integrates uncertainty quantification into the V-IP process. We evaluate UAV-IP across four medical imaging datasets, PH2, Derm7pt, BrEaST, and SkinCon, demonstrating an average AUC improvement of approximately 3.2% while generating 20% more concise explanations compared to baseline V-IP, without sacrificing informativeness. These findings highlight the importance of uncertainty-aware reasoning in interpretable by design models for robust and reliable medical decision-making.",
-        "arxiv_id": "2506.16742",
-        "ARXIVID": "2506.16742",
-        "COMMENT": "No criteria match closely.",
+        "title": "Time-Contrastive Pretraining for In-Context Image and Video Segmentation",
+        "abstract": "arXiv:2506.17837v1 Announce Type: new  Abstract: In-context learning (ICL) enables generalization to new tasks with minimal labeled data. However, mainstream ICL approaches rely on a gridding strategy, which lacks the flexibility required for vision applications. We introduce Temporal, a time-contrastive self-supervised objective that pretrains a prompt retriever for visual ICL, and formulate ICL as a video object segmentation (VOS) task. Temporal addresses key limitations of grid-based methods that restrict the number and resolution of context images. By reframing ICL as a VOS problem, our approach supports a variable number of context images while preserving their full resolution. To address the challenge of selecting optimal context sets for queries, we pretrain a prompt retriever on videos via self-supervised learning, where adjacent frames serve as positives and distant frames as negatives. For image segmentation, the prompt retriever selects relevant sequences that, when combined with the query, form coherent videos for VOS processing. For video segmentation, it identifies keyframes, predicts their masks using our ICL pipeline, and propagates them throughout the sequence. When evaluated on MICCAI FLARE 2022, our method achieves substantial improvements over baselines: 90.95% Dice score for image segmentation (10.64% improvement) and 92.45% Dice for video segmentation (14.88% improvement).",
+        "arxiv_id": "2506.17837",
+        "ARXIVID": "2506.17837",
+        "COMMENT": "",
         "RELEVANCE": 3,
         "NOVELTY": 5
-    },
-    "2506.16398": {
-        "authors": [
-            "Peixiang Huang",
-            "Yanyan Huang",
-            "Weiqin Zhao",
-            "Junjun He",
-            "Lequan Yu"
-        ],
-        "title": "HyperPath: Knowledge-Guided Hyperbolic Semantic Hierarchy Modeling for WSI Analysis",
-        "abstract": "arXiv:2506.16398v1 Announce Type: new  Abstract: Pathology is essential for cancer diagnosis, with multiple instance learning (MIL) widely used for whole slide image (WSI) analysis. WSIs exhibit a natural hierarchy -- patches, regions, and slides -- with distinct semantic associations. While some methods attempt to leverage this hierarchy for improved representation, they predominantly rely on Euclidean embeddings, which struggle to fully capture semantic hierarchies. To address this limitation, we propose HyperPath, a novel method that integrates knowledge from textual descriptions to guide the modeling of semantic hierarchies of WSIs in hyperbolic space, thereby enhancing WSI classification. Our approach adapts both visual and textual features extracted by pathology vision-language foundation models to the hyperbolic space. We design an Angular Modality Alignment Loss to ensure robust cross-modal alignment, while a Semantic Hierarchy Consistency Loss further refines feature hierarchies through entailment and contradiction relationships and thus enhance semantic coherence. The classification is performed with geodesic distance, which measures the similarity between entities in the hyperbolic semantic hierarchy. This eliminates the need for linear classifiers and enables a geometry-aware approach to WSI analysis. Extensive experiments show that our method achieves superior performance across tasks compared to existing methods, highlighting the potential of hyperbolic embeddings for WSI analysis.",
-        "arxiv_id": "2506.16398",
-        "ARXIVID": "2506.16398",
-        "COMMENT": "No criteria match closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2506.16991": {
-        "authors": [
-            "Binbin Xiang",
-            "Maciej Wielgosz",
-            "Stefano Puliti",
-            "Kamil Kr\\'al",
-            "Martin Kr\\r{u}\\v{c}ek",
-            "Azim Missarov",
-            "Rasmus Astrup"
-        ],
-        "title": "ForestFormer3D: A Unified Framework for End-to-End Segmentation of Forest LiDAR 3D Point Clouds",
-        "abstract": "arXiv:2506.16991v1 Announce Type: new  Abstract: The segmentation of forest LiDAR 3D point clouds, including both individual tree and semantic segmentation, is fundamental for advancing forest management and ecological research. However, current approaches often struggle with the complexity and variability of natural forest environments. We present ForestFormer3D, a new unified and end-to-end framework designed for precise individual tree and semantic segmentation. ForestFormer3D incorporates ISA-guided query point selection, a score-based block merging strategy during inference, and a one-to-many association mechanism for effective training. By combining these new components, our model achieves state-of-the-art performance for individual tree segmentation on the newly introduced FOR-instanceV2 dataset, which spans diverse forest types and regions. Additionally, ForestFormer3D generalizes well to unseen test sets (Wytham woods and LAUTx), showcasing its robustness across different forest conditions and sensor modalities. The FOR-instanceV2 dataset and the ForestFormer3D code will be released soon.",
-        "arxiv_id": "2506.16991",
-        "ARXIVID": "2506.16991",
-        "COMMENT": "No criteria match closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2506.16960": {
-        "authors": [
-            "Wenyang Luo",
-            "Haina Qin",
-            "Zewen Chen",
-            "Libin Wang",
-            "Dandan Zheng",
-            "Yuming Li",
-            "Yufan Liu",
-            "Bing Li",
-            "Weiming Hu"
-        ],
-        "title": "Visual-Instructed Degradation Diffusion for All-in-One Image Restoration",
-        "abstract": "arXiv:2506.16960v1 Announce Type: new  Abstract: Image restoration tasks like deblurring, denoising, and dehazing usually need distinct models for each degradation type, restricting their generalization in real-world scenarios with mixed or unknown degradations. In this work, we propose \\textbf{Defusion}, a novel all-in-one image restoration framework that utilizes visual instruction-guided degradation diffusion. Unlike existing methods that rely on task-specific models or ambiguous text-based priors, Defusion constructs explicit \\textbf{visual instructions} that align with the visual degradation patterns. These instructions are grounded by applying degradations to standardized visual elements, capturing intrinsic degradation features while agnostic to image semantics. Defusion then uses these visual instructions to guide a diffusion-based model that operates directly in the degradation space, where it reconstructs high-quality images by denoising the degradation effects with enhanced stability and generalizability. Comprehensive experiments demonstrate that Defusion outperforms state-of-the-art methods across diverse image restoration tasks, including complex and real-world degradations.",
-        "arxiv_id": "2506.16960",
-        "ARXIVID": "2506.16960",
-        "COMMENT": "No criteria match closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2506.17159": {
-        "authors": [
-            "Qing Xu",
-            "Yuxiang Luo",
-            "Wenting Duan",
-            "Zhen Chen"
-        ],
-        "title": "Co-Seg++: Mutual Prompt-Guided Collaborative Learning for Versatile Medical Segmentation",
-        "abstract": "arXiv:2506.17159v1 Announce Type: new  Abstract: Medical image analysis is critical yet challenged by the need of jointly segmenting organs or tissues, and numerous instances for anatomical structures and tumor microenvironment analysis. Existing studies typically formulated different segmentation tasks in isolation, which overlooks the fundamental interdependencies between these tasks, leading to suboptimal segmentation performance and insufficient medical image understanding. To address this issue, we propose a Co-Seg++ framework for versatile medical segmentation. Specifically, we introduce a novel co-segmentation paradigm, allowing semantic and instance segmentation tasks to mutually enhance each other. We first devise a spatio-temporal prompt encoder (STP-Encoder) to capture long-range spatial and temporal relationships between segmentation regions and image embeddings as prior spatial constraints. Moreover, we devise a multi-task collaborative decoder (MTC-Decoder) that leverages cross-guidance to strengthen the contextual consistency of both tasks, jointly computing semantic and instance segmentation masks. Extensive experiments on diverse CT and histopathology datasets demonstrate that the proposed Co-Seg++ outperforms state-of-the-arts in the semantic, instance, and panoptic segmentation of dental anatomical structures, histopathology tissues, and nuclei instances. The source code is available at https://github.com/xq141839/Co-Seg-Plus.",
-        "arxiv_id": "2506.17159",
-        "ARXIVID": "2506.17159",
-        "COMMENT": "No criteria match closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 4
     }
 }
