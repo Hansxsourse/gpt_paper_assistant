@@ -1,57 +1,19 @@
 {
-    "2506.18164": {
+    "2506.18999": {
         "authors": [
-            "Varun Belagali",
-            "Pierre Marza",
-            "Srikar Yellapragada",
-            "Zilinghan Li",
-            "Tarak Nath Nandi",
-            "Ravi K Madduri",
-            "Joel Saltz",
-            "Stergios Christodoulidis",
-            "Maria Vakalopoulou",
-            "Dimitris Samaras"
+            "Yuan Yao",
+            "Yicong Hong",
+            "Difan Liu",
+            "Long Mai",
+            "Feng Liu",
+            "Jiebo Luo"
         ],
-        "title": "CDG-MAE: Learning Correspondences from Diffusion Generated Views",
-        "abstract": "arXiv:2506.18164v1 Announce Type: new  Abstract: Learning dense correspondences, critical for application such as video label propagation, is hindered by tedious and unscalable manual annotation. Self-supervised methods address this by using a cross-view pretext task, often modeled with a masked autoencoder, where a masked target view is reconstructed from an anchor view. However, acquiring effective training data remains a challenge - collecting diverse video datasets is difficult and costly, while simple image crops lack necessary pose variations. This paper introduces CDG-MAE, a novel MAE-based self-supervised method that uses diverse synthetic views generated from static images via an image-conditioned diffusion model. These generated views exhibit substantial changes in pose and perspective, providing a rich training signal that overcomes the limitations of video and crop-based anchors. We present a quantitative method to evaluate local and global consistency of generated images, discussing their use for cross-view self-supervised pretraining. Furthermore, we enhance the standard single-anchor MAE setting to a multi-anchor strategy to effectively modulate the difficulty of pretext task. CDG-MAE significantly outperforms state-of-the-art MAE methods reliant only on images and substantially narrows the performance gap to video-based approaches.",
-        "arxiv_id": "2506.18164",
-        "ARXIVID": "2506.18164",
-        "COMMENT": "Matches criteria 2 closely as it discusses a diffusion model handling multiple vision tasks.",
-        "RELEVANCE": 5,
-        "NOVELTY": 6
-    },
-    "2506.18898": {
-        "authors": [
-            "Jiaming Han",
-            "Hao Chen",
-            "Yang Zhao",
-            "Hanyu Wang",
-            "Qi Zhao",
-            "Ziyan Yang",
-            "Hao He",
-            "Xiangyu Yue",
-            "Lu Jiang"
-        ],
-        "title": "Vision as a Dialect: Unifying Visual Understanding and Generation via Text-Aligned Representations",
-        "abstract": "arXiv:2506.18898v1 Announce Type: new  Abstract: This paper presents a multimodal framework that attempts to unify visual understanding and generation within a shared discrete semantic representation. At its core is the Text-Aligned Tokenizer (TA-Tok), which converts images into discrete tokens using a text-aligned codebook projected from a large language model's (LLM) vocabulary. By integrating vision and text into a unified space with an expanded vocabulary, our multimodal LLM, Tar, enables cross-modal input and output through a shared interface, without the need for modality-specific designs. Additionally, we propose scale-adaptive encoding and decoding to balance efficiency and visual detail, along with a generative de-tokenizer to produce high-fidelity visual outputs. To address diverse decoding needs, we utilize two complementary de-tokenizers: a fast autoregressive model and a diffusion-based model. To enhance modality fusion, we investigate advanced pre-training tasks, demonstrating improvements in both visual understanding and generation. Experiments across benchmarks show that Tar matches or surpasses existing multimodal LLM methods, achieving faster convergence and greater training efficiency. Code, models, and data are available at https://tar.csuhan.com",
-        "arxiv_id": "2506.18898",
-        "ARXIVID": "2506.18898",
+        "title": "Diffusion Transformer-to-Mamba Distillation for High-Resolution Image Generation",
+        "abstract": "arXiv:2506.18999v1 Announce Type: new  Abstract: The quadratic computational complexity of self-attention in diffusion transformers (DiT) introduces substantial computational costs in high-resolution image generation. While the linear-complexity Mamba model emerges as a potential alternative, direct Mamba training remains empirically challenging. To address this issue, this paper introduces diffusion transformer-to-mamba distillation (T2MD), forming an efficient training pipeline that facilitates the transition from the self-attention-based transformer to the linear complexity state-space model Mamba. We establish a diffusion self-attention and Mamba hybrid model that simultaneously achieves efficiency and global dependencies. With the proposed layer-level teacher forcing and feature-based knowledge distillation, T2MD alleviates the training difficulty and high cost of a state space model from scratch. Starting from the distilled 512$\\times$512 resolution base model, we push the generation towards 2048$\\times$2048 images via lightweight adaptation and high-resolution fine-tuning. Experiments demonstrate that our training path leads to low overhead but high-quality text-to-image generation. Importantly, our results also justify the feasibility of using sequential and causal Mamba models for generating non-causal visual output, suggesting the potential for future exploration.",
+        "arxiv_id": "2506.18999",
+        "ARXIVID": "2506.18999",
         "COMMENT": "",
         "RELEVANCE": 3,
         "NOVELTY": 6
-    },
-    "2506.17837": {
-        "authors": [
-            "Assefa Wahd",
-            "Jacob Jaremko",
-            "Abhilash Hareendranathan"
-        ],
-        "title": "Time-Contrastive Pretraining for In-Context Image and Video Segmentation",
-        "abstract": "arXiv:2506.17837v1 Announce Type: new  Abstract: In-context learning (ICL) enables generalization to new tasks with minimal labeled data. However, mainstream ICL approaches rely on a gridding strategy, which lacks the flexibility required for vision applications. We introduce Temporal, a time-contrastive self-supervised objective that pretrains a prompt retriever for visual ICL, and formulate ICL as a video object segmentation (VOS) task. Temporal addresses key limitations of grid-based methods that restrict the number and resolution of context images. By reframing ICL as a VOS problem, our approach supports a variable number of context images while preserving their full resolution. To address the challenge of selecting optimal context sets for queries, we pretrain a prompt retriever on videos via self-supervised learning, where adjacent frames serve as positives and distant frames as negatives. For image segmentation, the prompt retriever selects relevant sequences that, when combined with the query, form coherent videos for VOS processing. For video segmentation, it identifies keyframes, predicts their masks using our ICL pipeline, and propagates them throughout the sequence. When evaluated on MICCAI FLARE 2022, our method achieves substantial improvements over baselines: 90.95% Dice score for image segmentation (10.64% improvement) and 92.45% Dice for video segmentation (14.88% improvement).",
-        "arxiv_id": "2506.17837",
-        "ARXIVID": "2506.17837",
-        "COMMENT": "",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
     }
 }
