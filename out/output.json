@@ -1,133 +1,36 @@
 {
-    "2506.20279": {
+    "2506.21270": {
         "authors": [
-            "Changliang Xia",
-            "Chengyou Jia",
-            "Zhuohang Dang",
-            "Minnan Luo"
+            "Cheng Zou",
+            "Senlin Cheng",
+            "Bolei Xu",
+            "Dandan Zheng",
+            "Xiaobo Li",
+            "Jingdong Chen",
+            "Ming Yang"
         ],
-        "title": "From Ideal to Real: Unified and Data-Efficient Dense Prediction for Real-World Scenarios",
-        "abstract": "arXiv:2506.20279v1 Announce Type: new  Abstract: Dense prediction tasks hold significant importance of computer vision, aiming to learn pixel-wise annotated label for an input image. Despite advances in this field, existing methods primarily focus on idealized conditions, with limited generalization to real-world scenarios and facing the challenging scarcity of real-world data. To systematically study this problem, we first introduce DenseWorld, a benchmark spanning a broad set of 25 dense prediction tasks that correspond to urgent real-world applications, featuring unified evaluation across tasks. Then, we propose DenseDiT, which maximally exploits generative models' visual priors to perform diverse real-world dense prediction tasks through a unified strategy. DenseDiT combines a parameter-reuse mechanism and two lightweight branches that adaptively integrate multi-scale context, working with less than 0.1% additional parameters. Evaluations on DenseWorld reveal significant performance drops in existing general and specialized baselines, highlighting their limited real-world generalization. In contrast, DenseDiT achieves superior results using less than 0.01% training data of baselines, underscoring its practical value for real-world deployment. Our data, and checkpoints and codes are available at https://xcltql666.github.io/DenseDiTProj",
-        "arxiv_id": "2506.20279",
-        "ARXIVID": "2506.20279",
-        "COMMENT": "Matches criterion 2 closely with a unified strategy for multiple dense prediction tasks.",
-        "RELEVANCE": 5,
+        "title": "Video Virtual Try-on with Conditional Diffusion Transformer Inpainter",
+        "abstract": "arXiv:2506.21270v1 Announce Type: new  Abstract: Video virtual try-on aims to naturally fit a garment to a target person in consecutive video frames. It is a challenging task, on the one hand, the output video should be in good spatial-temporal consistency, on the other hand, the details of the given garment need to be preserved well in all the frames. Naively using image-based try-on methods frame by frame can get poor results due to severe inconsistency. Recent diffusion-based video try-on methods, though very few, happen to coincide with a similar solution: inserting temporal attention into image-based try-on model to adapt it for video try-on task, which have shown improvements but there still exist inconsistency problems. In this paper, we propose ViTI (Video Try-on Inpainter), formulate and implement video virtual try-on as a conditional video inpainting task, which is different from previous methods. In this way, we start with a video generation problem instead of an image-based try-on problem, which from the beginning has a better spatial-temporal consistency. Specifically, at first we build a video inpainting framework based on Diffusion Transformer with full 3D spatial-temporal attention, and then we progressively adapt it for video garment inpainting, with a collection of masking strategies and multi-stage training. After these steps, the model can inpaint the masked garment area with appropriate garment pixels according to the prompt with good spatial-temporal consistency. Finally, as other try-on methods, garment condition is added to the model to make sure the inpainted garment appearance and details are as expected. Both quantitative and qualitative experimental results show that ViTI is superior to previous works.",
+        "arxiv_id": "2506.21270",
+        "ARXIVID": "2506.21270",
+        "COMMENT": "The paper does not match any specific criteria closely.",
+        "RELEVANCE": 3,
         "NOVELTY": 6
     },
-    "2506.20302": {
+    "2506.20756": {
         "authors": [
-            "Abbas Anwar",
-            "Mohammad Shullar",
-            "Ali Arshad Nasir",
-            "Mudassir Masood",
-            "Saeed Anwar"
+            "Haodong Li",
+            "Chen Wang",
+            "Jiahui Lei",
+            "Kostas Daniilidis",
+            "Lingjie Liu"
         ],
-        "title": "TDiR: Transformer based Diffusion for Image Restoration Tasks",
-        "abstract": "arXiv:2506.20302v1 Announce Type: new  Abstract: Images captured in challenging environments often experience various forms of degradation, including noise, color cast, blur, and light scattering. These effects significantly reduce image quality, hindering their applicability in downstream tasks such as object detection, mapping, and classification. Our transformer-based diffusion model was developed to address image restoration tasks, aiming to improve the quality of degraded images. This model was evaluated against existing deep learning methodologies across multiple quality metrics for underwater image enhancement, denoising, and deraining on publicly available datasets. Our findings demonstrate that the diffusion model, combined with transformers, surpasses current methods in performance. The results of our model highlight the efficacy of diffusion models and transformers in improving the quality of degraded images, consequently expanding their utility in downstream tasks that require high-fidelity visual data.",
-        "arxiv_id": "2506.20302",
-        "ARXIVID": "2506.20302",
-        "COMMENT": "No criteria match closely.",
+        "title": "StereoDiff: Stereo-Diffusion Synergy for Video Depth Estimation",
+        "abstract": "arXiv:2506.20756v1 Announce Type: new  Abstract: Recent video depth estimation methods achieve great performance by following the paradigm of image depth estimation, i.e., typically fine-tuning pre-trained video diffusion models with massive data. However, we argue that video depth estimation is not a naive extension of image depth estimation. The temporal consistency requirements for dynamic and static regions in videos are fundamentally different. Consistent video depth in static regions, typically backgrounds, can be more effectively achieved via stereo matching across all frames, which provides much stronger global 3D cues. While the consistency for dynamic regions still should be learned from large-scale video depth data to ensure smooth transitions, due to the violation of triangulation constraints. Based on these insights, we introduce StereoDiff, a two-stage video depth estimator that synergizes stereo matching for mainly the static areas with video depth diffusion for maintaining consistent depth transitions in dynamic areas. We mathematically demonstrate how stereo matching and video depth diffusion offer complementary strengths through frequency domain analysis, highlighting the effectiveness of their synergy in capturing the advantages of both. Experimental results on zero-shot, real-world, dynamic video depth benchmarks, both indoor and outdoor, demonstrate StereoDiff's SoTA performance, showcasing its superior consistency and accuracy in video depth estimation.",
+        "arxiv_id": "2506.20756",
+        "ARXIVID": "2506.20756",
+        "COMMENT": "The paper does not match any specific criteria closely.",
         "RELEVANCE": 3,
         "NOVELTY": 5
-    },
-    "2506.20563": {
-        "authors": [
-            "Lei Zhu",
-            "Jun Zhou",
-            "Rick Siow Mong Goh",
-            "Yong Liu"
-        ],
-        "title": "AdvMIM: Adversarial Masked Image Modeling for Semi-Supervised Medical Image Segmentation",
-        "abstract": "arXiv:2506.20563v1 Announce Type: new  Abstract: Vision Transformer has recently gained tremendous popularity in medical image segmentation task due to its superior capability in capturing long-range dependencies. However, transformer requires a large amount of labeled data to be effective, which hinders its applicability in annotation scarce semi-supervised learning scenario where only limited labeled data is available. State-of-the-art semi-supervised learning methods propose combinatorial CNN-Transformer learning to cross teach a transformer with a convolutional neural network, which achieves promising results. However, it remains a challenging task to effectively train the transformer with limited labeled data. In this paper, we propose an adversarial masked image modeling method to fully unleash the potential of transformer for semi-supervised medical image segmentation. The key challenge in semi-supervised learning with transformer lies in the lack of sufficient supervision signal. To this end, we propose to construct an auxiliary masked domain from original domain with masked image modeling and train the transformer to predict the entire segmentation mask with masked inputs to increase supervision signal. We leverage the original labels from labeled data and pseudo-labels from unlabeled data to learn the masked domain. To further benefit the original domain from masked domain, we provide a theoretical analysis of our method from a multi-domain learning perspective and devise a novel adversarial training loss to reduce the domain gap between the original and masked domain, which boosts semi-supervised learning performance. We also extend adversarial masked image modeling to CNN network. Extensive experiments on three public medical image segmentation datasets demonstrate the effectiveness of our method, where our method outperforms existing methods significantly. Our code is publicly available at https://github.com/zlheui/AdvMIM.",
-        "arxiv_id": "2506.20563",
-        "ARXIVID": "2506.20563",
-        "COMMENT": "No criteria match closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2506.20255": {
-        "authors": [
-            "Ayush Lodh",
-            "Ritabrata Chakraborty",
-            "Shivakumara Palaiahnakote",
-            "Umapada Pal"
-        ],
-        "title": "A Transformer Based Handwriting Recognition System Jointly Using Online and Offline Features",
-        "abstract": "arXiv:2506.20255v1 Announce Type: new  Abstract: We posit that handwriting recognition benefits from complementary cues carried by the rasterized complex glyph and the pen's trajectory, yet most systems exploit only one modality. We introduce an end-to-end network that performs early fusion of offline images and online stroke data within a shared latent space. A patch encoder converts the grayscale crop into fixed-length visual tokens, while a lightweight transformer embeds the $(x, y, \\text{pen})$ sequence. Learnable latent queries attend jointly to both token streams, yielding context-enhanced stroke embeddings that are pooled and decoded under a cross-entropy loss objective. Because integration occurs before any high-level classification, temporal cues reinforce each other during representation learning, producing stronger writer independence. Comprehensive experiments on IAMOn-DB and VNOn-DB demonstrate that our approach achieves state-of-the-art accuracy, exceeding previous bests by up to 1\\%. Our study also shows adaptation of this pipeline with gesturification on the ISI-Air dataset. Our code can be found here.",
-        "arxiv_id": "2506.20255",
-        "ARXIVID": "2506.20255",
-        "COMMENT": "No criteria match closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2506.20294": {
-        "authors": [
-            "Shunqi Mao",
-            "Wei Guo",
-            "Chaoyi Zhang",
-            "Weidong Cai"
-        ],
-        "title": "Ctrl-Z Sampling: Diffusion Sampling with Controlled Random Zigzag Explorations",
-        "abstract": "arXiv:2506.20294v1 Announce Type: new  Abstract: Diffusion models have shown strong performance in conditional generation by progressively denoising Gaussian noise toward a target data distribution. This denoising process can be interpreted as a form of hill climbing in a learned latent space, where the model iteratively refines the sample toward regions of higher probability. However, diffusion models often converge to local optima that are locally visually coherent yet globally inconsistent or conditionally misaligned, due to latent space complexity and suboptimal initialization. Prior efforts attempted to address this by strengthening guidance signals or manipulating the initial noise distribution. We introduce Controlled Random Zigzag Sampling (Ctrl-Z Sampling), a novel sampling strategy designed to detect and escape such local maxima during conditional generation. The method first identifies potential local maxima using a reward model. Upon detection, it injects noise and reverts to a previous, noisier state to escape the current optimization plateau. The reward model then evaluates candidate trajectories, accepting only those that offer improvement, while progressively deeper retreat enables stronger escapes when nearby alternatives fail. This controlled random zigzag process allows dynamic alternation between forward refinement and backward exploration, enhancing both alignment and visual quality in the generated outputs. The proposed Ctrl-Z Sampling is model-agnostic and compatible with existing diffusion frameworks. Experimental results show that Ctrl-Z Sampling substantially improves generation quality with only around 7.6X increase in function evaluations.",
-        "arxiv_id": "2506.20294",
-        "ARXIVID": "2506.20294",
-        "COMMENT": "No criteria match closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2506.20601": {
-        "authors": [
-            "Rui Huang",
-            "Guangyao Zhai",
-            "Zuria Bauer",
-            "Marc Pollefeys",
-            "Federico Tombari",
-            "Leonidas Guibas",
-            "Gao Huang",
-            "Francis Engelmann"
-        ],
-        "title": "Video Perception Models for 3D Scene Synthesis",
-        "abstract": "arXiv:2506.20601v1 Announce Type: new  Abstract: Traditionally, 3D scene synthesis requires expert knowledge and significant manual effort. Automating this process could greatly benefit fields such as architectural design, robotics simulation, virtual reality, and gaming. Recent approaches to 3D scene synthesis often rely on the commonsense reasoning of large language models (LLMs) or strong visual priors of modern image generation models. However, current LLMs demonstrate limited 3D spatial reasoning ability, which restricts their ability to generate realistic and coherent 3D scenes. Meanwhile, image generation-based methods often suffer from constraints in viewpoint selection and multi-view inconsistencies. In this work, we present Video Perception models for 3D Scene synthesis (VIPScene), a novel framework that exploits the encoded commonsense knowledge of the 3D physical world in video generation models to ensure coherent scene layouts and consistent object placements across views. VIPScene accepts both text and image prompts and seamlessly integrates video generation, feedforward 3D reconstruction, and open-vocabulary perception models to semantically and geometrically analyze each object in a scene. This enables flexible scene synthesis with high realism and structural consistency. For more precise analysis, we further introduce First-Person View Score (FPVScore) for coherence and plausibility evaluation, utilizing continuous first-person perspective to capitalize on the reasoning ability of multimodal large language models. Extensive experiments show that VIPScene significantly outperforms existing methods and generalizes well across diverse scenarios. The code will be released.",
-        "arxiv_id": "2506.20601",
-        "ARXIVID": "2506.20601",
-        "COMMENT": "No criteria match closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2506.20103": {
-        "authors": [
-            "Jiahao Lin",
-            "Weixuan Peng",
-            "Bojia Zi",
-            "Yifeng Gao",
-            "Xianbiao Qi",
-            "Xingjun Ma",
-            "Yu-Gang Jiang"
-        ],
-        "title": "BrokenVideos: A Benchmark Dataset for Fine-Grained Artifact Localization in AI-Generated Videos",
-        "abstract": "arXiv:2506.20103v1 Announce Type: new  Abstract: Recent advances in deep generative models have led to significant progress in video generation, yet the fidelity of AI-generated videos remains limited. Synthesized content often exhibits visual artifacts such as temporally inconsistent motion, physically implausible trajectories, unnatural object deformations, and local blurring that undermine realism and user trust. Accurate detection and spatial localization of these artifacts are crucial for both automated quality control and for guiding the development of improved generative models. However, the research community currently lacks a comprehensive benchmark specifically designed for artifact localization in AI generated videos. Existing datasets either restrict themselves to video or frame level detection or lack the fine-grained spatial annotations necessary for evaluating localization methods. To address this gap, we introduce BrokenVideos, a benchmark dataset of 3,254 AI-generated videos with meticulously annotated, pixel-level masks highlighting regions of visual corruption. Each annotation is validated through detailed human inspection to ensure high quality ground truth. Our experiments show that training state of the art artifact detection models and multi modal large language models (MLLMs) on BrokenVideos significantly improves their ability to localize corrupted regions. Through extensive evaluation, we demonstrate that BrokenVideos establishes a critical foundation for benchmarking and advancing research on artifact localization in generative video models. The dataset is available at: https://broken-video-detection-datetsets.github.io/Broken-Video-Detection-Datasets.github.io/.",
-        "arxiv_id": "2506.20103",
-        "ARXIVID": "2506.20103",
-        "COMMENT": "No criteria match closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 4
-    },
-    "2506.20155": {
-        "authors": [
-            "Avadhoot Jadhav",
-            "Ashutosh Srivastava",
-            "Abhinav Java",
-            "Silky Singh",
-            "Tarun Ram Menta",
-            "Surgan Jandial",
-            "Balaji Krishnamurthy"
-        ],
-        "title": "Towards Efficient Exemplar Based Image Editing with Multimodal VLMs",
-        "abstract": "arXiv:2506.20155v1 Announce Type: new  Abstract: Text-to-Image Diffusion models have enabled a wide array of image editing applications. However, capturing all types of edits through text alone can be challenging and cumbersome. The ambiguous nature of certain image edits is better expressed through an exemplar pair, i.e., a pair of images depicting an image before and after an edit respectively. In this work, we tackle exemplar-based image editing -- the task of transferring an edit from an exemplar pair to a content image(s), by leveraging pretrained text-to-image diffusion models and multimodal VLMs. Even though our end-to-end pipeline is optimization-free, our experiments demonstrate that it still outperforms baselines on multiple types of edits while being ~4x faster.",
-        "arxiv_id": "2506.20155",
-        "ARXIVID": "2506.20155",
-        "COMMENT": "No criteria match closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 4
     }
 }
