@@ -1,35 +1,31 @@
 {
-    "2506.21270": {
+    "2506.21731": {
         "authors": [
-            "Cheng Zou",
-            "Senlin Cheng",
-            "Bolei Xu",
-            "Dandan Zheng",
-            "Xiaobo Li",
-            "Jingdong Chen",
-            "Ming Yang"
+            "Chenqiu Zhao",
+            "Anup Basu"
         ],
-        "title": "Video Virtual Try-on with Conditional Diffusion Transformer Inpainter",
-        "abstract": "arXiv:2506.21270v1 Announce Type: new  Abstract: Video virtual try-on aims to naturally fit a garment to a target person in consecutive video frames. It is a challenging task, on the one hand, the output video should be in good spatial-temporal consistency, on the other hand, the details of the given garment need to be preserved well in all the frames. Naively using image-based try-on methods frame by frame can get poor results due to severe inconsistency. Recent diffusion-based video try-on methods, though very few, happen to coincide with a similar solution: inserting temporal attention into image-based try-on model to adapt it for video try-on task, which have shown improvements but there still exist inconsistency problems. In this paper, we propose ViTI (Video Try-on Inpainter), formulate and implement video virtual try-on as a conditional video inpainting task, which is different from previous methods. In this way, we start with a video generation problem instead of an image-based try-on problem, which from the beginning has a better spatial-temporal consistency. Specifically, at first we build a video inpainting framework based on Diffusion Transformer with full 3D spatial-temporal attention, and then we progressively adapt it for video garment inpainting, with a collection of masking strategies and multi-stage training. After these steps, the model can inpaint the masked garment area with appropriate garment pixels according to the prompt with good spatial-temporal consistency. Finally, as other try-on methods, garment condition is added to the model to make sure the inpainted garment appearance and details are as expected. Both quantitative and qualitative experimental results show that ViTI is superior to previous works.",
-        "arxiv_id": "2506.21270",
-        "ARXIVID": "2506.21270",
-        "COMMENT": "The paper does not match any specific criteria closely.",
+        "title": "Exploring Image Generation via Mutually Exclusive Probability Spaces and Local Correlation Hypothesis",
+        "abstract": "arXiv:2506.21731v1 Announce Type: new  Abstract: We propose two theoretical frameworks, the Mutually Exclusive Probability Space (MESP) and the Local Correlation Hypothesis (LCH), to explore a potential limitation in probabilistic generative models; namely that learning global distributions leads to memorization rather than generative behavior. MESP emerges from our rethinking of the Variational Autoencoder (VAE). We observe that latent variable distributions in VAE exhibit overlap, which leads to an optimization conflict between the reconstruction loss and KL-divergence loss. A lower bound based on the overlap coefficient is proposed. We refer to this phenomenon as Mutually Exclusive Probability Spaces. Based on MESP, a Binary Latent Autoencoder (BL-AE) is proposed to encode images into binary latent representations. These binary latents are used as the input to our Autoregressive Random Variable Model (ARVM), a modified autoregressive model outputting histograms. Our ARVM achieves competitive FID scores, outperforming state-of-the-art methods on standard datasets. However, such scores reflect memorization rather than generation. To address this issue, we propose the Local Correlation Hypothesis (LCH), which posits that generative capability arising from local correlations among latent variables. Comprehensive experiments and discussions are conducted to validate our frameworks.",
+        "arxiv_id": "2506.21731",
+        "ARXIVID": "2506.21731",
+        "COMMENT": "The paper proposes new theoretical frameworks for generative models, focusing on limitations in probabilistic generative models, but does not address joint generation and segmentation or a unified framework for multiple tasks.",
         "RELEVANCE": 3,
         "NOVELTY": 6
     },
-    "2506.20756": {
+    "2506.22032": {
         "authors": [
-            "Haodong Li",
-            "Chen Wang",
-            "Jiahui Lei",
-            "Kostas Daniilidis",
-            "Lingjie Liu"
+            "Jialei Chen",
+            "Xu Zheng",
+            "Danda Pani Paudel",
+            "Luc Van Gool",
+            "Hiroshi Murase",
+            "Daisuke Deguchi"
         ],
-        "title": "StereoDiff: Stereo-Diffusion Synergy for Video Depth Estimation",
-        "abstract": "arXiv:2506.20756v1 Announce Type: new  Abstract: Recent video depth estimation methods achieve great performance by following the paradigm of image depth estimation, i.e., typically fine-tuning pre-trained video diffusion models with massive data. However, we argue that video depth estimation is not a naive extension of image depth estimation. The temporal consistency requirements for dynamic and static regions in videos are fundamentally different. Consistent video depth in static regions, typically backgrounds, can be more effectively achieved via stereo matching across all frames, which provides much stronger global 3D cues. While the consistency for dynamic regions still should be learned from large-scale video depth data to ensure smooth transitions, due to the violation of triangulation constraints. Based on these insights, we introduce StereoDiff, a two-stage video depth estimator that synergizes stereo matching for mainly the static areas with video depth diffusion for maintaining consistent depth transitions in dynamic areas. We mathematically demonstrate how stereo matching and video depth diffusion offer complementary strengths through frequency domain analysis, highlighting the effectiveness of their synergy in capturing the advantages of both. Experimental results on zero-shot, real-world, dynamic video depth benchmarks, both indoor and outdoor, demonstrate StereoDiff's SoTA performance, showcasing its superior consistency and accuracy in video depth estimation.",
-        "arxiv_id": "2506.20756",
-        "ARXIVID": "2506.20756",
-        "COMMENT": "The paper does not match any specific criteria closely.",
+        "title": "Partial CLIP is Enough: Chimera-Seg for Zero-shot Semantic Segmentation",
+        "abstract": "arXiv:2506.22032v1 Announce Type: new  Abstract: Zero-shot Semantic Segmentation (ZSS) aims to segment both seen and unseen classes using supervision from only seen classes. Beyond adaptation-based methods, distillation-based approaches transfer vision-language alignment of vision-language model, e.g., CLIP, to segmentation models. However, such knowledge transfer remains challenging due to: (1) the difficulty of aligning vision-based features with the textual space, which requires combining spatial precision with vision-language alignment; and (2) the semantic gap between CLIP's global representations and the local, fine-grained features of segmentation models. To address challenge (1), we propose Chimera-Seg, which integrates a segmentation backbone as the body and a CLIP-based semantic head as the head, like the Chimera in Greek mythology, combining spatial precision with vision-language alignment. Specifically, Chimera-Seg comprises a trainable segmentation model and a CLIP Semantic Head (CSH), which maps dense features into the CLIP-aligned space. The CSH incorporates a frozen subnetwork and fixed projection layers from the CLIP visual encoder, along with lightweight trainable components. The partial module from CLIP visual encoder, paired with the segmentation model, retains segmentation capability while easing the mapping to CLIP's semantic space. To address challenge (2), we propose Selective Global Distillation (SGD), which distills knowledge from dense features exhibiting high similarity to the CLIP CLS token, while gradually reducing the number of features used for alignment as training progresses. Besides, we also use a Semantic Alignment Module (SAM) to further align dense visual features with semantic embeddings extracted from the frozen CLIP text encoder. Experiments on two benchmarks show improvements of 0.9% and 1.2% in hIoU.",
+        "arxiv_id": "2506.22032",
+        "ARXIVID": "2506.22032",
+        "COMMENT": "The paper addresses zero-shot semantic segmentation using a novel integration of a segmentation backbone with a CLIP-based semantic head, but it does not propose a unified framework for generation and segmentation.",
         "RELEVANCE": 3,
         "NOVELTY": 5
     }
