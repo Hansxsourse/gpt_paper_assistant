@@ -1,31 +1,187 @@
 {
-    "2506.21731": {
+    "2506.23606": {
         "authors": [
-            "Chenqiu Zhao",
-            "Anup Basu"
+            "Zhengkang Xiang",
+            "Zizhao Li",
+            "Amir Khodabandeh",
+            "Kourosh Khoshelham"
         ],
-        "title": "Exploring Image Generation via Mutually Exclusive Probability Spaces and Local Correlation Hypothesis",
-        "abstract": "arXiv:2506.21731v1 Announce Type: new  Abstract: We propose two theoretical frameworks, the Mutually Exclusive Probability Space (MESP) and the Local Correlation Hypothesis (LCH), to explore a potential limitation in probabilistic generative models; namely that learning global distributions leads to memorization rather than generative behavior. MESP emerges from our rethinking of the Variational Autoencoder (VAE). We observe that latent variable distributions in VAE exhibit overlap, which leads to an optimization conflict between the reconstruction loss and KL-divergence loss. A lower bound based on the overlap coefficient is proposed. We refer to this phenomenon as Mutually Exclusive Probability Spaces. Based on MESP, a Binary Latent Autoencoder (BL-AE) is proposed to encode images into binary latent representations. These binary latents are used as the input to our Autoregressive Random Variable Model (ARVM), a modified autoregressive model outputting histograms. Our ARVM achieves competitive FID scores, outperforming state-of-the-art methods on standard datasets. However, such scores reflect memorization rather than generation. To address this issue, we propose the Local Correlation Hypothesis (LCH), which posits that generative capability arising from local correlations among latent variables. Comprehensive experiments and discussions are conducted to validate our frameworks.",
-        "arxiv_id": "2506.21731",
-        "ARXIVID": "2506.21731",
-        "COMMENT": "The paper proposes new theoretical frameworks for generative models, focusing on limitations in probabilistic generative models, but does not address joint generation and segmentation or a unified framework for multiple tasks.",
+        "title": "SG-LDM: Semantic-Guided LiDAR Generation via Latent-Aligned Diffusion",
+        "abstract": "arXiv:2506.23606v1 Announce Type: new  Abstract: Lidar point cloud synthesis based on generative models offers a promising solution to augment deep learning pipelines, particularly when real-world data is scarce or lacks diversity. By enabling flexible object manipulation, this synthesis approach can significantly enrich training datasets and enhance discriminative models. However, existing methods focus on unconditional lidar point cloud generation, overlooking their potential for real-world applications. In this paper, we propose SG-LDM, a Semantic-Guided Lidar Diffusion Model that employs latent alignment to enable robust semantic-to-lidar synthesis. By directly operating in the native lidar space and leveraging explicit semantic conditioning, SG-LDM achieves state-of-the-art performance in generating high-fidelity lidar point clouds guided by semantic labels. Moreover, we propose the first diffusion-based lidar translation framework based on SG-LDM, which enables cross-domain translation as a domain adaptation strategy to enhance downstream perception performance. Systematic experiments demonstrate that SG-LDM significantly outperforms existing lidar diffusion models and the proposed lidar translation framework further improves data augmentation performance in the downstream lidar segmentation task.",
+        "arxiv_id": "2506.23606",
+        "ARXIVID": "2506.23606",
+        "COMMENT": "2",
+        "RELEVANCE": 5,
+        "NOVELTY": 6
+    },
+    "2506.23382": {
+        "authors": [
+            "Vikram Rangarajan",
+            "Shishira Maiya",
+            "Max Ehrlich",
+            "Abhinav Shrivastava"
+        ],
+        "title": "SIEDD: Shared-Implicit Encoder with Discrete Decoders",
+        "abstract": "arXiv:2506.23382v1 Announce Type: new  Abstract: Implicit Neural Representations (INRs) offer exceptional fidelity for video compression by learning per-video optimized functions, but their adoption is crippled by impractically slow encoding times. Existing attempts to accelerate INR encoding often sacrifice reconstruction quality or crucial coordinate-level control essential for adaptive streaming and transcoding. We introduce SIEDD (Shared-Implicit Encoder with Discrete Decoders), a novel architecture that fundamentally accelerates INR encoding without these compromises. SIEDD first rapidly trains a shared, coordinate-based encoder on sparse anchor frames to efficiently capture global, low-frequency video features. This encoder is then frozen, enabling massively parallel training of lightweight, discrete decoders for individual frame groups, further expedited by aggressive coordinate-space sampling. This synergistic design delivers a remarkable 20-30X encoding speed-up over state-of-the-art INR codecs on HD and 4K benchmarks, while maintaining competitive reconstruction quality and compression ratios. Critically, SIEDD retains full coordinate-based control, enabling continuous resolution decoding and eliminating costly transcoding. Our approach significantly advances the practicality of high-fidelity neural video compression, demonstrating a scalable and efficient path towards real-world deployment. Our codebase is available at https://github.com/VikramRangarajan/SIEDD .",
+        "arxiv_id": "2506.23382",
+        "ARXIVID": "2506.23382",
+        "COMMENT": "The paper introduces a novel architecture for accelerating implicit neural representations for video compression, but it does not address joint generation and segmentation or a unified diffusion model for multiple tasks.",
         "RELEVANCE": 3,
         "NOVELTY": 6
     },
-    "2506.22032": {
+    "2506.23858": {
         "authors": [
-            "Jialei Chen",
-            "Xu Zheng",
-            "Danda Pani Paudel",
-            "Luc Van Gool",
-            "Hiroshi Murase",
-            "Daisuke Deguchi"
+            "Jianzong Wu",
+            "Liang Hou",
+            "Haotian Yang",
+            "Xin Tao",
+            "Ye Tian",
+            "Pengfei Wan",
+            "Di Zhang",
+            "Yunhai Tong"
         ],
-        "title": "Partial CLIP is Enough: Chimera-Seg for Zero-shot Semantic Segmentation",
-        "abstract": "arXiv:2506.22032v1 Announce Type: new  Abstract: Zero-shot Semantic Segmentation (ZSS) aims to segment both seen and unseen classes using supervision from only seen classes. Beyond adaptation-based methods, distillation-based approaches transfer vision-language alignment of vision-language model, e.g., CLIP, to segmentation models. However, such knowledge transfer remains challenging due to: (1) the difficulty of aligning vision-based features with the textual space, which requires combining spatial precision with vision-language alignment; and (2) the semantic gap between CLIP's global representations and the local, fine-grained features of segmentation models. To address challenge (1), we propose Chimera-Seg, which integrates a segmentation backbone as the body and a CLIP-based semantic head as the head, like the Chimera in Greek mythology, combining spatial precision with vision-language alignment. Specifically, Chimera-Seg comprises a trainable segmentation model and a CLIP Semantic Head (CSH), which maps dense features into the CLIP-aligned space. The CSH incorporates a frozen subnetwork and fixed projection layers from the CLIP visual encoder, along with lightweight trainable components. The partial module from CLIP visual encoder, paired with the segmentation model, retains segmentation capability while easing the mapping to CLIP's semantic space. To address challenge (2), we propose Selective Global Distillation (SGD), which distills knowledge from dense features exhibiting high similarity to the CLIP CLS token, while gradually reducing the number of features used for alignment as training progresses. Besides, we also use a Semantic Alignment Module (SAM) to further align dense visual features with semantic embeddings extracted from the frozen CLIP text encoder. Experiments on two benchmarks show improvements of 0.9% and 1.2% in hIoU.",
-        "arxiv_id": "2506.22032",
-        "ARXIVID": "2506.22032",
-        "COMMENT": "The paper addresses zero-shot semantic segmentation using a novel integration of a segmentation backbone with a CLIP-based semantic head, but it does not propose a unified framework for generation and segmentation.",
+        "title": "VMoBA: Mixture-of-Block Attention for Video Diffusion Models",
+        "abstract": "arXiv:2506.23858v1 Announce Type: new  Abstract: The quadratic complexity of full attention mechanisms poses a significant bottleneck for Video Diffusion Models (VDMs) aiming to generate long-duration, high-resolution videos. While various sparse attention methods have been proposed, many are designed as training-free inference accelerators or do not optimally capture the unique spatio-temporal characteristics inherent in video data when trained natively. This paper introduces Video Mixture of Block Attention (VMoBA), a novel sparse attention mechanism specifically adapted for VDMs. Motivated by an in-depth analysis of attention patterns within pre-trained video transformers, which revealed strong spatio-temporal locality, varying query importance, and head-specific concentration levels, VMoBA enhances the original MoBA framework with three key modifications: (1) a layer-wise recurrent block partition scheme (1D-2D-3D) to dynamically adapt to diverse spatio-temporal attention patterns and improve efficiency; (2) global block selection to prioritize the most salient query-key block interactions across an entire attention head; and (3) threshold-based block selection to dynamically determine the number of attended blocks based on their cumulative similarity. Extensive experiments demonstrate that VMoBA significantly accelerates the training of VDMs on longer sequences, achieving 2.92x FLOPs and 1.48x latency speedup, while attaining comparable or even superior generation quality to full attention. Furthermore, VMoBA exhibits competitive performance in training-free inference, offering 2.40x FLOPs and 1.35x latency speedup for high-res video generation.",
+        "arxiv_id": "2506.23858",
+        "ARXIVID": "2506.23858",
+        "COMMENT": "The paper focuses on improving video diffusion models with a novel attention mechanism, but it does not propose a unified framework for multiple vision tasks or joint generation and segmentation.",
+        "RELEVANCE": 3,
+        "NOVELTY": 6
+    },
+    "2506.23711": {
+        "authors": [
+            "Haoyang Chen",
+            "Dongfang Sun",
+            "Caoyuan Ma",
+            "Shiqin Wang",
+            "Kewei Zhang",
+            "Zheng Wang",
+            "Zhixiang Wang"
+        ],
+        "title": "Subjective Camera: Bridging Human Cognition and Visual Reconstruction through Sequence-Aware Sketch-Guided Diffusion",
+        "abstract": "arXiv:2506.23711v1 Announce Type: new  Abstract: We propose Subjective Camera, a human-as-imaging-device paradigm that reconstructs real-world scenes from mental impressions through synergistic use of verbal descriptions and progressive rough sketches. This approach overcomes dual limitations of language ambiguity and sketch abstraction by treating the user's drawing sequence as priors, effectively translating subjective perceptual expectations into photorealistic images.   Existing approaches face three fundamental barriers: (1) user-specific subjective input biases, (2) huge modality gap between planar sketch and 3D priors in diffusion, and (3) sketch quality-sensitive performance degradation. Current solutions either demand resource-intensive model adaptation or impose impractical requirements on sketch precision.   Our framework addresses these challenges through concept-sequential generation. (1) We establish robust appearance priors through text-reward optimization, and then implement sequence-aware disentangled generation that processes concepts in sketching order; these steps accommodate user-specific subjective expectation in a train-free way. (2) We employ latent optimization that effectively bridges the modality gap between planar sketches and 3D priors in diffusion. (3) Our hierarchical reward-guided framework enables the use of rough sketches without demanding artistic expertise. Comprehensive evaluation across diverse datasets demonstrates that our approach achieves state-of-the-art performance in maintaining both semantic and spatial coherence.",
+        "arxiv_id": "2506.23711",
+        "ARXIVID": "2506.23711",
+        "COMMENT": "",
+        "RELEVANCE": 3,
+        "NOVELTY": 6
+    },
+    "2506.23513": {
+        "authors": [
+            "Zixun Fang",
+            "Kai Zhu",
+            "Zhiheng Liu",
+            "Yu Liu",
+            "Wei Zhai",
+            "Yang Cao",
+            "Zheng-Jun Zha"
+        ],
+        "title": "ViewPoint: Panoramic Video Generation with Pretrained Diffusion Models",
+        "abstract": "arXiv:2506.23513v1 Announce Type: new  Abstract: Panoramic video generation aims to synthesize 360-degree immersive videos, holding significant importance in the fields of VR, world models, and spatial intelligence. Existing works fail to synthesize high-quality panoramic videos due to the inherent modality gap between panoramic data and perspective data, which constitutes the majority of the training data for modern diffusion models. In this paper, we propose a novel framework utilizing pretrained perspective video models for generating panoramic videos. Specifically, we design a novel panorama representation named ViewPoint map, which possesses global spatial continuity and fine-grained visual details simultaneously. With our proposed Pano-Perspective attention mechanism, the model benefits from pretrained perspective priors and captures the panoramic spatial correlations of the ViewPoint map effectively. Extensive experiments demonstrate that our method can synthesize highly dynamic and spatially consistent panoramic videos, achieving state-of-the-art performance and surpassing previous methods.",
+        "arxiv_id": "2506.23513",
+        "ARXIVID": "2506.23513",
+        "COMMENT": "The paper proposes a novel framework for panoramic video generation using pretrained diffusion models, but it does not address multiple vision tasks or joint generation and segmentation.",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2506.23543": {
+        "authors": [
+            "Hui Li",
+            "Baoyou Chen",
+            "Liwei Zhang",
+            "Jiaye Li",
+            "Jingdong Wang",
+            "Siyu Zhu"
+        ],
+        "title": "Pyramidal Patchification Flow for Visual Generation",
+        "abstract": "arXiv:2506.23543v1 Announce Type: new  Abstract: Diffusion transformers (DiTs) adopt Patchify, mapping patch representations to token representations through linear projections, to adjust the number of tokens input to DiT blocks and thus the computation cost. Instead of a single patch size for all the timesteps, we introduce a Pyramidal Patchification Flow (PPFlow) approach: Large patch sizes are used for high noise timesteps and small patch sizes for low noise timesteps; Linear projections are learned for each patch size; and Unpatchify is accordingly modified. Unlike Pyramidal Flow, our approach operates over full latent representations other than pyramid representations, and adopts the normal denoising process without requiring the renoising trick. We demonstrate the effectiveness of our approach through two training manners. Training from scratch achieves a $1.6\\times$ ($2.0\\times$) inference speed over SiT-B/2 for 2-level (3-level) pyramid patchification with slightly lower training FLOPs and similar image generation performance. Training from pretrained normal DiTs achieves even better performance with small training time. The code and checkpoint are at https://github.com/fudan-generative-vision/PPFlow.",
+        "arxiv_id": "2506.23543",
+        "ARXIVID": "2506.23543",
+        "COMMENT": "",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2506.23482": {
+        "authors": [
+            "Jun Huang",
+            "Ting Liu",
+            "Yihang Wu",
+            "Xiaochao Qu",
+            "Luoqi Liu",
+            "Xiaolin Hu"
+        ],
+        "title": "MTADiffusion: Mask Text Alignment Diffusion Model for Object Inpainting",
+        "abstract": "arXiv:2506.23482v1 Announce Type: new  Abstract: Advancements in generative models have enabled image inpainting models to generate content within specific regions of an image based on provided prompts and masks. However, existing inpainting methods often suffer from problems such as semantic misalignment, structural distortion, and style inconsistency. In this work, we present MTADiffusion, a Mask-Text Alignment diffusion model designed for object inpainting. To enhance the semantic capabilities of the inpainting model, we introduce MTAPipeline, an automatic solution for annotating masks with detailed descriptions. Based on the MTAPipeline, we construct a new MTADataset comprising 5 million images and 25 million mask-text pairs. Furthermore, we propose a multi-task training strategy that integrates both inpainting and edge prediction tasks to improve structural stability. To promote style consistency, we present a novel inpainting style-consistency loss using a pre-trained VGG network and the Gram matrix. Comprehensive evaluations on BrushBench and EditBench demonstrate that MTADiffusion achieves state-of-the-art performance compared to other methods.",
+        "arxiv_id": "2506.23482",
+        "ARXIVID": "2506.23482",
+        "COMMENT": "",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2506.22624": {
+        "authors": [
+            "Zuyao You",
+            "Zuxuan Wu"
+        ],
+        "title": "Seg-R1: Segmentation Can Be Surprisingly Simple with Reinforcement Learning",
+        "abstract": "arXiv:2506.22624v1 Announce Type: new  Abstract: We present Seg-R1, a preliminary exploration of using reinforcement learning (RL) to enhance the pixel-level understanding and reasoning capabilities of large multimodal models (LMMs). Starting with foreground segmentation tasks, specifically camouflaged object detection (COD) and salient object detection (SOD), our approach enables the LMM to generate point and bounding box prompts in the next-token fashion, which are then used to guide SAM2 in producing segmentation masks. We introduce Group Relative Policy Optimization (GRPO) into the segmentation domain, equipping the LMM with pixel-level comprehension through a carefully designed training strategy. Notably, Seg-R1 achieves remarkable performance with purely RL-based training, achieving .873 S-measure on COD10K without complex model modification. Moreover, we found that pure RL training demonstrates strong open-world generalization. Despite being trained solely on foreground segmentation image-mask pairs without text supervision, Seg-R1 achieves impressive zero-shot performance on referring segmentation and reasoning segmentation tasks, with 71.4 cIoU on RefCOCOg test and 56.7 gIoU on ReasonSeg test, outperforming models fully supervised on these datasets.",
+        "arxiv_id": "2506.22624",
+        "ARXIVID": "2506.22624",
+        "COMMENT": "",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2506.23580": {
+        "authors": [
+            "Yawen Zou",
+            "Guang Li",
+            "Duo Su",
+            "Zi Wang",
+            "Jun Yu",
+            "Chao Zhang"
+        ],
+        "title": "Dataset Distillation via Vision-Language Category Prototype",
+        "abstract": "arXiv:2506.23580v1 Announce Type: new  Abstract: Dataset distillation (DD) condenses large datasets into compact yet informative substitutes, preserving performance comparable to the original dataset while reducing storage, transmission costs, and computational consumption. However, previous DD methods mainly focus on distilling information from images, often overlooking the semantic information inherent in the data. The disregard for context hinders the model's generalization ability, particularly in tasks involving complex datasets, which may result in illogical outputs or the omission of critical objects. In this study, we integrate vision-language methods into DD by introducing text prototypes to distill language information and collaboratively synthesize data with image prototypes, thereby enhancing dataset distillation performance. Notably, the text prototypes utilized in this study are derived from descriptive text information generated by an open-source large language model. This framework demonstrates broad applicability across datasets without pre-existing text descriptions, expanding the potential of dataset distillation beyond traditional image-based approaches. Compared to other methods, the proposed approach generates logically coherent images containing target objects, achieving state-of-the-art validation performance and demonstrating robust generalization. Source code and generated data are available in https://github.com/zou-yawen/Dataset-Distillation-via-Vision-Language-Category-Prototype/",
+        "arxiv_id": "2506.23580",
+        "ARXIVID": "2506.23580",
+        "COMMENT": "",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2506.22531": {
+        "authors": [
+            "Prasen Kumar Sharma",
+            "Neeraj Matiyali",
+            "Siddharth Srivastava",
+            "Gaurav Sharma"
+        ],
+        "title": "Preserve Anything: Controllable Image Synthesis with Object Preservation",
+        "abstract": "arXiv:2506.22531v1 Announce Type: new  Abstract: We introduce \\textit{Preserve Anything}, a novel method for controlled image synthesis that addresses key limitations in object preservation and semantic consistency in text-to-image (T2I) generation. Existing approaches often fail (i) to preserve multiple objects with fidelity, (ii) maintain semantic alignment with prompts, or (iii) provide explicit control over scene composition. To overcome these challenges, the proposed method employs an N-channel ControlNet that integrates (i) object preservation with size and placement agnosticism, color and detail retention, and artifact elimination, (ii) high-resolution, semantically consistent backgrounds with accurate shadows, lighting, and prompt adherence, and (iii) explicit user control over background layouts and lighting conditions. Key components of our framework include object preservation and background guidance modules, enforcing lighting consistency and a high-frequency overlay module to retain fine details while mitigating unwanted artifacts. We introduce a benchmark dataset consisting of 240K natural images filtered for aesthetic quality and 18K 3D-rendered synthetic images with metadata such as lighting, camera angles, and object relationships. This dataset addresses the deficiencies of existing benchmarks and allows a complete evaluation. Empirical results demonstrate that our method achieves state-of-the-art performance, significantly improving feature-space fidelity (FID 15.26) and semantic alignment (CLIP-S 32.85) while maintaining competitive aesthetic quality. We also conducted a user study to demonstrate the efficacy of the proposed work on unseen benchmark and observed a remarkable improvement of $\\sim25\\%$, $\\sim19\\%$, $\\sim13\\%$, and $\\sim14\\%$ in terms of prompt alignment, photorealism, the presence of AI artifacts, and natural aesthetics over existing works.",
+        "arxiv_id": "2506.22531",
+        "ARXIVID": "2506.22531",
+        "COMMENT": "",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2506.23690": {
+        "authors": [
+            "Shuai Tan",
+            "Biao Gong",
+            "Yujie Wei",
+            "Shiwei Zhang",
+            "Zhuoxin Liu",
+            "Dandan Zheng",
+            "Jingdong Chen",
+            "Yan Wang",
+            "Hao Ouyang",
+            "Kecheng Zheng",
+            "Yujun Shen"
+        ],
+        "title": "SynMotion: Semantic-Visual Adaptation for Motion Customized Video Generation",
+        "abstract": "arXiv:2506.23690v1 Announce Type: new  Abstract: Diffusion-based video motion customization facilitates the acquisition of human motion representations from a few video samples, while achieving arbitrary subjects transfer through precise textual conditioning. Existing approaches often rely on semantic-level alignment, expecting the model to learn new motion concepts and combine them with other entities (e.g., ''cats'' or ''dogs'') to produce visually appealing results. However, video data involve complex spatio-temporal patterns, and focusing solely on semantics cause the model to overlook the visual complexity of motion. Conversely, tuning only the visual representation leads to semantic confusion in representing the intended action. To address these limitations, we propose SynMotion, a new motion-customized video generation model that jointly leverages semantic guidance and visual adaptation. At the semantic level, we introduce the dual-embedding semantic comprehension mechanism which disentangles subject and motion representations, allowing the model to learn customized motion features while preserving its generative capabilities for diverse subjects. At the visual level, we integrate parameter-efficient motion adapters into a pre-trained video generation model to enhance motion fidelity and temporal coherence. Furthermore, we introduce a new embedding-specific training strategy which \\textbf{alternately optimizes} subject and motion embeddings, supported by the manually constructed Subject Prior Video (SPV) training dataset. This strategy promotes motion specificity while preserving generalization across diverse subjects. Lastly, we introduce MotionBench, a newly curated benchmark with diverse motion patterns. Experimental results across both T2V and I2V settings demonstrate that \\method outperforms existing baselines. Project page: https://lucaria-academy.github.io/SynMotion/",
+        "arxiv_id": "2506.23690",
+        "ARXIVID": "2506.23690",
+        "COMMENT": "",
         "RELEVANCE": 3,
         "NOVELTY": 5
     }
