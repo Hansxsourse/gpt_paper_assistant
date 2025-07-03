@@ -1,4 +1,40 @@
 {
+    "2507.00992": {
+        "authors": [
+            "Yuanrui Wang",
+            "Cong Han",
+            "Yafei Li",
+            "Zhipeng Jin",
+            "Xiawei Li",
+            "SiNan Du",
+            "Wen Tao",
+            "Yi Yang",
+            "Shuanglong Li",
+            "Chun Yuan",
+            "Liu Lin"
+        ],
+        "title": "UniGlyph: Unified Segmentation-Conditioned Diffusion for Precise Visual Text Synthesis",
+        "abstract": "arXiv:2507.00992v2 Announce Type: new  Abstract: Text-to-image generation has greatly advanced content creation, yet accurately rendering visual text remains a key challenge due to blurred glyphs, semantic drift, and limited style control. Existing methods often rely on pre-rendered glyph images as conditions, but these struggle to retain original font styles and color cues, necessitating complex multi-branch designs that increase model overhead and reduce flexibility. To address these issues, we propose a segmentation-guided framework that uses pixel-level visual text masks -- rich in glyph shape, color, and spatial detail -- as unified conditional inputs. Our method introduces two core components: (1) a fine-tuned bilingual segmentation model for precise text mask extraction, and (2) a streamlined diffusion model augmented with adaptive glyph conditioning and a region-specific loss to preserve textual fidelity in both content and style. Our approach achieves state-of-the-art performance on the AnyText benchmark, significantly surpassing prior methods in both Chinese and English settings. To enable more rigorous evaluation, we also introduce two new benchmarks: GlyphMM-benchmark for testing layout and glyph consistency in complex typesetting, and MiniText-benchmark for assessing generation quality in small-scale text regions. Experimental results show that our model outperforms existing methods by a large margin in both scenarios, particularly excelling at small text rendering and complex layout preservation, validating its strong generalization and deployment readiness.",
+        "arxiv_id": "2507.00992",
+        "ARXIVID": "2507.00992",
+        "COMMENT": "Matches criteria 1 and 2 closely with a unified segmentation-conditioned diffusion model for text synthesis.",
+        "RELEVANCE": 10,
+        "NOVELTY": 8
+    },
+    "2507.00429": {
+        "authors": [
+            "Jingyi Pan",
+            "Dan Xu",
+            "Qiong Luo"
+        ],
+        "title": "DiGA3D: Coarse-to-Fine Diffusional Propagation of Geometry and Appearance for Versatile 3D Inpainting",
+        "abstract": "arXiv:2507.00429v1 Announce Type: new  Abstract: Developing a unified pipeline that enables users to remove, re-texture, or replace objects in a versatile manner is crucial for text-guided 3D inpainting. However, there are still challenges in performing multiple 3D inpainting tasks within a unified framework: 1) Single reference inpainting methods lack robustness when dealing with views that are far from the reference view. 2) Appearance inconsistency arises when independently inpainting multi-view images with 2D diffusion priors; 3) Geometry inconsistency limits performance when there are significant geometric changes in the inpainting regions. To tackle these challenges, we introduce DiGA3D, a novel and versatile 3D inpainting pipeline that leverages diffusion models to propagate consistent appearance and geometry in a coarse-to-fine manner. First, DiGA3D develops a robust strategy for selecting multiple reference views to reduce errors during propagation. Next, DiGA3D designs an Attention Feature Propagation (AFP) mechanism that propagates attention features from the selected reference views to other views via diffusion models to maintain appearance consistency. Furthermore, DiGA3D introduces a Texture-Geometry Score Distillation Sampling (TG-SDS) loss to further improve the geometric consistency of inpainted 3D scenes. Extensive experiments on multiple 3D inpainting tasks demonstrate the effectiveness of our method. The project page is available at https://rorisis.github.io/DiGA3D/.",
+        "arxiv_id": "2507.00429",
+        "ARXIVID": "2507.00429",
+        "COMMENT": "Matches criteria 2 with a unified diffusion model for 3D inpainting tasks.",
+        "RELEVANCE": 5,
+        "NOVELTY": 7
+    },
     "2507.00790": {
         "authors": [
             "Huaqiu Li",
@@ -12,24 +48,53 @@
         "abstract": "arXiv:2507.00790v1 Announce Type: new  Abstract: Unified image restoration is a significantly challenging task in low-level vision. Existing methods either make tailored designs for specific tasks, limiting their generalizability across various types of degradation, or rely on training with paired datasets, thereby suffering from closed-set constraints. To address these issues, we propose a novel, dataset-free, and unified approach through recurrent posterior sampling utilizing a pretrained latent diffusion model. Our method incorporates the multimodal understanding model to provide sematic priors for the generative model under a task-blind condition. Furthermore, it utilizes a lightweight module to align the degraded input with the generated preference of the diffusion model, and employs recurrent refinement for posterior sampling. Extensive experiments demonstrate that our method outperforms state-of-the-art methods, validating its effectiveness and robustness. Our code and data will be available at https://github.com/AMAP-ML/LD-RPS.",
         "arxiv_id": "2507.00790",
         "ARXIVID": "2507.00790",
-        "COMMENT": "Matches criterion 2: Unified Diffusion Models for multiple vision tasks.",
+        "COMMENT": "2",
         "RELEVANCE": 5,
-        "NOVELTY": 6
+        "NOVELTY": 5
     },
-    "2507.00377": {
+    "2507.00371": {
         "authors": [
-            "Jianhao Xie",
-            "Ziang Zhang",
-            "Zhenyu Weng",
-            "Yuesheng Zhu",
-            "Guibo Luo"
+            "Xin Yang (College of Biosystems Engineering and Food Science",
+            "Zhejiang University",
+            "Key Laboratory of Spectroscopy Sensing",
+            "Ministry of Agriculture and Rural Affairs)",
+            "Ruiming Du (Department of Biological and Environmental Engineering",
+            "Cornell University)",
+            "Hanyang Huang (College of Biosystems Engineering and Food Science",
+            "Zhejiang University",
+            "Key Laboratory of Spectroscopy Sensing",
+            "Ministry of Agriculture and Rural Affairs)",
+            "Jiayang Xie (College of Biosystems Engineering and Food Science",
+            "Zhejiang University",
+            "Key Laboratory of Spectroscopy Sensing",
+            "Ministry of Agriculture and Rural Affairs)",
+            "Pengyao Xie (College of Biosystems Engineering and Food Science",
+            "Zhejiang University",
+            "Key Laboratory of Spectroscopy Sensing",
+            "Ministry of Agriculture and Rural Affairs)",
+            "Leisen Fang (College of Biosystems Engineering and Food Science",
+            "Zhejiang University",
+            "Key Laboratory of Spectroscopy Sensing",
+            "Ministry of Agriculture and Rural Affairs)",
+            "Ziyue Guo (College of Biosystems Engineering and Food Science",
+            "Zhejiang University",
+            "Key Laboratory of Spectroscopy Sensing",
+            "Ministry of Agriculture and Rural Affairs)",
+            "Nanjun Jiang (Amway)",
+            "Yu Jiang (Horticulture Section",
+            "School of Integrative Plant Science",
+            "Cornell AgriTech)",
+            "Haiyan Cen (College of Biosystems Engineering and Food Science",
+            "Zhejiang University",
+            "Key Laboratory of Spectroscopy Sensing",
+            "Ministry of Agriculture and Rural Affairs)"
         ],
-        "title": "MedDiff-FT: Data-Efficient Diffusion Model Fine-tuning with Structural Guidance for Controllable Medical Image Synthesis",
-        "abstract": "arXiv:2507.00377v1 Announce Type: new  Abstract: Recent advancements in deep learning for medical image segmentation are often limited by the scarcity of high-quality training data.While diffusion models provide a potential solution by generating synthetic images, their effectiveness in medical imaging remains constrained due to their reliance on large-scale medical datasets and the need for higher image quality. To address these challenges, we present MedDiff-FT, a controllable medical image generation method that fine-tunes a diffusion foundation model to produce medical images with structural dependency and domain specificity in a data-efficient manner. During inference, a dynamic adaptive guiding mask enforces spatial constraints to ensure anatomically coherent synthesis, while a lightweight stochastic mask generator enhances diversity through hierarchical randomness injection. Additionally, an automated quality assessment protocol filters suboptimal outputs using feature-space metrics, followed by mask corrosion to refine fidelity. Evaluated on five medical segmentation datasets,MedDiff-FT's synthetic image-mask pairs improve SOTA method's segmentation performance by an average of 1% in Dice score. The framework effectively balances generation quality, diversity, and computational efficiency, offering a practical solution for medical data augmentation. The code is available at https://github.com/JianhaoXie1/MedDiff-FT.",
-        "arxiv_id": "2507.00377",
-        "ARXIVID": "2507.00377",
-        "COMMENT": "Matches criterion 2: Unified Diffusion Models for multiple vision tasks.",
-        "RELEVANCE": 5,
+        "title": "PlantSegNeRF: A few-shot, cross-dataset method for plant 3D instance point cloud reconstruction via joint-channel NeRF with multi-view image instance matching",
+        "abstract": "arXiv:2507.00371v1 Announce Type: new  Abstract: Organ segmentation of plant point clouds is a prerequisite for the high-resolution and accurate extraction of organ-level phenotypic traits. Although the fast development of deep learning has boosted much research on segmentation of plant point clouds, the existing techniques for organ segmentation still face limitations in resolution, segmentation accuracy, and generalizability across various plant species. In this study, we proposed a novel approach called plant segmentation neural radiance fields (PlantSegNeRF), aiming to directly generate high-precision instance point clouds from multi-view RGB image sequences for a wide range of plant species. PlantSegNeRF performed 2D instance segmentation on the multi-view images to generate instance masks for each organ with a corresponding ID. The multi-view instance IDs corresponding to the same plant organ were then matched and refined using a specially designed instance matching module. The instance NeRF was developed to render an implicit scene, containing color, density, semantic and instance information. The implicit scene was ultimately converted into high-precision plant instance point clouds based on the volume density. The results proved that in semantic segmentation of point clouds, PlantSegNeRF outperformed the commonly used methods, demonstrating an average improvement of 16.1%, 18.3%, 17.8%, and 24.2% in precision, recall, F1-score, and IoU compared to the second-best results on structurally complex datasets. More importantly, PlantSegNeRF exhibited significant advantages in plant point cloud instance segmentation tasks. Across all plant datasets, it achieved average improvements of 11.7%, 38.2%, 32.2% and 25.3% in mPrec, mRec, mCov, mWCov, respectively. This study extends the organ-level plant phenotyping and provides a high-throughput way to supply high-quality 3D data for the development of large-scale models in plant science.",
+        "arxiv_id": "2507.00371",
+        "ARXIVID": "2507.00371",
+        "COMMENT": "The paper does not match any of the specific criteria closely. It focuses on plant 3D instance point cloud reconstruction using a novel approach called PlantSegNeRF, which involves multi-view image instance matching and rendering implicit scenes. This does not align with the criteria of unified image/video generation and segmentation, unified diffusion models, image matting, or video matting.",
+        "RELEVANCE": 3,
         "NOVELTY": 6
     }
 }
