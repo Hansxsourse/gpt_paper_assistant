@@ -1,0 +1,530 @@
+{
+  "dates": [
+    {
+      "date": "2025-07-02",
+      "filename": "output_2025_0702.md",
+      "displayDate": "July 02, 2025"
+    },
+    {
+      "date": "2025-07-01",
+      "filename": "output_2025_0701.md",
+      "displayDate": "July 01, 2025"
+    },
+    {
+      "date": "2025-06-30",
+      "filename": "output_2025_0630.md",
+      "displayDate": "June 30, 2025"
+    },
+    {
+      "date": "2025-06-27",
+      "filename": "output_2025_0627.md",
+      "displayDate": "June 27, 2025"
+    },
+    {
+      "date": "2025-06-26",
+      "filename": "output_2025_0626.md",
+      "displayDate": "June 26, 2025"
+    },
+    {
+      "date": "2025-06-25",
+      "filename": "output_2025_0625.md",
+      "displayDate": "June 25, 2025"
+    },
+    {
+      "date": "2025-06-24",
+      "filename": "output_2025_0624.md",
+      "displayDate": "June 24, 2025"
+    },
+    {
+      "date": "2025-06-23",
+      "filename": "output_2025_0623.md",
+      "displayDate": "June 23, 2025"
+    },
+    {
+      "date": "2025-06-19",
+      "filename": "output_2025_0619.md",
+      "displayDate": "June 19, 2025"
+    },
+    {
+      "date": "2025-06-18",
+      "filename": "output_2025_0618.md",
+      "displayDate": "June 18, 2025"
+    },
+    {
+      "date": "2025-06-17",
+      "filename": "output_2025_0617.md",
+      "displayDate": "June 17, 2025"
+    },
+    {
+      "date": "2025-06-16",
+      "filename": "output_2025_0616.md",
+      "displayDate": "June 16, 2025"
+    },
+    {
+      "date": "2025-06-13",
+      "filename": "output_2025_0613.md",
+      "displayDate": "June 13, 2025"
+    },
+    {
+      "date": "2025-06-11",
+      "filename": "output_2025_0611.md",
+      "displayDate": "June 11, 2025"
+    },
+    {
+      "date": "2025-06-10",
+      "filename": "output_2025_0610.md",
+      "displayDate": "June 10, 2025"
+    },
+    {
+      "date": "2025-06-09",
+      "filename": "output_2025_0609.md",
+      "displayDate": "June 09, 2025"
+    },
+    {
+      "date": "2025-06-06",
+      "filename": "output_2025_0606.md",
+      "displayDate": "June 06, 2025"
+    },
+    {
+      "date": "2025-06-05",
+      "filename": "output_2025_0605.md",
+      "displayDate": "June 05, 2025"
+    },
+    {
+      "date": "2025-06-03",
+      "filename": "output_2025_0603.md",
+      "displayDate": "June 03, 2025"
+    },
+    {
+      "date": "2025-06-02",
+      "filename": "output_2025_0602.md",
+      "displayDate": "June 02, 2025"
+    },
+    {
+      "date": "2025-05-30",
+      "filename": "output_2025_0530.md",
+      "displayDate": "May 30, 2025"
+    },
+    {
+      "date": "2025-05-29",
+      "filename": "output_2025_0529.md",
+      "displayDate": "May 29, 2025"
+    },
+    {
+      "date": "2025-05-28",
+      "filename": "output_2025_0528.md",
+      "displayDate": "May 28, 2025"
+    },
+    {
+      "date": "2025-05-27",
+      "filename": "output_2025_0527.md",
+      "displayDate": "May 27, 2025"
+    },
+    {
+      "date": "2025-05-26",
+      "filename": "output_2025_0526.md",
+      "displayDate": "May 26, 2025"
+    },
+    {
+      "date": "2025-05-23",
+      "filename": "output_2025_0523.md",
+      "displayDate": "May 23, 2025"
+    },
+    {
+      "date": "2025-05-22",
+      "filename": "output_2025_0522.md",
+      "displayDate": "May 22, 2025"
+    },
+    {
+      "date": "2025-05-21",
+      "filename": "output_2025_0521.md",
+      "displayDate": "May 21, 2025"
+    },
+    {
+      "date": "2025-05-20",
+      "filename": "output_2025_0520.md",
+      "displayDate": "May 20, 2025"
+    },
+    {
+      "date": "2025-05-19",
+      "filename": "output_2025_0519.md",
+      "displayDate": "May 19, 2025"
+    },
+    {
+      "date": "2025-05-16",
+      "filename": "output_2025_0516.md",
+      "displayDate": "May 16, 2025"
+    },
+    {
+      "date": "2025-05-15",
+      "filename": "output_2025_0515.md",
+      "displayDate": "May 15, 2025"
+    },
+    {
+      "date": "2025-05-14",
+      "filename": "output_2025_0514.md",
+      "displayDate": "May 14, 2025"
+    },
+    {
+      "date": "2025-05-13",
+      "filename": "output_2025_0513.md",
+      "displayDate": "May 13, 2025"
+    },
+    {
+      "date": "2025-05-12",
+      "filename": "output_2025_0512.md",
+      "displayDate": "May 12, 2025"
+    },
+    {
+      "date": "2025-05-09",
+      "filename": "output_2025_0509.md",
+      "displayDate": "May 09, 2025"
+    },
+    {
+      "date": "2025-05-08",
+      "filename": "output_2025_0508.md",
+      "displayDate": "May 08, 2025"
+    },
+    {
+      "date": "2025-05-07",
+      "filename": "output_2025_0507.md",
+      "displayDate": "May 07, 2025"
+    },
+    {
+      "date": "2025-05-06",
+      "filename": "output_2025_0506.md",
+      "displayDate": "May 06, 2025"
+    },
+    {
+      "date": "2025-05-05",
+      "filename": "output_2025_0505.md",
+      "displayDate": "May 05, 2025"
+    },
+    {
+      "date": "2025-05-02",
+      "filename": "output_2025_0502.md",
+      "displayDate": "May 02, 2025"
+    },
+    {
+      "date": "2025-05-01",
+      "filename": "output_2025_0501.md",
+      "displayDate": "May 01, 2025"
+    },
+    {
+      "date": "2025-04-30",
+      "filename": "output_2025_0430.md",
+      "displayDate": "April 30, 2025"
+    },
+    {
+      "date": "2025-04-29",
+      "filename": "output_2025_0429.md",
+      "displayDate": "April 29, 2025"
+    },
+    {
+      "date": "2025-04-28",
+      "filename": "output_2025_0428.md",
+      "displayDate": "April 28, 2025"
+    },
+    {
+      "date": "2025-04-25",
+      "filename": "output_2025_0425.md",
+      "displayDate": "April 25, 2025"
+    },
+    {
+      "date": "2025-04-24",
+      "filename": "output_2025_0424.md",
+      "displayDate": "April 24, 2025"
+    },
+    {
+      "date": "2025-04-23",
+      "filename": "output_2025_0423.md",
+      "displayDate": "April 23, 2025"
+    },
+    {
+      "date": "2025-04-22",
+      "filename": "output_2025_0422.md",
+      "displayDate": "April 22, 2025"
+    },
+    {
+      "date": "2025-04-21",
+      "filename": "output_2025_0421.md",
+      "displayDate": "April 21, 2025"
+    },
+    {
+      "date": "2025-04-18",
+      "filename": "output_2025_0418.md",
+      "displayDate": "April 18, 2025"
+    },
+    {
+      "date": "2025-04-17",
+      "filename": "output_2025_0417.md",
+      "displayDate": "April 17, 2025"
+    },
+    {
+      "date": "2025-04-16",
+      "filename": "output_2025_0416.md",
+      "displayDate": "April 16, 2025"
+    },
+    {
+      "date": "2025-04-15",
+      "filename": "output_2025_0415.md",
+      "displayDate": "April 15, 2025"
+    },
+    {
+      "date": "2025-04-14",
+      "filename": "output_2025_0414.md",
+      "displayDate": "April 14, 2025"
+    },
+    {
+      "date": "2025-04-11",
+      "filename": "output_2025_0411.md",
+      "displayDate": "April 11, 2025"
+    },
+    {
+      "date": "2025-04-10",
+      "filename": "output_2025_0410.md",
+      "displayDate": "April 10, 2025"
+    },
+    {
+      "date": "2025-04-09",
+      "filename": "output_2025_0409.md",
+      "displayDate": "April 09, 2025"
+    },
+    {
+      "date": "2025-04-08",
+      "filename": "output_2025_0408.md",
+      "displayDate": "April 08, 2025"
+    },
+    {
+      "date": "2025-04-07",
+      "filename": "output_2025_0407.md",
+      "displayDate": "April 07, 2025"
+    },
+    {
+      "date": "2025-04-04",
+      "filename": "output_2025_0404.md",
+      "displayDate": "April 04, 2025"
+    },
+    {
+      "date": "2025-04-03",
+      "filename": "output_2025_0403.md",
+      "displayDate": "April 03, 2025"
+    },
+    {
+      "date": "2025-04-02",
+      "filename": "output_2025_0402.md",
+      "displayDate": "April 02, 2025"
+    },
+    {
+      "date": "2025-04-01",
+      "filename": "output_2025_0401.md",
+      "displayDate": "April 01, 2025"
+    },
+    {
+      "date": "2025-03-31",
+      "filename": "output_2025_0331.md",
+      "displayDate": "March 31, 2025"
+    },
+    {
+      "date": "2025-03-28",
+      "filename": "output_2025_0328.md",
+      "displayDate": "March 28, 2025"
+    },
+    {
+      "date": "2025-03-27",
+      "filename": "output_2025_0327.md",
+      "displayDate": "March 27, 2025"
+    },
+    {
+      "date": "2025-03-26",
+      "filename": "output_2025_0326.md",
+      "displayDate": "March 26, 2025"
+    },
+    {
+      "date": "2025-03-25",
+      "filename": "output_2025_0325.md",
+      "displayDate": "March 25, 2025"
+    },
+    {
+      "date": "2025-03-24",
+      "filename": "output_2025_0324.md",
+      "displayDate": "March 24, 2025"
+    },
+    {
+      "date": "2025-03-21",
+      "filename": "output_2025_0321.md",
+      "displayDate": "March 21, 2025"
+    },
+    {
+      "date": "2025-03-20",
+      "filename": "output_2025_0320.md",
+      "displayDate": "March 20, 2025"
+    },
+    {
+      "date": "2025-03-19",
+      "filename": "output_2025_0319.md",
+      "displayDate": "March 19, 2025"
+    },
+    {
+      "date": "2025-03-17",
+      "filename": "output_2025_0317.md",
+      "displayDate": "March 17, 2025"
+    },
+    {
+      "date": "2025-03-14",
+      "filename": "output_2025_0314.md",
+      "displayDate": "March 14, 2025"
+    },
+    {
+      "date": "2025-03-13",
+      "filename": "output_2025_0313.md",
+      "displayDate": "March 13, 2025"
+    },
+    {
+      "date": "2025-03-12",
+      "filename": "output_2025_0312.md",
+      "displayDate": "March 12, 2025"
+    },
+    {
+      "date": "2025-03-11",
+      "filename": "output_2025_0311.md",
+      "displayDate": "March 11, 2025"
+    },
+    {
+      "date": "2025-03-10",
+      "filename": "output_2025_0310.md",
+      "displayDate": "March 10, 2025"
+    },
+    {
+      "date": "2025-03-07",
+      "filename": "output_2025_0307.md",
+      "displayDate": "March 07, 2025"
+    },
+    {
+      "date": "2025-03-06",
+      "filename": "output_2025_0306.md",
+      "displayDate": "March 06, 2025"
+    },
+    {
+      "date": "2025-03-05",
+      "filename": "output_2025_0305.md",
+      "displayDate": "March 05, 2025"
+    },
+    {
+      "date": "2025-03-04",
+      "filename": "output_2025_0304.md",
+      "displayDate": "March 04, 2025"
+    },
+    {
+      "date": "2025-03-03",
+      "filename": "output_2025_0303.md",
+      "displayDate": "March 03, 2025"
+    },
+    {
+      "date": "2025-03-01",
+      "filename": "output_2025_0301.md",
+      "displayDate": "March 01, 2025"
+    },
+    {
+      "date": "2025-02-28",
+      "filename": "output_2025_0228.md",
+      "displayDate": "February 28, 2025"
+    },
+    {
+      "date": "2025-02-27",
+      "filename": "output_2025_0227.md",
+      "displayDate": "February 27, 2025"
+    },
+    {
+      "date": "2025-02-26",
+      "filename": "output_2025_0226.md",
+      "displayDate": "February 26, 2025"
+    },
+    {
+      "date": "2025-02-25",
+      "filename": "output_2025_0225.md",
+      "displayDate": "February 25, 2025"
+    },
+    {
+      "date": "2025-02-24",
+      "filename": "output_2025_0224.md",
+      "displayDate": "February 24, 2025"
+    },
+    {
+      "date": "2025-02-21",
+      "filename": "output_2025_0221.md",
+      "displayDate": "February 21, 2025"
+    },
+    {
+      "date": "2025-02-20",
+      "filename": "output_2025_0220.md",
+      "displayDate": "February 20, 2025"
+    },
+    {
+      "date": "2025-02-19",
+      "filename": "output_2025_0219.md",
+      "displayDate": "February 19, 2025"
+    },
+    {
+      "date": "2025-02-18",
+      "filename": "output_2025_0218.md",
+      "displayDate": "February 18, 2025"
+    },
+    {
+      "date": "2025-02-17",
+      "filename": "output_2025_0217.md",
+      "displayDate": "February 17, 2025"
+    },
+    {
+      "date": "2025-02-14",
+      "filename": "output_2025_0214.md",
+      "displayDate": "February 14, 2025"
+    },
+    {
+      "date": "2025-02-13",
+      "filename": "output_2025_0213.md",
+      "displayDate": "February 13, 2025"
+    },
+    {
+      "date": "2025-02-12",
+      "filename": "output_2025_0212.md",
+      "displayDate": "February 12, 2025"
+    },
+    {
+      "date": "2025-02-11",
+      "filename": "output_2025_0211.md",
+      "displayDate": "February 11, 2025"
+    },
+    {
+      "date": "2025-02-10",
+      "filename": "output_2025_0210.md",
+      "displayDate": "February 10, 2025"
+    },
+    {
+      "date": "2025-02-07",
+      "filename": "output_2025_0207.md",
+      "displayDate": "February 07, 2025"
+    },
+    {
+      "date": "2025-02-06",
+      "filename": "output_2025_0206.md",
+      "displayDate": "February 06, 2025"
+    },
+    {
+      "date": "2025-02-05",
+      "filename": "output_2025_0205.md",
+      "displayDate": "February 05, 2025"
+    },
+    {
+      "date": "2025-02-04",
+      "filename": "output_2025_0204.md",
+      "displayDate": "February 04, 2025"
+    },
+    {
+      "date": "2025-02-03",
+      "filename": "output_2025_0203.md",
+      "displayDate": "February 03, 2025"
+    }
+  ],
+  "last_updated": "2025-07-03T02:59:56.996348"
+}
