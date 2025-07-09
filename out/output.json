@@ -1,1 +1,121 @@
-{}
+{
+    "2507.05963": {
+        "authors": [
+            "Zhenghao Zhang",
+            "Junchao Liao",
+            "Xiangyu Meng",
+            "Long Qin",
+            "Weizhi Wang"
+        ],
+        "title": "Tora2: Motion and Appearance Customized Diffusion Transformer for Multi-Entity Video Generation",
+        "abstract": "arXiv:2507.05963v1 Announce Type: new  Abstract: Recent advances in diffusion transformer models for motion-guided video generation, such as Tora, have shown significant progress. In this paper, we present Tora2, an enhanced version of Tora, which introduces several design improvements to expand its capabilities in both appearance and motion customization. Specifically, we introduce a decoupled personalization extractor that generates comprehensive personalization embeddings for multiple open-set entities, better preserving fine-grained visual details compared to previous methods. Building on this, we design a gated self-attention mechanism to integrate trajectory, textual description, and visual information for each entity. This innovation significantly reduces misalignment in multimodal conditioning during training. Moreover, we introduce a contrastive loss that jointly optimizes trajectory dynamics and entity consistency through explicit mapping between motion and personalization embeddings. Tora2 is, to our best knowledge, the first method to achieve simultaneous multi-entity customization of appearance and motion for video generation. Experimental results demonstrate that Tora2 achieves competitive performance with state-of-the-art customization methods while providing advanced motion control capabilities, which marks a critical advancement in multi-condition video generation. Project page: https://github.com/alibaba/Tora .",
+        "arxiv_id": "2507.05963",
+        "ARXIVID": "2507.05963",
+        "COMMENT": "No criteria match closely.",
+        "RELEVANCE": 3,
+        "NOVELTY": 6
+    },
+    "2507.05678": {
+        "authors": [
+            "Yisu Zhang",
+            "Chenjie Cao",
+            "Chaohui Yu",
+            "Jianke Zhu"
+        ],
+        "title": "LiON-LoRA: Rethinking LoRA Fusion to Unify Controllable Spatial and Temporal Generation for Video Diffusion",
+        "abstract": "arXiv:2507.05678v1 Announce Type: new  Abstract: Video Diffusion Models (VDMs) have demonstrated remarkable capabilities in synthesizing realistic videos by learning from large-scale data. Although vanilla Low-Rank Adaptation (LoRA) can learn specific spatial or temporal movement to driven VDMs with constrained data, achieving precise control over both camera trajectories and object motion remains challenging due to the unstable fusion and non-linear scalability. To address these issues, we propose LiON-LoRA, a novel framework that rethinks LoRA fusion through three core principles: Linear scalability, Orthogonality, and Norm consistency. First, we analyze the orthogonality of LoRA features in shallow VDM layers, enabling decoupled low-level controllability. Second, norm consistency is enforced across layers to stabilize fusion during complex camera motion combinations. Third, a controllable token is integrated into the diffusion transformer (DiT) to linearly adjust motion amplitudes for both cameras and objects with a modified self-attention mechanism to ensure decoupled control. Additionally, we extend LiON-LoRA to temporal generation by leveraging static-camera videos, unifying spatial and temporal controllability. Experiments demonstrate that LiON-LoRA outperforms state-of-the-art methods in trajectory control accuracy and motion strength adjustment, achieving superior generalization with minimal training data. Project Page: https://fuchengsu.github.io/lionlora.github.io/",
+        "arxiv_id": "2507.05678",
+        "ARXIVID": "2507.05678",
+        "COMMENT": "No criteria match closely.",
+        "RELEVANCE": 3,
+        "NOVELTY": 6
+    },
+    "2507.06146": {
+        "authors": [
+            "Haoyu Wang",
+            "Lei Zhang",
+            "Wei Wei",
+            "Chen Ding",
+            "Yanning Zhang"
+        ],
+        "title": "Prompt-Free Conditional Diffusion for Multi-object Image Augmentation",
+        "abstract": "arXiv:2507.06146v1 Announce Type: new  Abstract: Diffusion models has underpinned much recent advances of dataset augmentation in various computer vision tasks. However, when involving generating multi-object images as real scenarios, most existing methods either rely entirely on text condition, resulting in a deviation between the generated objects and the original data, or rely too much on the original images, resulting in a lack of diversity in the generated images, which is of limited help to downstream tasks. To mitigate both problems with one stone, we propose a prompt-free conditional diffusion framework for multi-object image augmentation. Specifically, we introduce a local-global semantic fusion strategy to extract semantics from images to replace text, and inject knowledge into the diffusion model through LoRA to alleviate the category deviation between the original model and the target dataset. In addition, we design a reward model based counting loss to assist the traditional reconstruction loss for model training. By constraining the object counts of each category instead of pixel-by-pixel constraints, bridging the quantity deviation between the generated data and the original data while improving the diversity of the generated data. Experimental results demonstrate the superiority of the proposed method over several representative state-of-the-art baselines and showcase strong downstream task gain and out-of-domain generalization capabilities. Code is available at \\href{https://github.com/00why00/PFCD}{here}.",
+        "arxiv_id": "2507.06146",
+        "ARXIVID": "2507.06146",
+        "COMMENT": "No criteria match closely.",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2507.05621": {
+        "authors": [
+            "Suoxiang Zhang",
+            "Xiaxi Li",
+            "Hongrui Chang",
+            "Zhuoyan Hou",
+            "Guoxin Wu",
+            "Ronghua Ji"
+        ],
+        "title": "AdaptaGen: Domain-Specific Image Generation through Hierarchical Semantic Optimization Framework",
+        "abstract": "arXiv:2507.05621v1 Announce Type: new  Abstract: Domain-specific image generation aims to produce high-quality visual content for specialized fields while ensuring semantic accuracy and detail fidelity. However, existing methods exhibit two critical limitations: First, current approaches address prompt engineering and model adaptation separately, overlooking the inherent dependence between semantic understanding and visual representation in specialized domains. Second, these techniques inadequately incorporate domain-specific semantic constraints during content synthesis, resulting in generation outcomes that exhibit hallucinations and semantic deviations. To tackle these issues, we propose AdaptaGen, a hierarchical semantic optimization framework that integrates matrix-based prompt optimization with multi-perspective understanding, capturing comprehensive semantic relationships from both global and local perspectives. To mitigate hallucinations in specialized domains, we design a cross-modal adaptation mechanism, which, when combined with intelligent content synthesis, enables preserving core thematic elements while incorporating diverse details across images. Additionally, we introduce a two-phase caption semantic transformation during the generation phase. This approach maintains semantic coherence while enhancing visual diversity, ensuring the generated images adhere to domain-specific constraints. Experimental results confirm our approach's effectiveness, with our framework achieving superior performance across 40 categories from diverse datasets using only 16 images per category, demonstrating significant improvements in image quality, diversity, and semantic consistency.",
+        "arxiv_id": "2507.05621",
+        "ARXIVID": "2507.05621",
+        "COMMENT": "No criteria match closely.",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2507.05798": {
+        "authors": [
+            "Xin Hu",
+            "Ke Qin",
+            "Guiduo Duan",
+            "Ming Li",
+            "Yuan-Fang Li",
+            "Tao He"
+        ],
+        "title": "SPADE: Spatial-Aware Denoising Network for Open-vocabulary Panoptic Scene Graph Generation with Long- and Local-range Context Reasoning",
+        "abstract": "arXiv:2507.05798v1 Announce Type: new  Abstract: Panoptic Scene Graph Generation (PSG) integrates instance segmentation with relation understanding to capture pixel-level structural relationships in complex scenes. Although recent approaches leveraging pre-trained vision-language models (VLMs) have significantly improved performance in the open-vocabulary setting, they commonly ignore the inherent limitations of VLMs in spatial relation reasoning, such as difficulty in distinguishing object relative positions, which results in suboptimal relation prediction. Motivated by the denoising diffusion model's inversion process in preserving the spatial structure of input images, we propose SPADE (SPatial-Aware Denoising-nEtwork) framework -- a novel approach for open-vocabulary PSG. SPADE consists of two key steps: (1) inversion-guided calibration for the UNet adaptation, and (2) spatial-aware context reasoning. In the first step, we calibrate a general pre-trained teacher diffusion model into a PSG-specific denoising network with cross-attention maps derived during inversion through a lightweight LoRA-based fine-tuning strategy. In the second step, we develop a spatial-aware relation graph transformer that captures both local and long-range contextual information, facilitating the generation of high-quality relation queries. Extensive experiments on benchmark PSG and Visual Genome datasets demonstrate that SPADE outperforms state-of-the-art methods in both closed- and open-set scenarios, particularly for spatial relationship prediction.",
+        "arxiv_id": "2507.05798",
+        "ARXIVID": "2507.05798",
+        "COMMENT": "No criteria match closely.",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2507.05763": {
+        "authors": [
+            "Ruijie Lu",
+            "Yu Liu",
+            "Jiaxiang Tang",
+            "Junfeng Ni",
+            "Yuxiang Wang",
+            "Diwen Wan",
+            "Gang Zeng",
+            "Yixin Chen",
+            "Siyuan Huang"
+        ],
+        "title": "DreamArt: Generating Interactable Articulated Objects from a Single Image",
+        "abstract": "arXiv:2507.05763v1 Announce Type: new  Abstract: Generating articulated objects, such as laptops and microwaves, is a crucial yet challenging task with extensive applications in Embodied AI and AR/VR. Current image-to-3D methods primarily focus on surface geometry and texture, neglecting part decomposition and articulation modeling. Meanwhile, neural reconstruction approaches (e.g., NeRF or Gaussian Splatting) rely on dense multi-view or interaction data, limiting their scalability. In this paper, we introduce DreamArt, a novel framework for generating high-fidelity, interactable articulated assets from single-view images. DreamArt employs a three-stage pipeline: firstly, it reconstructs part-segmented and complete 3D object meshes through a combination of image-to-3D generation, mask-prompted 3D segmentation, and part amodal completion. Second, we fine-tune a video diffusion model to capture part-level articulation priors, leveraging movable part masks as prompt and amodal images to mitigate ambiguities caused by occlusion. Finally, DreamArt optimizes the articulation motion, represented by a dual quaternion, and conducts global texture refinement and repainting to ensure coherent, high-quality textures across all parts. Experimental results demonstrate that DreamArt effectively generates high-quality articulated objects, possessing accurate part shape, high appearance fidelity, and plausible articulation, thereby providing a scalable solution for articulated asset generation. Our project page is available at https://dream-art-0.github.io/DreamArt/.",
+        "arxiv_id": "2507.05763",
+        "ARXIVID": "2507.05763",
+        "COMMENT": "No criteria match closely.",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2507.05838": {
+        "authors": [
+            "Ourui Fu",
+            "Hangzhou He",
+            "Xinliang Zhang",
+            "Lei Zhu",
+            "Shuang Zeng",
+            "ZhaoHeng Xie",
+            "Yanye Lu"
+        ],
+        "title": "I$^2$R: Inter and Intra-image Refinement in Few Shot Segmentation",
+        "abstract": "arXiv:2507.05838v1 Announce Type: new  Abstract: The annotation bottleneck in semantic segmentation has driven significant interest in few-shot segmentation, which aims to develop segmentation models capable of generalizing rapidly to novel classes using minimal exemplars. Conventional training paradigms typically generate query prior maps by extracting masked-area features from support images, followed by making predictions guided by these prior maps. However, current approaches remain constrained by two critical limitations stemming from inter- and intra-image discrepancies, both of which significantly degrade segmentation performance: 1) The semantic gap between support and query images results in mismatched features and inaccurate prior maps; 2) Visually similar yet semantically distinct regions within support or query images lead to false negative or false positive predictions. We propose a novel FSS method called \\textbf{I$^2$R}: 1) Using category-specific high level representations which aggregate global semantic cues from support and query images, enabling more precise inter-image region localization and address the first limitation. 2) Directional masking strategy that suppresses inconsistent support-query pixel pairs, which exhibit high feature similarity but conflicting mask, to mitigate the second issue. Experiments demonstrate that our method outperforms state-of-the-art approaches, achieving improvements of 1.9\\% and 2.1\\% in mIoU under the 1-shot setting on PASCAL-5$^i$ and COCO-20$^i$ benchmarks, respectively.",
+        "arxiv_id": "2507.05838",
+        "ARXIVID": "2507.05838",
+        "COMMENT": "No criteria match closely.",
+        "RELEVANCE": 3,
+        "NOVELTY": 4
+    }
+}
