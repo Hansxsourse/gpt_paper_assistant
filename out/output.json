@@ -1,59 +1,53 @@
 {
-    "2507.08801": {
+    "2507.09619": {
         "authors": [
-            "Hangjie Yuan",
-            "Weihua Chen",
-            "Jun Cen",
-            "Hu Yu",
-            "Jingyun Liang",
-            "Shuning Chang",
-            "Zhihui Lin",
-            "Tao Feng",
-            "Pengwei Liu",
-            "Jiazheng Xing",
-            "Hao Luo",
-            "Jiasheng Tang",
-            "Fan Wang",
-            "Yi Yang"
+            "Yilin Lu",
+            "Jianghang Lin",
+            "Linhuang Xie",
+            "Kai Zhao",
+            "Yansong Qu",
+            "Shengchuan Zhang",
+            "Liujuan Cao",
+            "Rongrong Ji"
         ],
-        "title": "Lumos-1: On Autoregressive Video Generation from a Unified Model Perspective",
-        "abstract": "arXiv:2507.08801v1 Announce Type: new  Abstract: Autoregressive large language models (LLMs) have unified a vast range of language tasks, inspiring preliminary efforts in autoregressive video generation. Existing autoregressive video generators either diverge from standard LLM architectures, depend on bulky external text encoders, or incur prohibitive latency due to next-token decoding. In this paper, we introduce Lumos-1, an autoregressive video generator that retains the LLM architecture with minimal architectural modifications. To inject spatiotemporal correlations in LLMs, we identify the efficacy of incorporating 3D RoPE and diagnose its imbalanced frequency spectrum ranges. Therefore, we propose MM-RoPE, a RoPE scheme that preserves the original textual RoPE while providing comprehensive frequency spectra and scaled 3D positions for modeling multimodal spatiotemporal data. Moreover, Lumos-1 resorts to a token dependency strategy that obeys intra-frame bidirectionality and inter-frame temporal causality. Based on this dependency strategy, we identify the issue of frame-wise loss imbalance caused by spatial information redundancy and solve it by proposing Autoregressive Discrete Diffusion Forcing (AR-DF). AR-DF introduces temporal tube masking during training with a compatible inference-time masking policy to avoid quality degradation. By using memory-efficient training techniques, we pre-train Lumos-1 on only 48 GPUs, achieving performance comparable to EMU3 on GenEval, COSMOS-Video2World on VBench-I2V, and OpenSoraPlan on VBench-T2V. Code and models are available at https://github.com/alibaba-damo-academy/Lumos.",
-        "arxiv_id": "2507.08801",
-        "ARXIVID": "2507.08801",
-        "COMMENT": "None of the criteria match closely.",
-        "RELEVANCE": 3,
+        "title": "Generate Aligned Anomaly: Region-Guided Few-Shot Anomaly Image-Mask Pair Synthesis for Industrial Inspection",
+        "abstract": "arXiv:2507.09619v1 Announce Type: new  Abstract: Anomaly inspection plays a vital role in industrial manufacturing, but the scarcity of anomaly samples significantly limits the effectiveness of existing methods in tasks such as localization and classification. While several anomaly synthesis approaches have been introduced for data augmentation, they often struggle with low realism, inaccurate mask alignment, and poor generalization. To overcome these limitations, we propose Generate Aligned Anomaly (GAA), a region-guided, few-shot anomaly image-mask pair generation framework. GAA leverages the strong priors of a pretrained latent diffusion model to generate realistic, diverse, and semantically aligned anomalies using only a small number of samples. The framework first employs Localized Concept Decomposition to jointly model the semantic features and spatial information of anomalies, enabling flexible control over the type and location of anomalies. It then utilizes Adaptive Multi-Round Anomaly Clustering to perform fine-grained semantic clustering of anomaly concepts, thereby enhancing the consistency of anomaly representations. Subsequently, a region-guided mask generation strategy ensures precise alignment between anomalies and their corresponding masks, while a low-quality sample filtering module is introduced to further improve the overall quality of the generated samples. Extensive experiments on the MVTec AD and LOCO datasets demonstrate that GAA achieves superior performance in both anomaly synthesis quality and downstream tasks such as localization and classification.",
+        "arxiv_id": "2507.09619",
+        "ARXIVID": "2507.09619",
+        "COMMENT": "The paper proposes a framework for generating anomaly image-mask pairs, which involves joint modeling of semantic features and spatial information, aligning with the concept of co-learning synthesis and masks.",
+        "RELEVANCE": 5,
+        "NOVELTY": 6
+    },
+    "2507.09308": {
+        "authors": [
+            "Zile Wang",
+            "Hao Yu",
+            "Jiabo Zhan",
+            "Chun Yuan"
+        ],
+        "title": "AlphaVAE: Unified End-to-End RGBA Image Reconstruction and Generation with Alpha-Aware Representation Learning",
+        "abstract": "arXiv:2507.09308v1 Announce Type: new  Abstract: Recent advances in latent diffusion models have achieved remarkable results in high-fidelity RGB image synthesis by leveraging pretrained VAEs to compress and reconstruct pixel data at low computational cost. However, the generation of transparent or layered content (RGBA image) remains largely unexplored, due to the lack of large-scale benchmarks. In this work, we propose ALPHA, the first comprehensive RGBA benchmark that adapts standard RGB metrics to four-channel images via alpha blending over canonical backgrounds. We further introduce ALPHAVAE, a unified end-to-end RGBA VAE that extends a pretrained RGB VAE by incorporating a dedicated alpha channel. The model is trained with a composite objective that combines alpha-blended pixel reconstruction, patch-level fidelity, perceptual consistency, and dual KL divergence constraints to ensure latent fidelity across both RGB and alpha representations. Our RGBA VAE, trained on only 8K images in contrast to 1M used by prior methods, achieves a +4.9 dB improvement in PSNR and a +3.2% increase in SSIM over LayerDiffuse in reconstruction. It also enables superior transparent image generation when fine-tuned within a latent diffusion framework. Our code, data, and models are released on https://github.com/o0o0o00o0/AlphaVAE for reproducibility.",
+        "arxiv_id": "2507.09308",
+        "ARXIVID": "2507.09308",
+        "COMMENT": "Matches criteria 3",
+        "RELEVANCE": 5,
+        "NOVELTY": 6
+    },
+    "2507.09915": {
+        "authors": [
+            "Siyue Yao",
+            "Mingjie Sun",
+            "Eng Gee Lim",
+            "Ran Yi",
+            "Baojiang Zhong",
+            "Moncef Gabbouj"
+        ],
+        "title": "Crucial-Diff: A Unified Diffusion Model for Crucial Image and Annotation Synthesis in Data-scarce Scenarios",
+        "abstract": "arXiv:2507.09915v1 Announce Type: new  Abstract: The scarcity of data in various scenarios, such as medical, industry and autonomous driving, leads to model overfitting and dataset imbalance, thus hindering effective detection and segmentation performance. Existing studies employ the generative models to synthesize more training samples to mitigate data scarcity. However, these synthetic samples are repetitive or simplistic and fail to provide \"crucial information\" that targets the downstream model's weaknesses. Additionally, these methods typically require separate training for different objects, leading to computational inefficiencies. To address these issues, we propose Crucial-Diff, a domain-agnostic framework designed to synthesize crucial samples. Our method integrates two key modules. The Scene Agnostic Feature Extractor (SAFE) utilizes a unified feature extractor to capture target information. The Weakness Aware Sample Miner (WASM) generates hard-to-detect samples using feedback from the detection results of downstream model, which is then fused with the output of SAFE module. Together, our Crucial-Diff framework generates diverse, high-quality training data, achieving a pixel-level AP of 83.63% and an F1-MAX of 78.12% on MVTec. On polyp dataset, Crucial-Diff reaches an mIoU of 81.64% and an mDice of 87.69%. Code will be released after acceptance.",
+        "arxiv_id": "2507.09915",
+        "ARXIVID": "2507.09915",
+        "COMMENT": "Matches criteria 2",
+        "RELEVANCE": 5,
         "NOVELTY": 5
-    },
-    "2507.08648": {
-        "authors": [
-            "Haoran Sun",
-            "Haoyu Bian",
-            "Shaoning Zeng",
-            "Yunbo Rao",
-            "Xu Xu",
-            "Lin Mei",
-            "Jianping Gou"
-        ],
-        "title": "DatasetAgent: A Novel Multi-Agent System for Auto-Constructing Datasets from Real-World Images",
-        "abstract": "arXiv:2507.08648v1 Announce Type: new  Abstract: Common knowledge indicates that the process of constructing image datasets usually depends on the time-intensive and inefficient method of manual collection and annotation. Large models offer a solution via data generation. Nonetheless, real-world data are obviously more valuable comparing to artificially intelligence generated data, particularly in constructing image datasets. For this reason, we propose a novel method for auto-constructing datasets from real-world images by a multiagent collaborative system, named as DatasetAgent. By coordinating four different agents equipped with Multi-modal Large Language Models (MLLMs), as well as a tool package for image optimization, DatasetAgent is able to construct high-quality image datasets according to user-specified requirements. In particular, two types of experiments are conducted, including expanding existing datasets and creating new ones from scratch, on a variety of open-source datasets. In both cases, multiple image datasets constructed by DatasetAgent are used to train various vision models for image classification, object detection, and image segmentation.",
-        "arxiv_id": "2507.08648",
-        "ARXIVID": "2507.08648",
-        "COMMENT": "None of the criteria match closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 4
-    },
-    "2507.08554": {
-        "authors": [
-            "Cristina Mata",
-            "Michael S. Ryoo",
-            "Henrik Turbell"
-        ],
-        "title": "Image Translation with Kernel Prediction Networks for Semantic Segmentation",
-        "abstract": "arXiv:2507.08554v1 Announce Type: new  Abstract: Semantic segmentation relies on many dense pixel-wise annotations to achieve the best performance, but owing to the difficulty of obtaining accurate annotations for real world data, practitioners train on large-scale synthetic datasets. Unpaired image translation is one method used to address the ensuing domain gap by generating more realistic training data in low-data regimes. Current methods for unpaired image translation train generative adversarial networks (GANs) to perform the translation and enforce pixel-level semantic matching through cycle consistency. These methods do not guarantee that the semantic matching holds, posing a problem for semantic segmentation where performance is sensitive to noisy pixel labels. We propose a novel image translation method, Domain Adversarial Kernel Prediction Network (DA-KPN), that guarantees semantic matching between the synthetic label and translation. DA-KPN estimates pixel-wise input transformation parameters of a lightweight and simple translation function. To ensure the pixel-wise transformation is realistic, DA-KPN uses multi-scale discriminators to distinguish between translated and target samples. We show DA-KPN outperforms previous GAN-based methods on syn2real benchmarks for semantic segmentation with limited access to real image labels and achieves comparable performance on face parsing.",
-        "arxiv_id": "2507.08554",
-        "ARXIVID": "2507.08554",
-        "COMMENT": "None of the criteria match closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 4
     }
 }
