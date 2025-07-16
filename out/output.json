@@ -1,53 +1,33 @@
 {
-    "2507.09619": {
+    "2507.11252": {
         "authors": [
-            "Yilin Lu",
-            "Jianghang Lin",
-            "Linhuang Xie",
-            "Kai Zhao",
-            "Yansong Qu",
-            "Shengchuan Zhang",
-            "Liujuan Cao",
-            "Rongrong Ji"
+            "Guanghao Wu",
+            "Chen Xu",
+            "Hai Song",
+            "Chong Wang",
+            "Qixing Zhang"
         ],
-        "title": "Generate Aligned Anomaly: Region-Guided Few-Shot Anomaly Image-Mask Pair Synthesis for Industrial Inspection",
-        "abstract": "arXiv:2507.09619v1 Announce Type: new  Abstract: Anomaly inspection plays a vital role in industrial manufacturing, but the scarcity of anomaly samples significantly limits the effectiveness of existing methods in tasks such as localization and classification. While several anomaly synthesis approaches have been introduced for data augmentation, they often struggle with low realism, inaccurate mask alignment, and poor generalization. To overcome these limitations, we propose Generate Aligned Anomaly (GAA), a region-guided, few-shot anomaly image-mask pair generation framework. GAA leverages the strong priors of a pretrained latent diffusion model to generate realistic, diverse, and semantically aligned anomalies using only a small number of samples. The framework first employs Localized Concept Decomposition to jointly model the semantic features and spatial information of anomalies, enabling flexible control over the type and location of anomalies. It then utilizes Adaptive Multi-Round Anomaly Clustering to perform fine-grained semantic clustering of anomaly concepts, thereby enhancing the consistency of anomaly representations. Subsequently, a region-guided mask generation strategy ensures precise alignment between anomalies and their corresponding masks, while a low-quality sample filtering module is introduced to further improve the overall quality of the generated samples. Extensive experiments on the MVTec AD and LOCO datasets demonstrate that GAA achieves superior performance in both anomaly synthesis quality and downstream tasks such as localization and classification.",
-        "arxiv_id": "2507.09619",
-        "ARXIVID": "2507.09619",
-        "COMMENT": "The paper proposes a framework for generating anomaly image-mask pairs, which involves joint modeling of semantic features and spatial information, aligning with the concept of co-learning synthesis and masks.",
+        "title": "MFGDiffusion: Mask-Guided Smoke Synthesis for Enhanced Forest Fire Detection",
+        "abstract": "arXiv:2507.11252v1 Announce Type: new  Abstract: Smoke is the first visible indicator of a wildfire.With the advancement of deep learning, image-based smoke detection has become a crucial method for detecting and preventing forest fires. However, the scarcity of smoke image data from forest fires is one of the significant factors hindering the detection of forest fire smoke. Image generation models offer a promising solution for synthesizing realistic smoke images. However, current inpainting models exhibit limitations in generating high-quality smoke representations, particularly manifesting as inconsistencies between synthesized smoke and background contexts. To solve these problems, we proposed a comprehensive framework for generating forest fire smoke images. Firstly, we employed the pre-trained segmentation model and the multimodal model to obtain smoke masks and image captions.Then, to address the insufficient utilization of masks and masked images by inpainting models, we introduced a network architecture guided by mask and masked image features. We also proposed a new loss function, the mask random difference loss, which enhances the consistency of the generated effects around the mask by randomly expanding and eroding the mask edges.Finally, to generate a smoke image dataset using random masks for subsequent detection tasks, we incorporated smoke characteristics and use a multimodal large language model as a filtering tool to select diverse and reasonable smoke images, thereby improving the quality of the synthetic dataset. Experiments showed that our generated smoke images are realistic and diverse, and effectively enhance the performance of forest fire smoke detection models. Code is available at https://github.com/wghr123/MFGDiffusion.",
+        "arxiv_id": "2507.11252",
+        "ARXIVID": "2507.11252",
+        "COMMENT": "Matches criteria 1 closely as it proposes a framework for generating images with segmentation guidance.",
         "RELEVANCE": 5,
         "NOVELTY": 6
     },
-    "2507.09308": {
+    "2507.10855": {
         "authors": [
-            "Zile Wang",
-            "Hao Yu",
-            "Jiabo Zhan",
-            "Chun Yuan"
+            "Wei Chen",
+            "Jingxi Yu",
+            "Zichen Miao",
+            "Qiang Qiu"
         ],
-        "title": "AlphaVAE: Unified End-to-End RGBA Image Reconstruction and Generation with Alpha-Aware Representation Learning",
-        "abstract": "arXiv:2507.09308v1 Announce Type: new  Abstract: Recent advances in latent diffusion models have achieved remarkable results in high-fidelity RGB image synthesis by leveraging pretrained VAEs to compress and reconstruct pixel data at low computational cost. However, the generation of transparent or layered content (RGBA image) remains largely unexplored, due to the lack of large-scale benchmarks. In this work, we propose ALPHA, the first comprehensive RGBA benchmark that adapts standard RGB metrics to four-channel images via alpha blending over canonical backgrounds. We further introduce ALPHAVAE, a unified end-to-end RGBA VAE that extends a pretrained RGB VAE by incorporating a dedicated alpha channel. The model is trained with a composite objective that combines alpha-blended pixel reconstruction, patch-level fidelity, perceptual consistency, and dual KL divergence constraints to ensure latent fidelity across both RGB and alpha representations. Our RGBA VAE, trained on only 8K images in contrast to 1M used by prior methods, achieves a +4.9 dB improvement in PSNR and a +3.2% increase in SSIM over LayerDiffuse in reconstruction. It also enables superior transparent image generation when fine-tuned within a latent diffusion framework. Our code, data, and models are released on https://github.com/o0o0o00o0/AlphaVAE for reproducibility.",
-        "arxiv_id": "2507.09308",
-        "ARXIVID": "2507.09308",
-        "COMMENT": "Matches criteria 3",
-        "RELEVANCE": 5,
-        "NOVELTY": 6
-    },
-    "2507.09915": {
-        "authors": [
-            "Siyue Yao",
-            "Mingjie Sun",
-            "Eng Gee Lim",
-            "Ran Yi",
-            "Baojiang Zhong",
-            "Moncef Gabbouj"
-        ],
-        "title": "Crucial-Diff: A Unified Diffusion Model for Crucial Image and Annotation Synthesis in Data-scarce Scenarios",
-        "abstract": "arXiv:2507.09915v1 Announce Type: new  Abstract: The scarcity of data in various scenarios, such as medical, industry and autonomous driving, leads to model overfitting and dataset imbalance, thus hindering effective detection and segmentation performance. Existing studies employ the generative models to synthesize more training samples to mitigate data scarcity. However, these synthetic samples are repetitive or simplistic and fail to provide \"crucial information\" that targets the downstream model's weaknesses. Additionally, these methods typically require separate training for different objects, leading to computational inefficiencies. To address these issues, we propose Crucial-Diff, a domain-agnostic framework designed to synthesize crucial samples. Our method integrates two key modules. The Scene Agnostic Feature Extractor (SAFE) utilizes a unified feature extractor to capture target information. The Weakness Aware Sample Miner (WASM) generates hard-to-detect samples using feedback from the detection results of downstream model, which is then fused with the output of SAFE module. Together, our Crucial-Diff framework generates diverse, high-quality training data, achieving a pixel-level AP of 83.63% and an F1-MAX of 78.12% on MVTec. On polyp dataset, Crucial-Diff reaches an mIoU of 81.64% and an mDice of 87.69%. Code will be released after acceptance.",
-        "arxiv_id": "2507.09915",
-        "ARXIVID": "2507.09915",
-        "COMMENT": "Matches criteria 2",
-        "RELEVANCE": 5,
+        "title": "Sparse Fine-Tuning of Transformers for Generative Tasks",
+        "abstract": "arXiv:2507.10855v1 Announce Type: new  Abstract: Large pre-trained transformers have revolutionized artificial intelligence across various domains, and fine-tuning remains the dominant approach for adapting these models to downstream tasks due to the cost of training from scratch. However, in existing fine-tuning methods, the updated representations are formed as a dense combination of modified parameters, making it challenging to interpret their contributions and understand how the model adapts to new tasks. In this work, we introduce a fine-tuning framework inspired by sparse coding, where fine-tuned features are represented as a sparse combination of basic elements, i.e., feature dictionary atoms. The feature dictionary atoms function as fundamental building blocks of the representation, and tuning atoms allows for seamless adaptation to downstream tasks. Sparse coefficients then serve as indicators of atom importance, identifying the contribution of each atom to the updated representation. Leveraging the atom selection capability of sparse coefficients, we first demonstrate that our method enhances image editing performance by improving text alignment through the removal of unimportant feature dictionary atoms. Additionally, we validate the effectiveness of our approach in the text-to-image concept customization task, where our method efficiently constructs the target concept using a sparse combination of feature dictionary atoms, outperforming various baseline fine-tuning methods.",
+        "arxiv_id": "2507.10855",
+        "ARXIVID": "2507.10855",
+        "COMMENT": "Does not match any specific criteria closely.",
+        "RELEVANCE": 3,
         "NOVELTY": 5
     }
 }
