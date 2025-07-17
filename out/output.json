@@ -1,32 +1,36 @@
 {
-    "2507.11252": {
+    "2507.11554": {
         "authors": [
-            "Guanghao Wu",
-            "Chen Xu",
-            "Hai Song",
-            "Chong Wang",
-            "Qixing Zhang"
+            "Zejian Li",
+            "Yize Li",
+            "Chenye Meng",
+            "Zhongni Liu",
+            "Yang Ling",
+            "Shengyuan Zhang",
+            "Guang Yang",
+            "Changyuan Yang",
+            "Zhiyuan Yang",
+            "Lingyun Sun"
         ],
-        "title": "MFGDiffusion: Mask-Guided Smoke Synthesis for Enhanced Forest Fire Detection",
-        "abstract": "arXiv:2507.11252v1 Announce Type: new  Abstract: Smoke is the first visible indicator of a wildfire.With the advancement of deep learning, image-based smoke detection has become a crucial method for detecting and preventing forest fires. However, the scarcity of smoke image data from forest fires is one of the significant factors hindering the detection of forest fire smoke. Image generation models offer a promising solution for synthesizing realistic smoke images. However, current inpainting models exhibit limitations in generating high-quality smoke representations, particularly manifesting as inconsistencies between synthesized smoke and background contexts. To solve these problems, we proposed a comprehensive framework for generating forest fire smoke images. Firstly, we employed the pre-trained segmentation model and the multimodal model to obtain smoke masks and image captions.Then, to address the insufficient utilization of masks and masked images by inpainting models, we introduced a network architecture guided by mask and masked image features. We also proposed a new loss function, the mask random difference loss, which enhances the consistency of the generated effects around the mask by randomly expanding and eroding the mask edges.Finally, to generate a smoke image dataset using random masks for subsequent detection tasks, we incorporated smoke characteristics and use a multimodal large language model as a filtering tool to select diverse and reasonable smoke images, thereby improving the quality of the synthetic dataset. Experiments showed that our generated smoke images are realistic and diverse, and effectively enhance the performance of forest fire smoke detection models. Code is available at https://github.com/wghr123/MFGDiffusion.",
-        "arxiv_id": "2507.11252",
-        "ARXIVID": "2507.11252",
-        "COMMENT": "Matches criteria 1 closely as it proposes a framework for generating images with segmentation guidance.",
-        "RELEVANCE": 5,
-        "NOVELTY": 6
+        "title": "Inversion-DPO: Precise and Efficient Post-Training for Diffusion Models",
+        "abstract": "arXiv:2507.11554v1 Announce Type: new  Abstract: Recent advancements in diffusion models (DMs) have been propelled by alignment methods that post-train models to better conform to human preferences. However, these approaches typically require computation-intensive training of a base model and a reward model, which not only incurs substantial computational overhead but may also compromise model accuracy and training efficiency. To address these limitations, we propose Inversion-DPO, a novel alignment framework that circumvents reward modeling by reformulating Direct Preference Optimization (DPO) with DDIM inversion for DMs. Our method conducts intractable posterior sampling in Diffusion-DPO with the deterministic inversion from winning and losing samples to noise and thus derive a new post-training paradigm. This paradigm eliminates the need for auxiliary reward models or inaccurate appromixation, significantly enhancing both precision and efficiency of training. We apply Inversion-DPO to a basic task of text-to-image generation and a challenging task of compositional image generation. Extensive experiments show substantial performance improvements achieved by Inversion-DPO compared to existing post-training methods and highlight the ability of the trained generative models to generate high-fidelity compositionally coherent images. For the post-training of compostitional image geneation, we curate a paired dataset consisting of 11,140 images with complex structural annotations and comprehensive scores, designed to enhance the compositional capabilities of generative models. Inversion-DPO explores a new avenue for efficient, high-precision alignment in diffusion models, advancing their applicability to complex realistic generation tasks. Our code is available at https://github.com/MIGHTYEZ/Inversion-DPO",
+        "arxiv_id": "2507.11554",
+        "ARXIVID": "2507.11554",
+        "COMMENT": "",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
     },
-    "2507.10855": {
+    "2507.12318": {
         "authors": [
-            "Wei Chen",
-            "Jingxi Yu",
-            "Zichen Miao",
-            "Qiang Qiu"
+            "Samuel Lavoie",
+            "Michael Noukhovitch",
+            "Aaron Courville"
         ],
-        "title": "Sparse Fine-Tuning of Transformers for Generative Tasks",
-        "abstract": "arXiv:2507.10855v1 Announce Type: new  Abstract: Large pre-trained transformers have revolutionized artificial intelligence across various domains, and fine-tuning remains the dominant approach for adapting these models to downstream tasks due to the cost of training from scratch. However, in existing fine-tuning methods, the updated representations are formed as a dense combination of modified parameters, making it challenging to interpret their contributions and understand how the model adapts to new tasks. In this work, we introduce a fine-tuning framework inspired by sparse coding, where fine-tuned features are represented as a sparse combination of basic elements, i.e., feature dictionary atoms. The feature dictionary atoms function as fundamental building blocks of the representation, and tuning atoms allows for seamless adaptation to downstream tasks. Sparse coefficients then serve as indicators of atom importance, identifying the contribution of each atom to the updated representation. Leveraging the atom selection capability of sparse coefficients, we first demonstrate that our method enhances image editing performance by improving text alignment through the removal of unimportant feature dictionary atoms. Additionally, we validate the effectiveness of our approach in the text-to-image concept customization task, where our method efficiently constructs the target concept using a sparse combination of feature dictionary atoms, outperforming various baseline fine-tuning methods.",
-        "arxiv_id": "2507.10855",
-        "ARXIVID": "2507.10855",
-        "COMMENT": "Does not match any specific criteria closely.",
+        "title": "Compositional Discrete Latent Code for High Fidelity, Productive Diffusion Models",
+        "abstract": "arXiv:2507.12318v1 Announce Type: new  Abstract: We argue that diffusion models' success in modeling complex distributions is, for the most part, coming from their input conditioning. This paper investigates the representation used to condition diffusion models from the perspective that ideal representations should improve sample fidelity, be easy to generate, and be compositional to allow out-of-training samples generation. We introduce Discrete Latent Code (DLC), an image representation derived from Simplicial Embeddings trained with a self-supervised learning objective. DLCs are sequences of discrete tokens, as opposed to the standard continuous image embeddings. They are easy to generate and their compositionality enables sampling of novel images beyond the training distribution. Diffusion models trained with DLCs have improved generation fidelity, establishing a new state-of-the-art for unconditional image generation on ImageNet. Additionally, we show that composing DLCs allows the image generator to produce out-of-distribution samples that coherently combine the semantics of images in diverse ways. Finally, we showcase how DLCs can enable text-to-image generation by leveraging large-scale pretrained language models. We efficiently finetune a text diffusion language model to generate DLCs that produce novel samples outside of the image generator training distribution.",
+        "arxiv_id": "2507.12318",
+        "ARXIVID": "2507.12318",
+        "COMMENT": "",
         "RELEVANCE": 3,
         "NOVELTY": 5
     }
