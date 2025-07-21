@@ -1,149 +1,35 @@
 {
-    "2507.13087": {
+    "2507.13942": {
         "authors": [
-            "Han Zhang",
-            "Xiangde Luo",
-            "Yong Chen",
-            "Kang Li"
+            "Jacob C Walker",
+            "Pedro V\\'elez",
+            "Luisa Polania Cabrera",
+            "Guangyao Zhou",
+            "Rishabh Kabra",
+            "Carl Doersch",
+            "Maks Ovsjanikov",
+            "Jo\\~ao Carreira",
+            "Shiry Ginosar"
         ],
-        "title": "DiffOSeg: Omni Medical Image Segmentation via Multi-Expert Collaboration Diffusion Model",
-        "abstract": "arXiv:2507.13087v1 Announce Type: new  Abstract: Annotation variability remains a substantial challenge in medical image segmentation, stemming from ambiguous imaging boundaries and diverse clinical expertise. Traditional deep learning methods producing single deterministic segmentation predictions often fail to capture these annotator biases. Although recent studies have explored multi-rater segmentation, existing methods typically focus on a single perspective -- either generating a probabilistic ``gold standard'' consensus or preserving expert-specific preferences -- thus struggling to provide a more omni view. In this study, we propose DiffOSeg, a two-stage diffusion-based framework, which aims to simultaneously achieve both consensus-driven (combining all experts' opinions) and preference-driven (reflecting experts' individual assessments) segmentation. Stage I establishes population consensus through a probabilistic consensus strategy, while Stage II captures expert-specific preference via adaptive prompts. Demonstrated on two public datasets (LIDC-IDRI and NPC-170), our model outperforms existing state-of-the-art methods across all evaluated metrics. Source code is available at https://github.com/string-ellipses/DiffOSeg .",
-        "arxiv_id": "2507.13087",
-        "ARXIVID": "2507.13087",
-        "COMMENT": "Matches criterion 2: Unified Diffusion Models for multi-task vision tasks.",
+        "title": "Generalist Forecasting with Frozen Video Models via Latent Diffusion",
+        "abstract": "arXiv:2507.13942v1 Announce Type: new  Abstract: Forecasting what will happen next is a critical skill for general-purpose systems that plan or act in the world at different levels of abstraction. In this paper, we identify a strong correlation between a vision model's perceptual ability and its generalist forecasting performance over short time horizons. This trend holds across a diverse set of pretrained models-including those trained generatively-and across multiple levels of abstraction, from raw pixels to depth, point tracks, and object motion. The result is made possible by a novel generalist forecasting framework that operates on any frozen vision backbone: we train latent diffusion models to forecast future features in the frozen representation space, which are then decoded via lightweight, task-specific readouts. To enable consistent evaluation across tasks, we introduce distributional metrics that compare distributional properties directly in the space of downstream tasks and apply this framework to nine models and four tasks. Our results highlight the value of bridging representation learning and generative modeling for temporally grounded video understanding.",
+        "arxiv_id": "2507.13942",
+        "ARXIVID": "2507.13942",
+        "COMMENT": "Matches criterion 2: Unified diffusion models for multiple vision tasks.",
         "RELEVANCE": 5,
-        "NOVELTY": 5
+        "NOVELTY": 6
     },
-    "2507.13343": {
+    "2507.13934": {
         "authors": [
-            "Yushu Wu",
-            "Yanyu Li",
-            "Anil Kag",
-            "Ivan Skorokhodov",
-            "Willi Menapace",
-            "Ke Ma",
-            "Arpit Sahni",
-            "Ju Hu",
-            "Aliaksandr Siarohin",
-            "Dhritiman Sagar",
-            "Yanzhi Wang",
-            "Sergey Tulyakov"
+            "Marzieh Gheisari",
+            "Auguste Genovesio"
         ],
-        "title": "Taming Diffusion Transformer for Real-Time Mobile Video Generation",
-        "abstract": "arXiv:2507.13343v1 Announce Type: new  Abstract: Diffusion Transformers (DiT) have shown strong performance in video generation tasks, but their high computational cost makes them impractical for resource-constrained devices like smartphones, and real-time generation is even more challenging. In this work, we propose a series of novel optimizations to significantly accelerate video generation and enable real-time performance on mobile platforms. First, we employ a highly compressed variational autoencoder (VAE) to reduce the dimensionality of the input data without sacrificing visual quality. Second, we introduce a KD-guided, sensitivity-aware tri-level pruning strategy to shrink the model size to suit mobile platform while preserving critical performance characteristics. Third, we develop an adversarial step distillation technique tailored for DiT, which allows us to reduce the number of inference steps to four. Combined, these optimizations enable our model to achieve over 10 frames per second (FPS) generation on an iPhone 16 Pro Max, demonstrating the feasibility of real-time, high-quality video generation on mobile devices.",
-        "arxiv_id": "2507.13343",
-        "ARXIVID": "2507.13343",
-        "COMMENT": "No criteria match closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2507.12952": {
-        "authors": [
-            "Jiaxiu Jiang",
-            "Wenbo Li",
-            "Jingjing Ren",
-            "Yuping Qiu",
-            "Yong Guo",
-            "Xiaogang Xu",
-            "Han Wu",
-            "Wangmeng Zuo"
-        ],
-        "title": "LoViC: Efficient Long Video Generation with Context Compression",
-        "abstract": "arXiv:2507.12952v1 Announce Type: new  Abstract: Despite recent advances in diffusion transformers (DiTs) for text-to-video generation, scaling to long-duration content remains challenging due to the quadratic complexity of self-attention. While prior efforts -- such as sparse attention and temporally autoregressive models -- offer partial relief, they often compromise temporal coherence or scalability. We introduce LoViC, a DiT-based framework trained on million-scale open-domain videos, designed to produce long, coherent videos through a segment-wise generation process. At the core of our approach is FlexFormer, an expressive autoencoder that jointly compresses video and text into unified latent representations. It supports variable-length inputs with linearly adjustable compression rates, enabled by a single query token design based on the Q-Former architecture. Additionally, by encoding temporal context through position-aware mechanisms, our model seamlessly supports prediction, retradiction, interpolation, and multi-shot generation within a unified paradigm. Extensive experiments across diverse tasks validate the effectiveness and versatility of our approach.",
-        "arxiv_id": "2507.12952",
-        "ARXIVID": "2507.12952",
-        "COMMENT": "No criteria match closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2507.12998": {
-        "authors": [
-            "Zihua Zhao",
-            "Feng Hong",
-            "Mengxi Chen",
-            "Pengyi Chen",
-            "Benyuan Liu",
-            "Jiangchao Yao",
-            "Ya Zhang",
-            "Yanfeng Wang"
-        ],
-        "title": "Differential-informed Sample Selection Accelerates Multimodal Contrastive Learning",
-        "abstract": "arXiv:2507.12998v1 Announce Type: new  Abstract: The remarkable success of contrastive-learning-based multimodal models has been greatly driven by training on ever-larger datasets with expensive compute consumption. Sample selection as an alternative efficient paradigm plays an important direction to accelerate the training process. However, recent advances on sample selection either mostly rely on an oracle model to offline select a high-quality coreset, which is limited in the cold-start scenarios, or focus on online selection based on real-time model predictions, which has not sufficiently or efficiently considered the noisy correspondence. To address this dilemma, we propose a novel Differential-Informed Sample Selection (DISSect) method, which accurately and efficiently discriminates the noisy correspondence for training acceleration. Specifically, we rethink the impact of noisy correspondence on contrastive learning and propose that the differential between the predicted correlation of the current model and that of a historical model is more informative to characterize sample quality. Based on this, we construct a robust differential-based sample selection and analyze its theoretical insights. Extensive experiments on three benchmark datasets and various downstream tasks demonstrate the consistent superiority of DISSect over current state-of-the-art methods. Source code is available at: https://github.com/MediaBrain-SJTU/DISSect.",
-        "arxiv_id": "2507.12998",
-        "ARXIVID": "2507.12998",
-        "COMMENT": "No criteria match closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2507.13344": {
-        "authors": [
-            "Yudong Jin",
-            "Sida Peng",
-            "Xuan Wang",
-            "Tao Xie",
-            "Zhen Xu",
-            "Yifan Yang",
-            "Yujun Shen",
-            "Hujun Bao",
-            "Xiaowei Zhou"
-        ],
-        "title": "Diffuman4D: 4D Consistent Human View Synthesis from Sparse-View Videos with Spatio-Temporal Diffusion Models",
-        "abstract": "arXiv:2507.13344v1 Announce Type: new  Abstract: This paper addresses the challenge of high-fidelity view synthesis of humans with sparse-view videos as input. Previous methods solve the issue of insufficient observation by leveraging 4D diffusion models to generate videos at novel viewpoints. However, the generated videos from these models often lack spatio-temporal consistency, thus degrading view synthesis quality. In this paper, we propose a novel sliding iterative denoising process to enhance the spatio-temporal consistency of the 4D diffusion model. Specifically, we define a latent grid in which each latent encodes the image, camera pose, and human pose for a certain viewpoint and timestamp, then alternately denoising the latent grid along spatial and temporal dimensions with a sliding window, and finally decode the videos at target viewpoints from the corresponding denoised latents. Through the iterative sliding, information flows sufficiently across the latent grid, allowing the diffusion model to obtain a large receptive field and thus enhance the 4D consistency of the output, while making the GPU memory consumption affordable. The experiments on the DNA-Rendering and ActorsHQ datasets demonstrate that our method is able to synthesize high-quality and consistent novel-view videos and significantly outperforms the existing approaches. See our project page for interactive demos and video results: https://diffuman4d.github.io/ .",
-        "arxiv_id": "2507.13344",
-        "ARXIVID": "2507.13344",
-        "COMMENT": "No criteria match closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2507.12841": {
-        "authors": [
-            "Yiming Ren",
-            "Zhiqiang Lin",
-            "Yu Li",
-            "Gao Meng",
-            "Weiyun Wang",
-            "Junjie Wang",
-            "Zicheng Lin",
-            "Jifeng Dai",
-            "Yujiu Yang",
-            "Wenhai Wang",
-            "Ruihang Chu"
-        ],
-        "title": "AnyCap Project: A Unified Framework, Dataset, and Benchmark for Controllable Omni-modal Captioning",
-        "abstract": "arXiv:2507.12841v1 Announce Type: new  Abstract: Controllable captioning is essential for precise multimodal alignment and instruction following, yet existing models often lack fine-grained control and reliable evaluation protocols. To address this gap, we present the AnyCap Project, an integrated solution spanning model, dataset, and evaluation. We introduce AnyCapModel (ACM), a lightweight plug-and-play framework that enhances the controllability of existing foundation models for omni-modal captioning without retraining the base model. ACM reuses the original captions from base models while incorporating user instructions and modality features to generate improved captions. To remedy the data scarcity in controllable multimodal captioning, we build AnyCapDataset (ACD), covering three modalities, 28 user-instruction types, and 300\\,k high-quality data entries. We further propose AnyCapEval, a new benchmark that provides more reliable evaluation metrics for controllable captioning by decoupling content accuracy and stylistic fidelity. ACM markedly improves caption quality across a diverse set of base models on AnyCapEval. Notably, ACM-8B raises GPT-4o\\'s content scores by 45\\% and style scores by 12\\%, and it also achieves substantial gains on widely used benchmarks such as MIA-Bench and VidCapBench.",
-        "arxiv_id": "2507.12841",
-        "ARXIVID": "2507.12841",
-        "COMMENT": "No criteria match closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 4
-    },
-    "2507.12771": {
-        "authors": [
-            "Min-Jeong Lee",
-            "Hee-Dong Kim",
-            "Seong-Whan Lee"
-        ],
-        "title": "Local Representative Token Guided Merging for Text-to-Image Generation",
-        "abstract": "arXiv:2507.12771v1 Announce Type: new  Abstract: Stable diffusion is an outstanding image generation model for text-to-image, but its time-consuming generation process remains a challenge due to the quadratic complexity of attention operations. Recent token merging methods improve efficiency by reducing the number of tokens during attention operations, but often overlook the characteristics of attention-based image generation models, limiting their effectiveness. In this paper, we propose local representative token guided merging (ReToM), a novel token merging strategy applicable to any attention mechanism in image generation. To merge tokens based on various contextual information, ReToM defines local boundaries as windows within attention inputs and adjusts window sizes. Furthermore, we introduce a representative token, which represents the most representative token per window by computing similarity at a specific timestep and selecting the token with the highest average similarity. This approach preserves the most salient local features while minimizing computational overhead. Experimental results show that ReToM achieves a 6.2% improvement in FID and higher CLIP scores compared to the baseline, while maintaining comparable inference time. We empirically demonstrate that ReToM is effective in balancing visual quality and computational efficiency.",
-        "arxiv_id": "2507.12771",
-        "ARXIVID": "2507.12771",
-        "COMMENT": "No criteria match closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 4
-    },
-    "2507.13311": {
-        "authors": [
-            "Chuancheng Shi",
-            "Yixiang Chen",
-            "Burong Lei",
-            "Jichao Chen"
-        ],
-        "title": "FashionPose: Text to Pose to Relight Image Generation for Personalized Fashion Visualization",
-        "abstract": "arXiv:2507.13311v1 Announce Type: new  Abstract: Realistic and controllable garment visualization is critical for fashion e-commerce, where users expect personalized previews under diverse poses and lighting conditions. Existing methods often rely on predefined poses, limiting semantic flexibility and illumination adaptability. To address this, we introduce FashionPose, the first unified text-to-pose-to-relighting generation framework. Given a natural language description, our method first predicts a 2D human pose, then employs a diffusion model to generate high-fidelity person images, and finally applies a lightweight relighting module, all guided by the same textual input. By replacing explicit pose annotations with text-driven conditioning, FashionPose enables accurate pose alignment, faithful garment rendering, and flexible lighting control. Experiments demonstrate fine-grained pose synthesis and efficient, consistent relighting, providing a practical solution for personalized virtual fashion display.",
-        "arxiv_id": "2507.13311",
-        "ARXIVID": "2507.13311",
-        "COMMENT": "No criteria match closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 4
+        "title": "DiViD: Disentangled Video Diffusion for Static-Dynamic Factorization",
+        "abstract": "arXiv:2507.13934v1 Announce Type: new  Abstract: Unsupervised disentanglement of static appearance and dynamic motion in video remains a fundamental challenge, often hindered by information leakage and blurry reconstructions in existing VAE- and GAN-based approaches. We introduce DiViD, the first end-to-end video diffusion framework for explicit static-dynamic factorization. DiViD's sequence encoder extracts a global static token from the first frame and per-frame dynamic tokens, explicitly removing static content from the motion code. Its conditional DDPM decoder incorporates three key inductive biases: a shared-noise schedule for temporal consistency, a time-varying KL-based bottleneck that tightens at early timesteps (compressing static information) and relaxes later (enriching dynamics), and cross-attention that routes the global static token to all frames while keeping dynamic tokens frame-specific. An orthogonality regularizer further prevents residual static-dynamic leakage. We evaluate DiViD on real-world benchmarks using swap-based accuracy and cross-leakage metrics. DiViD outperforms state-of-the-art sequential disentanglement methods: it achieves the highest swap-based joint accuracy, preserves static fidelity while improving dynamic transfer, and reduces average cross-leakage.",
+        "arxiv_id": "2507.13934",
+        "ARXIVID": "2507.13934",
+        "COMMENT": "Matches criterion 2: Unified diffusion models for multiple vision tasks.",
+        "RELEVANCE": 5,
+        "NOVELTY": 6
     }
 }
