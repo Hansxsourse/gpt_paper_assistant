@@ -1,35 +1,115 @@
 {
-    "2507.13942": {
+    "2507.15595": {
         "authors": [
-            "Jacob C Walker",
-            "Pedro V\\'elez",
-            "Luisa Polania Cabrera",
-            "Guangyao Zhou",
-            "Rishabh Kabra",
-            "Carl Doersch",
-            "Maks Ovsjanikov",
-            "Jo\\~ao Carreira",
-            "Shiry Ginosar"
+            "Salah Eddine Bekhouche",
+            "Gaby Maroun",
+            "Fadi Dornaika",
+            "Abdenour Hadid"
         ],
-        "title": "Generalist Forecasting with Frozen Video Models via Latent Diffusion",
-        "abstract": "arXiv:2507.13942v1 Announce Type: new  Abstract: Forecasting what will happen next is a critical skill for general-purpose systems that plan or act in the world at different levels of abstraction. In this paper, we identify a strong correlation between a vision model's perceptual ability and its generalist forecasting performance over short time horizons. This trend holds across a diverse set of pretrained models-including those trained generatively-and across multiple levels of abstraction, from raw pixels to depth, point tracks, and object motion. The result is made possible by a novel generalist forecasting framework that operates on any frozen vision backbone: we train latent diffusion models to forecast future features in the frozen representation space, which are then decoded via lightweight, task-specific readouts. To enable consistent evaluation across tasks, we introduce distributional metrics that compare distributional properties directly in the space of downstream tasks and apply this framework to nine models and four tasks. Our results highlight the value of bridging representation learning and generative modeling for temporally grounded video understanding.",
-        "arxiv_id": "2507.13942",
-        "ARXIVID": "2507.13942",
-        "COMMENT": "Matches criterion 2: Unified diffusion models for multiple vision tasks.",
+        "title": "SegDT: A Diffusion Transformer-Based Segmentation Model for Medical Imaging",
+        "abstract": "arXiv:2507.15595v1 Announce Type: new  Abstract: Medical image segmentation is crucial for many healthcare tasks, including disease diagnosis and treatment planning. One key area is the segmentation of skin lesions, which is vital for diagnosing skin cancer and monitoring patients. In this context, this paper introduces SegDT, a new segmentation model based on diffusion transformer (DiT). SegDT is designed to work on low-cost hardware and incorporates Rectified Flow, which improves the generation quality at reduced inference steps and maintains the flexibility of standard diffusion models. Our method is evaluated on three benchmarking datasets and compared against several existing works, achieving state-of-the-art results while maintaining fast inference speeds. This makes the proposed model appealing for real-world medical applications. This work advances the performance and capabilities of deep learning models in medical image analysis, enabling faster, more accurate diagnostic tools for healthcare professionals. The code is made publicly available at \\href{https://github.com/Bekhouche/SegDT}{GitHub}.",
+        "arxiv_id": "2507.15595",
+        "ARXIVID": "2507.15595",
+        "COMMENT": "2",
         "RELEVANCE": 5,
         "NOVELTY": 6
     },
-    "2507.13934": {
+    "2507.14833": {
         "authors": [
-            "Marzieh Gheisari",
-            "Auguste Genovesio"
+            "Haoxuan Zhang",
+            "Wenju Cui",
+            "Yuzhu Cao",
+            "Tao Tan",
+            "Jie Liu",
+            "Yunsong Peng",
+            "Jian Zheng"
         ],
-        "title": "DiViD: Disentangled Video Diffusion for Static-Dynamic Factorization",
-        "abstract": "arXiv:2507.13934v1 Announce Type: new  Abstract: Unsupervised disentanglement of static appearance and dynamic motion in video remains a fundamental challenge, often hindered by information leakage and blurry reconstructions in existing VAE- and GAN-based approaches. We introduce DiViD, the first end-to-end video diffusion framework for explicit static-dynamic factorization. DiViD's sequence encoder extracts a global static token from the first frame and per-frame dynamic tokens, explicitly removing static content from the motion code. Its conditional DDPM decoder incorporates three key inductive biases: a shared-noise schedule for temporal consistency, a time-varying KL-based bottleneck that tightens at early timesteps (compressing static information) and relaxes later (enriching dynamics), and cross-attention that routes the global static token to all frames while keeping dynamic tokens frame-specific. An orthogonality regularizer further prevents residual static-dynamic leakage. We evaluate DiViD on real-world benchmarks using swap-based accuracy and cross-leakage metrics. DiViD outperforms state-of-the-art sequential disentanglement methods: it achieves the highest swap-based joint accuracy, preserves static fidelity while improving dynamic transfer, and reduces average cross-leakage.",
-        "arxiv_id": "2507.13934",
-        "ARXIVID": "2507.13934",
-        "COMMENT": "Matches criterion 2: Unified diffusion models for multiple vision tasks.",
+        "title": "Paired Image Generation with Diffusion-Guided Diffusion Models",
+        "abstract": "arXiv:2507.14833v1 Announce Type: new  Abstract: The segmentation of mass lesions in digital breast tomosynthesis (DBT) images is very significant for the early screening of breast cancer. However, the high-density breast tissue often leads to high concealment of the mass lesions, which makes manual annotation difficult and time-consuming. As a result, there is a lack of annotated data for model training. Diffusion models are commonly used for data augmentation, but the existing methods face two challenges. First, due to the high concealment of lesions, it is difficult for the model to learn the features of the lesion area. This leads to the low generation quality of the lesion areas, thus limiting the quality of the generated images. Second, existing methods can only generate images and cannot generate corresponding annotations, which restricts the usability of the generated images in supervised training. In this work, we propose a paired image generation method. The method does not require external conditions and can achieve the generation of paired images by training an extra diffusion guider for the conditional diffusion model. During the experimental phase, we generated paired DBT slices and mass lesion masks. Then, we incorporated them into the supervised training process of the mass lesion segmentation task. The experimental results show that our method can improve the generation quality without external conditions. Moreover, it contributes to alleviating the shortage of annotated data, thus enhancing the performance of downstream tasks.",
+        "arxiv_id": "2507.14833",
+        "ARXIVID": "2507.14833",
+        "COMMENT": "Matches criteria 1: Proposes a method for paired image generation and segmentation.",
         "RELEVANCE": 5,
         "NOVELTY": 6
+    },
+    "2507.14811": {
+        "authors": [
+            "Jiaji Zhang",
+            "Ruichao Sun",
+            "Hailiang Zhao",
+            "Jiaju Wu",
+            "Peng Chen",
+            "Hao Li",
+            "Xinkui Zhao",
+            "Kingsum Chow",
+            "Gang Xiong",
+            "Lin Ye",
+            "Shuiguang Deng"
+        ],
+        "title": "SegQuant: A Semantics-Aware and Generalizable Quantization Framework for Diffusion Models",
+        "abstract": "arXiv:2507.14811v1 Announce Type: new  Abstract: Diffusion models have demonstrated exceptional generative capabilities but are computationally intensive, posing significant challenges for deployment in resource-constrained or latency-sensitive environments. Quantization offers an effective means to reduce model size and computational cost, with post-training quantization (PTQ) being particularly appealing due to its compatibility with pre-trained models without requiring retraining or training data. However, existing PTQ methods for diffusion models often rely on architecture-specific heuristics that limit their generalizability and hinder integration with industrial deployment pipelines. To address these limitations, we propose SegQuant, a unified quantization framework that adaptively combines complementary techniques to enhance cross-model versatility. SegQuant consists of a segment-aware, graph-based quantization strategy (SegLinear) that captures structural semantics and spatial heterogeneity, along with a dual-scale quantization scheme (DualScale) that preserves polarity-asymmetric activations, which is crucial for maintaining visual fidelity in generated outputs. SegQuant is broadly applicable beyond Transformer-based diffusion models, achieving strong performance while ensuring seamless compatibility with mainstream deployment tools.",
+        "arxiv_id": "2507.14811",
+        "ARXIVID": "2507.14811",
+        "COMMENT": "Matches criteria 2: Proposes a semantics-aware quantization framework for diffusion models.",
+        "RELEVANCE": 5,
+        "NOVELTY": 5
+    },
+    "2507.15852": {
+        "authors": [
+            "Zhixiong Zhang",
+            "Shuangrui Ding",
+            "Xiaoyi Dong",
+            "Songxin He",
+            "Jianfan Lin",
+            "Junsong Tang",
+            "Yuhang Zang",
+            "Yuhang Cao",
+            "Dahua Lin",
+            "Jiaqi Wang"
+        ],
+        "title": "SeC: Advancing Complex Video Object Segmentation via Progressive Concept Construction",
+        "abstract": "arXiv:2507.15852v1 Announce Type: new  Abstract: Video Object Segmentation (VOS) is a core task in computer vision, requiring models to track and segment target objects across video frames. Despite notable advances with recent efforts, current techniques still lag behind human capabilities in handling drastic visual variations, occlusions, and complex scene changes. This limitation arises from their reliance on appearance matching, neglecting the human-like conceptual understanding of objects that enables robust identification across temporal dynamics. Motivated by this gap, we propose Segment Concept (SeC), a concept-driven segmentation framework that shifts from conventional feature matching to the progressive construction and utilization of high-level, object-centric representations. SeC employs Large Vision-Language Models (LVLMs) to integrate visual cues across diverse frames, constructing robust conceptual priors. During inference, SeC forms a comprehensive semantic representation of the target based on processed frames, realizing robust segmentation of follow-up frames. Furthermore, SeC adaptively balances LVLM-based semantic reasoning with enhanced feature matching, dynamically adjusting computational efforts based on scene complexity. To rigorously assess VOS methods in scenarios demanding high-level conceptual reasoning and robust semantic understanding, we introduce the Semantic Complex Scenarios Video Object Segmentation benchmark (SeCVOS). SeCVOS comprises 160 manually annotated multi-scenario videos designed to challenge models with substantial appearance variations and dynamic scene transformations. In particular, SeC achieves an 11.8-point improvement over SAM 2.1 on SeCVOS, establishing a new state-of-the-art in concept-aware video object segmentation.",
+        "arxiv_id": "2507.15852",
+        "ARXIVID": "2507.15852",
+        "COMMENT": "",
+        "RELEVANCE": 3,
+        "NOVELTY": 6
+    },
+    "2507.14797": {
+        "authors": [
+            "Beier Zhu",
+            "Ruoyu Wang",
+            "Tong Zhao",
+            "Hanwang Zhang",
+            "Chi Zhang"
+        ],
+        "title": "Distilling Parallel Gradients for Fast ODE Solvers of Diffusion Models",
+        "abstract": "arXiv:2507.14797v1 Announce Type: new  Abstract: Diffusion models (DMs) have achieved state-of-the-art generative performance but suffer from high sampling latency due to their sequential denoising nature. Existing solver-based acceleration methods often face image quality degradation under a low-latency budget. In this paper, we propose the Ensemble Parallel Direction solver (dubbed as \\ours), a novel ODE solver that mitigates truncation errors by incorporating multiple parallel gradient evaluations in each ODE step. Importantly, since the additional gradient computations are independent, they can be fully parallelized, preserving low-latency sampling.   Our method optimizes a small set of learnable parameters in a distillation fashion, ensuring minimal training overhead.   In addition, our method can serve as a plugin to improve existing ODE samplers. Extensive experiments on various image synthesis benchmarks demonstrate the effectiveness of our \\ours~in achieving high-quality and low-latency sampling. For example, at the same latency level of 5 NFE, EPD achieves an FID of 4.47 on CIFAR-10, 7.97 on FFHQ, 8.17 on ImageNet, and 8.26 on LSUN Bedroom, surpassing existing learning-based solvers by a significant margin. Codes are available in https://github.com/BeierZhu/EPD.",
+        "arxiv_id": "2507.14797",
+        "ARXIVID": "2507.14797",
+        "COMMENT": "",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2507.14801": {
+        "authors": [
+            "Xiangyu Chen",
+            "Kaiwen Zhu",
+            "Yuandong Pu",
+            "Shuo Cao",
+            "Xiaohui Li",
+            "Wenlong Zhang",
+            "Yihao Liu",
+            "Yu Qiao",
+            "Jiantao Zhou",
+            "Chao Dong"
+        ],
+        "title": "Exploring Scalable Unified Modeling for General Low-Level Vision",
+        "abstract": "arXiv:2507.14801v1 Announce Type: new  Abstract: Low-level vision involves a wide spectrum of tasks, including image restoration, enhancement, stylization, and feature extraction, which differ significantly in both task formulation and output domains. To address the challenge of unified modeling across such diverse tasks, we propose a Visual task Prompt-based Image Processing (VPIP) framework that leverages input-target image pairs as visual prompts to guide the model in performing a variety of low-level vision tasks. The framework comprises an end-to-end image processing backbone, a prompt encoder, and a prompt interaction module, enabling flexible integration with various architectures and effective utilization of task-specific visual representations. Based on this design, we develop a unified low-level vision model, GenLV, and evaluate its performance across multiple representative tasks. To explore the scalability of this approach, we extend the framework along two dimensions: model capacity and task diversity. We construct a large-scale benchmark consisting of over 100 low-level vision tasks and train multiple versions of the model with varying scales. Experimental results show that the proposed method achieves considerable performance across a wide range of tasks. Notably, increasing the number of training tasks enhances generalization, particularly for tasks with limited data, indicating the model's ability to learn transferable representations through joint training. Further evaluations in zero-shot generalization, few-shot transfer, and task-specific fine-tuning scenarios demonstrate the model's strong adaptability, confirming the effectiveness, scalability, and potential of the proposed framework as a unified foundation for general low-level vision modeling.",
+        "arxiv_id": "2507.14801",
+        "ARXIVID": "2507.14801",
+        "COMMENT": "",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
     }
 }
