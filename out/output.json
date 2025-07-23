@@ -1,114 +1,55 @@
 {
-    "2507.15595": {
+    "2507.16718": {
         "authors": [
-            "Salah Eddine Bekhouche",
-            "Gaby Maroun",
-            "Fadi Dornaika",
-            "Abdenour Hadid"
+            "Yiqing Shen",
+            "Chenjia Li",
+            "Chenxiao Fan",
+            "Mathias Unberath"
         ],
-        "title": "SegDT: A Diffusion Transformer-Based Segmentation Model for Medical Imaging",
-        "abstract": "arXiv:2507.15595v1 Announce Type: new  Abstract: Medical image segmentation is crucial for many healthcare tasks, including disease diagnosis and treatment planning. One key area is the segmentation of skin lesions, which is vital for diagnosing skin cancer and monitoring patients. In this context, this paper introduces SegDT, a new segmentation model based on diffusion transformer (DiT). SegDT is designed to work on low-cost hardware and incorporates Rectified Flow, which improves the generation quality at reduced inference steps and maintains the flexibility of standard diffusion models. Our method is evaluated on three benchmarking datasets and compared against several existing works, achieving state-of-the-art results while maintaining fast inference speeds. This makes the proposed model appealing for real-world medical applications. This work advances the performance and capabilities of deep learning models in medical image analysis, enabling faster, more accurate diagnostic tools for healthcare professionals. The code is made publicly available at \\href{https://github.com/Bekhouche/SegDT}{GitHub}.",
-        "arxiv_id": "2507.15595",
-        "ARXIVID": "2507.15595",
-        "COMMENT": "2",
-        "RELEVANCE": 5,
-        "NOVELTY": 6
+        "title": "Temporally-Constrained Video Reasoning Segmentation and Automated Benchmark Construction",
+        "abstract": "arXiv:2507.16718v1 Announce Type: new  Abstract: Conventional approaches to video segmentation are confined to predefined object categories and cannot identify out-of-vocabulary objects, let alone objects that are not identified explicitly but only referred to implicitly in complex text queries. This shortcoming limits the utility for video segmentation in complex and variable scenarios, where a closed set of object categories is difficult to define and where users may not know the exact object category that will appear in the video. Such scenarios can arise in operating room video analysis, where different health systems may use different workflows and instrumentation, requiring flexible solutions for video analysis. Reasoning segmentation (RS) now offers promise towards such a solution, enabling natural language text queries as interaction for identifying object to segment. However, existing video RS formulation assume that target objects remain contextually relevant throughout entire video sequences. This assumption is inadequate for real-world scenarios in which objects of interest appear, disappear or change relevance dynamically based on temporal context, such as surgical instruments that become relevant only during specific procedural phases or anatomical structures that gain importance at particular moments during surgery. Our first contribution is the introduction of temporally-constrained video reasoning segmentation, a novel task formulation that requires models to implicitly infer when target objects become contextually relevant based on text queries that incorporate temporal reasoning. Since manual annotation of temporally-constrained video RS datasets would be expensive and limit scalability, our second contribution is an innovative automated benchmark construction method. Finally, we present TCVideoRSBenchmark, a temporally-constrained video RS dataset containing 52 samples using the videos from the MVOR dataset.",
+        "arxiv_id": "2507.16718",
+        "ARXIVID": "2507.16718",
+        "COMMENT": "The paper introduces a novel task formulation for video reasoning segmentation, but it does not involve joint generation and segmentation or multi-task diffusion models.",
+        "RELEVANCE": 3,
+        "NOVELTY": 7
     },
-    "2507.14833": {
+    "2507.16290": {
         "authors": [
-            "Haoxuan Zhang",
-            "Wenju Cui",
-            "Yuzhu Cao",
-            "Tao Tan",
-            "Jie Liu",
-            "Yunsong Peng",
-            "Jian Zheng"
+            "Xianze Fang",
+            "Jingnan Gao",
+            "Zhe Wang",
+            "Zhuo Chen",
+            "Xingyu Ren",
+            "Jiangjing Lyu",
+            "Qiaomu Ren",
+            "Zhonglei Yang",
+            "Xiaokang Yang",
+            "Yichao Yan",
+            "Chengfei Lyu"
         ],
-        "title": "Paired Image Generation with Diffusion-Guided Diffusion Models",
-        "abstract": "arXiv:2507.14833v1 Announce Type: new  Abstract: The segmentation of mass lesions in digital breast tomosynthesis (DBT) images is very significant for the early screening of breast cancer. However, the high-density breast tissue often leads to high concealment of the mass lesions, which makes manual annotation difficult and time-consuming. As a result, there is a lack of annotated data for model training. Diffusion models are commonly used for data augmentation, but the existing methods face two challenges. First, due to the high concealment of lesions, it is difficult for the model to learn the features of the lesion area. This leads to the low generation quality of the lesion areas, thus limiting the quality of the generated images. Second, existing methods can only generate images and cannot generate corresponding annotations, which restricts the usability of the generated images in supervised training. In this work, we propose a paired image generation method. The method does not require external conditions and can achieve the generation of paired images by training an extra diffusion guider for the conditional diffusion model. During the experimental phase, we generated paired DBT slices and mass lesion masks. Then, we incorporated them into the supervised training process of the mass lesion segmentation task. The experimental results show that our method can improve the generation quality without external conditions. Moreover, it contributes to alleviating the shortage of annotated data, thus enhancing the performance of downstream tasks.",
-        "arxiv_id": "2507.14833",
-        "ARXIVID": "2507.14833",
-        "COMMENT": "Matches criteria 1: Proposes a method for paired image generation and segmentation.",
-        "RELEVANCE": 5,
-        "NOVELTY": 6
-    },
-    "2507.14811": {
-        "authors": [
-            "Jiaji Zhang",
-            "Ruichao Sun",
-            "Hailiang Zhao",
-            "Jiaju Wu",
-            "Peng Chen",
-            "Hao Li",
-            "Xinkui Zhao",
-            "Kingsum Chow",
-            "Gang Xiong",
-            "Lin Ye",
-            "Shuiguang Deng"
-        ],
-        "title": "SegQuant: A Semantics-Aware and Generalizable Quantization Framework for Diffusion Models",
-        "abstract": "arXiv:2507.14811v1 Announce Type: new  Abstract: Diffusion models have demonstrated exceptional generative capabilities but are computationally intensive, posing significant challenges for deployment in resource-constrained or latency-sensitive environments. Quantization offers an effective means to reduce model size and computational cost, with post-training quantization (PTQ) being particularly appealing due to its compatibility with pre-trained models without requiring retraining or training data. However, existing PTQ methods for diffusion models often rely on architecture-specific heuristics that limit their generalizability and hinder integration with industrial deployment pipelines. To address these limitations, we propose SegQuant, a unified quantization framework that adaptively combines complementary techniques to enhance cross-model versatility. SegQuant consists of a segment-aware, graph-based quantization strategy (SegLinear) that captures structural semantics and spatial heterogeneity, along with a dual-scale quantization scheme (DualScale) that preserves polarity-asymmetric activations, which is crucial for maintaining visual fidelity in generated outputs. SegQuant is broadly applicable beyond Transformer-based diffusion models, achieving strong performance while ensuring seamless compatibility with mainstream deployment tools.",
-        "arxiv_id": "2507.14811",
-        "ARXIVID": "2507.14811",
-        "COMMENT": "Matches criteria 2: Proposes a semantics-aware quantization framework for diffusion models.",
-        "RELEVANCE": 5,
-        "NOVELTY": 5
-    },
-    "2507.15852": {
-        "authors": [
-            "Zhixiong Zhang",
-            "Shuangrui Ding",
-            "Xiaoyi Dong",
-            "Songxin He",
-            "Jianfan Lin",
-            "Junsong Tang",
-            "Yuhang Zang",
-            "Yuhang Cao",
-            "Dahua Lin",
-            "Jiaqi Wang"
-        ],
-        "title": "SeC: Advancing Complex Video Object Segmentation via Progressive Concept Construction",
-        "abstract": "arXiv:2507.15852v1 Announce Type: new  Abstract: Video Object Segmentation (VOS) is a core task in computer vision, requiring models to track and segment target objects across video frames. Despite notable advances with recent efforts, current techniques still lag behind human capabilities in handling drastic visual variations, occlusions, and complex scene changes. This limitation arises from their reliance on appearance matching, neglecting the human-like conceptual understanding of objects that enables robust identification across temporal dynamics. Motivated by this gap, we propose Segment Concept (SeC), a concept-driven segmentation framework that shifts from conventional feature matching to the progressive construction and utilization of high-level, object-centric representations. SeC employs Large Vision-Language Models (LVLMs) to integrate visual cues across diverse frames, constructing robust conceptual priors. During inference, SeC forms a comprehensive semantic representation of the target based on processed frames, realizing robust segmentation of follow-up frames. Furthermore, SeC adaptively balances LVLM-based semantic reasoning with enhanced feature matching, dynamically adjusting computational efforts based on scene complexity. To rigorously assess VOS methods in scenarios demanding high-level conceptual reasoning and robust semantic understanding, we introduce the Semantic Complex Scenarios Video Object Segmentation benchmark (SeCVOS). SeCVOS comprises 160 manually annotated multi-scenario videos designed to challenge models with substantial appearance variations and dynamic scene transformations. In particular, SeC achieves an 11.8-point improvement over SAM 2.1 on SeCVOS, establishing a new state-of-the-art in concept-aware video object segmentation.",
-        "arxiv_id": "2507.15852",
-        "ARXIVID": "2507.15852",
-        "COMMENT": "",
+        "title": "Dens3R: A Foundation Model for 3D Geometry Prediction",
+        "abstract": "arXiv:2507.16290v1 Announce Type: new  Abstract: Recent advances in dense 3D reconstruction have led to significant progress, yet achieving accurate unified geometric prediction remains a major challenge. Most existing methods are limited to predicting a single geometry quantity from input images. However, geometric quantities such as depth, surface normals, and point maps are inherently correlated, and estimating them in isolation often fails to ensure consistency, thereby limiting both accuracy and practical applicability. This motivates us to explore a unified framework that explicitly models the structural coupling among different geometric properties to enable joint regression. In this paper, we present Dens3R, a 3D foundation model designed for joint geometric dense prediction and adaptable to a wide range of downstream tasks. Dens3R adopts a two-stage training framework to progressively build a pointmap representation that is both generalizable and intrinsically invariant. Specifically, we design a lightweight shared encoder-decoder backbone and introduce position-interpolated rotary positional encoding to maintain expressive power while enhancing robustness to high-resolution inputs. By integrating image-pair matching features with intrinsic invariance modeling, Dens3R accurately regresses multiple geometric quantities such as surface normals and depth, achieving consistent geometry perception from single-view to multi-view inputs. Additionally, we propose a post-processing pipeline that supports geometrically consistent multi-view inference. Extensive experiments demonstrate the superior performance of Dens3R across various dense 3D prediction tasks and highlight its potential for broader applications.",
+        "arxiv_id": "2507.16290",
+        "ARXIVID": "2507.16290",
+        "COMMENT": "The paper presents a unified framework for joint geometric dense prediction, but it does not involve image generation or segmentation tasks.",
         "RELEVANCE": 3,
         "NOVELTY": 6
     },
-    "2507.14797": {
+    "2507.16429": {
         "authors": [
-            "Beier Zhu",
-            "Ruoyu Wang",
-            "Tong Zhao",
-            "Hanwang Zhang",
-            "Chi Zhang"
+            "Lin Xi",
+            "Yingliang Ma",
+            "Cheng Wang",
+            "Sandra Howell",
+            "Aldo Rinaldi",
+            "Kawal S. Rhode"
         ],
-        "title": "Distilling Parallel Gradients for Fast ODE Solvers of Diffusion Models",
-        "abstract": "arXiv:2507.14797v1 Announce Type: new  Abstract: Diffusion models (DMs) have achieved state-of-the-art generative performance but suffer from high sampling latency due to their sequential denoising nature. Existing solver-based acceleration methods often face image quality degradation under a low-latency budget. In this paper, we propose the Ensemble Parallel Direction solver (dubbed as \\ours), a novel ODE solver that mitigates truncation errors by incorporating multiple parallel gradient evaluations in each ODE step. Importantly, since the additional gradient computations are independent, they can be fully parallelized, preserving low-latency sampling.   Our method optimizes a small set of learnable parameters in a distillation fashion, ensuring minimal training overhead.   In addition, our method can serve as a plugin to improve existing ODE samplers. Extensive experiments on various image synthesis benchmarks demonstrate the effectiveness of our \\ours~in achieving high-quality and low-latency sampling. For example, at the same latency level of 5 NFE, EPD achieves an FID of 4.47 on CIFAR-10, 7.97 on FFHQ, 8.17 on ImageNet, and 8.26 on LSUN Bedroom, surpassing existing learning-based solvers by a significant margin. Codes are available in https://github.com/BeierZhu/EPD.",
-        "arxiv_id": "2507.14797",
-        "ARXIVID": "2507.14797",
-        "COMMENT": "",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2507.14801": {
-        "authors": [
-            "Xiangyu Chen",
-            "Kaiwen Zhu",
-            "Yuandong Pu",
-            "Shuo Cao",
-            "Xiaohui Li",
-            "Wenlong Zhang",
-            "Yihao Liu",
-            "Yu Qiao",
-            "Jiantao Zhou",
-            "Chao Dong"
-        ],
-        "title": "Exploring Scalable Unified Modeling for General Low-Level Vision",
-        "abstract": "arXiv:2507.14801v1 Announce Type: new  Abstract: Low-level vision involves a wide spectrum of tasks, including image restoration, enhancement, stylization, and feature extraction, which differ significantly in both task formulation and output domains. To address the challenge of unified modeling across such diverse tasks, we propose a Visual task Prompt-based Image Processing (VPIP) framework that leverages input-target image pairs as visual prompts to guide the model in performing a variety of low-level vision tasks. The framework comprises an end-to-end image processing backbone, a prompt encoder, and a prompt interaction module, enabling flexible integration with various architectures and effective utilization of task-specific visual representations. Based on this design, we develop a unified low-level vision model, GenLV, and evaluate its performance across multiple representative tasks. To explore the scalability of this approach, we extend the framework along two dimensions: model capacity and task diversity. We construct a large-scale benchmark consisting of over 100 low-level vision tasks and train multiple versions of the model with varying scales. Experimental results show that the proposed method achieves considerable performance across a wide range of tasks. Notably, increasing the number of training tasks enhances generalization, particularly for tasks with limited data, indicating the model's ability to learn transferable representations through joint training. Further evaluations in zero-shot generalization, few-shot transfer, and task-specific fine-tuning scenarios demonstrate the model's strong adaptability, confirming the effectiveness, scalability, and potential of the proposed framework as a unified foundation for general low-level vision modeling.",
-        "arxiv_id": "2507.14801",
-        "ARXIVID": "2507.14801",
-        "COMMENT": "",
+        "title": "Robust Noisy Pseudo-label Learning for Semi-supervised Medical Image Segmentation Using Diffusion Model",
+        "abstract": "arXiv:2507.16429v1 Announce Type: new  Abstract: Obtaining pixel-level annotations in the medical domain is both expensive and time-consuming, often requiring close collaboration between clinical experts and developers. Semi-supervised medical image segmentation aims to leverage limited annotated data alongside abundant unlabeled data to achieve accurate segmentation. However, existing semi-supervised methods often struggle to structure semantic distributions in the latent space due to noise introduced by pseudo-labels. In this paper, we propose a novel diffusion-based framework for semi-supervised medical image segmentation. Our method introduces a constraint into the latent structure of semantic labels during the denoising diffusion process by enforcing prototype-based contrastive consistency. Rather than explicitly delineating semantic boundaries, the model leverages class prototypes centralized semantic representations in the latent space as anchors. This strategy improves the robustness of dense predictions, particularly in the presence of noisy pseudo-labels. We also introduce a new publicly available benchmark: Multi-Object Segmentation in X-ray Angiography Videos (MOSXAV), which provides detailed, manually annotated segmentation ground truth for multiple anatomical structures in X-ray angiography videos. Extensive experiments on the EndoScapes2023 and MOSXAV datasets demonstrate that our method outperforms state-of-the-art medical image segmentation approaches under the semi-supervised learning setting. This work presents a robust and data-efficient diffusion model that offers enhanced flexibility and strong potential for a wide range of clinical applications.",
+        "arxiv_id": "2507.16429",
+        "ARXIVID": "2507.16429",
+        "COMMENT": "The paper introduces a diffusion-based framework for semi-supervised medical image segmentation, which is not a unified model for generation and segmentation.",
         "RELEVANCE": 3,
         "NOVELTY": 5
     }
