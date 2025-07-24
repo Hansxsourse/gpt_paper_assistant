@@ -1,55 +1,51 @@
 {
-    "2507.16718": {
+    "2507.17388": {
         "authors": [
-            "Yiqing Shen",
-            "Chenjia Li",
-            "Chenxiao Fan",
-            "Mathias Unberath"
+            "Xinyu Liu",
+            "Hengyu Liu",
+            "Cheng Wang",
+            "Tianming Liu",
+            "Yixuan Yuan"
         ],
-        "title": "Temporally-Constrained Video Reasoning Segmentation and Automated Benchmark Construction",
-        "abstract": "arXiv:2507.16718v1 Announce Type: new  Abstract: Conventional approaches to video segmentation are confined to predefined object categories and cannot identify out-of-vocabulary objects, let alone objects that are not identified explicitly but only referred to implicitly in complex text queries. This shortcoming limits the utility for video segmentation in complex and variable scenarios, where a closed set of object categories is difficult to define and where users may not know the exact object category that will appear in the video. Such scenarios can arise in operating room video analysis, where different health systems may use different workflows and instrumentation, requiring flexible solutions for video analysis. Reasoning segmentation (RS) now offers promise towards such a solution, enabling natural language text queries as interaction for identifying object to segment. However, existing video RS formulation assume that target objects remain contextually relevant throughout entire video sequences. This assumption is inadequate for real-world scenarios in which objects of interest appear, disappear or change relevance dynamically based on temporal context, such as surgical instruments that become relevant only during specific procedural phases or anatomical structures that gain importance at particular moments during surgery. Our first contribution is the introduction of temporally-constrained video reasoning segmentation, a novel task formulation that requires models to implicitly infer when target objects become contextually relevant based on text queries that incorporate temporal reasoning. Since manual annotation of temporally-constrained video RS datasets would be expensive and limit scalability, our second contribution is an innovative automated benchmark construction method. Finally, we present TCVideoRSBenchmark, a temporally-constrained video RS dataset containing 52 samples using the videos from the MVOR dataset.",
-        "arxiv_id": "2507.16718",
-        "ARXIVID": "2507.16718",
-        "COMMENT": "The paper introduces a novel task formulation for video reasoning segmentation, but it does not involve joint generation and segmentation or multi-task diffusion models.",
-        "RELEVANCE": 3,
-        "NOVELTY": 7
-    },
-    "2507.16290": {
-        "authors": [
-            "Xianze Fang",
-            "Jingnan Gao",
-            "Zhe Wang",
-            "Zhuo Chen",
-            "Xingyu Ren",
-            "Jiangjing Lyu",
-            "Qiaomu Ren",
-            "Zhonglei Yang",
-            "Xiaokang Yang",
-            "Yichao Yan",
-            "Chengfei Lyu"
-        ],
-        "title": "Dens3R: A Foundation Model for 3D Geometry Prediction",
-        "abstract": "arXiv:2507.16290v1 Announce Type: new  Abstract: Recent advances in dense 3D reconstruction have led to significant progress, yet achieving accurate unified geometric prediction remains a major challenge. Most existing methods are limited to predicting a single geometry quantity from input images. However, geometric quantities such as depth, surface normals, and point maps are inherently correlated, and estimating them in isolation often fails to ensure consistency, thereby limiting both accuracy and practical applicability. This motivates us to explore a unified framework that explicitly models the structural coupling among different geometric properties to enable joint regression. In this paper, we present Dens3R, a 3D foundation model designed for joint geometric dense prediction and adaptable to a wide range of downstream tasks. Dens3R adopts a two-stage training framework to progressively build a pointmap representation that is both generalizable and intrinsically invariant. Specifically, we design a lightweight shared encoder-decoder backbone and introduce position-interpolated rotary positional encoding to maintain expressive power while enhancing robustness to high-resolution inputs. By integrating image-pair matching features with intrinsic invariance modeling, Dens3R accurately regresses multiple geometric quantities such as surface normals and depth, achieving consistent geometry perception from single-view to multi-view inputs. Additionally, we propose a post-processing pipeline that supports geometrically consistent multi-view inference. Extensive experiments demonstrate the superior performance of Dens3R across various dense 3D prediction tasks and highlight its potential for broader applications.",
-        "arxiv_id": "2507.16290",
-        "ARXIVID": "2507.16290",
-        "COMMENT": "The paper presents a unified framework for joint geometric dense prediction, but it does not involve image generation or segmentation tasks.",
-        "RELEVANCE": 3,
+        "title": "EndoGen: Conditional Autoregressive Endoscopic Video Generation",
+        "abstract": "arXiv:2507.17388v1 Announce Type: new  Abstract: Endoscopic video generation is crucial for advancing medical imaging and enhancing diagnostic capabilities. However, prior efforts in this field have either focused on static images, lacking the dynamic context required for practical applications, or have relied on unconditional generation that fails to provide meaningful references for clinicians. Therefore, in this paper, we propose the first conditional endoscopic video generation framework, namely EndoGen. Specifically, we build an autoregressive model with a tailored Spatiotemporal Grid-Frame Patterning (SGP) strategy. It reformulates the learning of generating multiple frames as a grid-based image generation pattern, which effectively capitalizes the inherent global dependency modeling capabilities of autoregressive architectures. Furthermore, we propose a Semantic-Aware Token Masking (SAT) mechanism, which enhances the model's ability to produce rich and diverse content by selectively focusing on semantically meaningful regions during the generation process. Through extensive experiments, we demonstrate the effectiveness of our framework in generating high-quality, conditionally guided endoscopic content, and improves the performance of downstream task of polyp segmentation. Code released at https://www.github.com/CUHK-AIM-Group/EndoGen.",
+        "arxiv_id": "2507.17388",
+        "ARXIVID": "2507.17388",
+        "COMMENT": "Matches criteria 1 as it proposes a framework for conditional video generation and segmentation.",
+        "RELEVANCE": 5,
         "NOVELTY": 6
     },
-    "2507.16429": {
+    "2507.17613": {
         "authors": [
-            "Lin Xi",
-            "Yingliang Ma",
-            "Cheng Wang",
-            "Sandra Howell",
-            "Aldo Rinaldi",
-            "Kawal S. Rhode"
+            "Xiaoxue Chen",
+            "Bhargav Chandaka",
+            "Chih-Hao Lin",
+            "Ya-Qin Zhang",
+            "David Forsyth",
+            "Hao Zhao",
+            "Shenlong Wang"
         ],
-        "title": "Robust Noisy Pseudo-label Learning for Semi-supervised Medical Image Segmentation Using Diffusion Model",
-        "abstract": "arXiv:2507.16429v1 Announce Type: new  Abstract: Obtaining pixel-level annotations in the medical domain is both expensive and time-consuming, often requiring close collaboration between clinical experts and developers. Semi-supervised medical image segmentation aims to leverage limited annotated data alongside abundant unlabeled data to achieve accurate segmentation. However, existing semi-supervised methods often struggle to structure semantic distributions in the latent space due to noise introduced by pseudo-labels. In this paper, we propose a novel diffusion-based framework for semi-supervised medical image segmentation. Our method introduces a constraint into the latent structure of semantic labels during the denoising diffusion process by enforcing prototype-based contrastive consistency. Rather than explicitly delineating semantic boundaries, the model leverages class prototypes centralized semantic representations in the latent space as anchors. This strategy improves the robustness of dense predictions, particularly in the presence of noisy pseudo-labels. We also introduce a new publicly available benchmark: Multi-Object Segmentation in X-ray Angiography Videos (MOSXAV), which provides detailed, manually annotated segmentation ground truth for multiple anatomical structures in X-ray angiography videos. Extensive experiments on the EndoScapes2023 and MOSXAV datasets demonstrate that our method outperforms state-of-the-art medical image segmentation approaches under the semi-supervised learning setting. This work presents a robust and data-efficient diffusion model that offers enhanced flexibility and strong potential for a wide range of clinical applications.",
-        "arxiv_id": "2507.16429",
-        "ARXIVID": "2507.16429",
-        "COMMENT": "The paper introduces a diffusion-based framework for semi-supervised medical image segmentation, which is not a unified model for generation and segmentation.",
+        "title": "InvRGB+L: Inverse Rendering of Complex Scenes with Unified Color and LiDAR Reflectance Modeling",
+        "abstract": "arXiv:2507.17613v1 Announce Type: new  Abstract: We present InvRGB+L, a novel inverse rendering model that reconstructs large, relightable, and dynamic scenes from a single RGB+LiDAR sequence. Conventional inverse graphics methods rely primarily on RGB observations and use LiDAR mainly for geometric information, often resulting in suboptimal material estimates due to visible light interference. We find that LiDAR's intensity values-captured with active illumination in a different spectral range-offer complementary cues for robust material estimation under variable lighting. Inspired by this, InvRGB+L leverages LiDAR intensity cues to overcome challenges inherent in RGB-centric inverse graphics through two key innovations: (1) a novel physics-based LiDAR shading model and (2) RGB-LiDAR material consistency losses. The model produces novel-view RGB and LiDAR renderings of urban and indoor scenes and supports relighting, night simulations, and dynamic object insertions, achieving results that surpass current state-of-the-art methods in both scene-level urban inverse rendering and LiDAR simulation.",
+        "arxiv_id": "2507.17613",
+        "ARXIVID": "2507.17613",
+        "COMMENT": "",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2507.17661": {
+        "authors": [
+            "Xuzhi Wang",
+            "Xinran Wu",
+            "Song Wang",
+            "Lingdong Kong",
+            "Ziping Zhao"
+        ],
+        "title": "Monocular Semantic Scene Completion via Masked Recurrent Networks",
+        "abstract": "arXiv:2507.17661v1 Announce Type: new  Abstract: Monocular Semantic Scene Completion (MSSC) aims to predict the voxel-wise occupancy and semantic category from a single-view RGB image. Existing methods adopt a single-stage framework that aims to simultaneously achieve visible region segmentation and occluded region hallucination, while also being affected by inaccurate depth estimation. Such methods often achieve suboptimal performance, especially in complex scenes. We propose a novel two-stage framework that decomposes MSSC into coarse MSSC followed by the Masked Recurrent Network. Specifically, we propose the Masked Sparse Gated Recurrent Unit (MS-GRU) which concentrates on the occupied regions by the proposed mask updating mechanism, and a sparse GRU design is proposed to reduce the computation cost. Additionally, we propose the distance attention projection to reduce projection errors by assigning different attention scores according to the distance to the observed surface. Experimental results demonstrate that our proposed unified framework, MonoMRN, effectively supports both indoor and outdoor scenes and achieves state-of-the-art performance on the NYUv2 and SemanticKITTI datasets. Furthermore, we conduct robustness analysis under various disturbances, highlighting the role of the Masked Recurrent Network in enhancing the model's resilience to such challenges. The source code is publicly available.",
+        "arxiv_id": "2507.17661",
+        "ARXIVID": "2507.17661",
+        "COMMENT": "",
         "RELEVANCE": 3,
         "NOVELTY": 5
     }
