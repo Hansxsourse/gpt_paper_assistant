@@ -1,50 +1,93 @@
 {
-    "2507.17388": {
+    "2507.18569": {
         "authors": [
-            "Xinyu Liu",
-            "Hengyu Liu",
-            "Cheng Wang",
-            "Tianming Liu",
-            "Yixuan Yuan"
+            "Yanzuo Lu",
+            "Yuxi Ren",
+            "Xin Xia",
+            "Shanchuan Lin",
+            "Xing Wang",
+            "Xuefeng Xiao",
+            "Andy J. Ma",
+            "Xiaohua Xie",
+            "Jian-Huang Lai"
         ],
-        "title": "EndoGen: Conditional Autoregressive Endoscopic Video Generation",
-        "abstract": "arXiv:2507.17388v1 Announce Type: new  Abstract: Endoscopic video generation is crucial for advancing medical imaging and enhancing diagnostic capabilities. However, prior efforts in this field have either focused on static images, lacking the dynamic context required for practical applications, or have relied on unconditional generation that fails to provide meaningful references for clinicians. Therefore, in this paper, we propose the first conditional endoscopic video generation framework, namely EndoGen. Specifically, we build an autoregressive model with a tailored Spatiotemporal Grid-Frame Patterning (SGP) strategy. It reformulates the learning of generating multiple frames as a grid-based image generation pattern, which effectively capitalizes the inherent global dependency modeling capabilities of autoregressive architectures. Furthermore, we propose a Semantic-Aware Token Masking (SAT) mechanism, which enhances the model's ability to produce rich and diverse content by selectively focusing on semantically meaningful regions during the generation process. Through extensive experiments, we demonstrate the effectiveness of our framework in generating high-quality, conditionally guided endoscopic content, and improves the performance of downstream task of polyp segmentation. Code released at https://www.github.com/CUHK-AIM-Group/EndoGen.",
-        "arxiv_id": "2507.17388",
-        "ARXIVID": "2507.17388",
-        "COMMENT": "Matches criteria 1 as it proposes a framework for conditional video generation and segmentation.",
-        "RELEVANCE": 5,
+        "title": "Adversarial Distribution Matching for Diffusion Distillation Towards Efficient Image and Video Synthesis",
+        "abstract": "arXiv:2507.18569v1 Announce Type: new  Abstract: Distribution Matching Distillation (DMD) is a promising score distillation technique that compresses pre-trained teacher diffusion models into efficient one-step or multi-step student generators. Nevertheless, its reliance on the reverse Kullback-Leibler (KL) divergence minimization potentially induces mode collapse (or mode-seeking) in certain applications. To circumvent this inherent drawback, we propose Adversarial Distribution Matching (ADM), a novel framework that leverages diffusion-based discriminators to align the latent predictions between real and fake score estimators for score distillation in an adversarial manner. In the context of extremely challenging one-step distillation, we further improve the pre-trained generator by adversarial distillation with hybrid discriminators in both latent and pixel spaces. Different from the mean squared error used in DMD2 pre-training, our method incorporates the distributional loss on ODE pairs collected from the teacher model, and thus providing a better initialization for score distillation fine-tuning in the next stage. By combining the adversarial distillation pre-training with ADM fine-tuning into a unified pipeline termed DMDX, our proposed method achieves superior one-step performance on SDXL compared to DMD2 while consuming less GPU time. Additional experiments that apply multi-step ADM distillation on SD3-Medium, SD3.5-Large, and CogVideoX set a new benchmark towards efficient image and video synthesis.",
+        "arxiv_id": "2507.18569",
+        "ARXIVID": "2507.18569",
+        "COMMENT": "",
+        "RELEVANCE": 3,
         "NOVELTY": 6
     },
-    "2507.17613": {
+    "2507.18424": {
         "authors": [
-            "Xiaoxue Chen",
-            "Bhargav Chandaka",
-            "Chih-Hao Lin",
-            "Ya-Qin Zhang",
-            "David Forsyth",
-            "Hao Zhao",
-            "Shenlong Wang"
+            "Edward Ellis",
+            "Robert Mendel",
+            "Andrew Bulpitt",
+            "Nasim Parsa",
+            "Michael F Byrne",
+            "Sharib Ali"
         ],
-        "title": "InvRGB+L: Inverse Rendering of Complex Scenes with Unified Color and LiDAR Reflectance Modeling",
-        "abstract": "arXiv:2507.17613v1 Announce Type: new  Abstract: We present InvRGB+L, a novel inverse rendering model that reconstructs large, relightable, and dynamic scenes from a single RGB+LiDAR sequence. Conventional inverse graphics methods rely primarily on RGB observations and use LiDAR mainly for geometric information, often resulting in suboptimal material estimates due to visible light interference. We find that LiDAR's intensity values-captured with active illumination in a different spectral range-offer complementary cues for robust material estimation under variable lighting. Inspired by this, InvRGB+L leverages LiDAR intensity cues to overcome challenges inherent in RGB-centric inverse graphics through two key innovations: (1) a novel physics-based LiDAR shading model and (2) RGB-LiDAR material consistency losses. The model produces novel-view RGB and LiDAR renderings of urban and indoor scenes and supports relighting, night simulations, and dynamic object insertions, achieving results that surpass current state-of-the-art methods in both scene-level urban inverse rendering and LiDAR simulation.",
-        "arxiv_id": "2507.17613",
-        "ARXIVID": "2507.17613",
+        "title": "Self-Supervised Ultrasound-Video Segmentation with Feature Prediction and 3D Localised Loss",
+        "abstract": "arXiv:2507.18424v1 Announce Type: new  Abstract: Acquiring and annotating large datasets in ultrasound imaging is challenging due to low contrast, high noise, and susceptibility to artefacts. This process requires significant time and clinical expertise. Self-supervised learning (SSL) offers a promising solution by leveraging unlabelled data to learn useful representations, enabling improved segmentation performance when annotated data is limited. Recent state-of-the-art developments in SSL for video data include V-JEPA, a framework solely based on feature prediction, avoiding pixel level reconstruction or negative samples. We hypothesise that V-JEPA is well-suited to ultrasound imaging, as it is less sensitive to noisy pixel-level detail while effectively leveraging temporal information. To the best of our knowledge, this is the first study to adopt V-JEPA for ultrasound video data. Similar to other patch-based masking SSL techniques such as VideoMAE, V-JEPA is well-suited to ViT-based models. However, ViTs can underperform on small medical datasets due to lack of inductive biases, limited spatial locality and absence of hierarchical feature learning. To improve locality understanding, we propose a novel 3D localisation auxiliary task to improve locality in ViT representations during V-JEPA pre-training. Our results show V-JEPA with our auxiliary task improves segmentation performance significantly across various frozen encoder configurations, with gains up to 3.4\\% using 100\\% and up to 8.35\\% using only 10\\% of the training data.",
+        "arxiv_id": "2507.18424",
+        "ARXIVID": "2507.18424",
         "COMMENT": "",
         "RELEVANCE": 3,
         "NOVELTY": 5
     },
-    "2507.17661": {
+    "2507.18537": {
         "authors": [
-            "Xuzhi Wang",
-            "Xinran Wu",
-            "Song Wang",
-            "Lingdong Kong",
-            "Ziping Zhao"
+            "Zhekai Chen",
+            "Ruihang Chu",
+            "Yukang Chen",
+            "Shiwei Zhang",
+            "Yujie Wei",
+            "Yingya Zhang",
+            "Xihui Liu"
         ],
-        "title": "Monocular Semantic Scene Completion via Masked Recurrent Networks",
-        "abstract": "arXiv:2507.17661v1 Announce Type: new  Abstract: Monocular Semantic Scene Completion (MSSC) aims to predict the voxel-wise occupancy and semantic category from a single-view RGB image. Existing methods adopt a single-stage framework that aims to simultaneously achieve visible region segmentation and occluded region hallucination, while also being affected by inaccurate depth estimation. Such methods often achieve suboptimal performance, especially in complex scenes. We propose a novel two-stage framework that decomposes MSSC into coarse MSSC followed by the Masked Recurrent Network. Specifically, we propose the Masked Sparse Gated Recurrent Unit (MS-GRU) which concentrates on the occupied regions by the proposed mask updating mechanism, and a sparse GRU design is proposed to reduce the computation cost. Additionally, we propose the distance attention projection to reduce projection errors by assigning different attention scores according to the distance to the observed surface. Experimental results demonstrate that our proposed unified framework, MonoMRN, effectively supports both indoor and outdoor scenes and achieves state-of-the-art performance on the NYUv2 and SemanticKITTI datasets. Furthermore, we conduct robustness analysis under various disturbances, highlighting the role of the Masked Recurrent Network in enhancing the model's resilience to such challenges. The source code is publicly available.",
-        "arxiv_id": "2507.17661",
-        "ARXIVID": "2507.17661",
+        "title": "TTS-VAR: A Test-Time Scaling Framework for Visual Auto-Regressive Generation",
+        "abstract": "arXiv:2507.18537v1 Announce Type: new  Abstract: Scaling visual generation models is essential for real-world content creation, yet requires substantial training and computational expenses. Alternatively, test-time scaling has garnered growing attention due to resource efficiency and promising performance. In this work, we present TTS-VAR, the first general test-time scaling framework for visual auto-regressive (VAR) models, modeling the generation process as a path searching problem. To dynamically balance computational efficiency with exploration capacity, we first introduce an adaptive descending batch size schedule throughout the causal generation process. Besides, inspired by VAR's hierarchical coarse-to-fine multi-scale generation, our framework integrates two key components: (i) At coarse scales, we observe that generated tokens are hard for evaluation, possibly leading to erroneous acceptance of inferior samples or rejection of superior samples. Noticing that the coarse scales contain sufficient structural information, we propose clustering-based diversity search. It preserves structural variety through semantic feature clustering, enabling later selection on samples with higher potential. (ii) In fine scales, resampling-based potential selection prioritizes promising candidates using potential scores, which are defined as reward functions incorporating multi-scale generation history. Experiments on the powerful VAR model Infinity show a notable 8.7% GenEval score improvement (from 0.69 to 0.75). Key insights reveal that early-stage structural features effectively influence final quality, and resampling efficacy varies across generation scales. Code is available at https://github.com/ali-vilab/TTS-VAR.",
+        "arxiv_id": "2507.18537",
+        "ARXIVID": "2507.18537",
+        "COMMENT": "",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2507.18144": {
+        "authors": [
+            "Jinhong He",
+            "Minglong Xue",
+            "Zhipu Liu",
+            "Mingliang Zhou",
+            "Aoxiang Ning",
+            "Palaiahnakote Shivakumara"
+        ],
+        "title": "Degradation-Consistent Learning via Bidirectional Diffusion for Low-Light Image Enhancement",
+        "abstract": "arXiv:2507.18144v1 Announce Type: new  Abstract: Low-light image enhancement aims to improve the visibility of degraded images to better align with human visual perception. While diffusion-based methods have shown promising performance due to their strong generative capabilities. However, their unidirectional modelling of degradation often struggles to capture the complexity of real-world degradation patterns, leading to structural inconsistencies and pixel misalignments. To address these challenges, we propose a bidirectional diffusion optimization mechanism that jointly models the degradation processes of both low-light and normal-light images, enabling more precise degradation parameter matching and enhancing generation quality. Specifically, we perform bidirectional diffusion-from low-to-normal light and from normal-to-low light during training and introduce an adaptive feature interaction block (AFI) to refine feature representation. By leveraging the complementarity between these two paths, our approach imposes an implicit symmetry constraint on illumination attenuation and noise distribution, facilitating consistent degradation learning and improving the models ability to perceive illumination and detail degradation. Additionally, we design a reflection-aware correction module (RACM) to guide color restoration post-denoising and suppress overexposed regions, ensuring content consistency and generating high-quality images that align with human visual perception. Extensive experiments on multiple benchmark datasets demonstrate that our method outperforms state-of-the-art methods in both quantitative and qualitative evaluations while generalizing effectively to diverse degradation scenarios. Code at https://github.com/hejh8/BidDiff",
+        "arxiv_id": "2507.18144",
+        "ARXIVID": "2507.18144",
+        "COMMENT": "",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2507.18534": {
+        "authors": [
+            "Xingyu Qiu",
+            "Mengying Yang",
+            "Xinghua Ma",
+            "Dong Liang",
+            "Yuzhen Li",
+            "Fanding Li",
+            "Gongning Luo",
+            "Wei Wang",
+            "Kuanquan Wang",
+            "Shuo Li"
+        ],
+        "title": "Elucidating the Design Space of Arbitrary-Noise-Based Diffusion Models",
+        "abstract": "arXiv:2507.18534v1 Announce Type: new  Abstract: EDM elucidates the unified design space of diffusion models, yet its fixed noise patterns restricted to pure Gaussian noise, limit advancements in image restoration. Our study indicates that forcibly injecting Gaussian noise corrupts the degraded images, overextends the image transformation distance, and increases restoration complexity. To address this problem, our proposed EDA Elucidates the Design space of Arbitrary-noise-based diffusion models. Theoretically, EDA expands the freedom of noise pattern while preserving the original module flexibility of EDM, with rigorous proof that increased noise complexity incurs no additional computational overhead during restoration. EDA is validated on three typical tasks: MRI bias field correction (global smooth noise), CT metal artifact reduction (global sharp noise), and natural image shadow removal (local boundary-aware noise). With only 5 sampling steps, EDA outperforms most task-specific methods and achieves state-of-the-art performance in bias field correction and shadow removal.",
+        "arxiv_id": "2507.18534",
+        "ARXIVID": "2507.18534",
         "COMMENT": "",
         "RELEVANCE": 3,
         "NOVELTY": 5
