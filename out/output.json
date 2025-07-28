@@ -1,95 +1,91 @@
 {
-    "2507.18569": {
+    "2507.18763": {
         "authors": [
-            "Yanzuo Lu",
-            "Yuxi Ren",
-            "Xin Xia",
-            "Shanchuan Lin",
-            "Xing Wang",
-            "Xuefeng Xiao",
-            "Andy J. Ma",
-            "Xiaohua Xie",
-            "Jian-Huang Lai"
+            "Keshav Gupta",
+            "Tejas S. Stanley",
+            "Pranjal Paul",
+            "Arun K. Singh",
+            "K. Madhava Krishna"
         ],
-        "title": "Adversarial Distribution Matching for Diffusion Distillation Towards Efficient Image and Video Synthesis",
-        "abstract": "arXiv:2507.18569v1 Announce Type: new  Abstract: Distribution Matching Distillation (DMD) is a promising score distillation technique that compresses pre-trained teacher diffusion models into efficient one-step or multi-step student generators. Nevertheless, its reliance on the reverse Kullback-Leibler (KL) divergence minimization potentially induces mode collapse (or mode-seeking) in certain applications. To circumvent this inherent drawback, we propose Adversarial Distribution Matching (ADM), a novel framework that leverages diffusion-based discriminators to align the latent predictions between real and fake score estimators for score distillation in an adversarial manner. In the context of extremely challenging one-step distillation, we further improve the pre-trained generator by adversarial distillation with hybrid discriminators in both latent and pixel spaces. Different from the mean squared error used in DMD2 pre-training, our method incorporates the distributional loss on ODE pairs collected from the teacher model, and thus providing a better initialization for score distillation fine-tuning in the next stage. By combining the adversarial distillation pre-training with ADM fine-tuning into a unified pipeline termed DMDX, our proposed method achieves superior one-step performance on SDXL compared to DMD2 while consuming less GPU time. Additional experiments that apply multi-step ADM distillation on SD3-Medium, SD3.5-Large, and CogVideoX set a new benchmark towards efficient image and video synthesis.",
-        "arxiv_id": "2507.18569",
-        "ARXIVID": "2507.18569",
-        "COMMENT": "",
-        "RELEVANCE": 3,
+        "title": "Diffusion-FS: Multimodal Free-Space Prediction via Diffusion for Autonomous Driving",
+        "abstract": "arXiv:2507.18763v1 Announce Type: new  Abstract: Drivable Free-space prediction is a fundamental and crucial problem in autonomous driving. Recent works have addressed the problem by representing the entire non-obstacle road regions as the free-space. In contrast our aim is to estimate the driving corridors that are a navigable subset of the entire road region. Unfortunately, existing corridor estimation methods directly assume a BEV-centric representation, which is hard to obtain. In contrast, we frame drivable free-space corridor prediction as a pure image perception task, using only monocular camera input. However such a formulation poses several challenges as one doesn't have the corresponding data for such free-space corridor segments in the image. Consequently, we develop a novel self-supervised approach for free-space sample generation by leveraging future ego trajectories and front-view camera images, making the process of visual corridor estimation dependent on the ego trajectory. We then employ a diffusion process to model the distribution of such segments in the image. However, the existing binary mask-based representation for a segment poses many limitations. Therefore, we introduce ContourDiff, a specialized diffusion-based architecture that denoises over contour points rather than relying on binary mask representations, enabling structured and interpretable free-space predictions. We evaluate our approach qualitatively and quantitatively on both nuScenes and CARLA, demonstrating its effectiveness in accurately predicting safe multimodal navigable corridors in the image.",
+        "arxiv_id": "2507.18763",
+        "ARXIVID": "2507.18763",
+        "COMMENT": "Matches criterion 2: Unified Diffusion Models for multiple vision tasks.",
+        "RELEVANCE": 5,
         "NOVELTY": 6
     },
-    "2507.18424": {
+    "2507.19058": {
         "authors": [
-            "Edward Ellis",
-            "Robert Mendel",
-            "Andrew Bulpitt",
-            "Nasim Parsa",
-            "Michael F Byrne",
-            "Sharib Ali"
+            "Chong Xia",
+            "Shengjun Zhang",
+            "Fangfu Liu",
+            "Chang Liu",
+            "Khodchaphun Hirunyaratsameewong",
+            "Yueqi Duan"
         ],
-        "title": "Self-Supervised Ultrasound-Video Segmentation with Feature Prediction and 3D Localised Loss",
-        "abstract": "arXiv:2507.18424v1 Announce Type: new  Abstract: Acquiring and annotating large datasets in ultrasound imaging is challenging due to low contrast, high noise, and susceptibility to artefacts. This process requires significant time and clinical expertise. Self-supervised learning (SSL) offers a promising solution by leveraging unlabelled data to learn useful representations, enabling improved segmentation performance when annotated data is limited. Recent state-of-the-art developments in SSL for video data include V-JEPA, a framework solely based on feature prediction, avoiding pixel level reconstruction or negative samples. We hypothesise that V-JEPA is well-suited to ultrasound imaging, as it is less sensitive to noisy pixel-level detail while effectively leveraging temporal information. To the best of our knowledge, this is the first study to adopt V-JEPA for ultrasound video data. Similar to other patch-based masking SSL techniques such as VideoMAE, V-JEPA is well-suited to ViT-based models. However, ViTs can underperform on small medical datasets due to lack of inductive biases, limited spatial locality and absence of hierarchical feature learning. To improve locality understanding, we propose a novel 3D localisation auxiliary task to improve locality in ViT representations during V-JEPA pre-training. Our results show V-JEPA with our auxiliary task improves segmentation performance significantly across various frozen encoder configurations, with gains up to 3.4\\% using 100\\% and up to 8.35\\% using only 10\\% of the training data.",
-        "arxiv_id": "2507.18424",
-        "ARXIVID": "2507.18424",
-        "COMMENT": "",
+        "title": "ScenePainter: Semantically Consistent Perpetual 3D Scene Generation with Concept Relation Alignment",
+        "abstract": "arXiv:2507.19058v1 Announce Type: new  Abstract: Perpetual 3D scene generation aims to produce long-range and coherent 3D view sequences, which is applicable for long-term video synthesis and 3D scene reconstruction. Existing methods follow a \"navigate-and-imagine\" fashion and rely on outpainting for successive view expansion. However, the generated view sequences suffer from semantic drift issue derived from the accumulated deviation of the outpainting module. To tackle this challenge, we propose ScenePainter, a new framework for semantically consistent 3D scene generation, which aligns the outpainter's scene-specific prior with the comprehension of the current scene. To be specific, we introduce a hierarchical graph structure dubbed SceneConceptGraph to construct relations among multi-level scene concepts, which directs the outpainter for consistent novel views and can be dynamically refined to enhance diversity. Extensive experiments demonstrate that our framework overcomes the semantic drift issue and generates more consistent and immersive 3D view sequences. Project Page: https://xiac20.github.io/ScenePainter/.",
+        "arxiv_id": "2507.19058",
+        "ARXIVID": "2507.19058",
+        "COMMENT": "Does not match any specific criteria.",
         "RELEVANCE": 3,
         "NOVELTY": 5
     },
-    "2507.18537": {
+    "2507.19098": {
         "authors": [
-            "Zhekai Chen",
-            "Ruihang Chu",
-            "Yukang Chen",
-            "Shiwei Zhang",
-            "Yujie Wei",
-            "Yingya Zhang",
-            "Xihui Liu"
+            "Francisco Caetano",
+            "Lemar Abdi",
+            "Christiaan Viviers",
+            "Amaan Valiuddin",
+            "Fons van der Sommen"
         ],
-        "title": "TTS-VAR: A Test-Time Scaling Framework for Visual Auto-Regressive Generation",
-        "abstract": "arXiv:2507.18537v1 Announce Type: new  Abstract: Scaling visual generation models is essential for real-world content creation, yet requires substantial training and computational expenses. Alternatively, test-time scaling has garnered growing attention due to resource efficiency and promising performance. In this work, we present TTS-VAR, the first general test-time scaling framework for visual auto-regressive (VAR) models, modeling the generation process as a path searching problem. To dynamically balance computational efficiency with exploration capacity, we first introduce an adaptive descending batch size schedule throughout the causal generation process. Besides, inspired by VAR's hierarchical coarse-to-fine multi-scale generation, our framework integrates two key components: (i) At coarse scales, we observe that generated tokens are hard for evaluation, possibly leading to erroneous acceptance of inferior samples or rejection of superior samples. Noticing that the coarse scales contain sufficient structural information, we propose clustering-based diversity search. It preserves structural variety through semantic feature clustering, enabling later selection on samples with higher potential. (ii) In fine scales, resampling-based potential selection prioritizes promising candidates using potential scores, which are defined as reward functions incorporating multi-scale generation history. Experiments on the powerful VAR model Infinity show a notable 8.7% GenEval score improvement (from 0.69 to 0.75). Key insights reveal that early-stage structural features effectively influence final quality, and resampling efficacy varies across generation scales. Code is available at https://github.com/ali-vilab/TTS-VAR.",
-        "arxiv_id": "2507.18537",
-        "ARXIVID": "2507.18537",
-        "COMMENT": "",
+        "title": "MedSymmFlow: Bridging Generative Modeling and Classification in Medical Imaging through Symmetrical Flow Matching",
+        "abstract": "arXiv:2507.19098v1 Announce Type: new  Abstract: Reliable medical image classification requires accurate predictions and well-calibrated uncertainty estimates, especially in high-stakes clinical settings. This work presents MedSymmFlow, a generative-discriminative hybrid model built on Symmetrical Flow Matching, designed to unify classification, generation, and uncertainty quantification in medical imaging. MedSymmFlow leverages a latent-space formulation that scales to high-resolution inputs and introduces a semantic mask conditioning mechanism to enhance diagnostic relevance. Unlike standard discriminative models, it naturally estimates uncertainty through its generative sampling process. The model is evaluated on four MedMNIST datasets, covering a range of modalities and pathologies. The results show that MedSymmFlow matches or exceeds the performance of established baselines in classification accuracy and AUC, while also delivering reliable uncertainty estimates validated by performance improvements under selective prediction.",
+        "arxiv_id": "2507.19098",
+        "ARXIVID": "2507.19098",
+        "COMMENT": "Does not match any specific criteria.",
         "RELEVANCE": 3,
         "NOVELTY": 5
     },
-    "2507.18144": {
+    "2507.18939": {
         "authors": [
-            "Jinhong He",
-            "Minglong Xue",
-            "Zhipu Liu",
-            "Mingliang Zhou",
-            "Aoxiang Ning",
-            "Palaiahnakote Shivakumara"
+            "Jionghao Wang",
+            "Cheng Lin",
+            "Yuan Liu",
+            "Rui Xu",
+            "Zhiyang Dou",
+            "Xiao-Xiao Long",
+            "Hao-Xiang Guo",
+            "Taku Komura",
+            "Wenping Wang",
+            "Xin Li"
         ],
-        "title": "Degradation-Consistent Learning via Bidirectional Diffusion for Low-Light Image Enhancement",
-        "abstract": "arXiv:2507.18144v1 Announce Type: new  Abstract: Low-light image enhancement aims to improve the visibility of degraded images to better align with human visual perception. While diffusion-based methods have shown promising performance due to their strong generative capabilities. However, their unidirectional modelling of degradation often struggles to capture the complexity of real-world degradation patterns, leading to structural inconsistencies and pixel misalignments. To address these challenges, we propose a bidirectional diffusion optimization mechanism that jointly models the degradation processes of both low-light and normal-light images, enabling more precise degradation parameter matching and enhancing generation quality. Specifically, we perform bidirectional diffusion-from low-to-normal light and from normal-to-low light during training and introduce an adaptive feature interaction block (AFI) to refine feature representation. By leveraging the complementarity between these two paths, our approach imposes an implicit symmetry constraint on illumination attenuation and noise distribution, facilitating consistent degradation learning and improving the models ability to perceive illumination and detail degradation. Additionally, we design a reflection-aware correction module (RACM) to guide color restoration post-denoising and suppress overexposed regions, ensuring content consistency and generating high-quality images that align with human visual perception. Extensive experiments on multiple benchmark datasets demonstrate that our method outperforms state-of-the-art methods in both quantitative and qualitative evaluations while generalizing effectively to diverse degradation scenarios. Code at https://github.com/hejh8/BidDiff",
-        "arxiv_id": "2507.18144",
-        "ARXIVID": "2507.18144",
-        "COMMENT": "",
+        "title": "PDT: Point Distribution Transformation with Diffusion Models",
+        "abstract": "arXiv:2507.18939v1 Announce Type: new  Abstract: Point-based representations have consistently played a vital role in geometric data structures. Most point cloud learning and processing methods typically leverage the unordered and unconstrained nature to represent the underlying geometry of 3D shapes. However, how to extract meaningful structural information from unstructured point cloud distributions and transform them into semantically meaningful point distributions remains an under-explored problem. We present PDT, a novel framework for point distribution transformation with diffusion models. Given a set of input points, PDT learns to transform the point set from its original geometric distribution into a target distribution that is semantically meaningful. Our method utilizes diffusion models with novel architecture and learning strategy, which effectively correlates the source and the target distribution through a denoising process. Through extensive experiments, we show that our method successfully transforms input point clouds into various forms of structured outputs - ranging from surface-aligned keypoints, and inner sparse joints to continuous feature lines. The results showcase our framework's ability to capture both geometric and semantic features, offering a powerful tool for various 3D geometry processing tasks where structured point distributions are desired. Code will be available at this link: https://github.com/shanemankiw/PDT.",
+        "arxiv_id": "2507.18939",
+        "ARXIVID": "2507.18939",
+        "COMMENT": "Does not match any specific criteria.",
         "RELEVANCE": 3,
         "NOVELTY": 5
     },
-    "2507.18534": {
+    "2507.18944": {
         "authors": [
-            "Xingyu Qiu",
-            "Mengying Yang",
-            "Xinghua Ma",
-            "Dong Liang",
-            "Yuzhen Li",
-            "Fanding Li",
-            "Gongning Luo",
-            "Wei Wang",
-            "Kuanquan Wang",
-            "Shuo Li"
+            "Guanyi Qin",
+            "Ziyue Wang",
+            "Daiyun Shen",
+            "Haofeng Liu",
+            "Hantao Zhou",
+            "Junde Wu",
+            "Runze Hu",
+            "Yueming Jin"
         ],
-        "title": "Elucidating the Design Space of Arbitrary-Noise-Based Diffusion Models",
-        "abstract": "arXiv:2507.18534v1 Announce Type: new  Abstract: EDM elucidates the unified design space of diffusion models, yet its fixed noise patterns restricted to pure Gaussian noise, limit advancements in image restoration. Our study indicates that forcibly injecting Gaussian noise corrupts the degraded images, overextends the image transformation distance, and increases restoration complexity. To address this problem, our proposed EDA Elucidates the Design space of Arbitrary-noise-based diffusion models. Theoretically, EDA expands the freedom of noise pattern while preserving the original module flexibility of EDM, with rigorous proof that increased noise complexity incurs no additional computational overhead during restoration. EDA is validated on three typical tasks: MRI bias field correction (global smooth noise), CT metal artifact reduction (global sharp noise), and natural image shadow removal (local boundary-aware noise). With only 5 sampling steps, EDA outperforms most task-specific methods and achieves state-of-the-art performance in bias field correction and shadow removal.",
-        "arxiv_id": "2507.18534",
-        "ARXIVID": "2507.18534",
-        "COMMENT": "",
+        "title": "Structure Matters: Revisiting Boundary Refinement in Video Object Segmentation",
+        "abstract": "arXiv:2507.18944v1 Announce Type: new  Abstract: Given an object mask, Semi-supervised Video Object Segmentation (SVOS) technique aims to track and segment the object across video frames, serving as a fundamental task in computer vision. Although recent memory-based methods demonstrate potential, they often struggle with scenes involving occlusion, particularly in handling object interactions and high feature similarity. To address these issues and meet the real-time processing requirements of downstream applications, in this paper, we propose a novel bOundary Amendment video object Segmentation method with Inherent Structure refinement, hereby named OASIS. Specifically, a lightweight structure refinement module is proposed to enhance segmentation accuracy. With the fusion of rough edge priors captured by the Canny filter and stored object features, the module can generate an object-level structure map and refine the representations by highlighting boundary features. Evidential learning for uncertainty estimation is introduced to further address challenges in occluded regions. The proposed method, OASIS, maintains an efficient design, yet extensive experiments on challenging benchmarks demonstrate its superior performance and competitive inference speed compared to other state-of-the-art methods, i.e., achieving the F values of 91.6 (vs. 89.7 on DAVIS-17 validation set) and G values of 86.6 (vs. 86.2 on YouTubeVOS 2019 validation set) while maintaining a competitive speed of 48 FPS on DAVIS.",
+        "arxiv_id": "2507.18944",
+        "ARXIVID": "2507.18944",
+        "COMMENT": "Does not match any specific criteria.",
         "RELEVANCE": 3,
-        "NOVELTY": 5
+        "NOVELTY": 4
     }
 }
