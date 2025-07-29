@@ -1,19 +1,19 @@
 {
-    "2507.18763": {
+    "2507.18921": {
         "authors": [
-            "Keshav Gupta",
-            "Tejas S. Stanley",
-            "Pranjal Paul",
-            "Arun K. Singh",
-            "K. Madhava Krishna"
+            "Elham Soltani Kazemi",
+            "Imad Eddine Toubal",
+            "Gani Rahmon",
+            "Jaired Collins",
+            "K. Palaniappan"
         ],
-        "title": "Diffusion-FS: Multimodal Free-Space Prediction via Diffusion for Autonomous Driving",
-        "abstract": "arXiv:2507.18763v1 Announce Type: new  Abstract: Drivable Free-space prediction is a fundamental and crucial problem in autonomous driving. Recent works have addressed the problem by representing the entire non-obstacle road regions as the free-space. In contrast our aim is to estimate the driving corridors that are a navigable subset of the entire road region. Unfortunately, existing corridor estimation methods directly assume a BEV-centric representation, which is hard to obtain. In contrast, we frame drivable free-space corridor prediction as a pure image perception task, using only monocular camera input. However such a formulation poses several challenges as one doesn't have the corresponding data for such free-space corridor segments in the image. Consequently, we develop a novel self-supervised approach for free-space sample generation by leveraging future ego trajectories and front-view camera images, making the process of visual corridor estimation dependent on the ego trajectory. We then employ a diffusion process to model the distribution of such segments in the image. However, the existing binary mask-based representation for a segment poses many limitations. Therefore, we introduce ContourDiff, a specialized diffusion-based architecture that denoises over contour points rather than relying on binary mask representations, enabling structured and interpretable free-space predictions. We evaluate our approach qualitatively and quantitatively on both nuScenes and CARLA, demonstrating its effectiveness in accurately predicting safe multimodal navigable corridors in the image.",
-        "arxiv_id": "2507.18763",
-        "ARXIVID": "2507.18763",
-        "COMMENT": "Matches criterion 2: Unified Diffusion Models for multiple vision tasks.",
-        "RELEVANCE": 5,
-        "NOVELTY": 6
+        "title": "HQ-SMem: Video Segmentation and Tracking Using Memory Efficient Object Embedding With Selective Update and Self-Supervised Distillation Feedback",
+        "abstract": "arXiv:2507.18921v1 Announce Type: new  Abstract: Video Object Segmentation (VOS) is foundational to numerous computer vision applications, including surveillance, autonomous driving, robotics and generative video editing. However, existing VOS models often struggle with precise mask delineation, deformable objects, topologically transforming objects, tracking drift and long video sequences. In this paper, we introduce HQ-SMem, for High Quality video segmentation and tracking using Smart Memory, a novel method that enhances the performance of VOS base models by addressing these limitations. Our approach incorporates three key innovations: (i) leveraging SAM with High-Quality masks (SAM-HQ) alongside appearance-based candidate-selection to refine coarse segmentation masks, resulting in improved object boundaries; (ii) implementing a dynamic smart memory mechanism that selectively stores relevant key frames while discarding redundant ones, thereby optimizing memory usage and processing efficiency for long-term videos; and (iii) dynamically updating the appearance model to effectively handle complex topological object variations and reduce drift throughout the video. These contributions mitigate several limitations of existing VOS models including, coarse segmentations that mix-in background pixels, fixed memory update schedules, brittleness to drift and occlusions, and prompt ambiguity issues associated with SAM. Extensive experiments conducted on multiple public datasets and state-of-the-art base trackers demonstrate that our method consistently ranks among the top two on VOTS and VOTSt 2024 datasets. Moreover, HQ-SMem sets new benchmarks on Long Video Dataset and LVOS, showcasing its effectiveness in challenging scenarios characterized by complex multi-object dynamics over extended temporal durations.",
+        "arxiv_id": "2507.18921",
+        "ARXIVID": "2507.18921",
+        "COMMENT": "The paper does not match any specific criteria closely.",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
     },
     "2507.19058": {
         "authors": [
@@ -28,23 +28,7 @@
         "abstract": "arXiv:2507.19058v1 Announce Type: new  Abstract: Perpetual 3D scene generation aims to produce long-range and coherent 3D view sequences, which is applicable for long-term video synthesis and 3D scene reconstruction. Existing methods follow a \"navigate-and-imagine\" fashion and rely on outpainting for successive view expansion. However, the generated view sequences suffer from semantic drift issue derived from the accumulated deviation of the outpainting module. To tackle this challenge, we propose ScenePainter, a new framework for semantically consistent 3D scene generation, which aligns the outpainter's scene-specific prior with the comprehension of the current scene. To be specific, we introduce a hierarchical graph structure dubbed SceneConceptGraph to construct relations among multi-level scene concepts, which directs the outpainter for consistent novel views and can be dynamically refined to enhance diversity. Extensive experiments demonstrate that our framework overcomes the semantic drift issue and generates more consistent and immersive 3D view sequences. Project Page: https://xiac20.github.io/ScenePainter/.",
         "arxiv_id": "2507.19058",
         "ARXIVID": "2507.19058",
-        "COMMENT": "Does not match any specific criteria.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2507.19098": {
-        "authors": [
-            "Francisco Caetano",
-            "Lemar Abdi",
-            "Christiaan Viviers",
-            "Amaan Valiuddin",
-            "Fons van der Sommen"
-        ],
-        "title": "MedSymmFlow: Bridging Generative Modeling and Classification in Medical Imaging through Symmetrical Flow Matching",
-        "abstract": "arXiv:2507.19098v1 Announce Type: new  Abstract: Reliable medical image classification requires accurate predictions and well-calibrated uncertainty estimates, especially in high-stakes clinical settings. This work presents MedSymmFlow, a generative-discriminative hybrid model built on Symmetrical Flow Matching, designed to unify classification, generation, and uncertainty quantification in medical imaging. MedSymmFlow leverages a latent-space formulation that scales to high-resolution inputs and introduces a semantic mask conditioning mechanism to enhance diagnostic relevance. Unlike standard discriminative models, it naturally estimates uncertainty through its generative sampling process. The model is evaluated on four MedMNIST datasets, covering a range of modalities and pathologies. The results show that MedSymmFlow matches or exceeds the performance of established baselines in classification accuracy and AUC, while also delivering reliable uncertainty estimates validated by performance improvements under selective prediction.",
-        "arxiv_id": "2507.19098",
-        "ARXIVID": "2507.19098",
-        "COMMENT": "Does not match any specific criteria.",
+        "COMMENT": "The paper does not match any specific criteria closely.",
         "RELEVANCE": 3,
         "NOVELTY": 5
     },
@@ -65,26 +49,38 @@
         "abstract": "arXiv:2507.18939v1 Announce Type: new  Abstract: Point-based representations have consistently played a vital role in geometric data structures. Most point cloud learning and processing methods typically leverage the unordered and unconstrained nature to represent the underlying geometry of 3D shapes. However, how to extract meaningful structural information from unstructured point cloud distributions and transform them into semantically meaningful point distributions remains an under-explored problem. We present PDT, a novel framework for point distribution transformation with diffusion models. Given a set of input points, PDT learns to transform the point set from its original geometric distribution into a target distribution that is semantically meaningful. Our method utilizes diffusion models with novel architecture and learning strategy, which effectively correlates the source and the target distribution through a denoising process. Through extensive experiments, we show that our method successfully transforms input point clouds into various forms of structured outputs - ranging from surface-aligned keypoints, and inner sparse joints to continuous feature lines. The results showcase our framework's ability to capture both geometric and semantic features, offering a powerful tool for various 3D geometry processing tasks where structured point distributions are desired. Code will be available at this link: https://github.com/shanemankiw/PDT.",
         "arxiv_id": "2507.18939",
         "ARXIVID": "2507.18939",
-        "COMMENT": "Does not match any specific criteria.",
+        "COMMENT": "The paper does not match any specific criteria closely.",
         "RELEVANCE": 3,
         "NOVELTY": 5
     },
-    "2507.18944": {
+    "2507.18838": {
         "authors": [
-            "Guanyi Qin",
-            "Ziyue Wang",
-            "Daiyun Shen",
-            "Haofeng Liu",
-            "Hantao Zhou",
-            "Junde Wu",
-            "Runze Hu",
-            "Yueming Jin"
+            "Fabio De Sousa Ribeiro",
+            "Omar Todd",
+            "Charles Jones",
+            "Avinash Kori",
+            "Raghav Mehta",
+            "Ben Glocker"
         ],
-        "title": "Structure Matters: Revisiting Boundary Refinement in Video Object Segmentation",
-        "abstract": "arXiv:2507.18944v1 Announce Type: new  Abstract: Given an object mask, Semi-supervised Video Object Segmentation (SVOS) technique aims to track and segment the object across video frames, serving as a fundamental task in computer vision. Although recent memory-based methods demonstrate potential, they often struggle with scenes involving occlusion, particularly in handling object interactions and high feature similarity. To address these issues and meet the real-time processing requirements of downstream applications, in this paper, we propose a novel bOundary Amendment video object Segmentation method with Inherent Structure refinement, hereby named OASIS. Specifically, a lightweight structure refinement module is proposed to enhance segmentation accuracy. With the fusion of rough edge priors captured by the Canny filter and stored object features, the module can generate an object-level structure map and refine the representations by highlighting boundary features. Evidential learning for uncertainty estimation is introduced to further address challenges in occluded regions. The proposed method, OASIS, maintains an efficient design, yet extensive experiments on challenging benchmarks demonstrate its superior performance and competitive inference speed compared to other state-of-the-art methods, i.e., achieving the F values of 91.6 (vs. 89.7 on DAVIS-17 validation set) and G values of 86.6 (vs. 86.2 on YouTubeVOS 2019 validation set) while maintaining a competitive speed of 48 FPS on DAVIS.",
-        "arxiv_id": "2507.18944",
-        "ARXIVID": "2507.18944",
-        "COMMENT": "Does not match any specific criteria.",
+        "title": "Flow Stochastic Segmentation Networks",
+        "abstract": "arXiv:2507.18838v1 Announce Type: new  Abstract: We introduce the Flow Stochastic Segmentation Network (Flow-SSN), a generative segmentation model family featuring discrete-time autoregressive and modern continuous-time flow variants. We prove fundamental limitations of the low-rank parameterisation of previous methods and show that Flow-SSNs can estimate arbitrarily high-rank pixel-wise covariances without assuming the rank or storing the distributional parameters. Flow-SSNs are also more efficient to sample from than standard diffusion-based segmentation models, thanks to most of the model capacity being allocated to learning the base distribution of the flow, constituting an expressive prior. We apply Flow-SSNs to challenging medical imaging benchmarks and achieve state-of-the-art results. Code available: https://github.com/biomedia-mira/flow-ssn.",
+        "arxiv_id": "2507.18838",
+        "ARXIVID": "2507.18838",
+        "COMMENT": "The paper does not match any specific criteria closely.",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2507.19184": {
+        "authors": [
+            "Kotha Kartheek",
+            "Lingamaneni Gnanesh Chowdary",
+            "Snehasis Mukherjee"
+        ],
+        "title": "Continual Learning-Based Unified Model for Unpaired Image Restoration Tasks",
+        "abstract": "arXiv:2507.19184v1 Announce Type: new  Abstract: Restoration of images contaminated by different adverse weather conditions such as fog, snow, and rain is a challenging task due to the varying nature of the weather conditions. Most of the existing methods focus on any one particular weather conditions. However, for applications such as autonomous driving, a unified model is necessary to perform restoration of corrupted images due to different weather conditions. We propose a continual learning approach to propose a unified framework for image restoration. The proposed framework integrates three key innovations: (1) Selective Kernel Fusion layers that dynamically combine global and local features for robust adaptive feature selection; (2) Elastic Weight Consolidation (EWC) to enable continual learning and mitigate catastrophic forgetting across multiple restoration tasks; and (3) a novel Cycle-Contrastive Loss that enhances feature discrimination while preserving semantic consistency during domain translation. Further, we propose an unpaired image restoration approach to reduce the dependance of the proposed approach on the training data. Extensive experiments on standard benchmark datasets for dehazing, desnowing and deraining tasks demonstrate significant improvements in PSNR, SSIM, and perceptual quality over the state-of-the-art.",
+        "arxiv_id": "2507.19184",
+        "ARXIVID": "2507.19184",
+        "COMMENT": "The paper does not match any specific criteria closely.",
         "RELEVANCE": 3,
         "NOVELTY": 4
     }
