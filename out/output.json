@@ -1,1 +1,20 @@
-{}
+{
+    "2507.22825": {
+        "authors": [
+            "Qingcheng Zhao",
+            "Xiang Zhang",
+            "Haiyang Xu",
+            "Zeyuan Chen",
+            "Jianwen Xie",
+            "Yuan Gao",
+            "Zhuowen Tu"
+        ],
+        "title": "DepR: Depth Guided Single-view Scene Reconstruction with Instance-level Diffusion",
+        "abstract": "arXiv:2507.22825v1 Announce Type: new  Abstract: We propose DepR, a depth-guided single-view scene reconstruction framework that integrates instance-level diffusion within a compositional paradigm. Instead of reconstructing the entire scene holistically, DepR generates individual objects and subsequently composes them into a coherent 3D layout. Unlike previous methods that use depth solely for object layout estimation during inference and therefore fail to fully exploit its rich geometric information, DepR leverages depth throughout both training and inference. Specifically, we introduce depth-guided conditioning to effectively encode shape priors into diffusion models. During inference, depth further guides DDIM sampling and layout optimization, enhancing alignment between the reconstruction and the input image. Despite being trained on limited synthetic data, DepR achieves state-of-the-art performance and demonstrates strong generalization in single-view scene reconstruction, as shown through evaluations on both synthetic and real-world datasets.",
+        "arxiv_id": "2507.22825",
+        "ARXIVID": "2507.22825",
+        "COMMENT": "Matches criterion 2",
+        "RELEVANCE": 5,
+        "NOVELTY": 6
+    }
+}
