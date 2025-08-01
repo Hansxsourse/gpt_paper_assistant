@@ -1,20 +1,20 @@
 {
-    "2507.22825": {
+    "2507.23278": {
         "authors": [
-            "Qingcheng Zhao",
-            "Xiang Zhang",
-            "Haiyang Xu",
-            "Zeyuan Chen",
-            "Jianwen Xie",
-            "Yuan Gao",
-            "Zhuowen Tu"
+            "Hao Tang",
+            "Chenwei Xie",
+            "Xiaoyi Bao",
+            "Tingyu Weng",
+            "Pandeng Li",
+            "Yun Zheng",
+            "Liwei Wang"
         ],
-        "title": "DepR: Depth Guided Single-view Scene Reconstruction with Instance-level Diffusion",
-        "abstract": "arXiv:2507.22825v1 Announce Type: new  Abstract: We propose DepR, a depth-guided single-view scene reconstruction framework that integrates instance-level diffusion within a compositional paradigm. Instead of reconstructing the entire scene holistically, DepR generates individual objects and subsequently composes them into a coherent 3D layout. Unlike previous methods that use depth solely for object layout estimation during inference and therefore fail to fully exploit its rich geometric information, DepR leverages depth throughout both training and inference. Specifically, we introduce depth-guided conditioning to effectively encode shape priors into diffusion models. During inference, depth further guides DDIM sampling and layout optimization, enhancing alignment between the reconstruction and the input image. Despite being trained on limited synthetic data, DepR achieves state-of-the-art performance and demonstrates strong generalization in single-view scene reconstruction, as shown through evaluations on both synthetic and real-world datasets.",
-        "arxiv_id": "2507.22825",
-        "ARXIVID": "2507.22825",
-        "COMMENT": "Matches criterion 2",
-        "RELEVANCE": 5,
+        "title": "UniLiP: Adapting CLIP for Unified Multimodal Understanding, Generation and Editing",
+        "abstract": "arXiv:2507.23278v1 Announce Type: new  Abstract: In this paper, we propose UniLIP, which extends CLIP to reconstruction, generation and editing, thereby building a unified tokenizer upon its exceptional comprehension capabilities. Previous CLIP-based unified methods often require additional diffusion decoders or quantization to support reconstruction and generation tasks, leading to inconsistent reconstruction or degradation of original comprehension performance.In contrast, we introduce a two-stage training scheme and a self-distillation strategy that progressively integrates reconstruction capabilities into CLIP, allowing it to maintain original comprehension performance while achieving effective image reconstruction. Furthermore, we propose a dual-condition architecture to connect the MLLM and diffusion transformer, using both learnable queries and the last layer multimodal hidden states as joint conditions. This method not only enables the utilization of the MLLM's strong reasoning capabilities in generation tasks, but also maximizes the exploitation of the rich information in UniLIP features during editing tasks. In text-to-image generation tasks, UniLIP obtains scores of 0.87 and 0.53 on GenEval and WISE benchmark respectively, surpassing all previous unified models of similar scale. In image editing, UniLIP also achieves a score of 3.62 on the ImgEdit Benchmark, surpassing recent state-of-the-art models such as BAGEL and UniWorld-V1. UniLIP effectively expand the application scope of CLIP, enabling continuous CLIP features to not only serve as the optimal choice for understanding tasks but also achieve highly competitive performance in generation and editing tasks.",
+        "arxiv_id": "2507.23278",
+        "ARXIVID": "2507.23278",
+        "COMMENT": "The paper does not match any specific criteria closely. It focuses on extending CLIP for multimodal tasks, including generation and editing, but does not mention joint generation and segmentation, unified diffusion models, or matting.",
+        "RELEVANCE": 3,
         "NOVELTY": 6
     }
 }
