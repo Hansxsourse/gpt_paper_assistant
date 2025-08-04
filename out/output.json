@@ -1,20 +1,75 @@
 {
-    "2507.23278": {
+    "2508.00443": {
         "authors": [
-            "Hao Tang",
-            "Chenwei Xie",
-            "Xiaoyi Bao",
-            "Tingyu Weng",
-            "Pandeng Li",
-            "Yun Zheng",
-            "Liwei Wang"
+            "Longfei Huang",
+            "Yu Liang",
+            "Hao Zhang",
+            "Jinwei Chen",
+            "Wei Dong",
+            "Lunde Chen",
+            "Wanyu Liu",
+            "Bo Li",
+            "Pengtao Jiang"
         ],
-        "title": "UniLiP: Adapting CLIP for Unified Multimodal Understanding, Generation and Editing",
-        "abstract": "arXiv:2507.23278v1 Announce Type: new  Abstract: In this paper, we propose UniLIP, which extends CLIP to reconstruction, generation and editing, thereby building a unified tokenizer upon its exceptional comprehension capabilities. Previous CLIP-based unified methods often require additional diffusion decoders or quantization to support reconstruction and generation tasks, leading to inconsistent reconstruction or degradation of original comprehension performance.In contrast, we introduce a two-stage training scheme and a self-distillation strategy that progressively integrates reconstruction capabilities into CLIP, allowing it to maintain original comprehension performance while achieving effective image reconstruction. Furthermore, we propose a dual-condition architecture to connect the MLLM and diffusion transformer, using both learnable queries and the last layer multimodal hidden states as joint conditions. This method not only enables the utilization of the MLLM's strong reasoning capabilities in generation tasks, but also maximizes the exploitation of the rich information in UniLIP features during editing tasks. In text-to-image generation tasks, UniLIP obtains scores of 0.87 and 0.53 on GenEval and WISE benchmark respectively, surpassing all previous unified models of similar scale. In image editing, UniLIP also achieves a score of 3.62 on the ImgEdit Benchmark, surpassing recent state-of-the-art models such as BAGEL and UniWorld-V1. UniLIP effectively expand the application scope of CLIP, enabling continuous CLIP features to not only serve as the optimal choice for understanding tasks but also achieve highly competitive performance in generation and editing tasks.",
-        "arxiv_id": "2507.23278",
-        "ARXIVID": "2507.23278",
-        "COMMENT": "The paper does not match any specific criteria closely. It focuses on extending CLIP for multimodal tasks, including generation and editing, but does not mention joint generation and segmentation, unified diffusion models, or matting.",
+        "title": "SDMatte: Grafting Diffusion Models for Interactive Matting",
+        "abstract": "arXiv:2508.00443v1 Announce Type: new  Abstract: Recent interactive matting methods have shown satisfactory performance in capturing the primary regions of objects, but they fall short in extracting fine-grained details in edge regions. Diffusion models trained on billions of image-text pairs, demonstrate exceptional capability in modeling highly complex data distributions and synthesizing realistic texture details, while exhibiting robust text-driven interaction capabilities, making them an attractive solution for interactive matting. To this end, we propose SDMatte, a diffusion-driven interactive matting model, with three key contributions. First, we exploit the powerful priors of diffusion models and transform the text-driven interaction capability into visual prompt-driven interaction capability to enable interactive matting. Second, we integrate coordinate embeddings of visual prompts and opacity embeddings of target objects into U-Net, enhancing SDMatte's sensitivity to spatial position information and opacity information. Third, we propose a masked self-attention mechanism that enables the model to focus on areas specified by visual prompts, leading to better performance. Extensive experiments on multiple datasets demonstrate the superior performance of our method, validating its effectiveness in interactive matting. Our code and model are available at https://github.com/vivoCameraResearch/SDMatte.",
+        "arxiv_id": "2508.00443",
+        "ARXIVID": "2508.00443",
+        "COMMENT": "Matches criteria 3 closely as it targets image matting with a novel diffusion-driven interactive matting model.",
+        "RELEVANCE": 5,
+        "NOVELTY": 7
+    },
+    "2508.00477": {
+        "authors": [
+            "Yuzhuo Chen",
+            "Zehua Ma",
+            "Jianhua Wang",
+            "Kai Kang",
+            "Shunyu Yao",
+            "Weiming Zhang"
+        ],
+        "title": "LAMIC: Layout-Aware Multi-Image Composition via Scalability of Multimodal Diffusion Transformer",
+        "abstract": "arXiv:2508.00477v1 Announce Type: new  Abstract: In controllable image synthesis, generating coherent and consistent images from multiple references with spatial layout awareness remains an open challenge. We present LAMIC, a Layout-Aware Multi-Image Composition framework that, for the first time, extends single-reference diffusion models to multi-reference scenarios in a training-free manner. Built upon the MMDiT model, LAMIC introduces two plug-and-play attention mechanisms: 1) Group Isolation Attention (GIA) to enhance entity disentanglement; and 2) Region-Modulated Attention (RMA) to enable layout-aware generation. To comprehensively evaluate model capabilities, we further introduce three metrics: 1) Inclusion Ratio (IN-R) and Fill Ratio (FI-R) for assessing layout control; and 2) Background Similarity (BG-S) for measuring background consistency. Extensive experiments show that LAMIC achieves state-of-the-art performance across most major metrics: it consistently outperforms existing multi-reference baselines in ID-S, BG-S, IN-R and AVG scores across all settings, and achieves the best DPG in complex composition tasks. These results demonstrate LAMIC's superior abilities in identity keeping, background preservation, layout control, and prompt-following, all achieved without any training or fine-tuning, showcasing strong zero-shot generalization ability. By inheriting the strengths of advanced single-reference models and enabling seamless extension to multi-image scenarios, LAMIC establishes a new training-free paradigm for controllable multi-image composition. As foundation models continue to evolve, LAMIC's performance is expected to scale accordingly. Our implementation is available at: https://github.com/Suchenl/LAMIC.",
+        "arxiv_id": "2508.00477",
+        "ARXIVID": "2508.00477",
+        "COMMENT": "The paper does not match any specific criteria closely.",
         "RELEVANCE": 3,
         "NOVELTY": 6
+    },
+    "2508.00412": {
+        "authors": [
+            "Hanqi Chen",
+            "Xu Zhang",
+            "Xiaoliu Guan",
+            "Lielin Jiang",
+            "Guanzhong Wang",
+            "Zeyu Chen",
+            "Yi Liu"
+        ],
+        "title": "Sortblock: Similarity-Aware Feature Reuse for Diffusion Model",
+        "abstract": "arXiv:2508.00412v1 Announce Type: new  Abstract: Diffusion Transformers (DiTs) have demonstrated remarkable generative capabilities, particularly benefiting from Transformer architectures that enhance visual and artistic fidelity. However, their inherently sequential denoising process results in high inference latency, limiting their deployment in real-time scenarios. Existing training-free acceleration approaches typically reuse intermediate features at fixed timesteps or layers, overlooking the evolving semantic focus across denoising stages and Transformer blocks.To address this, we propose Sortblock, a training-free inference acceleration framework that dynamically caches block-wise features based on their similarity across adjacent timesteps. By ranking the evolution of residuals, Sortblock adaptively determines a recomputation ratio, selectively skipping redundant computations while preserving generation quality. Furthermore, we incorporate a lightweight linear prediction mechanism to reduce accumulated errors in skipped blocks.Extensive experiments across various tasks and DiT architectures demonstrate that Sortblock achieves over 2$\\times$ inference speedup with minimal degradation in output quality, offering an effective and generalizable solution for accelerating diffusion-based generative models.",
+        "arxiv_id": "2508.00412",
+        "ARXIVID": "2508.00412",
+        "COMMENT": "The paper does not match any specific criteria closely.",
+        "RELEVANCE": 3,
+        "NOVELTY": 6
+    },
+    "2508.00471": {
+        "authors": [
+            "Yiwen Wang",
+            "Xinning Chai",
+            "Yuhong Zhang",
+            "Zhengxue Cheng",
+            "Jun Zhao",
+            "Rong Xie",
+            "Li Song"
+        ],
+        "title": "Semantic and Temporal Integration in Latent Diffusion Space for High-Fidelity Video Super-Resolution",
+        "abstract": "arXiv:2508.00471v1 Announce Type: new  Abstract: Recent advancements in video super-resolution (VSR) models have demonstrated impressive results in enhancing low-resolution videos. However, due to limitations in adequately controlling the generation process, achieving high fidelity alignment with the low-resolution input while maintaining temporal consistency across frames remains a significant challenge. In this work, we propose Semantic and Temporal Guided Video Super-Resolution (SeTe-VSR), a novel approach that incorporates both semantic and temporal-spatio guidance in the latent diffusion space to address these challenges. By incorporating high-level semantic information and integrating spatial and temporal information, our approach achieves a seamless balance between recovering intricate details and ensuring temporal coherence. Our method not only preserves high-reality visual content but also significantly enhances fidelity. Extensive experiments demonstrate that SeTe-VSR outperforms existing methods in terms of detail recovery and perceptual quality, highlighting its effectiveness for complex video super-resolution tasks.",
+        "arxiv_id": "2508.00471",
+        "ARXIVID": "2508.00471",
+        "COMMENT": "The paper does not match any specific criteria closely.",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
     }
 }
