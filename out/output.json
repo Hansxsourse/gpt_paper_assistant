@@ -1,23 +1,117 @@
 {
-    "2508.02129": {
+    "2508.03643": {
         "authors": [
-            "Yuru Xiao",
-            "Zihan Lin",
-            "Chao Lu",
-            "Deming Zhai",
-            "Kui Jiang",
-            "Wenbo Zhao",
-            "Wei Zhang",
-            "Junjun Jiang",
-            "Huanran Wang",
-            "Xianming Liu"
+            "Xiangyu Sun",
+            "Haoyi jiang",
+            "Liu Liu",
+            "Seungtae Nam",
+            "Gyeongjin Kang",
+            "Xinjie wang",
+            "Wei Sui",
+            "Zhizhong Su",
+            "Wenyu Liu",
+            "Xinggang Wang",
+            "Eunbyung Park"
         ],
-        "title": "VDEGaussian: Video Diffusion Enhanced 4D Gaussian Splatting for Dynamic Urban Scenes Modeling",
-        "abstract": "arXiv:2508.02129v1 Announce Type: new  Abstract: Dynamic urban scene modeling is a rapidly evolving area with broad applications. While current approaches leveraging neural radiance fields or Gaussian Splatting have achieved fine-grained reconstruction and high-fidelity novel view synthesis, they still face significant limitations. These often stem from a dependence on pre-calibrated object tracks or difficulties in accurately modeling fast-moving objects from undersampled capture, particularly due to challenges in handling temporal discontinuities. To overcome these issues, we propose a novel video diffusion-enhanced 4D Gaussian Splatting framework. Our key insight is to distill robust, temporally consistent priors from a test-time adapted video diffusion model. To ensure precise pose alignment and effective integration of this denoised content, we introduce two core innovations: a joint timestamp optimization strategy that refines interpolated frame poses, and an uncertainty distillation method that adaptively extracts target content while preserving well-reconstructed regions. Extensive experiments demonstrate that our method significantly enhances dynamic modeling, especially for fast-moving objects, achieving an approximate PSNR gain of 2 dB for novel view synthesis over baseline approaches.",
-        "arxiv_id": "2508.02129",
-        "ARXIVID": "2508.02129",
-        "COMMENT": "Matches criterion 2",
+        "title": "Uni3R: Unified 3D Reconstruction and Semantic Understanding via Generalizable Gaussian Splatting from Unposed Multi-View Images",
+        "abstract": "arXiv:2508.03643v1 Announce Type: new  Abstract: Reconstructing and semantically interpreting 3D scenes from sparse 2D views remains a fundamental challenge in computer vision. Conventional methods often decouple semantic understanding from reconstruction or necessitate costly per-scene optimization, thereby restricting their scalability and generalizability. In this paper, we introduce Uni3R, a novel feed-forward framework that jointly reconstructs a unified 3D scene representation enriched with open-vocabulary semantics, directly from unposed multi-view images. Our approach leverages a Cross-View Transformer to robustly integrate information across arbitrary multi-view inputs, which then regresses a set of 3D Gaussian primitives endowed with semantic feature fields. This unified representation facilitates high-fidelity novel view synthesis, open-vocabulary 3D semantic segmentation, and depth prediction, all within a single, feed-forward pass. Extensive experiments demonstrate that Uni3R establishes a new state-of-the-art across multiple benchmarks, including 25.07 PSNR on RE10K and 55.84 mIoU on ScanNet. Our work signifies a novel paradigm towards generalizable, unified 3D scene reconstruction and understanding. The code is available at https://github.com/HorizonRobotics/Uni3R.",
+        "arxiv_id": "2508.03643",
+        "ARXIVID": "2508.03643",
+        "COMMENT": "Matches criterion 2: Unified Diffusion Models.",
         "RELEVANCE": 5,
+        "NOVELTY": 7
+    },
+    "2508.03142": {
+        "authors": [
+            "Chengyu Bai",
+            "Jintao Chen",
+            "Xiang Bai",
+            "Yilong Chen",
+            "Qi She",
+            "Ming Lu",
+            "Shanghang Zhang"
+        ],
+        "title": "UniEdit-I: Training-free Image Editing for Unified VLM via Iterative Understanding, Editing and Verifying",
+        "abstract": "arXiv:2508.03142v1 Announce Type: new  Abstract: In recent years, unified vision-language models (VLMs) have rapidly advanced, effectively tackling both visual understanding and generation tasks within a single design. While many unified VLMs have explored various design choices, the recent hypothesis from OpenAI's GPT-4o suggests a promising generation pipeline: Understanding VLM->Visual Feature->Projector->Diffusion Model->Image. The understanding VLM is frozen, and only the generation-related modules are trained. This pipeline maintains the strong capability of understanding VLM while enabling the image generation ability of the unified VLM. Although this pipeline has shown very promising potential for the future development of unified VLM, how to easily enable image editing capability is still unexplored. In this paper, we introduce a novel training-free framework named UniEdit-I to enable the unified VLM with image editing capability via three iterative steps: understanding, editing, and verifying. 1. The understanding step analyzes the source image to create a source prompt through structured semantic analysis and makes minimal word replacements to form the target prompt based on the editing instruction. 2. The editing step introduces a time-adaptive offset, allowing for coherent editing from coarse to fine throughout the denoising process. 3. The verification step checks the alignment between the target prompt and the intermediate edited image, provides automatic consistency scores and corrective feedback, and determines whether to stop early or continue the editing loop. This understanding, editing, and verifying loop iterates until convergence, delivering high-fidelity editing in a training-free manner. We implemented our method based on the latest BLIP3-o and achieved state-of-the-art (SOTA) performance on the GEdit-Bench benchmark.",
+        "arxiv_id": "2508.03142",
+        "ARXIVID": "2508.03142",
+        "COMMENT": "No criteria match closely.",
+        "RELEVANCE": 3,
         "NOVELTY": 6
+    },
+    "2508.03320": {
+        "authors": [
+            "Peiyu Wang",
+            "Yi Peng",
+            "Yimeng Gan",
+            "Liang Hu",
+            "Tianyidan Xie",
+            "Xiaokun Wang",
+            "Yichen Wei",
+            "Chuanxin Tang",
+            "Bo Zhu",
+            "Changshi Li",
+            "Hongyang Wei",
+            "Eric Li",
+            "Xuchen Song",
+            "Yang Liu",
+            "Yahui Zhou"
+        ],
+        "title": "Skywork UniPic: Unified Autoregressive Modeling for Visual Understanding and Generation",
+        "abstract": "arXiv:2508.03320v1 Announce Type: new  Abstract: We introduce Skywork UniPic, a 1.5 billion-parameter autoregressive model that unifies image understanding, text-to-image generation, and image editing within a single architecture-eliminating the need for task-specific adapters or inter-module connectors-and demonstrate that compact multimodal systems can achieve state-of-the-art performance on commodity hardware. Skywork UniPic achieves a GenEval score of 0.86, surpassing most existing unified models; sets a new DPG-Bench complex-generation record of 85.5; attains 5.83 on GEditBench-EN and 3.49 on ImgEdit-Bench for image editing; and generates 1024 x 1024 images with under 15 GB of GPU memory (e.g., RTX 4090). (1) a decoupled encoding strategy that leverages a masked autoregressive encoder for synthesis and a SigLIP2 encoder for understanding, all feeding a shared autoregressive decoder; (2) a progressive, resolution-aware training schedule scaling from 256 x 256 to 1024 x 1024 while dynamically unfreezing parameters to balance capacity and stability; and (3) meticulously curated, 100 million-scale datasets augmented with task-specific reward models to refine generation and editing objectives. By demonstrating that high-fidelity multimodal integration need not incur prohibitive resource demands, Skywork UniPic establishes a practical paradigm for deployable, high-fidelity multimodal AI. Code and weights are publicly available at https://huggingface.co/Skywork/Skywork-UniPic-1.5B.",
+        "arxiv_id": "2508.03320",
+        "ARXIVID": "2508.03320",
+        "COMMENT": "No criteria match closely.",
+        "RELEVANCE": 3,
+        "NOVELTY": 6
+    },
+    "2508.03143": {
+        "authors": [
+            "Yanshu Wang",
+            "Xichen Xu",
+            "Xiaoning Lei",
+            "Guoyang Xie"
+        ],
+        "title": "SARD: Segmentation-Aware Anomaly Synthesis via Region-Constrained Diffusion with Discriminative Mask Guidance",
+        "abstract": "arXiv:2508.03143v1 Announce Type: new  Abstract: Synthesizing realistic and spatially precise anomalies is essential for enhancing the robustness of industrial anomaly detection systems. While recent diffusion-based methods have demonstrated strong capabilities in modeling complex defect patterns, they often struggle with spatial controllability and fail to maintain fine-grained regional fidelity. To overcome these limitations, we propose SARD (Segmentation-Aware anomaly synthesis via Region-constrained Diffusion with discriminative mask Guidance), a novel diffusion-based framework specifically designed for anomaly generation. Our approach introduces a Region-Constrained Diffusion (RCD) process that preserves the background by freezing it and selectively updating only the foreground anomaly regions during the reverse denoising phase, thereby effectively reducing background artifacts. Additionally, we incorporate a Discriminative Mask Guidance (DMG) module into the discriminator, enabling joint evaluation of both global realism and local anomaly fidelity, guided by pixel-level masks. Extensive experiments on the MVTec-AD and BTAD datasets show that SARD surpasses existing methods in segmentation accuracy and visual quality, setting a new state-of-the-art for pixel-level anomaly synthesis.",
+        "arxiv_id": "2508.03143",
+        "ARXIVID": "2508.03143",
+        "COMMENT": "No criteria match closely.",
+        "RELEVANCE": 3,
+        "NOVELTY": 6
+    },
+    "2508.03373": {
+        "authors": [
+            "Ni Tang",
+            "Xiaotong Luo",
+            "Zihan Cheng",
+            "Liangtai Zhou",
+            "Dongxiao Zhang",
+            "Yanyun Qu"
+        ],
+        "title": "Diffusion Once and Done: Degradation-Aware LoRA for Efficient All-in-One Image Restoration",
+        "abstract": "arXiv:2508.03373v1 Announce Type: new  Abstract: Diffusion models have revealed powerful potential in all-in-one image restoration (AiOIR), which is talented in generating abundant texture details. The existing AiOIR methods either retrain a diffusion model or fine-tune the pretrained diffusion model with extra conditional guidance. However, they often suffer from high inference costs and limited adaptability to diverse degradation types. In this paper, we propose an efficient AiOIR method, Diffusion Once and Done (DOD), which aims to achieve superior restoration performance with only one-step sampling of Stable Diffusion (SD) models. Specifically, multi-degradation feature modulation is first introduced to capture different degradation prompts with a pretrained diffusion model. Then, parameter-efficient conditional low-rank adaptation integrates the prompts to enable the fine-tuning of the SD model for adapting to different degradation types. Besides, a high-fidelity detail enhancement module is integrated into the decoder of SD to improve structural and textural details. Experiments demonstrate that our method outperforms existing diffusion-based restoration approaches in both visual quality and inference efficiency.",
+        "arxiv_id": "2508.03373",
+        "ARXIVID": "2508.03373",
+        "COMMENT": "No criteria match closely.",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2508.03227": {
+        "authors": [
+            "Hongyu Shen",
+            "Junfeng Ni",
+            "Yixin Chen",
+            "Weishuo Li",
+            "Mingtao Pei",
+            "Siyuan Huang"
+        ],
+        "title": "Trace3D: Consistent Segmentation Lifting via Gaussian Instance Tracing",
+        "abstract": "arXiv:2508.03227v1 Announce Type: new  Abstract: We address the challenge of lifting 2D visual segmentation to 3D in Gaussian Splatting. Existing methods often suffer from inconsistent 2D masks across viewpoints and produce noisy segmentation boundaries as they neglect these semantic cues to refine the learned Gaussians. To overcome this, we introduce Gaussian Instance Tracing (GIT), which augments the standard Gaussian representation with an instance weight matrix across input views. Leveraging the inherent consistency of Gaussians in 3D, we use this matrix to identify and correct 2D segmentation inconsistencies. Furthermore, since each Gaussian ideally corresponds to a single object, we propose a GIT-guided adaptive density control mechanism to split and prune ambiguous Gaussians during training, resulting in sharper and more coherent 2D and 3D segmentation boundaries. Experimental results show that our method extracts clean 3D assets and consistently improves 3D segmentation in both online (e.g., self-prompting) and offline (e.g., contrastive lifting) settings, enabling applications such as hierarchical segmentation, object extraction, and scene editing.",
+        "arxiv_id": "2508.03227",
+        "ARXIVID": "2508.03227",
+        "COMMENT": "No criteria match closely.",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
     }
 }
