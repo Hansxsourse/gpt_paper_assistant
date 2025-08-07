@@ -1,116 +1,126 @@
 {
-    "2508.03643": {
+    "2508.04147": {
         "authors": [
-            "Xiangyu Sun",
-            "Haoyi jiang",
-            "Liu Liu",
-            "Seungtae Nam",
-            "Gyeongjin Kang",
-            "Xinjie wang",
-            "Wei Sui",
-            "Zhizhong Su",
-            "Wenyu Liu",
-            "Xinggang Wang",
-            "Eunbyung Park"
+            "Lijuan Liu",
+            "Wenfa Li",
+            "Dongbo Zhang",
+            "Shuo Wang",
+            "Shaohui Jiao"
         ],
-        "title": "Uni3R: Unified 3D Reconstruction and Semantic Understanding via Generalizable Gaussian Splatting from Unposed Multi-View Images",
-        "abstract": "arXiv:2508.03643v1 Announce Type: new  Abstract: Reconstructing and semantically interpreting 3D scenes from sparse 2D views remains a fundamental challenge in computer vision. Conventional methods often decouple semantic understanding from reconstruction or necessitate costly per-scene optimization, thereby restricting their scalability and generalizability. In this paper, we introduce Uni3R, a novel feed-forward framework that jointly reconstructs a unified 3D scene representation enriched with open-vocabulary semantics, directly from unposed multi-view images. Our approach leverages a Cross-View Transformer to robustly integrate information across arbitrary multi-view inputs, which then regresses a set of 3D Gaussian primitives endowed with semantic feature fields. This unified representation facilitates high-fidelity novel view synthesis, open-vocabulary 3D semantic segmentation, and depth prediction, all within a single, feed-forward pass. Extensive experiments demonstrate that Uni3R establishes a new state-of-the-art across multiple benchmarks, including 25.07 PSNR on RE10K and 55.84 mIoU on ScanNet. Our work signifies a novel paradigm towards generalizable, unified 3D scene reconstruction and understanding. The code is available at https://github.com/HorizonRobotics/Uni3R.",
-        "arxiv_id": "2508.03643",
-        "ARXIVID": "2508.03643",
-        "COMMENT": "Matches criterion 2: Unified Diffusion Models.",
+        "title": "IDCNet: Guided Video Diffusion for Metric-Consistent RGBD Scene Generation with Precise Camera Control",
+        "abstract": "arXiv:2508.04147v1 Announce Type: new  Abstract: We present IDC-Net (Image-Depth Consistency Network), a novel framework designed to generate RGB-D video sequences under explicit camera trajectory control. Unlike approaches that treat RGB and depth generation separately, IDC-Net jointly synthesizes both RGB images and corresponding depth maps within a unified geometry-aware diffusion model. The joint learning framework strengthens spatial and geometric alignment across frames, enabling more precise camera control in the generated sequences. To support the training of this camera-conditioned model and ensure high geometric fidelity, we construct a camera-image-depth consistent dataset with metric-aligned RGB videos, depth maps, and accurate camera poses, which provides precise geometric supervision with notably improved inter-frame geometric consistency. Moreover, we introduce a geometry-aware transformer block that enables fine-grained camera control, enhancing control over the generated sequences. Extensive experiments show that IDC-Net achieves improvements over state-of-the-art approaches in both visual quality and geometric consistency of generated scene sequences. Notably, the generated RGB-D sequences can be directly feed for downstream 3D Scene reconstruction tasks without extra post-processing steps, showcasing the practical benefits of our joint learning framework. See more at https://idcnet-scene.github.io.",
+        "arxiv_id": "2508.04147",
+        "ARXIVID": "2508.04147",
+        "COMMENT": "Matches criterion 2 closely as it presents a unified diffusion model for joint RGB and depth video generation.",
         "RELEVANCE": 5,
         "NOVELTY": 7
     },
-    "2508.03142": {
+    "2508.04551": {
         "authors": [
-            "Chengyu Bai",
-            "Jintao Chen",
-            "Xiang Bai",
-            "Yilong Chen",
-            "Qi She",
-            "Ming Lu",
-            "Shanghang Zhang"
+            "Angang Zhang",
+            "Fang Deng",
+            "Hao Chen",
+            "Zhongjian Chen",
+            "Junyan Li"
         ],
-        "title": "UniEdit-I: Training-free Image Editing for Unified VLM via Iterative Understanding, Editing and Verifying",
-        "abstract": "arXiv:2508.03142v1 Announce Type: new  Abstract: In recent years, unified vision-language models (VLMs) have rapidly advanced, effectively tackling both visual understanding and generation tasks within a single design. While many unified VLMs have explored various design choices, the recent hypothesis from OpenAI's GPT-4o suggests a promising generation pipeline: Understanding VLM->Visual Feature->Projector->Diffusion Model->Image. The understanding VLM is frozen, and only the generation-related modules are trained. This pipeline maintains the strong capability of understanding VLM while enabling the image generation ability of the unified VLM. Although this pipeline has shown very promising potential for the future development of unified VLM, how to easily enable image editing capability is still unexplored. In this paper, we introduce a novel training-free framework named UniEdit-I to enable the unified VLM with image editing capability via three iterative steps: understanding, editing, and verifying. 1. The understanding step analyzes the source image to create a source prompt through structured semantic analysis and makes minimal word replacements to form the target prompt based on the editing instruction. 2. The editing step introduces a time-adaptive offset, allowing for coherent editing from coarse to fine throughout the denoising process. 3. The verification step checks the alignment between the target prompt and the intermediate edited image, provides automatic consistency scores and corrective feedback, and determines whether to stop early or continue the editing loop. This understanding, editing, and verifying loop iterates until convergence, delivering high-fidelity editing in a training-free manner. We implemented our method based on the latest BLIP3-o and achieved state-of-the-art (SOTA) performance on the GEdit-Bench benchmark.",
-        "arxiv_id": "2508.03142",
-        "ARXIVID": "2508.03142",
-        "COMMENT": "No criteria match closely.",
-        "RELEVANCE": 3,
+        "title": "Two-Way Garment Transfer: Unified Diffusion Framework for Dressing and Undressing Synthesis",
+        "abstract": "arXiv:2508.04551v1 Announce Type: new  Abstract: While recent advances in virtual try-on (VTON) have achieved realistic garment transfer to human subjects, its inverse task, virtual try-off (VTOFF), which aims to reconstruct canonical garment templates from dressed humans, remains critically underexplored and lacks systematic investigation. Existing works predominantly treat them as isolated tasks: VTON focuses on garment dressing while VTOFF addresses garment extraction, thereby neglecting their complementary symmetry. To bridge this fundamental gap, we propose the Two-Way Garment Transfer Model (TWGTM), to the best of our knowledge, the first unified framework for joint clothing-centric image synthesis that simultaneously resolves both mask-guided VTON and mask-free VTOFF through bidirectional feature disentanglement. Specifically, our framework employs dual-conditioned guidance from both latent and pixel spaces of reference images to seamlessly bridge the dual tasks. On the other hand, to resolve the inherent mask dependency asymmetry between mask-guided VTON and mask-free VTOFF, we devise a phased training paradigm that progressively bridges this modality gap. Extensive qualitative and quantitative experiments conducted across the DressCode and VITON-HD datasets validate the efficacy and competitive edge of our proposed approach.",
+        "arxiv_id": "2508.04551",
+        "ARXIVID": "2508.04551",
+        "COMMENT": "Matches criterion 1 closely as it proposes a unified framework for joint garment transfer and extraction.",
+        "RELEVANCE": 5,
         "NOVELTY": 6
     },
-    "2508.03320": {
+    "2508.04055": {
         "authors": [
-            "Peiyu Wang",
-            "Yi Peng",
-            "Yimeng Gan",
-            "Liang Hu",
-            "Tianyidan Xie",
-            "Xiaokun Wang",
-            "Yichen Wei",
-            "Chuanxin Tang",
-            "Bo Zhu",
-            "Changshi Li",
-            "Hongyang Wei",
-            "Eric Li",
-            "Xuchen Song",
+            "Fangmin Zhao",
+            "Weichao Zeng",
+            "Zhenhang Li",
+            "Dongbao Yang",
+            "Binbin Li",
+            "Xiaojun Bi",
+            "Yu Zhou"
+        ],
+        "title": "Uni-DocDiff: A Unified Document Restoration Model Based on Diffusion",
+        "abstract": "arXiv:2508.04055v1 Announce Type: new  Abstract: Removing various degradations from damaged documents greatly benefits digitization, downstream document analysis, and readability. Previous methods often treat each restoration task independently with dedicated models, leading to a cumbersome and highly complex document processing system. Although recent studies attempt to unify multiple tasks, they often suffer from limited scalability due to handcrafted prompts and heavy preprocessing, and fail to fully exploit inter-task synergy within a shared architecture. To address the aforementioned challenges, we propose Uni-DocDiff, a Unified and highly scalable Document restoration model based on Diffusion. Uni-DocDiff develops a learnable task prompt design, ensuring exceptional scalability across diverse tasks. To further enhance its multi-task capabilities and address potential task interference, we devise a novel \\textbf{Prior \\textbf{P}ool}, a simple yet comprehensive mechanism that combines both local high-frequency features and global low-frequency features. Additionally, we design the \\textbf{Prior \\textbf{F}usion \\textbf{M}odule (PFM)}, which enables the model to adaptively select the most relevant prior information for each specific task. Extensive experiments show that the versatile Uni-DocDiff achieves performance comparable or even superior performance compared with task-specific expert models, and simultaneously holds the task scalability for seamless adaptation to new tasks.",
+        "arxiv_id": "2508.04055",
+        "ARXIVID": "2508.04055",
+        "COMMENT": "Matches criterion 2 closely as it introduces a unified diffusion model for multiple document restoration tasks.",
+        "RELEVANCE": 5,
+        "NOVELTY": 6
+    },
+    "2508.04153": {
+        "authors": [
+            "Yihua Shao",
+            "Xiaofeng Lin",
+            "Xinwei Long",
+            "Siyu Chen",
+            "Minxi Yan",
             "Yang Liu",
-            "Yahui Zhou"
+            "Ziyang Yan",
+            "Ao Ma",
+            "Hao Tang",
+            "Jingcai Guo"
         ],
-        "title": "Skywork UniPic: Unified Autoregressive Modeling for Visual Understanding and Generation",
-        "abstract": "arXiv:2508.03320v1 Announce Type: new  Abstract: We introduce Skywork UniPic, a 1.5 billion-parameter autoregressive model that unifies image understanding, text-to-image generation, and image editing within a single architecture-eliminating the need for task-specific adapters or inter-module connectors-and demonstrate that compact multimodal systems can achieve state-of-the-art performance on commodity hardware. Skywork UniPic achieves a GenEval score of 0.86, surpassing most existing unified models; sets a new DPG-Bench complex-generation record of 85.5; attains 5.83 on GEditBench-EN and 3.49 on ImgEdit-Bench for image editing; and generates 1024 x 1024 images with under 15 GB of GPU memory (e.g., RTX 4090). (1) a decoupled encoding strategy that leverages a masked autoregressive encoder for synthesis and a SigLIP2 encoder for understanding, all feeding a shared autoregressive decoder; (2) a progressive, resolution-aware training schedule scaling from 256 x 256 to 1024 x 1024 while dynamically unfreezing parameters to balance capacity and stability; and (3) meticulously curated, 100 million-scale datasets augmented with task-specific reward models to refine generation and editing objectives. By demonstrating that high-fidelity multimodal integration need not incur prohibitive resource demands, Skywork UniPic establishes a practical paradigm for deployable, high-fidelity multimodal AI. Code and weights are publicly available at https://huggingface.co/Skywork/Skywork-UniPic-1.5B.",
-        "arxiv_id": "2508.03320",
-        "ARXIVID": "2508.03320",
-        "COMMENT": "No criteria match closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 6
-    },
-    "2508.03143": {
-        "authors": [
-            "Yanshu Wang",
-            "Xichen Xu",
-            "Xiaoning Lei",
-            "Guoyang Xie"
-        ],
-        "title": "SARD: Segmentation-Aware Anomaly Synthesis via Region-Constrained Diffusion with Discriminative Mask Guidance",
-        "abstract": "arXiv:2508.03143v1 Announce Type: new  Abstract: Synthesizing realistic and spatially precise anomalies is essential for enhancing the robustness of industrial anomaly detection systems. While recent diffusion-based methods have demonstrated strong capabilities in modeling complex defect patterns, they often struggle with spatial controllability and fail to maintain fine-grained regional fidelity. To overcome these limitations, we propose SARD (Segmentation-Aware anomaly synthesis via Region-constrained Diffusion with discriminative mask Guidance), a novel diffusion-based framework specifically designed for anomaly generation. Our approach introduces a Region-Constrained Diffusion (RCD) process that preserves the background by freezing it and selectively updating only the foreground anomaly regions during the reverse denoising phase, thereby effectively reducing background artifacts. Additionally, we incorporate a Discriminative Mask Guidance (DMG) module into the discriminator, enabling joint evaluation of both global realism and local anomaly fidelity, guided by pixel-level masks. Extensive experiments on the MVTec-AD and BTAD datasets show that SARD surpasses existing methods in segmentation accuracy and visual quality, setting a new state-of-the-art for pixel-level anomaly synthesis.",
-        "arxiv_id": "2508.03143",
-        "ARXIVID": "2508.03143",
-        "COMMENT": "No criteria match closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 6
-    },
-    "2508.03373": {
-        "authors": [
-            "Ni Tang",
-            "Xiaotong Luo",
-            "Zihan Cheng",
-            "Liangtai Zhou",
-            "Dongxiao Zhang",
-            "Yanyun Qu"
-        ],
-        "title": "Diffusion Once and Done: Degradation-Aware LoRA for Efficient All-in-One Image Restoration",
-        "abstract": "arXiv:2508.03373v1 Announce Type: new  Abstract: Diffusion models have revealed powerful potential in all-in-one image restoration (AiOIR), which is talented in generating abundant texture details. The existing AiOIR methods either retrain a diffusion model or fine-tune the pretrained diffusion model with extra conditional guidance. However, they often suffer from high inference costs and limited adaptability to diverse degradation types. In this paper, we propose an efficient AiOIR method, Diffusion Once and Done (DOD), which aims to achieve superior restoration performance with only one-step sampling of Stable Diffusion (SD) models. Specifically, multi-degradation feature modulation is first introduced to capture different degradation prompts with a pretrained diffusion model. Then, parameter-efficient conditional low-rank adaptation integrates the prompts to enable the fine-tuning of the SD model for adapting to different degradation types. Besides, a high-fidelity detail enhancement module is integrated into the decoder of SD to improve structural and textural details. Experiments demonstrate that our method outperforms existing diffusion-based restoration approaches in both visual quality and inference efficiency.",
-        "arxiv_id": "2508.03373",
-        "ARXIVID": "2508.03373",
-        "COMMENT": "No criteria match closely.",
+        "title": "ICM-Fusion: In-Context Meta-Optimized LoRA Fusion for Multi-Task Adaptation",
+        "abstract": "arXiv:2508.04153v1 Announce Type: new  Abstract: Enabling multi-task adaptation in pre-trained Low-Rank Adaptation (LoRA) models is crucial for enhancing their generalization capabilities. Most existing pre-trained LoRA fusion methods decompose weight matrices, sharing similar parameters while merging divergent ones. However, this paradigm inevitably induces inter-weight conflicts and leads to catastrophic domain forgetting. While incremental learning enables adaptation to multiple tasks, it struggles to achieve generalization in few-shot scenarios. Consequently, when the weight data follows a long-tailed distribution, it can lead to forgetting in the fused weights. To address this issue, we propose In-Context Meta LoRA Fusion (ICM-Fusion), a novel framework that synergizes meta-learning with in-context adaptation. The key innovation lies in our task vector arithmetic, which dynamically balances conflicting optimization directions across domains through learned manifold projections. ICM-Fusion obtains the optimal task vector orientation for the fused model in the latent space by adjusting the orientation of the task vectors. Subsequently, the fused LoRA is reconstructed by a self-designed Fusion VAE (F-VAE) to realize multi-task LoRA generation. We have conducted extensive experiments on visual and linguistic tasks, and the experimental results demonstrate that ICM-Fusion can be adapted to a wide range of architectural models and applied to various tasks. Compared to the current pre-trained LoRA fusion method, ICM-Fusion fused LoRA can significantly reduce the multi-tasking loss and can even achieve task enhancement in few-shot scenarios.",
+        "arxiv_id": "2508.04153",
+        "ARXIVID": "2508.04153",
+        "COMMENT": "Does not match any specific criteria closely.",
         "RELEVANCE": 3,
         "NOVELTY": 5
     },
-    "2508.03227": {
+    "2508.04682": {
         "authors": [
-            "Hongyu Shen",
-            "Junfeng Ni",
-            "Yixin Chen",
-            "Weishuo Li",
-            "Mingtao Pei",
-            "Siyuan Huang"
+            "Zewei Zhou",
+            "Seth Z. Zhao",
+            "Tianhui Cai",
+            "Zhiyu Huang",
+            "Bolei Zhou",
+            "Jiaqi Ma"
         ],
-        "title": "Trace3D: Consistent Segmentation Lifting via Gaussian Instance Tracing",
-        "abstract": "arXiv:2508.03227v1 Announce Type: new  Abstract: We address the challenge of lifting 2D visual segmentation to 3D in Gaussian Splatting. Existing methods often suffer from inconsistent 2D masks across viewpoints and produce noisy segmentation boundaries as they neglect these semantic cues to refine the learned Gaussians. To overcome this, we introduce Gaussian Instance Tracing (GIT), which augments the standard Gaussian representation with an instance weight matrix across input views. Leveraging the inherent consistency of Gaussians in 3D, we use this matrix to identify and correct 2D segmentation inconsistencies. Furthermore, since each Gaussian ideally corresponds to a single object, we propose a GIT-guided adaptive density control mechanism to split and prune ambiguous Gaussians during training, resulting in sharper and more coherent 2D and 3D segmentation boundaries. Experimental results show that our method extracts clean 3D assets and consistently improves 3D segmentation in both online (e.g., self-prompting) and offline (e.g., contrastive lifting) settings, enabling applications such as hierarchical segmentation, object extraction, and scene editing.",
-        "arxiv_id": "2508.03227",
-        "ARXIVID": "2508.03227",
-        "COMMENT": "No criteria match closely.",
+        "title": "TurboTrain: Towards Efficient and Balanced Multi-Task Learning for Multi-Agent Perception and Prediction",
+        "abstract": "arXiv:2508.04682v1 Announce Type: new  Abstract: End-to-end training of multi-agent systems offers significant advantages in improving multi-task performance. However, training such models remains challenging and requires extensive manual design and monitoring. In this work, we introduce TurboTrain, a novel and efficient training framework for multi-agent perception and prediction. TurboTrain comprises two key components: a multi-agent spatiotemporal pretraining scheme based on masked reconstruction learning and a balanced multi-task learning strategy based on gradient conflict suppression. By streamlining the training process, our framework eliminates the need for manually designing and tuning complex multi-stage training pipelines, substantially reducing training time and improving performance. We evaluate TurboTrain on a real-world cooperative driving dataset, V2XPnP-Seq, and demonstrate that it further improves the performance of state-of-the-art multi-agent perception and prediction models. Our results highlight that pretraining effectively captures spatiotemporal multi-agent features and significantly benefits downstream tasks. Moreover, the proposed balanced multi-task learning strategy enhances detection and prediction.",
+        "arxiv_id": "2508.04682",
+        "ARXIVID": "2508.04682",
+        "COMMENT": "Does not match any specific criteria closely.",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2508.04422": {
+        "authors": [
+            "Christian Bohn",
+            "Thomas Kurbiel",
+            "Klaus Friedrichs",
+            "Hasan Tercan",
+            "Tobias Meisen"
+        ],
+        "title": "Efficient Inter-Task Attention for Multitask Transformer Models",
+        "abstract": "arXiv:2508.04422v1 Announce Type: new  Abstract: In both Computer Vision and the wider Deep Learning field, the Transformer architecture is well-established as state-of-the-art for many applications. For Multitask Learning, however, where there may be many more queries necessary compared to single-task models, its Multi-Head-Attention often approaches the limits of what is computationally feasible considering practical hardware limitations. This is due to the fact that the size of the attention matrix scales quadratically with the number of tasks (assuming roughly equal numbers of queries for all tasks). As a solution, we propose our novel Deformable Inter-Task Self-Attention for Multitask models that enables the much more efficient aggregation of information across the feature maps from different tasks. In our experiments on the NYUD-v2 and PASCAL-Context datasets, we demonstrate an order-of-magnitude reduction in both FLOPs count and inference latency. At the same time, we also achieve substantial improvements by up to 7.4% in the individual tasks' prediction quality metrics.",
+        "arxiv_id": "2508.04422",
+        "ARXIVID": "2508.04422",
+        "COMMENT": "Does not match any specific criteria closely.",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2508.04016": {
+        "authors": [
+            "Weilun Feng",
+            "Haotong Qin",
+            "Chuanguang Yang",
+            "Xiangqi Li",
+            "Han Yang",
+            "Yuqi Li",
+            "Zhulin An",
+            "Libo Huang",
+            "Michele Magno",
+            "Yongjun Xu"
+        ],
+        "title": "$\\text{S}^2$Q-VDiT: Accurate Quantized Video Diffusion Transformer with Salient Data and Sparse Token Distillation",
+        "abstract": "arXiv:2508.04016v1 Announce Type: new  Abstract: Diffusion transformers have emerged as the mainstream paradigm for video generation models. However, the use of up to billions of parameters incurs significant computational costs. Quantization offers a promising solution by reducing memory usage and accelerating inference. Nonetheless, we observe that the joint modeling of spatial and temporal information in video diffusion models (V-DMs) leads to extremely long token sequences, which introduces high calibration variance and learning challenges. To address these issues, we propose \\textbf{$\\text{S}^2$Q-VDiT}, a post-training quantization framework for V-DMs that leverages \\textbf{S}alient data and \\textbf{S}parse token distillation. During the calibration phase, we identify that quantization performance is highly sensitive to the choice of calibration data. To mitigate this, we introduce \\textit{Hessian-aware Salient Data Selection}, which constructs high-quality calibration datasets by considering both diffusion and quantization characteristics unique to V-DMs. To tackle the learning challenges, we further analyze the sparse attention patterns inherent in V-DMs. Based on this observation, we propose \\textit{Attention-guided Sparse Token Distillation}, which exploits token-wise attention distributions to emphasize tokens that are more influential to the model's output. Under W4A6 quantization, $\\text{S}^2$Q-VDiT achieves lossless performance while delivering $3.9\\times$ model compression and $1.3\\times$ inference acceleration. Code will be available at \\href{https://github.com/wlfeng0509/s2q-vdit}{https://github.com/wlfeng0509/s2q-vdit}.",
+        "arxiv_id": "2508.04016",
+        "ARXIVID": "2508.04016",
+        "COMMENT": "Does not match any specific criteria closely.",
         "RELEVANCE": 3,
         "NOVELTY": 5
     }
