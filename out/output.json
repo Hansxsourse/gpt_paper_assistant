@@ -1,126 +1,34 @@
 {
-    "2508.04147": {
+    "2508.05399": {
         "authors": [
-            "Lijuan Liu",
-            "Wenfa Li",
-            "Dongbo Zhang",
-            "Shuo Wang",
-            "Shaohui Jiao"
+            "Wonjun Kang",
+            "Byeongkeun Ahn",
+            "Minjae Lee",
+            "Kevin Galim",
+            "Seunghyuk Oh",
+            "Hyung Il Koo",
+            "Nam Ik Cho"
         ],
-        "title": "IDCNet: Guided Video Diffusion for Metric-Consistent RGBD Scene Generation with Precise Camera Control",
-        "abstract": "arXiv:2508.04147v1 Announce Type: new  Abstract: We present IDC-Net (Image-Depth Consistency Network), a novel framework designed to generate RGB-D video sequences under explicit camera trajectory control. Unlike approaches that treat RGB and depth generation separately, IDC-Net jointly synthesizes both RGB images and corresponding depth maps within a unified geometry-aware diffusion model. The joint learning framework strengthens spatial and geometric alignment across frames, enabling more precise camera control in the generated sequences. To support the training of this camera-conditioned model and ensure high geometric fidelity, we construct a camera-image-depth consistent dataset with metric-aligned RGB videos, depth maps, and accurate camera poses, which provides precise geometric supervision with notably improved inter-frame geometric consistency. Moreover, we introduce a geometry-aware transformer block that enables fine-grained camera control, enhancing control over the generated sequences. Extensive experiments show that IDC-Net achieves improvements over state-of-the-art approaches in both visual quality and geometric consistency of generated scene sequences. Notably, the generated RGB-D sequences can be directly feed for downstream 3D Scene reconstruction tasks without extra post-processing steps, showcasing the practical benefits of our joint learning framework. See more at https://idcnet-scene.github.io.",
-        "arxiv_id": "2508.04147",
-        "ARXIVID": "2508.04147",
-        "COMMENT": "Matches criterion 2 closely as it presents a unified diffusion model for joint RGB and depth video generation.",
-        "RELEVANCE": 5,
-        "NOVELTY": 7
-    },
-    "2508.04551": {
-        "authors": [
-            "Angang Zhang",
-            "Fang Deng",
-            "Hao Chen",
-            "Zhongjian Chen",
-            "Junyan Li"
-        ],
-        "title": "Two-Way Garment Transfer: Unified Diffusion Framework for Dressing and Undressing Synthesis",
-        "abstract": "arXiv:2508.04551v1 Announce Type: new  Abstract: While recent advances in virtual try-on (VTON) have achieved realistic garment transfer to human subjects, its inverse task, virtual try-off (VTOFF), which aims to reconstruct canonical garment templates from dressed humans, remains critically underexplored and lacks systematic investigation. Existing works predominantly treat them as isolated tasks: VTON focuses on garment dressing while VTOFF addresses garment extraction, thereby neglecting their complementary symmetry. To bridge this fundamental gap, we propose the Two-Way Garment Transfer Model (TWGTM), to the best of our knowledge, the first unified framework for joint clothing-centric image synthesis that simultaneously resolves both mask-guided VTON and mask-free VTOFF through bidirectional feature disentanglement. Specifically, our framework employs dual-conditioned guidance from both latent and pixel spaces of reference images to seamlessly bridge the dual tasks. On the other hand, to resolve the inherent mask dependency asymmetry between mask-guided VTON and mask-free VTOFF, we devise a phased training paradigm that progressively bridges this modality gap. Extensive qualitative and quantitative experiments conducted across the DressCode and VITON-HD datasets validate the efficacy and competitive edge of our proposed approach.",
-        "arxiv_id": "2508.04551",
-        "ARXIVID": "2508.04551",
-        "COMMENT": "Matches criterion 1 closely as it proposes a unified framework for joint garment transfer and extraction.",
-        "RELEVANCE": 5,
-        "NOVELTY": 6
-    },
-    "2508.04055": {
-        "authors": [
-            "Fangmin Zhao",
-            "Weichao Zeng",
-            "Zhenhang Li",
-            "Dongbao Yang",
-            "Binbin Li",
-            "Xiaojun Bi",
-            "Yu Zhou"
-        ],
-        "title": "Uni-DocDiff: A Unified Document Restoration Model Based on Diffusion",
-        "abstract": "arXiv:2508.04055v1 Announce Type: new  Abstract: Removing various degradations from damaged documents greatly benefits digitization, downstream document analysis, and readability. Previous methods often treat each restoration task independently with dedicated models, leading to a cumbersome and highly complex document processing system. Although recent studies attempt to unify multiple tasks, they often suffer from limited scalability due to handcrafted prompts and heavy preprocessing, and fail to fully exploit inter-task synergy within a shared architecture. To address the aforementioned challenges, we propose Uni-DocDiff, a Unified and highly scalable Document restoration model based on Diffusion. Uni-DocDiff develops a learnable task prompt design, ensuring exceptional scalability across diverse tasks. To further enhance its multi-task capabilities and address potential task interference, we devise a novel \\textbf{Prior \\textbf{P}ool}, a simple yet comprehensive mechanism that combines both local high-frequency features and global low-frequency features. Additionally, we design the \\textbf{Prior \\textbf{F}usion \\textbf{M}odule (PFM)}, which enables the model to adaptively select the most relevant prior information for each specific task. Extensive experiments show that the versatile Uni-DocDiff achieves performance comparable or even superior performance compared with task-specific expert models, and simultaneously holds the task scalability for seamless adaptation to new tasks.",
-        "arxiv_id": "2508.04055",
-        "ARXIVID": "2508.04055",
-        "COMMENT": "Matches criterion 2 closely as it introduces a unified diffusion model for multiple document restoration tasks.",
-        "RELEVANCE": 5,
-        "NOVELTY": 6
-    },
-    "2508.04153": {
-        "authors": [
-            "Yihua Shao",
-            "Xiaofeng Lin",
-            "Xinwei Long",
-            "Siyu Chen",
-            "Minxi Yan",
-            "Yang Liu",
-            "Ziyang Yan",
-            "Ao Ma",
-            "Hao Tang",
-            "Jingcai Guo"
-        ],
-        "title": "ICM-Fusion: In-Context Meta-Optimized LoRA Fusion for Multi-Task Adaptation",
-        "abstract": "arXiv:2508.04153v1 Announce Type: new  Abstract: Enabling multi-task adaptation in pre-trained Low-Rank Adaptation (LoRA) models is crucial for enhancing their generalization capabilities. Most existing pre-trained LoRA fusion methods decompose weight matrices, sharing similar parameters while merging divergent ones. However, this paradigm inevitably induces inter-weight conflicts and leads to catastrophic domain forgetting. While incremental learning enables adaptation to multiple tasks, it struggles to achieve generalization in few-shot scenarios. Consequently, when the weight data follows a long-tailed distribution, it can lead to forgetting in the fused weights. To address this issue, we propose In-Context Meta LoRA Fusion (ICM-Fusion), a novel framework that synergizes meta-learning with in-context adaptation. The key innovation lies in our task vector arithmetic, which dynamically balances conflicting optimization directions across domains through learned manifold projections. ICM-Fusion obtains the optimal task vector orientation for the fused model in the latent space by adjusting the orientation of the task vectors. Subsequently, the fused LoRA is reconstructed by a self-designed Fusion VAE (F-VAE) to realize multi-task LoRA generation. We have conducted extensive experiments on visual and linguistic tasks, and the experimental results demonstrate that ICM-Fusion can be adapted to a wide range of architectural models and applied to various tasks. Compared to the current pre-trained LoRA fusion method, ICM-Fusion fused LoRA can significantly reduce the multi-tasking loss and can even achieve task enhancement in few-shot scenarios.",
-        "arxiv_id": "2508.04153",
-        "ARXIVID": "2508.04153",
-        "COMMENT": "Does not match any specific criteria closely.",
+        "title": "UNCAGE: Contrastive Attention Guidance for Masked Generative Transformers in Text-to-Image Generation",
+        "abstract": "arXiv:2508.05399v1 Announce Type: new  Abstract: Text-to-image (T2I) generation has been actively studied using Diffusion Models and Autoregressive Models. Recently, Masked Generative Transformers have gained attention as an alternative to Autoregressive Models to overcome the inherent limitations of causal attention and autoregressive decoding through bidirectional attention and parallel decoding, enabling efficient and high-quality image generation. However, compositional T2I generation remains challenging, as even state-of-the-art Diffusion Models often fail to accurately bind attributes and achieve proper text-image alignment. While Diffusion Models have been extensively studied for this issue, Masked Generative Transformers exhibit similar limitations but have not been explored in this context. To address this, we propose Unmasking with Contrastive Attention Guidance (UNCAGE), a novel training-free method that improves compositional fidelity by leveraging attention maps to prioritize the unmasking of tokens that clearly represent individual objects. UNCAGE consistently improves performance in both quantitative and qualitative evaluations across multiple benchmarks and metrics, with negligible inference overhead. Our code is available at https://github.com/furiosa-ai/uncage.",
+        "arxiv_id": "2508.05399",
+        "ARXIVID": "2508.05399",
+        "COMMENT": "The paper does not match any specific criteria closely. It focuses on text-to-image generation using masked generative transformers, but not in a unified multi-task framework.",
         "RELEVANCE": 3,
         "NOVELTY": 5
     },
-    "2508.04682": {
+    "2508.04818": {
         "authors": [
-            "Zewei Zhou",
-            "Seth Z. Zhao",
-            "Tianhui Cai",
-            "Zhiyu Huang",
-            "Bolei Zhou",
-            "Jiaqi Ma"
+            "Mehrdad Moradi",
+            "Marco Grasso",
+            "Bianca Maria Colosimo",
+            "Kamran Paynabar"
         ],
-        "title": "TurboTrain: Towards Efficient and Balanced Multi-Task Learning for Multi-Agent Perception and Prediction",
-        "abstract": "arXiv:2508.04682v1 Announce Type: new  Abstract: End-to-end training of multi-agent systems offers significant advantages in improving multi-task performance. However, training such models remains challenging and requires extensive manual design and monitoring. In this work, we introduce TurboTrain, a novel and efficient training framework for multi-agent perception and prediction. TurboTrain comprises two key components: a multi-agent spatiotemporal pretraining scheme based on masked reconstruction learning and a balanced multi-task learning strategy based on gradient conflict suppression. By streamlining the training process, our framework eliminates the need for manually designing and tuning complex multi-stage training pipelines, substantially reducing training time and improving performance. We evaluate TurboTrain on a real-world cooperative driving dataset, V2XPnP-Seq, and demonstrate that it further improves the performance of state-of-the-art multi-agent perception and prediction models. Our results highlight that pretraining effectively captures spatiotemporal multi-agent features and significantly benefits downstream tasks. Moreover, the proposed balanced multi-task learning strategy enhances detection and prediction.",
-        "arxiv_id": "2508.04682",
-        "ARXIVID": "2508.04682",
-        "COMMENT": "Does not match any specific criteria closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2508.04422": {
-        "authors": [
-            "Christian Bohn",
-            "Thomas Kurbiel",
-            "Klaus Friedrichs",
-            "Hasan Tercan",
-            "Tobias Meisen"
-        ],
-        "title": "Efficient Inter-Task Attention for Multitask Transformer Models",
-        "abstract": "arXiv:2508.04422v1 Announce Type: new  Abstract: In both Computer Vision and the wider Deep Learning field, the Transformer architecture is well-established as state-of-the-art for many applications. For Multitask Learning, however, where there may be many more queries necessary compared to single-task models, its Multi-Head-Attention often approaches the limits of what is computationally feasible considering practical hardware limitations. This is due to the fact that the size of the attention matrix scales quadratically with the number of tasks (assuming roughly equal numbers of queries for all tasks). As a solution, we propose our novel Deformable Inter-Task Self-Attention for Multitask models that enables the much more efficient aggregation of information across the feature maps from different tasks. In our experiments on the NYUD-v2 and PASCAL-Context datasets, we demonstrate an order-of-magnitude reduction in both FLOPs count and inference latency. At the same time, we also achieve substantial improvements by up to 7.4% in the individual tasks' prediction quality metrics.",
-        "arxiv_id": "2508.04422",
-        "ARXIVID": "2508.04422",
-        "COMMENT": "Does not match any specific criteria closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2508.04016": {
-        "authors": [
-            "Weilun Feng",
-            "Haotong Qin",
-            "Chuanguang Yang",
-            "Xiangqi Li",
-            "Han Yang",
-            "Yuqi Li",
-            "Zhulin An",
-            "Libo Huang",
-            "Michele Magno",
-            "Yongjun Xu"
-        ],
-        "title": "$\\text{S}^2$Q-VDiT: Accurate Quantized Video Diffusion Transformer with Salient Data and Sparse Token Distillation",
-        "abstract": "arXiv:2508.04016v1 Announce Type: new  Abstract: Diffusion transformers have emerged as the mainstream paradigm for video generation models. However, the use of up to billions of parameters incurs significant computational costs. Quantization offers a promising solution by reducing memory usage and accelerating inference. Nonetheless, we observe that the joint modeling of spatial and temporal information in video diffusion models (V-DMs) leads to extremely long token sequences, which introduces high calibration variance and learning challenges. To address these issues, we propose \\textbf{$\\text{S}^2$Q-VDiT}, a post-training quantization framework for V-DMs that leverages \\textbf{S}alient data and \\textbf{S}parse token distillation. During the calibration phase, we identify that quantization performance is highly sensitive to the choice of calibration data. To mitigate this, we introduce \\textit{Hessian-aware Salient Data Selection}, which constructs high-quality calibration datasets by considering both diffusion and quantization characteristics unique to V-DMs. To tackle the learning challenges, we further analyze the sparse attention patterns inherent in V-DMs. Based on this observation, we propose \\textit{Attention-guided Sparse Token Distillation}, which exploits token-wise attention distributions to emphasize tokens that are more influential to the model's output. Under W4A6 quantization, $\\text{S}^2$Q-VDiT achieves lossless performance while delivering $3.9\\times$ model compression and $1.3\\times$ inference acceleration. Code will be available at \\href{https://github.com/wlfeng0509/s2q-vdit}{https://github.com/wlfeng0509/s2q-vdit}.",
-        "arxiv_id": "2508.04016",
-        "ARXIVID": "2508.04016",
-        "COMMENT": "Does not match any specific criteria closely.",
+        "title": "Single-Step Reconstruction-Free Anomaly Detection and Segmentation via Diffusion Models",
+        "abstract": "arXiv:2508.04818v1 Announce Type: new  Abstract: Generative models have demonstrated significant success in anomaly detection and segmentation over the past decade. Recently, diffusion models have emerged as a powerful alternative, outperforming previous approaches such as GANs and VAEs. In typical diffusion-based anomaly detection, a model is trained on normal data, and during inference, anomalous images are perturbed to a predefined intermediate step in the forward diffusion process. The corresponding normal image is then reconstructed through iterative reverse sampling.   However, reconstruction-based approaches present three major challenges: (1) the reconstruction process is computationally expensive due to multiple sampling steps, making real-time applications impractical; (2) for complex or subtle patterns, the reconstructed image may correspond to a different normal pattern rather than the original input; and (3) Choosing an appropriate intermediate noise level is challenging because it is application-dependent and often assumes prior knowledge of anomalies, an assumption that does not hold in unsupervised settings.   We introduce Reconstruction-free Anomaly Detection with Attention-based diffusion models in Real-time (RADAR), which overcomes the limitations of reconstruction-based anomaly detection. Unlike current SOTA methods that reconstruct the input image, RADAR directly produces anomaly maps from the diffusion model, improving both detection accuracy and computational efficiency. We evaluate RADAR on real-world 3D-printed material and the MVTec-AD dataset. Our approach surpasses state-of-the-art diffusion-based and statistical machine learning models across all key metrics, including accuracy, precision, recall, and F1 score. Specifically, RADAR improves F1 score by 7% on MVTec-AD and 13% on the 3D-printed material dataset compared to the next best model.   Code available at: https://github.com/mehrdadmoradi124/RADAR",
+        "arxiv_id": "2508.04818",
+        "ARXIVID": "2508.04818",
+        "COMMENT": "The paper does not match any specific criteria closely. It focuses on anomaly detection and segmentation using diffusion models, but not in a unified multi-task framework.",
         "RELEVANCE": 3,
         "NOVELTY": 5
     }
