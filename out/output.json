@@ -1,34 +1,199 @@
 {
-    "2508.05399": {
+    "2508.05954": {
         "authors": [
-            "Wonjun Kang",
-            "Byeongkeun Ahn",
-            "Minjae Lee",
-            "Kevin Galim",
-            "Seunghyuk Oh",
-            "Hyung Il Koo",
-            "Nam Ik Cho"
+            "Han Lin",
+            "Jaemin Cho",
+            "Amir Zadeh",
+            "Chuan Li",
+            "Mohit Bansal"
         ],
-        "title": "UNCAGE: Contrastive Attention Guidance for Masked Generative Transformers in Text-to-Image Generation",
-        "abstract": "arXiv:2508.05399v1 Announce Type: new  Abstract: Text-to-image (T2I) generation has been actively studied using Diffusion Models and Autoregressive Models. Recently, Masked Generative Transformers have gained attention as an alternative to Autoregressive Models to overcome the inherent limitations of causal attention and autoregressive decoding through bidirectional attention and parallel decoding, enabling efficient and high-quality image generation. However, compositional T2I generation remains challenging, as even state-of-the-art Diffusion Models often fail to accurately bind attributes and achieve proper text-image alignment. While Diffusion Models have been extensively studied for this issue, Masked Generative Transformers exhibit similar limitations but have not been explored in this context. To address this, we propose Unmasking with Contrastive Attention Guidance (UNCAGE), a novel training-free method that improves compositional fidelity by leveraging attention maps to prioritize the unmasking of tokens that clearly represent individual objects. UNCAGE consistently improves performance in both quantitative and qualitative evaluations across multiple benchmarks and metrics, with negligible inference overhead. Our code is available at https://github.com/furiosa-ai/uncage.",
-        "arxiv_id": "2508.05399",
-        "ARXIVID": "2508.05399",
-        "COMMENT": "The paper does not match any specific criteria closely. It focuses on text-to-image generation using masked generative transformers, but not in a unified multi-task framework.",
+        "title": "Bifrost-1: Bridging Multimodal LLMs and Diffusion Models with Patch-level CLIP Latents",
+        "abstract": "arXiv:2508.05954v1 Announce Type: new  Abstract: There is growing interest in integrating high-fidelity visual synthesis capabilities into large language models (LLMs) without compromising their strong reasoning capabilities. Existing methods that directly train LLMs or bridge LLMs and diffusion models usually suffer from costly training since the backbone LLMs have not seen image representations during pretraining. We present Bifrost-1, a unified framework that bridges pretrained multimodal LLMs (MLLMs) and diffusion models using patch-level CLIP image embeddings as latent variables, which are natively aligned with the MLLM's CLIP visual encoder. These patch-level image embeddings are integrated into the diffusion model with a lightweight adaptation of its ControlNet. To retain the original multimodal reasoning capabilities of MLLMs, we equip the MLLM with a visual generation branch initialized from the original MLLM parameters when predicting the patch-level image embeddings. By seamlessly integrating pretrained MLLMs and diffusion models with patch-level CLIP latents, our framework enables high-fidelity controllable image generation with significant training efficiency. Our experiments demonstrate that Bifrost-1 achieves comparable or better performance than previous methods in terms of visual fidelity and multimodal understanding, with substantially lower compute during training. We also provide comprehensive ablation studies showing the effectiveness of our design choices.",
+        "arxiv_id": "2508.05954",
+        "ARXIVID": "2508.05954",
+        "COMMENT": "Matches criteria 2 closely as it introduces a unified framework integrating multimodal LLMs and diffusion models for high-fidelity image generation.",
+        "RELEVANCE": 5,
+        "NOVELTY": 7
+    },
+    "2508.06101": {
+        "authors": [
+            "Yachun Mi",
+            "Xingyang He",
+            "Shixin Sun",
+            "Yu Li",
+            "Yanting Li",
+            "Zhixuan Li",
+            "Jian Jin",
+            "Chen Hui",
+            "Shaohui Liu"
+        ],
+        "title": "UGD-IML: A Unified Generative Diffusion-based Framework for Constrained and Unconstrained Image Manipulation Localization",
+        "abstract": "arXiv:2508.06101v1 Announce Type: new  Abstract: In the digital age, advanced image editing tools pose a serious threat to the integrity of visual content, making image forgery detection and localization a key research focus. Most existing Image Manipulation Localization (IML) methods rely on discriminative learning and require large, high-quality annotated datasets. However, current datasets lack sufficient scale and diversity, limiting model performance in real-world scenarios. To overcome this, recent studies have explored Constrained IML (CIML), which generates pixel-level annotations through algorithmic supervision. However, existing CIML approaches often depend on complex multi-stage pipelines, making the annotation process inefficient. In this work, we propose a novel generative framework based on diffusion models, named UGD-IML, which for the first time unifies both IML and CIML tasks within a single framework. By learning the underlying data distribution, generative diffusion models inherently reduce the reliance on large-scale labeled datasets, allowing our approach to perform effectively even under limited data conditions. In addition, by leveraging a class embedding mechanism and a parameter-sharing design, our model seamlessly switches between IML and CIML modes without extra components or training overhead. Furthermore, the end-to-end design enables our model to avoid cumbersome steps in the data annotation process. Extensive experimental results on multiple datasets demonstrate that UGD-IML outperforms the SOTA methods by an average of 9.66 and 4.36 in terms of F1 metrics for IML and CIML tasks, respectively. Moreover, the proposed method also excels in uncertainty estimation, visualization and robustness.",
+        "arxiv_id": "2508.06101",
+        "ARXIVID": "2508.06101",
+        "COMMENT": "Matches criterion 2",
+        "RELEVANCE": 5,
+        "NOVELTY": 6
+    },
+    "2508.06170": {
+        "authors": [
+            "Ojonugwa Oluwafemi Ejiga Peter",
+            "Akingbola Oluwapemiisin",
+            "Amalahu Chetachi",
+            "Adeniran Opeyemi",
+            "Fahmi Khalifa",
+            "Md Mahmudur Rahman"
+        ],
+        "title": "Synthetic Data-Driven Multi-Architecture Framework for Automated Polyp Segmentation Through Integrated Detection and Mask Generation",
+        "abstract": "arXiv:2508.06170v1 Announce Type: new  Abstract: Colonoscopy is a vital tool for the early diagnosis of colorectal cancer, which is one of the main causes of cancer-related mortality globally; hence, it is deemed an essential technique for the prevention and early detection of colorectal cancer. The research introduces a unique multidirectional architectural framework to automate polyp detection within colonoscopy images while helping resolve limited healthcare dataset sizes and annotation complexities. The research implements a comprehensive system that delivers synthetic data generation through Stable Diffusion enhancements together with detection and segmentation algorithms. This detection approach combines Faster R-CNN for initial object localization while the Segment Anything Model (SAM) refines the segmentation masks. The faster R-CNN detection algorithm achieved a recall of 93.08% combined with a precision of 88.97% and an F1 score of 90.98%.SAM is then used to generate the image mask. The research evaluated five state-of-the-art segmentation models that included U-Net, PSPNet, FPN, LinkNet, and MANet using ResNet34 as a base model. The results demonstrate the superior performance of FPN with the highest scores of PSNR (7.205893) and SSIM (0.492381), while UNet excels in recall (84.85%) and LinkNet shows balanced performance in IoU (64.20%) and Dice score (77.53%).",
+        "arxiv_id": "2508.06170",
+        "ARXIVID": "2508.06170",
+        "COMMENT": "",
         "RELEVANCE": 3,
         "NOVELTY": 5
     },
-    "2508.04818": {
+    "2508.06093": {
         "authors": [
-            "Mehrdad Moradi",
-            "Marco Grasso",
-            "Bianca Maria Colosimo",
-            "Kamran Paynabar"
+            "Chen Zhu",
+            "Buzhen Huang",
+            "Zijing Wu",
+            "Binghui Zuo",
+            "Yangang Wang"
         ],
-        "title": "Single-Step Reconstruction-Free Anomaly Detection and Segmentation via Diffusion Models",
-        "abstract": "arXiv:2508.04818v1 Announce Type: new  Abstract: Generative models have demonstrated significant success in anomaly detection and segmentation over the past decade. Recently, diffusion models have emerged as a powerful alternative, outperforming previous approaches such as GANs and VAEs. In typical diffusion-based anomaly detection, a model is trained on normal data, and during inference, anomalous images are perturbed to a predefined intermediate step in the forward diffusion process. The corresponding normal image is then reconstructed through iterative reverse sampling.   However, reconstruction-based approaches present three major challenges: (1) the reconstruction process is computationally expensive due to multiple sampling steps, making real-time applications impractical; (2) for complex or subtle patterns, the reconstructed image may correspond to a different normal pattern rather than the original input; and (3) Choosing an appropriate intermediate noise level is challenging because it is application-dependent and often assumes prior knowledge of anomalies, an assumption that does not hold in unsupervised settings.   We introduce Reconstruction-free Anomaly Detection with Attention-based diffusion models in Real-time (RADAR), which overcomes the limitations of reconstruction-based anomaly detection. Unlike current SOTA methods that reconstruct the input image, RADAR directly produces anomaly maps from the diffusion model, improving both detection accuracy and computational efficiency. We evaluate RADAR on real-world 3D-printed material and the MVTec-AD dataset. Our approach surpasses state-of-the-art diffusion-based and statistical machine learning models across all key metrics, including accuracy, precision, recall, and F1 score. Specifically, RADAR improves F1 score by 7% on MVTec-AD and 13% on the 3D-printed material dataset compared to the next best model.   Code available at: https://github.com/mehrdadmoradi124/RADAR",
-        "arxiv_id": "2508.04818",
-        "ARXIVID": "2508.04818",
-        "COMMENT": "The paper does not match any specific criteria closely. It focuses on anomaly detection and segmentation using diffusion models, but not in a unified multi-task framework.",
+        "title": "E-React: Towards Emotionally Controlled Synthesis of Human Reactions",
+        "abstract": "arXiv:2508.06093v1 Announce Type: new  Abstract: Emotion serves as an essential component in daily human interactions. Existing human motion generation frameworks do not consider the impact of emotions, which reduces naturalness and limits their application in interactive tasks, such as human reaction synthesis. In this work, we introduce a novel task: generating diverse reaction motions in response to different emotional cues. However, learning emotion representation from limited motion data and incorporating it into a motion generation framework remains a challenging problem. To address the above obstacles, we introduce a semi-supervised emotion prior in an actor-reactor diffusion model to facilitate emotion-driven reaction synthesis. Specifically, based on the observation that motion clips within a short sequence tend to share the same emotion, we first devise a semi-supervised learning framework to train an emotion prior. With this prior, we further train an actor-reactor diffusion model to generate reactions by considering both spatial interaction and emotional response. Finally, given a motion sequence of an actor, our approach can generate realistic reactions under various emotional conditions. Experimental results demonstrate that our model outperforms existing reaction generation methods. The code and data will be made publicly available at https://ereact.github.io/",
+        "arxiv_id": "2508.06093",
+        "ARXIVID": "2508.06093",
+        "COMMENT": "",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2508.06115": {
+        "authors": [
+            "Weichen Zhang",
+            "Kebin Liu",
+            "Fan Dang",
+            "Zhui Zhu",
+            "Xikai Sun",
+            "Yunhao Liu"
+        ],
+        "title": "SynSeg: Feature Synergy for Multi-Category Contrastive Learning in Open-Vocabulary Semantic Segmentation",
+        "abstract": "arXiv:2508.06115v1 Announce Type: new  Abstract: Semantic segmentation in open-vocabulary scenarios presents significant challenges due to the wide range and granularity of semantic categories. Existing weakly-supervised methods often rely on category-specific supervision and ill-suited feature construction methods for contrastive learning, leading to semantic misalignment and poor performance. In this work, we propose a novel weakly-supervised approach, SynSeg, to address the challenges. SynSeg performs Multi-Category Contrastive Learning (MCCL) as a stronger training signal with a new feature reconstruction framework named Feature Synergy Structure (FSS). Specifically, MCCL strategy robustly combines both intra- and inter-category alignment and separation in order to make the model learn the knowledge of correlations from different categories within the same image. Moreover, FSS reconstructs discriminative features for contrastive learning through prior fusion and semantic-activation-map enhancement, effectively avoiding the foreground bias introduced by the visual encoder. In general, SynSeg effectively improves the abilities in semantic localization and discrimination under weak supervision. Extensive experiments on benchmarks demonstrate that our method outperforms state-of-the-art (SOTA) performance. For instance, SynSeg achieves higher accuracy than SOTA baselines by 4.5\\% on VOC, 8.9\\% on Context, 2.6\\% on Object and 2.0\\% on City.",
+        "arxiv_id": "2508.06115",
+        "ARXIVID": "2508.06115",
+        "COMMENT": "",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2508.06146": {
+        "authors": [
+            "Yuchen Guan",
+            "Chong Sun",
+            "Canmiao Fu",
+            "Zhipeng Huang",
+            "Chun Yuan",
+            "Chen Li"
+        ],
+        "title": "Text-guided Visual Prompt DINO for Generic Segmentation",
+        "abstract": "arXiv:2508.06146v1 Announce Type: new  Abstract: Recent advancements in multimodal vision models have highlighted limitations in late-stage feature fusion and suboptimal query selection for hybrid prompts open-world segmentation, alongside constraints from caption-derived vocabularies. To address these challenges, we propose Prompt-DINO, a text-guided visual Prompt DINO framework featuring three key innovations. First, we introduce an early fusion mechanism that unifies text/visual prompts and backbone features at the initial encoding stage, enabling deeper cross-modal interactions to resolve semantic ambiguities. Second, we design order-aligned query selection for DETR-based architectures, explicitly optimizing the structural alignment between text and visual queries during decoding to enhance semantic-spatial consistency. Third, we develop a generative data engine powered by the Recognize Anything via Prompting (RAP) model, which synthesizes 0.5B diverse training instances through a dual-path cross-verification pipeline, reducing label noise by 80.5% compared to conventional approaches. Extensive experiments demonstrate that Prompt-DINO achieves state-of-the-art performance on open-world detection benchmarks while significantly expanding semantic coverage beyond fixed-vocabulary constraints. Our work establishes a new paradigm for scalable multimodal detection and data generation in open-world scenarios. Data&Code are available at https://github.com/WeChatCV/WeVisionOne.",
+        "arxiv_id": "2508.06146",
+        "ARXIVID": "2508.06146",
+        "COMMENT": "",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2508.06063": {
+        "authors": [
+            "Chao Hao",
+            "Zitong Yu",
+            "Xin Liu",
+            "Yuhao Wang",
+            "Weicheng Xie",
+            "Jingang Shi",
+            "Huanjing Yue",
+            "Jingyu Yang"
+        ],
+        "title": "Distribution-Specific Learning for Joint Salient and Camouflaged Object Detection",
+        "abstract": "arXiv:2508.06063v1 Announce Type: new  Abstract: Salient object detection (SOD) and camouflaged object detection (COD) are two closely related but distinct computer vision tasks. Although both are class-agnostic segmentation tasks that map from RGB space to binary space, the former aims to identify the most salient objects in the image, while the latter focuses on detecting perfectly camouflaged objects that blend into the background in the image. These two tasks exhibit strong contradictory attributes. Previous works have mostly believed that joint learning of these two tasks would confuse the network, reducing its performance on both tasks. However, here we present an opposite perspective: with the correct approach to learning, the network can simultaneously possess the capability to find both salient and camouflaged objects, allowing both tasks to benefit from joint learning. We propose SCJoint, a joint learning scheme for SOD and COD tasks, assuming that the decoding processes of SOD and COD have different distribution characteristics. The key to our method is to learn the respective means and variances of the decoding processes for both tasks by inserting a minimal amount of task-specific learnable parameters within a fully shared network structure, thereby decoupling the contradictory attributes of the two tasks at a minimal cost. Furthermore, we propose a saliency-based sampling strategy (SBSS) to sample the training set of the SOD task to balance the training set sizes of the two tasks. In addition, SBSS improves the training set quality and shortens the training time. Based on the proposed SCJoint and SBSS, we train a powerful generalist network, named JoNet, which has the ability to simultaneously capture both ``salient\" and ``camouflaged\". Extensive experiments demonstrate the competitive performance and effectiveness of our proposed method. The code is available at https://github.com/linuxsino/JoNet.",
+        "arxiv_id": "2508.06063",
+        "ARXIVID": "2508.06063",
+        "COMMENT": "",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2508.06080": {
+        "authors": [
+            "Bin Xia",
+            "Jiyang Liu",
+            "Yuechen Zhang",
+            "Bohao Peng",
+            "Ruihang Chu",
+            "Yitong Wang",
+            "Xinglong Wu",
+            "Bei Yu",
+            "Jiaya Jia"
+        ],
+        "title": "DreamVE: Unified Instruction-based Image and Video Editing",
+        "abstract": "arXiv:2508.06080v1 Announce Type: new  Abstract: Instruction-based editing holds vast potential due to its simple and efficient interactive editing format. However, instruction-based editing, particularly for video, has been constrained by limited training data, hindering its practical application. To this end, we introduce DreamVE, a unified model for instruction-based image and video editing. Specifically, We propose a two-stage training strategy: first image editing, then video editing. This offers two main benefits: (1) Image data scales more easily, and models are more efficient to train, providing useful priors for faster and better video editing training. (2) Unifying image and video generation is natural and aligns with current trends. Moreover, we present comprehensive training data synthesis pipelines, including collage-based and generative model-based data synthesis. The collage-based data synthesis combines foreground objects and backgrounds to generate diverse editing data, such as object manipulation, background changes, and text modifications. It can easily generate billions of accurate, consistent, realistic, and diverse editing pairs. We pretrain DreamVE on extensive collage-based data to achieve strong performance in key editing types and enhance generalization and transfer capabilities. However, collage-based data lacks some attribute editing cases, leading to a relative drop in performance. In contrast, the generative model-based pipeline, despite being hard to scale up, offers flexibility in handling attribute editing cases. Therefore, we use generative model-based data to further fine-tune DreamVE. Besides, we design an efficient and powerful editing framework for DreamVE. We build on the SOTA T2V model and use a token concatenation with early drop approach to inject source image guidance, ensuring strong consistency and editability. The codes and models will be released.",
+        "arxiv_id": "2508.06080",
+        "ARXIVID": "2508.06080",
+        "COMMENT": "",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2508.06139": {
+        "authors": [
+            "Shaohua Pan",
+            "Xinyu Yi",
+            "Yan Zhou",
+            "Weihua Jian",
+            "Yuan Zhang",
+            "Pengfei Wan",
+            "Feng Xu"
+        ],
+        "title": "DiffCap: Diffusion-based Real-time Human Motion Capture using Sparse IMUs and a Monocular Camera",
+        "abstract": "arXiv:2508.06139v1 Announce Type: new  Abstract: Combining sparse IMUs and a monocular camera is a new promising setting to perform real-time human motion capture. This paper proposes a diffusion-based solution to learn human motion priors and fuse the two modalities of signals together seamlessly in a unified framework. By delicately considering the characteristics of the two signals, the sequential visual information is considered as a whole and transformed into a condition embedding, while the inertial measurement is concatenated with the noisy body pose frame by frame to construct a sequential input for the diffusion model. Firstly, we observe that the visual information may be unavailable in some frames due to occlusions or subjects moving out of the camera view. Thus incorporating the sequential visual features as a whole to get a single feature embedding is robust to the occasional degenerations of visual information in those frames. On the other hand, the IMU measurements are robust to occlusions and always stable when signal transmission has no problem. So incorporating them frame-wisely could better explore the temporal information for the system. Experiments have demonstrated the effectiveness of the system design and its state-of-the-art performance in pose estimation compared with the previous works. Our codes are available for research at https://shaohua-pan.github.io/diffcap-page.",
+        "arxiv_id": "2508.06139",
+        "ARXIVID": "2508.06139",
+        "COMMENT": "",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2508.06160": {
+        "authors": [
+            "Zhenbang Du (Celine)",
+            "Yonggan Fu (Celine)",
+            "Lifu Wang (Celine)",
+            "Jiayi Qian (Celine)",
+            "Xiao Luo (Celine)",
+            "Yingyan (Celine)",
+            "Lin"
+        ],
+        "title": "Fewer Denoising Steps or Cheaper Per-Step Inference: Towards Compute-Optimal Diffusion Model Deployment",
+        "abstract": "arXiv:2508.06160v1 Announce Type: new  Abstract: Diffusion models have shown remarkable success across generative tasks, yet their high computational demands challenge deployment on resource-limited platforms. This paper investigates a critical question for compute-optimal diffusion model deployment: Under a post-training setting without fine-tuning, is it more effective to reduce the number of denoising steps or to use a cheaper per-step inference? Intuitively, reducing the number of denoising steps increases the variability of the distributions across steps, making the model more sensitive to compression. In contrast, keeping more denoising steps makes the differences smaller, preserving redundancy, and making post-training compression more feasible. To systematically examine this, we propose PostDiff, a training-free framework for accelerating pre-trained diffusion models by reducing redundancy at both the input level and module level in a post-training manner. At the input level, we propose a mixed-resolution denoising scheme based on the insight that reducing generation resolution in early denoising steps can enhance low-frequency components and improve final generation fidelity. At the module level, we employ a hybrid module caching strategy to reuse computations across denoising steps. Extensive experiments and ablation studies demonstrate that (1) PostDiff can significantly improve the fidelity-efficiency trade-off of state-of-the-art diffusion models, and (2) to boost efficiency while maintaining decent generation fidelity, reducing per-step inference cost is often more effective than reducing the number of denoising steps. Our code is available at https://github.com/GATECH-EIC/PostDiff.",
+        "arxiv_id": "2508.06160",
+        "ARXIVID": "2508.06160",
+        "COMMENT": "",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2508.06082": {
+        "authors": [
+            "Yanxiao Sun",
+            "Jiafu Wu",
+            "Yun Cao",
+            "Chengming Xu",
+            "Yabiao Wang",
+            "Weijian Cao",
+            "Donghao Luo",
+            "Chengjie Wang",
+            "Yanwei Fu"
+        ],
+        "title": "SwiftVideo: A Unified Framework for Few-Step Video Generation through Trajectory-Distribution Alignment",
+        "abstract": "arXiv:2508.06082v1 Announce Type: new  Abstract: Diffusion-based or flow-based models have achieved significant progress in video synthesis but require multiple iterative sampling steps, which incurs substantial computational overhead. While many distillation methods that are solely based on trajectory-preserving or distribution-matching have been developed to accelerate video generation models, these approaches often suffer from performance breakdown or increased artifacts under few-step settings. To address these limitations, we propose \\textbf{\\emph{SwiftVideo}}, a unified and stable distillation framework that combines the advantages of trajectory-preserving and distribution-matching strategies. Our approach introduces continuous-time consistency distillation to ensure precise preservation of ODE trajectories. Subsequently, we propose a dual-perspective alignment that includes distribution alignment between synthetic and real data along with trajectory alignment across different inference steps. Our method maintains high-quality video generation while substantially reducing the number of inference steps. Quantitative evaluations on the OpenVid-1M benchmark demonstrate that our method significantly outperforms existing approaches in few-step video generation.",
+        "arxiv_id": "2508.06082",
+        "ARXIVID": "2508.06082",
+        "COMMENT": "",
         "RELEVANCE": 3,
         "NOVELTY": 5
     }
