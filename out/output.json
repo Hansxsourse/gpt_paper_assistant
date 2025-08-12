@@ -1,200 +1,190 @@
 {
-    "2508.05954": {
+    "2508.07603": {
         "authors": [
-            "Han Lin",
-            "Jaemin Cho",
-            "Amir Zadeh",
-            "Chuan Li",
-            "Mohit Bansal"
+            "Wenhui Song",
+            "Hanhui Li",
+            "Jiehui Huang",
+            "Panwen Hu",
+            "Yuhao Cheng",
+            "Long Chen",
+            "Yiqiang Yan",
+            "Xiaodan Liang"
         ],
-        "title": "Bifrost-1: Bridging Multimodal LLMs and Diffusion Models with Patch-level CLIP Latents",
-        "abstract": "arXiv:2508.05954v1 Announce Type: new  Abstract: There is growing interest in integrating high-fidelity visual synthesis capabilities into large language models (LLMs) without compromising their strong reasoning capabilities. Existing methods that directly train LLMs or bridge LLMs and diffusion models usually suffer from costly training since the backbone LLMs have not seen image representations during pretraining. We present Bifrost-1, a unified framework that bridges pretrained multimodal LLMs (MLLMs) and diffusion models using patch-level CLIP image embeddings as latent variables, which are natively aligned with the MLLM's CLIP visual encoder. These patch-level image embeddings are integrated into the diffusion model with a lightweight adaptation of its ControlNet. To retain the original multimodal reasoning capabilities of MLLMs, we equip the MLLM with a visual generation branch initialized from the original MLLM parameters when predicting the patch-level image embeddings. By seamlessly integrating pretrained MLLMs and diffusion models with patch-level CLIP latents, our framework enables high-fidelity controllable image generation with significant training efficiency. Our experiments demonstrate that Bifrost-1 achieves comparable or better performance than previous methods in terms of visual fidelity and multimodal understanding, with substantially lower compute during training. We also provide comprehensive ablation studies showing the effectiveness of our design choices.",
-        "arxiv_id": "2508.05954",
-        "ARXIVID": "2508.05954",
-        "COMMENT": "Matches criteria 2 closely as it introduces a unified framework integrating multimodal LLMs and diffusion models for high-fidelity image generation.",
-        "RELEVANCE": 5,
-        "NOVELTY": 7
-    },
-    "2508.06101": {
-        "authors": [
-            "Yachun Mi",
-            "Xingyang He",
-            "Shixin Sun",
-            "Yu Li",
-            "Yanting Li",
-            "Zhixuan Li",
-            "Jian Jin",
-            "Chen Hui",
-            "Shaohui Liu"
-        ],
-        "title": "UGD-IML: A Unified Generative Diffusion-based Framework for Constrained and Unconstrained Image Manipulation Localization",
-        "abstract": "arXiv:2508.06101v1 Announce Type: new  Abstract: In the digital age, advanced image editing tools pose a serious threat to the integrity of visual content, making image forgery detection and localization a key research focus. Most existing Image Manipulation Localization (IML) methods rely on discriminative learning and require large, high-quality annotated datasets. However, current datasets lack sufficient scale and diversity, limiting model performance in real-world scenarios. To overcome this, recent studies have explored Constrained IML (CIML), which generates pixel-level annotations through algorithmic supervision. However, existing CIML approaches often depend on complex multi-stage pipelines, making the annotation process inefficient. In this work, we propose a novel generative framework based on diffusion models, named UGD-IML, which for the first time unifies both IML and CIML tasks within a single framework. By learning the underlying data distribution, generative diffusion models inherently reduce the reliance on large-scale labeled datasets, allowing our approach to perform effectively even under limited data conditions. In addition, by leveraging a class embedding mechanism and a parameter-sharing design, our model seamlessly switches between IML and CIML modes without extra components or training overhead. Furthermore, the end-to-end design enables our model to avoid cumbersome steps in the data annotation process. Extensive experimental results on multiple datasets demonstrate that UGD-IML outperforms the SOTA methods by an average of 9.66 and 4.36 in terms of F1 metrics for IML and CIML tasks, respectively. Moreover, the proposed method also excels in uncertainty estimation, visualization and robustness.",
-        "arxiv_id": "2508.06101",
-        "ARXIVID": "2508.06101",
-        "COMMENT": "Matches criterion 2",
-        "RELEVANCE": 5,
-        "NOVELTY": 6
-    },
-    "2508.06170": {
-        "authors": [
-            "Ojonugwa Oluwafemi Ejiga Peter",
-            "Akingbola Oluwapemiisin",
-            "Amalahu Chetachi",
-            "Adeniran Opeyemi",
-            "Fahmi Khalifa",
-            "Md Mahmudur Rahman"
-        ],
-        "title": "Synthetic Data-Driven Multi-Architecture Framework for Automated Polyp Segmentation Through Integrated Detection and Mask Generation",
-        "abstract": "arXiv:2508.06170v1 Announce Type: new  Abstract: Colonoscopy is a vital tool for the early diagnosis of colorectal cancer, which is one of the main causes of cancer-related mortality globally; hence, it is deemed an essential technique for the prevention and early detection of colorectal cancer. The research introduces a unique multidirectional architectural framework to automate polyp detection within colonoscopy images while helping resolve limited healthcare dataset sizes and annotation complexities. The research implements a comprehensive system that delivers synthetic data generation through Stable Diffusion enhancements together with detection and segmentation algorithms. This detection approach combines Faster R-CNN for initial object localization while the Segment Anything Model (SAM) refines the segmentation masks. The faster R-CNN detection algorithm achieved a recall of 93.08% combined with a precision of 88.97% and an F1 score of 90.98%.SAM is then used to generate the image mask. The research evaluated five state-of-the-art segmentation models that included U-Net, PSPNet, FPN, LinkNet, and MANet using ResNet34 as a base model. The results demonstrate the superior performance of FPN with the highest scores of PSNR (7.205893) and SSIM (0.492381), while UNet excels in recall (84.85%) and LinkNet shows balanced performance in IoU (64.20%) and Dice score (77.53%).",
-        "arxiv_id": "2508.06170",
-        "ARXIVID": "2508.06170",
+        "title": "LaVieID: Local Autoregressive Diffusion Transformers for Identity-Preserving Video Creation",
+        "abstract": "arXiv:2508.07603v1 Announce Type: new  Abstract: In this paper, we present LaVieID, a novel \\underline{l}ocal \\underline{a}utoregressive \\underline{vi}d\\underline{e}o diffusion framework designed to tackle the challenging \\underline{id}entity-preserving text-to-video task. The key idea of LaVieID is to mitigate the loss of identity information inherent in the stochastic global generation process of diffusion transformers (DiTs) from both spatial and temporal perspectives. Specifically, unlike the global and unstructured modeling of facial latent states in existing DiTs, LaVieID introduces a local router to explicitly represent latent states by weighted combinations of fine-grained local facial structures. This alleviates undesirable feature interference and encourages DiTs to capture distinctive facial characteristics. Furthermore, a temporal autoregressive module is integrated into LaVieID to refine denoised latent tokens before video decoding. This module divides latent tokens temporally into chunks, exploiting their long-range temporal dependencies to predict biases for rectifying tokens, thereby significantly enhancing inter-frame identity consistency. Consequently, LaVieID can generate high-fidelity personalized videos and achieve state-of-the-art performance. Our code and models are available at https://github.com/ssugarwh/LaVieID.",
+        "arxiv_id": "2508.07603",
+        "ARXIVID": "2508.07603",
         "COMMENT": "",
         "RELEVANCE": 3,
         "NOVELTY": 5
     },
-    "2508.06093": {
+    "2508.06543": {
         "authors": [
-            "Chen Zhu",
-            "Buzhen Huang",
-            "Zijing Wu",
-            "Binghui Zuo",
-            "Yangang Wang"
+            "Jinghan Yu",
+            "Zhiyuan Ma",
+            "Yue Ma",
+            "Kaiqi Liu",
+            "Yuhan Wang",
+            "Jianjun Li"
         ],
-        "title": "E-React: Towards Emotionally Controlled Synthesis of Human Reactions",
-        "abstract": "arXiv:2508.06093v1 Announce Type: new  Abstract: Emotion serves as an essential component in daily human interactions. Existing human motion generation frameworks do not consider the impact of emotions, which reduces naturalness and limits their application in interactive tasks, such as human reaction synthesis. In this work, we introduce a novel task: generating diverse reaction motions in response to different emotional cues. However, learning emotion representation from limited motion data and incorporating it into a motion generation framework remains a challenging problem. To address the above obstacles, we introduce a semi-supervised emotion prior in an actor-reactor diffusion model to facilitate emotion-driven reaction synthesis. Specifically, based on the observation that motion clips within a short sequence tend to share the same emotion, we first devise a semi-supervised learning framework to train an emotion prior. With this prior, we further train an actor-reactor diffusion model to generate reactions by considering both spatial interaction and emotional response. Finally, given a motion sequence of an actor, our approach can generate realistic reactions under various emotional conditions. Experimental results demonstrate that our model outperforms existing reaction generation methods. The code and data will be made publicly available at https://ereact.github.io/",
-        "arxiv_id": "2508.06093",
-        "ARXIVID": "2508.06093",
-        "COMMENT": "",
+        "title": "MILD: Multi-Layer Diffusion Strategy for Complex and Precise Multi-IP Aware Human Erasing",
+        "abstract": "arXiv:2508.06543v1 Announce Type: new  Abstract: Recent years have witnessed the success of diffusion models in image-customized tasks. Prior works have achieved notable progress on human-oriented erasing using explicit mask guidance and semantic-aware inpainting. However, they struggle under complex multi-IP scenarios involving human-human occlusions, human-object entanglements, and background interferences. These challenges are mainly due to: 1) Dataset limitations, as existing datasets rarely cover dense occlusions, camouflaged backgrounds, and diverse interactions; 2) Lack of spatial decoupling, where foreground instances cannot be effectively disentangled, limiting clean background restoration. In this work, we introduce a high-quality multi-IP human erasing dataset with diverse pose variations and complex backgrounds. We then propose Multi-Layer Diffusion (MILD), a novel strategy that decomposes generation into semantically separated pathways for each instance and the background. To enhance human-centric understanding, we introduce Human Morphology Guidance, integrating pose, parsing, and spatial relations. We further present Spatially-Modulated Attention to better guide attention flow. Extensive experiments show that MILD outperforms state-of-the-art methods on challenging human erasing benchmarks.",
+        "arxiv_id": "2508.06543",
+        "ARXIVID": "2508.06543",
+        "COMMENT": "No criteria match closely.",
         "RELEVANCE": 3,
         "NOVELTY": 5
     },
-    "2508.06115": {
+    "2508.07700": {
         "authors": [
-            "Weichen Zhang",
-            "Kebin Liu",
-            "Fan Dang",
-            "Zhui Zhu",
-            "Xikai Sun",
-            "Yunhao Liu"
+            "Weitao Wang",
+            "Haoran Xu",
+            "Jun Meng",
+            "Haoqian Wang"
         ],
-        "title": "SynSeg: Feature Synergy for Multi-Category Contrastive Learning in Open-Vocabulary Semantic Segmentation",
-        "abstract": "arXiv:2508.06115v1 Announce Type: new  Abstract: Semantic segmentation in open-vocabulary scenarios presents significant challenges due to the wide range and granularity of semantic categories. Existing weakly-supervised methods often rely on category-specific supervision and ill-suited feature construction methods for contrastive learning, leading to semantic misalignment and poor performance. In this work, we propose a novel weakly-supervised approach, SynSeg, to address the challenges. SynSeg performs Multi-Category Contrastive Learning (MCCL) as a stronger training signal with a new feature reconstruction framework named Feature Synergy Structure (FSS). Specifically, MCCL strategy robustly combines both intra- and inter-category alignment and separation in order to make the model learn the knowledge of correlations from different categories within the same image. Moreover, FSS reconstructs discriminative features for contrastive learning through prior fusion and semantic-activation-map enhancement, effectively avoiding the foreground bias introduced by the visual encoder. In general, SynSeg effectively improves the abilities in semantic localization and discrimination under weak supervision. Extensive experiments on benchmarks demonstrate that our method outperforms state-of-the-art (SOTA) performance. For instance, SynSeg achieves higher accuracy than SOTA baselines by 4.5\\% on VOC, 8.9\\% on Context, 2.6\\% on Object and 2.0\\% on City.",
-        "arxiv_id": "2508.06115",
-        "ARXIVID": "2508.06115",
-        "COMMENT": "",
+        "title": "Make Your MoVe: Make Your 3D Contents by Adapting Multi-View Diffusion Models to External Editing",
+        "abstract": "arXiv:2508.07700v1 Announce Type: new  Abstract: As 3D generation techniques continue to flourish, the demand for generating personalized content is rapidly rising. Users increasingly seek to apply various editing methods to polish generated 3D content, aiming to enhance its color, style, and lighting without compromising the underlying geometry. However, most existing editing tools focus on the 2D domain, and directly feeding their results into 3D generation methods (like multi-view diffusion models) will introduce information loss, degrading the quality of the final 3D assets. In this paper, we propose a tuning-free, plug-and-play scheme that aligns edited assets with their original geometry in a single inference run. Central to our approach is a geometry preservation module that guides the edited multi-view generation with original input normal latents. Besides, an injection switcher is proposed to deliberately control the supervision extent of the original normals, ensuring the alignment between the edited color and normal views. Extensive experiments show that our method consistently improves both the multi-view consistency and mesh quality of edited 3D assets, across multiple combinations of multi-view diffusion models and editing methods.",
+        "arxiv_id": "2508.07700",
+        "ARXIVID": "2508.07700",
+        "COMMENT": "No criteria match closely.",
         "RELEVANCE": 3,
         "NOVELTY": 5
     },
-    "2508.06146": {
+    "2508.07647": {
         "authors": [
-            "Yuchen Guan",
-            "Chong Sun",
-            "Canmiao Fu",
-            "Zhipeng Huang",
-            "Chun Yuan",
-            "Chen Li"
+            "Xiaohang Zhan",
+            "Dingming Liu"
         ],
-        "title": "Text-guided Visual Prompt DINO for Generic Segmentation",
-        "abstract": "arXiv:2508.06146v1 Announce Type: new  Abstract: Recent advancements in multimodal vision models have highlighted limitations in late-stage feature fusion and suboptimal query selection for hybrid prompts open-world segmentation, alongside constraints from caption-derived vocabularies. To address these challenges, we propose Prompt-DINO, a text-guided visual Prompt DINO framework featuring three key innovations. First, we introduce an early fusion mechanism that unifies text/visual prompts and backbone features at the initial encoding stage, enabling deeper cross-modal interactions to resolve semantic ambiguities. Second, we design order-aligned query selection for DETR-based architectures, explicitly optimizing the structural alignment between text and visual queries during decoding to enhance semantic-spatial consistency. Third, we develop a generative data engine powered by the Recognize Anything via Prompting (RAP) model, which synthesizes 0.5B diverse training instances through a dual-path cross-verification pipeline, reducing label noise by 80.5% compared to conventional approaches. Extensive experiments demonstrate that Prompt-DINO achieves state-of-the-art performance on open-world detection benchmarks while significantly expanding semantic coverage beyond fixed-vocabulary constraints. Our work establishes a new paradigm for scalable multimodal detection and data generation in open-world scenarios. Data&Code are available at https://github.com/WeChatCV/WeVisionOne.",
-        "arxiv_id": "2508.06146",
-        "ARXIVID": "2508.06146",
-        "COMMENT": "",
+        "title": "LaRender: Training-Free Occlusion Control in Image Generation via Latent Rendering",
+        "abstract": "arXiv:2508.07647v1 Announce Type: new  Abstract: We propose a novel training-free image generation algorithm that precisely controls the occlusion relationships between objects in an image. Existing image generation methods typically rely on prompts to influence occlusion, which often lack precision. While layout-to-image methods provide control over object locations, they fail to address occlusion relationships explicitly. Given a pre-trained image diffusion model, our method leverages volume rendering principles to \"render\" the scene in latent space, guided by occlusion relationships and the estimated transmittance of objects. This approach does not require retraining or fine-tuning the image diffusion model, yet it enables accurate occlusion control due to its physics-grounded foundation. In extensive experiments, our method significantly outperforms existing approaches in terms of occlusion accuracy. Furthermore, we demonstrate that by adjusting the opacities of objects or concepts during rendering, our method can achieve a variety of effects, such as altering the transparency of objects, the density of mass (e.g., forests), the concentration of particles (e.g., rain, fog), the intensity of light, and the strength of lens effects, etc.",
+        "arxiv_id": "2508.07647",
+        "ARXIVID": "2508.07647",
+        "COMMENT": "No criteria match closely.",
         "RELEVANCE": 3,
         "NOVELTY": 5
     },
-    "2508.06063": {
+    "2508.08134": {
         "authors": [
-            "Chao Hao",
-            "Zitong Yu",
-            "Xin Liu",
-            "Yuhao Wang",
-            "Weicheng Xie",
-            "Jingang Shi",
-            "Huanjing Yue",
-            "Jingyu Yang"
+            "Zeqian Long",
+            "Mingzhe Zheng",
+            "Kunyu Feng",
+            "Xinhua Zhang",
+            "Hongyu Liu",
+            "Harry Yang",
+            "Linfeng Zhang",
+            "Qifeng Chen",
+            "Yue Ma"
         ],
-        "title": "Distribution-Specific Learning for Joint Salient and Camouflaged Object Detection",
-        "abstract": "arXiv:2508.06063v1 Announce Type: new  Abstract: Salient object detection (SOD) and camouflaged object detection (COD) are two closely related but distinct computer vision tasks. Although both are class-agnostic segmentation tasks that map from RGB space to binary space, the former aims to identify the most salient objects in the image, while the latter focuses on detecting perfectly camouflaged objects that blend into the background in the image. These two tasks exhibit strong contradictory attributes. Previous works have mostly believed that joint learning of these two tasks would confuse the network, reducing its performance on both tasks. However, here we present an opposite perspective: with the correct approach to learning, the network can simultaneously possess the capability to find both salient and camouflaged objects, allowing both tasks to benefit from joint learning. We propose SCJoint, a joint learning scheme for SOD and COD tasks, assuming that the decoding processes of SOD and COD have different distribution characteristics. The key to our method is to learn the respective means and variances of the decoding processes for both tasks by inserting a minimal amount of task-specific learnable parameters within a fully shared network structure, thereby decoupling the contradictory attributes of the two tasks at a minimal cost. Furthermore, we propose a saliency-based sampling strategy (SBSS) to sample the training set of the SOD task to balance the training set sizes of the two tasks. In addition, SBSS improves the training set quality and shortens the training time. Based on the proposed SCJoint and SBSS, we train a powerful generalist network, named JoNet, which has the ability to simultaneously capture both ``salient\" and ``camouflaged\". Extensive experiments demonstrate the competitive performance and effectiveness of our proposed method. The code is available at https://github.com/linuxsino/JoNet.",
-        "arxiv_id": "2508.06063",
-        "ARXIVID": "2508.06063",
-        "COMMENT": "",
+        "title": "Follow-Your-Shape: Shape-Aware Image Editing via Trajectory-Guided Region Control",
+        "abstract": "arXiv:2508.08134v1 Announce Type: new  Abstract: While recent flow-based image editing models demonstrate general-purpose capabilities across diverse tasks, they often struggle to specialize in challenging scenarios -- particularly those involving large-scale shape transformations. When performing such structural edits, these methods either fail to achieve the intended shape change or inadvertently alter non-target regions, resulting in degraded background quality. We propose Follow-Your-Shape, a training-free and mask-free framework that supports precise and controllable editing of object shapes while strictly preserving non-target content. Motivated by the divergence between inversion and editing trajectories, we compute a Trajectory Divergence Map (TDM) by comparing token-wise velocity differences between the inversion and denoising paths. The TDM enables precise localization of editable regions and guides a Scheduled KV Injection mechanism that ensures stable and faithful editing. To facilitate a rigorous evaluation, we introduce ReShapeBench, a new benchmark comprising 120 new images and enriched prompt pairs specifically curated for shape-aware editing. Experiments demonstrate that our method achieves superior editability and visual fidelity, particularly in tasks requiring large-scale shape replacement.",
+        "arxiv_id": "2508.08134",
+        "ARXIVID": "2508.08134",
+        "COMMENT": "No criteria match closely.",
         "RELEVANCE": 3,
         "NOVELTY": 5
     },
-    "2508.06080": {
+    "2508.07519": {
         "authors": [
-            "Bin Xia",
-            "Jiyang Liu",
-            "Yuechen Zhang",
-            "Bohao Peng",
-            "Ruihang Chu",
-            "Yitong Wang",
-            "Xinglong Wu",
-            "Bei Yu",
-            "Jiaya Jia"
+            "Joonghyuk Shin",
+            "Alchan Hwang",
+            "Yujin Kim",
+            "Daneul Kim",
+            "Jaesik Park"
         ],
-        "title": "DreamVE: Unified Instruction-based Image and Video Editing",
-        "abstract": "arXiv:2508.06080v1 Announce Type: new  Abstract: Instruction-based editing holds vast potential due to its simple and efficient interactive editing format. However, instruction-based editing, particularly for video, has been constrained by limited training data, hindering its practical application. To this end, we introduce DreamVE, a unified model for instruction-based image and video editing. Specifically, We propose a two-stage training strategy: first image editing, then video editing. This offers two main benefits: (1) Image data scales more easily, and models are more efficient to train, providing useful priors for faster and better video editing training. (2) Unifying image and video generation is natural and aligns with current trends. Moreover, we present comprehensive training data synthesis pipelines, including collage-based and generative model-based data synthesis. The collage-based data synthesis combines foreground objects and backgrounds to generate diverse editing data, such as object manipulation, background changes, and text modifications. It can easily generate billions of accurate, consistent, realistic, and diverse editing pairs. We pretrain DreamVE on extensive collage-based data to achieve strong performance in key editing types and enhance generalization and transfer capabilities. However, collage-based data lacks some attribute editing cases, leading to a relative drop in performance. In contrast, the generative model-based pipeline, despite being hard to scale up, offers flexibility in handling attribute editing cases. Therefore, we use generative model-based data to further fine-tune DreamVE. Besides, we design an efficient and powerful editing framework for DreamVE. We build on the SOTA T2V model and use a token concatenation with early drop approach to inject source image guidance, ensuring strong consistency and editability. The codes and models will be released.",
-        "arxiv_id": "2508.06080",
-        "ARXIVID": "2508.06080",
-        "COMMENT": "",
+        "title": "Exploring Multimodal Diffusion Transformers for Enhanced Prompt-based Image Editing",
+        "abstract": "arXiv:2508.07519v1 Announce Type: new  Abstract: Transformer-based diffusion models have recently superseded traditional U-Net architectures, with multimodal diffusion transformers (MM-DiT) emerging as the dominant approach in state-of-the-art models like Stable Diffusion 3 and Flux.1. Previous approaches have relied on unidirectional cross-attention mechanisms, with information flowing from text embeddings to image latents. In contrast, MMDiT introduces a unified attention mechanism that concatenates input projections from both modalities and performs a single full attention operation, allowing bidirectional information flow between text and image branches. This architectural shift presents significant challenges for existing editing techniques. In this paper, we systematically analyze MM-DiT's attention mechanism by decomposing attention matrices into four distinct blocks, revealing their inherent characteristics. Through these analyses, we propose a robust, prompt-based image editing method for MM-DiT that supports global to local edits across various MM-DiT variants, including few-step models. We believe our findings bridge the gap between existing U-Net-based methods and emerging architectures, offering deeper insights into MMDiT's behavioral patterns.",
+        "arxiv_id": "2508.07519",
+        "ARXIVID": "2508.07519",
+        "COMMENT": "No criteria match closely.",
         "RELEVANCE": 3,
         "NOVELTY": 5
     },
-    "2508.06139": {
+    "2508.07140": {
         "authors": [
-            "Shaohua Pan",
-            "Xinyu Yi",
-            "Yan Zhou",
-            "Weihua Jian",
-            "Yuan Zhang",
-            "Pengfei Wan",
-            "Feng Xu"
+            "Yingtie Lei",
+            "Fanghai Yi",
+            "Yihang Dong",
+            "Weihuang Liu",
+            "Xiaofeng Zhang",
+            "Zimeng Li",
+            "Chi-Man Pun",
+            "Xuhang Chen"
         ],
-        "title": "DiffCap: Diffusion-based Real-time Human Motion Capture using Sparse IMUs and a Monocular Camera",
-        "abstract": "arXiv:2508.06139v1 Announce Type: new  Abstract: Combining sparse IMUs and a monocular camera is a new promising setting to perform real-time human motion capture. This paper proposes a diffusion-based solution to learn human motion priors and fuse the two modalities of signals together seamlessly in a unified framework. By delicately considering the characteristics of the two signals, the sequential visual information is considered as a whole and transformed into a condition embedding, while the inertial measurement is concatenated with the noisy body pose frame by frame to construct a sequential input for the diffusion model. Firstly, we observe that the visual information may be unavailable in some frames due to occlusions or subjects moving out of the camera view. Thus incorporating the sequential visual features as a whole to get a single feature embedding is robust to the occasional degenerations of visual information in those frames. On the other hand, the IMU measurements are robust to occlusions and always stable when signal transmission has no problem. So incorporating them frame-wisely could better explore the temporal information for the system. Experiments have demonstrated the effectiveness of the system design and its state-of-the-art performance in pose estimation compared with the previous works. Our codes are available for research at https://shaohua-pan.github.io/diffcap-page.",
-        "arxiv_id": "2508.06139",
-        "ARXIVID": "2508.06139",
-        "COMMENT": "",
+        "title": "CMAMRNet: A Contextual Mask-Aware Network Enhancing Mural Restoration Through Comprehensive Mask Guidance",
+        "abstract": "arXiv:2508.07140v1 Announce Type: new  Abstract: Murals, as invaluable cultural artifacts, face continuous deterioration from environmental factors and human activities. Digital restoration of murals faces unique challenges due to their complex degradation patterns and the critical need to preserve artistic authenticity. Existing learning-based methods struggle with maintaining consistent mask guidance throughout their networks, leading to insufficient focus on damaged regions and compromised restoration quality. We propose CMAMRNet, a Contextual Mask-Aware Mural Restoration Network that addresses these limitations through comprehensive mask guidance and multi-scale feature extraction. Our framework introduces two key components: (1) the Mask-Aware Up/Down-Sampler (MAUDS), which ensures consistent mask sensitivity across resolution scales through dedicated channel-wise feature selection and mask-guided feature fusion; and (2) the Co-Feature Aggregator (CFA), operating at both the highest and lowest resolutions to extract complementary features for capturing fine textures and global structures in degraded regions. Experimental results on benchmark datasets demonstrate that CMAMRNet outperforms state-of-the-art methods, effectively preserving both structural integrity and artistic details in restored murals. The code is available at~\\href{https://github.com/CXH-Research/CMAMRNet}{https://github.com/CXH-Research/CMAMRNet}.",
+        "arxiv_id": "2508.07140",
+        "ARXIVID": "2508.07140",
+        "COMMENT": "No criteria match closely.",
         "RELEVANCE": 3,
-        "NOVELTY": 5
+        "NOVELTY": 4
     },
-    "2508.06160": {
+    "2508.07346": {
         "authors": [
-            "Zhenbang Du (Celine)",
-            "Yonggan Fu (Celine)",
-            "Lifu Wang (Celine)",
-            "Jiayi Qian (Celine)",
-            "Xiao Luo (Celine)",
-            "Yingyan (Celine)",
-            "Lin"
+            "Tingyu Yang",
+            "Jue Gong",
+            "Jinpei Guo",
+            "Wenbo Li",
+            "Yong Guo",
+            "Yulun Zhang"
         ],
-        "title": "Fewer Denoising Steps or Cheaper Per-Step Inference: Towards Compute-Optimal Diffusion Model Deployment",
-        "abstract": "arXiv:2508.06160v1 Announce Type: new  Abstract: Diffusion models have shown remarkable success across generative tasks, yet their high computational demands challenge deployment on resource-limited platforms. This paper investigates a critical question for compute-optimal diffusion model deployment: Under a post-training setting without fine-tuning, is it more effective to reduce the number of denoising steps or to use a cheaper per-step inference? Intuitively, reducing the number of denoising steps increases the variability of the distributions across steps, making the model more sensitive to compression. In contrast, keeping more denoising steps makes the differences smaller, preserving redundancy, and making post-training compression more feasible. To systematically examine this, we propose PostDiff, a training-free framework for accelerating pre-trained diffusion models by reducing redundancy at both the input level and module level in a post-training manner. At the input level, we propose a mixed-resolution denoising scheme based on the insight that reducing generation resolution in early denoising steps can enhance low-frequency components and improve final generation fidelity. At the module level, we employ a hybrid module caching strategy to reuse computations across denoising steps. Extensive experiments and ablation studies demonstrate that (1) PostDiff can significantly improve the fidelity-efficiency trade-off of state-of-the-art diffusion models, and (2) to boost efficiency while maintaining decent generation fidelity, reducing per-step inference cost is often more effective than reducing the number of denoising steps. Our code is available at https://github.com/GATECH-EIC/PostDiff.",
-        "arxiv_id": "2508.06160",
-        "ARXIVID": "2508.06160",
-        "COMMENT": "",
+        "title": "SODiff: Semantic-Oriented Diffusion Model for JPEG Compression Artifacts Removal",
+        "abstract": "arXiv:2508.07346v1 Announce Type: new  Abstract: JPEG, as a widely used image compression standard, often introduces severe visual artifacts when achieving high compression ratios. Although existing deep learning-based restoration methods have made considerable progress, they often struggle to recover complex texture details, resulting in over-smoothed outputs. To overcome these limitations, we propose SODiff, a novel and efficient semantic-oriented one-step diffusion model for JPEG artifacts removal. Our core idea is that effective restoration hinges on providing semantic-oriented guidance to the pre-trained diffusion model, thereby fully leveraging its powerful generative prior. To this end, SODiff incorporates a semantic-aligned image prompt extractor (SAIPE). SAIPE extracts rich features from low-quality (LQ) images and projects them into an embedding space semantically aligned with that of the text encoder. Simultaneously, it preserves crucial information for faithful reconstruction. Furthermore, we propose a quality factor-aware time predictor that implicitly learns the compression quality factor (QF) of the LQ image and adaptively selects the optimal denoising start timestep for the diffusion process. Extensive experimental results show that our SODiff outperforms recent leading methods in both visual quality and quantitative metrics. Code is available at: https://github.com/frakenation/SODiff",
+        "arxiv_id": "2508.07346",
+        "ARXIVID": "2508.07346",
+        "COMMENT": "No criteria match closely.",
         "RELEVANCE": 3,
-        "NOVELTY": 5
+        "NOVELTY": 4
     },
-    "2508.06082": {
+    "2508.07701": {
         "authors": [
-            "Yanxiao Sun",
-            "Jiafu Wu",
-            "Yun Cao",
-            "Chengming Xu",
-            "Yabiao Wang",
-            "Weijian Cao",
-            "Donghao Luo",
-            "Chengjie Wang",
-            "Yanwei Fu"
+            "Bo Jia",
+            "Yanan Guo",
+            "Ying Chang",
+            "Benkui Zhang",
+            "Ying Xie",
+            "Kangning Du",
+            "Lin Cao"
         ],
-        "title": "SwiftVideo: A Unified Framework for Few-Step Video Generation through Trajectory-Distribution Alignment",
-        "abstract": "arXiv:2508.06082v1 Announce Type: new  Abstract: Diffusion-based or flow-based models have achieved significant progress in video synthesis but require multiple iterative sampling steps, which incurs substantial computational overhead. While many distillation methods that are solely based on trajectory-preserving or distribution-matching have been developed to accelerate video generation models, these approaches often suffer from performance breakdown or increased artifacts under few-step settings. To address these limitations, we propose \\textbf{\\emph{SwiftVideo}}, a unified and stable distillation framework that combines the advantages of trajectory-preserving and distribution-matching strategies. Our approach introduces continuous-time consistency distillation to ensure precise preservation of ODE trajectories. Subsequently, we propose a dual-perspective alignment that includes distribution alignment between synthetic and real data along with trajectory alignment across different inference steps. Our method maintains high-quality video generation while substantially reducing the number of inference steps. Quantitative evaluations on the OpenVid-1M benchmark demonstrate that our method significantly outperforms existing approaches in few-step video generation.",
-        "arxiv_id": "2508.06082",
-        "ARXIVID": "2508.06082",
-        "COMMENT": "",
+        "title": "Multi-view Normal and Distance Guidance Gaussian Splatting for Surface Reconstruction",
+        "abstract": "arXiv:2508.07701v1 Announce Type: new  Abstract: 3D Gaussian Splatting (3DGS) achieves remarkable results in the field of surface reconstruction. However, when Gaussian normal vectors are aligned within the single-view projection plane, while the geometry appears reasonable in the current view, biases may emerge upon switching to nearby views. To address the distance and global matching challenges in multi-view scenes, we design multi-view normal and distance-guided Gaussian splatting. This method achieves geometric depth unification and high-accuracy reconstruction by constraining nearby depth maps and aligning 3D normals. Specifically, for the reconstruction of small indoor and outdoor scenes, we propose a multi-view distance reprojection regularization module that achieves multi-view Gaussian alignment by computing the distance loss between two nearby views and the same Gaussian surface. Additionally, we develop a multi-view normal enhancement module, which ensures consistency across views by matching the normals of pixel points in nearby views and calculating the loss. Extensive experimental results demonstrate that our method outperforms the baseline in both quantitative and qualitative evaluations, significantly enhancing the surface reconstruction capability of 3DGS.",
+        "arxiv_id": "2508.07701",
+        "ARXIVID": "2508.07701",
+        "COMMENT": "No criteria match closely.",
         "RELEVANCE": 3,
-        "NOVELTY": 5
+        "NOVELTY": 4
+    },
+    "2508.07878": {
+        "authors": [
+            "Hanting Wang",
+            "Shengpeng Ji",
+            "Shulei Wang",
+            "Hai Huang",
+            "Xiao Jin",
+            "Qifei Zhang",
+            "Tao Jin"
+        ],
+        "title": "TAP: Parameter-efficient Task-Aware Prompting for Adverse Weather Removal",
+        "abstract": "arXiv:2508.07878v1 Announce Type: new  Abstract: Image restoration under adverse weather conditions has been extensively explored, leading to numerous high-performance methods. In particular, recent advances in All-in-One approaches have shown impressive results by training on multi-task image restoration datasets. However, most of these methods rely on dedicated network modules or parameters for each specific degradation type, resulting in a significant parameter overhead. Moreover, the relatedness across different restoration tasks is often overlooked. In light of these issues, we propose a parameter-efficient All-in-One image restoration framework that leverages task-aware enhanced prompts to tackle various adverse weather degradations.Specifically, we adopt a two-stage training paradigm consisting of a pretraining phase and a prompt-tuning phase to mitigate parameter conflicts across tasks. We first employ supervised learning to acquire general restoration knowledge, and then adapt the model to handle specific degradation via trainable soft prompts. Crucially, we enhance these task-specific prompts in a task-aware manner. We apply low-rank decomposition to these prompts to capture both task-general and task-specific characteristics, and impose contrastive constraints to better align them with the actual inter-task relatedness. These enhanced prompts not only improve the parameter efficiency of the restoration model but also enable more accurate task modeling, as evidenced by t-SNE analysis. Experimental results on different restoration tasks demonstrate that the proposed method achieves superior performance with only 2.75M parameters.",
+        "arxiv_id": "2508.07878",
+        "ARXIVID": "2508.07878",
+        "COMMENT": "No criteria match closely.",
+        "RELEVANCE": 3,
+        "NOVELTY": 4
+    },
+    "2508.08136": {
+        "authors": [
+            "Yitong Yang",
+            "Yinglin Wang",
+            "Changshuo Wang",
+            "Huajie Wang",
+            "Shuting He"
+        ],
+        "title": "FantasyStyle: Controllable Stylized Distillation for 3D Gaussian Splatting",
+        "abstract": "arXiv:2508.08136v1 Announce Type: new  Abstract: The success of 3DGS in generative and editing applications has sparked growing interest in 3DGS-based style transfer. However, current methods still face two major challenges: (1) multi-view inconsistency often leads to style conflicts, resulting in appearance smoothing and distortion; and (2) heavy reliance on VGG features, which struggle to disentangle style and content from style images, often causing content leakage and excessive stylization. To tackle these issues, we introduce \\textbf{FantasyStyle}, a 3DGS-based style transfer framework, and the first to rely entirely on diffusion model distillation. It comprises two key components: (1) \\textbf{Multi-View Frequency Consistency}. We enhance cross-view consistency by applying a 3D filter to multi-view noisy latent, selectively reducing low-frequency components to mitigate stylized prior conflicts. (2) \\textbf{Controllable Stylized Distillation}. To suppress content leakage from style images, we introduce negative guidance to exclude undesired content. In addition, we identify the limitations of Score Distillation Sampling and Delta Denoising Score in 3D style transfer and remove the reconstruction term accordingly. Building on these insights, we propose a controllable stylized distillation that leverages negative guidance to more effectively optimize the 3D Gaussians. Extensive experiments demonstrate that our method consistently outperforms state-of-the-art approaches, achieving higher stylization quality and visual realism across various scenes and styles.",
+        "arxiv_id": "2508.08136",
+        "ARXIVID": "2508.08136",
+        "COMMENT": "No criteria match closely.",
+        "RELEVANCE": 3,
+        "NOVELTY": 4
     }
 }
