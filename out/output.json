@@ -1,18 +1,23 @@
 {
-    "2508.08488": {
+    "2508.09857": {
         "authors": [
-            "Ankan Deria",
-            "Dwarikanath Mahapatra",
-            "Behzad Bozorgtabar",
-            "Mohna Chakraborty",
-            "Snehashis Chakraborty",
-            "Sudipta Roy"
+            "Yupeng Zhou",
+            "Zhen Li",
+            "Ziheng Ouyang",
+            "Yuming Chen",
+            "Ruoyi Du",
+            "Daquan Zhou",
+            "Bin Fu",
+            "Yihao Liu",
+            "Peng Gao",
+            "Ming-Ming Cheng",
+            "Qibin Hou"
         ],
-        "title": "MuGa-VTON: Multi-Garment Virtual Try-On via Diffusion Transformers with Prompt Customization",
-        "abstract": "arXiv:2508.08488v1 Announce Type: new  Abstract: Virtual try-on seeks to generate photorealistic images of individuals in desired garments, a task that must simultaneously preserve personal identity and garment fidelity for practical use in fashion retail and personalization. However, existing methods typically handle upper and lower garments separately, rely on heavy preprocessing, and often fail to preserve person-specific cues such as tattoos, accessories, and body shape-resulting in limited realism and flexibility. To this end, we introduce MuGa-VTON, a unified multi-garment diffusion framework that jointly models upper and lower garments together with person identity in a shared latent space. Specifically, we proposed three key modules: the Garment Representation Module (GRM) for capturing both garment semantics, the Person Representation Module (PRM) for encoding identity and pose cues, and the A-DiT fusion module, which integrates garment, person, and text-prompt features through a diffusion transformer. This architecture supports prompt-based customization, allowing fine-grained garment modifications with minimal user input. Extensive experiments on the VITON-HD and DressCode benchmarks demonstrate that MuGa-VTON outperforms existing methods in both qualitative and quantitative evaluations, producing high-fidelity, identity-preserving results suitable for real-world virtual try-on applications.",
-        "arxiv_id": "2508.08488",
-        "ARXIVID": "2508.08488",
-        "COMMENT": "No criteria match closely.",
+        "title": "OneVAE: Joint Discrete and Continuous Optimization Helps Discrete Video VAE Train Better",
+        "abstract": "arXiv:2508.09857v1 Announce Type: new  Abstract: Encoding videos into discrete tokens could align with text tokens to facilitate concise and unified multi-modal LLMs, yet introducing significant spatiotemporal compression compared to continuous video representation. Previous discrete video VAEs experienced unstable training, long training time, and degraded reconstruction quality. Given the easier training and superior performance of continuous VAEs, an intuitive idea is to enhance discrete video VAEs by leveraging continuous VAEs. After rethinking the intrinsic link between discrete and continuous representations, we found that FSQ could effectively preserve pre-trained continuous VAE priors compared to other quantization methods. By leveraging continuous VAE priors, it converges several times faster than training from scratch and achieves superior performance at convergence. Meanwhile, two structural improvements are proposed. First, inspired by how continuous VAEs enhance reconstruction via enlarged latent dimensions, we introduce a multi-token quantization mechanism, which achieves nearly a 1 dB improvement in PSNR without compromising the token compression ratio. Second, to tackle reconstruction challenges in high-compression video VAEs, we strengthen first-frame reconstruction, enabling the causal VAE to leverage this information in subsequent frames and markedly improving the performance of 4 x 16 x 16 discrete VAEs. Furthermore, we propose a joint discrete-continuous optimization scheme that unifies the two paradigms and, for the first time, achieves competitive performance on both continuous and discrete representations within a single network. We name our method OneVAE to reflect this connection.",
+        "arxiv_id": "2508.09857",
+        "ARXIVID": "2508.09857",
+        "COMMENT": "",
         "RELEVANCE": 3,
         "NOVELTY": 5
     }
