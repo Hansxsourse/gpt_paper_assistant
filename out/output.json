@@ -1,22 +1,18 @@
 {
-    "2508.09857": {
+    "2508.10316": {
         "authors": [
-            "Yupeng Zhou",
-            "Zhen Li",
-            "Ziheng Ouyang",
-            "Yuming Chen",
-            "Ruoyi Du",
-            "Daquan Zhou",
-            "Bin Fu",
-            "Yihao Liu",
-            "Peng Gao",
-            "Ming-Ming Cheng",
-            "Qibin Hou"
+            "Yuanzhi Liang",
+            "Yijie Fang",
+            "Rui Li",
+            "Ziqi Ni",
+            "Ruijie Su",
+            "Chi Zhang",
+            "Xuelong Li"
         ],
-        "title": "OneVAE: Joint Discrete and Continuous Optimization Helps Discrete Video VAE Train Better",
-        "abstract": "arXiv:2508.09857v1 Announce Type: new  Abstract: Encoding videos into discrete tokens could align with text tokens to facilitate concise and unified multi-modal LLMs, yet introducing significant spatiotemporal compression compared to continuous video representation. Previous discrete video VAEs experienced unstable training, long training time, and degraded reconstruction quality. Given the easier training and superior performance of continuous VAEs, an intuitive idea is to enhance discrete video VAEs by leveraging continuous VAEs. After rethinking the intrinsic link between discrete and continuous representations, we found that FSQ could effectively preserve pre-trained continuous VAE priors compared to other quantization methods. By leveraging continuous VAE priors, it converges several times faster than training from scratch and achieves superior performance at convergence. Meanwhile, two structural improvements are proposed. First, inspired by how continuous VAEs enhance reconstruction via enlarged latent dimensions, we introduce a multi-token quantization mechanism, which achieves nearly a 1 dB improvement in PSNR without compromising the token compression ratio. Second, to tackle reconstruction challenges in high-compression video VAEs, we strengthen first-frame reconstruction, enabling the causal VAE to leverage this information in subsequent frames and markedly improving the performance of 4 x 16 x 16 discrete VAEs. Furthermore, we propose a joint discrete-continuous optimization scheme that unifies the two paradigms and, for the first time, achieves competitive performance on both continuous and discrete representations within a single network. We name our method OneVAE to reflect this connection.",
-        "arxiv_id": "2508.09857",
-        "ARXIVID": "2508.09857",
+        "title": "Integrating Reinforcement Learning with Visual Generative Models: Foundations and Advances",
+        "abstract": "arXiv:2508.10316v1 Announce Type: new  Abstract: Generative models have made significant progress in synthesizing visual content, including images, videos, and 3D/4D structures. However, they are typically trained with surrogate objectives such as likelihood or reconstruction loss, which often misalign with perceptual quality, semantic accuracy, or physical realism. Reinforcement learning (RL) offers a principled framework for optimizing non-differentiable, preference-driven, and temporally structured objectives. Recent advances demonstrate its effectiveness in enhancing controllability, consistency, and human alignment across generative tasks. This survey provides a systematic overview of RL-based methods for visual content generation. We review the evolution of RL from classical control to its role as a general-purpose optimization tool, and examine its integration into image, video, and 3D/4D generation. Across these domains, RL serves not only as a fine-tuning mechanism but also as a structural component for aligning generation with complex, high-level goals. We conclude with open challenges and future research directions at the intersection of RL and generative modeling.",
+        "arxiv_id": "2508.10316",
+        "ARXIVID": "2508.10316",
         "COMMENT": "",
         "RELEVANCE": 3,
         "NOVELTY": 5
