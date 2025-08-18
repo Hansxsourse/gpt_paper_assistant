@@ -1,19 +1,35 @@
 {
-    "2508.10316": {
+    "2508.11282": {
         "authors": [
-            "Yuanzhi Liang",
-            "Yijie Fang",
-            "Rui Li",
-            "Ziqi Ni",
-            "Ruijie Su",
-            "Chi Zhang",
-            "Xuelong Li"
+            "Muzammil Khan",
+            "Enzo Kerkhof",
+            "Matteo Fusaglia",
+            "Koert Kuhlmann",
+            "Theo Ruers",
+            "Fran\\c{c}oise J. Siepel"
         ],
-        "title": "Integrating Reinforcement Learning with Visual Generative Models: Foundations and Advances",
-        "abstract": "arXiv:2508.10316v1 Announce Type: new  Abstract: Generative models have made significant progress in synthesizing visual content, including images, videos, and 3D/4D structures. However, they are typically trained with surrogate objectives such as likelihood or reconstruction loss, which often misalign with perceptual quality, semantic accuracy, or physical realism. Reinforcement learning (RL) offers a principled framework for optimizing non-differentiable, preference-driven, and temporally structured objectives. Recent advances demonstrate its effectiveness in enhancing controllability, consistency, and human alignment across generative tasks. This survey provides a systematic overview of RL-based methods for visual content generation. We review the evolution of RL from classical control to its role as a general-purpose optimization tool, and examine its integration into image, video, and 3D/4D generation. Across these domains, RL serves not only as a fine-tuning mechanism but also as a structural component for aligning generation with complex, high-level goals. We conclude with open challenges and future research directions at the intersection of RL and generative modeling.",
-        "arxiv_id": "2508.10316",
-        "ARXIVID": "2508.10316",
-        "COMMENT": "",
+        "title": "Unifying Scale-Aware Depth Prediction and Perceptual Priors for Monocular Endoscope Pose Estimation and Tissue Reconstruction",
+        "abstract": "arXiv:2508.11282v1 Announce Type: new  Abstract: Accurate endoscope pose estimation and 3D tissue surface reconstruction significantly enhances monocular minimally invasive surgical procedures by enabling accurate navigation and improved spatial awareness. However, monocular endoscope pose estimation and tissue reconstruction face persistent challenges, including depth ambiguity, physiological tissue deformation, inconsistent endoscope motion, limited texture fidelity, and a restricted field of view. To overcome these limitations, a unified framework for monocular endoscopic tissue reconstruction that integrates scale-aware depth prediction with temporally-constrained perceptual refinement is presented. This framework incorporates a novel MAPIS-Depth module, which leverages Depth Pro for robust initialisation and Depth Anything for efficient per-frame depth prediction, in conjunction with L-BFGS-B optimisation, to generate pseudo-metric depth estimates. These estimates are temporally refined by computing pixel correspondences using RAFT and adaptively blending flow-warped frames based on LPIPS perceptual similarity, thereby reducing artefacts arising from physiological tissue deformation and motion. To ensure accurate registration of the synthesised pseudo-RGBD frames from MAPIS-Depth, a novel WEMA-RTDL module is integrated, optimising both rotation and translation. Finally, truncated signed distance function-based volumetric fusion and marching cubes are applied to extract a comprehensive 3D surface mesh. Evaluations on HEVD and SCARED, with ablation and comparative analyses, demonstrate the framework's robustness and superiority over state-of-the-art methods.",
+        "arxiv_id": "2508.11282",
+        "ARXIVID": "2508.11282",
+        "COMMENT": "No criteria match closely.",
+        "RELEVANCE": 3,
+        "NOVELTY": 6
+    },
+    "2508.11538": {
+        "authors": [
+            "Sitong Gong",
+            "Lu Zhang",
+            "Yunzhi Zhuge",
+            "Xu Jia",
+            "Pingping Zhang",
+            "Huchuan Lu"
+        ],
+        "title": "Reinforcing Video Reasoning Segmentation to Think Before It Segments",
+        "abstract": "arXiv:2508.11538v1 Announce Type: new  Abstract: Video reasoning segmentation (VRS) endeavors to delineate referred objects in videos guided by implicit instructions that encapsulate human intent and temporal logic. Previous approaches leverage large vision language models (LVLMs) to encode object semantics into  tokens for mask prediction. However, this paradigm suffers from limited interpretability during inference and suboptimal performance due to inadequate spatiotemporal reasoning. Drawing inspiration from seminal breakthroughs in reinforcement learning, we introduce Veason-R1, a specialized LVLM for VRS that emphasizes structured reasoning in segmentation. Veason-R1 is trained through Group Relative Policy Optimization (GRPO) augmented with Chain-of-Thought (CoT) initialization. To begin with, we curate high-quality CoT training data to instill structured reasoning trajectories, bridging video-level semantics and frame-level spatial grounding, yielding the supervised fine-tuned model Veason-SFT. Subsequently, GRPO fine-tuning encourages efficient exploration of the reasoning space by optimizing reasoning chains. To this end, we incorporate a holistic reward mechanism that synergistically enhances spatial alignment and temporal consistency, bolstering keyframe localization and fine-grained grounding. Comprehensive empirical evaluations demonstrate that Veason-R1 achieves state-of-the-art performance on multiple benchmarks, surpassing prior art by significant margins (e.g., +1.3 J &F in ReVOS and +10.0 J &F in ReasonVOS), while exhibiting robustness to hallucinations (+8.8 R). Our code and model weights will be available at Veason-R1.",
+        "arxiv_id": "2508.11538",
+        "ARXIVID": "2508.11538",
+        "COMMENT": "No criteria match closely.",
         "RELEVANCE": 3,
         "NOVELTY": 5
     }
