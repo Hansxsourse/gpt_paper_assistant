@@ -1,62 +1,32 @@
 {
-    "2508.11952": {
+    "2508.13584": {
         "authors": [
-            "Yueming Xu",
-            "Jiahui Zhang",
-            "Ze Huang",
-            "Yurui Chen",
-            "Yanpeng Zhou",
-            "Zhenyu Chen",
-            "Yu-Jie Yuan",
-            "Pengxiang Xia",
-            "Guowei Huang",
-            "Xinyue Cai",
-            "Zhongang Qi",
-            "Xingyue Quan",
-            "Jianye Hao",
-            "Hang Xu",
-            "Li Zhang"
+            "Ruixin Zhang",
+            "Jiaqing Fan",
+            "Yifan Liao",
+            "Qian Qiao",
+            "Fanzhang Li"
         ],
-        "title": "UniUGG: Unified 3D Understanding and Generation via Geometric-Semantic Encoding",
-        "abstract": "arXiv:2508.11952v1 Announce Type: new  Abstract: Despite the impressive progress on understanding and generating images shown by the recent unified architectures, the integration of 3D tasks remains challenging and largely unexplored. In this paper, we introduce UniUGG, the first unified understanding and generation framework for 3D modalities. Our unified framework employs an LLM to comprehend and decode sentences and 3D representations. At its core, we propose a spatial decoder leveraging a latent diffusion model to generate high-quality 3D representations. This allows for the generation and imagination of 3D scenes based on a reference image and an arbitrary view transformation, while remaining supports for spatial visual question answering (VQA) tasks. Additionally, we propose a geometric-semantic learning strategy to pretrain the vision encoder. This design jointly captures the input's semantic and geometric cues, enhancing both spatial understanding and generation. Extensive experimental results demonstrate the superiority of our method in visual representation, spatial understanding, and 3D generation. The source code will be released upon paper acceptance.",
-        "arxiv_id": "2508.11952",
-        "ARXIVID": "2508.11952",
-        "COMMENT": "Matches criteria 2: unified framework for 3D understanding and generation",
+        "title": "Temporal-Conditional Referring Video Object Segmentation with Noise-Free Text-to-Video Diffusion Model",
+        "abstract": "arXiv:2508.13584v1 Announce Type: new  Abstract: Referring Video Object Segmentation (RVOS) aims to segment specific objects in a video according to textual descriptions. We observe that recent RVOS approaches often place excessive emphasis on feature extraction and temporal modeling, while relatively neglecting the design of the segmentation head. In fact, there remains considerable room for improvement in segmentation head design. To address this, we propose a Temporal-Conditional Referring Video Object Segmentation model, which innovatively integrates existing segmentation methods to effectively enhance boundary segmentation capability. Furthermore, our model leverages a text-to-video diffusion model for feature extraction. On top of this, we remove the traditional noise prediction module to avoid the randomness of noise from degrading segmentation accuracy, thereby simplifying the model while improving performance. Finally, to overcome the limited feature extraction capability of the VAE, we design a Temporal Context Mask Refinement (TCMR) module, which significantly improves segmentation quality without introducing complex designs. We evaluate our method on four public RVOS benchmarks, where it consistently achieves state-of-the-art performance.",
+        "arxiv_id": "2508.13584",
+        "ARXIVID": "2508.13584",
+        "COMMENT": "Matches criteria 1 closely as it discusses a model that integrates segmentation methods and uses a text-to-video diffusion model for feature extraction, which aligns with unified image/video generation and segmentation.",
         "RELEVANCE": 5,
         "NOVELTY": 6
     },
-    "2508.13013": {
+    "2508.13628": {
         "authors": [
-            "Jingqiao Xiu",
-            "Fangzhou Hong",
-            "Yicong Li",
-            "Mengze Li",
-            "Wentao Wang",
-            "Sirui Han",
-            "Liang Pan",
-            "Ziwei Liu"
+            "Ao Chen",
+            "Lihe Ding",
+            "Tianfan Xue"
         ],
-        "title": "EgoTwin: Dreaming Body and View in First Person",
-        "abstract": "arXiv:2508.13013v1 Announce Type: new  Abstract: While exocentric video synthesis has achieved great progress, egocentric video generation remains largely underexplored, which requires modeling first-person view content along with camera motion patterns induced by the wearer's body movements. To bridge this gap, we introduce a novel task of joint egocentric video and human motion generation, characterized by two key challenges: 1) Viewpoint Alignment: the camera trajectory in the generated video must accurately align with the head trajectory derived from human motion; 2) Causal Interplay: the synthesized human motion must causally align with the observed visual dynamics across adjacent video frames. To address these challenges, we propose EgoTwin, a joint video-motion generation framework built on the diffusion transformer architecture. Specifically, EgoTwin introduces a head-centric motion representation that anchors the human motion to the head joint and incorporates a cybernetics-inspired interaction mechanism that explicitly captures the causal interplay between video and motion within attention operations. For comprehensive evaluation, we curate a large-scale real-world dataset of synchronized text-video-motion triplets and design novel metrics to assess video-motion consistency. Extensive experiments demonstrate the effectiveness of the EgoTwin framework.",
-        "arxiv_id": "2508.13013",
-        "ARXIVID": "2508.13013",
-        "COMMENT": "Matches criteria 1: joint video-motion generation framework",
-        "RELEVANCE": 5,
-        "NOVELTY": 6
-    },
-    "2508.13091": {
-        "authors": [
-            "Zihua Liu",
-            "Yizhou Li",
-            "Songyan Zhang",
-            "Masatoshi Okutomi"
-        ],
-        "title": "DMS:Diffusion-Based Multi-Baseline Stereo Generation for Improving Self-Supervised Depth Estimation",
-        "abstract": "arXiv:2508.13091v1 Announce Type: new  Abstract: While supervised stereo matching and monocular depth estimation have advanced significantly with learning-based algorithms, self-supervised methods using stereo images as supervision signals have received relatively less focus and require further investigation. A primary challenge arises from ambiguity introduced during photometric reconstruction, particularly due to missing corresponding pixels in ill-posed regions of the target view, such as occlusions and out-of-frame areas. To address this and establish explicit photometric correspondences, we propose DMS, a model-agnostic approach that utilizes geometric priors from diffusion models to synthesize novel views along the epipolar direction, guided by directional prompts. Specifically, we finetune a Stable Diffusion model to simulate perspectives at key positions: left-left view shifted from the left camera, right-right view shifted from the right camera, along with an additional novel view between the left and right cameras. These synthesized views supplement occluded pixels, enabling explicit photometric reconstruction. Our proposed DMS is a cost-free, ''plug-and-play'' method that seamlessly enhances self-supervised stereo matching and monocular depth estimation, and relies solely on unlabeled stereo image pairs for both training and synthesizing. Extensive experiments demonstrate the effectiveness of our approach, with up to 35% outlier reduction and state-of-the-art performance across multiple benchmark datasets.",
-        "arxiv_id": "2508.13091",
-        "ARXIVID": "2508.13091",
-        "COMMENT": "Matches criteria 2: diffusion model for multiple vision tasks including depth estimation",
-        "RELEVANCE": 5,
+        "title": "DiffIER: Optimizing Diffusion Models with Iterative Error Reduction",
+        "abstract": "arXiv:2508.13628v1 Announce Type: new  Abstract: Diffusion models have demonstrated remarkable capabilities in generating high-quality samples and enhancing performance across diverse domains through Classifier-Free Guidance (CFG). However, the quality of generated samples is highly sensitive to the selection of the guidance weight. In this work, we identify a critical ``training-inference gap'' and we argue that it is the presence of this gap that undermines the performance of conditional generation and renders outputs highly sensitive to the guidance weight. We quantify this gap by measuring the accumulated error during the inference stage and establish a correlation between the selection of guidance weight and minimizing this gap. Furthermore, to mitigate this gap, we propose DiffIER, an optimization-based method for high-quality generation. We demonstrate that the accumulated error can be effectively reduced by an iterative error minimization at each step during inference. By introducing this novel plug-and-play optimization framework, we enable the optimization of errors at every single inference step and enhance generation quality. Empirical results demonstrate that our proposed method outperforms baseline approaches in conditional generation tasks. Furthermore, the method achieves consistent success in text-to-image generation, image super-resolution, and text-to-speech generation, underscoring its versatility and potential for broad applications in future research.",
+        "arxiv_id": "2508.13628",
+        "ARXIVID": "2508.13628",
+        "COMMENT": "Does not match any specific criteria. Focuses on optimizing diffusion models for generation quality, but does not propose a multi-task framework or unified architecture.",
+        "RELEVANCE": 3,
         "NOVELTY": 5
     }
 }
