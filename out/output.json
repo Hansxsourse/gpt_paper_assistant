@@ -1,32 +1,37 @@
 {
-    "2508.13584": {
+    "2508.14327": {
         "authors": [
-            "Ruixin Zhang",
-            "Jiaqing Fan",
-            "Yifan Liao",
-            "Qian Qiao",
-            "Fanzhang Li"
+            "Guile Wu",
+            "David Huang",
+            "Dongfeng Bai",
+            "Bingbing Liu"
         ],
-        "title": "Temporal-Conditional Referring Video Object Segmentation with Noise-Free Text-to-Video Diffusion Model",
-        "abstract": "arXiv:2508.13584v1 Announce Type: new  Abstract: Referring Video Object Segmentation (RVOS) aims to segment specific objects in a video according to textual descriptions. We observe that recent RVOS approaches often place excessive emphasis on feature extraction and temporal modeling, while relatively neglecting the design of the segmentation head. In fact, there remains considerable room for improvement in segmentation head design. To address this, we propose a Temporal-Conditional Referring Video Object Segmentation model, which innovatively integrates existing segmentation methods to effectively enhance boundary segmentation capability. Furthermore, our model leverages a text-to-video diffusion model for feature extraction. On top of this, we remove the traditional noise prediction module to avoid the randomness of noise from degrading segmentation accuracy, thereby simplifying the model while improving performance. Finally, to overcome the limited feature extraction capability of the VAE, we design a Temporal Context Mask Refinement (TCMR) module, which significantly improves segmentation quality without introducing complex designs. We evaluate our method on four public RVOS benchmarks, where it consistently achieves state-of-the-art performance.",
-        "arxiv_id": "2508.13584",
-        "ARXIVID": "2508.13584",
-        "COMMENT": "Matches criteria 1 closely as it discusses a model that integrates segmentation methods and uses a text-to-video diffusion model for feature extraction, which aligns with unified image/video generation and segmentation.",
-        "RELEVANCE": 5,
-        "NOVELTY": 6
+        "title": "MoVieDrive: Multi-Modal Multi-View Urban Scene Video Generation",
+        "abstract": "arXiv:2508.14327v1 Announce Type: new  Abstract: Video generation has recently shown superiority in urban scene synthesis for autonomous driving. Existing video generation approaches to autonomous driving primarily focus on RGB video generation and lack the ability to support multi-modal video generation. However, multi-modal data, such as depth maps and semantic maps, are crucial for holistic urban scene understanding in autonomous driving. Although it is feasible to use multiple models to generate different modalities, this increases the difficulty of model deployment and does not leverage complementary cues for multi-modal data generation. To address this problem, in this work, we propose a novel multi-modal multi-view video generation approach to autonomous driving. Specifically, we construct a unified diffusion transformer model composed of modal-shared components and modal-specific components. Then, we leverage diverse conditioning inputs to encode controllable scene structure and content cues into the unified diffusion model for multi-modal multi-view video generation. In this way, our approach is capable of generating multi-modal multi-view driving scene videos in a unified framework. Our experiments on the challenging real-world autonomous driving dataset, nuScenes, show that our approach can generate multi-modal multi-view urban scene videos with high fidelity and controllability, surpassing the state-of-the-art methods.",
+        "arxiv_id": "2508.14327",
+        "ARXIVID": "2508.14327",
+        "COMMENT": "Matches criteria 2 closely as it introduces a unified diffusion transformer model for multi-modal video generation, including semantic maps.",
+        "RELEVANCE": 10,
+        "NOVELTY": 7
     },
-    "2508.13628": {
+    "2508.14437": {
         "authors": [
-            "Ao Chen",
-            "Lihe Ding",
-            "Tianfan Xue"
+            "Gabriel Tjio",
+            "Jie Zhang",
+            "Xulei Yang",
+            "Yun Xing",
+            "Nhat Chung",
+            "Xiaofeng Cao",
+            "Ivor W. Tsang",
+            "Chee Keong Kwoh",
+            "Qing Guo"
         ],
-        "title": "DiffIER: Optimizing Diffusion Models with Iterative Error Reduction",
-        "abstract": "arXiv:2508.13628v1 Announce Type: new  Abstract: Diffusion models have demonstrated remarkable capabilities in generating high-quality samples and enhancing performance across diverse domains through Classifier-Free Guidance (CFG). However, the quality of generated samples is highly sensitive to the selection of the guidance weight. In this work, we identify a critical ``training-inference gap'' and we argue that it is the presence of this gap that undermines the performance of conditional generation and renders outputs highly sensitive to the guidance weight. We quantify this gap by measuring the accumulated error during the inference stage and establish a correlation between the selection of guidance weight and minimizing this gap. Furthermore, to mitigate this gap, we propose DiffIER, an optimization-based method for high-quality generation. We demonstrate that the accumulated error can be effectively reduced by an iterative error minimization at each step during inference. By introducing this novel plug-and-play optimization framework, we enable the optimization of errors at every single inference step and enhance generation quality. Empirical results demonstrate that our proposed method outperforms baseline approaches in conditional generation tasks. Furthermore, the method achieves consistent success in text-to-image generation, image super-resolution, and text-to-speech generation, underscoring its versatility and potential for broad applications in future research.",
-        "arxiv_id": "2508.13628",
-        "ARXIVID": "2508.13628",
-        "COMMENT": "Does not match any specific criteria. Focuses on optimizing diffusion models for generation quality, but does not propose a multi-task framework or unified architecture.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
+        "title": "FOCUS: Frequency-Optimized Conditioning of DiffUSion Models for mitigating catastrophic forgetting during Test-Time Adaptation",
+        "abstract": "arXiv:2508.14437v1 Announce Type: new  Abstract: Test-time adaptation enables models to adapt to evolving domains. However, balancing the tradeoff between preserving knowledge and adapting to domain shifts remains challenging for model adaptation methods, since adapting to domain shifts can induce forgetting of task-relevant knowledge. To address this problem, we propose FOCUS, a novel frequency-based conditioning approach within a diffusion-driven input-adaptation framework. Utilising learned, spatially adaptive frequency priors, our approach conditions the reverse steps during diffusion-driven denoising to preserve task-relevant semantic information for dense prediction.   FOCUS leverages a trained, lightweight, Y-shaped Frequency Prediction Network (Y-FPN) that disentangles high and low frequency information from noisy images. This minimizes the computational costs involved in implementing our approach in a diffusion-driven framework. We train Y-FPN with FrequencyMix, a novel data augmentation method that perturbs the images across diverse frequency bands, which improves the robustness of our approach to diverse corruptions.   We demonstrate the effectiveness of FOCUS for semantic segmentation and monocular depth estimation across 15 corruption types and three datasets, achieving state-of-the-art averaged performance. In addition to improving standalone performance, FOCUS complements existing model adaptation methods since we can derive pseudo labels from FOCUS-denoised images for additional supervision. Even under limited, intermittent supervision with the pseudo labels derived from the FOCUS denoised images, we show that FOCUS mitigates catastrophic forgetting for recent model adaptation methods.",
+        "arxiv_id": "2508.14437",
+        "ARXIVID": "2508.14437",
+        "COMMENT": "Matches criteria 2 closely as it proposes a diffusion-driven framework for multiple tasks including semantic segmentation and depth estimation.",
+        "RELEVANCE": 10,
+        "NOVELTY": 6
     }
 }
