@@ -1,37 +1,66 @@
 {
-    "2508.14327": {
+    "2508.15169": {
         "authors": [
-            "Guile Wu",
-            "David Huang",
-            "Dongfeng Bai",
-            "Bingbing Liu"
+            "Xuyang Chen",
+            "Zhijun Zhai",
+            "Kaixuan Zhou",
+            "Zengmao Wang",
+            "Jianan He",
+            "Dong Wang",
+            "Yanfeng Zhang",
+            "mingwei Sun",
+            "R\\\"udiger Westermann",
+            "Konrad Schindler",
+            "Liqiu Meng"
         ],
-        "title": "MoVieDrive: Multi-Modal Multi-View Urban Scene Video Generation",
-        "abstract": "arXiv:2508.14327v1 Announce Type: new  Abstract: Video generation has recently shown superiority in urban scene synthesis for autonomous driving. Existing video generation approaches to autonomous driving primarily focus on RGB video generation and lack the ability to support multi-modal video generation. However, multi-modal data, such as depth maps and semantic maps, are crucial for holistic urban scene understanding in autonomous driving. Although it is feasible to use multiple models to generate different modalities, this increases the difficulty of model deployment and does not leverage complementary cues for multi-modal data generation. To address this problem, in this work, we propose a novel multi-modal multi-view video generation approach to autonomous driving. Specifically, we construct a unified diffusion transformer model composed of modal-shared components and modal-specific components. Then, we leverage diverse conditioning inputs to encode controllable scene structure and content cues into the unified diffusion model for multi-modal multi-view video generation. In this way, our approach is capable of generating multi-modal multi-view driving scene videos in a unified framework. Our experiments on the challenging real-world autonomous driving dataset, nuScenes, show that our approach can generate multi-modal multi-view urban scene videos with high fidelity and controllability, surpassing the state-of-the-art methods.",
-        "arxiv_id": "2508.14327",
-        "ARXIVID": "2508.14327",
-        "COMMENT": "Matches criteria 2 closely as it introduces a unified diffusion transformer model for multi-modal video generation, including semantic maps.",
-        "RELEVANCE": 10,
-        "NOVELTY": 7
-    },
-    "2508.14437": {
-        "authors": [
-            "Gabriel Tjio",
-            "Jie Zhang",
-            "Xulei Yang",
-            "Yun Xing",
-            "Nhat Chung",
-            "Xiaofeng Cao",
-            "Ivor W. Tsang",
-            "Chee Keong Kwoh",
-            "Qing Guo"
-        ],
-        "title": "FOCUS: Frequency-Optimized Conditioning of DiffUSion Models for mitigating catastrophic forgetting during Test-Time Adaptation",
-        "abstract": "arXiv:2508.14437v1 Announce Type: new  Abstract: Test-time adaptation enables models to adapt to evolving domains. However, balancing the tradeoff between preserving knowledge and adapting to domain shifts remains challenging for model adaptation methods, since adapting to domain shifts can induce forgetting of task-relevant knowledge. To address this problem, we propose FOCUS, a novel frequency-based conditioning approach within a diffusion-driven input-adaptation framework. Utilising learned, spatially adaptive frequency priors, our approach conditions the reverse steps during diffusion-driven denoising to preserve task-relevant semantic information for dense prediction.   FOCUS leverages a trained, lightweight, Y-shaped Frequency Prediction Network (Y-FPN) that disentangles high and low frequency information from noisy images. This minimizes the computational costs involved in implementing our approach in a diffusion-driven framework. We train Y-FPN with FrequencyMix, a novel data augmentation method that perturbs the images across diverse frequency bands, which improves the robustness of our approach to diverse corruptions.   We demonstrate the effectiveness of FOCUS for semantic segmentation and monocular depth estimation across 15 corruption types and three datasets, achieving state-of-the-art averaged performance. In addition to improving standalone performance, FOCUS complements existing model adaptation methods since we can derive pseudo labels from FOCUS-denoised images for additional supervision. Even under limited, intermittent supervision with the pseudo labels derived from the FOCUS denoised images, we show that FOCUS mitigates catastrophic forgetting for recent model adaptation methods.",
-        "arxiv_id": "2508.14437",
-        "ARXIVID": "2508.14437",
-        "COMMENT": "Matches criteria 2 closely as it proposes a diffusion-driven framework for multiple tasks including semantic segmentation and depth estimation.",
-        "RELEVANCE": 10,
+        "title": "MeSS: City Mesh-Guided Outdoor Scene Generation with Cross-View Consistent Diffusion",
+        "abstract": "arXiv:2508.15169v1 Announce Type: new  Abstract: Mesh models have become increasingly accessible for numerous cities; however, the lack of realistic textures restricts their application in virtual urban navigation and autonomous driving. To address this, this paper proposes MeSS (Meshbased Scene Synthesis) for generating high-quality, styleconsistent outdoor scenes with city mesh models serving as the geometric prior. While image and video diffusion models can leverage spatial layouts (such as depth maps or HD maps) as control conditions to generate street-level perspective views, they are not directly applicable to 3D scene generation. Video diffusion models excel at synthesizing consistent view sequences that depict scenes but often struggle to adhere to predefined camera paths or align accurately with rendered control videos. In contrast, image diffusion models, though unable to guarantee cross-view visual consistency, can produce more geometry-aligned results when combined with ControlNet. Building on this insight, our approach enhances image diffusion models by improving cross-view consistency. The pipeline comprises three key stages: first, we generate geometrically consistent sparse views using Cascaded Outpainting ControlNets; second, we propagate denser intermediate views via a component dubbed AGInpaint; and third, we globally eliminate visual inconsistencies (e.g., varying exposure) using the GCAlign module. Concurrently with generation, a 3D Gaussian Splatting (3DGS) scene is reconstructed by initializing Gaussian balls on the mesh surface. Our method outperforms existing approaches in both geometric alignment and generation quality. Once synthesized, the scene can be rendered in diverse styles through relighting and style transfer techniques.",
+        "arxiv_id": "2508.15169",
+        "ARXIVID": "2508.15169",
+        "COMMENT": "Matches criteria 2 closely",
+        "RELEVANCE": 5,
         "NOVELTY": 6
+    },
+    "2508.15761": {
+        "authors": [
+            "Yifu Zhang",
+            "Hao Yang",
+            "Yuqi Zhang",
+            "Yifei Hu",
+            "Fengda Zhu",
+            "Chuang Lin",
+            "Xiaofeng Mei",
+            "Yi Jiang",
+            "Zehuan Yuan",
+            "Bingyue Peng"
+        ],
+        "title": "Waver: Wave Your Way to Lifelike Video Generation",
+        "abstract": "arXiv:2508.15761v1 Announce Type: new  Abstract: We present Waver, a high-performance foundation model for unified image and video generation. Waver can directly generate videos with durations ranging from 5 to 10 seconds at a native resolution of 720p, which are subsequently upscaled to 1080p. The model simultaneously supports text-to-video (T2V), image-to-video (I2V), and text-to-image (T2I) generation within a single, integrated framework. We introduce a Hybrid Stream DiT architecture to enhance modality alignment and accelerate training convergence. To ensure training data quality, we establish a comprehensive data curation pipeline and manually annotate and train an MLLM-based video quality model to filter for the highest-quality samples. Furthermore, we provide detailed training and inference recipes to facilitate the generation of high-quality videos. Building on these contributions, Waver excels at capturing complex motion, achieving superior motion amplitude and temporal consistency in video synthesis. Notably, it ranks among the Top 3 on both the T2V and I2V leaderboards at Artificial Analysis (data as of 2025-07-30 10:00 GMT+8), consistently outperforming existing open-source models and matching or surpassing state-of-the-art commercial solutions. We hope this technical report will help the community more efficiently train high-quality video generation models and accelerate progress in video generation technologies. Official page: https://github.com/FoundationVision/Waver.",
+        "arxiv_id": "2508.15761",
+        "ARXIVID": "2508.15761",
+        "COMMENT": "",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2508.15720": {
+        "authors": [
+            "Zhiheng Liu",
+            "Xueqing Deng",
+            "Shoufa Chen",
+            "Angtian Wang",
+            "Qiushan Guo",
+            "Mingfei Han",
+            "Zeyue Xue",
+            "Mengzhao Chen",
+            "Ping Luo",
+            "Linjie Yang"
+        ],
+        "title": "WorldWeaver: Generating Long-Horizon Video Worlds via Rich Perception",
+        "abstract": "arXiv:2508.15720v1 Announce Type: new  Abstract: Generative video modeling has made significant strides, yet ensuring structural and temporal consistency over long sequences remains a challenge. Current methods predominantly rely on RGB signals, leading to accumulated errors in object structure and motion over extended durations. To address these issues, we introduce WorldWeaver, a robust framework for long video generation that jointly models RGB frames and perceptual conditions within a unified long-horizon modeling scheme. Our training framework offers three key advantages. First, by jointly predicting perceptual conditions and color information from a unified representation, it significantly enhances temporal consistency and motion dynamics. Second, by leveraging depth cues, which we observe to be more resistant to drift than RGB, we construct a memory bank that preserves clearer contextual information, improving quality in long-horizon video generation. Third, we employ segmented noise scheduling for training prediction groups, which further mitigates drift and reduces computational cost. Extensive experiments on both diffusion- and rectified flow-based models demonstrate the effectiveness of WorldWeaver in reducing temporal drift and improving the fidelity of generated videos.",
+        "arxiv_id": "2508.15720",
+        "ARXIVID": "2508.15720",
+        "COMMENT": "",
+        "RELEVANCE": 3,
+        "NOVELTY": 4
     }
 }
