@@ -1,66 +1,46 @@
 {
-    "2508.15169": {
+    "2508.16239": {
         "authors": [
-            "Xuyang Chen",
-            "Zhijun Zhai",
-            "Kaixuan Zhou",
-            "Zengmao Wang",
-            "Jianan He",
-            "Dong Wang",
-            "Yanfeng Zhang",
-            "mingwei Sun",
-            "R\\\"udiger Westermann",
-            "Konrad Schindler",
-            "Liqiu Meng"
+            "Nan wang",
+            "Zhiyi Xia",
+            "Yiming Li",
+            "Shi Tang",
+            "Zuxin Fan",
+            "Xi Fang",
+            "Haoyi Tao",
+            "Xiaochen Cai",
+            "Guolin Ke",
+            "Linfeng Zhang",
+            "Yanhui Hong"
         ],
-        "title": "MeSS: City Mesh-Guided Outdoor Scene Generation with Cross-View Consistent Diffusion",
-        "abstract": "arXiv:2508.15169v1 Announce Type: new  Abstract: Mesh models have become increasingly accessible for numerous cities; however, the lack of realistic textures restricts their application in virtual urban navigation and autonomous driving. To address this, this paper proposes MeSS (Meshbased Scene Synthesis) for generating high-quality, styleconsistent outdoor scenes with city mesh models serving as the geometric prior. While image and video diffusion models can leverage spatial layouts (such as depth maps or HD maps) as control conditions to generate street-level perspective views, they are not directly applicable to 3D scene generation. Video diffusion models excel at synthesizing consistent view sequences that depict scenes but often struggle to adhere to predefined camera paths or align accurately with rendered control videos. In contrast, image diffusion models, though unable to guarantee cross-view visual consistency, can produce more geometry-aligned results when combined with ControlNet. Building on this insight, our approach enhances image diffusion models by improving cross-view consistency. The pipeline comprises three key stages: first, we generate geometrically consistent sparse views using Cascaded Outpainting ControlNets; second, we propagate denser intermediate views via a component dubbed AGInpaint; and third, we globally eliminate visual inconsistencies (e.g., varying exposure) using the GCAlign module. Concurrently with generation, a 3D Gaussian Splatting (3DGS) scene is reconstructed by initializing Gaussian balls on the mesh surface. Our method outperforms existing approaches in both geometric alignment and generation quality. Once synthesized, the scene can be rendered in diverse styles through relighting and style transfer techniques.",
-        "arxiv_id": "2508.15169",
-        "ARXIVID": "2508.15169",
-        "COMMENT": "Matches criteria 2 closely",
+        "title": "UniEM-3M: A Universal Electron Micrograph Dataset for Microstructural Segmentation and Generation",
+        "abstract": "arXiv:2508.16239v1 Announce Type: new  Abstract: Quantitative microstructural characterization is fundamental to materials science, where electron micrograph (EM) provides indispensable high-resolution insights. However, progress in deep learning-based EM characterization has been hampered by the scarcity of large-scale, diverse, and expert-annotated datasets, due to acquisition costs, privacy concerns, and annotation complexity. To address this issue, we introduce UniEM-3M, the first large-scale and multimodal EM dataset for instance-level understanding. It comprises 5,091 high-resolution EMs, about 3 million instance segmentation labels, and image-level attribute-disentangled textual descriptions, a subset of which will be made publicly available. Furthermore, we are also releasing a text-to-image diffusion model trained on the entire collection to serve as both a powerful data augmentation tool and a proxy for the complete data distribution. To establish a rigorous benchmark, we evaluate various representative instance segmentation methods on the complete UniEM-3M and present UniEM-Net as a strong baseline model. Quantitative experiments demonstrate that this flow-based model outperforms other advanced methods on this challenging benchmark. Our multifaceted release of a partial dataset, a generative model, and a comprehensive benchmark -- available at huggingface -- will significantly accelerate progress in automated materials analysis.",
+        "arxiv_id": "2508.16239",
+        "ARXIVID": "2508.16239",
+        "COMMENT": "Criteria 1",
         "RELEVANCE": 5,
         "NOVELTY": 6
     },
-    "2508.15761": {
+    "2508.16211": {
         "authors": [
-            "Yifu Zhang",
-            "Hao Yang",
-            "Yuqi Zhang",
-            "Yifei Hu",
-            "Fengda Zhu",
-            "Chuang Lin",
-            "Xiaofeng Mei",
-            "Yi Jiang",
-            "Zehuan Yuan",
-            "Bingyue Peng"
+            "Shikang Zheng",
+            "Liang Feng",
+            "Xinyu Wang",
+            "Qinming Zhou",
+            "Peiliang Cai",
+            "Chang Zou",
+            "Jiacheng Liu",
+            "Yuqi Lin",
+            "Junjie Chen",
+            "Yue Ma",
+            "Linfeng Zhang"
         ],
-        "title": "Waver: Wave Your Way to Lifelike Video Generation",
-        "abstract": "arXiv:2508.15761v1 Announce Type: new  Abstract: We present Waver, a high-performance foundation model for unified image and video generation. Waver can directly generate videos with durations ranging from 5 to 10 seconds at a native resolution of 720p, which are subsequently upscaled to 1080p. The model simultaneously supports text-to-video (T2V), image-to-video (I2V), and text-to-image (T2I) generation within a single, integrated framework. We introduce a Hybrid Stream DiT architecture to enhance modality alignment and accelerate training convergence. To ensure training data quality, we establish a comprehensive data curation pipeline and manually annotate and train an MLLM-based video quality model to filter for the highest-quality samples. Furthermore, we provide detailed training and inference recipes to facilitate the generation of high-quality videos. Building on these contributions, Waver excels at capturing complex motion, achieving superior motion amplitude and temporal consistency in video synthesis. Notably, it ranks among the Top 3 on both the T2V and I2V leaderboards at Artificial Analysis (data as of 2025-07-30 10:00 GMT+8), consistently outperforming existing open-source models and matching or surpassing state-of-the-art commercial solutions. We hope this technical report will help the community more efficiently train high-quality video generation models and accelerate progress in video generation technologies. Official page: https://github.com/FoundationVision/Waver.",
-        "arxiv_id": "2508.15761",
-        "ARXIVID": "2508.15761",
+        "title": "Forecast then Calibrate: Feature Caching as ODE for Efficient Diffusion Transformers",
+        "abstract": "arXiv:2508.16211v1 Announce Type: new  Abstract: Diffusion Transformers (DiTs) have demonstrated exceptional performance in high-fidelity image and video generation. To reduce their substantial computational costs, feature caching techniques have been proposed to accelerate inference by reusing hidden representations from previous timesteps. However, current methods often struggle to maintain generation quality at high acceleration ratios, where prediction errors increase sharply due to the inherent instability of long-step forecasting. In this work, we adopt an ordinary differential equation (ODE) perspective on the hidden-feature sequence, modeling layer representations along the trajectory as a feature-ODE. We attribute the degradation of existing caching strategies to their inability to robustly integrate historical features under large skipping intervals. To address this, we propose FoCa (Forecast-then-Calibrate), which treats feature caching as a feature-ODE solving problem. Extensive experiments on image synthesis, video generation, and super-resolution tasks demonstrate the effectiveness of FoCa, especially under aggressive acceleration. Without additional training, FoCa achieves near-lossless speedups of 5.50 times on FLUX, 6.45 times on HunyuanVideo, 3.17 times on Inf-DiT, and maintains high quality with a 4.53 times speedup on DiT.",
+        "arxiv_id": "2508.16211",
+        "ARXIVID": "2508.16211",
         "COMMENT": "",
         "RELEVANCE": 3,
         "NOVELTY": 5
-    },
-    "2508.15720": {
-        "authors": [
-            "Zhiheng Liu",
-            "Xueqing Deng",
-            "Shoufa Chen",
-            "Angtian Wang",
-            "Qiushan Guo",
-            "Mingfei Han",
-            "Zeyue Xue",
-            "Mengzhao Chen",
-            "Ping Luo",
-            "Linjie Yang"
-        ],
-        "title": "WorldWeaver: Generating Long-Horizon Video Worlds via Rich Perception",
-        "abstract": "arXiv:2508.15720v1 Announce Type: new  Abstract: Generative video modeling has made significant strides, yet ensuring structural and temporal consistency over long sequences remains a challenge. Current methods predominantly rely on RGB signals, leading to accumulated errors in object structure and motion over extended durations. To address these issues, we introduce WorldWeaver, a robust framework for long video generation that jointly models RGB frames and perceptual conditions within a unified long-horizon modeling scheme. Our training framework offers three key advantages. First, by jointly predicting perceptual conditions and color information from a unified representation, it significantly enhances temporal consistency and motion dynamics. Second, by leveraging depth cues, which we observe to be more resistant to drift than RGB, we construct a memory bank that preserves clearer contextual information, improving quality in long-horizon video generation. Third, we employ segmented noise scheduling for training prediction groups, which further mitigates drift and reduces computational cost. Extensive experiments on both diffusion- and rectified flow-based models demonstrate the effectiveness of WorldWeaver in reducing temporal drift and improving the fidelity of generated videos.",
-        "arxiv_id": "2508.15720",
-        "ARXIVID": "2508.15720",
-        "COMMENT": "",
-        "RELEVANCE": 3,
-        "NOVELTY": 4
     }
 }
