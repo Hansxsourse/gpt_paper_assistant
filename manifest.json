@@ -1,6 +1,11 @@
 {
   "dates": [
     {
+      "date": "2025-08-29",
+      "filename": "output_2025_0829.md",
+      "displayDate": "August 29, 2025"
+    },
+    {
       "date": "2025-08-28",
       "filename": "output_2025_0828.md",
       "displayDate": "August 28, 2025"
@@ -726,5 +731,5 @@
       "displayDate": "February 03, 2025"
     }
   ],
-  "last_updated": "2025-08-28T13:21:28.207860"
+  "last_updated": "2025-08-29T13:22:06.797826"
 }
