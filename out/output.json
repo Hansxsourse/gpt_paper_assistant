@@ -1,57 +1,58 @@
 {
-    "2508.21019": {
+    "2508.21542": {
         "authors": [
-            "Jiaxiang Cheng",
-            "Bing Ma",
-            "Xuhua Ren",
-            "Hongyi Jin",
-            "Kai Yu",
-            "Peng Zhang",
-            "Wenyue Li",
-            "Yuan Zhou",
-            "Tianxiang Zheng",
-            "Qinglin Lu"
+            "Ziwei Liao",
+            "Mohamed Sayed",
+            "Steven L. Waslander",
+            "Sara Vicente",
+            "Daniyar Turmukhambetov",
+            "Michael Firman"
         ],
-        "title": "POSE: Phased One-Step Adversarial Equilibrium for Video Diffusion Models",
-        "abstract": "arXiv:2508.21019v1 Announce Type: new  Abstract: The field of video diffusion generation faces critical bottlenecks in sampling efficiency, especially for large-scale models and long sequences. Existing video acceleration methods adopt image-based techniques but suffer from fundamental limitations: they neither model the temporal coherence of video frames nor provide single-step distillation for large-scale video models. To bridge this gap, we propose POSE (Phased One-Step Equilibrium), a distillation framework that reduces the sampling steps of large-scale video diffusion models, enabling the generation of high-quality videos in a single step. POSE employs a carefully designed two-phase process to distill video models:(i) stability priming: a warm-up mechanism to stabilize adversarial distillation that adapts the high-quality trajectory of the one-step generator from high to low signal-to-noise ratio regimes, optimizing the video quality of single-step mappings near the endpoints of flow trajectories. (ii) unified adversarial equilibrium: a flexible self-adversarial distillation mechanism that promotes stable single-step adversarial training towards a Nash equilibrium within the Gaussian noise space, generating realistic single-step videos close to real videos. For conditional video generation, we propose (iii) conditional adversarial consistency, a method to improve both semantic consistency and frame consistency between conditional frames and generated frames. Comprehensive experiments demonstrate that POSE outperforms other acceleration methods on VBench-I2V by average 7.15% in semantic alignment, temporal conference and frame quality, reducing the latency of the pre-trained model by 100$\\times$, from 1000 seconds to 10 seconds, while maintaining competitive performance.",
-        "arxiv_id": "2508.21019",
-        "ARXIVID": "2508.21019",
-        "COMMENT": "Matches criteria 2 closely with a unified framework for video diffusion models.",
-        "RELEVANCE": 5,
+        "title": "Complete Gaussian Splats from a Single Image with Denoising Diffusion Models",
+        "abstract": "arXiv:2508.21542v1 Announce Type: new  Abstract: Gaussian splatting typically requires dense observations of the scene and can fail to reconstruct occluded and unobserved areas. We propose a latent diffusion model to reconstruct a complete 3D scene with Gaussian splats, including the occluded parts, from only a single image during inference. Completing the unobserved surfaces of a scene is challenging due to the ambiguity of the plausible surfaces. Conventional methods use a regression-based formulation to predict a single \"mode\" for occluded and out-of-frustum surfaces, leading to blurriness, implausibility, and failure to capture multiple possible explanations. Thus, they often address this problem partially, focusing either on objects isolated from the background, reconstructing only visible surfaces, or failing to extrapolate far from the input views. In contrast, we propose a generative formulation to learn a distribution of 3D representations of Gaussian splats conditioned on a single input image. To address the lack of ground-truth training data, we propose a Variational AutoReconstructor to learn a latent space only from 2D images in a self-supervised manner, over which a diffusion model is trained. Our method generates faithful reconstructions and diverse samples with the ability to complete the occluded surfaces for high-quality 360-degree renderings.",
+        "arxiv_id": "2508.21542",
+        "ARXIVID": "2508.21542",
+        "COMMENT": "The paper does not match any specific criteria closely. It proposes a diffusion model for 3D scene reconstruction from a single image, but does not address multi-task vision tasks or unified generation and segmentation.",
+        "RELEVANCE": 3,
         "NOVELTY": 7
     },
-    "2508.21066": {
+    "2508.21257": {
         "authors": [
-            "Yuan Gong",
-            "Xionghui Wang",
-            "Jie Wu",
-            "Shiyin Wang",
-            "Yitong Wang",
-            "Xinglong Wu"
+            "Hsuan-I Ho",
+            "Chen Guo",
+            "Po-Chen Wu",
+            "Ivan Shugurov",
+            "Chengcheng Tang",
+            "Abhay Mittal",
+            "Sizhe An",
+            "Manuel Kaufmann",
+            "Linguang Zhang"
         ],
-        "title": "OneReward: Unified Mask-Guided Image Generation via Multi-Task Human Preference Learning",
-        "abstract": "arXiv:2508.21066v1 Announce Type: new  Abstract: In this paper, we introduce OneReward, a unified reinforcement learning framework that enhances the model's generative capabilities across multiple tasks under different evaluation criteria using only \\textit{One Reward} model. By employing a single vision-language model (VLM) as the generative reward model, which can distinguish the winner and loser for a given task and a given evaluation criterion, it can be effectively applied to multi-task generation models, particularly in contexts with varied data and diverse task objectives. We utilize OneReward for mask-guided image generation, which can be further divided into several sub-tasks such as image fill, image extend, object removal, and text rendering, involving a binary mask as the edit area. Although these domain-specific tasks share same conditioning paradigm, they differ significantly in underlying data distributions and evaluation metrics. Existing methods often rely on task-specific supervised fine-tuning (SFT), which limits generalization and training efficiency. Building on OneReward, we develop Seedream 3.0 Fill, a mask-guided generation model trained via multi-task reinforcement learning directly on a pre-trained base model, eliminating the need for task-specific SFT. Experimental results demonstrate that our unified edit model consistently outperforms both commercial and open-source competitors, such as Ideogram, Adobe Photoshop, and FLUX Fill [Pro], across multiple evaluation dimensions. Code and model are available at: https://one-reward.github.io",
-        "arxiv_id": "2508.21066",
-        "ARXIVID": "2508.21066",
-        "COMMENT": "Matches criteria 1 closely with a unified framework for mask-guided image generation.",
-        "RELEVANCE": 5,
+        "title": "PHD: Personalized 3D Human Body Fitting with Point Diffusion",
+        "abstract": "arXiv:2508.21257v1 Announce Type: new  Abstract: We introduce PHD, a novel approach for personalized 3D human mesh recovery (HMR) and body fitting that leverages user-specific shape information to improve pose estimation accuracy from videos. Traditional HMR methods are designed to be user-agnostic and optimized for generalization. While these methods often refine poses using constraints derived from the 2D image to improve alignment, this process compromises 3D accuracy by failing to jointly account for person-specific body shapes and the plausibility of 3D poses. In contrast, our pipeline decouples this process by first calibrating the user's body shape and then employing a personalized pose fitting process conditioned on that shape. To achieve this, we develop a body shape-conditioned 3D pose prior, implemented as a Point Diffusion Transformer, which iteratively guides the pose fitting via a Point Distillation Sampling loss. This learned 3D pose prior effectively mitigates errors arising from an over-reliance on 2D constraints. Consequently, our approach improves not only pelvis-aligned pose accuracy but also absolute pose accuracy -- an important metric often overlooked by prior work. Furthermore, our method is highly data-efficient, requiring only synthetic data for training, and serves as a versatile plug-and-play module that can be seamlessly integrated with existing 3D pose estimators to enhance their performance. Project page: https://phd-pose.github.io/",
+        "arxiv_id": "2508.21257",
+        "ARXIVID": "2508.21257",
+        "COMMENT": "The paper does not match any specific criteria closely. It focuses on personalized 3D human body fitting using a diffusion model, but does not propose a multi-task diffusion model for vision tasks.",
+        "RELEVANCE": 3,
         "NOVELTY": 6
     },
-    "2508.20376": {
+    "2508.21809": {
         "authors": [
-            "Mang Cao",
-            "Sanping Zhou",
-            "Yizhe Li",
-            "Ye Deng",
-            "Wenli Huang",
-            "Le Wang"
+            "Jasper Uijlings",
+            "Xingyi Zhou",
+            "Xiuye Gu",
+            "Arsha Nagrani",
+            "Anurag Arnab",
+            "Alireza Fathi",
+            "David Ross",
+            "Cordelia Schmid"
         ],
-        "title": "Enhancing Mamba Decoder with Bidirectional Interaction in Multi-Task Dense Prediction",
-        "abstract": "arXiv:2508.20376v1 Announce Type: new  Abstract: Sufficient cross-task interaction is crucial for success in multi-task dense prediction. However, sufficient interaction often results in high computational complexity, forcing existing methods to face the trade-off between interaction completeness and computational efficiency. To address this limitation, this work proposes a Bidirectional Interaction Mamba (BIM), which incorporates novel scanning mechanisms to adapt the Mamba modeling approach for multi-task dense prediction. On the one hand, we introduce a novel Bidirectional Interaction Scan (BI-Scan) mechanism, which constructs task-specific representations as bidirectional sequences during interaction. By integrating task-first and position-first scanning modes within a unified linear complexity architecture, BI-Scan efficiently preserves critical cross-task information. On the other hand, we employ a Multi-Scale Scan~(MS-Scan) mechanism to achieve multi-granularity scene modeling. This design not only meets the diverse granularity requirements of various tasks but also enhances nuanced cross-task feature interactions. Extensive experiments on two challenging benchmarks, \\emph{i.e.}, NYUD-V2 and PASCAL-Context, show the superiority of our BIM vs its state-of-the-art competitors.",
-        "arxiv_id": "2508.20376",
-        "ARXIVID": "2508.20376",
-        "COMMENT": "Matches criterion 2",
-        "RELEVANCE": 5,
+        "title": "VoCap: Video Object Captioning and Segmentation from Any Prompt",
+        "abstract": "arXiv:2508.21809v1 Announce Type: new  Abstract: Understanding objects in videos in terms of fine-grained localization masks and detailed semantic properties is a fundamental task in video understanding. In this paper, we propose VoCap, a flexible video model that consumes a video and a prompt of various modalities (text, box or mask), and produces a spatio-temporal masklet with a corresponding object-centric caption. As such our model addresses simultaneously the tasks of promptable video object segmentation, referring expression segmentation, and object captioning. Since obtaining data for this task is tedious and expensive, we propose to annotate an existing large-scale segmentation dataset (SAV) with pseudo object captions. We do so by preprocessing videos with their ground-truth masks to highlight the object of interest and feed this to a large Vision Language Model (VLM). For an unbiased evaluation, we collect manual annotations on the validation set. We call the resulting dataset SAV-Caption. We train our VoCap model at scale on a SAV-Caption together with a mix of other image and video datasets. Our model yields state-of-the-art results on referring expression video object segmentation, is competitive on semi-supervised video object segmentation, and establishes a benchmark for video object captioning. Our dataset will be made available at https://github.com/google-deepmind/vocap.",
+        "arxiv_id": "2508.21809",
+        "ARXIVID": "2508.21809",
+        "COMMENT": "The paper does not match any specific criteria closely. It focuses on video object captioning and segmentation from prompts, but does not propose a unified model for generation and segmentation.",
+        "RELEVANCE": 3,
         "NOVELTY": 5
     }
 }
