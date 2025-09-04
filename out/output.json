@@ -1,153 +1,134 @@
 {
-    "2509.01469": {
+    "2509.03324": {
         "authors": [
-            "Vanessa Sklyarova",
-            "Egor Zakharov",
-            "Malte Prinzler",
-            "Giorgio Becherini",
-            "Michael J. Black",
-            "Justus Thies"
+            "Yixiong Jing",
+            "Cheng Zhang",
+            "Haibing Wu",
+            "Guangming Wang",
+            "Olaf Wysocki",
+            "Brian Sheil"
         ],
-        "title": "Im2Haircut: Single-view Strand-based Hair Reconstruction for Human Avatars",
-        "abstract": "arXiv:2509.01469v1 Announce Type: new  Abstract: We present a novel approach for 3D hair reconstruction from single photographs based on a global hair prior combined with local optimization. Capturing strand-based hair geometry from single photographs is challenging due to the variety and geometric complexity of hairstyles and the lack of ground truth training data. Classical reconstruction methods like multi-view stereo only reconstruct the visible hair strands, missing the inner structure of hairstyles and hampering realistic hair simulation. To address this, existing methods leverage hairstyle priors trained on synthetic data. Such data, however, is limited in both quantity and quality since it requires manual work from skilled artists to model the 3D hairstyles and create near-photorealistic renderings. To address this, we propose a novel approach that uses both, real and synthetic data to learn an effective hairstyle prior. Specifically, we train a transformer-based prior model on synthetic data to obtain knowledge of the internal hairstyle geometry and introduce real data in the learning process to model the outer structure. This training scheme is able to model the visible hair strands depicted in an input image, while preserving the general 3D structure of hairstyles. We exploit this prior to create a Gaussian-splatting-based reconstruction method that creates hairstyles from one or more images. Qualitative and quantitative comparisons with existing reconstruction pipelines demonstrate the effectiveness and superior performance of our method for capturing detailed hair orientation, overall silhouette, and backside consistency. For additional results and code, please refer to https://im2haircut.is.tue.mpg.de.",
-        "arxiv_id": "2509.01469",
-        "ARXIVID": "2509.01469",
-        "COMMENT": "No criteria match closely.",
+        "title": "InfraDiffusion: zero-shot depth map restoration with diffusion models and prompted segmentation from sparse infrastructure point clouds",
+        "abstract": "arXiv:2509.03324v1 Announce Type: new  Abstract: Point clouds are widely used for infrastructure monitoring by providing geometric information, where segmentation is required for downstream tasks such as defect detection. Existing research has automated semantic segmentation of structural components, while brick-level segmentation (identifying defects such as spalling and mortar loss) has been primarily conducted from RGB images. However, acquiring high-resolution images is impractical in low-light environments like masonry tunnels. Point clouds, though robust to dim lighting, are typically unstructured, sparse, and noisy, limiting fine-grained segmentation. We present InfraDiffusion, a zero-shot framework that projects masonry point clouds into depth maps using virtual cameras and restores them by adapting the Denoising Diffusion Null-space Model (DDNM). Without task-specific training, InfraDiffusion enhances visual clarity and geometric consistency of depth maps. Experiments on masonry bridge and tunnel point cloud datasets show significant improvements in brick-level segmentation using the Segment Anything Model (SAM), underscoring its potential for automated inspection of masonry assets. Our code and data is available at https://github.com/Jingyixiong/InfraDiffusion-official-implement.",
+        "arxiv_id": "2509.03324",
+        "ARXIVID": "2509.03324",
+        "COMMENT": "Matches criterion 2 as it uses diffusion models for depth map restoration and segmentation.",
+        "RELEVANCE": 5,
+        "NOVELTY": 6
+    },
+    "2509.03044": {
+        "authors": [
+            "Chengjie Huang",
+            "Jiafeng Yan",
+            "Jing Li",
+            "Lu Bai"
+        ],
+        "title": "DCDB: Dynamic Conditional Dual Diffusion Bridge for Ill-posed Multi-Tasks",
+        "abstract": "arXiv:2509.03044v1 Announce Type: new  Abstract: Conditional diffusion models have made impressive progress in the field of image processing, but the characteristics of constructing data distribution pathways make it difficult to exploit the intrinsic correlation between tasks in multi-task scenarios, which is even worse in ill-posed tasks with a lack of training data. In addition, traditional static condition control makes it difficult for networks to learn in multi-task scenarios with its dynamically evolving characteristics. To address these challenges, we propose a dynamic conditional double diffusion bridge training paradigm to build a general framework for ill-posed multi-tasks. Firstly, this paradigm decouples the diffusion and condition generation processes, avoiding the dependence of the diffusion model on supervised data in ill-posed tasks. Secondly, generated by the same noise schedule, dynamic conditions are used to gradually adjust their statistical characteristics, naturally embed time-related information, and reduce the difficulty of network learning. We analyze the learning objectives of the network under different conditional forms in the single-step denoising process and compare the changes in its attention weights in the network, demonstrating the superiority of our dynamic conditions. Taking dehazing and visible-infrared fusion as typical ill-posed multi-task scenarios, we achieve the best performance in multiple indicators on public datasets. The code has been publicly released at: https://anonymous.4open.science/r/DCDB-D3C2.",
+        "arxiv_id": "2509.03044",
+        "ARXIVID": "2509.03044",
+        "COMMENT": "Matches criterion 2 closely as it introduces a diffusion model for multi-task vision tasks.",
+        "RELEVANCE": 5,
+        "NOVELTY": 6
+    },
+    "2509.02973": {
+        "authors": [
+            "Xianbao Hou",
+            "Yonghao He",
+            "Zeyd Boukhers",
+            "John See",
+            "Hu Su",
+            "Wei Sui",
+            "Cong Yang"
+        ],
+        "title": "InstaDA: Augmenting Instance Segmentation Data with Dual-Agent System",
+        "abstract": "arXiv:2509.02973v1 Announce Type: new  Abstract: Acquiring high-quality instance segmentation data is challenging due to the labor-intensive nature of the annotation process and significant class imbalances within datasets. Recent studies have utilized the integration of Copy-Paste and diffusion models to create more diverse datasets. However, these studies often lack deep collaboration between large language models (LLMs) and diffusion models, and underutilize the rich information within the existing training data. To address these limitations, we propose InstaDA, a novel, training-free Dual-Agent system designed to augment instance segmentation datasets. First, we introduce a Text-Agent (T-Agent) that enhances data diversity through collaboration between LLMs and diffusion models. This agent features a novel Prompt Rethink mechanism, which iteratively refines prompts based on the generated images. This process not only fosters collaboration but also increases image utilization and optimizes the prompts themselves. Additionally, we present an Image-Agent (I-Agent) aimed at enriching the overall data distribution. This agent augments the training set by generating new instances conditioned on the training images. To ensure practicality and efficiency, both agents operate as independent and automated workflows, enhancing usability. Experiments conducted on the LVIS 1.0 validation set indicate that InstaDA achieves significant improvements, with an increase of +4.0 in box average precision (AP) and +3.3 in mask AP compared to the baseline. Furthermore, it outperforms the leading model, DiverGen, by +0.3 in box AP and +0.1 in mask AP, with a notable +0.7 gain in box AP on common categories and mask AP gains of +0.2 on common categories and +0.5 on frequent categories.",
+        "arxiv_id": "2509.02973",
+        "ARXIVID": "2509.02973",
+        "COMMENT": "Does not match any specific criteria.",
         "RELEVANCE": 3,
         "NOVELTY": 5
     },
-    "2509.01977": {
+    "2509.03498": {
         "authors": [
-            "Dong She",
-            "Siming Fu",
-            "Mushui Liu",
-            "Qiaoqiao Jin",
-            "Hualiang Wang",
-            "Mu Liu",
-            "Jidong Jiang"
+            "Han Li",
+            "Xinyu Peng",
+            "Yaoming Wang",
+            "Zelin Peng",
+            "Xin Chen",
+            "Rongxiang Weng",
+            "Jingang Wang",
+            "Xunliang Cai",
+            "Wenrui Dai",
+            "Hongkai Xiong"
         ],
-        "title": "MOSAIC: Multi-Subject Personalized Generation via Correspondence-Aware Alignment and Disentanglement",
-        "abstract": "arXiv:2509.01977v1 Announce Type: new  Abstract: Multi-subject personalized generation presents unique challenges in maintaining identity fidelity and semantic coherence when synthesizing images conditioned on multiple reference subjects. Existing methods often suffer from identity blending and attribute leakage due to inadequate modeling of how different subjects should interact within shared representation spaces. We present MOSAIC, a representation-centric framework that rethinks multi-subject generation through explicit semantic correspondence and orthogonal feature disentanglement. Our key insight is that multi-subject generation requires precise semantic alignment at the representation level - knowing exactly which regions in the generated image should attend to which parts of each reference. To enable this, we introduce SemAlign-MS, a meticulously annotated dataset providing fine-grained semantic correspondences between multiple reference subjects and target images, previously unavailable in this domain. Building on this foundation, we propose the semantic correspondence attention loss to enforce precise point-to-point semantic alignment, ensuring high consistency from each reference to its designated regions. Furthermore, we develop the multi-reference disentanglement loss to push different subjects into orthogonal attention subspaces, preventing feature interference while preserving individual identity characteristics. Extensive experiments demonstrate that MOSAIC achieves state-of-the-art performance on multiple benchmarks. Notably, while existing methods typically degrade beyond 3 subjects, MOSAIC maintains high fidelity with 4+ reference subjects, opening new possibilities for complex multi-subject synthesis applications.",
-        "arxiv_id": "2509.01977",
-        "ARXIVID": "2509.01977",
-        "COMMENT": "No criteria match closely.",
+        "title": "OneCAT: Decoder-Only Auto-Regressive Model for Unified Understanding and Generation",
+        "abstract": "arXiv:2509.03498v1 Announce Type: new  Abstract: We introduce OneCAT, a unified multimodal model that seamlessly integrates understanding, generation, and editing within a novel, pure decoder-only transformer architecture. Our framework uniquely eliminates the need for external components such as Vision Transformers (ViT) or vision tokenizer during inference, leading to significant efficiency gains, especially for high-resolution inputs. This is achieved through a modality-specific Mixture-of-Experts (MoE) structure trained with a single autoregressive (AR) objective, which also natively supports dynamic resolutions. Furthermore, we pioneer a multi-scale visual autoregressive mechanism within the Large Language Model (LLM) that drastically reduces decoding steps compared to diffusion-based methods while maintaining state-of-the-art performance. Our findings demonstrate the powerful potential of pure autoregressive modeling as a sufficient and elegant foundation for unified multimodal intelligence. As a result, OneCAT sets a new performance standard, outperforming existing open-source unified multimodal models across benchmarks for multimodal generation, editing, and understanding.",
+        "arxiv_id": "2509.03498",
+        "ARXIVID": "2509.03498",
+        "COMMENT": "Does not match any specific criteria.",
         "RELEVANCE": 3,
         "NOVELTY": 5
     },
-    "2509.01596": {
+    "2509.03002": {
         "authors": [
-            "Yuqing Chen",
-            "Junjie Wang",
-            "Lin Liu",
-            "Ruihang Chu",
-            "Xiaopeng Zhang",
-            "Qi Tian",
-            "Yujiu Yang"
+            "Chenhao Wang",
+            "Yingrui Ji",
+            "Yu Meng",
+            "Yunjian Zhang",
+            "Yao Zhu"
         ],
-        "title": "O-DisCo-Edit: Object Distortion Control for Unified Realistic Video Editing",
-        "abstract": "arXiv:2509.01596v1 Announce Type: new  Abstract: Diffusion models have recently advanced video editing, yet controllable editing remains challenging due to the need for precise manipulation of diverse object properties. Current methods require different control signal for diverse editing tasks, which complicates model design and demands significant training resources. To address this, we propose O-DisCo-Edit, a unified framework that incorporates a novel object distortion control (O-DisCo). This signal, based on random and adaptive noise, flexibly encapsulates a wide range of editing cues within a single representation. Paired with a \"copy-form\" preservation module for preserving non-edited regions, O-DisCo-Edit enables efficient, high-fidelity editing through an effective training paradigm. Extensive experiments and comprehensive human evaluations consistently demonstrate that O-DisCo-Edit surpasses both specialized and multitask state-of-the-art methods across various video editing tasks. https://cyqii.github.io/O-DisCo-Edit.github.io/",
-        "arxiv_id": "2509.01596",
-        "ARXIVID": "2509.01596",
-        "COMMENT": "No criteria match closely.",
+        "title": "SOPSeg: Prompt-based Small Object Instance Segmentation in Remote Sensing Imagery",
+        "abstract": "arXiv:2509.03002v1 Announce Type: new  Abstract: Extracting small objects from remote sensing imagery plays a vital role in various applications, including urban planning, environmental monitoring, and disaster management. While current research primarily focuses on small object detection, instance segmentation for small objects remains underexplored, with no dedicated datasets available. This gap stems from the technical challenges and high costs of pixel-level annotation for small objects. While the Segment Anything Model (SAM) demonstrates impressive zero-shot generalization, its performance on small-object segmentation deteriorates significantly, largely due to the coarse 1/16 feature resolution that causes severe loss of fine spatial details. To this end, we propose SOPSeg, a prompt-based framework specifically designed for small object segmentation in remote sensing imagery. It incorporates a region-adaptive magnification strategy to preserve fine-grained details, and employs a customized decoder that integrates edge prediction and progressive refinement for accurate boundary delineation. Moreover, we introduce a novel prompting mechanism tailored to the oriented bounding boxes widely adopted in remote sensing applications. SOPSeg outperforms existing methods in small object segmentation and facilitates efficient dataset construction for remote sensing tasks. We further construct a comprehensive small object instance segmentation dataset based on SODA-A, and will release both the model and dataset to support future research.",
+        "arxiv_id": "2509.03002",
+        "ARXIVID": "2509.03002",
+        "COMMENT": "Does not match any specific criteria.",
         "RELEVANCE": 3,
         "NOVELTY": 5
     },
-    "2509.01605": {
+    "2509.03154": {
         "authors": [
-            "Pedram Fekri",
-            "Mehrdad Zadeh",
-            "Javad Dargahi"
+            "Karol Szustakowski",
+            "Luk Frank",
+            "Julia Esser",
+            "Jan Gr\\\"undemann",
+            "Marie Piraud"
         ],
-        "title": "TransForSeg: A Multitask Stereo ViT for Joint Stereo Segmentation and 3D Force Estimation in Catheterization",
-        "abstract": "arXiv:2509.01605v1 Announce Type: new  Abstract: Recently, the emergence of multitask deep learning models has enhanced catheterization procedures by providing tactile and visual perception data through an end-to-end architec- ture. This information is derived from a segmentation and force estimation head, which localizes the catheter in X-ray images and estimates the applied pressure based on its deflection within the image. These stereo vision architectures incorporate a CNN- based encoder-decoder that captures the dependencies between X-ray images from two viewpoints, enabling simultaneous 3D force estimation and stereo segmentation of the catheter. With these tasks in mind, this work approaches the problem from a new perspective. We propose a novel encoder-decoder Vision Transformer model that processes two input X-ray images as separate sequences. Given sequences of X-ray patches from two perspectives, the transformer captures long-range dependencies without the need to gradually expand the receptive field for either image. The embeddings generated by both the encoder and decoder are fed into two shared segmentation heads, while a regression head employs the fused information from the decoder for 3D force estimation. The proposed model is a stereo Vision Transformer capable of simultaneously segmenting the catheter from two angles while estimating the generated forces at its tip in 3D. This model has undergone extensive experiments on synthetic X-ray images with various noise levels and has been compared against state-of-the-art pure segmentation models, vision-based catheter force estimation methods, and a multitask catheter segmentation and force estimation approach. It outperforms existing models, setting a new state-of-the-art in both catheter segmentation and force estimation.",
-        "arxiv_id": "2509.01605",
-        "ARXIVID": "2509.01605",
-        "COMMENT": "No criteria match closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2509.01330": {
-        "authors": [
-            "Fuyou Mao",
-            "Beining Wu",
-            "Yanfeng Jiang",
-            "Han Xue",
-            "Yan Tang",
-            "Hao Zhang"
-        ],
-        "title": "Prior-Guided Residual Diffusion: Calibrated and Efficient Medical Image Segmentation",
-        "abstract": "arXiv:2509.01330v1 Announce Type: new  Abstract: Ambiguity in medical image segmentation calls for models that capture full conditional distributions rather than a single point estimate. We present Prior-Guided Residual Diffusion (PGRD), a diffusion-based framework that learns voxel-wise distributions while maintaining strong calibration and practical sampling efficiency. PGRD embeds discrete labels as one-hot targets in a continuous space to align segmentation with diffusion modeling. A coarse prior predictor provides step-wise guidance; the diffusion network then learns the residual to the prior, accelerating convergence and improving calibration. A deep diffusion supervision scheme further stabilizes training by supervising intermediate time steps. Evaluated on representative MRI and CT datasets, PGRD achieves higher Dice scores and lower NLL/ECE values than Bayesian, ensemble, Probabilistic U-Net, and vanilla diffusion baselines, while requiring fewer sampling steps to reach strong performance.",
-        "arxiv_id": "2509.01330",
-        "ARXIVID": "2509.01330",
-        "COMMENT": "No criteria match closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2509.02357": {
-        "authors": [
-            "Zeren Xiong",
-            "Zikun Chen",
-            "Zedong Zhang",
-            "Xiang Li",
-            "Ying Tai",
-            "Jian Yang",
-            "Jun Li"
-        ],
-        "title": "Category-Aware 3D Object Composition with Disentangled Texture and Shape Multi-view Diffusion",
-        "abstract": "arXiv:2509.02357v1 Announce Type: new  Abstract: In this paper, we tackle a new task of 3D object synthesis, where a 3D model is composited with another object category to create a novel 3D model. However, most existing text/image/3D-to-3D methods struggle to effectively integrate multiple content sources, often resulting in inconsistent textures and inaccurate shapes. To overcome these challenges, we propose a straightforward yet powerful approach, category+3D-to-3D (C33D), for generating novel and structurally coherent 3D models. Our method begins by rendering multi-view images and normal maps from the input 3D model, then generating a novel 2D object using adaptive text-image harmony (ATIH) with the front-view image and a text description from another object category as inputs. To ensure texture consistency, we introduce texture multi-view diffusion, which refines the textures of the remaining multi-view RGB images based on the novel 2D object. For enhanced shape accuracy, we propose shape multi-view diffusion to improve the 2D shapes of both the multi-view RGB images and the normal maps, also conditioned on the novel 2D object. Finally, these outputs are used to reconstruct a complete and novel 3D model. Extensive experiments demonstrate the effectiveness of our method, yielding impressive 3D creations, such as shark(3D)-crocodile(text) in the first row of Fig. 1. A project page is available at: https://xzr52.github.io/C33D/",
-        "arxiv_id": "2509.02357",
-        "ARXIVID": "2509.02357",
-        "COMMENT": "No criteria match closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2509.02460": {
-        "authors": [
-            "Shuzhou Yang",
-            "Xiaoyu Li",
-            "Xiaodong Cun",
-            "Guangzhi Wang",
-            "Lingen Li",
-            "Ying Shan",
-            "Jian Zhang"
-        ],
-        "title": "GenCompositor: Generative Video Compositing with Diffusion Transformer",
-        "abstract": "arXiv:2509.02460v1 Announce Type: new  Abstract: Video compositing combines live-action footage to create video production, serving as a crucial technique in video creation and film production. Traditional pipelines require intensive labor efforts and expert collaboration, resulting in lengthy production cycles and high manpower costs. To address this issue, we automate this process with generative models, called generative video compositing. This new task strives to adaptively inject identity and motion information of foreground video to the target video in an interactive manner, allowing users to customize the size, motion trajectory, and other attributes of the dynamic elements added in final video. Specifically, we designed a novel Diffusion Transformer (DiT) pipeline based on its intrinsic properties. To maintain consistency of the target video before and after editing, we revised a light-weight DiT-based background preservation branch with masked token injection. As to inherit dynamic elements from other sources, a DiT fusion block is proposed using full self-attention, along with a simple yet effective foreground augmentation for training. Besides, for fusing background and foreground videos with different layouts based on user control, we developed a novel position embedding, named Extended Rotary Position Embedding (ERoPE). Finally, we curated a dataset comprising 61K sets of videos for our new task, called VideoComp. This data includes complete dynamic elements and high-quality target videos. Experiments demonstrate that our method effectively realizes generative video compositing, outperforming existing possible solutions in fidelity and consistency.",
-        "arxiv_id": "2509.02460",
-        "ARXIVID": "2509.02460",
-        "COMMENT": "No criteria match closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2509.00598": {
-        "authors": [
-            "Boyi Li",
-            "Ce Zhang",
-            "Richard M. Timmerman",
-            "Wenxuan Bao"
-        ],
-        "title": "DGL-RSIS: Decoupling Global Spatial Context and Local Class Semantics for Training-Free Remote Sensing Image Segmentation",
-        "abstract": "arXiv:2509.00598v1 Announce Type: new  Abstract: The emergence of vision language models (VLMs) has bridged vision and language, enabling joint multimodal understanding beyond traditional visual-only deep learning models. However, transferring VLMs from the natural image domain to remote sensing (RS) segmentation remains challenging due to the limited category diversity in RS datasets and the domain gap between natural and RS imagery. Here, we propose a training-free framework, DGL-RSIS, that decouples visual and textual inputs, performing visual-language alignment at both the local semantic and global contextual levels through tailored strategies. Specifically, we first introduce a global-local decoupling (GLD) module, where text inputs are divided into local class nouns and global modifiers using natural language processing (NLP) techniques; image inputs are partitioned into a set of class-agnostic mask proposals via unsupervised mask proposal networks. Second, visual and textual features are aligned at local scale, through a novel context-aware cropping strategy for extracting image patches with proper boundaries and introducing RS-specific knowledge to enrich the text inputs. By matching the enhanced text features with mask-guided visual features, we enable the mask classification, supporting open-vocabulary semantic segmentation (OVSS). Third, at the global scale, we propose a Cross-Scale Grad-CAM module to refine Grad-CAM maps using contextual information from global modifiers. A subsequent mask selection module integrates pixel-level Grad-CAM activations into the mask-level segmentation output, such that accurate and interpretable alignment can be realized across global and local dimensions for referring expression segmentation (RES).",
-        "arxiv_id": "2509.00598",
-        "ARXIVID": "2509.00598",
-        "COMMENT": "No criteria match closely.",
+        "title": "Preserving instance continuity and length in segmentation through connectivity-aware loss computation",
+        "abstract": "arXiv:2509.03154v1 Announce Type: new  Abstract: In many biomedical segmentation tasks, the preservation of elongated structure continuity and length is more important than voxel-wise accuracy. We propose two novel loss functions, Negative Centerline Loss and Simplified Topology Loss, that, applied to Convolutional Neural Networks (CNNs), help preserve connectivity of output instances. Moreover, we discuss characteristics of experiment design, such as downscaling and spacing correction, that help obtain continuous segmentation masks. We evaluate our approach on a 3D light-sheet fluorescence microscopy dataset of axon initial segments (AIS), a task prone to discontinuity due to signal dropout. Compared to standard CNNs and existing topology-aware losses, our methods reduce the number of segmentation discontinuities per instance, particularly in regions with missing input signal, resulting in improved instance length calculation in downstream applications. Our findings demonstrate that structural priors embedded in the loss design can significantly enhance the reliability of segmentation for biological applications.",
+        "arxiv_id": "2509.03154",
+        "ARXIVID": "2509.03154",
+        "COMMENT": "Does not match any specific criteria.",
         "RELEVANCE": 3,
         "NOVELTY": 4
     },
-    "2509.01085": {
+    "2509.03041": {
         "authors": [
-            "Chenlu Zhan",
-            "Wen Li",
-            "Chuyu Shen",
-            "Jun Zhang",
-            "Suhui Wu",
-            "Hao Zhang"
+            "Pengyang Yu",
+            "Haoquan Wang",
+            "Gerard Marks",
+            "Tahar Kechadi",
+            "Laurence T. Yang",
+            "Sahraoui Dhelim",
+            "Nyothiri Aung"
         ],
-        "title": "Bidirectional Sparse Attention for Faster Video Diffusion Training",
-        "abstract": "arXiv:2509.01085v1 Announce Type: new  Abstract: Video diffusion Transformer (DiT) models excel in generative quality but hit major computational bottlenecks when producing high-resolution, long-duration videos. The quadratic complexity of full attention leads to prohibitively high training and inference costs. Full attention inefficiency stems from two key challenges: excessive computation due to the inherent sparsity of Queries and Key-Value pairs, and redundant computation as fixed sparse patterns fail to leverage DiT's dynamic attention. To overcome this limitation, we propose a Bidirectional Sparse Attention (BSA) framework for faster video DiT training, the first to dynamically sparsify both Queries and Key-Value pairs within 3D full attention, thereby substantially improving training and inference efficiency. BSA addresses these issues through two key components. Query sparsity is optimized by selecting the most informative query tokens via semantic similarity and with a dynamic spatial-time training strategy, while KV sparsity is achieved by computing a statistical dynamic threshold to retain only the most salient KV blocks for computation. Extensive experiments demonstrate that BSA significantly accelerates DiT training across long sequences, reducing FLOPs by up to 20x and achieving 17.79x faster attention training, while preserving or even surpassing the generative quality of full attention.",
-        "arxiv_id": "2509.01085",
-        "ARXIVID": "2509.01085",
-        "COMMENT": "No criteria match closely.",
+        "title": "MedLiteNet: Lightweight Hybrid Medical Image Segmentation Model",
+        "abstract": "arXiv:2509.03041v1 Announce Type: new  Abstract: Accurate skin-lesion segmentation remains a key technical challenge for computer-aided diagnosis of skin cancer. Convolutional neural networks, while effective, are constrained by limited receptive fields and thus struggle to model long-range dependencies. Vision Transformers capture global context, yet their quadratic complexity and large parameter budgets hinder use on the small-sample medical datasets common in dermatology. We introduce the MedLiteNet, a lightweight CNN Transformer hybrid tailored for dermoscopic segmentation that achieves high precision through hierarchical feature extraction and multi-scale context aggregation. The encoder stacks depth-wise Mobile Inverted Bottleneck blocks to curb computation, inserts a bottleneck-level cross-scale token-mixing unit to exchange information between resolutions, and embeds a boundary-aware self-attention module to sharpen lesion contours.",
+        "arxiv_id": "2509.03041",
+        "ARXIVID": "2509.03041",
+        "COMMENT": "Does not match any specific criteria.",
+        "RELEVANCE": 3,
+        "NOVELTY": 4
+    },
+    "2509.03465": {
+        "authors": [
+            "Kuan-Chuan Peng"
+        ],
+        "title": "Joint Training of Image Generator and Detector for Road Defect Detection",
+        "abstract": "arXiv:2509.03465v1 Announce Type: new  Abstract: Road defect detection is important for road authorities to reduce the vehicle damage caused by road defects. Considering the practical scenarios where the defect detectors are typically deployed on edge devices with limited memory and computational resource, we aim at performing road defect detection without using ensemble-based methods or test-time augmentation (TTA). To this end, we propose to Jointly Train the image Generator and Detector for road defect detection (dubbed as JTGD). We design the dual discriminators for the generative model to enforce both the synthesized defect patches and overall images to look plausible. The synthesized image quality is improved by our proposed CLIP-based Fr\\'echet Inception Distance loss. The generative model in JTGD is trained jointly with the detector to encourage the generative model to synthesize harder examples for the detector. Since harder synthesized images of better quality caused by the aforesaid design are used in the data augmentation, JTGD outperforms the state-of-the-art method in the RDD2022 road defect detection benchmark across various countries under the condition of no ensemble and TTA. JTGD only uses less than 20% of the number of parameters compared with the competing baseline, which makes it more suitable for deployment on edge devices in practice.",
+        "arxiv_id": "2509.03465",
+        "ARXIVID": "2509.03465",
+        "COMMENT": "Does not match any specific criteria.",
         "RELEVANCE": 3,
         "NOVELTY": 4
     }
