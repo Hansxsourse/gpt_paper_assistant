@@ -1,31 +1,52 @@
 {
-    "2509.04446": {
+    "2509.04548": {
         "authors": [
-            "Kiymet Akdemir",
-            "Jing Shi",
-            "Kushal Kafle",
-            "Brian Price",
-            "Pinar Yanardag"
+            "Hongyang Wei",
+            "Baixin Xu",
+            "Hongbo Liu",
+            "Cyrus Wu",
+            "Jie Liu",
+            "Yi Peng",
+            "Peiyu Wang",
+            "Zexiang Liu",
+            "Jingwen He",
+            "Yidan Xietian",
+            "Chuanxin Tang",
+            "Zidong Wang",
+            "Yichen Wei",
+            "Liang Hu",
+            "Boyi Jiang",
+            "William Li",
+            "Ying He",
+            "Yang Liu",
+            "Xuchen Song",
+            "Eric Li",
+            "Yahui Zhou"
         ],
-        "title": "Plot'n Polish: Zero-shot Story Visualization and Disentangled Editing with Text-to-Image Diffusion Models",
-        "abstract": "arXiv:2509.04446v1 Announce Type: new  Abstract: Text-to-image diffusion models have demonstrated significant capabilities to generate diverse and detailed visuals in various domains, and story visualization is emerging as a particularly promising application. However, as their use in real-world creative domains increases, the need for providing enhanced control, refinement, and the ability to modify images post-generation in a consistent manner becomes an important challenge. Existing methods often lack the flexibility to apply fine or coarse edits while maintaining visual and narrative consistency across multiple frames, preventing creators from seamlessly crafting and refining their visual stories. To address these challenges, we introduce Plot'n Polish, a zero-shot framework that enables consistent story generation and provides fine-grained control over story visualizations at various levels of detail.",
-        "arxiv_id": "2509.04446",
-        "ARXIVID": "2509.04446",
-        "COMMENT": "",
+        "title": "Skywork UniPic 2.0: Building Kontext Model with Online RL for Unified Multimodal Model",
+        "abstract": "arXiv:2509.04548v1 Announce Type: new  Abstract: Recent advances in multimodal models have demonstrated impressive capabilities in unified image generation and editing. However, many prominent open-source models prioritize scaling model parameters over optimizing training strategies, limiting their efficiency and performance. In this work, we present UniPic2-SD3.5M-Kontext, a 2B-parameter DiT model based on SD3.5-Medium, which achieves state-of-the-art image generation and editing while extending seamlessly into a unified multimodal framework. Our approach begins with architectural modifications to SD3.5-Medium and large-scale pre-training on high-quality data, enabling joint text-to-image generation and editing capabilities. To enhance instruction following and editing consistency, we propose a novel Progressive Dual-Task Reinforcement strategy (PDTR), which effectively strengthens both tasks in a staged manner. We empirically validate that the reinforcement phases for different tasks are mutually beneficial and do not induce negative interference. After pre-training and reinforcement strategies, UniPic2-SD3.5M-Kontext demonstrates stronger image generation and editing capabilities than models with significantly larger generation parameters-including BAGEL (7B) and Flux-Kontext (12B). Furthermore, following the MetaQuery, we connect the UniPic2-SD3.5M-Kontext and Qwen2.5-VL-7B via a connector and perform joint training to launch a unified multimodal model UniPic2-Metaquery. UniPic2-Metaquery integrates understanding, generation, and editing, achieving top-tier performance across diverse tasks with a simple and scalable training paradigm. This consistently validates the effectiveness and generalizability of our proposed training paradigm, which we formalize as Skywork UniPic 2.0.",
+        "arxiv_id": "2509.04548",
+        "ARXIVID": "2509.04548",
+        "COMMENT": "The paper does not match any specific criteria closely. It discusses a unified multimodal model for image generation and editing, but does not focus on joint generation and segmentation or unified diffusion models.",
+        "RELEVANCE": 3,
+        "NOVELTY": 6
+    },
+    "2509.04859": {
+        "authors": [
+            "Hannah Schieber",
+            "Dominik Frischmann",
+            "Simon Boche",
+            "Victor Schaack",
+            "Angela Schoellig",
+            "Stefan Leutenegger",
+            "Daniel Roth"
+        ],
+        "title": "CoRe-GS: Coarse-to-Refined Gaussian Splatting with Semantic Object Focus",
+        "abstract": "arXiv:2509.04859v1 Announce Type: new  Abstract: Mobile reconstruction for autonomous aerial robotics holds strong potential for critical applications such as tele-guidance and disaster response. These tasks demand both accurate 3D reconstruction and fast scene processing. Instead of reconstructing the entire scene in detail, it is often more efficient to focus on specific objects, i.e., points of interest (PoIs). Mobile robots equipped with advanced sensing can usually detect these early during data acquisition or preliminary analysis, reducing the need for full-scene optimization. Gaussian Splatting (GS) has recently shown promise in delivering high-quality novel view synthesis and 3D representation by an incremental learning process. Extending GS with scene editing, semantics adds useful per-splat features to isolate objects effectively.   Semantic 3D Gaussian editing can already be achieved before the full training cycle is completed, reducing the overall training time. Moreover, the semantically relevant area, the PoI, is usually already known during capturing. To balance high-quality reconstruction with reduced training time, we propose CoRe-GS. We first generate a coarse segmentation-ready scene with semantic GS and then refine it for the semantic object using our novel color-based effective filtering for effective object isolation. This is speeding up the training process to be about a quarter less than a full training cycle for semantic GS. We evaluate our approach on two datasets, SCRREAM (real-world, outdoor) and NeRDS 360 (synthetic, indoor), showing reduced runtime and higher novel-view-synthesis quality.",
+        "arxiv_id": "2509.04859",
+        "ARXIVID": "2509.04859",
+        "COMMENT": "The paper does not match any specific criteria closely. It focuses on 3D reconstruction and semantic editing, but not on joint generation and segmentation or unified diffusion models.",
         "RELEVANCE": 3,
         "NOVELTY": 5
-    },
-    "2509.03794": {
-        "authors": [
-            "Juhun Lee",
-            "Simon S. Woo"
-        ],
-        "title": "Fitting Image Diffusion Models on Video Datasets",
-        "abstract": "arXiv:2509.03794v1 Announce Type: new  Abstract: Image diffusion models are trained on independently sampled static images. While this is the bedrock task protocol in generative modeling, capturing the temporal world through the lens of static snapshots is information-deficient by design. This limitation leads to slower convergence, limited distributional coverage, and reduced generalization. In this work, we propose a simple and effective training strategy that leverages the temporal inductive bias present in continuous video frames to improve diffusion training. Notably, the proposed method requires no architectural modification and can be seamlessly integrated into standard diffusion training pipelines. We evaluate our method on the HandCo dataset, where hand-object interactions exhibit dense temporal coherence and subtle variations in finger articulation often result in semantically distinct motions. Empirically, our method accelerates convergence by over 2$\\text{x}$ faster and achieves lower FID on both training and validation distributions. It also improves generative diversity by encouraging the model to capture meaningful temporal variations. We further provide an optimization analysis showing that our regularization reduces the gradient variance, which contributes to faster convergence.",
-        "arxiv_id": "2509.03794",
-        "ARXIVID": "2509.03794",
-        "COMMENT": "",
-        "RELEVANCE": 3,
-        "NOVELTY": 4
     }
 }
