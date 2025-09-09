@@ -1,51 +1,126 @@
 {
-    "2509.04548": {
+    "2509.06693": {
         "authors": [
-            "Hongyang Wei",
-            "Baixin Xu",
-            "Hongbo Liu",
-            "Cyrus Wu",
-            "Jie Liu",
-            "Yi Peng",
-            "Peiyu Wang",
-            "Zexiang Liu",
-            "Jingwen He",
-            "Yidan Xietian",
-            "Chuanxin Tang",
-            "Zidong Wang",
-            "Yichen Wei",
-            "Liang Hu",
-            "Boyi Jiang",
-            "William Li",
-            "Ying He",
-            "Yang Liu",
-            "Xuchen Song",
-            "Eric Li",
-            "Yahui Zhou"
+            "Xichen Xu",
+            "Yanshu Wang",
+            "Jinbao Wang",
+            "Qunyi Zhang",
+            "Xiaoning Lei",
+            "Guoyang Xie",
+            "Guannan Jiang",
+            "Zhichao Lu"
         ],
-        "title": "Skywork UniPic 2.0: Building Kontext Model with Online RL for Unified Multimodal Model",
-        "abstract": "arXiv:2509.04548v1 Announce Type: new  Abstract: Recent advances in multimodal models have demonstrated impressive capabilities in unified image generation and editing. However, many prominent open-source models prioritize scaling model parameters over optimizing training strategies, limiting their efficiency and performance. In this work, we present UniPic2-SD3.5M-Kontext, a 2B-parameter DiT model based on SD3.5-Medium, which achieves state-of-the-art image generation and editing while extending seamlessly into a unified multimodal framework. Our approach begins with architectural modifications to SD3.5-Medium and large-scale pre-training on high-quality data, enabling joint text-to-image generation and editing capabilities. To enhance instruction following and editing consistency, we propose a novel Progressive Dual-Task Reinforcement strategy (PDTR), which effectively strengthens both tasks in a staged manner. We empirically validate that the reinforcement phases for different tasks are mutually beneficial and do not induce negative interference. After pre-training and reinforcement strategies, UniPic2-SD3.5M-Kontext demonstrates stronger image generation and editing capabilities than models with significantly larger generation parameters-including BAGEL (7B) and Flux-Kontext (12B). Furthermore, following the MetaQuery, we connect the UniPic2-SD3.5M-Kontext and Qwen2.5-VL-7B via a connector and perform joint training to launch a unified multimodal model UniPic2-Metaquery. UniPic2-Metaquery integrates understanding, generation, and editing, achieving top-tier performance across diverse tasks with a simple and scalable training paradigm. This consistently validates the effectiveness and generalizability of our proposed training paradigm, which we formalize as Skywork UniPic 2.0.",
-        "arxiv_id": "2509.04548",
-        "ARXIVID": "2509.04548",
-        "COMMENT": "The paper does not match any specific criteria closely. It discusses a unified multimodal model for image generation and editing, but does not focus on joint generation and segmentation or unified diffusion models.",
+        "title": "STAGE: Segmentation-oriented Industrial Anomaly Synthesis via Graded Diffusion with Explicit Mask Alignment",
+        "abstract": "arXiv:2509.06693v1 Announce Type: new  Abstract: Segmentation-oriented Industrial Anomaly Synthesis (SIAS) plays a pivotal role in enhancing the performance of downstream anomaly segmentation, as it provides an effective means of expanding abnormal data. However, existing SIAS methods face several critical limitations: (i) the synthesized anomalies often lack intricate texture details and fail to align precisely with the surrounding background, and (ii) they struggle to generate fine-grained, pixel-level anomalies. To address these challenges, we propose Segmentation-oriented Anomaly synthesis via Graded diffusion with Explicit mask alignment, termed STAGE. STAGE introduces a novel anomaly inference strategy that incorporates clean background information as a prior to guide the denoising distribution, enabling the model to more effectively distinguish and highlight abnormal foregrounds. Furthermore, it employs a graded diffusion framework with an anomaly-only branch to explicitly record local anomalies during both the forward and reverse processes, ensuring that subtle anomalies are not overlooked. Finally, STAGE incorporates the explicit mask alignment (EMA) strategy to progressively align the synthesized anomalies with the background, resulting in context-consistent and structurally coherent generations. Extensive experiments on the MVTec and BTAD datasets demonstrate that STAGE achieves state-of-the-art performance in SIAS, which in turn enhances downstream anomaly segmentation.",
+        "arxiv_id": "2509.06693",
+        "ARXIVID": "2509.06693",
+        "COMMENT": "Matches criterion 1 closely: segmentation-aware generation.",
+        "RELEVANCE": 5,
+        "NOVELTY": 6
+    },
+    "2509.06740": {
+        "authors": [
+            "Qing Xu",
+            "Wenting Duan",
+            "Zhen Chen"
+        ],
+        "title": "Co-Seg: Mutual Prompt-Guided Collaborative Learning for Tissue and Nuclei Segmentation",
+        "abstract": "arXiv:2509.06740v1 Announce Type: new  Abstract: Histopathology image analysis is critical yet challenged by the demand of segmenting tissue regions and nuclei instances for tumor microenvironment and cellular morphology analysis. Existing studies focused on tissue semantic segmentation or nuclei instance segmentation separately, but ignored the inherent relationship between these two tasks, resulting in insufficient histopathology understanding. To address this issue, we propose a Co-Seg framework for collaborative tissue and nuclei segmentation. Specifically, we introduce a novel co-segmentation paradigm, allowing tissue and nuclei segmentation tasks to mutually enhance each other. To this end, we first devise a region-aware prompt encoder (RP-Encoder) to provide high-quality semantic and instance region prompts as prior constraints. Moreover, we design a mutual prompt mask decoder (MP-Decoder) that leverages cross-guidance to strengthen the contextual consistency of both tasks, collaboratively computing semantic and instance segmentation masks. Extensive experiments on the PUMA dataset demonstrate that the proposed Co-Seg surpasses state-of-the-arts in the semantic, instance and panoptic segmentation of tumor tissues and nuclei instances. The source code is available at https://github.com/xq141839/Co-Seg.",
+        "arxiv_id": "2509.06740",
+        "ARXIVID": "2509.06740",
+        "COMMENT": "Matches criteria 1",
+        "RELEVANCE": 5,
+        "NOVELTY": 5
+    },
+    "2509.06499": {
+        "authors": [
+            "Jibai Lin",
+            "Bo Ma",
+            "Yating Yang",
+            "Rong Ma",
+            "Turghun Osman",
+            "Ahtamjan Ahmat",
+            "Rui Dong",
+            "Lei Wang",
+            "Xi Zhou"
+        ],
+        "title": "TIDE: Achieving Balanced Subject-Driven Image Generation via Target-Instructed Diffusion Enhancement",
+        "abstract": "arXiv:2509.06499v1 Announce Type: new  Abstract: Subject-driven image generation (SDIG) aims to manipulate specific subjects within images while adhering to textual instructions, a task crucial for advancing text-to-image diffusion models. SDIG requires reconciling the tension between maintaining subject identity and complying with dynamic edit instructions, a challenge inadequately addressed by existing methods. In this paper, we introduce the Target-Instructed Diffusion Enhancing (TIDE) framework, which resolves this tension through target supervision and preference learning without test-time fine-tuning. TIDE pioneers target-supervised triplet alignment, modelling subject adaptation dynamics using a (reference image, instruction, target images) triplet. This approach leverages the Direct Subject Diffusion (DSD) objective, training the model with paired \"winning\" (balanced preservation-compliance) and \"losing\" (distorted) targets, systematically generated and evaluated via quantitative metrics. This enables implicit reward modelling for optimal preservation-compliance balance. Experimental results on standard benchmarks demonstrate TIDE's superior performance in generating subject-faithful outputs while maintaining instruction compliance, outperforming baseline methods across multiple quantitative metrics. TIDE's versatility is further evidenced by its successful application to diverse tasks, including structural-conditioned generation, image-to-image generation, and text-image interpolation. Our code is available at https://github.com/KomJay520/TIDE.",
+        "arxiv_id": "2509.06499",
+        "ARXIVID": "2509.06499",
+        "COMMENT": "No criteria match closely.",
         "RELEVANCE": 3,
         "NOVELTY": 6
     },
-    "2509.04859": {
+    "2509.05992": {
         "authors": [
-            "Hannah Schieber",
-            "Dominik Frischmann",
-            "Simon Boche",
-            "Victor Schaack",
-            "Angela Schoellig",
-            "Stefan Leutenegger",
-            "Daniel Roth"
+            "Zekun Zhou",
+            "Yanru Gong",
+            "Liu Shi",
+            "Qiegen Liu"
         ],
-        "title": "CoRe-GS: Coarse-to-Refined Gaussian Splatting with Semantic Object Focus",
-        "abstract": "arXiv:2509.04859v1 Announce Type: new  Abstract: Mobile reconstruction for autonomous aerial robotics holds strong potential for critical applications such as tele-guidance and disaster response. These tasks demand both accurate 3D reconstruction and fast scene processing. Instead of reconstructing the entire scene in detail, it is often more efficient to focus on specific objects, i.e., points of interest (PoIs). Mobile robots equipped with advanced sensing can usually detect these early during data acquisition or preliminary analysis, reducing the need for full-scene optimization. Gaussian Splatting (GS) has recently shown promise in delivering high-quality novel view synthesis and 3D representation by an incremental learning process. Extending GS with scene editing, semantics adds useful per-splat features to isolate objects effectively.   Semantic 3D Gaussian editing can already be achieved before the full training cycle is completed, reducing the overall training time. Moreover, the semantically relevant area, the PoI, is usually already known during capturing. To balance high-quality reconstruction with reduced training time, we propose CoRe-GS. We first generate a coarse segmentation-ready scene with semantic GS and then refine it for the semantic object using our novel color-based effective filtering for effective object isolation. This is speeding up the training process to be about a quarter less than a full training cycle for semantic GS. We evaluate our approach on two datasets, SCRREAM (real-world, outdoor) and NeRDS 360 (synthetic, indoor), showing reduced runtime and higher novel-view-synthesis quality.",
-        "arxiv_id": "2509.04859",
-        "ARXIVID": "2509.04859",
-        "COMMENT": "The paper does not match any specific criteria closely. It focuses on 3D reconstruction and semantic editing, but not on joint generation and segmentation or unified diffusion models.",
+        "title": "Multi-Strategy Guided Diffusion via Sparse Masking Temporal Reweighting Distribution Correction",
+        "abstract": "arXiv:2509.05992v1 Announce Type: new  Abstract: Diffusion models have demonstrated remarkable generative capabilities in image processing tasks. We propose a Sparse condition Temporal Rewighted Integrated Distribution Estimation guided diffusion model (STRIDE) for sparse-view CT reconstruction. Specifically, we design a joint training mechanism guided by sparse conditional probabilities to facilitate the model effective learning of missing projection view completion and global information modeling. Based on systematic theoretical analysis, we propose a temporally varying sparse condition reweighting guidance strategy to dynamically adjusts weights during the progressive denoising process from pure noise to the real image, enabling the model to progressively perceive sparse-view information. The linear regression is employed to correct distributional shifts between known and generated data, mitigating inconsistencies arising during the guidance process. Furthermore, we construct a dual-network parallel architecture to perform global correction and optimization across multiple sub-frequency components, thereby effectively improving the model capability in both detail restoration and structural preservation, ultimately achieving high-quality image reconstruction. Experimental results on both public and real datasets demonstrate that the proposed method achieves the best improvement of 2.58 dB in PSNR, increase of 2.37\\% in SSIM, and reduction of 0.236 in MSE compared to the best-performing baseline methods. The reconstructed images exhibit excellent generalization and robustness in terms of structural consistency, detail restoration, and artifact suppression.",
+        "arxiv_id": "2509.05992",
+        "ARXIVID": "2509.05992",
+        "COMMENT": "No criteria match closely.",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2509.06784": {
+        "authors": [
+            "Changfeng Ma",
+            "Yang Li",
+            "Xinhao Yan",
+            "Jiachen Xu",
+            "Yunhan Yang",
+            "Chunshi Wang",
+            "Zibo Zhao",
+            "Yanwen Guo",
+            "Zhuo Chen",
+            "Chunchao Guo"
+        ],
+        "title": "P3-SAM: Native 3D Part Segmentation",
+        "abstract": "arXiv:2509.06784v1 Announce Type: new  Abstract: Segmenting 3D assets into their constituent parts is crucial for enhancing 3D understanding, facilitating model reuse, and supporting various applications such as part generation. However, current methods face limitations such as poor robustness when dealing with complex objects and cannot fully automate the process. In this paper, we propose a native 3D point-promptable part segmentation model termed P3-SAM, designed to fully automate the segmentation of any 3D objects into components. Inspired by SAM, P3-SAM consists of a feature extractor, multiple segmentation heads, and an IoU predictor, enabling interactive segmentation for users. We also propose an algorithm to automatically select and merge masks predicted by our model for part instance segmentation. Our model is trained on a newly built dataset containing nearly 3.7 million models with reasonable segmentation labels. Comparisons show that our method achieves precise segmentation results and strong robustness on any complex objects, attaining state-of-the-art performance. Our code will be released soon.",
+        "arxiv_id": "2509.06784",
+        "ARXIVID": "2509.06784",
+        "COMMENT": "No criteria match closely.",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2509.06461": {
+        "authors": [
+            "Yuyao Ge",
+            "Shenghua Liu",
+            "Yiwei Wang",
+            "Lingrui Mei",
+            "Baolong Bi",
+            "Xuanshan Zhou",
+            "Jiayu Yao",
+            "Jiafeng Guo",
+            "Xueqi Cheng"
+        ],
+        "title": "Focusing by Contrastive Attention: Enhancing VLMs' Visual Reasoning",
+        "abstract": "arXiv:2509.06461v1 Announce Type: new  Abstract: Vision-Language Models (VLMs) have demonstrated remarkable success across diverse visual tasks, yet their performance degrades in complex visual environments. While existing enhancement approaches require additional training, rely on external segmentation tools, or operate at coarse-grained levels, they overlook the innate ability within VLMs. To bridge this gap, we investigate VLMs' attention patterns and discover that: (1) visual complexity strongly correlates with attention entropy, negatively impacting reasoning performance; (2) attention progressively refines from global scanning in shallow layers to focused convergence in deeper layers, with convergence degree determined by visual complexity. (3) Theoretically, we prove that the contrast of attention maps between general queries and task-specific queries enables the decomposition of visual signal into semantic signals and visual noise components. Building on these insights, we propose Contrastive Attention Refinement for Visual Enhancement (CARVE), a training-free method that extracts task-relevant visual signals through attention contrasting at the pixel level. Extensive experiments demonstrate that CARVE consistently enhances performance, achieving up to 75% improvement on open-source models. Our work provides critical insights into the interplay between visual complexity and attention mechanisms, offering an efficient pathway for improving visual reasoning with contrasting attention.",
+        "arxiv_id": "2509.06461",
+        "ARXIVID": "2509.06461",
+        "COMMENT": "No criteria match closely.",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2509.06579": {
+        "authors": [
+            "Xin Kong",
+            "Daniel Watson",
+            "Yannick Str\\\"umpler",
+            "Michael Niemeyer",
+            "Federico Tombari"
+        ],
+        "title": "CausNVS: Autoregressive Multi-view Diffusion for Flexible 3D Novel View Synthesis",
+        "abstract": "arXiv:2509.06579v1 Announce Type: new  Abstract: Multi-view diffusion models have shown promise in 3D novel view synthesis, but most existing methods adopt a non-autoregressive formulation. This limits their applicability in world modeling, as they only support a fixed number of views and suffer from slow inference due to denoising all frames simultaneously. To address these limitations, we propose CausNVS, a multi-view diffusion model in an autoregressive setting, which supports arbitrary input-output view configurations and generates views sequentially. We train CausNVS with causal masking and per-frame noise, using pairwise-relative camera pose encodings (CaPE) for precise camera control. At inference time, we combine a spatially-aware sliding-window with key-value caching and noise conditioning augmentation to mitigate drift. Our experiments demonstrate that CausNVS supports a broad range of camera trajectories, enables flexible autoregressive novel view synthesis, and achieves consistently strong visual quality across diverse settings. Project page: https://kxhit.github.io/CausNVS.html.",
+        "arxiv_id": "2509.06579",
+        "ARXIVID": "2509.06579",
+        "COMMENT": "No criteria match closely.",
         "RELEVANCE": 3,
         "NOVELTY": 5
     }
