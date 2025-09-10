@@ -1,125 +1,50 @@
 {
-    "2509.06693": {
+    "2509.07530": {
         "authors": [
-            "Xichen Xu",
-            "Yanshu Wang",
-            "Jinbao Wang",
-            "Qunyi Zhang",
-            "Xiaoning Lei",
-            "Guoyang Xie",
-            "Guannan Jiang",
-            "Zhichao Lu"
+            "Kiet T. Nguyen",
+            "Chanhuyk Lee",
+            "Donggyun Kim",
+            "Dong Hoon Lee",
+            "Seunghoon Hong"
         ],
-        "title": "STAGE: Segmentation-oriented Industrial Anomaly Synthesis via Graded Diffusion with Explicit Mask Alignment",
-        "abstract": "arXiv:2509.06693v1 Announce Type: new  Abstract: Segmentation-oriented Industrial Anomaly Synthesis (SIAS) plays a pivotal role in enhancing the performance of downstream anomaly segmentation, as it provides an effective means of expanding abnormal data. However, existing SIAS methods face several critical limitations: (i) the synthesized anomalies often lack intricate texture details and fail to align precisely with the surrounding background, and (ii) they struggle to generate fine-grained, pixel-level anomalies. To address these challenges, we propose Segmentation-oriented Anomaly synthesis via Graded diffusion with Explicit mask alignment, termed STAGE. STAGE introduces a novel anomaly inference strategy that incorporates clean background information as a prior to guide the denoising distribution, enabling the model to more effectively distinguish and highlight abnormal foregrounds. Furthermore, it employs a graded diffusion framework with an anomaly-only branch to explicitly record local anomalies during both the forward and reverse processes, ensuring that subtle anomalies are not overlooked. Finally, STAGE incorporates the explicit mask alignment (EMA) strategy to progressively align the synthesized anomalies with the background, resulting in context-consistent and structurally coherent generations. Extensive experiments on the MVTec and BTAD datasets demonstrate that STAGE achieves state-of-the-art performance in SIAS, which in turn enhances downstream anomaly segmentation.",
-        "arxiv_id": "2509.06693",
-        "ARXIVID": "2509.06693",
-        "COMMENT": "Matches criterion 1 closely: segmentation-aware generation.",
-        "RELEVANCE": 5,
-        "NOVELTY": 6
-    },
-    "2509.06740": {
-        "authors": [
-            "Qing Xu",
-            "Wenting Duan",
-            "Zhen Chen"
-        ],
-        "title": "Co-Seg: Mutual Prompt-Guided Collaborative Learning for Tissue and Nuclei Segmentation",
-        "abstract": "arXiv:2509.06740v1 Announce Type: new  Abstract: Histopathology image analysis is critical yet challenged by the demand of segmenting tissue regions and nuclei instances for tumor microenvironment and cellular morphology analysis. Existing studies focused on tissue semantic segmentation or nuclei instance segmentation separately, but ignored the inherent relationship between these two tasks, resulting in insufficient histopathology understanding. To address this issue, we propose a Co-Seg framework for collaborative tissue and nuclei segmentation. Specifically, we introduce a novel co-segmentation paradigm, allowing tissue and nuclei segmentation tasks to mutually enhance each other. To this end, we first devise a region-aware prompt encoder (RP-Encoder) to provide high-quality semantic and instance region prompts as prior constraints. Moreover, we design a mutual prompt mask decoder (MP-Decoder) that leverages cross-guidance to strengthen the contextual consistency of both tasks, collaboratively computing semantic and instance segmentation masks. Extensive experiments on the PUMA dataset demonstrate that the proposed Co-Seg surpasses state-of-the-arts in the semantic, instance and panoptic segmentation of tumor tissues and nuclei instances. The source code is available at https://github.com/xq141839/Co-Seg.",
-        "arxiv_id": "2509.06740",
-        "ARXIVID": "2509.06740",
-        "COMMENT": "Matches criteria 1",
-        "RELEVANCE": 5,
-        "NOVELTY": 5
-    },
-    "2509.06499": {
-        "authors": [
-            "Jibai Lin",
-            "Bo Ma",
-            "Yating Yang",
-            "Rong Ma",
-            "Turghun Osman",
-            "Ahtamjan Ahmat",
-            "Rui Dong",
-            "Lei Wang",
-            "Xi Zhou"
-        ],
-        "title": "TIDE: Achieving Balanced Subject-Driven Image Generation via Target-Instructed Diffusion Enhancement",
-        "abstract": "arXiv:2509.06499v1 Announce Type: new  Abstract: Subject-driven image generation (SDIG) aims to manipulate specific subjects within images while adhering to textual instructions, a task crucial for advancing text-to-image diffusion models. SDIG requires reconciling the tension between maintaining subject identity and complying with dynamic edit instructions, a challenge inadequately addressed by existing methods. In this paper, we introduce the Target-Instructed Diffusion Enhancing (TIDE) framework, which resolves this tension through target supervision and preference learning without test-time fine-tuning. TIDE pioneers target-supervised triplet alignment, modelling subject adaptation dynamics using a (reference image, instruction, target images) triplet. This approach leverages the Direct Subject Diffusion (DSD) objective, training the model with paired \"winning\" (balanced preservation-compliance) and \"losing\" (distorted) targets, systematically generated and evaluated via quantitative metrics. This enables implicit reward modelling for optimal preservation-compliance balance. Experimental results on standard benchmarks demonstrate TIDE's superior performance in generating subject-faithful outputs while maintaining instruction compliance, outperforming baseline methods across multiple quantitative metrics. TIDE's versatility is further evidenced by its successful application to diverse tasks, including structural-conditioned generation, image-to-image generation, and text-image interpolation. Our code is available at https://github.com/KomJay520/TIDE.",
-        "arxiv_id": "2509.06499",
-        "ARXIVID": "2509.06499",
+        "title": "Universal Few-Shot Spatial Control for Diffusion Models",
+        "abstract": "arXiv:2509.07530v1 Announce Type: new  Abstract: Spatial conditioning in pretrained text-to-image diffusion models has significantly improved fine-grained control over the structure of generated images. However, existing control adapters exhibit limited adaptability and incur high training costs when encountering novel spatial control conditions that differ substantially from the training tasks. To address this limitation, we propose Universal Few-Shot Control (UFC), a versatile few-shot control adapter capable of generalizing to novel spatial conditions. Given a few image-condition pairs of an unseen task and a query condition, UFC leverages the analogy between query and support conditions to construct task-specific control features, instantiated by a matching mechanism and an update on a small set of task-specific parameters. Experiments on six novel spatial control tasks show that UFC, fine-tuned with only 30 annotated examples of novel tasks, achieves fine-grained control consistent with the spatial conditions. Notably, when fine-tuned with 0.1% of the full training data, UFC achieves competitive performance with the fully supervised baselines in various control tasks. We also show that UFC is applicable agnostically to various diffusion backbones and demonstrate its effectiveness on both UNet and DiT architectures. Code is available at https://github.com/kietngt00/UFC.",
+        "arxiv_id": "2509.07530",
+        "ARXIVID": "2509.07530",
         "COMMENT": "No criteria match closely.",
         "RELEVANCE": 3,
         "NOVELTY": 6
     },
-    "2509.05992": {
+    "2509.07920": {
         "authors": [
-            "Zekun Zhou",
-            "Yanru Gong",
-            "Liu Shi",
-            "Qiegen Liu"
+            "Ao Li",
+            "Jinpeng Liu",
+            "Yixuan Zhu",
+            "Yansong Tang"
         ],
-        "title": "Multi-Strategy Guided Diffusion via Sparse Masking Temporal Reweighting Distribution Correction",
-        "abstract": "arXiv:2509.05992v1 Announce Type: new  Abstract: Diffusion models have demonstrated remarkable generative capabilities in image processing tasks. We propose a Sparse condition Temporal Rewighted Integrated Distribution Estimation guided diffusion model (STRIDE) for sparse-view CT reconstruction. Specifically, we design a joint training mechanism guided by sparse conditional probabilities to facilitate the model effective learning of missing projection view completion and global information modeling. Based on systematic theoretical analysis, we propose a temporally varying sparse condition reweighting guidance strategy to dynamically adjusts weights during the progressive denoising process from pure noise to the real image, enabling the model to progressively perceive sparse-view information. The linear regression is employed to correct distributional shifts between known and generated data, mitigating inconsistencies arising during the guidance process. Furthermore, we construct a dual-network parallel architecture to perform global correction and optimization across multiple sub-frequency components, thereby effectively improving the model capability in both detail restoration and structural preservation, ultimately achieving high-quality image reconstruction. Experimental results on both public and real datasets demonstrate that the proposed method achieves the best improvement of 2.58 dB in PSNR, increase of 2.37\\% in SSIM, and reduction of 0.236 in MSE compared to the best-performing baseline methods. The reconstructed images exhibit excellent generalization and robustness in terms of structural consistency, detail restoration, and artifact suppression.",
-        "arxiv_id": "2509.05992",
-        "ARXIVID": "2509.05992",
+        "title": "ScoreHOI: Physically Plausible Reconstruction of Human-Object Interaction via Score-Guided Diffusion",
+        "abstract": "arXiv:2509.07920v1 Announce Type: new  Abstract: Joint reconstruction of human-object interaction marks a significant milestone in comprehending the intricate interrelations between humans and their surrounding environment. Nevertheless, previous optimization methods often struggle to achieve physically plausible reconstruction results due to the lack of prior knowledge about human-object interactions. In this paper, we introduce ScoreHOI, an effective diffusion-based optimizer that introduces diffusion priors for the precise recovery of human-object interactions. By harnessing the controllability within score-guided sampling, the diffusion model can reconstruct a conditional distribution of human and object pose given the image observation and object feature. During inference, the ScoreHOI effectively improves the reconstruction results by guiding the denoising process with specific physical constraints. Furthermore, we propose a contact-driven iterative refinement approach to enhance the contact plausibility and improve the reconstruction accuracy. Extensive evaluations on standard benchmarks demonstrate ScoreHOI's superior performance over state-of-the-art methods, highlighting its ability to achieve a precise and robust improvement in joint human-object interaction reconstruction.",
+        "arxiv_id": "2509.07920",
+        "ARXIVID": "2509.07920",
         "COMMENT": "No criteria match closely.",
         "RELEVANCE": 3,
         "NOVELTY": 5
     },
-    "2509.06784": {
+    "2509.07435": {
         "authors": [
-            "Changfeng Ma",
-            "Yang Li",
-            "Xinhao Yan",
-            "Jiachen Xu",
-            "Yunhan Yang",
-            "Chunshi Wang",
-            "Zibo Zhao",
-            "Yanwen Guo",
-            "Zhuo Chen",
-            "Chunchao Guo"
+            "Ze-Xin Yin",
+            "Jiaxiong Qiu",
+            "Liu Liu",
+            "Xinjie Wang",
+            "Wei Sui",
+            "Zhizhong Su",
+            "Jian Yang",
+            "Jin Xie"
         ],
-        "title": "P3-SAM: Native 3D Part Segmentation",
-        "abstract": "arXiv:2509.06784v1 Announce Type: new  Abstract: Segmenting 3D assets into their constituent parts is crucial for enhancing 3D understanding, facilitating model reuse, and supporting various applications such as part generation. However, current methods face limitations such as poor robustness when dealing with complex objects and cannot fully automate the process. In this paper, we propose a native 3D point-promptable part segmentation model termed P3-SAM, designed to fully automate the segmentation of any 3D objects into components. Inspired by SAM, P3-SAM consists of a feature extractor, multiple segmentation heads, and an IoU predictor, enabling interactive segmentation for users. We also propose an algorithm to automatically select and merge masks predicted by our model for part instance segmentation. Our model is trained on a newly built dataset containing nearly 3.7 million models with reasonable segmentation labels. Comparisons show that our method achieves precise segmentation results and strong robustness on any complex objects, attaining state-of-the-art performance. Our code will be released soon.",
-        "arxiv_id": "2509.06784",
-        "ARXIVID": "2509.06784",
-        "COMMENT": "No criteria match closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2509.06461": {
-        "authors": [
-            "Yuyao Ge",
-            "Shenghua Liu",
-            "Yiwei Wang",
-            "Lingrui Mei",
-            "Baolong Bi",
-            "Xuanshan Zhou",
-            "Jiayu Yao",
-            "Jiafeng Guo",
-            "Xueqi Cheng"
-        ],
-        "title": "Focusing by Contrastive Attention: Enhancing VLMs' Visual Reasoning",
-        "abstract": "arXiv:2509.06461v1 Announce Type: new  Abstract: Vision-Language Models (VLMs) have demonstrated remarkable success across diverse visual tasks, yet their performance degrades in complex visual environments. While existing enhancement approaches require additional training, rely on external segmentation tools, or operate at coarse-grained levels, they overlook the innate ability within VLMs. To bridge this gap, we investigate VLMs' attention patterns and discover that: (1) visual complexity strongly correlates with attention entropy, negatively impacting reasoning performance; (2) attention progressively refines from global scanning in shallow layers to focused convergence in deeper layers, with convergence degree determined by visual complexity. (3) Theoretically, we prove that the contrast of attention maps between general queries and task-specific queries enables the decomposition of visual signal into semantic signals and visual noise components. Building on these insights, we propose Contrastive Attention Refinement for Visual Enhancement (CARVE), a training-free method that extracts task-relevant visual signals through attention contrasting at the pixel level. Extensive experiments demonstrate that CARVE consistently enhances performance, achieving up to 75% improvement on open-source models. Our work provides critical insights into the interplay between visual complexity and attention mechanisms, offering an efficient pathway for improving visual reasoning with contrasting attention.",
-        "arxiv_id": "2509.06461",
-        "ARXIVID": "2509.06461",
-        "COMMENT": "No criteria match closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2509.06579": {
-        "authors": [
-            "Xin Kong",
-            "Daniel Watson",
-            "Yannick Str\\\"umpler",
-            "Michael Niemeyer",
-            "Federico Tombari"
-        ],
-        "title": "CausNVS: Autoregressive Multi-view Diffusion for Flexible 3D Novel View Synthesis",
-        "abstract": "arXiv:2509.06579v1 Announce Type: new  Abstract: Multi-view diffusion models have shown promise in 3D novel view synthesis, but most existing methods adopt a non-autoregressive formulation. This limits their applicability in world modeling, as they only support a fixed number of views and suffer from slow inference due to denoising all frames simultaneously. To address these limitations, we propose CausNVS, a multi-view diffusion model in an autoregressive setting, which supports arbitrary input-output view configurations and generates views sequentially. We train CausNVS with causal masking and per-frame noise, using pairwise-relative camera pose encodings (CaPE) for precise camera control. At inference time, we combine a spatially-aware sliding-window with key-value caching and noise conditioning augmentation to mitigate drift. Our experiments demonstrate that CausNVS supports a broad range of camera trajectories, enables flexible autoregressive novel view synthesis, and achieves consistently strong visual quality across diverse settings. Project page: https://kxhit.github.io/CausNVS.html.",
-        "arxiv_id": "2509.06579",
-        "ARXIVID": "2509.06579",
+        "title": "DreamLifting: A Plug-in Module Lifting MV Diffusion Models for 3D Asset Generation",
+        "abstract": "arXiv:2509.07435v1 Announce Type: new  Abstract: The labor- and experience-intensive creation of 3D assets with physically based rendering (PBR) materials demands an autonomous 3D asset creation pipeline. However, most existing 3D generation methods focus on geometry modeling, either baking textures into simple vertex colors or leaving texture synthesis to post-processing with image diffusion models. To achieve end-to-end PBR-ready 3D asset generation, we present Lightweight Gaussian Asset Adapter (LGAA), a novel framework that unifies the modeling of geometry and PBR materials by exploiting multi-view (MV) diffusion priors from a novel perspective. The LGAA features a modular design with three components. Specifically, the LGAA Wrapper reuses and adapts network layers from MV diffusion models, which encapsulate knowledge acquired from billions of images, enabling better convergence in a data-efficient manner. To incorporate multiple diffusion priors for geometry and PBR synthesis, the LGAA Switcher aligns multiple LGAA Wrapper layers encapsulating different knowledge. Then, a tamed variational autoencoder (VAE), termed LGAA Decoder, is designed to predict 2D Gaussian Splatting (2DGS) with PBR channels. Finally, we introduce a dedicated post-processing procedure to effectively extract high-quality, relightable mesh assets from the resulting 2DGS. Extensive quantitative and qualitative experiments demonstrate the superior performance of LGAA with both text-and image-conditioned MV diffusion models. Additionally, the modular design enables flexible incorporation of multiple diffusion priors, and the knowledge-preserving scheme leads to efficient convergence trained on merely 69k multi-view instances. Our code, pre-trained weights, and the dataset used will be publicly available via our project page: https://zx-yin.github.io/dreamlifting/.",
+        "arxiv_id": "2509.07435",
+        "ARXIVID": "2509.07435",
         "COMMENT": "No criteria match closely.",
         "RELEVANCE": 3,
         "NOVELTY": 5
