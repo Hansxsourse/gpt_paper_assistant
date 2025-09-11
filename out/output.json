@@ -1,51 +1,113 @@
 {
-    "2509.07530": {
+    "2509.08618": {
         "authors": [
-            "Kiet T. Nguyen",
-            "Chanhuyk Lee",
-            "Donggyun Kim",
-            "Dong Hoon Lee",
-            "Seunghoon Hong"
+            "Zhihao Zhao",
+            "Yinzheng Zhao",
+            "Junjie Yang",
+            "Xiangtong Yao",
+            "Quanmin Liang",
+            "Shahrooz Faghihroohi",
+            "Kai Huang",
+            "Nassir Navab",
+            "M. Ali Nasseri"
         ],
-        "title": "Universal Few-Shot Spatial Control for Diffusion Models",
-        "abstract": "arXiv:2509.07530v1 Announce Type: new  Abstract: Spatial conditioning in pretrained text-to-image diffusion models has significantly improved fine-grained control over the structure of generated images. However, existing control adapters exhibit limited adaptability and incur high training costs when encountering novel spatial control conditions that differ substantially from the training tasks. To address this limitation, we propose Universal Few-Shot Control (UFC), a versatile few-shot control adapter capable of generalizing to novel spatial conditions. Given a few image-condition pairs of an unseen task and a query condition, UFC leverages the analogy between query and support conditions to construct task-specific control features, instantiated by a matching mechanism and an update on a small set of task-specific parameters. Experiments on six novel spatial control tasks show that UFC, fine-tuned with only 30 annotated examples of novel tasks, achieves fine-grained control consistent with the spatial conditions. Notably, when fine-tuned with 0.1% of the full training data, UFC achieves competitive performance with the fully supervised baselines in various control tasks. We also show that UFC is applicable agnostically to various diffusion backbones and demonstrate its effectiveness on both UNet and DiT architectures. Code is available at https://github.com/kietngt00/UFC.",
-        "arxiv_id": "2509.07530",
-        "ARXIVID": "2509.07530",
-        "COMMENT": "No criteria match closely.",
+        "title": "CLAPS: A CLIP-Unified Auto-Prompt Segmentation for Multi-Modal Retinal Imaging",
+        "abstract": "arXiv:2509.08618v1 Announce Type: new  Abstract: Recent advancements in foundation models, such as the Segment Anything Model (SAM), have significantly impacted medical image segmentation, especially in retinal imaging, where precise segmentation is vital for diagnosis. Despite this progress, current methods face critical challenges: 1) modality ambiguity in textual disease descriptions, 2) a continued reliance on manual prompting for SAM-based workflows, and 3) a lack of a unified framework, with most methods being modality- and task-specific. To overcome these hurdles, we propose CLIP-unified Auto-Prompt Segmentation (\\CLAPS), a novel method for unified segmentation across diverse tasks and modalities in retinal imaging. Our approach begins by pre-training a CLIP-based image encoder on a large, multi-modal retinal dataset to handle data scarcity and distribution imbalance. We then leverage GroundingDINO to automatically generate spatial bounding box prompts by detecting local lesions. To unify tasks and resolve ambiguity, we use text prompts enhanced with a unique \"modality signature\" for each imaging modality. Ultimately, these automated textual and spatial prompts guide SAM to execute precise segmentation, creating a fully automated and unified pipeline. Extensive experiments on 12 diverse datasets across 11 critical segmentation categories show that CLAPS achieves performance on par with specialized expert models while surpassing existing benchmarks across most metrics, demonstrating its broad generalizability as a foundation model.",
+        "arxiv_id": "2509.08618",
+        "ARXIVID": "2509.08618",
+        "COMMENT": "Matches criteria 1 closely with a unified segmentation framework for multi-modal retinal imaging.",
+        "RELEVANCE": 5,
+        "NOVELTY": 6
+    },
+    "2509.08489": {
+        "authors": [
+            "Kaleem Ahmad"
+        ],
+        "title": "Prompt-Driven Image Analysis with Multimodal Generative AI: Detection, Segmentation, Inpainting, and Interpretation",
+        "abstract": "arXiv:2509.08489v1 Announce Type: new  Abstract: Prompt-driven image analysis converts a single natural-language instruction into multiple steps: locate, segment, edit, and describe. We present a practical case study of a unified pipeline that combines open-vocabulary detection, promptable segmentation, text-conditioned inpainting, and vision-language description into a single workflow. The system works end to end from a single prompt, retains intermediate artifacts for transparent debugging (such as detections, masks, overlays, edited images, and before and after composites), and provides the same functionality through an interactive UI and a scriptable CLI for consistent, repeatable runs. We highlight integration choices that reduce brittleness, including threshold adjustments, mask inspection with light morphology, and resource-aware defaults. In a small, single-word prompt segment, detection and segmentation produced usable masks in over 90% of cases with an accuracy above 85% based on our criteria. On a high-end GPU, inpainting makes up 60 to 75% of total runtime under typical guidance and sampling settings, which highlights the need for careful tuning. The study offers implementation-guided advice on thresholds, mask tightness, and diffusion parameters, and details version pinning, artifact logging, and seed control to support replay. Our contribution is a transparent, reliable pattern for assembling modern vision and multimodal models behind a single prompt, with clear guardrails and operational practices that improve reliability in object replacement, scene augmentation, and removal.",
+        "arxiv_id": "2509.08489",
+        "ARXIVID": "2509.08489",
+        "COMMENT": "Matches criteria 1 closely with a unified pipeline for image analysis including segmentation and generation tasks.",
+        "RELEVANCE": 5,
+        "NOVELTY": 6
+    },
+    "2509.08628": {
+        "authors": [
+            "Xuqin Wang",
+            "Tao Wu",
+            "Yanfeng Zhang",
+            "Lu Liu",
+            "Dong Wang",
+            "Mingwei Sun",
+            "Yongliang Wang",
+            "Niclas Zeller",
+            "Daniel Cremers"
+        ],
+        "title": "LADB: Latent Aligned Diffusion Bridges for Semi-Supervised Domain Translation",
+        "abstract": "arXiv:2509.08628v1 Announce Type: new  Abstract: Diffusion models excel at generating high-quality outputs but face challenges in data-scarce domains, where exhaustive retraining or costly paired data are often required. To address these limitations, we propose Latent Aligned Diffusion Bridges (LADB), a semi-supervised framework for sample-to-sample translation that effectively bridges domain gaps using partially paired data. By aligning source and target distributions within a shared latent space, LADB seamlessly integrates pretrained source-domain diffusion models with a target-domain Latent Aligned Diffusion Model (LADM), trained on partially paired latent representations. This approach enables deterministic domain mapping without the need for full supervision. Compared to unpaired methods, which often lack controllability, and fully paired approaches that require large, domain-specific datasets, LADB strikes a balance between fidelity and diversity by leveraging a mixture of paired and unpaired latent-target couplings. Our experimental results demonstrate superior performance in depth-to-image translation under partial supervision. Furthermore, we extend LADB to handle multi-source translation (from depth maps and segmentation masks) and multi-target translation in a class-conditioned style transfer task, showcasing its versatility in handling diverse and heterogeneous use cases. Ultimately, we present LADB as a scalable and versatile solution for real-world domain translation, particularly in scenarios where data annotation is costly or incomplete.",
+        "arxiv_id": "2509.08628",
+        "ARXIVID": "2509.08628",
+        "COMMENT": "Does not match any specific criteria closely.",
         "RELEVANCE": 3,
         "NOVELTY": 6
     },
-    "2509.07920": {
+    "2509.08422": {
         "authors": [
-            "Ao Li",
-            "Jinpeng Liu",
-            "Yixuan Zhu",
-            "Yansong Tang"
+            "Payal Varshney",
+            "Adriano Lucieri",
+            "Christoph Balada",
+            "Sheraz Ahmed",
+            "Andreas Dengel"
         ],
-        "title": "ScoreHOI: Physically Plausible Reconstruction of Human-Object Interaction via Score-Guided Diffusion",
-        "abstract": "arXiv:2509.07920v1 Announce Type: new  Abstract: Joint reconstruction of human-object interaction marks a significant milestone in comprehending the intricate interrelations between humans and their surrounding environment. Nevertheless, previous optimization methods often struggle to achieve physically plausible reconstruction results due to the lack of prior knowledge about human-object interactions. In this paper, we introduce ScoreHOI, an effective diffusion-based optimizer that introduces diffusion priors for the precise recovery of human-object interactions. By harnessing the controllability within score-guided sampling, the diffusion model can reconstruct a conditional distribution of human and object pose given the image observation and object feature. During inference, the ScoreHOI effectively improves the reconstruction results by guiding the denoising process with specific physical constraints. Furthermore, we propose a contact-driven iterative refinement approach to enhance the contact plausibility and improve the reconstruction accuracy. Extensive evaluations on standard benchmarks demonstrate ScoreHOI's superior performance over state-of-the-art methods, highlighting its ability to achieve a precise and robust improvement in joint human-object interaction reconstruction.",
-        "arxiv_id": "2509.07920",
-        "ARXIVID": "2509.07920",
-        "COMMENT": "No criteria match closely.",
+        "title": "LD-ViCE: Latent Diffusion Model for Video Counterfactual Explanations",
+        "abstract": "arXiv:2509.08422v1 Announce Type: new  Abstract: Video-based AI systems are increasingly adopted in safety-critical domains such as autonomous driving and healthcare. However, interpreting their decisions remains challenging due to the inherent spatiotemporal complexity of video data and the opacity of deep learning models. Existing explanation techniques often suffer from limited temporal coherence, insufficient robustness, and a lack of actionable causal insights. Current counterfactual explanation methods typically do not incorporate guidance from the target model, reducing semantic fidelity and practical utility. We introduce Latent Diffusion for Video Counterfactual Explanations (LD-ViCE), a novel framework designed to explain the behavior of video-based AI models. Compared to previous approaches, LD-ViCE reduces the computational costs of generating explanations by operating in latent space using a state-of-the-art diffusion model, while producing realistic and interpretable counterfactuals through an additional refinement step. Our experiments demonstrate the effectiveness of LD-ViCE across three diverse video datasets, including EchoNet-Dynamic (cardiac ultrasound), FERV39k (facial expression), and Something-Something V2 (action recognition). LD-ViCE outperforms a recent state-of-the-art method, achieving an increase in R2 score of up to 68% while reducing inference time by half. Qualitative analysis confirms that LD-ViCE generates semantically meaningful and temporally coherent explanations, offering valuable insights into the target model behavior. LD-ViCE represents a valuable step toward the trustworthy deployment of AI in safety-critical domains.",
+        "arxiv_id": "2509.08422",
+        "ARXIVID": "2509.08422",
+        "COMMENT": "Does not match any specific criteria closely.",
         "RELEVANCE": 3,
         "NOVELTY": 5
     },
-    "2509.07435": {
+    "2509.08826": {
         "authors": [
-            "Ze-Xin Yin",
-            "Jiaxiong Qiu",
-            "Liu Liu",
-            "Xinjie Wang",
-            "Wei Sui",
-            "Zhizhong Su",
-            "Jian Yang",
-            "Jin Xie"
+            "Jie Wu",
+            "Yu Gao",
+            "Zilyu Ye",
+            "Ming Li",
+            "Liang Li",
+            "Hanzhong Guo",
+            "Jie Liu",
+            "Zeyue Xue",
+            "Xiaoxia Hou",
+            "Wei Liu",
+            "Yan Zeng",
+            "Weilin Huang"
         ],
-        "title": "DreamLifting: A Plug-in Module Lifting MV Diffusion Models for 3D Asset Generation",
-        "abstract": "arXiv:2509.07435v1 Announce Type: new  Abstract: The labor- and experience-intensive creation of 3D assets with physically based rendering (PBR) materials demands an autonomous 3D asset creation pipeline. However, most existing 3D generation methods focus on geometry modeling, either baking textures into simple vertex colors or leaving texture synthesis to post-processing with image diffusion models. To achieve end-to-end PBR-ready 3D asset generation, we present Lightweight Gaussian Asset Adapter (LGAA), a novel framework that unifies the modeling of geometry and PBR materials by exploiting multi-view (MV) diffusion priors from a novel perspective. The LGAA features a modular design with three components. Specifically, the LGAA Wrapper reuses and adapts network layers from MV diffusion models, which encapsulate knowledge acquired from billions of images, enabling better convergence in a data-efficient manner. To incorporate multiple diffusion priors for geometry and PBR synthesis, the LGAA Switcher aligns multiple LGAA Wrapper layers encapsulating different knowledge. Then, a tamed variational autoencoder (VAE), termed LGAA Decoder, is designed to predict 2D Gaussian Splatting (2DGS) with PBR channels. Finally, we introduce a dedicated post-processing procedure to effectively extract high-quality, relightable mesh assets from the resulting 2DGS. Extensive quantitative and qualitative experiments demonstrate the superior performance of LGAA with both text-and image-conditioned MV diffusion models. Additionally, the modular design enables flexible incorporation of multiple diffusion priors, and the knowledge-preserving scheme leads to efficient convergence trained on merely 69k multi-view instances. Our code, pre-trained weights, and the dataset used will be publicly available via our project page: https://zx-yin.github.io/dreamlifting/.",
-        "arxiv_id": "2509.07435",
-        "ARXIVID": "2509.07435",
-        "COMMENT": "No criteria match closely.",
+        "title": "RewardDance: Reward Scaling in Visual Generation",
+        "abstract": "arXiv:2509.08826v1 Announce Type: new  Abstract: Reward Models (RMs) are critical for improving generation models via Reinforcement Learning (RL), yet the RM scaling paradigm in visual generation remains largely unexplored. It primarily due to fundamental limitations in existing approaches: CLIP-based RMs suffer from architectural and input modality constraints, while prevalent Bradley-Terry losses are fundamentally misaligned with the next-token prediction mechanism of Vision-Language Models (VLMs), hindering effective scaling. More critically, the RLHF optimization process is plagued by Reward Hacking issue, where models exploit flaws in the reward signal without improving true quality. To address these challenges, we introduce RewardDance, a scalable reward modeling framework that overcomes these barriers through a novel generative reward paradigm. By reformulating the reward score as the model's probability of predicting a \"yes\" token, indicating that the generated image outperforms a reference image according to specific criteria, RewardDance intrinsically aligns reward objectives with VLM architectures. This alignment unlocks scaling across two dimensions: (1) Model Scaling: Systematic scaling of RMs up to 26 billion parameters; (2) Context Scaling: Integration of task-specific instructions, reference examples, and chain-of-thought (CoT) reasoning. Extensive experiments demonstrate that RewardDance significantly surpasses state-of-the-art methods in text-to-image, text-to-video, and image-to-video generation. Crucially, we resolve the persistent challenge of \"reward hacking\": Our large-scale RMs exhibit and maintain high reward variance during RL fine-tuning, proving their resistance to hacking and ability to produce diverse, high-quality outputs. It greatly relieves the mode collapse problem that plagues smaller models.",
+        "arxiv_id": "2509.08826",
+        "ARXIVID": "2509.08826",
+        "COMMENT": "Does not match any specific criteria closely.",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2509.08519": {
+        "authors": [
+            "Liyang Chen",
+            "Tianxiang Ma",
+            "Jiawei Liu",
+            "Bingchuan Li",
+            "Zhuowei Chen",
+            "Lijie Liu",
+            "Xu He",
+            "Gen Li",
+            "Qian He",
+            "Zhiyong Wu"
+        ],
+        "title": "HuMo: Human-Centric Video Generation via Collaborative Multi-Modal Conditioning",
+        "abstract": "arXiv:2509.08519v1 Announce Type: new  Abstract: Human-Centric Video Generation (HCVG) methods seek to synthesize human videos from multimodal inputs, including text, image, and audio. Existing methods struggle to effectively coordinate these heterogeneous modalities due to two challenges: the scarcity of training data with paired triplet conditions and the difficulty of collaborating the sub-tasks of subject preservation and audio-visual sync with multimodal inputs. In this work, we present HuMo, a unified HCVG framework for collaborative multimodal control. For the first challenge, we construct a high-quality dataset with diverse and paired text, reference images, and audio. For the second challenge, we propose a two-stage progressive multimodal training paradigm with task-specific strategies. For the subject preservation task, to maintain the prompt following and visual generation abilities of the foundation model, we adopt the minimal-invasive image injection strategy. For the audio-visual sync task, besides the commonly adopted audio cross-attention layer, we propose a focus-by-predicting strategy that implicitly guides the model to associate audio with facial regions. For joint learning of controllabilities across multimodal inputs, building on previously acquired capabilities, we progressively incorporate the audio-visual sync task. During inference, for flexible and fine-grained multimodal control, we design a time-adaptive Classifier-Free Guidance strategy that dynamically adjusts guidance weights across denoising steps. Extensive experimental results demonstrate that HuMo surpasses specialized state-of-the-art methods in sub-tasks, establishing a unified framework for collaborative multimodal-conditioned HCVG. Project Page: https://phantom-video.github.io/HuMo.",
+        "arxiv_id": "2509.08519",
+        "ARXIVID": "2509.08519",
+        "COMMENT": "Does not match any specific criteria closely.",
         "RELEVANCE": 3,
         "NOVELTY": 5
     }
