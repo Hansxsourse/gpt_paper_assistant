@@ -1,113 +1,115 @@
 {
-    "2509.08618": {
+    "2509.09427": {
         "authors": [
-            "Zhihao Zhao",
-            "Yinzheng Zhao",
-            "Junjie Yang",
-            "Xiangtong Yao",
-            "Quanmin Liang",
-            "Shahrooz Faghihroohi",
-            "Kai Huang",
-            "Nassir Navab",
-            "M. Ali Nasseri"
+            "Yuchan Jie",
+            "Yushen Xu",
+            "Xiaosong Li",
+            "Fuqiang Zhou",
+            "Jianming Lv",
+            "Huafeng Li"
         ],
-        "title": "CLAPS: A CLIP-Unified Auto-Prompt Segmentation for Multi-Modal Retinal Imaging",
-        "abstract": "arXiv:2509.08618v1 Announce Type: new  Abstract: Recent advancements in foundation models, such as the Segment Anything Model (SAM), have significantly impacted medical image segmentation, especially in retinal imaging, where precise segmentation is vital for diagnosis. Despite this progress, current methods face critical challenges: 1) modality ambiguity in textual disease descriptions, 2) a continued reliance on manual prompting for SAM-based workflows, and 3) a lack of a unified framework, with most methods being modality- and task-specific. To overcome these hurdles, we propose CLIP-unified Auto-Prompt Segmentation (\\CLAPS), a novel method for unified segmentation across diverse tasks and modalities in retinal imaging. Our approach begins by pre-training a CLIP-based image encoder on a large, multi-modal retinal dataset to handle data scarcity and distribution imbalance. We then leverage GroundingDINO to automatically generate spatial bounding box prompts by detecting local lesions. To unify tasks and resolve ambiguity, we use text prompts enhanced with a unique \"modality signature\" for each imaging modality. Ultimately, these automated textual and spatial prompts guide SAM to execute precise segmentation, creating a fully automated and unified pipeline. Extensive experiments on 12 diverse datasets across 11 critical segmentation categories show that CLAPS achieves performance on par with specialized expert models while surpassing existing benchmarks across most metrics, demonstrating its broad generalizability as a foundation model.",
-        "arxiv_id": "2509.08618",
-        "ARXIVID": "2509.08618",
-        "COMMENT": "Matches criteria 1 closely with a unified segmentation framework for multi-modal retinal imaging.",
+        "title": "FS-Diff: Semantic guidance and clarity-aware simultaneous multimodal image fusion and super-resolution",
+        "abstract": "arXiv:2509.09427v1 Announce Type: new  Abstract: As an influential information fusion and low-level vision technique, image fusion integrates complementary information from source images to yield an informative fused image. A few attempts have been made in recent years to jointly realize image fusion and super-resolution. However, in real-world applications such as military reconnaissance and long-range detection missions, the target and background structures in multimodal images are easily corrupted, with low resolution and weak semantic information, which leads to suboptimal results in current fusion techniques. In response, we propose FS-Diff, a semantic guidance and clarity-aware joint image fusion and super-resolution method. FS-Diff unifies image fusion and super-resolution as a conditional generation problem. It leverages semantic guidance from the proposed clarity sensing mechanism for adaptive low-resolution perception and cross-modal feature extraction. Specifically, we initialize the desired fused result as pure Gaussian noise and introduce the bidirectional feature Mamba to extract the global features of the multimodal images. Moreover, utilizing the source images and semantics as conditions, we implement a random iterative denoising process via a modified U-Net network. This network istrained for denoising at multiple noise levels to produce high-resolution fusion results with cross-modal features and abundant semantic information. We also construct a powerful aerial view multiscene (AVMS) benchmark covering 600 pairs of images. Extensive joint image fusion and super-resolution experiments on six public and our AVMS datasets demonstrated that FS-Diff outperforms the state-of-the-art methods at multiple magnifications and can recover richer details and semantics in the fused images. The code is available at https://github.com/XylonXu01/FS-Diff.",
+        "arxiv_id": "2509.09427",
+        "ARXIVID": "2509.09427",
+        "COMMENT": "Matches criteria 2 closely",
         "RELEVANCE": 5,
         "NOVELTY": 6
     },
-    "2509.08489": {
+    "2509.09666": {
         "authors": [
-            "Kaleem Ahmad"
+            "Zhiyuan Yan",
+            "Kaiqing Lin",
+            "Zongjian Li",
+            "Junyan Ye",
+            "Hui Han",
+            "Zhendong Wang",
+            "Hao Liu",
+            "Bin Lin",
+            "Hao Li",
+            "Xue Xu",
+            "Xinyan Xiao",
+            "Jingdong Wang",
+            "Haifeng Wang",
+            "Li Yuan"
         ],
-        "title": "Prompt-Driven Image Analysis with Multimodal Generative AI: Detection, Segmentation, Inpainting, and Interpretation",
-        "abstract": "arXiv:2509.08489v1 Announce Type: new  Abstract: Prompt-driven image analysis converts a single natural-language instruction into multiple steps: locate, segment, edit, and describe. We present a practical case study of a unified pipeline that combines open-vocabulary detection, promptable segmentation, text-conditioned inpainting, and vision-language description into a single workflow. The system works end to end from a single prompt, retains intermediate artifacts for transparent debugging (such as detections, masks, overlays, edited images, and before and after composites), and provides the same functionality through an interactive UI and a scriptable CLI for consistent, repeatable runs. We highlight integration choices that reduce brittleness, including threshold adjustments, mask inspection with light morphology, and resource-aware defaults. In a small, single-word prompt segment, detection and segmentation produced usable masks in over 90% of cases with an accuracy above 85% based on our criteria. On a high-end GPU, inpainting makes up 60 to 75% of total runtime under typical guidance and sampling settings, which highlights the need for careful tuning. The study offers implementation-guided advice on thresholds, mask tightness, and diffusion parameters, and details version pinning, artifact logging, and seed control to support replay. Our contribution is a transparent, reliable pattern for assembling modern vision and multimodal models behind a single prompt, with clear guardrails and operational practices that improve reliability in object replacement, scene augmentation, and removal.",
-        "arxiv_id": "2509.08489",
-        "ARXIVID": "2509.08489",
-        "COMMENT": "Matches criteria 1 closely with a unified pipeline for image analysis including segmentation and generation tasks.",
-        "RELEVANCE": 5,
-        "NOVELTY": 6
+        "title": "Can Understanding and Generation Truly Benefit Together -- or Just Coexist?",
+        "abstract": "arXiv:2509.09666v1 Announce Type: new  Abstract: In this paper, we introduce an insightful paradigm through the Auto-Encoder lens-understanding as the encoder (I2T) that compresses images into text, and generation as the decoder (T2I) that reconstructs images from that text. Using reconstruction fidelity as the unified training objective, we enforce the coherent bidirectional information flow between the understanding and generation processes, bringing mutual gains. To implement this, we propose UAE, a novel framework for unified multimodal learning. We begin by pre-training the decoder with large-scale long-context image captions to capture fine-grained semantic and complex spatial relationships. We then propose Unified-GRPO via reinforcement learning (RL), which covers three stages: (1) A cold-start phase to gently initialize both encoder and decoder with a semantic reconstruction loss; (2) Generation for Understanding, where the encoder is trained to generate informative captions that maximize the decoder's reconstruction quality, enhancing its visual understanding; (3) Understanding for Generation, where the decoder is refined to reconstruct from these captions, forcing it to leverage every detail and improving its long-context instruction following and generation fidelity. For evaluation, we introduce Unified-Bench, the first benchmark tailored to assess the degree of unification of the UMMs. A surprising \"aha moment\" arises within the multimodal learning domain: as RL progresses, the encoder autonomously produces more descriptive captions, while the decoder simultaneously demonstrates a profound ability to understand these intricate descriptions, resulting in reconstructions of striking fidelity.",
+        "arxiv_id": "2509.09666",
+        "ARXIVID": "2509.09666",
+        "COMMENT": "No specific criteria match",
+        "RELEVANCE": 3,
+        "NOVELTY": 7
     },
-    "2509.08628": {
+    "2509.09610": {
         "authors": [
-            "Xuqin Wang",
-            "Tao Wu",
-            "Yanfeng Zhang",
-            "Lu Liu",
-            "Dong Wang",
-            "Mingwei Sun",
-            "Yongliang Wang",
-            "Niclas Zeller",
-            "Daniel Cremers"
+            "Daria Laslo",
+            "Efthymios Georgiou",
+            "Marius George Linguraru",
+            "Andreas Rauschecker",
+            "Sabine Muller",
+            "Catherine R. Jutzeler",
+            "Sarah Bruningk"
         ],
-        "title": "LADB: Latent Aligned Diffusion Bridges for Semi-Supervised Domain Translation",
-        "abstract": "arXiv:2509.08628v1 Announce Type: new  Abstract: Diffusion models excel at generating high-quality outputs but face challenges in data-scarce domains, where exhaustive retraining or costly paired data are often required. To address these limitations, we propose Latent Aligned Diffusion Bridges (LADB), a semi-supervised framework for sample-to-sample translation that effectively bridges domain gaps using partially paired data. By aligning source and target distributions within a shared latent space, LADB seamlessly integrates pretrained source-domain diffusion models with a target-domain Latent Aligned Diffusion Model (LADM), trained on partially paired latent representations. This approach enables deterministic domain mapping without the need for full supervision. Compared to unpaired methods, which often lack controllability, and fully paired approaches that require large, domain-specific datasets, LADB strikes a balance between fidelity and diversity by leveraging a mixture of paired and unpaired latent-target couplings. Our experimental results demonstrate superior performance in depth-to-image translation under partial supervision. Furthermore, we extend LADB to handle multi-source translation (from depth maps and segmentation masks) and multi-target translation in a class-conditioned style transfer task, showcasing its versatility in handling diverse and heterogeneous use cases. Ultimately, we present LADB as a scalable and versatile solution for real-world domain translation, particularly in scenarios where data annotation is costly or incomplete.",
-        "arxiv_id": "2509.08628",
-        "ARXIVID": "2509.08628",
-        "COMMENT": "Does not match any specific criteria closely.",
+        "title": "Mechanistic Learning with Guided Diffusion Models to Predict Spatio-Temporal Brain Tumor Growth",
+        "abstract": "arXiv:2509.09610v1 Announce Type: new  Abstract: Predicting the spatio-temporal progression of brain tumors is essential for guiding clinical decisions in neuro-oncology. We propose a hybrid mechanistic learning framework that combines a mathematical tumor growth model with a guided denoising diffusion implicit model (DDIM) to synthesize anatomically feasible future MRIs from preceding scans. The mechanistic model, formulated as a system of ordinary differential equations, captures temporal tumor dynamics including radiotherapy effects and estimates future tumor burden. These estimates condition a gradient-guided DDIM, enabling image synthesis that aligns with both predicted growth and patient anatomy. We train our model on the BraTS adult and pediatric glioma datasets and evaluate on 60 axial slices of in-house longitudinal pediatric diffuse midline glioma (DMG) cases. Our framework generates realistic follow-up scans based on spatial similarity metrics. It also introduces tumor growth probability maps, which capture both clinically relevant extent and directionality of tumor growth as shown by 95th percentile Hausdorff Distance. The method enables biologically informed image generation in data-limited scenarios, offering generative-space-time predictions that account for mechanistic priors.",
+        "arxiv_id": "2509.09610",
+        "ARXIVID": "2509.09610",
+        "COMMENT": "No specific criteria match",
         "RELEVANCE": 3,
         "NOVELTY": 6
     },
-    "2509.08422": {
+    "2509.09527": {
         "authors": [
-            "Payal Varshney",
-            "Adriano Lucieri",
-            "Christoph Balada",
-            "Sheraz Ahmed",
-            "Andreas Dengel"
+            "Jian Zhu",
+            "Xin Zou",
+            "Xi Wang",
+            "Ning Zhang",
+            "Bian Wu",
+            "Yao Yang",
+            "Ying Zhou",
+            "Lingfang Zeng",
+            "Chang Tang",
+            "Cheng Luo"
         ],
-        "title": "LD-ViCE: Latent Diffusion Model for Video Counterfactual Explanations",
-        "abstract": "arXiv:2509.08422v1 Announce Type: new  Abstract: Video-based AI systems are increasingly adopted in safety-critical domains such as autonomous driving and healthcare. However, interpreting their decisions remains challenging due to the inherent spatiotemporal complexity of video data and the opacity of deep learning models. Existing explanation techniques often suffer from limited temporal coherence, insufficient robustness, and a lack of actionable causal insights. Current counterfactual explanation methods typically do not incorporate guidance from the target model, reducing semantic fidelity and practical utility. We introduce Latent Diffusion for Video Counterfactual Explanations (LD-ViCE), a novel framework designed to explain the behavior of video-based AI models. Compared to previous approaches, LD-ViCE reduces the computational costs of generating explanations by operating in latent space using a state-of-the-art diffusion model, while producing realistic and interpretable counterfactuals through an additional refinement step. Our experiments demonstrate the effectiveness of LD-ViCE across three diverse video datasets, including EchoNet-Dynamic (cardiac ultrasound), FERV39k (facial expression), and Something-Something V2 (action recognition). LD-ViCE outperforms a recent state-of-the-art method, achieving an increase in R2 score of up to 68% while reducing inference time by half. Qualitative analysis confirms that LD-ViCE generates semantically meaningful and temporally coherent explanations, offering valuable insights into the target model behavior. LD-ViCE represents a valuable step toward the trustworthy deployment of AI in safety-critical domains.",
-        "arxiv_id": "2509.08422",
-        "ARXIVID": "2509.08422",
-        "COMMENT": "Does not match any specific criteria closely.",
+        "title": "Generative Diffusion Contrastive Network for Multi-View Clustering",
+        "abstract": "arXiv:2509.09527v1 Announce Type: new  Abstract: In recent years, Multi-View Clustering (MVC) has been significantly advanced under the influence of deep learning. By integrating heterogeneous data from multiple views, MVC enhances clustering analysis, making multi-view fusion critical to clustering performance. However, there is a problem of low-quality data in multi-view fusion. This problem primarily arises from two reasons: 1) Certain views are contaminated by noisy data. 2) Some views suffer from missing data. This paper proposes a novel Stochastic Generative Diffusion Fusion (SGDF) method to address this problem. SGDF leverages a multiple generative mechanism for the multi-view feature of each sample. It is robust to low-quality data. Building on SGDF, we further present the Generative Diffusion Contrastive Network (GDCN). Extensive experiments show that GDCN achieves the state-of-the-art results in deep MVC tasks. The source code is publicly available at https://github.com/HackerHyper/GDCN.",
+        "arxiv_id": "2509.09527",
+        "ARXIVID": "2509.09527",
+        "COMMENT": "No specific criteria match",
         "RELEVANCE": 3,
         "NOVELTY": 5
     },
-    "2509.08826": {
+    "2509.09456": {
         "authors": [
-            "Jie Wu",
-            "Yu Gao",
-            "Zilyu Ye",
-            "Ming Li",
-            "Liang Li",
-            "Hanzhong Guo",
-            "Jie Liu",
-            "Zeyue Xue",
-            "Xiaoxia Hou",
-            "Wei Liu",
-            "Yan Zeng",
-            "Weilin Huang"
+            "Yushen Xu",
+            "Xiaosong Li",
+            "Yuchun Wang",
+            "Xiaoqi Cheng",
+            "Huafeng Li",
+            "Haishu Tan"
         ],
-        "title": "RewardDance: Reward Scaling in Visual Generation",
-        "abstract": "arXiv:2509.08826v1 Announce Type: new  Abstract: Reward Models (RMs) are critical for improving generation models via Reinforcement Learning (RL), yet the RM scaling paradigm in visual generation remains largely unexplored. It primarily due to fundamental limitations in existing approaches: CLIP-based RMs suffer from architectural and input modality constraints, while prevalent Bradley-Terry losses are fundamentally misaligned with the next-token prediction mechanism of Vision-Language Models (VLMs), hindering effective scaling. More critically, the RLHF optimization process is plagued by Reward Hacking issue, where models exploit flaws in the reward signal without improving true quality. To address these challenges, we introduce RewardDance, a scalable reward modeling framework that overcomes these barriers through a novel generative reward paradigm. By reformulating the reward score as the model's probability of predicting a \"yes\" token, indicating that the generated image outperforms a reference image according to specific criteria, RewardDance intrinsically aligns reward objectives with VLM architectures. This alignment unlocks scaling across two dimensions: (1) Model Scaling: Systematic scaling of RMs up to 26 billion parameters; (2) Context Scaling: Integration of task-specific instructions, reference examples, and chain-of-thought (CoT) reasoning. Extensive experiments demonstrate that RewardDance significantly surpasses state-of-the-art methods in text-to-image, text-to-video, and image-to-video generation. Crucially, we resolve the persistent challenge of \"reward hacking\": Our large-scale RMs exhibit and maintain high reward variance during RL fine-tuning, proving their resistance to hacking and ability to produce diverse, high-quality outputs. It greatly relieves the mode collapse problem that plagues smaller models.",
-        "arxiv_id": "2509.08826",
-        "ARXIVID": "2509.08826",
-        "COMMENT": "Does not match any specific criteria closely.",
+        "title": "FlexiD-Fuse: Flexible number of inputs multi-modal medical image fusion based on diffusion model",
+        "abstract": "arXiv:2509.09456v1 Announce Type: new  Abstract: Different modalities of medical images provide unique physiological and anatomical information for diseases. Multi-modal medical image fusion integrates useful information from different complementary medical images with different modalities, producing a fused image that comprehensively and objectively reflects lesion characteristics to assist doctors in clinical diagnosis. However, existing fusion methods can only handle a fixed number of modality inputs, such as accepting only two-modal or tri-modal inputs, and cannot directly process varying input quantities, which hinders their application in clinical settings. To tackle this issue, we introduce FlexiD-Fuse, a diffusion-based image fusion network designed to accommodate flexible quantities of input modalities. It can end-to-end process two-modal and tri-modal medical image fusion under the same weight. FlexiD-Fuse transforms the diffusion fusion problem, which supports only fixed-condition inputs, into a maximum likelihood estimation problem based on the diffusion process and hierarchical Bayesian modeling. By incorporating the Expectation-Maximization algorithm into the diffusion sampling iteration process, FlexiD-Fuse can generate high-quality fused images with cross-modal information from source images, independently of the number of input images. We compared the latest two and tri-modal medical image fusion methods, tested them on Harvard datasets, and evaluated them using nine popular metrics. The experimental results show that our method achieves the best performance in medical image fusion with varying inputs. Meanwhile, we conducted extensive extension experiments on infrared-visible, multi-exposure, and multi-focus image fusion tasks with arbitrary numbers, and compared them with the perspective SOTA methods. The results of the extension experiments consistently demonstrate the effectiveness and superiority of our method.",
+        "arxiv_id": "2509.09456",
+        "ARXIVID": "2509.09456",
+        "COMMENT": "No specific criteria match",
         "RELEVANCE": 3,
         "NOVELTY": 5
     },
-    "2509.08519": {
+    "2509.09547": {
         "authors": [
-            "Liyang Chen",
-            "Tianxiang Ma",
-            "Jiawei Liu",
-            "Bingchuan Li",
-            "Zhuowei Chen",
-            "Lijie Liu",
-            "Xu He",
-            "Gen Li",
-            "Qian He",
-            "Zhiyong Wu"
+            "Dohun Lee",
+            "Hyeonho Jeong",
+            "Jiwook Kim",
+            "Duygu Ceylan",
+            "Jong Chul Ye"
         ],
-        "title": "HuMo: Human-Centric Video Generation via Collaborative Multi-Modal Conditioning",
-        "abstract": "arXiv:2509.08519v1 Announce Type: new  Abstract: Human-Centric Video Generation (HCVG) methods seek to synthesize human videos from multimodal inputs, including text, image, and audio. Existing methods struggle to effectively coordinate these heterogeneous modalities due to two challenges: the scarcity of training data with paired triplet conditions and the difficulty of collaborating the sub-tasks of subject preservation and audio-visual sync with multimodal inputs. In this work, we present HuMo, a unified HCVG framework for collaborative multimodal control. For the first challenge, we construct a high-quality dataset with diverse and paired text, reference images, and audio. For the second challenge, we propose a two-stage progressive multimodal training paradigm with task-specific strategies. For the subject preservation task, to maintain the prompt following and visual generation abilities of the foundation model, we adopt the minimal-invasive image injection strategy. For the audio-visual sync task, besides the commonly adopted audio cross-attention layer, we propose a focus-by-predicting strategy that implicitly guides the model to associate audio with facial regions. For joint learning of controllabilities across multimodal inputs, building on previously acquired capabilities, we progressively incorporate the audio-visual sync task. During inference, for flexible and fine-grained multimodal control, we design a time-adaptive Classifier-Free Guidance strategy that dynamically adjusts guidance weights across denoising steps. Extensive experimental results demonstrate that HuMo surpasses specialized state-of-the-art methods in sub-tasks, establishing a unified framework for collaborative multimodal-conditioned HCVG. Project Page: https://phantom-video.github.io/HuMo.",
-        "arxiv_id": "2509.08519",
-        "ARXIVID": "2509.08519",
-        "COMMENT": "Does not match any specific criteria closely.",
+        "title": "Improving Video Diffusion Transformer Training by Multi-Feature Fusion and Alignment from Self-Supervised Vision Encoders",
+        "abstract": "arXiv:2509.09547v1 Announce Type: new  Abstract: Video diffusion models have advanced rapidly in the recent years as a result of series of architectural innovations (e.g., diffusion transformers) and use of novel training objectives (e.g., flow matching). In contrast, less attention has been paid to improving the feature representation power of such models. In this work, we show that training video diffusion models can benefit from aligning the intermediate features of the video generator with feature representations of pre-trained vision encoders. We propose a new metric and conduct an in-depth analysis of various vision encoders to evaluate their discriminability and temporal consistency, thereby assessing their suitability for video feature alignment. Based on the analysis, we present Align4Gen which provides a novel multi-feature fusion and alignment method integrated into video diffusion model training. We evaluate Align4Gen both for unconditional and class-conditional video generation tasks and show that it results in improved video generation as quantified by various metrics. Full video results are available on our project page: https://align4gen.github.io/align4gen/",
+        "arxiv_id": "2509.09547",
+        "ARXIVID": "2509.09547",
+        "COMMENT": "No specific criteria match",
         "RELEVANCE": 3,
         "NOVELTY": 5
     }
