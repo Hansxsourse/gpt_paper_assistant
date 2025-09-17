@@ -1,67 +1,49 @@
 {
-    "2509.10687": {
+    "2509.12710": {
         "authors": [
-            "Hao Zhang",
-            "Chun-Han Yao",
-            "Simon Donn\\'e",
-            "Narendra Ahuja",
-            "Varun Jampani"
+            "Siju Ma",
+            "Changsiyu Gong",
+            "Xiaofeng Fan",
+            "Yong Ma",
+            "Chengjie Jiang"
         ],
-        "title": "Stable Part Diffusion 4D: Multi-View RGB and Kinematic Parts Video Generation",
-        "abstract": "arXiv:2509.10687v1 Announce Type: new  Abstract: We present Stable Part Diffusion 4D (SP4D), a framework for generating paired RGB and kinematic part videos from monocular inputs. Unlike conventional part segmentation methods that rely on appearance-based semantic cues, SP4D learns to produce kinematic parts - structural components aligned with object articulation and consistent across views and time. SP4D adopts a dual-branch diffusion model that jointly synthesizes RGB frames and corresponding part segmentation maps. To simplify the architecture and flexibly enable different part counts, we introduce a spatial color encoding scheme that maps part masks to continuous RGB-like images. This encoding allows the segmentation branch to share the latent VAE from the RGB branch, while enabling part segmentation to be recovered via straightforward post-processing. A Bidirectional Diffusion Fusion (BiDiFuse) module enhances cross-branch consistency, supported by a contrastive part consistency loss to promote spatial and temporal alignment of part predictions. We demonstrate that the generated 2D part maps can be lifted to 3D to derive skeletal structures and harmonic skinning weights with few manual adjustments. To train and evaluate SP4D, we construct KinematicParts20K, a curated dataset of over 20K rigged objects selected and processed from Objaverse XL (Deitke et al., 2023), each paired with multi-view RGB and part video sequences. Experiments show that SP4D generalizes strongly to diverse scenarios, including real-world videos, novel generated objects, and rare articulated poses, producing kinematic-aware outputs suitable for downstream animation and motion-related tasks.",
-        "arxiv_id": "2509.10687",
-        "ARXIVID": "2509.10687",
-        "COMMENT": "Matches criterion 1 closely: joint generation and segmentation using a dual-branch diffusion model.",
-        "RELEVANCE": 10,
-        "NOVELTY": 7
-    },
-    "2509.10824": {
-        "authors": [
-            "Aghiles Kebaili",
-            "Romain Modzelewski",
-            "J\\'er\\^ome Lapuyade-Lahorgue",
-            "Maxime Fontanilles",
-            "S\\'ebastien Thureau",
-            "Su Ruan"
-        ],
-        "title": "Multi-Task Diffusion Approach For Prediction of Glioma Tumor Progression",
-        "abstract": "arXiv:2509.10824v1 Announce Type: new  Abstract: Glioma, an aggressive brain malignancy characterized by rapid progression and its poor prognosis, poses significant challenges for accurate evolution prediction. These challenges are exacerbated by sparse, irregularly acquired longitudinal MRI data in clinical practice, where incomplete follow-up sequences create data imbalances and make reliable modeling difficult. In this paper, we present a multitask diffusion framework for time-agnostic, pixel-wise prediction of glioma progression. The model simultaneously generates future FLAIR sequences at any chosen time point and estimates spatial probabilistic tumor evolution maps derived using signed distance fields (SDFs), allowing uncertainty quantification. To capture temporal dynamics of tumor evolution across arbitrary intervals, we integrate a pretrained deformation module that models inter-scan changes using deformation fields. Regarding the common clinical limitation of data scarcity, we implement a targeted augmentation pipeline that synthesizes complete sequences of three follow-up scans and imputes missing MRI modalities from available patient studies, improving the stability and accuracy of predictive models. Based on merely two follow-up scans at earlier timepoints, our framework produces flexible time-depending probability maps, enabling clinicians to interrogate tumor progression risks at any future temporal milestone. We further introduce a radiotherapy-weighted focal loss term that leverages radiation dose maps, as these highlight regions of greater clinical importance during model training. The proposed method was trained on a public dataset and evaluated on an internal private dataset, achieving promising results in both cases",
-        "arxiv_id": "2509.10824",
-        "ARXIVID": "2509.10824",
-        "COMMENT": "Matches criterion 2 closely: multi-task diffusion framework for prediction and segmentation.",
-        "RELEVANCE": 9,
+        "title": "RIS-FUSION: Rethinking Text-Driven Infrared and Visible Image Fusion from the Perspective of Referring Image Segmentation",
+        "abstract": "arXiv:2509.12710v1 Announce Type: new  Abstract: Text-driven infrared and visible image fusion has gained attention for enabling natural language to guide the fusion process. However, existing methods lack a goal-aligned task to supervise and evaluate how effectively the input text contributes to the fusion outcome. We observe that referring image segmentation (RIS) and text-driven fusion share a common objective: highlighting the object referred to by the text. Motivated by this, we propose RIS-FUSION, a cascaded framework that unifies fusion and RIS through joint optimization. At its core is the LangGatedFusion module, which injects textual features into the fusion backbone to enhance semantic alignment. To support multimodal referring image segmentation task, we introduce MM-RIS, a large-scale benchmark with 12.5k training and 3.5k testing triplets, each consisting of an infrared-visible image pair, a segmentation mask, and a referring expression. Extensive experiments show that RIS-FUSION achieves state-of-the-art performance, outperforming existing methods by over 11% in mIoU. Code and dataset will be released at https://github.com/SijuMa2003/RIS-FUSION.",
+        "arxiv_id": "2509.12710",
+        "ARXIVID": "2509.12710",
+        "COMMENT": "1",
+        "RELEVANCE": 5,
         "NOVELTY": 6
     },
-    "2509.11102": {
+    "2509.12888": {
         "authors": [
-            "Nhi Kieu",
-            "Kien Nguyen",
-            "Arnold Wiliem",
-            "Clinton Fookes",
-            "Sridha Sridharan"
+            "Weiming Chen",
+            "Zhihan Zhu",
+            "Yijia Wang",
+            "Zhihai He"
         ],
-        "title": "Filling the Gaps: A Multitask Hybrid Multiscale Generative Framework for Missing Modality in Remote Sensing Semantic Segmentation",
-        "abstract": "arXiv:2509.11102v1 Announce Type: new  Abstract: Multimodal learning has shown significant performance boost compared to ordinary unimodal models across various domains. However, in real-world scenarios, multimodal signals are susceptible to missing because of sensor failures and adverse weather conditions, which drastically deteriorates models' operation and performance. Generative models such as AutoEncoder (AE) and Generative Adversarial Network (GAN) are intuitive solutions aiming to reconstruct missing modality from available ones. Yet, their efficacy in remote sensing semantic segmentation remains underexplored. In this paper, we first examine the limitations of existing generative approaches in handling the heterogeneity of multimodal remote sensing data. They inadequately capture semantic context in complex scenes with large intra-class and small inter-class variation. In addition, traditional generative models are susceptible to heavy dependence on the dominant modality, introducing bias that affects model robustness under missing modality conditions. To tackle these limitations, we propose a novel Generative-Enhanced MultiModal learning Network (GEMMNet) with three key components: (1) Hybrid Feature Extractor (HyFEx) to effectively learn modality-specific representations, (2) Hybrid Fusion with Multiscale Awareness (HyFMA) to capture modality-synergistic semantic context across scales and (3) Complementary Loss (CoLoss) scheme to alleviate the inherent bias by encouraging consistency across modalities and tasks. Our method, GEMMNet, outperforms both generative baselines AE, cGAN (conditional GAN), and state-of-the-art non-generative approaches - mmformer and shaspec - on two challenging semantic segmentation remote sensing datasets (Vaihingen and Potsdam). Source code is made available.",
-        "arxiv_id": "2509.11102",
-        "ARXIVID": "2509.11102",
-        "COMMENT": "No criteria match closely.",
+        "title": "Runge-Kutta Approximation and Decoupled Attention for Rectified Flow Inversion and Semantic Editing",
+        "abstract": "arXiv:2509.12888v1 Announce Type: new  Abstract: Rectified flow (RF) models have recently demonstrated superior generative performance compared to DDIM-based diffusion models. However, in real-world applications, they suffer from two major challenges: (1) low inversion accuracy that hinders the consistency with the source image, and (2) entangled multimodal attention in diffusion transformers, which hinders precise attention control. To address the first challenge, we propose an efficient high-order inversion method for rectified flow models based on the Runge-Kutta solver of differential equations. To tackle the second challenge, we introduce Decoupled Diffusion Transformer Attention (DDTA), a novel mechanism that disentangles text and image attention inside the multimodal diffusion transformers, enabling more precise semantic control. Extensive experiments on image reconstruction and text-guided editing tasks demonstrate that our method achieves state-of-the-art performance in terms of fidelity and editability. Code is available at https://github.com/wmchen/RKSovler_DDTA.",
+        "arxiv_id": "2509.12888",
+        "ARXIVID": "2509.12888",
+        "COMMENT": "",
         "RELEVANCE": 3,
         "NOVELTY": 5
     },
-    "2509.11093": {
+    "2509.12878": {
         "authors": [
-            "Ruiying Li",
-            "Bin Pan",
-            "Qiaoying Qu",
-            "Xia Xu",
-            "Zhenwei Shi"
+            "Qianguang Zhao",
+            "Dongli Wang",
+            "Yan Zhou",
+            "Jianxun Li",
+            "Richard Irampa"
         ],
-        "title": "SMILE: A Super-resolution Guided Multi-task Learning Method for Hyperspectral Unmixing",
-        "abstract": "arXiv:2509.11093v1 Announce Type: new  Abstract: The performance of hyperspectral unmixing may be constrained by low spatial resolution, which can be enhanced using super-resolution in a multitask learning way. However, integrating super-resolution and unmixing directly may suffer two challenges: Task affinity is not verified, and the convergence of unmixing is not guaranteed. To address the above issues, in this paper, we provide theoretical analysis and propose super-resolution guided multi-task learning method for hyperspectral unmixing (SMILE). The provided theoretical analysis validates feasibility of multitask learning way and verifies task affinity, which consists of relationship and existence theorems by proving the positive guidance of super-resolution. The proposed framework generalizes positive information from super-resolution to unmixing by learning both shared and specific representations. Moreover, to guarantee the convergence, we provide the accessibility theorem by proving the optimal solution of unmixing. The major contributions of SMILE include providing progressive theoretical support, and designing a new framework for unmixing under the guidance of super-resolution. Our experiments on both synthetic and real datasets have substantiate the usefulness of our work.",
-        "arxiv_id": "2509.11093",
-        "ARXIVID": "2509.11093",
-        "COMMENT": "No criteria match closely.",
+        "title": "Few to Big: Prototype Expansion Network via Diffusion Learner for Point Cloud Few-shot Semantic Segmentation",
+        "abstract": "arXiv:2509.12878v1 Announce Type: new  Abstract: Few-shot 3D point cloud semantic segmentation aims to segment novel categories using a minimal number of annotated support samples. While existing prototype-based methods have shown promise, they are constrained by two critical challenges: (1) Intra-class Diversity, where a prototype's limited representational capacity fails to cover a class's full variations, and (2) Inter-set Inconsistency, where prototypes derived from the support set are misaligned with the query feature space. Motivated by the powerful generative capability of diffusion model, we re-purpose its pre-trained conditional encoder to provide a novel source of generalizable features for expanding the prototype's representational range. Under this setup, we introduce the Prototype Expansion Network (PENet), a framework that constructs big-capacity prototypes from two complementary feature sources. PENet employs a dual-stream learner architecture: it retains a conventional fully supervised Intrinsic Learner (IL) to distill representative features, while introducing a novel Diffusion Learner (DL) to provide rich generalizable features. The resulting dual prototypes are then processed by a Prototype Assimilation Module (PAM), which adopts a novel push-pull cross-guidance attention block to iteratively align the prototypes with the query space. Furthermore, a Prototype Calibration Mechanism (PCM) regularizes the final big capacity prototype to prevent semantic drift. Extensive experiments on the S3DIS and ScanNet datasets demonstrate that PENet significantly outperforms state-of-the-art methods across various few-shot settings.",
+        "arxiv_id": "2509.12878",
+        "ARXIVID": "2509.12878",
+        "COMMENT": "",
         "RELEVANCE": 3,
-        "NOVELTY": 4
+        "NOVELTY": 5
     }
 }
