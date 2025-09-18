@@ -1,49 +1,16 @@
 {
-    "2509.12710": {
+    "2509.13936": {
         "authors": [
-            "Siju Ma",
-            "Changsiyu Gong",
-            "Xiaofeng Fan",
-            "Yong Ma",
-            "Chengjie Jiang"
+            "Harvey Mannering",
+            "Zhiwu Huang",
+            "Adam Prugel-Bennett"
         ],
-        "title": "RIS-FUSION: Rethinking Text-Driven Infrared and Visible Image Fusion from the Perspective of Referring Image Segmentation",
-        "abstract": "arXiv:2509.12710v1 Announce Type: new  Abstract: Text-driven infrared and visible image fusion has gained attention for enabling natural language to guide the fusion process. However, existing methods lack a goal-aligned task to supervise and evaluate how effectively the input text contributes to the fusion outcome. We observe that referring image segmentation (RIS) and text-driven fusion share a common objective: highlighting the object referred to by the text. Motivated by this, we propose RIS-FUSION, a cascaded framework that unifies fusion and RIS through joint optimization. At its core is the LangGatedFusion module, which injects textual features into the fusion backbone to enhance semantic alignment. To support multimodal referring image segmentation task, we introduce MM-RIS, a large-scale benchmark with 12.5k training and 3.5k testing triplets, each consisting of an infrared-visible image pair, a segmentation mask, and a referring expression. Extensive experiments show that RIS-FUSION achieves state-of-the-art performance, outperforming existing methods by over 11% in mIoU. Code and dataset will be released at https://github.com/SijuMa2003/RIS-FUSION.",
-        "arxiv_id": "2509.12710",
-        "ARXIVID": "2509.12710",
-        "COMMENT": "1",
+        "title": "Noise-Level Diffusion Guidance: Well Begun is Half Done",
+        "abstract": "arXiv:2509.13936v1 Announce Type: new  Abstract: Diffusion models have achieved state-of-the-art image generation. However, the random Gaussian noise used to start the diffusion process influences the final output, causing variations in image quality and prompt adherence. Existing noise-level optimization approaches generally rely on extra dataset construction, additional networks, or backpropagation-based optimization, limiting their practicality. In this paper, we propose Noise Level Guidance (NLG), a simple, efficient, and general noise-level optimization approach that refines initial noise by increasing the likelihood of its alignment with general guidance - requiring no additional training data, auxiliary networks, or backpropagation. The proposed NLG approach provides a unified framework generalizable to both conditional and unconditional diffusion models, accommodating various forms of diffusion-level guidance. Extensive experiments on five standard benchmarks demonstrate that our approach enhances output generation quality and input condition adherence. By seamlessly integrating with existing guidance methods while maintaining computational efficiency, our method establishes NLG as a practical and scalable enhancement to diffusion models. Code can be found at https://github.com/harveymannering/NoiseLevelGuidance.",
+        "arxiv_id": "2509.13936",
+        "ARXIVID": "2509.13936",
+        "COMMENT": "The paper proposes a unified framework for noise-level optimization in diffusion models, which aligns with the second criterion of unified diffusion models handling multiple vision tasks.",
         "RELEVANCE": 5,
         "NOVELTY": 6
-    },
-    "2509.12888": {
-        "authors": [
-            "Weiming Chen",
-            "Zhihan Zhu",
-            "Yijia Wang",
-            "Zhihai He"
-        ],
-        "title": "Runge-Kutta Approximation and Decoupled Attention for Rectified Flow Inversion and Semantic Editing",
-        "abstract": "arXiv:2509.12888v1 Announce Type: new  Abstract: Rectified flow (RF) models have recently demonstrated superior generative performance compared to DDIM-based diffusion models. However, in real-world applications, they suffer from two major challenges: (1) low inversion accuracy that hinders the consistency with the source image, and (2) entangled multimodal attention in diffusion transformers, which hinders precise attention control. To address the first challenge, we propose an efficient high-order inversion method for rectified flow models based on the Runge-Kutta solver of differential equations. To tackle the second challenge, we introduce Decoupled Diffusion Transformer Attention (DDTA), a novel mechanism that disentangles text and image attention inside the multimodal diffusion transformers, enabling more precise semantic control. Extensive experiments on image reconstruction and text-guided editing tasks demonstrate that our method achieves state-of-the-art performance in terms of fidelity and editability. Code is available at https://github.com/wmchen/RKSovler_DDTA.",
-        "arxiv_id": "2509.12888",
-        "ARXIVID": "2509.12888",
-        "COMMENT": "",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2509.12878": {
-        "authors": [
-            "Qianguang Zhao",
-            "Dongli Wang",
-            "Yan Zhou",
-            "Jianxun Li",
-            "Richard Irampa"
-        ],
-        "title": "Few to Big: Prototype Expansion Network via Diffusion Learner for Point Cloud Few-shot Semantic Segmentation",
-        "abstract": "arXiv:2509.12878v1 Announce Type: new  Abstract: Few-shot 3D point cloud semantic segmentation aims to segment novel categories using a minimal number of annotated support samples. While existing prototype-based methods have shown promise, they are constrained by two critical challenges: (1) Intra-class Diversity, where a prototype's limited representational capacity fails to cover a class's full variations, and (2) Inter-set Inconsistency, where prototypes derived from the support set are misaligned with the query feature space. Motivated by the powerful generative capability of diffusion model, we re-purpose its pre-trained conditional encoder to provide a novel source of generalizable features for expanding the prototype's representational range. Under this setup, we introduce the Prototype Expansion Network (PENet), a framework that constructs big-capacity prototypes from two complementary feature sources. PENet employs a dual-stream learner architecture: it retains a conventional fully supervised Intrinsic Learner (IL) to distill representative features, while introducing a novel Diffusion Learner (DL) to provide rich generalizable features. The resulting dual prototypes are then processed by a Prototype Assimilation Module (PAM), which adopts a novel push-pull cross-guidance attention block to iteratively align the prototypes with the query space. Furthermore, a Prototype Calibration Mechanism (PCM) regularizes the final big capacity prototype to prevent semantic drift. Extensive experiments on the S3DIS and ScanNet datasets demonstrate that PENet significantly outperforms state-of-the-art methods across various few-shot settings.",
-        "arxiv_id": "2509.12878",
-        "ARXIVID": "2509.12878",
-        "COMMENT": "",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
     }
 }
