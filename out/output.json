@@ -1,16 +1,73 @@
 {
-    "2509.13936": {
+    "2509.14476": {
         "authors": [
-            "Harvey Mannering",
-            "Zhiwu Huang",
-            "Adam Prugel-Bennett"
+            "Jiasen Lu",
+            "Liangchen Song",
+            "Mingze Xu",
+            "Byeongjoo Ahn",
+            "Yanjun Wang",
+            "Chen Chen",
+            "Afshin Dehghan",
+            "Yinfei Yang"
         ],
-        "title": "Noise-Level Diffusion Guidance: Well Begun is Half Done",
-        "abstract": "arXiv:2509.13936v1 Announce Type: new  Abstract: Diffusion models have achieved state-of-the-art image generation. However, the random Gaussian noise used to start the diffusion process influences the final output, causing variations in image quality and prompt adherence. Existing noise-level optimization approaches generally rely on extra dataset construction, additional networks, or backpropagation-based optimization, limiting their practicality. In this paper, we propose Noise Level Guidance (NLG), a simple, efficient, and general noise-level optimization approach that refines initial noise by increasing the likelihood of its alignment with general guidance - requiring no additional training data, auxiliary networks, or backpropagation. The proposed NLG approach provides a unified framework generalizable to both conditional and unconditional diffusion models, accommodating various forms of diffusion-level guidance. Extensive experiments on five standard benchmarks demonstrate that our approach enhances output generation quality and input condition adherence. By seamlessly integrating with existing guidance methods while maintaining computational efficiency, our method establishes NLG as a practical and scalable enhancement to diffusion models. Code can be found at https://github.com/harveymannering/NoiseLevelGuidance.",
-        "arxiv_id": "2509.13936",
-        "ARXIVID": "2509.13936",
-        "COMMENT": "The paper proposes a unified framework for noise-level optimization in diffusion models, which aligns with the second criterion of unified diffusion models handling multiple vision tasks.",
-        "RELEVANCE": 5,
+        "title": "AToken: A Unified Tokenizer for Vision",
+        "abstract": "arXiv:2509.14476v1 Announce Type: new  Abstract: We present AToken, the first unified visual tokenizer that achieves both high-fidelity reconstruction and semantic understanding across images, videos, and 3D assets. Unlike existing tokenizers that specialize in either reconstruction or understanding for single modalities, AToken encodes these diverse visual inputs into a shared 4D latent space, unifying both tasks and modalities in a single framework. Specifically, we introduce a pure transformer architecture with 4D rotary position embeddings to process visual inputs of arbitrary resolutions and temporal durations. To ensure stable training, we introduce an adversarial-free training objective that combines perceptual and Gram matrix losses, achieving state-of-the-art reconstruction quality. By employing a progressive training curriculum, AToken gradually expands from single images, videos, and 3D, and supports both continuous and discrete latent tokens. AToken achieves 0.21 rFID with 82.2% ImageNet accuracy for images, 3.01 rFVD with 32.6% MSRVTT retrieval for videos, and 28.19 PSNR with 90.9% classification accuracy for 3D. In downstream applications, AToken enables both visual generation tasks (e.g., image generation with continuous and discrete tokens, text-to-video generation, image-to-3D synthesis) and understanding tasks (e.g., multimodal LLMs), achieving competitive performance across all benchmarks. These results shed light on the next-generation multimodal AI systems built upon unified visual tokenization.",
+        "arxiv_id": "2509.14476",
+        "ARXIVID": "2509.14476",
+        "COMMENT": "The paper presents a unified tokenizer for vision tasks across images, videos, and 3D assets, but it does not address joint generation and segmentation or multi-task diffusion models.",
+        "RELEVANCE": 3,
+        "NOVELTY": 7
+    },
+    "2509.15220": {
+        "authors": [
+            "Fangjinhua Wang",
+            "Qingshan Xu",
+            "Yew-Soon Ong",
+            "Marc Pollefeys"
+        ],
+        "title": "Lightweight and Accurate Multi-View Stereo with Confidence-Aware Diffusion Model",
+        "abstract": "arXiv:2509.15220v1 Announce Type: new  Abstract: To reconstruct the 3D geometry from calibrated images, learning-based multi-view stereo (MVS) methods typically perform multi-view depth estimation and then fuse depth maps into a mesh or point cloud. To improve the computational efficiency, many methods initialize a coarse depth map and then gradually refine it in higher resolutions. Recently, diffusion models achieve great success in generation tasks. Starting from a random noise, diffusion models gradually recover the sample with an iterative denoising process. In this paper, we propose a novel MVS framework, which introduces diffusion models in MVS. Specifically, we formulate depth refinement as a conditional diffusion process. Considering the discriminative characteristic of depth estimation, we design a condition encoder to guide the diffusion process. To improve efficiency, we propose a novel diffusion network combining lightweight 2D U-Net and convolutional GRU. Moreover, we propose a novel confidence-based sampling strategy to adaptively sample depth hypotheses based on the confidence estimated by diffusion model. Based on our novel MVS framework, we propose two novel MVS methods, DiffMVS and CasDiffMVS. DiffMVS achieves competitive performance with state-of-the-art efficiency in run-time and GPU memory. CasDiffMVS achieves state-of-the-art performance on DTU, Tanks & Temples and ETH3D. Code is available at: https://github.com/cvg/diffmvs.",
+        "arxiv_id": "2509.15220",
+        "ARXIVID": "2509.15220",
+        "COMMENT": "The paper introduces a novel MVS framework using diffusion models for depth refinement, but it does not address unified image/video generation and segmentation or multi-task diffusion models.",
+        "RELEVANCE": 3,
         "NOVELTY": 6
+    },
+    "2509.14638": {
+        "authors": [
+            "Mingsong Li",
+            "Lin Liu",
+            "Hongjun Wang",
+            "Haoxing Chen",
+            "Xijun Gu",
+            "Shizhan Liu",
+            "Dong Gong",
+            "Junbo Zhao",
+            "Zhenzhong Lan",
+            "Jianguo Li"
+        ],
+        "title": "MultiEdit: Advancing Instruction-based Image Editing on Diverse and Challenging Tasks",
+        "abstract": "arXiv:2509.14638v1 Announce Type: new  Abstract: Current instruction-based image editing (IBIE) methods struggle with challenging editing tasks, as both editing types and sample counts of existing datasets are limited. Moreover, traditional dataset construction often contains noisy image-caption pairs, which may introduce biases and limit model capabilities in complex editing scenarios. To address these limitations, we introduce MultiEdit, a comprehensive dataset featuring over 107K high-quality image editing samples. It encompasses 6 challenging editing tasks through a diverse collection of 18 non-style-transfer editing types and 38 style transfer operations, covering a spectrum from sophisticated style transfer to complex semantic operations like person reference editing and in-image text editing. We employ a novel dataset construction pipeline that utilizes two multi-modal large language models (MLLMs) to generate visual-adaptive editing instructions and produce high-fidelity edited images, respectively. Extensive experiments demonstrate that fine-tuning foundational open-source models with our MultiEdit-Train set substantially improves models' performance on sophisticated editing tasks in our proposed MultiEdit-Test benchmark, while effectively preserving their capabilities on the standard editing benchmark. We believe MultiEdit provides a valuable resource for advancing research into more diverse and challenging IBIE capabilities. Our dataset is available at https://huggingface.co/datasets/inclusionAI/MultiEdit.",
+        "arxiv_id": "2509.14638",
+        "ARXIVID": "2509.14638",
+        "COMMENT": "The paper introduces a dataset for instruction-based image editing, but it does not propose a unified framework for generation and segmentation or multi-task diffusion models.",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2509.14780": {
+        "authors": [
+            "Sina Amirrajab",
+            "Zohaib Salahuddin",
+            "Sheng Kuang",
+            "Henry C. Woodruff",
+            "Philippe Lambin"
+        ],
+        "title": "Radiology Report Conditional 3D CT Generation with Multi Encoder Latent diffusion Model",
+        "abstract": "arXiv:2509.14780v1 Announce Type: new  Abstract: Text to image latent diffusion models have recently advanced medical image synthesis, but applications to 3D CT generation remain limited. Existing approaches rely on simplified prompts, neglecting the rich semantic detail in full radiology reports, which reduces text image alignment and clinical fidelity. We propose Report2CT, a radiology report conditional latent diffusion framework for synthesizing 3D chest CT volumes directly from free text radiology reports, incorporating both findings and impression sections using multiple text encoder. Report2CT integrates three pretrained medical text encoders (BiomedVLP CXR BERT, MedEmbed, and ClinicalBERT) to capture nuanced clinical context. Radiology reports and voxel spacing information condition a 3D latent diffusion model trained on 20000 CT volumes from the CT RATE dataset. Model performance was evaluated using Frechet Inception Distance (FID) for real synthetic distributional similarity and CLIP based metrics for semantic alignment, with additional qualitative and quantitative comparisons against GenerateCT model. Report2CT generated anatomically consistent CT volumes with excellent visual quality and text image alignment. Multi encoder conditioning improved CLIP scores, indicating stronger preservation of fine grained clinical details in the free text radiology reports. Classifier free guidance further enhanced alignment with only a minor trade off in FID. We ranked first in the VLM3D Challenge at MICCAI 2025 on Text Conditional CT Generation and achieved state of the art performance across all evaluation metrics. By leveraging complete radiology reports and multi encoder text conditioning, Report2CT advances 3D CT synthesis, producing clinically faithful and high quality synthetic data.",
+        "arxiv_id": "2509.14780",
+        "ARXIVID": "2509.14780",
+        "COMMENT": "The paper focuses on 3D CT generation from radiology reports using a latent diffusion model, but it does not propose a multi-task diffusion model for vision tasks.",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
     }
 }
