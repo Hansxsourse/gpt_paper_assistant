@@ -1,223 +1,79 @@
 {
-    "2509.16483": {
+    "2509.19296": {
         "authors": [
-            "Xujia Zhang",
-            "Brendan Crowe",
-            "Christoffer Heckman"
+            "Sherwin Bahmani",
+            "Tianchang Shen",
+            "Jiawei Ren",
+            "Jiahui Huang",
+            "Yifeng Jiang",
+            "Haithem Turki",
+            "Andrea Tagliasacchi",
+            "David B. Lindell",
+            "Zan Gojcic",
+            "Sanja Fidler",
+            "Huan Ling",
+            "Jun Gao",
+            "Xuanchi Ren"
         ],
-        "title": "Octree Latent Diffusion for Semantic 3D Scene Generation and Completion",
-        "abstract": "arXiv:2509.16483v1 Announce Type: new  Abstract: The completion, extension, and generation of 3D semantic scenes are an interrelated set of capabilities that are useful for robotic navigation and exploration. Existing approaches seek to decouple these problems and solve them oneoff. Additionally, these approaches are often domain-specific, requiring separate models for different data distributions, e.g. indoor vs. outdoor scenes. To unify these techniques and provide cross-domain compatibility, we develop a single framework that can perform scene completion, extension, and generation in both indoor and outdoor scenes, which we term Octree Latent Semantic Diffusion. Our approach operates directly on an efficient dual octree graph latent representation: a hierarchical, sparse, and memory-efficient occupancy structure. This technique disentangles synthesis into two stages: (i) structure diffusion, which predicts binary split signals to construct a coarse occupancy octree, and (ii) latent semantic diffusion, which generates semantic embeddings decoded by a graph VAE into voxellevel semantic labels. To perform semantic scene completion or extension, our model leverages inference-time latent inpainting, or outpainting respectively. These inference-time methods use partial LiDAR scans or maps to condition generation, without the need for retraining or finetuning. We demonstrate highquality structure, coherent semantics, and robust completion from single LiDAR scans, as well as zero-shot generalization to out-of-distribution LiDAR data. These results indicate that completion-through-generation in a dual octree graph latent space is a practical and scalable alternative to regression-based pipelines for real-world robotic perception tasks.",
-        "arxiv_id": "2509.16483",
-        "ARXIVID": "2509.16483",
-        "COMMENT": "Matches criterion 2: Unified Diffusion Models",
-        "RELEVANCE": 5,
-        "NOVELTY": 7
-    },
-    "2509.18094": {
-        "authors": [
-            "Ye Liu",
-            "Zongyang Ma",
-            "Junfu Pu",
-            "Zhongang Qi",
-            "Yang Wu",
-            "Ying Shan",
-            "Chang Wen Chen"
-        ],
-        "title": "UniPixel: Unified Object Referring and Segmentation for Pixel-Level Visual Reasoning",
-        "abstract": "arXiv:2509.18094v1 Announce Type: new  Abstract: Recent advances in Large Multi-modal Models (LMMs) have demonstrated their remarkable success as general-purpose multi-modal assistants, with particular focuses on holistic image- and video-language understanding. Conversely, less attention has been given to scaling fine-grained pixel-level understanding capabilities, where the models are expected to realize pixel-level alignment between visual signals and language semantics. Some previous studies have applied LMMs to related tasks such as region-level captioning and referring expression segmentation. However, these models are limited to performing either referring or segmentation tasks independently and fail to integrate these fine-grained perception capabilities into visual reasoning. To bridge this gap, we propose UniPixel, a large multi-modal model capable of flexibly comprehending visual prompt inputs and generating mask-grounded responses. Our model distinguishes itself by seamlessly integrating pixel-level perception with general visual understanding capabilities. Specifically, UniPixel processes visual prompts and generates relevant masks on demand, and performs subsequent reasoning conditioning on these intermediate pointers during inference, thereby enabling fine-grained pixel-level reasoning. The effectiveness of our approach has been verified on 10 benchmarks across a diverse set of tasks, including pixel-level referring/segmentation and object-centric understanding in images/videos. A novel PixelQA task that jointly requires referring, segmentation, and question answering is also designed to verify the flexibility of our method.",
-        "arxiv_id": "2509.18094",
-        "ARXIVID": "2509.18094",
-        "COMMENT": "Matches criterion 1: Proposes a unified model for object referring and segmentation.",
-        "RELEVANCE": 5,
-        "NOVELTY": 6
-    },
-    "2509.17847": {
-        "authors": [
-            "Saghir Alfasly",
-            "Wataru Uegami",
-            "MD Enamul Hoq",
-            "Ghazal Alabtah",
-            "H. R. Tizhoosh"
-        ],
-        "title": "Semantic and Visual Crop-Guided Diffusion Models for Heterogeneous Tissue Synthesis in Histopathology",
-        "abstract": "arXiv:2509.17847v1 Announce Type: new  Abstract: Synthetic data generation in histopathology faces unique challenges: preserving tissue heterogeneity, capturing subtle morphological features, and scaling to unannotated datasets. We present a latent diffusion model that generates realistic heterogeneous histopathology images through a novel dual-conditioning approach combining semantic segmentation maps with tissue-specific visual crops. Unlike existing methods that rely on text prompts or abstract visual embeddings, our approach preserves critical morphological details by directly incorporating raw tissue crops from corresponding semantic regions. For annotated datasets (i.e., Camelyon16, Panda), we extract patches ensuring 20-80% tissue heterogeneity. For unannotated data (i.e., TCGA), we introduce a self-supervised extension that clusters whole-slide images into 100 tissue types using foundation model embeddings, automatically generating pseudo-semantic maps for training. Our method synthesizes high-fidelity images with precise region-wise annotations, achieving superior performance on downstream segmentation tasks. When evaluated on annotated datasets, models trained on our synthetic data show competitive performance to those trained on real data, demonstrating the utility of controlled heterogeneous tissue generation. In quantitative evaluation, prompt-guided synthesis reduces Frechet Distance by up to 6X on Camelyon16 (from 430.1 to 72.0) and yields 2-3x lower FD across Panda and TCGA. Downstream DeepLabv3+ models trained solely on synthetic data attain test IoU of 0.71 and 0.95 on Camelyon16 and Panda, within 1-2% of real-data baselines (0.72 and 0.96). By scaling to 11,765 TCGA whole-slide images without manual annotations, our framework offers a practical solution for an urgent need for generating diverse, annotated histopathology data, addressing a critical bottleneck in computational pathology.",
-        "arxiv_id": "2509.17847",
-        "ARXIVID": "2509.17847",
-        "COMMENT": "Matches criterion 1: Unified Image/Video Generation and Segmentation",
-        "RELEVANCE": 5,
-        "NOVELTY": 6
-    },
-    "2509.17187": {
-        "authors": [
-            "Lalith Bharadwaj Baru",
-            "Kamalaker Dadi",
-            "Tapabrata Chakraborti",
-            "Raju S. Bapi"
-        ],
-        "title": "Ambiguous Medical Image Segmentation Using Diffusion Schr\\\"{o}dinger Bridge",
-        "abstract": "arXiv:2509.17187v1 Announce Type: new  Abstract: Accurate segmentation of medical images is challenging due to unclear lesion boundaries and mask variability. We introduce \\emph{Segmentation Sch\\\"{o}dinger Bridge (SSB)}, the first application of Sch\\\"{o}dinger Bridge for ambiguous medical image segmentation, modelling joint image-mask dynamics to enhance performance. SSB preserves structural integrity, delineates unclear boundaries without additional guidance, and maintains diversity using a novel loss function. We further propose the \\emph{Diversity Divergence Index} ($D_{DDI}$) to quantify inter-rater variability, capturing both diversity and consensus. SSB achieves state-of-the-art performance on LIDC-IDRI, COCA, and RACER (in-house) datasets.",
-        "arxiv_id": "2509.17187",
-        "ARXIVID": "2509.17187",
-        "COMMENT": "No criteria match closely.",
+        "title": "Lyra: Generative 3D Scene Reconstruction via Video Diffusion Model Self-Distillation",
+        "abstract": "arXiv:2509.19296v1 Announce Type: new  Abstract: The ability to generate virtual environments is crucial for applications ranging from gaming to physical AI domains such as robotics, autonomous driving, and industrial AI. Current learning-based 3D reconstruction methods rely on the availability of captured real-world multi-view data, which is not always readily available. Recent advancements in video diffusion models have shown remarkable imagination capabilities, yet their 2D nature limits the applications to simulation where a robot needs to navigate and interact with the environment. In this paper, we propose a self-distillation framework that aims to distill the implicit 3D knowledge in the video diffusion models into an explicit 3D Gaussian Splatting (3DGS) representation, eliminating the need for multi-view training data. Specifically, we augment the typical RGB decoder with a 3DGS decoder, which is supervised by the output of the RGB decoder. In this approach, the 3DGS decoder can be purely trained with synthetic data generated by video diffusion models. At inference time, our model can synthesize 3D scenes from either a text prompt or a single image for real-time rendering. Our framework further extends to dynamic 3D scene generation from a monocular input video. Experimental results show that our framework achieves state-of-the-art performance in static and dynamic 3D scene generation.",
+        "arxiv_id": "2509.19296",
+        "ARXIVID": "2509.19296",
+        "COMMENT": "The paper does not match any specific criteria closely.",
         "RELEVANCE": 3,
         "NOVELTY": 6
     },
-    "2509.16727": {
+    "2509.18824": {
         "authors": [
-            "Xin Lei Lin",
-            "Soroush Mehraban",
-            "Abhishek Moturu",
-            "Babak Taati"
+            "Yanzuo Lu",
+            "Xin Xia",
+            "Manlin Zhang",
+            "Huafeng Kuang",
+            "Jianbin Zheng",
+            "Yuxi Ren",
+            "Xuefeng Xiao"
         ],
-        "title": "Pain in 3D: Generating Controllable Synthetic Faces for Automated Pain Assessment",
-        "abstract": "arXiv:2509.16727v1 Announce Type: new  Abstract: Automated pain assessment from facial expressions is crucial for non-communicative patients, such as those with dementia. Progress has been limited by two challenges: (i) existing datasets exhibit severe demographic and label imbalance due to ethical constraints, and (ii) current generative models cannot precisely control facial action units (AUs), facial structure, or clinically validated pain levels.   We present 3DPain, a large-scale synthetic dataset specifically designed for automated pain assessment, featuring unprecedented annotation richness and demographic diversity. Our three-stage framework generates diverse 3D meshes, textures them with diffusion models, and applies AU-driven face rigging to synthesize multi-view faces with paired neutral and pain images, AU configurations, PSPI scores, and the first dataset-level annotations of pain-region heatmaps. The dataset comprises 82,500 samples across 25,000 pain expression heatmaps and 2,500 synthetic identities balanced by age, gender, and ethnicity.   We further introduce ViTPain, a Vision Transformer based cross-modal distillation framework in which a heatmap-trained teacher guides a student trained on RGB images, enhancing accuracy, interpretability, and clinical reliability. Together, 3DPain and ViTPain establish a controllable, diverse, and clinically grounded foundation for generalizable automated pain assessment.",
-        "arxiv_id": "2509.16727",
-        "ARXIVID": "2509.16727",
-        "COMMENT": "",
+        "title": "Hyper-Bagel: A Unified Acceleration Framework for Multimodal Understanding and Generation",
+        "abstract": "arXiv:2509.18824v1 Announce Type: new  Abstract: Unified multimodal models have recently attracted considerable attention for their remarkable abilities in jointly understanding and generating diverse content. However, as contexts integrate increasingly numerous interleaved multimodal tokens, the iterative processes of diffusion denoising and autoregressive decoding impose significant computational overhead. To address this, we propose Hyper-Bagel, a unified acceleration framework designed to simultaneously speed up both multimodal understanding and generation tasks. Our approach uses a divide-and-conquer strategy, employing speculative decoding for next-token prediction and a multi-stage distillation process for diffusion denoising. The framework delivers substantial performance gains, achieving over a 2x speedup in multimodal understanding. For generative tasks, our resulting lossless 6-NFE model yields a 16.67x speedup in text-to-image generation and a 22x speedup in image editing, all while preserving the high-quality output of the original model. We further develop a highly efficient 1-NFE model that enables near real-time interactive editing and generation. By combining advanced adversarial distillation with human feedback learning, this model achieves ultimate cost-effectiveness and responsiveness, making complex multimodal interactions seamless and instantaneous.",
+        "arxiv_id": "2509.18824",
+        "ARXIVID": "2509.18824",
+        "COMMENT": "The paper does not match any specific criteria closely.",
         "RELEVANCE": 3,
         "NOVELTY": 5
     },
-    "2509.17462": {
+    "2509.18639": {
         "authors": [
-            "Changwon Kang",
-            "Jisong Kim",
-            "Hongjae Shin",
-            "Junseo Park",
-            "Jun Won Choi"
+            "Yuanhuiyi Lyu",
+            "Chi Kit Wong",
+            "Chenfei Liao",
+            "Lutao Jiang",
+            "Xu Zheng",
+            "Zexin Lu",
+            "Linfeng Zhang",
+            "Xuming Hu"
         ],
-        "title": "MAESTRO: Task-Relevant Optimization via Adaptive Feature Enhancement and Suppression for Multi-task 3D Perception",
-        "abstract": "arXiv:2509.17462v1 Announce Type: new  Abstract: The goal of multi-task learning is to learn to conduct multiple tasks simultaneously based on a shared data representation. While this approach can improve learning efficiency, it may also cause performance degradation due to task conflicts that arise when optimizing the model for different objectives. To address this challenge, we introduce MAESTRO, a structured framework designed to generate task-specific features and mitigate feature interference in multi-task 3D perception, including 3D object detection, bird's-eye view (BEV) map segmentation, and 3D occupancy prediction. MAESTRO comprises three components: the Class-wise Prototype Generator (CPG), the Task-Specific Feature Generator (TSFG), and the Scene Prototype Aggregator (SPA). CPG groups class categories into foreground and background groups and generates group-wise prototypes. The foreground and background prototypes are assigned to the 3D object detection task and the map segmentation task, respectively, while both are assigned to the 3D occupancy prediction task. TSFG leverages these prototype groups to retain task-relevant features while suppressing irrelevant features, thereby enhancing the performance for each task. SPA enhances the prototype groups assigned for 3D occupancy prediction by utilizing the information produced by the 3D object detection head and the map segmentation head. Extensive experiments on the nuScenes and Occ3D benchmarks demonstrate that MAESTRO consistently outperforms existing methods across 3D object detection, BEV map segmentation, and 3D occupancy prediction tasks.",
-        "arxiv_id": "2509.17462",
-        "ARXIVID": "2509.17462",
-        "COMMENT": "No criteria match closely.",
+        "title": "Understanding-in-Generation: Reinforcing Generative Capability of Unified Model via Infusing Understanding into Generation",
+        "abstract": "arXiv:2509.18639v1 Announce Type: new  Abstract: Recent works have made notable advancements in enhancing unified models for text-to-image generation through the Chain-of-Thought (CoT). However, these reasoning methods separate the processes of understanding and generation, which limits their ability to guide the reasoning of unified models in addressing the deficiencies of their generative capabilities. To this end, we propose a novel reasoning framework for unified models, Understanding-in-Generation (UiG), which harnesses the robust understanding capabilities of unified models to reinforce their performance in image generation. The core insight of our UiG is to integrate generative guidance by the strong understanding capabilities during the reasoning process, thereby mitigating the limitations of generative abilities. To achieve this, we introduce \"Image Editing\" as a bridge to infuse understanding into the generation process. Initially, we verify the generated image and incorporate the understanding of unified models into the editing instructions. Subsequently, we enhance the generated image step by step, gradually infusing the understanding into the generation process. Our UiG framework demonstrates a significant performance improvement in text-to-image generation over existing text-to-image reasoning methods, e.g., a 3.92% gain on the long prompt setting of the TIIF benchmark. The project code: https://github.com/QC-LY/UiG",
+        "arxiv_id": "2509.18639",
+        "ARXIVID": "2509.18639",
+        "COMMENT": "The paper does not match any specific criteria closely.",
         "RELEVANCE": 3,
         "NOVELTY": 5
     },
-    "2509.17664": {
+    "2509.18165": {
         "authors": [
-            "Pingyi Chen",
-            "Yujing Lou",
-            "Shen Cao",
-            "Jinhui Guo",
-            "Lubin Fan",
-            "Yue Wu",
-            "Lin Yang",
-            "Lizhuang Ma",
-            "Jieping Ye"
+            "Xiuding Cai",
+            "Yaoyao Zhu",
+            "Linjie Fu",
+            "Dong Miao",
+            "Yu Yao"
         ],
-        "title": "SD-VLM: Spatial Measuring and Understanding with Depth-Encoded Vision-Language Models",
-        "abstract": "arXiv:2509.17664v1 Announce Type: new  Abstract: While vision language models (VLMs) excel in 2D semantic visual understanding, their ability to quantitatively reason about 3D spatial relationships remains under-explored, due to the deficiency of 2D images' spatial representation ability. In this paper, we analyze the problem hindering VLMs' spatial understanding abilities and propose SD-VLM, a novel framework that significantly enhances fundamental spatial perception abilities of VLMs through two key contributions: (1) propose Massive Spatial Measuring and Understanding (MSMU) dataset with precise spatial annotations, and (2) introduce a simple depth positional encoding method strengthening VLMs' spatial awareness. MSMU dataset covers massive quantitative spatial tasks with 700K QA pairs, 2.5M physical numerical annotations, and 10K chain-of-thought augmented samples. We have trained SD-VLM, a strong generalist VLM which shows superior quantitative spatial measuring and understanding capability. SD-VLM not only achieves state-of-the-art performance on our proposed MSMU-Bench, but also shows spatial generalization abilities on other spatial understanding benchmarks including Q-Spatial and SpatialRGPT-Bench. Extensive experiments demonstrate that SD-VLM outperforms GPT-4o and Intern-VL3-78B by 26.91% and 25.56% respectively on MSMU-Bench. Code and models are released at https://github.com/cpystan/SD-VLM.",
-        "arxiv_id": "2509.17664",
-        "ARXIVID": "2509.17664",
-        "COMMENT": "No criteria match closely.",
+        "title": "Self Identity Mapping",
+        "abstract": "arXiv:2509.18165v1 Announce Type: new  Abstract: Regularization is essential in deep learning to enhance generalization and mitigate overfitting. However, conventional techniques often rely on heuristics, making them less reliable or effective across diverse settings. We propose Self Identity Mapping (SIM), a simple yet effective, data-intrinsic regularization framework that leverages an inverse mapping mechanism to enhance representation learning. By reconstructing the input from its transformed output, SIM reduces information loss during forward propagation and facilitates smoother gradient flow. To address computational inefficiencies, We instantiate SIM as $ \\rho\\text{SIM} $ by incorporating patch-level feature sampling and projection-based method to reconstruct latent features, effectively lowering complexity. As a model-agnostic, task-agnostic regularizer, SIM can be seamlessly integrated as a plug-and-play module, making it applicable to different network architectures and tasks.   We extensively evaluate $\\rho\\text{SIM}$ across three tasks: image classification, few-shot prompt learning, and domain generalization. Experimental results show consistent improvements over baseline methods, highlighting $\\rho\\text{SIM}$'s ability to enhance representation learning across various tasks. We also demonstrate that $\\rho\\text{SIM}$ is orthogonal to existing regularization methods, boosting their effectiveness. Moreover, our results confirm that $\\rho\\text{SIM}$ effectively preserves semantic information and enhances performance in dense-to-dense tasks, such as semantic segmentation and image translation, as well as in non-visual domains including audio classification and time series anomaly detection. The code is publicly available at https://github.com/XiudingCai/SIM-pytorch.",
+        "arxiv_id": "2509.18165",
+        "ARXIVID": "2509.18165",
+        "COMMENT": "The paper does not match any specific criteria closely.",
         "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2509.17651": {
-        "authors": [
-            "Filippo Botti",
-            "Alex Ergasti",
-            "Tomaso Fontanini",
-            "Claudio Ferrari",
-            "Massimo Bertozzi",
-            "Andrea Prati"
-        ],
-        "title": "SISMA: Semantic Face Image Synthesis with Mamba",
-        "abstract": "arXiv:2509.17651v1 Announce Type: new  Abstract: Diffusion Models have become very popular for Semantic Image Synthesis (SIS) of human faces. Nevertheless, their training and inference is computationally expensive and their computational requirements are high due to the quadratic complexity of attention layers. In this paper, we propose a novel architecture called SISMA, based on the recently proposed Mamba. SISMA generates high quality samples by controlling their shape using a semantic mask at a reduced computational demand. We validated our approach through comprehensive experiments with CelebAMask-HQ, revealing that our architecture not only achieves a better FID score yet also operates at three times the speed of state-of-the-art architectures. This indicates that the proposed design is a viable, lightweight substitute to transformer-based models.",
-        "arxiv_id": "2509.17651",
-        "ARXIVID": "2509.17651",
-        "COMMENT": "No criteria match closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2509.17792": {
-        "authors": [
-            "S M A Sharif",
-            "Abdur Rehman",
-            "Fayaz Ali Dharejo",
-            "Radu Timofte",
-            "Rizwan Ali Naqvi"
-        ],
-        "title": "Degradation-Aware All-in-One Image Restoration via Latent Prior Encoding",
-        "abstract": "arXiv:2509.17792v1 Announce Type: new  Abstract: Real-world images often suffer from spatially diverse degradations such as haze, rain, snow, and low-light, significantly impacting visual quality and downstream vision tasks. Existing all-in-one restoration (AIR) approaches either depend on external text prompts or embed hand-crafted architectural priors (e.g., frequency heuristics); both impose discrete, brittle assumptions that weaken generalization to unseen or mixed degradations. To address this limitation, we propose to reframe AIR as learned latent prior inference, where degradation-aware representations are automatically inferred from the input without explicit task cues. Based on latent priors, we formulate AIR as a structured reasoning paradigm: (1) which features to route (adaptive feature selection), (2) where to restore (spatial localization), and (3) what to restore (degradation semantics). We design a lightweight decoding module that efficiently leverages these latent encoded cues for spatially-adaptive restoration. Extensive experiments across six common degradation tasks, five compound settings, and previously unseen degradations demonstrate that our method outperforms state-of-the-art (SOTA) approaches, achieving an average PSNR improvement of 1.68 dB while being three times more efficient.",
-        "arxiv_id": "2509.17792",
-        "ARXIVID": "2509.17792",
-        "COMMENT": "No criteria match closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2509.17427": {
-        "authors": [
-            "Hodaka Kawachi",
-            "Jose Reinaldo Cunha Santos A. V. Silva Neto",
-            "Yasushi Yagi",
-            "Hajime Nagahara",
-            "Tomoya Nakamura"
-        ],
-        "title": "Single-Image Depth from Defocus with Coded Aperture and Diffusion Posterior Sampling",
-        "abstract": "arXiv:2509.17427v1 Announce Type: new  Abstract: We propose a single-snapshot depth-from-defocus (DFD) reconstruction method for coded-aperture imaging that replaces hand-crafted priors with a learned diffusion prior used purely as regularization. Our optimization framework enforces measurement consistency via a differentiable forward model while guiding solutions with the diffusion prior in the denoised image domain, yielding higher accuracy and stability than clas- sical optimization. Unlike U-Net-style regressors, our approach requires no paired defocus-RGBD training data and does not tie training to a specific camera configuration. Experiments on comprehensive simulations and a prototype camera demonstrate consistently strong RGBD reconstructions across noise levels, outperforming both U-Net baselines and a classical coded- aperture DFD method.",
-        "arxiv_id": "2509.17427",
-        "ARXIVID": "2509.17427",
-        "COMMENT": "No criteria match closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2509.17757": {
-        "authors": [
-            "Hongxing Fan",
-            "Lipeng Wang",
-            "Haohua Chen",
-            "Zehuan Huang",
-            "Jiangtao Wu",
-            "Lu Sheng"
-        ],
-        "title": "Multi-Agent Amodal Completion: Direct Synthesis with Fine-Grained Semantic Guidance",
-        "abstract": "arXiv:2509.17757v1 Announce Type: new  Abstract: Amodal completion, generating invisible parts of occluded objects, is vital for applications like image editing and AR. Prior methods face challenges with data needs, generalization, or error accumulation in progressive pipelines. We propose a Collaborative Multi-Agent Reasoning Framework based on upfront collaborative reasoning to overcome these issues. Our framework uses multiple agents to collaboratively analyze occlusion relationships and determine necessary boundary expansion, yielding a precise mask for inpainting. Concurrently, an agent generates fine-grained textual descriptions, enabling Fine-Grained Semantic Guidance. This ensures accurate object synthesis and prevents the regeneration of occluders or other unwanted elements, especially within large inpainting areas. Furthermore, our method directly produces layered RGBA outputs guided by visible masks and attention maps from a Diffusion Transformer, eliminating extra segmentation. Extensive evaluations demonstrate our framework achieves state-of-the-art visual quality.",
-        "arxiv_id": "2509.17757",
-        "ARXIVID": "2509.17757",
-        "COMMENT": "No criteria match closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2509.16518": {
-        "authors": [
-            "Sankeerth Durvasula",
-            "Kavya Sreedhar",
-            "Zain Moustafa",
-            "Suraj Kothawade",
-            "Ashish Gondimalla",
-            "Suvinay Subramanian",
-            "Narges Shahidi",
-            "Nandita Vijaykumar"
-        ],
-        "title": "FG-Attn: Leveraging Fine-Grained Sparsity In Diffusion Transformers",
-        "abstract": "arXiv:2509.16518v1 Announce Type: new  Abstract: Generating realistic videos with diffusion transformers demands significant computation, with attention layers the central bottleneck; even producing a short clip requires running a transformer over a very long sequence of embeddings, e.g., more than 30K embeddings for a 5-second video, incurring significant latency. Prior work aims to mitigate this bottleneck by exploiting sparsity in the attention layers to reduce computation. However, these works typically rely on block-sparse attention, which skips score computation only when all entries in a block of attention scores (corresponding to M queries and M keys, with M = 64 typically) are zero. This coarse-granular skipping of attention scores does not fully exploit sparsity in the attention map and leaves room for improvement. In this work, we propose FG-Attn, a sparse attention mechanism for long-context diffusion transformers that leverages sparsity at a fine granularity. Unlike block-sparse attention, which skips entire MxM blocks, our approach skips computations at the granularity of Mx1 slices of the attention map. Each slice is produced by query-key dot products between a block of query vectors and a single key. To implement our proposed sparse attention mechanism, we develop a new efficient bulk-load operation called asynchronous-gather load. This load operation gathers a sparse set of relevant key-value vectors from memory and arranges them into packed tiles in the GPU's shared memory. Only a sparse set of keys relevant to those queries are loaded into shared memory when computing attention for a block of queries, in contrast to loading full blocks of key tokens in block-sparse attention. Our fine-grained sparse attention, applied to video diffusion models, achieves an average 1.55X (up to 1.65X) speedup for 5 second, 480p videos, and an average 1.41X (up to 1.49X) for 5 second, 720p videos on a single H100 GPU.",
-        "arxiv_id": "2509.16518",
-        "ARXIVID": "2509.16518",
-        "COMMENT": "No criteria match closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2509.17627": {
-        "authors": [
-            "Jinshu Chen",
-            "Xinghui Li",
-            "Xu Bai",
-            "Tianxiang Ma",
-            "Pengze Zhang",
-            "Zhuowei Chen",
-            "Gen Li",
-            "Lijie Liu",
-            "Songtao Zhao",
-            "Bingchuan Li",
-            "Qian He"
-        ],
-        "title": "OmniInsert: Mask-Free Video Insertion of Any Reference via Diffusion Transformer Models",
-        "abstract": "arXiv:2509.17627v1 Announce Type: new  Abstract: Recent advances in video insertion based on diffusion models are impressive. However, existing methods rely on complex control signals but struggle with subject consistency, limiting their practical applicability. In this paper, we focus on the task of Mask-free Video Insertion and aim to resolve three key challenges: data scarcity, subject-scene equilibrium, and insertion harmonization. To address the data scarcity, we propose a new data pipeline InsertPipe, constructing diverse cross-pair data automatically. Building upon our data pipeline, we develop OmniInsert, a novel unified framework for mask-free video insertion from both single and multiple subject references. Specifically, to maintain subject-scene equilibrium, we introduce a simple yet effective Condition-Specific Feature Injection mechanism to distinctly inject multi-source conditions and propose a novel Progressive Training strategy that enables the model to balance feature injection from subjects and source video. Meanwhile, we design the Subject-Focused Loss to improve the detailed appearance of the subjects. To further enhance insertion harmonization, we propose an Insertive Preference Optimization methodology to optimize the model by simulating human preferences, and incorporate a Context-Aware Rephraser module during reference to seamlessly integrate the subject into the original scenes. To address the lack of a benchmark for the field, we introduce InsertBench, a comprehensive benchmark comprising diverse scenes with meticulously selected subjects. Evaluation on InsertBench indicates OmniInsert outperforms state-of-the-art closed-source commercial solutions. The code will be released.",
-        "arxiv_id": "2509.17627",
-        "ARXIVID": "2509.17627",
-        "COMMENT": "No criteria match closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
+        "NOVELTY": 4
     }
 }
