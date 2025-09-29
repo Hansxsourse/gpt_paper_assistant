@@ -1,18 +1,15 @@
 {
-    "2509.20481": {
+    "2509.21760": {
         "authors": [
-            "Jing Li",
-            "Oskar Bartosz",
-            "Chengyu Wang",
-            "Michal Wnuczynski",
-            "Dilshan Godaliyadda",
-            "Michael Polley"
+            "Lan Chen",
+            "Yuchao Gu",
+            "Qi Mao"
         ],
-        "title": "Shared Neural Space: Unified Precomputed Feature Encoding for Multi-Task and Cross Domain Vision",
-        "abstract": "arXiv:2509.20481v1 Announce Type: new  Abstract: The majority of AI models in imaging and vision are customized to perform on specific high-precision task. However, this strategy is inefficient for applications with a series of modular tasks, since each requires a mapping into a disparate latent domain. To address this inefficiency, we proposed a universal Neural Space (NS), where an encoder-decoder framework pre-computes features across vision and imaging tasks. Our encoder learns transformation aware, generalizable representations, which enable multiple downstream AI modules to share the same feature space. This architecture reduces redundancy, improves generalization across domain shift, and establishes a foundation for effecient multi-task vision pipelines. Furthermore, as opposed to larger transformer backbones, our backbone is lightweight and CNN-based, allowing for wider across hardware. We furthur demonstrate that imaging and vision modules, such as demosaicing, denoising, depth estimation and semantic segmentation can be performed efficiently in the NS.",
-        "arxiv_id": "2509.20481",
-        "ARXIVID": "2509.20481",
-        "COMMENT": "Matches criteria 2 closely",
+        "title": "UniVid: Unifying Vision Tasks with Pre-trained Video Generation Models",
+        "abstract": "arXiv:2509.21760v1 Announce Type: new  Abstract: Large language models, trained on extensive corpora, successfully unify diverse linguistic tasks within a single generative framework. Inspired by this, recent works like Large Vision Model (LVM) extend this paradigm to vision by organizing tasks into sequential visual sentences, where visual prompts serve as the context to guide outputs. However, such modeling requires task-specific pre-training across modalities and sources, which is costly and limits scalability to unseen tasks. Given that pre-trained video generation models inherently capture temporal sequence dependencies, we explore a more unified and scalable alternative: can a pre-trained video generation model adapt to diverse image and video tasks? To answer this, we propose UniVid, a framework that fine-tunes a video diffusion transformer to handle various vision tasks without task-specific modifications. Tasks are represented as visual sentences, where the context sequence defines both the task and the expected output modality. We evaluate the generalization of UniVid from two perspectives: (1) cross-modal inference with contexts composed of both images and videos, extending beyond LVM's uni-modal setting; (2) cross-source tasks from natural to annotated data, without multi-source pre-training. Despite being trained solely on natural video data, UniVid generalizes well in both settings. Notably, understanding and generation tasks can easily switch by simply reversing the visual sentence order in this paradigm. These findings highlight the potential of pre-trained video generation models to serve as a scalable and unified foundation for vision modeling. Our code will be released at https://github.com/CUC-MIPG/UniVid.",
+        "arxiv_id": "2509.21760",
+        "ARXIVID": "2509.21760",
+        "COMMENT": "2",
         "RELEVANCE": 5,
         "NOVELTY": 6
     }
