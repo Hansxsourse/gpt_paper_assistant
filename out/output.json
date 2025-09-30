@@ -1,16 +1,39 @@
 {
-    "2509.21760": {
+    "2509.23760": {
         "authors": [
-            "Lan Chen",
-            "Yuchao Gu",
-            "Qi Mao"
+            "Xinyang Song",
+            "Libin Wang",
+            "Weining Wang",
+            "Shaozhen Liu",
+            "Dandan Zheng",
+            "Jingdong Chen",
+            "Qi Li",
+            "Zhenan Sun"
         ],
-        "title": "UniVid: Unifying Vision Tasks with Pre-trained Video Generation Models",
-        "abstract": "arXiv:2509.21760v1 Announce Type: new  Abstract: Large language models, trained on extensive corpora, successfully unify diverse linguistic tasks within a single generative framework. Inspired by this, recent works like Large Vision Model (LVM) extend this paradigm to vision by organizing tasks into sequential visual sentences, where visual prompts serve as the context to guide outputs. However, such modeling requires task-specific pre-training across modalities and sources, which is costly and limits scalability to unseen tasks. Given that pre-trained video generation models inherently capture temporal sequence dependencies, we explore a more unified and scalable alternative: can a pre-trained video generation model adapt to diverse image and video tasks? To answer this, we propose UniVid, a framework that fine-tunes a video diffusion transformer to handle various vision tasks without task-specific modifications. Tasks are represented as visual sentences, where the context sequence defines both the task and the expected output modality. We evaluate the generalization of UniVid from two perspectives: (1) cross-modal inference with contexts composed of both images and videos, extending beyond LVM's uni-modal setting; (2) cross-source tasks from natural to annotated data, without multi-source pre-training. Despite being trained solely on natural video data, UniVid generalizes well in both settings. Notably, understanding and generation tasks can easily switch by simply reversing the visual sentence order in this paradigm. These findings highlight the potential of pre-trained video generation models to serve as a scalable and unified foundation for vision modeling. Our code will be released at https://github.com/CUC-MIPG/UniVid.",
-        "arxiv_id": "2509.21760",
-        "ARXIVID": "2509.21760",
-        "COMMENT": "2",
+        "title": "UniAlignment: Semantic Alignment for Unified Image Generation, Understanding, Manipulation and Perception",
+        "abstract": "arXiv:2509.23760v1 Announce Type: new  Abstract: The remarkable success of diffusion models in text-to-image generation has sparked growing interest in expanding their capabilities to a variety of multi-modal tasks, including image understanding, manipulation, and perception. These tasks require advanced semantic comprehension across both visual and textual modalities, especially in scenarios involving complex semantic instructions. However, existing approaches often rely heavily on vision-language models (VLMs) or modular designs for semantic guidance, leading to fragmented architectures and computational inefficiency. To address these challenges, we propose UniAlignment, a unified multimodal generation framework within a single diffusion transformer. UniAlignment introduces a dual-stream diffusion training strategy that incorporates both intrinsic-modal semantic alignment and cross-modal semantic alignment, thereby enhancing the model's cross-modal consistency and instruction-following robustness. Additionally, we present SemGen-Bench, a new benchmark specifically designed to evaluate multimodal semantic consistency under complex textual instructions. Extensive experiments across multiple tasks and benchmarks demonstrate that UniAlignment outperforms existing baselines, underscoring the significant potential of diffusion models in unified multimodal generation.",
+        "arxiv_id": "2509.23760",
+        "ARXIVID": "2509.23760",
+        "COMMENT": "Criteria 2",
         "RELEVANCE": 5,
         "NOVELTY": 6
+    },
+    "2509.24200": {
+        "authors": [
+            "Jiabin Luo",
+            "Junhui Lin",
+            "Zeyu Zhang",
+            "Biao Wu",
+            "Meng Fang",
+            "Ling Chen",
+            "Hao Tang"
+        ],
+        "title": "UniVid: The Open-Source Unified Video Model",
+        "abstract": "arXiv:2509.24200v1 Announce Type: new  Abstract: Unified video modeling that combines generation and understanding capabilities is increasingly important but faces two key challenges: maintaining semantic faithfulness during flow-based generation due to text-visual token imbalance and the limitations of uniform cross-modal attention across the flow trajectory, and efficiently extending image-centric MLLMs to video without costly retraining. We present UniVid, a unified architecture that couples an MLLM with a diffusion decoder through a lightweight adapter, enabling both video understanding and generation. We introduce Temperature Modality Alignment to improve prompt adherence and Pyramid Reflection for efficient temporal reasoning via dynamic keyframe selection. Extensive experiments on standard benchmarks demonstrate state-of-the-art performance, achieving a 2.2% improvement on VBench-Long total score compared to EasyAnimateV5.1, and 1.0% and 3.3% accuracy gains on MSVD-QA and ActivityNet-QA, respectively, compared with the best prior 7B baselines.",
+        "arxiv_id": "2509.24200",
+        "ARXIVID": "2509.24200",
+        "COMMENT": "Matches criteria 2 closely as it discusses a unified architecture for video modeling that combines generation and understanding capabilities, which aligns with the idea of a unified diffusion model for multiple tasks.",
+        "RELEVANCE": 5,
+        "NOVELTY": 5
     }
 }
