@@ -1,17 +1,54 @@
 {
-    "2510.00683": {
+    "2510.01498": {
         "authors": [
-            "Steffen Meinert",
-            "Philipp Schlinge",
-            "Nils Strodthoff",
-            "Martin Atzmueller"
+            "Yuxuan Ou",
+            "Ning Bi",
+            "Jiazhen Pan",
+            "Jiancheng Yang",
+            "Boliang Yu",
+            "Usama Zidan",
+            "Regent Lee",
+            "Vicente Grau"
         ],
-        "title": "ProtoMask: Segmentation-Guided Prototype Learning",
-        "abstract": "arXiv:2510.00683v1 Announce Type: new  Abstract: XAI gained considerable importance in recent years. Methods based on prototypical case-based reasoning have shown a promising improvement in explainability. However, these methods typically rely on additional post-hoc saliency techniques to explain the semantics of learned prototypes. Multiple critiques have been raised about the reliability and quality of such techniques. For this reason, we study the use of prominent image segmentation foundation models to improve the truthfulness of the mapping between embedding and input space. We aim to restrict the computation area of the saliency map to a predefined semantic image patch to reduce the uncertainty of such visualizations. To perceive the information of an entire image, we use the bounding box from each generated segmentation mask to crop the image. Each mask results in an individual input in our novel model architecture named ProtoMask. We conduct experiments on three popular fine-grained classification datasets with a wide set of metrics, providing a detailed overview on explainability characteristics. The comparison with other popular models demonstrates competitive performance and unique explainability features of our model. https://github.com/uos-sis/quanproto",
-        "arxiv_id": "2510.00683",
-        "ARXIVID": "2510.00683",
-        "COMMENT": "Matches criteria 1 closely",
-        "RELEVANCE": 5,
+        "title": "AortaDiff: A Unified Multitask Diffusion Framework For Contrast-Free AAA Imaging",
+        "abstract": "arXiv:2510.01498v1 Announce Type: new  Abstract: While contrast-enhanced CT (CECT) is standard for assessing abdominal aortic aneurysms (AAA), the required iodinated contrast agents pose significant risks, including nephrotoxicity, patient allergies, and environmental harm. To reduce contrast agent use, recent deep learning methods have focused on generating synthetic CECT from non-contrast CT (NCCT) scans. However, most adopt a multi-stage pipeline that first generates images and then performs segmentation, which leads to error accumulation and fails to leverage shared semantic and anatomical structures. To address this, we propose a unified deep learning framework that generates synthetic CECT images from NCCT scans while simultaneously segmenting the aortic lumen and thrombus. Our approach integrates conditional diffusion models (CDM) with multi-task learning, enabling end-to-end joint optimization of image synthesis and anatomical segmentation. Unlike previous multitask diffusion models, our approach requires no initial predictions (e.g., a coarse segmentation mask), shares both encoder and decoder parameters across tasks, and employs a semi-supervised training strategy to learn from scans with missing segmentation labels, a common constraint in real-world clinical data. We evaluated our method on a cohort of 264 patients, where it consistently outperformed state-of-the-art single-task and multi-stage models. For image synthesis, our model achieved a PSNR of 25.61 dB, compared to 23.80 dB from a single-task CDM. For anatomical segmentation, it improved the lumen Dice score to 0.89 from 0.87 and the challenging thrombus Dice score to 0.53 from 0.48 (nnU-Net). These segmentation enhancements led to more accurate clinical measurements, reducing the lumen diameter MAE to 4.19 mm from 5.78 mm and the thrombus area error to 33.85% from 41.45% when compared to nnU-Net. Code is available at https://github.com/yuxuanou623/AortaDiff.git.",
+        "arxiv_id": "2510.01498",
+        "ARXIVID": "2510.01498",
+        "COMMENT": "Matches criterion 1: Unified Image/Video Generation and Segmentation.",
+        "RELEVANCE": 10,
+        "NOVELTY": 7
+    },
+    "2510.01641": {
+        "authors": [
+            "Xiaoyang Liu",
+            "Zhengyan Zhou",
+            "Zihang Xu",
+            "Jiezhang Cao",
+            "Zheng Chen",
+            "Yulun Zhang"
+        ],
+        "title": "FideDiff: Efficient Diffusion Model for High-Fidelity Image Motion Deblurring",
+        "abstract": "arXiv:2510.01641v1 Announce Type: new  Abstract: Recent advancements in image motion deblurring, driven by CNNs and transformers, have made significant progress. Large-scale pre-trained diffusion models, which are rich in true-world modeling, have shown great promise for high-quality image restoration tasks such as deblurring, demonstrating stronger generative capabilities than CNN and transformer-based methods. However, challenges such as unbearable inference time and compromised fidelity still limit the full potential of the diffusion models. To address this, we introduce FideDiff, a novel single-step diffusion model designed for high-fidelity deblurring. We reformulate motion deblurring as a diffusion-like process where each timestep represents a progressively blurred image, and we train a consistency model that aligns all timesteps to the same clean image. By reconstructing training data with matched blur trajectories, the model learns temporal consistency, enabling accurate one-step deblurring. We further enhance model performance by integrating Kernel ControlNet for blur kernel estimation and introducing adaptive timestep prediction. Our model achieves superior performance on full-reference metrics, surpassing previous diffusion-based methods and matching the performance of other state-of-the-art models. FideDiff offers a new direction for applying pre-trained diffusion models to high-fidelity image restoration tasks, establishing a robust baseline for further advancing diffusion models in real-world industrial applications. Our dataset and code will be available at https://github.com/xyLiu339/FideDiff.",
+        "arxiv_id": "2510.01641",
+        "ARXIVID": "2510.01641",
+        "COMMENT": "No criteria match closely.",
+        "RELEVANCE": 3,
+        "NOVELTY": 6
+    },
+    "2510.02284": {
+        "authors": [
+            "David Romero",
+            "Ariana Bermudez",
+            "Hao Li",
+            "Fabio Pizzati",
+            "Ivan Laptev"
+        ],
+        "title": "Learning to Generate Object Interactions with Physics-Guided Video Diffusion",
+        "abstract": "arXiv:2510.02284v1 Announce Type: new  Abstract: Recent models for video generation have achieved remarkable progress and are now deployed in film, social media production, and advertising. Beyond their creative potential, such models also hold promise as world simulators for robotics and embodied decision making. Despite strong advances, however, current approaches still struggle to generate physically plausible object interactions and lack physics-grounded control mechanisms. To address this limitation, we introduce KineMask, an approach for physics-guided video generation that enables realistic rigid body control, interactions, and effects. Given a single image and a specified object velocity, our method generates videos with inferred motions and future object interactions. We propose a two-stage training strategy that gradually removes future motion supervision via object masks. Using this strategy we train video diffusion models (VDMs) on synthetic scenes of simple interactions and demonstrate significant improvements of object interactions in real scenes. Furthermore, KineMask integrates low-level motion control with high-level textual conditioning via predictive scene descriptions, leading to effective support for synthesis of complex dynamical phenomena. Extensive experiments show that KineMask achieves strong improvements over recent models of comparable size. Ablation studies further highlight the complementary roles of low- and high-level conditioning in VDMs. Our code, model, and data will be made publicly available.",
+        "arxiv_id": "2510.02284",
+        "ARXIVID": "2510.02284",
+        "COMMENT": "No criteria match closely.",
+        "RELEVANCE": 3,
         "NOVELTY": 5
     }
 }
