@@ -1,29 +1,96 @@
 {
-    "2510.03122": {
+    "2510.04021": {
         "authors": [
-            "Shiyi Zhang",
-            "Dong Liang",
-            "Hairong Zheng",
-            "Yihang Zhou"
+            "Kushal Vyas",
+            "Ashok Veeraraghavan",
+            "Guha Balakrishnan"
         ],
-        "title": "HAVIR: HierArchical Vision to Image Reconstruction using CLIP-Guided Versatile Diffusion",
-        "abstract": "arXiv:2510.03122v1 Announce Type: new  Abstract: The reconstruction of visual information from brain activity fosters interdisciplinary integration between neuroscience and computer vision. However, existing methods still face challenges in accurately recovering highly complex visual stimuli. This difficulty stems from the characteristics of natural scenes: low-level features exhibit heterogeneity, while high-level features show semantic entanglement due to contextual overlaps. Inspired by the hierarchical representation theory of the visual cortex, we propose the HAVIR model, which separates the visual cortex into two hierarchical regions and extracts distinct features from each. Specifically, the Structural Generator extracts structural information from spatial processing voxels and converts it into latent diffusion priors, while the Semantic Extractor converts semantic processing voxels into CLIP embeddings. These components are integrated via the Versatile Diffusion model to synthesize the final image. Experimental results demonstrate that HAVIR enhances both the structural and semantic quality of reconstructions, even in complex scenes, and outperforms existing models.",
-        "arxiv_id": "2510.03122",
-        "ARXIVID": "2510.03122",
+        "title": "Fit Pixels, Get Labels: Meta-learned Implicit Networks for Image Segmentation",
+        "abstract": "arXiv:2510.04021v1 Announce Type: new  Abstract: Implicit neural representations (INRs) have achieved remarkable successes in learning expressive yet compact signal representations. However, they are not naturally amenable to predictive tasks such as segmentation, where they must learn semantic structures over a distribution of signals. In this study, we introduce MetaSeg, a meta-learning framework to train INRs for medical image segmentation. MetaSeg uses an underlying INR that simultaneously predicts per pixel intensity values and class labels. It then uses a meta-learning procedure to find optimal initial parameters for this INR over a training dataset of images and segmentation maps, such that the INR can simply be fine-tuned to fit pixels of an unseen test image, and automatically decode its class labels. We evaluated MetaSeg on 2D and 3D brain MRI segmentation tasks and report Dice scores comparable to commonly used U-Net models, but with $90\\%$ fewer parameters. MetaSeg offers a fresh, scalable alternative to traditional resource-heavy architectures such as U-Nets and vision transformers for medical image segmentation. Our project is available at https://kushalvyas.github.io/metaseg.html .",
+        "arxiv_id": "2510.04021",
+        "ARXIVID": "2510.04021",
+        "COMMENT": "Matches criteria 1 closely: joint generation and segmentation",
+        "RELEVANCE": 10,
+        "NOVELTY": 7
+    },
+    "2510.04188": {
+        "authors": [
+            "Shikang Zheng",
+            "Guantao Chen",
+            "Qinming Zhou",
+            "Yuqi Lin",
+            "Lixuan He",
+            "Chang Zou",
+            "Peiliang Cai",
+            "Jiacheng Liu",
+            "Linfeng Zhang"
+        ],
+        "title": "Let Features Decide Their Own Solvers: Hybrid Feature Caching for Diffusion Transformers",
+        "abstract": "arXiv:2510.04188v1 Announce Type: new  Abstract: Diffusion Transformers offer state-of-the-art fidelity in image and video synthesis, but their iterative sampling process remains a major bottleneck due to the high cost of transformer forward passes at each timestep. To mitigate this, feature caching has emerged as a training-free acceleration technique that reuses or forecasts hidden representations. However, existing methods often apply a uniform caching strategy across all feature dimensions, ignoring their heterogeneous dynamic behaviors. Therefore, we adopt a new perspective by modeling hidden feature evolution as a mixture of ODEs across dimensions, and introduce HyCa, a Hybrid ODE solver inspired caching framework that applies dimension-wise caching strategies. HyCa achieves near-lossless acceleration across diverse domains and models, including 5.55 times speedup on FLUX, 5.56 times speedup on HunyuanVideo, 6.24 times speedup on Qwen-Image and Qwen-Image-Edit without retraining.",
+        "arxiv_id": "2510.04188",
+        "ARXIVID": "2510.04188",
         "COMMENT": "",
         "RELEVANCE": 3,
         "NOVELTY": 6
     },
-    "2510.03110": {
+    "2510.04961": {
         "authors": [
-            "Beibei Lin",
-            "Tingting Chen",
-            "Robby T. Tan"
+            "Th\\'eophane Vallaeys",
+            "Jakob Verbeek",
+            "Matthieu Cord"
         ],
-        "title": "GeoComplete: Geometry-Aware Diffusion for Reference-Driven Image Completion",
-        "abstract": "arXiv:2510.03110v1 Announce Type: new  Abstract: Reference-driven image completion, which restores missing regions in a target view using additional images, is particularly challenging when the target view differs significantly from the references. Existing generative methods rely solely on diffusion priors and, without geometric cues such as camera pose or depth, often produce misaligned or implausible content. We propose GeoComplete, a novel framework that incorporates explicit 3D structural guidance to enforce geometric consistency in the completed regions, setting it apart from prior image-only approaches. GeoComplete introduces two key ideas: conditioning the diffusion process on projected point clouds to infuse geometric information, and applying target-aware masking to guide the model toward relevant reference cues. The framework features a dual-branch diffusion architecture. One branch synthesizes the missing regions from the masked target, while the other extracts geometric features from the projected point cloud. Joint self-attention across branches ensures coherent and accurate completion. To address regions visible in references but absent in the target, we project the target view into each reference to detect occluded areas, which are then masked during training. This target-aware masking directs the model to focus on useful cues, enhancing performance in difficult scenarios. By integrating a geometry-aware dual-branch diffusion architecture with a target-aware masking strategy, GeoComplete offers a unified and robust solution for geometry-conditioned image completion. Experiments show that GeoComplete achieves a 17.1 PSNR improvement over state-of-the-art methods, significantly boosting geometric accuracy while maintaining high visual quality.",
-        "arxiv_id": "2510.03110",
-        "ARXIVID": "2510.03110",
+        "title": "SSDD: Single-Step Diffusion Decoder for Efficient Image Tokenization",
+        "abstract": "arXiv:2510.04961v1 Announce Type: new  Abstract: Tokenizers are a key component of state-of-the-art generative image models, extracting the most important features from the signal while reducing data dimension and redundancy. Most current tokenizers are based on KL-regularized variational autoencoders (KL-VAE), trained with reconstruction, perceptual and adversarial losses. Diffusion decoders have been proposed as a more principled alternative to model the distribution over images conditioned on the latent. However, matching the performance of KL-VAE still requires adversarial losses, as well as a higher decoding time due to iterative sampling. To address these limitations, we introduce a new pixel diffusion decoder architecture for improved scaling and training stability, benefiting from transformer components and GAN-free training. We use distillation to replicate the performance of the diffusion decoder in an efficient single-step decoder. This makes SSDD the first diffusion decoder optimized for single-step reconstruction trained without adversarial losses, reaching higher reconstruction quality and faster sampling than KL-VAE. In particular, SSDD improves reconstruction FID from $0.87$ to $0.50$ with $1.4\\times$ higher throughput and preserve generation quality of DiTs with $3.8\\times$ faster sampling. As such, SSDD can be used as a drop-in replacement for KL-VAE, and for building higher-quality and faster generative models.",
+        "arxiv_id": "2510.04961",
+        "ARXIVID": "2510.04961",
+        "COMMENT": "",
+        "RELEVANCE": 3,
+        "NOVELTY": 6
+    },
+    "2510.04180": {
+        "authors": [
+            "Ran Eisenberg",
+            "Amit Rozner",
+            "Ethan Fetaya",
+            "Ofir Lindenbaum"
+        ],
+        "title": "From Segments to Concepts: Interpretable Image Classification via Concept-Guided Segmentation",
+        "abstract": "arXiv:2510.04180v1 Announce Type: new  Abstract: Deep neural networks have achieved remarkable success in computer vision; however, their black-box nature in decision-making limits interpretability and trust, particularly in safety-critical applications. Interpretability is crucial in domains where errors have severe consequences. Existing models not only lack transparency but also risk exploiting unreliable or misleading features, which undermines both robustness and the validity of their explanations. Concept Bottleneck Models (CBMs) aim to improve transparency by reasoning through human-interpretable concepts. Still, they require costly concept annotations and lack spatial grounding, often failing to identify which regions support each concept. We propose SEG-MIL-CBM, a novel framework that integrates concept-guided image segmentation into an attention-based multiple instance learning (MIL) framework, where each segmented region is treated as an instance and the model learns to aggregate evidence across them. By reasoning over semantically meaningful regions aligned with high-level concepts, our model highlights task-relevant evidence, down-weights irrelevant cues, and produces spatially grounded, concept-level explanations without requiring annotations of concepts or groups. SEG-MIL-CBM achieves robust performance across settings involving spurious correlations (unintended dependencies between background and label), input corruptions (perturbations that degrade visual quality), and large-scale benchmarks, while providing transparent, concept-level explanations.",
+        "arxiv_id": "2510.04180",
+        "ARXIVID": "2510.04180",
+        "COMMENT": "",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2510.05093": {
+        "authors": [
+            "Tingting Liao",
+            "Chongjian Ge",
+            "Guangyi Liu",
+            "Hao Li",
+            "Yi Zhou"
+        ],
+        "title": "Character Mixing for Video Generation",
+        "abstract": "arXiv:2510.05093v1 Announce Type: new  Abstract: Imagine Mr. Bean stepping into Tom and Jerry--can we generate videos where characters interact naturally across different worlds? We study inter-character interaction in text-to-video generation, where the key challenge is to preserve each character's identity and behaviors while enabling coherent cross-context interaction. This is difficult because characters may never have coexisted and because mixing styles often causes style delusion, where realistic characters appear cartoonish or vice versa. We introduce a framework that tackles these issues with Cross-Character Embedding (CCE), which learns identity and behavioral logic across multimodal sources, and Cross-Character Augmentation (CCA), which enriches training with synthetic co-existence and mixed-style data. Together, these techniques allow natural interactions between previously uncoexistent characters without losing stylistic fidelity. Experiments on a curated benchmark of cartoons and live-action series with 10 characters show clear improvements in identity preservation, interaction quality, and robustness to style delusion, enabling new forms of generative storytelling.Additional results and videos are available on our project page: https://tingtingliao.github.io/mimix/.",
+        "arxiv_id": "2510.05093",
+        "ARXIVID": "2510.05093",
+        "COMMENT": "",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2510.04533": {
+        "authors": [
+            "Hyunmin Cho",
+            "Donghoon Ahn",
+            "Susung Hong",
+            "Jee Eun Kim",
+            "Seungryong Kim",
+            "Kyong Hwan Jin"
+        ],
+        "title": "TAG:Tangential Amplifying Guidance for Hallucination-Resistant Diffusion Sampling",
+        "abstract": "arXiv:2510.04533v1 Announce Type: new  Abstract: Recent diffusion models achieve the state-of-the-art performance in image generation, but often suffer from semantic inconsistencies or hallucinations. While various inference-time guidance methods can enhance generation, they often operate indirectly by relying on external signals or architectural modifications, which introduces additional computational overhead. In this paper, we propose Tangential Amplifying Guidance (TAG), a more efficient and direct guidance method that operates solely on trajectory signals without modifying the underlying diffusion model. TAG leverages an intermediate sample as a projection basis and amplifies the tangential components of the estimated scores with respect to this basis to correct the sampling trajectory. We formalize this guidance process by leveraging a first-order Taylor expansion, which demonstrates that amplifying the tangential component steers the state toward higher-probability regions, thereby reducing inconsistencies and enhancing sample quality. TAG is a plug-and-play, architecture-agnostic module that improves diffusion sampling fidelity with minimal computational addition, offering a new perspective on diffusion guidance.",
+        "arxiv_id": "2510.04533",
+        "ARXIVID": "2510.04533",
         "COMMENT": "",
         "RELEVANCE": 3,
         "NOVELTY": 5
