@@ -1,96 +1,72 @@
 {
-    "2510.04021": {
+    "2510.06131": {
         "authors": [
-            "Kushal Vyas",
-            "Ashok Veeraraghavan",
-            "Guha Balakrishnan"
+            "Jiawei Mao",
+            "Yuhan Wang",
+            "Lifeng Chen",
+            "Can Zhao",
+            "Yucheng Tang",
+            "Dong Yang",
+            "Liangqiong Qu",
+            "Daguang Xu",
+            "Yuyin Zhou"
         ],
-        "title": "Fit Pixels, Get Labels: Meta-learned Implicit Networks for Image Segmentation",
-        "abstract": "arXiv:2510.04021v1 Announce Type: new  Abstract: Implicit neural representations (INRs) have achieved remarkable successes in learning expressive yet compact signal representations. However, they are not naturally amenable to predictive tasks such as segmentation, where they must learn semantic structures over a distribution of signals. In this study, we introduce MetaSeg, a meta-learning framework to train INRs for medical image segmentation. MetaSeg uses an underlying INR that simultaneously predicts per pixel intensity values and class labels. It then uses a meta-learning procedure to find optimal initial parameters for this INR over a training dataset of images and segmentation maps, such that the INR can simply be fine-tuned to fit pixels of an unseen test image, and automatically decode its class labels. We evaluated MetaSeg on 2D and 3D brain MRI segmentation tasks and report Dice scores comparable to commonly used U-Net models, but with $90\\%$ fewer parameters. MetaSeg offers a fresh, scalable alternative to traditional resource-heavy architectures such as U-Nets and vision transformers for medical image segmentation. Our project is available at https://kushalvyas.github.io/metaseg.html .",
-        "arxiv_id": "2510.04021",
-        "ARXIVID": "2510.04021",
-        "COMMENT": "Matches criteria 1 closely: joint generation and segmentation",
-        "RELEVANCE": 10,
-        "NOVELTY": 7
-    },
-    "2510.04188": {
-        "authors": [
-            "Shikang Zheng",
-            "Guantao Chen",
-            "Qinming Zhou",
-            "Yuqi Lin",
-            "Lixuan He",
-            "Chang Zou",
-            "Peiliang Cai",
-            "Jiacheng Liu",
-            "Linfeng Zhang"
-        ],
-        "title": "Let Features Decide Their Own Solvers: Hybrid Feature Caching for Diffusion Transformers",
-        "abstract": "arXiv:2510.04188v1 Announce Type: new  Abstract: Diffusion Transformers offer state-of-the-art fidelity in image and video synthesis, but their iterative sampling process remains a major bottleneck due to the high cost of transformer forward passes at each timestep. To mitigate this, feature caching has emerged as a training-free acceleration technique that reuses or forecasts hidden representations. However, existing methods often apply a uniform caching strategy across all feature dimensions, ignoring their heterogeneous dynamic behaviors. Therefore, we adopt a new perspective by modeling hidden feature evolution as a mixture of ODEs across dimensions, and introduce HyCa, a Hybrid ODE solver inspired caching framework that applies dimension-wise caching strategies. HyCa achieves near-lossless acceleration across diverse domains and models, including 5.55 times speedup on FLUX, 5.56 times speedup on HunyuanVideo, 6.24 times speedup on Qwen-Image and Qwen-Image-Edit without retraining.",
-        "arxiv_id": "2510.04188",
-        "ARXIVID": "2510.04188",
-        "COMMENT": "",
-        "RELEVANCE": 3,
+        "title": "Discrete Diffusion Models with MLLMs for Unified Medical Multimodal Generation",
+        "abstract": "arXiv:2510.06131v1 Announce Type: new  Abstract: Recent advances in generative medical models are constrained by modality-specific scenarios that hinder the integration of complementary evidence from imaging, pathology, and clinical notes. This fragmentation limits their evolution into foundation models that can learn and reason across the full spectrum of biomedical data. We propose MeDiM, the first medical discrete diffusion model that learns shared distributions across modalities without modality-specific components. MeDiM unifies multiple generative tasks: translating between images and text, and jointly producing image-report pairs across domains in response to prompts. Built on a discrete diffusion framework, MeDiM bridges vision and language representations through a shared probabilistic space. To enable unified and flexible medical generation, we employ a multimodal large language model (MLLM) as the diffusion backbone, leveraging its prior knowledge and cross-modal reasoning. Two key designs are introduced: (1) removing the causal attention mask for bidirectional context, and (2) injecting continuous timestep embeddings for diffusion awareness. Experiments demonstrate high-fidelity medical generation (FID 16.60 on MIMIC-CXR and FID 24.19 on PathGen) and accurate report generation (METEOR 0.2650 and 0.2580). Jointly generated image-report pairs further enhance downstream performance (plus6.43 percent BLEU-1, plus18.57 percent BLEU-2, plus31.58 percent BLEU-3, plus4.80 percent METEOR), showing that MeDiM supports coherent and clinically grounded multimodal outputs.",
+        "arxiv_id": "2510.06131",
+        "ARXIVID": "2510.06131",
+        "COMMENT": "Criteria 2",
+        "RELEVANCE": 5,
         "NOVELTY": 6
     },
-    "2510.04961": {
+    "2510.05532": {
         "authors": [
-            "Th\\'eophane Vallaeys",
-            "Jakob Verbeek",
-            "Matthieu Cord"
+            "Sam Sartor",
+            "Pieter Peers"
         ],
-        "title": "SSDD: Single-Step Diffusion Decoder for Efficient Image Tokenization",
-        "abstract": "arXiv:2510.04961v1 Announce Type: new  Abstract: Tokenizers are a key component of state-of-the-art generative image models, extracting the most important features from the signal while reducing data dimension and redundancy. Most current tokenizers are based on KL-regularized variational autoencoders (KL-VAE), trained with reconstruction, perceptual and adversarial losses. Diffusion decoders have been proposed as a more principled alternative to model the distribution over images conditioned on the latent. However, matching the performance of KL-VAE still requires adversarial losses, as well as a higher decoding time due to iterative sampling. To address these limitations, we introduce a new pixel diffusion decoder architecture for improved scaling and training stability, benefiting from transformer components and GAN-free training. We use distillation to replicate the performance of the diffusion decoder in an efficient single-step decoder. This makes SSDD the first diffusion decoder optimized for single-step reconstruction trained without adversarial losses, reaching higher reconstruction quality and faster sampling than KL-VAE. In particular, SSDD improves reconstruction FID from $0.87$ to $0.50$ with $1.4\\times$ higher throughput and preserve generation quality of DiTs with $3.8\\times$ faster sampling. As such, SSDD can be used as a drop-in replacement for KL-VAE, and for building higher-quality and faster generative models.",
-        "arxiv_id": "2510.04961",
-        "ARXIVID": "2510.04961",
-        "COMMENT": "",
-        "RELEVANCE": 3,
-        "NOVELTY": 6
+        "title": "Teamwork: Collaborative Diffusion with Low-rank Coordination and Adaptation",
+        "abstract": "arXiv:2510.05532v1 Announce Type: new  Abstract: Large pretrained diffusion models can provide strong priors beneficial for many graphics applications. However, generative applications such as neural rendering and inverse methods such as SVBRDF estimation and intrinsic image decomposition require additional input or output channels. Current solutions for channel expansion are often application specific and these solutions can be difficult to adapt to different diffusion models or new tasks. This paper introduces Teamwork: a flexible and efficient unified solution for jointly increasing the number of input and output channels as well as adapting a pretrained diffusion model to new tasks. Teamwork achieves channel expansion without altering the pretrained diffusion model architecture by coordinating and adapting multiple instances of the base diffusion model (\\ie, teammates). We employ a novel variation of Low Rank-Adaptation (LoRA) to jointly address both adaptation and coordination between the different teammates. Furthermore Teamwork supports dynamic (de)activation of teammates. We demonstrate the flexibility and efficiency of Teamwork on a variety of generative and inverse graphics tasks such as inpainting, single image SVBRDF estimation, intrinsic decomposition, neural shading, and intrinsic image synthesis.",
+        "arxiv_id": "2510.05532",
+        "ARXIVID": "2510.05532",
+        "COMMENT": "Criteria 2",
+        "RELEVANCE": 5,
+        "NOVELTY": 5
     },
-    "2510.04180": {
+    "2510.05610": {
         "authors": [
-            "Ran Eisenberg",
-            "Amit Rozner",
-            "Ethan Fetaya",
-            "Ofir Lindenbaum"
+            "Jiaqi Liu",
+            "Tao Huang",
+            "Chang Xu"
         ],
-        "title": "From Segments to Concepts: Interpretable Image Classification via Concept-Guided Segmentation",
-        "abstract": "arXiv:2510.04180v1 Announce Type: new  Abstract: Deep neural networks have achieved remarkable success in computer vision; however, their black-box nature in decision-making limits interpretability and trust, particularly in safety-critical applications. Interpretability is crucial in domains where errors have severe consequences. Existing models not only lack transparency but also risk exploiting unreliable or misleading features, which undermines both robustness and the validity of their explanations. Concept Bottleneck Models (CBMs) aim to improve transparency by reasoning through human-interpretable concepts. Still, they require costly concept annotations and lack spatial grounding, often failing to identify which regions support each concept. We propose SEG-MIL-CBM, a novel framework that integrates concept-guided image segmentation into an attention-based multiple instance learning (MIL) framework, where each segmented region is treated as an instance and the model learns to aggregate evidence across them. By reasoning over semantically meaningful regions aligned with high-level concepts, our model highlights task-relevant evidence, down-weights irrelevant cues, and produces spatially grounded, concept-level explanations without requiring annotations of concepts or groups. SEG-MIL-CBM achieves robust performance across settings involving spurious correlations (unintended dependencies between background and label), input corruptions (perturbations that degrade visual quality), and large-scale benchmarks, while providing transparent, concept-level explanations.",
-        "arxiv_id": "2510.04180",
-        "ARXIVID": "2510.04180",
+        "title": "Efficient Conditional Generation on Scale-based Visual Autoregressive Models",
+        "abstract": "arXiv:2510.05610v1 Announce Type: new  Abstract: Recent advances in autoregressive (AR) models have demonstrated their potential to rival diffusion models in image synthesis. However, for complex spatially-conditioned generation, current AR approaches rely on fine-tuning the pre-trained model, leading to significant training costs. In this paper, we propose the Efficient Control Model (ECM), a plug-and-play framework featuring a lightweight control module that introduces control signals via a distributed architecture. This architecture consists of context-aware attention layers that refine conditional features using real-time generated tokens, and a shared gated feed-forward network (FFN) designed to maximize the utilization of its limited capacity and ensure coherent control feature learning. Furthermore, recognizing the critical role of early-stage generation in determining semantic structure, we introduce an early-centric sampling strategy that prioritizes learning early control sequences. This approach reduces computational cost by lowering the number of training tokens per iteration, while a complementary temperature scheduling during inference compensates for the resulting insufficient training of late-stage tokens. Extensive experiments on scale-based AR models validate that our method achieves high-fidelity and diverse control over image generation, surpassing existing baselines while significantly improving both training and inference efficiency.",
+        "arxiv_id": "2510.05610",
+        "ARXIVID": "2510.05610",
         "COMMENT": "",
         "RELEVANCE": 3,
         "NOVELTY": 5
     },
-    "2510.05093": {
+    "2510.06209": {
         "authors": [
-            "Tingting Liao",
-            "Chongjian Ge",
-            "Guangyi Liu",
-            "Hao Li",
-            "Yi Zhou"
+            "Jiahao Wang",
+            "Zhenpei Yang",
+            "Yijing Bai",
+            "Yingwei Li",
+            "Yuliang Zou",
+            "Bo Sun",
+            "Abhijit Kundu",
+            "Jose Lezama",
+            "Luna Yue Huang",
+            "Zehao Zhu",
+            "Jyh-Jing Hwang",
+            "Dragomir Anguelov",
+            "Mingxing Tan",
+            "Chiyu Max Jiang"
         ],
-        "title": "Character Mixing for Video Generation",
-        "abstract": "arXiv:2510.05093v1 Announce Type: new  Abstract: Imagine Mr. Bean stepping into Tom and Jerry--can we generate videos where characters interact naturally across different worlds? We study inter-character interaction in text-to-video generation, where the key challenge is to preserve each character's identity and behaviors while enabling coherent cross-context interaction. This is difficult because characters may never have coexisted and because mixing styles often causes style delusion, where realistic characters appear cartoonish or vice versa. We introduce a framework that tackles these issues with Cross-Character Embedding (CCE), which learns identity and behavioral logic across multimodal sources, and Cross-Character Augmentation (CCA), which enriches training with synthetic co-existence and mixed-style data. Together, these techniques allow natural interactions between previously uncoexistent characters without losing stylistic fidelity. Experiments on a curated benchmark of cartoons and live-action series with 10 characters show clear improvements in identity preservation, interaction quality, and robustness to style delusion, enabling new forms of generative storytelling.Additional results and videos are available on our project page: https://tingtingliao.github.io/mimix/.",
-        "arxiv_id": "2510.05093",
-        "ARXIVID": "2510.05093",
-        "COMMENT": "",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2510.04533": {
-        "authors": [
-            "Hyunmin Cho",
-            "Donghoon Ahn",
-            "Susung Hong",
-            "Jee Eun Kim",
-            "Seungryong Kim",
-            "Kyong Hwan Jin"
-        ],
-        "title": "TAG:Tangential Amplifying Guidance for Hallucination-Resistant Diffusion Sampling",
-        "abstract": "arXiv:2510.04533v1 Announce Type: new  Abstract: Recent diffusion models achieve the state-of-the-art performance in image generation, but often suffer from semantic inconsistencies or hallucinations. While various inference-time guidance methods can enhance generation, they often operate indirectly by relying on external signals or architectural modifications, which introduces additional computational overhead. In this paper, we propose Tangential Amplifying Guidance (TAG), a more efficient and direct guidance method that operates solely on trajectory signals without modifying the underlying diffusion model. TAG leverages an intermediate sample as a projection basis and amplifies the tangential components of the estimated scores with respect to this basis to correct the sampling trajectory. We formalize this guidance process by leveraging a first-order Taylor expansion, which demonstrates that amplifying the tangential component steers the state toward higher-probability regions, thereby reducing inconsistencies and enhancing sample quality. TAG is a plug-and-play, architecture-agnostic module that improves diffusion sampling fidelity with minimal computational addition, offering a new perspective on diffusion guidance.",
-        "arxiv_id": "2510.04533",
-        "ARXIVID": "2510.04533",
+        "title": "Drive&Gen: Co-Evaluating End-to-End Driving and Video Generation Models",
+        "abstract": "arXiv:2510.06209v1 Announce Type: new  Abstract: Recent advances in generative models have sparked exciting new possibilities in the field of autonomous vehicles. Specifically, video generation models are now being explored as controllable virtual testing environments. Simultaneously, end-to-end (E2E) driving models have emerged as a streamlined alternative to conventional modular autonomous driving systems, gaining popularity for their simplicity and scalability. However, the application of these techniques to simulation and planning raises important questions. First, while video generation models can generate increasingly realistic videos, can these videos faithfully adhere to the specified conditions and be realistic enough for E2E autonomous planner evaluation? Second, given that data is crucial for understanding and controlling E2E planners, how can we gain deeper insights into their biases and improve their ability to generalize to out-of-distribution scenarios? In this work, we bridge the gap between the driving models and generative world models (Drive&Gen) to address these questions. We propose novel statistical measures leveraging E2E drivers to evaluate the realism of generated videos. By exploiting the controllability of the video generation model, we conduct targeted experiments to investigate distribution gaps affecting E2E planner performance. Finally, we show that synthetic data produced by the video generation model offers a cost-effective alternative to real-world data collection. This synthetic data effectively improves E2E model generalization beyond existing Operational Design Domains, facilitating the expansion of autonomous vehicle services into new operational contexts.",
+        "arxiv_id": "2510.06209",
+        "ARXIVID": "2510.06209",
         "COMMENT": "",
         "RELEVANCE": 3,
         "NOVELTY": 5
