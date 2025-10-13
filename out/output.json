@@ -1,159 +1,143 @@
 {
-    "2510.08431": {
+    "2510.09561": {
         "authors": [
-            "Kaiwen Zheng",
-            "Yuji Wang",
-            "Qianli Ma",
-            "Huayu Chen",
-            "Jintao Zhang",
-            "Yogesh Balaji",
-            "Jianfei Chen",
-            "Ming-Yu Liu",
-            "Jun Zhu",
-            "Qinsheng Zhang"
+            "Minkyoung Cho",
+            "Ruben Ohana",
+            "Christian Jacobsen",
+            "Adityan Jothi",
+            "Min-Hung Chen",
+            "Z. Morley Mao",
+            "Ethem Can"
         ],
-        "title": "Large Scale Diffusion Distillation via Score-Regularized Continuous-Time Consistency",
-        "abstract": "arXiv:2510.08431v1 Announce Type: new  Abstract: This work represents the first effort to scale up continuous-time consistency distillation to general application-level image and video diffusion models. Although continuous-time consistency model (sCM) is theoretically principled and empirically powerful for accelerating academic-scale diffusion, its applicability to large-scale text-to-image and video tasks remains unclear due to infrastructure challenges in Jacobian-vector product (JVP) computation and the limitations of standard evaluation benchmarks. We first develop a parallelism-compatible FlashAttention-2 JVP kernel, enabling sCM training on models with over 10 billion parameters and high-dimensional video tasks. Our investigation reveals fundamental quality limitations of sCM in fine-detail generation, which we attribute to error accumulation and the \"mode-covering\" nature of its forward-divergence objective. To remedy this, we propose the score-regularized continuous-time consistency model (rCM), which incorporates score distillation as a long-skip regularizer. This integration complements sCM with the \"mode-seeking\" reverse divergence, effectively improving visual quality while maintaining high generation diversity. Validated on large-scale models (Cosmos-Predict2, Wan2.1) up to 14B parameters and 5-second videos, rCM matches or surpasses the state-of-the-art distillation method DMD2 on quality metrics while offering notable advantages in diversity, all without GAN tuning or extensive hyperparameter searches. The distilled models generate high-fidelity samples in only $1\\sim4$ steps, accelerating diffusion sampling by $15\\times\\sim50\\times$. These results position rCM as a practical and theoretically grounded framework for advancing large-scale diffusion distillation.",
-        "arxiv_id": "2510.08431",
-        "ARXIVID": "2510.08431",
-        "COMMENT": "Matches criteria 2 for Unified Diffusion Models",
+        "title": "TC-LoRA: Temporally Modulated Conditional LoRA for Adaptive Diffusion Control",
+        "abstract": "arXiv:2510.09561v1 Announce Type: new  Abstract: Current controllable diffusion models typically rely on fixed architectures that modify intermediate activations to inject guidance conditioned on a new modality. This approach uses a static conditioning strategy for a dynamic, multi-stage denoising process, limiting the model's ability to adapt its response as the generation evolves from coarse structure to fine detail. We introduce TC-LoRA (Temporally Modulated Conditional LoRA), a new paradigm that enables dynamic, context-aware control by conditioning the model's weights directly. Our framework uses a hypernetwork to generate LoRA adapters on-the-fly, tailoring weight modifications for the frozen backbone at each diffusion step based on time and the user's condition. This mechanism enables the model to learn and execute an explicit, adaptive strategy for applying conditional guidance throughout the entire generation process. Through experiments on various data domains, we demonstrate that this dynamic, parametric control significantly enhances generative fidelity and adherence to spatial conditions compared to static, activation-based methods. TC-LoRA establishes an alternative approach in which the model's conditioning strategy is modified through a deeper functional adaptation of its weights, allowing control to align with the dynamic demands of the task and generative stage.",
+        "arxiv_id": "2510.09561",
+        "ARXIVID": "2510.09561",
+        "COMMENT": "Matches criterion 2: Proposes a diffusion model with dynamic, context-aware control for multiple tasks.",
         "RELEVANCE": 5,
         "NOVELTY": 7
     },
-    "2510.07944": {
+    "2510.09121": {
         "authors": [
-            "Tianrui Zhang",
-            "Yichen Liu",
-            "Zilin Guo",
-            "Yuxin Guo",
-            "Jingcheng Ni",
-            "Chenjing Ding",
-            "Dan Xu",
-            "Lewei Lu",
-            "Zehuan Wu"
+            "Dominik Winter",
+            "Mai Bui",
+            "Monica Azqueta Gavaldon",
+            "Nicolas Triltsch",
+            "Marco Rosati",
+            "Nicolas Brieu"
         ],
-        "title": "CVD-STORM: Cross-View Video Diffusion with Spatial-Temporal Reconstruction Model for Autonomous Driving",
-        "abstract": "arXiv:2510.07944v1 Announce Type: new  Abstract: Generative models have been widely applied to world modeling for environment simulation and future state prediction. With advancements in autonomous driving, there is a growing demand not only for high-fidelity video generation under various controls, but also for producing diverse and meaningful information such as depth estimation. To address this, we propose CVD-STORM, a cross-view video diffusion model utilizing a spatial-temporal reconstruction Variational Autoencoder (VAE) that generates long-term, multi-view videos with 4D reconstruction capabilities under various control inputs. Our approach first fine-tunes the VAE with an auxiliary 4D reconstruction task, enhancing its ability to encode 3D structures and temporal dynamics. Subsequently, we integrate this VAE into the video diffusion process to significantly improve generation quality. Experimental results demonstrate that our model achieves substantial improvements in both FID and FVD metrics. Additionally, the jointly-trained Gaussian Splatting Decoder effectively reconstructs dynamic scenes, providing valuable geometric information for comprehensive scene understanding.",
-        "arxiv_id": "2510.07944",
-        "ARXIVID": "2510.07944",
-        "COMMENT": "Matches criterion 2: Unified Diffusion Models for multiple vision tasks.",
+        "title": "MSDM: Generating Task-Specific Pathology Images with a Multimodal Conditioned Diffusion Model for Cell and Nuclei Segmentation",
+        "abstract": "arXiv:2510.09121v1 Announce Type: new  Abstract: Scarcity of annotated data, particularly for rare or atypical morphologies, present significant challenges for cell and nuclei segmentation in computational pathology. While manual annotation is labor-intensive and costly, synthetic data offers a cost-effective alternative. We introduce a Multimodal Semantic Diffusion Model (MSDM) for generating realistic pixel-precise image-mask pairs for cell and nuclei segmentation. By conditioning the generative process with cellular/nuclear morphologies (using horizontal and vertical maps), RGB color characteristics, and BERT-encoded assay/indication metadata, MSDM generates datasests with desired morphological properties. These heterogeneous modalities are integrated via multi-head cross-attention, enabling fine-grained control over the generated images. Quantitative analysis demonstrates that synthetic images closely match real data, with low Wasserstein distances between embeddings of generated and real images under matching biological conditions. The incorporation of these synthetic samples, exemplified by columnar cells, significantly improves segmentation model accuracy on columnar cells. This strategy systematically enriches data sets, directly targeting model deficiencies. We highlight the effectiveness of multimodal diffusion-based augmentation for advancing the robustness and generalizability of cell and nuclei segmentation models. Thereby, we pave the way for broader application of generative models in computational pathology.",
+        "arxiv_id": "2510.09121",
+        "ARXIVID": "2510.09121",
+        "COMMENT": "Matches criterion 1: Proposes a unified framework for generating image-mask pairs for segmentation.",
         "RELEVANCE": 5,
         "NOVELTY": 6
     },
-    "2510.07721": {
+    "2510.09212": {
         "authors": [
-            "Zipeng Guo",
-            "Lichen Ma",
-            "Xiaolong Fu",
-            "Gaojing Zhou",
-            "Lan Yang",
-            "Yuchen Zhou",
-            "Linkai Liu",
-            "Yu He",
-            "Ximan Liu",
-            "Shiping Dong",
-            "Jingling Fu",
-            "Zhen Chen",
-            "Yu Shi",
-            "Junshi Huang",
-            "Jason Li",
-            "Chao Gou"
+            "Wuyang Li",
+            "Wentao Pan",
+            "Po-Chien Luan",
+            "Yang Gao",
+            "Alexandre Alahi"
         ],
-        "title": "RePainter: Empowering E-commerce Object Removal via Spatial-matting Reinforcement Learning",
-        "abstract": "arXiv:2510.07721v1 Announce Type: new  Abstract: In web data, product images are central to boosting user engagement and advertising efficacy on e-commerce platforms, yet the intrusive elements such as watermarks and promotional text remain major obstacles to delivering clear and appealing product visuals. Although diffusion-based inpainting methods have advanced, they still face challenges in commercial settings due to unreliable object removal and limited domain-specific adaptation. To tackle these challenges, we propose Repainter, a reinforcement learning framework that integrates spatial-matting trajectory refinement with Group Relative Policy Optimization (GRPO). Our approach modulates attention mechanisms to emphasize background context, generating higher-reward samples and reducing unwanted object insertion. We also introduce a composite reward mechanism that balances global, local, and semantic constraints, effectively reducing visual artifacts and reward hacking. Additionally, we contribute EcomPaint-100K, a high-quality, large-scale e-commerce inpainting dataset, and a standardized benchmark EcomPaint-Bench for fair evaluation. Extensive experiments demonstrate that Repainter significantly outperforms state-of-the-art methods, especially in challenging scenes with intricate compositions. We will release our code and weights upon acceptance.",
-        "arxiv_id": "2510.07721",
-        "ARXIVID": "2510.07721",
-        "COMMENT": "Matches criteria 3 for Image Matting",
-        "RELEVANCE": 5,
-        "NOVELTY": 6
-    },
-    "2510.07670": {
-        "authors": [
-            "Haoyi Duan",
-            "Yunzhi Zhang",
-            "Yilun Du",
-            "Jiajun Wu"
-        ],
-        "title": "Controllable Video Synthesis via Variational Inference",
-        "abstract": "arXiv:2510.07670v1 Announce Type: new  Abstract: Many video workflows benefit from a mixture of user controls with varying granularity, from exact 4D object trajectories and camera paths to coarse text prompts, while existing video generative models are typically trained for fixed input formats. We develop a video synthesis method that addresses this need and generates samples with high controllability for specified elements while maintaining diversity for under-specified ones. We cast the task as variational inference to approximate a composed distribution, leveraging multiple video generation backbones to account for all task constraints collectively. To address the optimization challenge, we break down the problem into step-wise KL divergence minimization over an annealed sequence of distributions, and further propose a context-conditioned factorization technique that reduces modes in the solution space to circumvent local optima. Experiments suggest that our method produces samples with improved controllability, diversity, and 3D consistency compared to prior works.",
-        "arxiv_id": "2510.07670",
-        "ARXIVID": "2510.07670",
-        "COMMENT": "The paper does not match any specific criteria closely. It discusses controllable video synthesis via variational inference, but does not mention joint generation and segmentation or a unified diffusion model for multiple tasks.",
-        "RELEVANCE": 3,
-        "NOVELTY": 7
-    },
-    "2510.08131": {
-        "authors": [
-            "Kesen Zhao",
-            "Jiaxin Shi",
-            "Beier Zhu",
-            "Junbao Zhou",
-            "Xiaolong Shen",
-            "Yuan Zhou",
-            "Qianru Sun",
-            "Hanwang Zhang"
-        ],
-        "title": "Real-Time Motion-Controllable Autoregressive Video Diffusion",
-        "abstract": "arXiv:2510.08131v1 Announce Type: new  Abstract: Real-time motion-controllable video generation remains challenging due to the inherent latency of bidirectional diffusion models and the lack of effective autoregressive (AR) approaches. Existing AR video diffusion models are limited to simple control signals or text-to-video generation, and often suffer from quality degradation and motion artifacts in few-step generation. To address these challenges, we propose AR-Drag, the first RL-enhanced few-step AR video diffusion model for real-time image-to-video generation with diverse motion control. We first fine-tune a base I2V model to support basic motion control, then further improve it via reinforcement learning with a trajectory-based reward model. Our design preserves the Markov property through a Self-Rollout mechanism and accelerates training by selectively introducing stochasticity in denoising steps. Extensive experiments demonstrate that AR-Drag achieves high visual fidelity and precise motion alignment, significantly reducing latency compared with state-of-the-art motion-controllable VDMs, while using only 1.3B parameters. Additional visualizations can be found on our project page: https://kesenzhao.github.io/AR-Drag.github.io/.",
-        "arxiv_id": "2510.08131",
-        "ARXIVID": "2510.08131",
-        "COMMENT": "The paper does not match any specific criteria closely. It focuses on real-time motion-controllable video generation using a diffusion model, but does not mention joint generation and segmentation or a unified diffusion model for multiple tasks.",
+        "title": "Stable Video Infinity: Infinite-Length Video Generation with Error Recycling",
+        "abstract": "arXiv:2510.09212v1 Announce Type: new  Abstract: We propose Stable Video Infinity (SVI) that is able to generate infinite-length videos with high temporal consistency, plausible scene transitions, and controllable streaming storylines. While existing long-video methods attempt to mitigate accumulated errors via handcrafted anti-drifting (e.g., modified noise scheduler, frame anchoring), they remain limited to single-prompt extrapolation, producing homogeneous scenes with repetitive motions. We identify that the fundamental challenge extends beyond error accumulation to a critical discrepancy between the training assumption (seeing clean data) and the test-time autoregressive reality (conditioning on self-generated, error-prone outputs). To bridge this hypothesis gap, SVI incorporates Error-Recycling Fine-Tuning, a new type of efficient training that recycles the Diffusion Transformer (DiT)'s self-generated errors into supervisory prompts, thereby encouraging DiT to actively identify and correct its own errors. This is achieved by injecting, collecting, and banking errors through closed-loop recycling, autoregressively learning from error-injected feedback. Specifically, we (i) inject historical errors made by DiT to intervene on clean inputs, simulating error-accumulated trajectories in flow matching; (ii) efficiently approximate predictions with one-step bidirectional integration and calculate errors with residuals; (iii) dynamically bank errors into replay memory across discretized timesteps, which are resampled for new input. SVI is able to scale videos from seconds to infinite durations with no additional inference cost, while remaining compatible with diverse conditions (e.g., audio, skeleton, and text streams). We evaluate SVI on three benchmarks, including consistent, creative, and conditional settings, thoroughly verifying its versatility and state-of-the-art role.",
+        "arxiv_id": "2510.09212",
+        "ARXIVID": "2510.09212",
+        "COMMENT": "No criteria match closely.",
         "RELEVANCE": 3,
         "NOVELTY": 6
     },
-    "2510.08485": {
+    "2510.09094": {
         "authors": [
-            "Chong Mou",
-            "Qichao Sun",
-            "Yanze Wu",
-            "Pengze Zhang",
-            "Xinghui Li",
-            "Fulong Ye",
-            "Songtao Zhao",
-            "Qian He"
+            "Youwei Zheng",
+            "Yuxi Ren",
+            "Xin Xia",
+            "Xuefeng Xiao",
+            "Xiaohua Xie"
         ],
-        "title": "InstructX: Towards Unified Visual Editing with MLLM Guidance",
-        "abstract": "arXiv:2510.08485v1 Announce Type: new  Abstract: With recent advances in Multimodal Large Language Models (MLLMs) showing strong visual understanding and reasoning, interest is growing in using them to improve the editing performance of diffusion models. Despite rapid progress, most studies lack an in-depth analysis of MLLM design choices. Moreover, the integration of MLLMs and diffusion models remains an open challenge in some difficult tasks, such as video editing. In this paper, we present InstructX, a unified framework for image and video editing. Specifically, we conduct a comprehensive study on integrating MLLMs and diffusion models for instruction-driven editing across diverse tasks. Building on this study, we analyze the cooperation and distinction between images and videos in unified modeling. (1) We show that training on image data can lead to emergent video editing capabilities without explicit supervision, thereby alleviating the constraints imposed by scarce video training data. (2) By incorporating modality-specific MLLM features, our approach effectively unifies image and video editing tasks within a single model. Extensive experiments demonstrate that our method can handle a broad range of image and video editing tasks and achieves state-of-the-art performance.",
-        "arxiv_id": "2510.08485",
-        "ARXIVID": "2510.08485",
+        "title": "Dense2MoE: Restructuring Diffusion Transformer to MoE for Efficient Text-to-Image Generation",
+        "abstract": "arXiv:2510.09094v1 Announce Type: new  Abstract: Diffusion Transformer (DiT) has demonstrated remarkable performance in text-to-image generation; however, its large parameter size results in substantial inference overhead. Existing parameter compression methods primarily focus on pruning, but aggressive pruning often leads to severe performance degradation due to reduced model capacity. To address this limitation, we pioneer the transformation of a dense DiT into a Mixture of Experts (MoE) for structured sparsification, reducing the number of activated parameters while preserving model capacity. Specifically, we replace the Feed-Forward Networks (FFNs) in DiT Blocks with MoE layers, reducing the number of activated parameters in the FFNs by 62.5\\%. Furthermore, we propose the Mixture of Blocks (MoB) to selectively activate DiT blocks, thereby further enhancing sparsity. To ensure an effective dense-to-MoE conversion, we design a multi-step distillation pipeline, incorporating Taylor metric-based expert initialization, knowledge distillation with load balancing, and group feature loss for MoB optimization. We transform large diffusion transformers (e.g., FLUX.1 [dev]) into an MoE structure, reducing activated parameters by 60\\% while maintaining original performance and surpassing pruning-based approaches in extensive experiments. Overall, Dense2MoE establishes a new paradigm for efficient text-to-image generation.",
+        "arxiv_id": "2510.09094",
+        "ARXIVID": "2510.09094",
         "COMMENT": "No criteria match closely.",
         "RELEVANCE": 3,
         "NOVELTY": 5
     },
-    "2510.07546": {
+    "2510.08673": {
         "authors": [
-            "Soroush Mehraban",
-            "Vida Adeli",
-            "Jacob Rommann",
-            "Babak Taati",
-            "Kyryl Truskovskyi"
+            "Kang Liao",
+            "Size Wu",
+            "Zhonghua Wu",
+            "Linyi Jin",
+            "Chao Wang",
+            "Yikai Wang",
+            "Fei Wang",
+            "Wei Li",
+            "Chen Change Loy"
         ],
-        "title": "PickStyle: Video-to-Video Style Transfer with Context-Style Adapters",
-        "abstract": "arXiv:2510.07546v1 Announce Type: new  Abstract: We address the task of video style transfer with diffusion models, where the goal is to preserve the context of an input video while rendering it in a target style specified by a text prompt. A major challenge is the lack of paired video data for supervision. We propose PickStyle, a video-to-video style transfer framework that augments pretrained video diffusion backbones with style adapters and benefits from paired still image data with source-style correspondences for training. PickStyle inserts low-rank adapters into the self-attention layers of conditioning modules, enabling efficient specialization for motion-style transfer while maintaining strong alignment between video content and style. To bridge the gap between static image supervision and dynamic video, we construct synthetic training clips from paired images by applying shared augmentations that simulate camera motion, ensuring temporal priors are preserved. In addition, we introduce Context-Style Classifier-Free Guidance (CS-CFG), a novel factorization of classifier-free guidance into independent text (style) and video (context) directions. CS-CFG ensures that context is preserved in generated video while the style is effectively transferred. Experiments across benchmarks show that our approach achieves temporally coherent, style-faithful, and content-preserving video translations, outperforming existing baselines both qualitatively and quantitatively.",
-        "arxiv_id": "2510.07546",
-        "ARXIVID": "2510.07546",
+        "title": "Thinking with Camera: A Unified Multimodal Model for Camera-Centric Understanding and Generation",
+        "abstract": "arXiv:2510.08673v1 Announce Type: new  Abstract: Camera-centric understanding and generation are two cornerstones of spatial intelligence, yet they are typically studied in isolation. We present Puffin, a unified camera-centric multimodal model that extends spatial awareness along the camera dimension. Puffin integrates language regression and diffusion-based generation to interpret and create scenes from arbitrary viewpoints. To bridge the modality gap between cameras and vision-language, we introduce a novel paradigm that treats camera as language, enabling thinking with camera. This guides the model to align spatially grounded visual cues with photographic terminology while reasoning across geometric context. Puffin is trained on Puffin-4M, a large-scale dataset of 4 million vision-language-camera triplets. We incorporate both global camera parameters and pixel-wise camera maps, yielding flexible and reliable spatial generation. Experiments demonstrate Puffin superior performance over specialized models for camera-centric generation and understanding. With instruction tuning, Puffin generalizes to diverse cross-view tasks such as spatial imagination, world exploration, and photography guidance. We will release the code, models, dataset pipeline, and benchmark to advance multimodal spatial intelligence research.",
+        "arxiv_id": "2510.08673",
+        "ARXIVID": "2510.08673",
         "COMMENT": "No criteria match closely.",
         "RELEVANCE": 3,
         "NOVELTY": 5
     },
-    "2510.07723": {
+    "2510.09274": {
         "authors": [
-            "Wenyue Chen",
-            "Peng Li",
-            "Wangguandong Zheng",
-            "Chengfeng Zhao",
-            "Mengfei Li",
-            "Yaolong Zhu",
-            "Zhiyang Dou",
-            "Ronggang Wang",
-            "Yuan Liu"
+            "Ming Dai",
+            "Sen Yang",
+            "Boqiang Duan",
+            "Wankou Yang",
+            "Jingdong Wang"
         ],
-        "title": "SyncHuman: Synchronizing 2D and 3D Generative Models for Single-view Human Reconstruction",
-        "abstract": "arXiv:2510.07723v1 Announce Type: new  Abstract: Photorealistic 3D full-body human reconstruction from a single image is a critical yet challenging task for applications in films and video games due to inherent ambiguities and severe self-occlusions. While recent approaches leverage SMPL estimation and SMPL-conditioned image generative models to hallucinate novel views, they suffer from inaccurate 3D priors estimated from SMPL meshes and have difficulty in handling difficult human poses and reconstructing fine details. In this paper, we propose SyncHuman, a novel framework that combines 2D multiview generative model and 3D native generative model for the first time, enabling high-quality clothed human mesh reconstruction from single-view images even under challenging human poses. Multiview generative model excels at capturing fine 2D details but struggles with structural consistency, whereas 3D native generative model generates coarse yet structurally consistent 3D shapes. By integrating the complementary strengths of these two approaches, we develop a more effective generation framework. Specifically, we first jointly fine-tune the multiview generative model and the 3D native generative model with proposed pixel-aligned 2D-3D synchronization attention to produce geometrically aligned 3D shapes and 2D multiview images. To further improve details, we introduce a feature injection mechanism that lifts fine details from 2D multiview images onto the aligned 3D shapes, enabling accurate and high-fidelity reconstruction. Extensive experiments demonstrate that SyncHuman achieves robust and photo-realistic 3D human reconstruction, even for images with challenging poses. Our method outperforms baseline methods in geometric accuracy and visual fidelity, demonstrating a promising direction for future 3D generation models.",
-        "arxiv_id": "2510.07723",
-        "ARXIVID": "2510.07723",
+        "title": "MomentSeg: Moment-Centric Sampling for Enhanced Video Pixel Understanding",
+        "abstract": "arXiv:2510.09274v1 Announce Type: new  Abstract: Referring Video Object Segmentation (RefVOS) seeks to segment target objects in videos guided by natural language descriptions, demanding both temporal reasoning and fine-grained visual comprehension. Existing sampling strategies for LLM-based approaches typically rely on either handcrafted heuristics or external keyframe models. The former often overlooks essential temporal cues, while the latter increases system complexity. To address this, we propose a unified framework that jointly optimizes Temporal Sentence Grounding (TSG) and RefVOS, naturally incorporating key moment grounding capability. During training, we introduce a novel TSG paradigm that employs a dedicated \\texttt{[FIND]} token for key moment identification through temporal token similarity matching, thereby avoiding the need for external timestamp encodings. For inference, we design a Moment-Centric Sampling (MCS) strategy that densely samples informative moments while sparsely sampling non-essential frames, preserving both motion details and global context. To further enhance tracking stability, we develop Bidirectional Anchor-updated Propagation (BAP), which leverages the most relevant moment as start point for high-quality mask initialization and dynamically updates at sampled points to mitigate accumulated errors. Code and model will be available at: https://github.com/Dmmm1997/MomentSeg",
+        "arxiv_id": "2510.09274",
+        "ARXIVID": "2510.09274",
         "COMMENT": "No criteria match closely.",
         "RELEVANCE": 3,
         "NOVELTY": 5
+    },
+    "2510.08955": {
+        "authors": [
+            "Nisha Pillai",
+            "Aditi Virupakshaiah",
+            "Harrison W. Smith",
+            "Amanda J. Ashworth",
+            "Prasanna Gowda",
+            "Phillip R. Owens",
+            "Adam R. Rivers",
+            "Bindu Nanduri",
+            "Mahalingam Ramkumar"
+        ],
+        "title": "Denoised Diffusion for Object-Focused Image Augmentation",
+        "abstract": "arXiv:2510.08955v1 Announce Type: new  Abstract: Modern agricultural operations increasingly rely on integrated monitoring systems that combine multiple data sources for farm optimization. Aerial drone-based animal health monitoring serves as a key component but faces limited data availability, compounded by scene-specific issues such as small, occluded, or partially visible animals. Transfer learning approaches often fail to address this limitation due to the unavailability of large datasets that reflect specific farm conditions, including variations in animal breeds, environments, and behaviors. Therefore, there is a need for developing a problem-specific, animal-focused data augmentation strategy tailored to these unique challenges. To address this gap, we propose an object-focused data augmentation framework designed explicitly for animal health monitoring in constrained data settings. Our approach segments animals from backgrounds and augments them through transformations and diffusion-based synthesis to create realistic, diverse scenes that enhance animal detection and monitoring performance. Our initial experiments demonstrate that our augmented dataset yields superior performance compared to our baseline models on the animal detection task. By generating domain-specific data, our method empowers real-time animal health monitoring solutions even in data-scarce scenarios, bridging the gap between limited data and practical applicability.",
+        "arxiv_id": "2510.08955",
+        "ARXIVID": "2510.08955",
+        "COMMENT": "No criteria match closely.",
+        "RELEVANCE": 3,
+        "NOVELTY": 4
+    },
+    "2510.09056": {
+        "authors": [
+            "Junhyeok Lee",
+            "Hyunwoong Kim",
+            "Hyungjin Chung",
+            "Heeseong Eom",
+            "Joon Jang",
+            "Chul-Ho Sohn",
+            "Kyu Sung Choi"
+        ],
+        "title": "Lesion-Aware Post-Training of Latent Diffusion Models for Synthesizing Diffusion MRI from CT Perfusion",
+        "abstract": "arXiv:2510.09056v1 Announce Type: new  Abstract: Image-to-Image translation models can help mitigate various challenges inherent to medical image acquisition. Latent diffusion models (LDMs) leverage efficient learning in compressed latent space and constitute the core of state-of-the-art generative image models. However, this efficiency comes with a trade-off, potentially compromising crucial pixel-level detail essential for high-fidelity medical images. This limitation becomes particularly critical when generating clinically significant structures, such as lesions, which often occupy only a small portion of the image. Failure to accurately reconstruct these regions can severely impact diagnostic reliability and clinical decision-making. To overcome this limitation, we propose a novel post-training framework for LDMs in medical image-to-image translation by incorporating lesion-aware medical pixel space objectives. This approach is essential, as it not only enhances overall image quality but also improves the precision of lesion delineation. We evaluate our framework on brain CT-to-MRI translation in acute ischemic stroke patients, where early and accurate diagnosis is critical for optimal treatment selection and improved patient outcomes. While diffusion MRI is the gold standard for stroke diagnosis, its clinical utility is often constrained by high costs and low accessibility. Using a dataset of 817 patients, we demonstrate that our framework improves overall image quality and enhances lesion delineation when synthesizing DWI and ADC images from CT perfusion scans, outperforming existing image-to-image translation models. Furthermore, our post-training strategy is easily adaptable to pre-trained LDMs and exhibits substantial potential for broader applications across diverse medical image translation tasks.",
+        "arxiv_id": "2510.09056",
+        "ARXIVID": "2510.09056",
+        "COMMENT": "No criteria match closely.",
+        "RELEVANCE": 3,
+        "NOVELTY": 4
     }
 }
