@@ -1,143 +1,24 @@
 {
-    "2510.09561": {
+    "2510.10575": {
         "authors": [
-            "Minkyoung Cho",
-            "Ruben Ohana",
-            "Christian Jacobsen",
-            "Adityan Jothi",
-            "Min-Hung Chen",
-            "Z. Morley Mao",
-            "Ethem Can"
+            "Zhengrong Yue",
+            "Haiyu Zhang",
+            "Xiangyu Zeng",
+            "Boyu Chen",
+            "Chenting Wang",
+            "Shaobin Zhuang",
+            "Lu Dong",
+            "KunPeng Du",
+            "Yi Wang",
+            "Limin Wang",
+            "Yali Wang"
         ],
-        "title": "TC-LoRA: Temporally Modulated Conditional LoRA for Adaptive Diffusion Control",
-        "abstract": "arXiv:2510.09561v1 Announce Type: new  Abstract: Current controllable diffusion models typically rely on fixed architectures that modify intermediate activations to inject guidance conditioned on a new modality. This approach uses a static conditioning strategy for a dynamic, multi-stage denoising process, limiting the model's ability to adapt its response as the generation evolves from coarse structure to fine detail. We introduce TC-LoRA (Temporally Modulated Conditional LoRA), a new paradigm that enables dynamic, context-aware control by conditioning the model's weights directly. Our framework uses a hypernetwork to generate LoRA adapters on-the-fly, tailoring weight modifications for the frozen backbone at each diffusion step based on time and the user's condition. This mechanism enables the model to learn and execute an explicit, adaptive strategy for applying conditional guidance throughout the entire generation process. Through experiments on various data domains, we demonstrate that this dynamic, parametric control significantly enhances generative fidelity and adherence to spatial conditions compared to static, activation-based methods. TC-LoRA establishes an alternative approach in which the model's conditioning strategy is modified through a deeper functional adaptation of its weights, allowing control to align with the dynamic demands of the task and generative stage.",
-        "arxiv_id": "2510.09561",
-        "ARXIVID": "2510.09561",
-        "COMMENT": "Matches criterion 2: Proposes a diffusion model with dynamic, context-aware control for multiple tasks.",
-        "RELEVANCE": 5,
-        "NOVELTY": 7
-    },
-    "2510.09121": {
-        "authors": [
-            "Dominik Winter",
-            "Mai Bui",
-            "Monica Azqueta Gavaldon",
-            "Nicolas Triltsch",
-            "Marco Rosati",
-            "Nicolas Brieu"
-        ],
-        "title": "MSDM: Generating Task-Specific Pathology Images with a Multimodal Conditioned Diffusion Model for Cell and Nuclei Segmentation",
-        "abstract": "arXiv:2510.09121v1 Announce Type: new  Abstract: Scarcity of annotated data, particularly for rare or atypical morphologies, present significant challenges for cell and nuclei segmentation in computational pathology. While manual annotation is labor-intensive and costly, synthetic data offers a cost-effective alternative. We introduce a Multimodal Semantic Diffusion Model (MSDM) for generating realistic pixel-precise image-mask pairs for cell and nuclei segmentation. By conditioning the generative process with cellular/nuclear morphologies (using horizontal and vertical maps), RGB color characteristics, and BERT-encoded assay/indication metadata, MSDM generates datasests with desired morphological properties. These heterogeneous modalities are integrated via multi-head cross-attention, enabling fine-grained control over the generated images. Quantitative analysis demonstrates that synthetic images closely match real data, with low Wasserstein distances between embeddings of generated and real images under matching biological conditions. The incorporation of these synthetic samples, exemplified by columnar cells, significantly improves segmentation model accuracy on columnar cells. This strategy systematically enriches data sets, directly targeting model deficiencies. We highlight the effectiveness of multimodal diffusion-based augmentation for advancing the robustness and generalizability of cell and nuclei segmentation models. Thereby, we pave the way for broader application of generative models in computational pathology.",
-        "arxiv_id": "2510.09121",
-        "ARXIVID": "2510.09121",
-        "COMMENT": "Matches criterion 1: Proposes a unified framework for generating image-mask pairs for segmentation.",
+        "title": "UniFlow: A Unified Pixel Flow Tokenizer for Visual Understanding and Generation",
+        "abstract": "arXiv:2510.10575v1 Announce Type: new  Abstract: Tokenizer is a crucial component for both visual understanding and generation. To advance toward the ultimate goal of universal modeling, recent research has focused on developing a unified tokenizer. However, existing tokenizers face a significant performance trade-off between understanding and generation, stemming from the inherent conflict between high-level semantic abstraction and low-level pixel reconstruction. To tackle this challenge, we propose a generic and unified tokenizer, namely UniFlow, by flexibly adapting any visual encoder with a concise reconstruction decoder. Specifically, we introduce layer-wise adaptive self-distillation applied to the well-pretrained visual encoders, which enables UniFlow to simultaneously inherit the strong semantic features for visual understanding and flexibly adapt to model fine-grained details for visual generation. Moreover, we propose a lightweight patch-wise pixel flow decoder, which efficiently achieves high-fidelity pixel reconstruction by modeling a conditional flow from the noisy state back to the patch-wise pixel domain. By leveraging the semantic features as visual conditions for the decoder, we effectively alleviate the training conflicts between understanding and generation. Furthermore, the patch-wise learning strategy simplifies the data distribution, thereby improving training efficiency. Extensive experiments across 13 challenging benchmarks spanning 7 widely studied visual understanding and generation tasks demonstrate that UniFlow achieves a win-win outcome. For instance, our 7B UniFlow-XL not only surpasses the 14B TokenFlow-XL by 7.75% on average understanding benchmarks, but also achieves competitive results in both visual reconstruction and generation, surpassing UniTok by 0.15 in rFID and 0.09 in gFID (without guidance), respectively.",
+        "arxiv_id": "2510.10575",
+        "ARXIVID": "2510.10575",
+        "COMMENT": "The paper proposes a unified tokenizer for visual understanding and generation, which aligns with the unified image/video generation and segmentation criterion.",
         "RELEVANCE": 5,
         "NOVELTY": 6
-    },
-    "2510.09212": {
-        "authors": [
-            "Wuyang Li",
-            "Wentao Pan",
-            "Po-Chien Luan",
-            "Yang Gao",
-            "Alexandre Alahi"
-        ],
-        "title": "Stable Video Infinity: Infinite-Length Video Generation with Error Recycling",
-        "abstract": "arXiv:2510.09212v1 Announce Type: new  Abstract: We propose Stable Video Infinity (SVI) that is able to generate infinite-length videos with high temporal consistency, plausible scene transitions, and controllable streaming storylines. While existing long-video methods attempt to mitigate accumulated errors via handcrafted anti-drifting (e.g., modified noise scheduler, frame anchoring), they remain limited to single-prompt extrapolation, producing homogeneous scenes with repetitive motions. We identify that the fundamental challenge extends beyond error accumulation to a critical discrepancy between the training assumption (seeing clean data) and the test-time autoregressive reality (conditioning on self-generated, error-prone outputs). To bridge this hypothesis gap, SVI incorporates Error-Recycling Fine-Tuning, a new type of efficient training that recycles the Diffusion Transformer (DiT)'s self-generated errors into supervisory prompts, thereby encouraging DiT to actively identify and correct its own errors. This is achieved by injecting, collecting, and banking errors through closed-loop recycling, autoregressively learning from error-injected feedback. Specifically, we (i) inject historical errors made by DiT to intervene on clean inputs, simulating error-accumulated trajectories in flow matching; (ii) efficiently approximate predictions with one-step bidirectional integration and calculate errors with residuals; (iii) dynamically bank errors into replay memory across discretized timesteps, which are resampled for new input. SVI is able to scale videos from seconds to infinite durations with no additional inference cost, while remaining compatible with diverse conditions (e.g., audio, skeleton, and text streams). We evaluate SVI on three benchmarks, including consistent, creative, and conditional settings, thoroughly verifying its versatility and state-of-the-art role.",
-        "arxiv_id": "2510.09212",
-        "ARXIVID": "2510.09212",
-        "COMMENT": "No criteria match closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 6
-    },
-    "2510.09094": {
-        "authors": [
-            "Youwei Zheng",
-            "Yuxi Ren",
-            "Xin Xia",
-            "Xuefeng Xiao",
-            "Xiaohua Xie"
-        ],
-        "title": "Dense2MoE: Restructuring Diffusion Transformer to MoE for Efficient Text-to-Image Generation",
-        "abstract": "arXiv:2510.09094v1 Announce Type: new  Abstract: Diffusion Transformer (DiT) has demonstrated remarkable performance in text-to-image generation; however, its large parameter size results in substantial inference overhead. Existing parameter compression methods primarily focus on pruning, but aggressive pruning often leads to severe performance degradation due to reduced model capacity. To address this limitation, we pioneer the transformation of a dense DiT into a Mixture of Experts (MoE) for structured sparsification, reducing the number of activated parameters while preserving model capacity. Specifically, we replace the Feed-Forward Networks (FFNs) in DiT Blocks with MoE layers, reducing the number of activated parameters in the FFNs by 62.5\\%. Furthermore, we propose the Mixture of Blocks (MoB) to selectively activate DiT blocks, thereby further enhancing sparsity. To ensure an effective dense-to-MoE conversion, we design a multi-step distillation pipeline, incorporating Taylor metric-based expert initialization, knowledge distillation with load balancing, and group feature loss for MoB optimization. We transform large diffusion transformers (e.g., FLUX.1 [dev]) into an MoE structure, reducing activated parameters by 60\\% while maintaining original performance and surpassing pruning-based approaches in extensive experiments. Overall, Dense2MoE establishes a new paradigm for efficient text-to-image generation.",
-        "arxiv_id": "2510.09094",
-        "ARXIVID": "2510.09094",
-        "COMMENT": "No criteria match closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2510.08673": {
-        "authors": [
-            "Kang Liao",
-            "Size Wu",
-            "Zhonghua Wu",
-            "Linyi Jin",
-            "Chao Wang",
-            "Yikai Wang",
-            "Fei Wang",
-            "Wei Li",
-            "Chen Change Loy"
-        ],
-        "title": "Thinking with Camera: A Unified Multimodal Model for Camera-Centric Understanding and Generation",
-        "abstract": "arXiv:2510.08673v1 Announce Type: new  Abstract: Camera-centric understanding and generation are two cornerstones of spatial intelligence, yet they are typically studied in isolation. We present Puffin, a unified camera-centric multimodal model that extends spatial awareness along the camera dimension. Puffin integrates language regression and diffusion-based generation to interpret and create scenes from arbitrary viewpoints. To bridge the modality gap between cameras and vision-language, we introduce a novel paradigm that treats camera as language, enabling thinking with camera. This guides the model to align spatially grounded visual cues with photographic terminology while reasoning across geometric context. Puffin is trained on Puffin-4M, a large-scale dataset of 4 million vision-language-camera triplets. We incorporate both global camera parameters and pixel-wise camera maps, yielding flexible and reliable spatial generation. Experiments demonstrate Puffin superior performance over specialized models for camera-centric generation and understanding. With instruction tuning, Puffin generalizes to diverse cross-view tasks such as spatial imagination, world exploration, and photography guidance. We will release the code, models, dataset pipeline, and benchmark to advance multimodal spatial intelligence research.",
-        "arxiv_id": "2510.08673",
-        "ARXIVID": "2510.08673",
-        "COMMENT": "No criteria match closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2510.09274": {
-        "authors": [
-            "Ming Dai",
-            "Sen Yang",
-            "Boqiang Duan",
-            "Wankou Yang",
-            "Jingdong Wang"
-        ],
-        "title": "MomentSeg: Moment-Centric Sampling for Enhanced Video Pixel Understanding",
-        "abstract": "arXiv:2510.09274v1 Announce Type: new  Abstract: Referring Video Object Segmentation (RefVOS) seeks to segment target objects in videos guided by natural language descriptions, demanding both temporal reasoning and fine-grained visual comprehension. Existing sampling strategies for LLM-based approaches typically rely on either handcrafted heuristics or external keyframe models. The former often overlooks essential temporal cues, while the latter increases system complexity. To address this, we propose a unified framework that jointly optimizes Temporal Sentence Grounding (TSG) and RefVOS, naturally incorporating key moment grounding capability. During training, we introduce a novel TSG paradigm that employs a dedicated \\texttt{[FIND]} token for key moment identification through temporal token similarity matching, thereby avoiding the need for external timestamp encodings. For inference, we design a Moment-Centric Sampling (MCS) strategy that densely samples informative moments while sparsely sampling non-essential frames, preserving both motion details and global context. To further enhance tracking stability, we develop Bidirectional Anchor-updated Propagation (BAP), which leverages the most relevant moment as start point for high-quality mask initialization and dynamically updates at sampled points to mitigate accumulated errors. Code and model will be available at: https://github.com/Dmmm1997/MomentSeg",
-        "arxiv_id": "2510.09274",
-        "ARXIVID": "2510.09274",
-        "COMMENT": "No criteria match closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2510.08955": {
-        "authors": [
-            "Nisha Pillai",
-            "Aditi Virupakshaiah",
-            "Harrison W. Smith",
-            "Amanda J. Ashworth",
-            "Prasanna Gowda",
-            "Phillip R. Owens",
-            "Adam R. Rivers",
-            "Bindu Nanduri",
-            "Mahalingam Ramkumar"
-        ],
-        "title": "Denoised Diffusion for Object-Focused Image Augmentation",
-        "abstract": "arXiv:2510.08955v1 Announce Type: new  Abstract: Modern agricultural operations increasingly rely on integrated monitoring systems that combine multiple data sources for farm optimization. Aerial drone-based animal health monitoring serves as a key component but faces limited data availability, compounded by scene-specific issues such as small, occluded, or partially visible animals. Transfer learning approaches often fail to address this limitation due to the unavailability of large datasets that reflect specific farm conditions, including variations in animal breeds, environments, and behaviors. Therefore, there is a need for developing a problem-specific, animal-focused data augmentation strategy tailored to these unique challenges. To address this gap, we propose an object-focused data augmentation framework designed explicitly for animal health monitoring in constrained data settings. Our approach segments animals from backgrounds and augments them through transformations and diffusion-based synthesis to create realistic, diverse scenes that enhance animal detection and monitoring performance. Our initial experiments demonstrate that our augmented dataset yields superior performance compared to our baseline models on the animal detection task. By generating domain-specific data, our method empowers real-time animal health monitoring solutions even in data-scarce scenarios, bridging the gap between limited data and practical applicability.",
-        "arxiv_id": "2510.08955",
-        "ARXIVID": "2510.08955",
-        "COMMENT": "No criteria match closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 4
-    },
-    "2510.09056": {
-        "authors": [
-            "Junhyeok Lee",
-            "Hyunwoong Kim",
-            "Hyungjin Chung",
-            "Heeseong Eom",
-            "Joon Jang",
-            "Chul-Ho Sohn",
-            "Kyu Sung Choi"
-        ],
-        "title": "Lesion-Aware Post-Training of Latent Diffusion Models for Synthesizing Diffusion MRI from CT Perfusion",
-        "abstract": "arXiv:2510.09056v1 Announce Type: new  Abstract: Image-to-Image translation models can help mitigate various challenges inherent to medical image acquisition. Latent diffusion models (LDMs) leverage efficient learning in compressed latent space and constitute the core of state-of-the-art generative image models. However, this efficiency comes with a trade-off, potentially compromising crucial pixel-level detail essential for high-fidelity medical images. This limitation becomes particularly critical when generating clinically significant structures, such as lesions, which often occupy only a small portion of the image. Failure to accurately reconstruct these regions can severely impact diagnostic reliability and clinical decision-making. To overcome this limitation, we propose a novel post-training framework for LDMs in medical image-to-image translation by incorporating lesion-aware medical pixel space objectives. This approach is essential, as it not only enhances overall image quality but also improves the precision of lesion delineation. We evaluate our framework on brain CT-to-MRI translation in acute ischemic stroke patients, where early and accurate diagnosis is critical for optimal treatment selection and improved patient outcomes. While diffusion MRI is the gold standard for stroke diagnosis, its clinical utility is often constrained by high costs and low accessibility. Using a dataset of 817 patients, we demonstrate that our framework improves overall image quality and enhances lesion delineation when synthesizing DWI and ADC images from CT perfusion scans, outperforming existing image-to-image translation models. Furthermore, our post-training strategy is easily adaptable to pre-trained LDMs and exhibits substantial potential for broader applications across diverse medical image translation tasks.",
-        "arxiv_id": "2510.09056",
-        "ARXIVID": "2510.09056",
-        "COMMENT": "No criteria match closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 4
     }
 }
