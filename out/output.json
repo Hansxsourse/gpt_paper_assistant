@@ -1,4 +1,53 @@
 {
+    "2510.12749": {
+        "authors": [
+            "Zhiliu Yang",
+            "Jinyu Dai",
+            "Jianyuan Zhang",
+            "Zhu Yang"
+        ],
+        "title": "SPORTS: Simultaneous Panoptic Odometry, Rendering, Tracking and Segmentation for Urban Scenes Understanding",
+        "abstract": "arXiv:2510.12749v1 Announce Type: new  Abstract: The scene perception, understanding, and simulation are fundamental techniques for embodied-AI agents, while existing solutions are still prone to segmentation deficiency, dynamic objects' interference, sensor data sparsity, and view-limitation problems. This paper proposes a novel framework, named SPORTS, for holistic scene understanding via tightly integrating Video Panoptic Segmentation (VPS), Visual Odometry (VO), and Scene Rendering (SR) tasks into an iterative and unified perspective. Firstly, VPS designs an adaptive attention-based geometric fusion mechanism to align cross-frame features via enrolling the pose, depth, and optical flow modality, which automatically adjust feature maps for different decoding stages. And a post-matching strategy is integrated to improve identities tracking. In VO, panoptic segmentation results from VPS are combined with the optical flow map to improve the confidence estimation of dynamic objects, which enhances the accuracy of the camera pose estimation and completeness of the depth map generation via the learning-based paradigm. Furthermore, the point-based rendering of SR is beneficial from VO, transforming sparse point clouds into neural fields to synthesize high-fidelity RGB views and twin panoptic views. Extensive experiments on three public datasets demonstrate that our attention-based feature fusion outperforms most existing state-of-the-art methods on the odometry, tracking, segmentation, and novel view synthesis tasks.",
+        "arxiv_id": "2510.12749",
+        "ARXIVID": "2510.12749",
+        "COMMENT": "The paper matches criterion 1 closely with a unified framework for segmentation and rendering.",
+        "RELEVANCE": 5,
+        "NOVELTY": 7
+    },
+    "2510.12586": {
+        "authors": [
+            "Jiachen Lei",
+            "Keli Liu",
+            "Julius Berner",
+            "Haiming Yu",
+            "Hongkai Zheng",
+            "Jiahong Wu",
+            "Xiangxiang Chu"
+        ],
+        "title": "Advancing End-to-End Pixel Space Generative Modeling via Self-supervised Pre-training",
+        "abstract": "arXiv:2510.12586v1 Announce Type: new  Abstract: Pixel-space generative models are often more difficult to train and generally underperform compared to their latent-space counterparts, leaving a persistent performance and efficiency gap. In this paper, we introduce a novel two-stage training framework that closes this gap for pixel-space diffusion and consistency models. In the first stage, we pre-train encoders to capture meaningful semantics from clean images while aligning them with points along the same deterministic sampling trajectory, which evolves points from the prior to the data distribution. In the second stage, we integrate the encoder with a randomly initialized decoder and fine-tune the complete model end-to-end for both diffusion and consistency models. Our training framework demonstrates strong empirical performance on ImageNet dataset. Specifically, our diffusion model reaches an FID of 2.04 on ImageNet-256 and 2.35 on ImageNet-512 with 75 number of function evaluations (NFE), surpassing prior pixel-space methods by a large margin in both generation quality and efficiency while rivaling leading VAE-based models at comparable training cost. Furthermore, on ImageNet-256, our consistency model achieves an impressive FID of 8.82 in a single sampling step, significantly surpassing its latent-space counterpart. To the best of our knowledge, this marks the first successful training of a consistency model directly on high-resolution images without relying on pre-trained VAEs or diffusion models.",
+        "arxiv_id": "2510.12586",
+        "ARXIVID": "2510.12586",
+        "COMMENT": "The paper does not match any specific criteria closely.",
+        "RELEVANCE": 3,
+        "NOVELTY": 6
+    },
+    "2510.12785": {
+        "authors": [
+            "Felix Taubner",
+            "Ruihang Zhang",
+            "Mathieu Tuli",
+            "Sherwin Bahmani",
+            "David B. Lindell"
+        ],
+        "title": "MVP4D: Multi-View Portrait Video Diffusion for Animatable 4D Avatars",
+        "abstract": "arXiv:2510.12785v1 Announce Type: new  Abstract: Digital human avatars aim to simulate the dynamic appearance of humans in virtual environments, enabling immersive experiences across gaming, film, virtual reality, and more. However, the conventional process for creating and animating photorealistic human avatars is expensive and time-consuming, requiring large camera capture rigs and significant manual effort from professional 3D artists. With the advent of capable image and video generation models, recent methods enable automatic rendering of realistic animated avatars from a single casually captured reference image of a target subject. While these techniques significantly lower barriers to avatar creation and offer compelling realism, they lack constraints provided by multi-view information or an explicit 3D representation. So, image quality and realism degrade when rendered from viewpoints that deviate strongly from the reference image. Here, we build a video model that generates animatable multi-view videos of digital humans based on a single reference image and target expressions. Our model, MVP4D, is based on a state-of-the-art pre-trained video diffusion model and generates hundreds of frames simultaneously from viewpoints varying by up to 360 degrees around a target subject. We show how to distill the outputs of this model into a 4D avatar that can be rendered in real-time. Our approach significantly improves the realism, temporal consistency, and 3D consistency of generated avatars compared to previous methods.",
+        "arxiv_id": "2510.12785",
+        "ARXIVID": "2510.12785",
+        "COMMENT": "The paper does not match any specific criteria closely.",
+        "RELEVANCE": 3,
+        "NOVELTY": 6
+    },
     "2510.12174": {
         "authors": [
             "Yusen Xie",
@@ -11,40 +60,7 @@
         "abstract": "arXiv:2510.12174v1 Announce Type: new  Abstract: In this paper, we propose UniGS, a unified map representation and differentiable framework for high-fidelity multimodal 3D reconstruction based on 3D Gaussian Splatting. Our framework integrates a CUDA-accelerated rasterization pipeline capable of rendering photo-realistic RGB images, geometrically accurate depth maps, consistent surface normals, and semantic logits simultaneously. We redesign the rasterization to render depth via differentiable ray-ellipsoid intersection rather than using Gaussian centers, enabling effective optimization of rotation and scale attribute through analytic depth gradients. Furthermore, we derive the analytic gradient formulation for surface normal rendering, ensuring geometric consistency among reconstructed 3D scenes. To improve computational and storage efficiency, we introduce a learnable attribute that enables differentiable pruning of Gaussians with minimal contribution during training. Quantitative and qualitative experiments demonstrate state-of-the-art reconstruction accuracy across all modalities, validating the efficacy of our geometry-aware paradigm. Source code and multimodal viewer will be available on GitHub.",
         "arxiv_id": "2510.12174",
         "ARXIVID": "2510.12174",
-        "COMMENT": "Matches criteria 2 closely with a unified framework for multimodal rendering.",
-        "RELEVANCE": 5,
-        "NOVELTY": 6
-    },
-    "2510.12749": {
-        "authors": [
-            "Zhiliu Yang",
-            "Jinyu Dai",
-            "Jianyuan Zhang",
-            "Zhu Yang"
-        ],
-        "title": "SPORTS: Simultaneous Panoptic Odometry, Rendering, Tracking and Segmentation for Urban Scenes Understanding",
-        "abstract": "arXiv:2510.12749v1 Announce Type: new  Abstract: The scene perception, understanding, and simulation are fundamental techniques for embodied-AI agents, while existing solutions are still prone to segmentation deficiency, dynamic objects' interference, sensor data sparsity, and view-limitation problems. This paper proposes a novel framework, named SPORTS, for holistic scene understanding via tightly integrating Video Panoptic Segmentation (VPS), Visual Odometry (VO), and Scene Rendering (SR) tasks into an iterative and unified perspective. Firstly, VPS designs an adaptive attention-based geometric fusion mechanism to align cross-frame features via enrolling the pose, depth, and optical flow modality, which automatically adjust feature maps for different decoding stages. And a post-matching strategy is integrated to improve identities tracking. In VO, panoptic segmentation results from VPS are combined with the optical flow map to improve the confidence estimation of dynamic objects, which enhances the accuracy of the camera pose estimation and completeness of the depth map generation via the learning-based paradigm. Furthermore, the point-based rendering of SR is beneficial from VO, transforming sparse point clouds into neural fields to synthesize high-fidelity RGB views and twin panoptic views. Extensive experiments on three public datasets demonstrate that our attention-based feature fusion outperforms most existing state-of-the-art methods on the odometry, tracking, segmentation, and novel view synthesis tasks.",
-        "arxiv_id": "2510.12749",
-        "ARXIVID": "2510.12749",
-        "COMMENT": "Matches criteria 1 closely with a unified framework for segmentation and rendering.",
-        "RELEVANCE": 5,
-        "NOVELTY": 6
-    },
-    "2510.12747": {
-        "authors": [
-            "Junhao Zhuang",
-            "Shi Guo",
-            "Xin Cai",
-            "Xiaohui Li",
-            "Yihao Liu",
-            "Chun Yuan",
-            "Tianfan Xue"
-        ],
-        "title": "FlashVSR: Towards Real-Time Diffusion-Based Streaming Video Super-Resolution",
-        "abstract": "arXiv:2510.12747v1 Announce Type: new  Abstract: Diffusion models have recently advanced video restoration, but applying them to real-world video super-resolution (VSR) remains challenging due to high latency, prohibitive computation, and poor generalization to ultra-high resolutions. Our goal in this work is to make diffusion-based VSR practical by achieving efficiency, scalability, and real-time performance. To this end, we propose FlashVSR, the first diffusion-based one-step streaming framework towards real-time VSR. FlashVSR runs at approximately 17 FPS for 768x1408 videos on a single A100 GPU by combining three complementary innovations: (i) a train-friendly three-stage distillation pipeline that enables streaming super-resolution, (ii) locality-constrained sparse attention that cuts redundant computation while bridging the train-test resolution gap, and (iii) a tiny conditional decoder that accelerates reconstruction without sacrificing quality. To support large-scale training, we also construct VSR-120K, a new dataset with 120k videos and 180k images. Extensive experiments show that FlashVSR scales reliably to ultra-high resolutions and achieves state-of-the-art performance with up to 12x speedup over prior one-step diffusion VSR models. We will release the code, pretrained models, and dataset to foster future research in efficient diffusion-based VSR.",
-        "arxiv_id": "2510.12747",
-        "ARXIVID": "2510.12747",
-        "COMMENT": "Does not match any specific criteria.",
+        "COMMENT": "The paper does not match any specific criteria closely.",
         "RELEVANCE": 3,
         "NOVELTY": 5
     },
@@ -64,73 +80,8 @@
         "abstract": "arXiv:2510.12793v1 Announce Type: new  Abstract: Existing Multimodal Large Language Models (MLLMs) suffer from increased inference costs due to the additional vision tokens introduced by image inputs. In this work, we propose Visual Consistency Learning (ViCO), a novel training algorithm that enables the model to represent images of varying semantic complexities using different numbers of vision tokens. The key idea behind our method is to employ multiple MLP connectors, each with a different image compression ratio, to downsample the vision tokens based on the semantic complexity of the image. During training, we minimize the KL divergence between the responses conditioned on different MLP connectors. At inference time, we introduce an image router, termed Visual Resolution Router (ViR), that automatically selects the appropriate compression rate for each image patch. Compared with existing dynamic high-resolution strategies, which adjust the number of visual tokens based on image resolutions, our method dynamically adapts the number of visual tokens according to semantic complexity. Experimental results demonstrate that our method can reduce the number of vision tokens by up to 50% while maintaining the model's perception, reasoning, and OCR capabilities. We hope this work will contribute to the development of more efficient MLLMs. The code and models will be released to facilitate future research.",
         "arxiv_id": "2510.12793",
         "ARXIVID": "2510.12793",
-        "COMMENT": "Does not match any specific criteria.",
+        "COMMENT": "The paper does not match any specific criteria closely.",
         "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2510.12789": {
-        "authors": [
-            "Kevin Li",
-            "Manuel Brack",
-            "Sudeep Katakol",
-            "Hareesh Ravi",
-            "Ajinkya Kale"
-        ],
-        "title": "UniFusion: Vision-Language Model as Unified Encoder in Image Generation",
-        "abstract": "arXiv:2510.12789v1 Announce Type: new  Abstract: Although recent advances in visual generation have been remarkable, most existing architectures still depend on distinct encoders for images and text. This separation constrains diffusion models' ability to perform cross-modal reasoning and knowledge transfer. Prior attempts to bridge this gap often use the last layer information from VLM, employ multiple visual encoders, or train large unified models jointly for text and image generation, which demands substantial computational resources and large-scale data, limiting its accessibility.We present UniFusion, a diffusion-based generative model conditioned on a frozen large vision-language model (VLM) that serves as a unified multimodal encoder. At the core of UniFusion is the Layerwise Attention Pooling (LAP) mechanism that extracts both high level semantics and low level details from text and visual tokens of a frozen VLM to condition a diffusion generative model. We demonstrate that LAP outperforms other shallow fusion architectures on text-image alignment for generation and faithful transfer of visual information from VLM to the diffusion model which is key for editing. We propose VLM-Enabled Rewriting Injection with Flexibile Inference (VERIFI), which conditions a diffusion transformer (DiT) only on the text tokens generated by the VLM during in-model prompt rewriting. VERIFI combines the alignment of the conditioning distribution with the VLM's reasoning capabilities for increased capabilities and flexibility at inference. In addition, finetuning on editing task not only improves text-image alignment for generation, indicative of cross-modality knowledge transfer, but also exhibits tremendous generalization capabilities. Our model when trained on single image editing, zero-shot generalizes to multiple image references further motivating the unified encoder design of UniFusion.",
-        "arxiv_id": "2510.12789",
-        "ARXIVID": "2510.12789",
-        "COMMENT": "Does not match any specific criteria.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2510.12159": {
-        "authors": [
-            "Ziyuan Gao",
-            "Philippe Morel"
-        ],
-        "title": "DPL: Spatial-Conditioned Diffusion Prototype Enhancement for One-Shot Medical Segmentation",
-        "abstract": "arXiv:2510.12159v1 Announce Type: new  Abstract: One-shot medical image segmentation faces fundamental challenges in prototype representation due to limited annotated data and significant anatomical variability across patients. Traditional prototype-based methods rely on deterministic averaging of support features, creating brittle representations that fail to capture intra-class diversity essential for robust generalization. This work introduces Diffusion Prototype Learning (DPL), a novel framework that reformulates prototype construction through diffusion-based feature space exploration. DPL models one-shot prototypes as learnable probability distributions, enabling controlled generation of diverse yet semantically coherent prototype variants from minimal labeled data. The framework operates through three core innovations: (1) a diffusion-based prototype enhancement module that transforms single support prototypes into diverse variant sets via forward-reverse diffusion processes, (2) a spatial-aware conditioning mechanism that leverages geometric properties derived from prototype feature statistics, and (3) a conservative fusion strategy that preserves prototype fidelity while maximizing representational diversity. DPL ensures training-inference consistency by using the same diffusion enhancement and fusion pipeline in both phases. This process generates enhanced prototypes that serve as the final representations for similarity calculations, while the diffusion process itself acts as a regularizer. Extensive experiments on abdominal MRI and CT datasets demonstrate significant improvements respectively, establishing new state-of-the-art performance in one-shot medical image segmentation.",
-        "arxiv_id": "2510.12159",
-        "ARXIVID": "2510.12159",
-        "COMMENT": "Does not match any specific criteria.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2510.12099": {
-        "authors": [
-            "Junfeng Ni",
-            "Yixin Chen",
-            "Zhifei Yang",
-            "Yu Liu",
-            "Ruijie Lu",
-            "Song-Chun Zhu",
-            "Siyuan Huang"
-        ],
-        "title": "G4Splat: Geometry-Guided Gaussian Splatting with Generative Prior",
-        "abstract": "arXiv:2510.12099v1 Announce Type: new  Abstract: Despite recent advances in leveraging generative prior from pre-trained diffusion models for 3D scene reconstruction, existing methods still face two critical limitations. First, due to the lack of reliable geometric supervision, they struggle to produce high-quality reconstructions even in observed regions, let alone in unobserved areas. Second, they lack effective mechanisms to mitigate multi-view inconsistencies in the generated images, leading to severe shape-appearance ambiguities and degraded scene geometry. In this paper, we identify accurate geometry as the fundamental prerequisite for effectively exploiting generative models to enhance 3D scene reconstruction. We first propose to leverage the prevalence of planar structures to derive accurate metric-scale depth maps, providing reliable supervision in both observed and unobserved regions. Furthermore, we incorporate this geometry guidance throughout the generative pipeline to improve visibility mask estimation, guide novel view selection, and enhance multi-view consistency when inpainting with video diffusion models, resulting in accurate and consistent scene completion. Extensive experiments on Replica, ScanNet++, and DeepBlending show that our method consistently outperforms existing baselines in both geometry and appearance reconstruction, particularly for unobserved regions. Moreover, our method naturally supports single-view inputs and unposed videos, with strong generalizability in both indoor and outdoor scenarios with practical real-world applicability. The project page is available at https://dali-jack.github.io/g4splat-web/.",
-        "arxiv_id": "2510.12099",
-        "ARXIVID": "2510.12099",
-        "COMMENT": "Does not match any specific criteria.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2510.12586": {
-        "authors": [
-            "Jiachen Lei",
-            "Keli Liu",
-            "Julius Berner",
-            "Haiming Yu",
-            "Hongkai Zheng",
-            "Jiahong Wu",
-            "Xiangxiang Chu"
-        ],
-        "title": "Advancing End-to-End Pixel Space Generative Modeling via Self-supervised Pre-training",
-        "abstract": "arXiv:2510.12586v1 Announce Type: new  Abstract: Pixel-space generative models are often more difficult to train and generally underperform compared to their latent-space counterparts, leaving a persistent performance and efficiency gap. In this paper, we introduce a novel two-stage training framework that closes this gap for pixel-space diffusion and consistency models. In the first stage, we pre-train encoders to capture meaningful semantics from clean images while aligning them with points along the same deterministic sampling trajectory, which evolves points from the prior to the data distribution. In the second stage, we integrate the encoder with a randomly initialized decoder and fine-tune the complete model end-to-end for both diffusion and consistency models. Our training framework demonstrates strong empirical performance on ImageNet dataset. Specifically, our diffusion model reaches an FID of 2.04 on ImageNet-256 and 2.35 on ImageNet-512 with 75 number of function evaluations (NFE), surpassing prior pixel-space methods by a large margin in both generation quality and efficiency while rivaling leading VAE-based models at comparable training cost. Furthermore, on ImageNet-256, our consistency model achieves an impressive FID of 8.82 in a single sampling step, significantly surpassing its latent-space counterpart. To the best of our knowledge, this marks the first successful training of a consistency model directly on high-resolution images without relying on pre-trained VAEs or diffusion models.",
-        "arxiv_id": "2510.12586",
-        "ARXIVID": "2510.12586",
-        "COMMENT": "Does not match any specific criteria.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
+        "NOVELTY": 4
     }
 }
