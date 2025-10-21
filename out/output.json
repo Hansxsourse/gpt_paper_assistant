@@ -1,71 +1,33 @@
 {
-    "2510.15857": {
+    "2510.17363": {
         "authors": [
-            "Jiuhai Chen",
-            "Le Xue",
-            "Zhiyang Xu",
-            "Xichen Pan",
-            "Shusheng Yang",
-            "Can Qin",
-            "An Yan",
-            "Honglu Zhou",
-            "Zeyuan Chen",
-            "Lifu Huang",
-            "Tianyi Zhou",
-            "Junnan Li",
-            "Silvio Savarese",
-            "Caiming Xiong",
-            "Ran Xu"
+            "U. V. B. L Udugama",
+            "George Vosselman",
+            "Francesco Nex"
         ],
-        "title": "BLIP3o-NEXT: Next Frontier of Native Image Generation",
-        "abstract": "arXiv:2510.15857v1 Announce Type: new  Abstract: We present BLIP3o-NEXT, a fully open-source foundation model in the BLIP3 series that advances the next frontier of native image generation. BLIP3o-NEXT unifies text-to-image generation and image editing within a single architecture, demonstrating strong image generation and image editing capabilities. In developing the state-of-the-art native image generation model, we identify four key insights: (1) Most architectural choices yield comparable performance; an architecture can be deemed effective provided it scales efficiently and supports fast inference; (2) The successful application of reinforcement learning can further push the frontier of native image generation; (3) Image editing still remains a challenging task, yet instruction following and the consistency between generated and reference images can be significantly enhanced through post-training and data engine; (4) Data quality and scale continue to be decisive factors that determine the upper bound of model performance. Building upon these insights, BLIP3o-NEXT leverages an Autoregressive + Diffusion architecture in which an autoregressive model first generates discrete image tokens conditioned on multimodal inputs, whose hidden states are then used as conditioning signals for a diffusion model to generate high-fidelity images. This architecture integrates the reasoning strength and instruction following of autoregressive models with the fine-detail rendering ability of diffusion models, achieving a new level of coherence and realism. Extensive evaluations of various text-to-image and image-editing benchmarks show that BLIP3o-NEXT achieves superior performance over existing models.",
-        "arxiv_id": "2510.15857",
-        "ARXIVID": "2510.15857",
-        "COMMENT": "The paper does not match any specific criteria closely. It discusses a unified architecture for text-to-image generation and image editing, but does not involve joint generation and segmentation or a unified diffusion model for multiple tasks.",
-        "RELEVANCE": 3,
+        "title": "M2H: Multi-Task Learning with Efficient Window-Based Cross-Task Attention for Monocular Spatial Perception",
+        "abstract": "arXiv:2510.17363v1 Announce Type: new  Abstract: Deploying real-time spatial perception on edge devices requires efficient multi-task models that leverage complementary task information while minimizing computational overhead. This paper introduces Multi-Mono-Hydra (M2H), a novel multi-task learning framework designed for semantic segmentation and depth, edge, and surface normal estimation from a single monocular image. Unlike conventional approaches that rely on independent single-task models or shared encoder-decoder architectures, M2H introduces a Window-Based Cross-Task Attention Module that enables structured feature exchange while preserving task-specific details, improving prediction consistency across tasks. Built on a lightweight ViT-based DINOv2 backbone, M2H is optimized for real-time deployment and serves as the foundation for monocular spatial perception systems supporting 3D scene graph construction in dynamic environments. Comprehensive evaluations show that M2H outperforms state-of-the-art multi-task models on NYUDv2, surpasses single-task depth and semantic baselines on Hypersim, and achieves superior performance on the Cityscapes dataset, all while maintaining computational efficiency on laptop hardware. Beyond benchmarks, M2H is validated on real-world data, demonstrating its practicality in spatial perception tasks.",
+        "arxiv_id": "2510.17363",
+        "ARXIVID": "2510.17363",
+        "COMMENT": "Matches criterion 2: Unified Diffusion Models.",
+        "RELEVANCE": 5,
         "NOVELTY": 6
     },
-    "2510.15264": {
+    "2510.17137": {
         "authors": [
-            "Weijie Wang",
-            "Jiagang Zhu",
-            "Zeyu Zhang",
-            "Xiaofeng Wang",
-            "Zheng Zhu",
-            "Guosheng Zhao",
-            "Chaojun Ni",
-            "Haoxiao Wang",
-            "Guan Huang",
-            "Xinze Chen",
-            "Yukun Zhou",
-            "Wenkang Qin",
-            "Duochao Shi",
-            "Haoyun Li",
-            "Guanghong Jia",
-            "Jiwen Lu"
+            "WenBo Xu",
+            "Liu Liu",
+            "Li Zhang",
+            "Ran Zhang",
+            "Hao Wu",
+            "Dan Guo",
+            "Meng Wang"
         ],
-        "title": "DriveGen3D: Boosting Feed-Forward Driving Scene Generation with Efficient Video Diffusion",
-        "abstract": "arXiv:2510.15264v1 Announce Type: new  Abstract: We present DriveGen3D, a novel framework for generating high-quality and highly controllable dynamic 3D driving scenes that addresses critical limitations in existing methodologies. Current approaches to driving scene synthesis either suffer from prohibitive computational demands for extended temporal generation, focus exclusively on prolonged video synthesis without 3D representation, or restrict themselves to static single-scene reconstruction. Our work bridges this methodological gap by integrating accelerated long-term video generation with large-scale dynamic scene reconstruction through multimodal conditional control. DriveGen3D introduces a unified pipeline consisting of two specialized components: FastDrive-DiT, an efficient video diffusion transformer for high-resolution, temporally coherent video synthesis under text and Bird's-Eye-View (BEV) layout guidance; and FastRecon3D, a feed-forward reconstruction module that rapidly builds 3D Gaussian representations across time, ensuring spatial-temporal consistency. Together, these components enable real-time generation of extended driving videos (up to $424\\times800$ at 12 FPS) and corresponding dynamic 3D scenes, achieving SSIM of 0.811 and PSNR of 22.84 on novel view synthesis, all while maintaining parameter efficiency.",
-        "arxiv_id": "2510.15264",
-        "ARXIVID": "2510.15264",
-        "COMMENT": "The paper does not match any specific criteria closely. It focuses on video generation and 3D scene reconstruction, but does not mention joint generation and segmentation or a unified diffusion model for multiple tasks.",
-        "RELEVANCE": 3,
-        "NOVELTY": 6
-    },
-    "2510.15831": {
-        "authors": [
-            "Do Xuan Long",
-            "Xingchen Wan",
-            "Hootan Nakhost",
-            "Chen-Yu Lee",
-            "Tomas Pfister",
-            "Sercan \\\"O. Ar{\\i}k"
-        ],
-        "title": "VISTA: A Test-Time Self-Improving Video Generation Agent",
-        "abstract": "arXiv:2510.15831v1 Announce Type: new  Abstract: Despite rapid advances in text-to-video synthesis, generated video quality remains critically dependent on precise user prompts. Existing test-time optimization methods, successful in other domains, struggle with the multi-faceted nature of video. In this work, we introduce VISTA (Video Iterative Self-improvemenT Agent), a novel multi-agent system that autonomously improves video generation through refining prompts in an iterative loop. VISTA first decomposes a user idea into a structured temporal plan. After generation, the best video is identified through a robust pairwise tournament. This winning video is then critiqued by a trio of specialized agents focusing on visual, audio, and contextual fidelity. Finally, a reasoning agent synthesizes this feedback to introspectively rewrite and enhance the prompt for the next generation cycle. Experiments on single- and multi-scene video generation scenarios show that while prior methods yield inconsistent gains, VISTA consistently improves video quality and alignment with user intent, achieving up to 60% pairwise win rate against state-of-the-art baselines. Human evaluators concur, preferring VISTA outputs in 66.4% of comparisons.",
-        "arxiv_id": "2510.15831",
-        "ARXIVID": "2510.15831",
-        "COMMENT": "The paper does not match any specific criteria closely. It focuses on improving video generation through prompt refinement, but does not involve joint generation and segmentation or a unified diffusion model for multiple tasks.",
+        "title": "KineDiff3D: Kinematic-Aware Diffusion for Category-Level Articulated Object Shape Reconstruction and Generation",
+        "abstract": "arXiv:2510.17137v1 Announce Type: new  Abstract: Articulated objects, such as laptops and drawers, exhibit significant challenges for 3D reconstruction and pose estimation due to their multi-part geometries and variable joint configurations, which introduce structural diversity across different states. To address these challenges, we propose KineDiff3D: Kinematic-Aware Diffusion for Category-Level Articulated Object Shape Reconstruction and Generation, a unified framework for reconstructing diverse articulated instances and pose estimation from single view input. Specifically, we first encode complete geometry (SDFs), joint angles, and part segmentation into a structured latent space via a novel Kinematic-Aware VAE (KA-VAE). In addition, we employ two conditional diffusion models: one for regressing global pose (SE(3)) and joint parameters, and another for generating the kinematic-aware latent code from partial observations. Finally, we produce an iterative optimization module that bidirectionally refines reconstruction accuracy and kinematic parameters via Chamfer-distance minimization while preserving articulation constraints. Experimental results on synthetic, semi-synthetic, and real-world datasets demonstrate the effectiveness of our approach in accurately reconstructing articulated objects and estimating their kinematic properties.",
+        "arxiv_id": "2510.17137",
+        "ARXIVID": "2510.17137",
+        "COMMENT": "No criteria match closely.",
         "RELEVANCE": 3,
         "NOVELTY": 5
     }
