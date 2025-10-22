@@ -1,34 +1,74 @@
 {
-    "2510.17363": {
+    "2510.18083": {
         "authors": [
-            "U. V. B. L Udugama",
-            "George Vosselman",
-            "Francesco Nex"
+            "Shivam Singh",
+            "Yiming Chen",
+            "Agneet Chatterjee",
+            "Amit Raj",
+            "James Hays",
+            "Yezhou Yang",
+            "Chitra Baral"
         ],
-        "title": "M2H: Multi-Task Learning with Efficient Window-Based Cross-Task Attention for Monocular Spatial Perception",
-        "abstract": "arXiv:2510.17363v1 Announce Type: new  Abstract: Deploying real-time spatial perception on edge devices requires efficient multi-task models that leverage complementary task information while minimizing computational overhead. This paper introduces Multi-Mono-Hydra (M2H), a novel multi-task learning framework designed for semantic segmentation and depth, edge, and surface normal estimation from a single monocular image. Unlike conventional approaches that rely on independent single-task models or shared encoder-decoder architectures, M2H introduces a Window-Based Cross-Task Attention Module that enables structured feature exchange while preserving task-specific details, improving prediction consistency across tasks. Built on a lightweight ViT-based DINOv2 backbone, M2H is optimized for real-time deployment and serves as the foundation for monocular spatial perception systems supporting 3D scene graph construction in dynamic environments. Comprehensive evaluations show that M2H outperforms state-of-the-art multi-task models on NYUDv2, surpasses single-task depth and semantic baselines on Hypersim, and achieves superior performance on the Cityscapes dataset, all while maintaining computational efficiency on laptop hardware. Beyond benchmarks, M2H is validated on real-world data, demonstrating its practicality in spatial perception tasks.",
-        "arxiv_id": "2510.17363",
-        "ARXIVID": "2510.17363",
-        "COMMENT": "Matches criterion 2: Unified Diffusion Models.",
-        "RELEVANCE": 5,
+        "title": "Chimera: Compositional Image Generation using Part-based Concepting",
+        "abstract": "arXiv:2510.18083v1 Announce Type: new  Abstract: Personalized image generative models are highly proficient at synthesizing images from text or a single image, yet they lack explicit control for composing objects from specific parts of multiple source images without user specified masks or annotations. To address this, we introduce Chimera, a personalized image generation model that generates novel objects by combining specified parts from different source images according to textual instructions. To train our model, we first construct a dataset from a taxonomy built on 464 unique (part, subject) pairs, which we term semantic atoms. From this, we generate 37k prompts and synthesize the corresponding images with a high-fidelity text-to-image model. We train a custom diffusion prior model with part-conditional guidance, which steers the image-conditioning features to enforce both semantic identity and spatial layout. We also introduce an objective metric PartEval to assess the fidelity and compositional accuracy of generation pipelines. Human evaluations and our proposed metric show that Chimera outperforms other baselines by 14% in part alignment and compositional accuracy and 21% in visual quality.",
+        "arxiv_id": "2510.18083",
+        "ARXIVID": "2510.18083",
+        "COMMENT": "No criteria match closely.",
+        "RELEVANCE": 3,
         "NOVELTY": 6
     },
-    "2510.17137": {
+    "2510.18703": {
         "authors": [
-            "WenBo Xu",
-            "Liu Liu",
-            "Li Zhang",
-            "Ran Zhang",
-            "Hao Wu",
-            "Dan Guo",
-            "Meng Wang"
+            "Yiqi Lin",
+            "Alex Jinpeng Wang",
+            "Linjie Li",
+            "Zhengyuan Yang",
+            "Mike Zheng Shou"
         ],
-        "title": "KineDiff3D: Kinematic-Aware Diffusion for Category-Level Articulated Object Shape Reconstruction and Generation",
-        "abstract": "arXiv:2510.17137v1 Announce Type: new  Abstract: Articulated objects, such as laptops and drawers, exhibit significant challenges for 3D reconstruction and pose estimation due to their multi-part geometries and variable joint configurations, which introduce structural diversity across different states. To address these challenges, we propose KineDiff3D: Kinematic-Aware Diffusion for Category-Level Articulated Object Shape Reconstruction and Generation, a unified framework for reconstructing diverse articulated instances and pose estimation from single view input. Specifically, we first encode complete geometry (SDFs), joint angles, and part segmentation into a structured latent space via a novel Kinematic-Aware VAE (KA-VAE). In addition, we employ two conditional diffusion models: one for regressing global pose (SE(3)) and joint parameters, and another for generating the kinematic-aware latent code from partial observations. Finally, we produce an iterative optimization module that bidirectionally refines reconstruction accuracy and kinematic parameters via Chamfer-distance minimization while preserving articulation constraints. Experimental results on synthetic, semi-synthetic, and real-world datasets demonstrate the effectiveness of our approach in accurately reconstructing articulated objects and estimating their kinematic properties.",
-        "arxiv_id": "2510.17137",
-        "ARXIVID": "2510.17137",
+        "title": "Exploring a Unified Vision-Centric Contrastive Alternatives on Multi-Modal Web Documents",
+        "abstract": "arXiv:2510.18703v1 Announce Type: new  Abstract: Contrastive vision-language models such as CLIP have demonstrated strong performance across a wide range of multimodal tasks by learning from aligned image-text pairs. However, their ability to handle complex, real-world web documents remains limited, particularly in scenarios where text and images are interleaved, loosely aligned, or embedded in visual form. To address these challenges, we propose Vision-Centric Contrastive Learning (VC2L), a unified framework that models text, images, and their combinations using a single vision transformer. VC2L operates entirely in pixel space by rendering all inputs, whether textual, visual, or combined, as images, thus eliminating the need for OCR, text tokenization, or modality fusion strategy. To capture complex cross-modal relationships in multimodal web documents, VC2L employs a snippet-level contrastive learning objective that aligns consecutive multimodal segments, leveraging the inherent coherence of documents without requiring explicitly paired image-text data. To assess the effectiveness of this approach, we introduce three retrieval benchmarks, AnyCIR, SeqCIR, and CSR, designed to evaluate cross-modal retrieval, fine-grained sequential understanding, and generalization to unseen data, respectively. Empirical results show that VC2L achieves competitive or superior performance compared to CLIP-style models on both the proposed benchmarks and established datasets such as M-BEIR and MTEB. These findings underscore the potential of multimodal web data as a valuable training resource for contrastive learning and illustrate the scalability of a unified, vision-centric approach for multimodal representation learning. Code and models are available at: https://github.com/showlab/VC2L.",
+        "arxiv_id": "2510.18703",
+        "ARXIVID": "2510.18703",
         "COMMENT": "No criteria match closely.",
         "RELEVANCE": 3,
         "NOVELTY": 5
+    },
+    "2510.18775": {
+        "authors": [
+            "Teng Hu",
+            "Jiangning Zhang",
+            "Zihan Su",
+            "Ran Yi"
+        ],
+        "title": "UltraGen: High-Resolution Video Generation with Hierarchical Attention",
+        "abstract": "arXiv:2510.18775v1 Announce Type: new  Abstract: Recent advances in video generation have made it possible to produce visually compelling videos, with wide-ranging applications in content creation, entertainment, and virtual reality. However, most existing diffusion transformer based video generation models are limited to low-resolution outputs (<=720P) due to the quadratic computational complexity of the attention mechanism with respect to the output width and height. This computational bottleneck makes native high-resolution video generation (1080P/2K/4K) impractical for both training and inference. To address this challenge, we present UltraGen, a novel video generation framework that enables i) efficient and ii) end-to-end native high-resolution video synthesis. Specifically, UltraGen features a hierarchical dual-branch attention architecture based on global-local attention decomposition, which decouples full attention into a local attention branch for high-fidelity regional content and a global attention branch for overall semantic consistency. We further propose a spatially compressed global modeling strategy to efficiently learn global dependencies, and a hierarchical cross-window local attention mechanism to reduce computational costs while enhancing information flow across different local windows. Extensive experiments demonstrate that UltraGen can effectively scale pre-trained low-resolution video models to 1080P and even 4K resolution for the first time, outperforming existing state-of-the-art methods and super-resolution based two-stage pipelines in both qualitative and quantitative evaluations.",
+        "arxiv_id": "2510.18775",
+        "ARXIVID": "2510.18775",
+        "COMMENT": "No criteria match closely.",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2510.18214": {
+        "authors": [
+            "Shruti Palaskar",
+            "Leon Gatys",
+            "Mona Abdelrahman",
+            "Mar Jacobo",
+            "Larry Lindsey",
+            "Rutika Moharir",
+            "Gunnar Lund",
+            "Yang Xu",
+            "Navid Shiee",
+            "Jeffrey Bigham",
+            "Charles Maalouf",
+            "Joseph Yitan Cheng"
+        ],
+        "title": "VLSU: Mapping the Limits of Joint Multimodal Understanding for AI Safety",
+        "abstract": "arXiv:2510.18214v1 Announce Type: new  Abstract: Safety evaluation of multimodal foundation models often treats vision and language inputs separately, missing risks from joint interpretation where benign content becomes harmful in combination. Existing approaches also fail to distinguish clearly unsafe content from borderline cases, leading to problematic over-blocking or under-refusal of genuinely harmful content. We present Vision Language Safety Understanding (VLSU), a comprehensive framework to systematically evaluate multimodal safety through fine-grained severity classification and combinatorial analysis across 17 distinct safety patterns. Using a multi-stage pipeline with real-world images and human annotation, we construct a large-scale benchmark of 8,187 samples spanning 15 harm categories. Our evaluation of eleven state-of-the-art models reveals systematic joint understanding failures: while models achieve 90%-plus accuracy on clear unimodal safety signals, performance degrades substantially to 20-55% when joint image-text reasoning is required to determine the safety label. Most critically, 34% of errors in joint image-text safety classification occur despite correct classification of the individual modalities, further demonstrating absent compositional reasoning capabilities. Additionally, we find that models struggle to balance refusing unsafe content while still responding to borderline cases that deserve engagement. For example, we find that instruction framing can reduce the over-blocking rate on borderline content from 62.4% to 10.4% in Gemini-1.5, but only at the cost of under-refusing on unsafe content with refusal rate dropping from 90.8% to 53.9%. Overall, our framework exposes weaknesses in joint image-text understanding and alignment gaps in current models, and provides a critical test bed to enable the next milestones in research on robust vision-language safety.",
+        "arxiv_id": "2510.18214",
+        "ARXIVID": "2510.18214",
+        "COMMENT": "No criteria match closely.",
+        "RELEVANCE": 3,
+        "NOVELTY": 4
     }
 }
