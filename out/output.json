@@ -1,38 +1,17 @@
 {
-    "2510.20888": {
+    "2510.23574": {
         "authors": [
-            "Yuxuan Bian",
-            "Xin Chen",
-            "Zenan Li",
-            "Tiancheng Zhi",
-            "Shen Sang",
-            "Linjie Luo",
-            "Qiang Xu"
+            "Hongkai Lin",
+            "Dingkang Liang",
+            "Mingyang Du",
+            "Xin Zhou",
+            "Xiang Bai"
         ],
-        "title": "Video-As-Prompt: Unified Semantic Control for Video Generation",
-        "abstract": "arXiv:2510.20888v1 Announce Type: new  Abstract: Unified, generalizable semantic control in video generation remains a critical open challenge. Existing methods either introduce artifacts by enforcing inappropriate pixel-wise priors from structure-based controls, or rely on non-generalizable, condition-specific finetuning or task-specific architectures. We introduce Video-As-Prompt (VAP), a new paradigm that reframes this problem as in-context generation. VAP leverages a reference video as a direct semantic prompt, guiding a frozen Video Diffusion Transformer (DiT) via a plug-and-play Mixture-of-Transformers (MoT) expert. This architecture prevents catastrophic forgetting and is guided by a temporally biased position embedding that eliminates spurious mapping priors for robust context retrieval. To power this approach and catalyze future research, we built VAP-Data, the largest dataset for semantic-controlled video generation with over 100K paired videos across 100 semantic conditions. As a single unified model, VAP sets a new state-of-the-art for open-source methods, achieving a 38.7% user preference rate that rivals leading condition-specific commercial models. VAP's strong zero-shot generalization and support for various downstream applications mark a significant advance toward general-purpose, controllable video generation.",
-        "arxiv_id": "2510.20888",
-        "ARXIVID": "2510.20888",
-        "COMMENT": "Matches criteria 2 closely",
-        "RELEVANCE": 5,
-        "NOVELTY": 7
-    },
-    "2510.21391": {
-        "authors": [
-            "Datao Tang",
-            "Hao Wang",
-            "Yudeng Xin",
-            "Hui Qiao",
-            "Dongsheng Jiang",
-            "Yin Li",
-            "Zhiheng Yu",
-            "Xiangyong Cao"
-        ],
-        "title": "TerraGen: A Unified Multi-Task Layout Generation Framework for Remote Sensing Data Augmentation",
-        "abstract": "arXiv:2510.21391v1 Announce Type: new  Abstract: Remote sensing vision tasks require extensive labeled data across multiple, interconnected domains. However, current generative data augmentation frameworks are task-isolated, i.e., each vision task requires training an independent generative model, and ignores the modeling of geographical information and spatial constraints. To address these issues, we propose \\textbf{TerraGen}, a unified layout-to-image generation framework that enables flexible, spatially controllable synthesis of remote sensing imagery for various high-level vision tasks, e.g., detection, segmentation, and extraction. Specifically, TerraGen introduces a geographic-spatial layout encoder that unifies bounding box and segmentation mask inputs, combined with a multi-scale injection scheme and mask-weighted loss to explicitly encode spatial constraints, from global structures to fine details. Also, we construct the first large-scale multi-task remote sensing layout generation dataset containing 45k images and establish a standardized evaluation protocol for this task. Experimental results show that our TerraGen can achieve the best generation image quality across diverse tasks. Additionally, TerraGen can be used as a universal data-augmentation generator, enhancing downstream task performance significantly and demonstrating robust cross-task generalisation in both full-data and few-shot scenarios.",
-        "arxiv_id": "2510.21391",
-        "ARXIVID": "2510.21391",
-        "COMMENT": "Matches criteria 2 closely",
+        "title": "More Than Generation: Unifying Generation and Depth Estimation via Text-to-Image Diffusion Models",
+        "abstract": "arXiv:2510.23574v1 Announce Type: new  Abstract: Generative depth estimation methods leverage the rich visual priors stored in pre-trained text-to-image diffusion models, demonstrating astonishing zero-shot capability. However, parameter updates during training lead to catastrophic degra- dation in the image generation capability of the pre-trained model. We introduce MERGE, a unified model for image generation and depth estimation, starting from a fixed pre-trained text-to-image model. MERGE demonstrates that the pre-trained text-to-image model can do more than image generation, but also expand to depth estimation effortlessly. Specifically, MERGE introduces a play- and-plug framework that enables seamless switching between image generation and depth estimation modes through simple and pluggable converters. Meanwhile, we propose a Group Reuse Mechanism to encourage parameter reuse and im- prove the utilization of the additional learnable parameters. MERGE unleashes the powerful depth estimation capability of the pre-trained text-to-image model while preserving its original image generation ability. Compared to other unified models for image generation and depth estimation, MERGE achieves state-of- the-art performance across multiple depth estimation benchmarks. The code will be made available at https://github.com/H-EmbodVis/MERGE",
+        "arxiv_id": "2510.23574",
+        "ARXIVID": "2510.23574",
+        "COMMENT": "Matches criterion 2",
         "RELEVANCE": 5,
         "NOVELTY": 6
     }
