@@ -1,18 +1,1 @@
-{
-    "2510.23574": {
-        "authors": [
-            "Hongkai Lin",
-            "Dingkang Liang",
-            "Mingyang Du",
-            "Xin Zhou",
-            "Xiang Bai"
-        ],
-        "title": "More Than Generation: Unifying Generation and Depth Estimation via Text-to-Image Diffusion Models",
-        "abstract": "arXiv:2510.23574v1 Announce Type: new  Abstract: Generative depth estimation methods leverage the rich visual priors stored in pre-trained text-to-image diffusion models, demonstrating astonishing zero-shot capability. However, parameter updates during training lead to catastrophic degra- dation in the image generation capability of the pre-trained model. We introduce MERGE, a unified model for image generation and depth estimation, starting from a fixed pre-trained text-to-image model. MERGE demonstrates that the pre-trained text-to-image model can do more than image generation, but also expand to depth estimation effortlessly. Specifically, MERGE introduces a play- and-plug framework that enables seamless switching between image generation and depth estimation modes through simple and pluggable converters. Meanwhile, we propose a Group Reuse Mechanism to encourage parameter reuse and im- prove the utilization of the additional learnable parameters. MERGE unleashes the powerful depth estimation capability of the pre-trained text-to-image model while preserving its original image generation ability. Compared to other unified models for image generation and depth estimation, MERGE achieves state-of- the-art performance across multiple depth estimation benchmarks. The code will be made available at https://github.com/H-EmbodVis/MERGE",
-        "arxiv_id": "2510.23574",
-        "ARXIVID": "2510.23574",
-        "COMMENT": "Matches criterion 2",
-        "RELEVANCE": 5,
-        "NOVELTY": 6
-    }
-}
+{}
