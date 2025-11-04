@@ -1,67 +1,37 @@
 {
-    "2510.27607": {
+    "2511.00468": {
         "authors": [
-            "John Won",
-            "Kyungmin Lee",
-            "Huiwon Jang",
-            "Dongyoung Kim",
-            "Jinwoo Shin"
+            "Panwang Pan",
+            "Tingting Shen",
+            "Chenxin Li",
+            "Yunlong Lin",
+            "Kairun Wen",
+            "Jingjing Zhao",
+            "Yixuan Yuan"
         ],
-        "title": "Dual-Stream Diffusion for World-Model Augmented Vision-Language-Action Model",
-        "abstract": "arXiv:2510.27607v1 Announce Type: new  Abstract: Recently, augmenting Vision-Language-Action models (VLAs) with world modeling has shown promise in improving robotic policy learning. However, it remains challenging to jointly predict next-state observations and action sequences because of the inherent difference between the two modalities. To address this, we propose DUal-STream diffusion (DUST), a world-model augmented VLA framework that handles the modality conflict and enhances the performance of VLAs across diverse tasks. Specifically, we propose a multimodal diffusion transformer architecture that explicitly maintains separate modality streams while still enabling cross-modal knowledge sharing. In addition, we introduce independent noise perturbations for each modality and a decoupled flow-matching loss. This design enables the model to learn the joint distribution in a bidirectional manner while avoiding the need for a unified latent space. Based on the decoupling of modalities during training, we also introduce a joint sampling method that supports test-time scaling, where action and vision tokens evolve asynchronously at different rates. Through experiments on simulated benchmarks such as RoboCasa and GR-1, DUST achieves up to 6% gains over baseline methods, while our test-time scaling approach provides an additional 2-5% boost. On real-world tasks with the Franka Research 3, DUST improves success rates by 13%, confirming its effectiveness beyond simulation. Furthermore, pre-training on action-free videos from BridgeV2 yields significant transfer gains on RoboCasa, underscoring DUST's potential for large-scale VLA pretraining.",
-        "arxiv_id": "2510.27607",
-        "ARXIVID": "2510.27607",
-        "COMMENT": "",
-        "RELEVANCE": 3,
+        "title": "HumanCrafter: Synergizing Generalizable Human Reconstruction and Semantic 3D Segmentation",
+        "abstract": "arXiv:2511.00468v1 Announce Type: new  Abstract: Recent advances in generative models have achieved high-fidelity in 3D human reconstruction, yet their utility for specific tasks (e.g., human 3D segmentation) remains constrained. We propose HumanCrafter, a unified framework that enables the joint modeling of appearance and human-part semantics from a single image in a feed-forward manner. Specifically, we integrate human geometric priors in the reconstruction stage and self-supervised semantic priors in the segmentation stage. To address labeled 3D human datasets scarcity, we further develop an interactive annotation procedure for generating high-quality data-label pairs. Our pixel-aligned aggregation enables cross-task synergy, while the multi-task objective simultaneously optimizes texture modeling fidelity and semantic consistency. Extensive experiments demonstrate that HumanCrafter surpasses existing state-of-the-art methods in both 3D human-part segmentation and 3D human reconstruction from a single image.",
+        "arxiv_id": "2511.00468",
+        "ARXIVID": "2511.00468",
+        "COMMENT": "3",
+        "RELEVANCE": 5,
         "NOVELTY": 6
     },
-    "2510.26961": {
+    "2511.01593": {
         "authors": [
-            "Md. Mehedi Hassan",
-            "Shafqat Alam",
-            "Shahriar Ahmed Seam",
-            "Maruf Ahmed"
+            "Yizhu Chen",
+            "Chen Ju",
+            "Zhicheng Wang",
+            "Shuai Xiao",
+            "Xu Chen",
+            "Jinsong Lan",
+            "Xiaoyong Zhu",
+            "Ying Chen"
         ],
-        "title": "SYNAPSE-Net: A Unified Framework with Lesion-Aware Hierarchical Gating for Robust Segmentation of Heterogeneous Brain Lesions",
-        "abstract": "arXiv:2510.26961v1 Announce Type: new  Abstract: Automated segmentation of heterogeneous brain lesions from multi-modal MRI remains a critical challenge in clinical neuroimaging. Current deep learning models are typically specialized `point solutions' that lack generalization and high performance variance, limiting their clinical reliability. To address these gaps, we propose the Unified Multi-Stream SYNAPSE-Net, an adaptive framework designed for both generalization and robustness. The framework is built on a novel hybrid architecture integrating multi-stream CNN encoders, a Swin Transformer bottleneck for global context, a dynamic cross-modal attention fusion (CMAF) mechanism, and a hierarchical gated decoder for high-fidelity mask reconstruction. The architecture is trained with a variance reduction strategy that combines pathology specific data augmentation and difficulty-aware sampling method. The model was evaluated on three different challenging public datasets: the MICCAI 2017 WMH Challenge, the ISLES 2022 Challenge, and the BraTS 2020 Challenge. Our framework attained a state-of-the-art DSC value of 0.831 with the HD95 value of 3.03 in the WMH dataset. For ISLES 2022, it achieved the best boundary accuracy with a statistically significant difference (HD95 value of 9.69). For BraTS 2020, it reached the highest DSC value for the tumor core region (0.8651). These experimental findings suggest that our unified adaptive framework achieves state-of-the-art performance across multiple brain pathologies, providing a robust and clinically feasible solution for automated segmentation. The source code and the pre-trained models are available at https://github.com/mubid-01/SYNAPSE-Net-pre.",
-        "arxiv_id": "2510.26961",
-        "ARXIVID": "2510.26961",
-        "COMMENT": "",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2510.27684": {
-        "authors": [
-            "Xiangyu Fan",
-            "Zesong Qiu",
-            "Zhuguanyu Wu",
-            "Fanzhou Wang",
-            "Zhiqian Lin",
-            "Tianxiang Ren",
-            "Dahua Lin",
-            "Ruihao Gong",
-            "Lei Yang"
-        ],
-        "title": "Phased DMD: Few-step Distribution Matching Distillation via Score Matching within Subintervals",
-        "abstract": "arXiv:2510.27684v1 Announce Type: new  Abstract: Distribution Matching Distillation (DMD) distills score-based generative models into efficient one-step generators, without requiring a one-to-one correspondence with the sampling trajectories of their teachers. However, limited model capacity causes one-step distilled models underperform on complex generative tasks, e.g., synthesizing intricate object motions in text-to-video generation. Directly extending DMD to multi-step distillation increases memory usage and computational depth, leading to instability and reduced efficiency. While prior works propose stochastic gradient truncation as a potential solution, we observe that it substantially reduces the generation diversity of multi-step distilled models, bringing it down to the level of their one-step counterparts. To address these limitations, we propose Phased DMD, a multi-step distillation framework that bridges the idea of phase-wise distillation with Mixture-of-Experts (MoE), reducing learning difficulty while enhancing model capacity. Phased DMD is built upon two key ideas: progressive distribution matching and score matching within subintervals. First, our model divides the SNR range into subintervals, progressively refining the model to higher SNR levels, to better capture complex distributions. Next, to ensure the training objective within each subinterval is accurate, we have conducted rigorous mathematical derivations. We validate Phased DMD by distilling state-of-the-art image and video generation models, including Qwen-Image (20B parameters) and Wan2.2 (28B parameters). Experimental results demonstrate that Phased DMD preserves output diversity better than DMD while retaining key generative capabilities. We will release our code and models.",
-        "arxiv_id": "2510.27684",
-        "ARXIVID": "2510.27684",
-        "COMMENT": "",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2510.27135": {
-        "authors": [
-            "Tong Shen",
-            "Jingai Yu",
-            "Dong Zhou",
-            "Dong Li",
-            "Emad Barsoum"
-        ],
-        "title": "E-MMDiT: Revisiting Multimodal Diffusion Transformer Design for Fast Image Synthesis under Limited Resources",
-        "abstract": "arXiv:2510.27135v1 Announce Type: new  Abstract: Diffusion models have shown strong capabilities in generating high-quality images from text prompts. However, these models often require large-scale training data and significant computational resources to train, or suffer from heavy structure with high latency. To this end, we propose Efficient Multimodal Diffusion Transformer (E-MMDiT), an efficient and lightweight multimodal diffusion model with only 304M parameters for fast image synthesis requiring low training resources. We provide an easily reproducible baseline with competitive results. Our model for 512px generation, trained with only 25M public data in 1.5 days on a single node of 8 AMD MI300X GPUs, achieves 0.66 on GenEval and easily reaches to 0.72 with some post-training techniques such as GRPO. Our design philosophy centers on token reduction as the computational cost scales significantly with the token count. We adopt a highly compressive visual tokenizer to produce a more compact representation and propose a novel multi-path compression module for further compression of tokens. To enhance our design, we introduce Position Reinforcement, which strengthens positional information to maintain spatial coherence, and Alternating Subregion Attention (ASA), which performs attention within subregions to further reduce computational cost. In addition, we propose AdaLN-affine, an efficient lightweight module for computing modulation parameters in transformer blocks. Our code is available at https://github.com/AMD-AGI/Nitro-E and we hope E-MMDiT serves as a strong and practical baseline for future research and contributes to democratization of generative AI models.",
-        "arxiv_id": "2510.27135",
-        "ARXIVID": "2510.27135",
+        "title": "Wave-Particle (Continuous-Discrete) Dualistic Visual Tokenization for Unified Understanding and Generation",
+        "abstract": "arXiv:2511.01593v1 Announce Type: new  Abstract: The unification of understanding and generation within a single multi-modal large model (MLLM) remains one significant challenge, largely due to the dichotomy between continuous and discrete visual tokenizations. Continuous tokenizer (CT) achieves strong performance by bridging multiple independently-trained understanding modules and generation modules, but suffers from complex multi-stage pipelines and substantial engineering overhead. Conversely, discrete tokenizers (DT) offer a conceptually elegant idea by quantizing each image into a primitive, but inevitably leading to information loss and performance degradation. To resolve this tension, we question the binary choice between CT and DT, inspired by the wave-particle duality of light, and propose the Continuous-Discrete Dualistic Visual Tokenizer (CDD-VT). We treat visual data as a flexible composition of image primitives derived from quantized codebooks, with the crucial insight that the primitive number assigned to each visual sample is adaptively determined according to its complexity: simple instances use a few primitives, emulating discrete tokenization, while complex instances use many, approximating continuous tokenization. Two core components are designed: Diverse Quantitative Primitives, which encourage primitives orthogonality to better populate information space, and Dynamic Primitive Allocator, which assesses sample complexity to determine the optimal set of primitives. Extensive experiments on reconstruction, retrieval and classification show that CDD-VT achieves superior performance over to specialized CT and DT, effectively getting strong result within a concise and scalable MLLM.",
+        "arxiv_id": "2511.01593",
+        "ARXIVID": "2511.01593",
         "COMMENT": "",
         "RELEVANCE": 3,
         "NOVELTY": 5
