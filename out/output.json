@@ -1,86 +1,67 @@
 {
-    "2511.03334": {
+    "2511.04570": {
         "authors": [
-            "Guozhen Zhang",
-            "Zixiang Zhou",
-            "Teng Hu",
-            "Ziqiao Peng",
-            "Youliang Zhang",
-            "Yi Chen",
-            "Yuan Zhou",
-            "Qinglin Lu",
-            "Limin Wang"
+            "Jingqi Tong",
+            "Yurong Mou",
+            "Hangcheng Li",
+            "Mingzhe Li",
+            "Yongzhuo Yang",
+            "Ming Zhang",
+            "Qiguang Chen",
+            "Tianyi Liang",
+            "Xiaomeng Hu",
+            "Yining Zheng",
+            "Xinchi Chen",
+            "Jun Zhao",
+            "Xuanjing Huang",
+            "Xipeng Qiu"
         ],
-        "title": "UniAVGen: Unified Audio and Video Generation with Asymmetric Cross-Modal Interactions",
-        "abstract": "arXiv:2511.03334v1 Announce Type: new  Abstract: Due to the lack of effective cross-modal modeling, existing open-source audio-video generation methods often exhibit compromised lip synchronization and insufficient semantic consistency. To mitigate these drawbacks, we propose UniAVGen, a unified framework for joint audio and video generation. UniAVGen is anchored in a dual-branch joint synthesis architecture, incorporating two parallel Diffusion Transformers (DiTs) to build a cohesive cross-modal latent space. At its heart lies an Asymmetric Cross-Modal Interaction mechanism, which enables bidirectional, temporally aligned cross-attention, thus ensuring precise spatiotemporal synchronization and semantic consistency. Furthermore, this cross-modal interaction is augmented by a Face-Aware Modulation module, which dynamically prioritizes salient regions in the interaction process. To enhance generative fidelity during inference, we additionally introduce Modality-Aware Classifier-Free Guidance, a novel strategy that explicitly amplifies cross-modal correlation signals. Notably, UniAVGen's robust joint synthesis design enables seamless unification of pivotal audio-video tasks within a single model, such as joint audio-video generation and continuation, video-to-audio dubbing, and audio-driven video synthesis. Comprehensive experiments validate that, with far fewer training samples (1.3M vs. 30.1M), UniAVGen delivers overall advantages in audio-video synchronization, timbre consistency, and emotion consistency.",
-        "arxiv_id": "2511.03334",
-        "ARXIVID": "2511.03334",
-        "COMMENT": "",
-        "RELEVANCE": 3,
-        "NOVELTY": 7
-    },
-    "2511.03219": {
-        "authors": [
-            "Pengyu Jie",
-            "Wanquan Liu",
-            "Rui He",
-            "Yihui Wen",
-            "Deyu Meng",
-            "Chenqiang Gao"
-        ],
-        "title": "Diffusion-Guided Mask-Consistent Paired Mixing for Endoscopic Image Segmentation",
-        "abstract": "arXiv:2511.03219v1 Announce Type: new  Abstract: Augmentation for dense prediction typically relies on either sample mixing or generative synthesis. Mixing improves robustness but misaligned masks yield soft label ambiguity. Diffusion synthesis increases apparent diversity but, when trained as common samples, overlooks the structural benefit of mask conditioning and introduces synthetic-real domain shift. We propose a paired, diffusion-guided paradigm that fuses the strengths of both. For each real image, a synthetic counterpart is generated under the same mask and the pair is used as a controllable input for Mask-Consistent Paired Mixing (MCPMix), which mixes only image appearance while supervision always uses the original hard mask. This produces a continuous family of intermediate samples that smoothly bridges synthetic and real appearances under shared geometry, enlarging diversity without compromising pixel-level semantics. To keep learning aligned with real data, Real-Anchored Learnable Annealing (RLA) adaptively adjusts the mixing strength and the loss weight of mixed samples over training, gradually re-anchoring optimization to real data and mitigating distributional bias. Across Kvasir-SEG, PICCOLO, CVC-ClinicDB, a private NPC-LES cohort, and ISIC 2017, the approach achieves state-of-the-art segmentation performance and consistent gains over baselines. The results show that combining label-preserving mixing with diffusion-driven diversity, together with adaptive re-anchoring, yields robust and generalizable endoscopic segmentation.",
-        "arxiv_id": "2511.03219",
-        "ARXIVID": "2511.03219",
-        "COMMENT": "",
-        "RELEVANCE": 3,
-        "NOVELTY": 6
-    },
-    "2511.03206": {
-        "authors": [
-            "Kuei-Chun Kao",
-            "Hsu Tzu-Yin",
-            "Yunqi Hong",
-            "Ruochen Wang",
-            "Cho-Jui Hsieh"
-        ],
-        "title": "QG-CoC: Question-Guided Chain-of-Captions for Large Multimodal Models",
-        "abstract": "arXiv:2511.03206v1 Announce Type: new  Abstract: Recently, Multimodal Large Language Models (MLLMs) encounter two key issues in multi-image contexts: (1) a lack of fine-grained perception across disparate images, and (2) a diminished capability to effectively reason over and synthesize information from multiple visual inputs. However, while various prompting methods aim to describe visual content, many existing studies focus primarily on single-image settings or specific, constrained scenarios. This leaves a critical gap in understanding and addressing how MLLMs tackle more general and complex multi-image reasoning tasks. Thus, we first extensively investigate how current prompting methods perceive fine-grained visual details and process visual information when dealing with multiple images. Our findings reveal that existing prompting methods fall short in attending to needed clues and seamlessly integrating perception and reasoning. Inspired by the findings, we propose a new zero-shot prompting method, Question-Guided Chain-of-Captions (QG-CoC), a generalized prompting approach that effectively handles problems with an arbitrary number of images. We evaluate our method on various open-source and closed-source MLLMs for multi-image and single-image benchmarks. Experimental results indicate that QG-CoC demonstrates competitive performance across tasks and exhibits robust improvements in the challenging scenarios where existing prompting methods fail.",
-        "arxiv_id": "2511.03206",
-        "ARXIVID": "2511.03206",
+        "title": "Thinking with Video: Video Generation as a Promising Multimodal Reasoning Paradigm",
+        "abstract": "arXiv:2511.04570v1 Announce Type: new  Abstract: \"Thinking with Text\" and \"Thinking with Images\" paradigm significantly improve the reasoning ability of large language models (LLMs) and Vision Language Models (VLMs). However, these paradigms have inherent limitations. (1) Images capture only single moments and fail to represent dynamic processes or continuous changes, and (2) The separation of text and vision as distinct modalities, hindering unified multimodal understanding and generation. To overcome these limitations, we introduce \"Thinking with Video\", a new paradigm that leverages video generation models, such as Sora-2, to bridge visual and textual reasoning in a unified temporal framework. To support this exploration, we developed the Video Thinking Benchmark (VideoThinkBench). VideoThinkBench encompasses two task categories: (1) vision-centric tasks (e.g., Eyeballing Puzzles), and (2) text-centric tasks (e.g., subsets of GSM8K, MMMU). Our evaluation establishes Sora-2 as a capable reasoner. On vision-centric tasks, Sora-2 is generally comparable to state-of-the-art (SOTA) VLMs, and even surpasses VLMs on several tasks, such as Eyeballing Games. On text-centric tasks, Sora-2 achieves 92% accuracy on MATH, and 75.53% accuracy on MMMU. Furthermore, we systematically analyse the source of these abilities. We also find that self-consistency and in-context learning can improve Sora-2's performance. In summary, our findings demonstrate that the video generation model is the potential unified multimodal understanding and generation model, positions \"thinking with video\" as a unified multimodal reasoning paradigm.",
+        "arxiv_id": "2511.04570",
+        "ARXIVID": "2511.04570",
         "COMMENT": "",
         "RELEVANCE": 3,
         "NOVELTY": 5
     },
-    "2511.03245": {
+    "2511.04675": {
         "authors": [
-            "Liwei Luo",
-            "Shuaitengyuan Li",
-            "Dongwei Ren",
-            "Qilong Wang",
-            "Pengfei Zhu",
-            "Qinghua Hu"
+            "Jinlai Liu",
+            "Jian Han",
+            "Bin Yan",
+            "Hui Wu",
+            "Fengda Zhu",
+            "Xing Wang",
+            "Yi Jiang",
+            "Bingyue Peng",
+            "Zehuan Yuan"
         ],
-        "title": "Decoupled Multi-Predictor Optimization for Inference-Efficient Model Tuning",
-        "abstract": "arXiv:2511.03245v1 Announce Type: new  Abstract: Recently, remarkable progress has been made in large-scale pre-trained model tuning, and inference efficiency is becoming more crucial for practical deployment. Early exiting in conjunction with multi-stage predictors, when cooperated with a parameter-efficient fine-tuning strategy, offers a straightforward way to achieve an inference-efficient model. However, a key challenge remains unresolved: How can early stages provide low-level fundamental features to deep stages while simultaneously supplying high-level discriminative features to early-stage predictors? To address this problem, we propose a Decoupled Multi-Predictor Optimization (DMPO) method to effectively decouple the low-level representative ability and high-level discriminative ability in early stages. First, in terms of architecture, we introduce a lightweight bypass module into multi-stage predictors for functional decomposition of shallow features from early stages, while a high-order statistics-based predictor is developed for early stages to effectively enhance their discriminative ability. To reasonably train our multi-predictor architecture, a decoupled optimization is proposed to allocate two-phase loss weights for multi-stage predictors during model tuning, where the initial training phase enables the model to prioritize the acquisition of discriminative ability of deep stages via emphasizing representative ability of early stages, and the latter training phase drives discriminative ability towards earlier stages as much as possible. As such, our DMPO can effectively decouple representative and discriminative abilities in early stages in terms of architecture design and model optimization. Experiments across various datasets and pre-trained backbones demonstrate that DMPO clearly outperforms its counterparts when reducing computational cost.",
-        "arxiv_id": "2511.03245",
-        "ARXIVID": "2511.03245",
+        "title": "InfinityStar: Unified Spacetime AutoRegressive Modeling for Visual Generation",
+        "abstract": "arXiv:2511.04675v1 Announce Type: new  Abstract: We introduce InfinityStar, a unified spacetime autoregressive framework for high-resolution image and dynamic video synthesis. Building on the recent success of autoregressive modeling in both vision and language, our purely discrete approach jointly captures spatial and temporal dependencies within a single architecture. This unified design naturally supports a variety of generation tasks such as text-to-image, text-to-video, image-to-video, and long interactive video synthesis via straightforward temporal autoregression. Extensive experiments demonstrate that InfinityStar scores 83.74 on VBench, outperforming all autoregressive models by large margins, even surpassing some diffusion competitors like HunyuanVideo. Without extra optimizations, our model generates a 5s, 720p video approximately 10x faster than leading diffusion-based methods. To our knowledge, InfinityStar is the first discrete autoregressive video generator capable of producing industrial level 720p videos. We release all code and models to foster further research in efficient, high-quality video generation.",
+        "arxiv_id": "2511.04675",
+        "ARXIVID": "2511.04675",
         "COMMENT": "",
         "RELEVANCE": 3,
         "NOVELTY": 5
     },
-    "2511.02933": {
+    "2511.04317": {
         "authors": [
-            "Andy Dimnaku",
-            "Abdullah Yusuf Kavrano\\u{g}lu",
-            "Yaser Abu-Mostafa"
+            "Xiangjun Zhang",
+            "Litong Gong",
+            "Yinglin Zheng",
+            "Yansong Liu",
+            "Wentao Jiang",
+            "Mingyi Xu",
+            "Biao Wang",
+            "Tiezheng Ge",
+            "Ming Zeng"
         ],
-        "title": "Generative Hints",
-        "abstract": "arXiv:2511.02933v1 Announce Type: new  Abstract: Data augmentation is widely used in vision to introduce variation and mitigate overfitting, through enabling models to learn invariant properties, such as spatial invariance. However, these properties are not fully captured by data augmentation alone, since it attempts to learn the property on transformations of the training data only. We propose generative hints, a training methodology that directly enforces known invariances in the entire input space. Our approach leverages a generative model trained on the training set to approximate the input distribution and generate unlabeled images, which we refer to as virtual examples. These virtual examples are used to enforce functional properties known as hints. In generative hints, although the training dataset is fully labeled, the model is trained in a semi-supervised manner on both the classification and hint objectives, using the unlabeled virtual examples to guide the model in learning the desired hint. Across datasets, architectures, and loss functions, generative hints consistently outperform standard data augmentation when learning the same property. On popular fine-grained visual classification benchmarks, we achieved up to 1.78% top-1 accuracy improvement (0.63% on average) over fine-tuned models with data augmentation and an average performance boost of 1.286% on the CheXpert X-ray dataset.",
-        "arxiv_id": "2511.02933",
-        "ARXIVID": "2511.02933",
+        "title": "RISE-T2V: Rephrasing and Injecting Semantics with LLM for Expansive Text-to-Video Generation",
+        "abstract": "arXiv:2511.04317v1 Announce Type: new  Abstract: Most text-to-video(T2V) diffusion models depend on pre-trained text encoders for semantic alignment, yet they often fail to maintain video quality when provided with concise prompts rather than well-designed ones. The primary issue lies in their limited textual semantics understanding. Moreover, these text encoders cannot rephrase prompts online to better align with user intentions, which limits both the scalability and usability of the models, To address these challenges, we introduce RISE-T2V, which uniquely integrates the processes of prompt rephrasing and semantic feature extraction into a single and seamless step instead of two separate steps. RISE-T2V is universal and can be applied to various pre-trained LLMs and video diffusion models(VDMs), significantly enhancing their capabilities for T2V tasks. We propose an innovative module called the Rephrasing Adapter, enabling diffusion models to utilize text hidden states during the next token prediction of the LLM as a condition for video generation. By employing a Rephrasing Adapter, the video generation model can implicitly rephrase basic prompts into more comprehensive representations that better match the user's intent. Furthermore, we leverage the powerful capabilities of LLMs to enable video generation models to accomplish a broader range of T2V tasks. Extensive experiments demonstrate that RISE-T2V is a versatile framework applicable to different video diffusion model architectures, significantly enhancing the ability of T2V models to generate high-quality videos that align with user intent. Visual results are available on the webpage at https://rise-t2v.github.io.",
+        "arxiv_id": "2511.04317",
+        "ARXIVID": "2511.04317",
         "COMMENT": "",
         "RELEVANCE": 3,
-        "NOVELTY": 5
+        "NOVELTY": 4
     }
 }
