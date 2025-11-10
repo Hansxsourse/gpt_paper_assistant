@@ -1,67 +1,17 @@
 {
-    "2511.04570": {
+    "2511.05229": {
         "authors": [
-            "Jingqi Tong",
-            "Yurong Mou",
-            "Hangcheng Li",
-            "Mingzhe Li",
-            "Yongzhuo Yang",
-            "Ming Zhang",
-            "Qiguang Chen",
-            "Tianyi Liang",
-            "Xiaomeng Hu",
-            "Yining Zheng",
-            "Xinchi Chen",
-            "Jun Zhao",
-            "Xuanjing Huang",
-            "Xipeng Qiu"
+            "Mengqi Guo",
+            "Bo Xu",
+            "Yanyan Li",
+            "Gim Hee Lee"
         ],
-        "title": "Thinking with Video: Video Generation as a Promising Multimodal Reasoning Paradigm",
-        "abstract": "arXiv:2511.04570v1 Announce Type: new  Abstract: \"Thinking with Text\" and \"Thinking with Images\" paradigm significantly improve the reasoning ability of large language models (LLMs) and Vision Language Models (VLMs). However, these paradigms have inherent limitations. (1) Images capture only single moments and fail to represent dynamic processes or continuous changes, and (2) The separation of text and vision as distinct modalities, hindering unified multimodal understanding and generation. To overcome these limitations, we introduce \"Thinking with Video\", a new paradigm that leverages video generation models, such as Sora-2, to bridge visual and textual reasoning in a unified temporal framework. To support this exploration, we developed the Video Thinking Benchmark (VideoThinkBench). VideoThinkBench encompasses two task categories: (1) vision-centric tasks (e.g., Eyeballing Puzzles), and (2) text-centric tasks (e.g., subsets of GSM8K, MMMU). Our evaluation establishes Sora-2 as a capable reasoner. On vision-centric tasks, Sora-2 is generally comparable to state-of-the-art (SOTA) VLMs, and even surpasses VLMs on several tasks, such as Eyeballing Games. On text-centric tasks, Sora-2 achieves 92% accuracy on MATH, and 75.53% accuracy on MMMU. Furthermore, we systematically analyse the source of these abilities. We also find that self-consistency and in-context learning can improve Sora-2's performance. In summary, our findings demonstrate that the video generation model is the potential unified multimodal understanding and generation model, positions \"thinking with video\" as a unified multimodal reasoning paradigm.",
-        "arxiv_id": "2511.04570",
-        "ARXIVID": "2511.04570",
-        "COMMENT": "",
+        "title": "4D3R: Motion-Aware Neural Reconstruction and Rendering of Dynamic Scenes from Monocular Videos",
+        "abstract": "arXiv:2511.05229v1 Announce Type: new  Abstract: Novel view synthesis from monocular videos of dynamic scenes with unknown camera poses remains a fundamental challenge in computer vision and graphics. While recent advances in 3D representations such as Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS) have shown promising results for static scenes, they struggle with dynamic content and typically rely on pre-computed camera poses. We present 4D3R, a pose-free dynamic neural rendering framework that decouples static and dynamic components through a two-stage approach. Our method first leverages 3D foundational models for initial pose and geometry estimation, followed by motion-aware refinement. 4D3R introduces two key technical innovations: (1) a motion-aware bundle adjustment (MA-BA) module that combines transformer-based learned priors with SAM2 for robust dynamic object segmentation, enabling more accurate camera pose refinement; and (2) an efficient Motion-Aware Gaussian Splatting (MA-GS) representation that uses control points with a deformation field MLP and linear blend skinning to model dynamic motion, significantly reducing computational cost while maintaining high-quality reconstruction. Extensive experiments on real-world dynamic datasets demonstrate that our approach achieves up to 1.8dB PSNR improvement over state-of-the-art methods, particularly in challenging scenarios with large dynamic objects, while reducing computational requirements by 5x compared to previous dynamic scene representations.",
+        "arxiv_id": "2511.05229",
+        "ARXIVID": "2511.05229",
+        "COMMENT": "The paper does not match any of the specific criteria. It focuses on novel view synthesis and dynamic scene reconstruction, which are not directly related to joint generation and segmentation, unified diffusion models, or matting.",
         "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2511.04675": {
-        "authors": [
-            "Jinlai Liu",
-            "Jian Han",
-            "Bin Yan",
-            "Hui Wu",
-            "Fengda Zhu",
-            "Xing Wang",
-            "Yi Jiang",
-            "Bingyue Peng",
-            "Zehuan Yuan"
-        ],
-        "title": "InfinityStar: Unified Spacetime AutoRegressive Modeling for Visual Generation",
-        "abstract": "arXiv:2511.04675v1 Announce Type: new  Abstract: We introduce InfinityStar, a unified spacetime autoregressive framework for high-resolution image and dynamic video synthesis. Building on the recent success of autoregressive modeling in both vision and language, our purely discrete approach jointly captures spatial and temporal dependencies within a single architecture. This unified design naturally supports a variety of generation tasks such as text-to-image, text-to-video, image-to-video, and long interactive video synthesis via straightforward temporal autoregression. Extensive experiments demonstrate that InfinityStar scores 83.74 on VBench, outperforming all autoregressive models by large margins, even surpassing some diffusion competitors like HunyuanVideo. Without extra optimizations, our model generates a 5s, 720p video approximately 10x faster than leading diffusion-based methods. To our knowledge, InfinityStar is the first discrete autoregressive video generator capable of producing industrial level 720p videos. We release all code and models to foster further research in efficient, high-quality video generation.",
-        "arxiv_id": "2511.04675",
-        "ARXIVID": "2511.04675",
-        "COMMENT": "",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2511.04317": {
-        "authors": [
-            "Xiangjun Zhang",
-            "Litong Gong",
-            "Yinglin Zheng",
-            "Yansong Liu",
-            "Wentao Jiang",
-            "Mingyi Xu",
-            "Biao Wang",
-            "Tiezheng Ge",
-            "Ming Zeng"
-        ],
-        "title": "RISE-T2V: Rephrasing and Injecting Semantics with LLM for Expansive Text-to-Video Generation",
-        "abstract": "arXiv:2511.04317v1 Announce Type: new  Abstract: Most text-to-video(T2V) diffusion models depend on pre-trained text encoders for semantic alignment, yet they often fail to maintain video quality when provided with concise prompts rather than well-designed ones. The primary issue lies in their limited textual semantics understanding. Moreover, these text encoders cannot rephrase prompts online to better align with user intentions, which limits both the scalability and usability of the models, To address these challenges, we introduce RISE-T2V, which uniquely integrates the processes of prompt rephrasing and semantic feature extraction into a single and seamless step instead of two separate steps. RISE-T2V is universal and can be applied to various pre-trained LLMs and video diffusion models(VDMs), significantly enhancing their capabilities for T2V tasks. We propose an innovative module called the Rephrasing Adapter, enabling diffusion models to utilize text hidden states during the next token prediction of the LLM as a condition for video generation. By employing a Rephrasing Adapter, the video generation model can implicitly rephrase basic prompts into more comprehensive representations that better match the user's intent. Furthermore, we leverage the powerful capabilities of LLMs to enable video generation models to accomplish a broader range of T2V tasks. Extensive experiments demonstrate that RISE-T2V is a versatile framework applicable to different video diffusion model architectures, significantly enhancing the ability of T2V models to generate high-quality videos that align with user intent. Visual results are available on the webpage at https://rise-t2v.github.io.",
-        "arxiv_id": "2511.04317",
-        "ARXIVID": "2511.04317",
-        "COMMENT": "",
-        "RELEVANCE": 3,
-        "NOVELTY": 4
+        "NOVELTY": 6
     }
 }
