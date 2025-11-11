@@ -1,17 +1,38 @@
 {
-    "2511.05229": {
+    "2511.06833": {
         "authors": [
-            "Mengqi Guo",
-            "Bo Xu",
-            "Yanyan Li",
-            "Gim Hee Lee"
+            "Zhenjie Liu",
+            "Jianzhang Lu",
+            "Renjie Lu",
+            "Cong Liang",
+            "Shangfei Wang"
         ],
-        "title": "4D3R: Motion-Aware Neural Reconstruction and Rendering of Dynamic Scenes from Monocular Videos",
-        "abstract": "arXiv:2511.05229v1 Announce Type: new  Abstract: Novel view synthesis from monocular videos of dynamic scenes with unknown camera poses remains a fundamental challenge in computer vision and graphics. While recent advances in 3D representations such as Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS) have shown promising results for static scenes, they struggle with dynamic content and typically rely on pre-computed camera poses. We present 4D3R, a pose-free dynamic neural rendering framework that decouples static and dynamic components through a two-stage approach. Our method first leverages 3D foundational models for initial pose and geometry estimation, followed by motion-aware refinement. 4D3R introduces two key technical innovations: (1) a motion-aware bundle adjustment (MA-BA) module that combines transformer-based learned priors with SAM2 for robust dynamic object segmentation, enabling more accurate camera pose refinement; and (2) an efficient Motion-Aware Gaussian Splatting (MA-GS) representation that uses control points with a deformation field MLP and linear blend skinning to model dynamic motion, significantly reducing computational cost while maintaining high-quality reconstruction. Extensive experiments on real-world dynamic datasets demonstrate that our approach achieves up to 1.8dB PSNR improvement over state-of-the-art methods, particularly in challenging scenarios with large dynamic objects, while reducing computational requirements by 5x compared to previous dynamic scene representations.",
-        "arxiv_id": "2511.05229",
-        "ARXIVID": "2511.05229",
-        "COMMENT": "The paper does not match any of the specific criteria. It focuses on novel view synthesis and dynamic scene reconstruction, which are not directly related to joint generation and segmentation, unified diffusion models, or matting.",
+        "title": "ConsistTalk: Intensity Controllable Temporally Consistent Talking Head Generation with Diffusion Noise Search",
+        "abstract": "arXiv:2511.06833v1 Announce Type: new  Abstract: Recent advancements in video diffusion models have significantly enhanced audio-driven portrait animation. However, current methods still suffer from flickering, identity drift, and poor audio-visual synchronization. These issues primarily stem from entangled appearance-motion representations and unstable inference strategies. In this paper, we introduce \\textbf{ConsistTalk}, a novel intensity-controllable and temporally consistent talking head generation framework with diffusion noise search inference. First, we propose \\textbf{an optical flow-guided temporal module (OFT)} that decouples motion features from static appearance by leveraging facial optical flow, thereby reducing visual flicker and improving temporal consistency. Second, we present an \\textbf{Audio-to-Intensity (A2I) model} obtained through multimodal teacher-student knowledge distillation. By transforming audio and facial velocity features into a frame-wise intensity sequence, the A2I model enables joint modeling of audio and visual motion, resulting in more natural dynamics. This further enables fine-grained, frame-wise control of motion dynamics while maintaining tight audio-visual synchronization. Third, we introduce a \\textbf{diffusion noise initialization strategy (IC-Init)}. By enforcing explicit constraints on background coherence and motion continuity during inference-time noise search, we achieve better identity preservation and refine motion dynamics compared to the current autoregressive strategy. Extensive experiments demonstrate that ConsistTalk significantly outperforms prior methods in reducing flicker, preserving identity, and delivering temporally stable, high-fidelity talking head videos.",
+        "arxiv_id": "2511.06833",
+        "ARXIVID": "2511.06833",
+        "COMMENT": "",
         "RELEVANCE": 3,
         "NOVELTY": 6
+    },
+    "2511.05929": {
+        "authors": [
+            "Jiaxuan Li",
+            "Qing Xu",
+            "Xiangjian He",
+            "Ziyu Liu",
+            "Chang Xing",
+            "Zhen Chen",
+            "Daokun Zhang",
+            "Rong Qu",
+            "Chang Wen Chen"
+        ],
+        "title": "CoMA: Complementary Masking and Hierarchical Dynamic Multi-Window Self-Attention in a Unified Pre-training Framework",
+        "abstract": "arXiv:2511.05929v1 Announce Type: new  Abstract: Masked Autoencoders (MAE) achieve self-supervised learning of image representations by randomly removing a portion of visual tokens and reconstructing the original image as a pretext task, thereby significantly enhancing pretraining efficiency and yielding excellent adaptability across downstream tasks. However, MAE and other MAE-style paradigms that adopt random masking generally require more pre-training epochs to maintain adaptability. Meanwhile, ViT in MAE suffers from inefficient parameter use due to fixed spatial resolution across layers. To overcome these limitations, we propose the Complementary Masked Autoencoders (CoMA), which employ a complementary masking strategy to ensure uniform sampling across all pixels, thereby improving effective learning of all features and enhancing the model's adaptability. Furthermore, we introduce DyViT, a hierarchical vision transformer that employs a Dynamic Multi-Window Self-Attention (DM-MSA), significantly reducing the parameters and FLOPs while improving fine-grained feature learning. Pre-trained on ImageNet-1K with CoMA, DyViT matches the downstream performance of MAE using only 12% of the pre-training epochs, demonstrating more effective learning. It also attains a 10% reduction in pre-training time per epoch, further underscoring its superior pre-training efficiency.",
+        "arxiv_id": "2511.05929",
+        "ARXIVID": "2511.05929",
+        "COMMENT": "",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
     }
 }
