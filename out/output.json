@@ -1,35 +1,50 @@
 {
-    "2511.08258": {
+    "2511.08823": {
         "authors": [
-            "Jae Joong Lee",
-            "Bedrich Benes"
+            "Wonbong Jang",
+            "Jonathan Tremblay",
+            "Lourdes Agapito"
         ],
-        "title": "Top2Ground: A Height-Aware Dual Conditioning Diffusion Model for Robust Aerial-to-Ground View Generation",
-        "abstract": "arXiv:2511.08258v1 Announce Type: new  Abstract: Generating ground-level images from aerial views is a challenging task due to extreme viewpoint disparity, occlusions, and a limited field of view. We introduce Top2Ground, a novel diffusion-based method that directly generates photorealistic ground-view images from aerial input images without relying on intermediate representations such as depth maps or 3D voxels. Specifically, we condition the denoising process on a joint representation of VAE-encoded spatial features (derived from aerial RGB images and an estimated height map) and CLIP-based semantic embeddings. This design ensures the generation is both geometrically constrained by the scene's 3D structure and semantically consistent with its content. We evaluate Top2Ground on three diverse datasets: CVUSA, CVACT, and the Auto Arborist. Our approach shows 7.3% average improvement in SSIM across three benchmark datasets, showing Top2Ground can robustly handle both wide and narrow fields of view, highlighting its strong generalization capabilities.",
-        "arxiv_id": "2511.08258",
-        "ARXIVID": "2511.08258",
-        "COMMENT": "",
+        "title": "DT-NVS: Diffusion Transformers for Novel View Synthesis",
+        "abstract": "arXiv:2511.08823v1 Announce Type: new  Abstract: Generating novel views of a natural scene, e.g., every-day scenes both indoors and outdoors, from a single view is an under-explored problem, even though it is an organic extension to the object-centric novel view synthesis. Existing diffusion-based approaches focus rather on small camera movements in real scenes or only consider unnatural object-centric scenes, limiting their potential applications in real-world settings. In this paper we move away from these constrained regimes and propose a 3D diffusion model trained with image-only losses on a large-scale dataset of real-world, multi-category, unaligned, and casually acquired videos of everyday scenes. We propose DT-NVS, a 3D-aware diffusion model for generalized novel view synthesis that exploits a transformer-based architecture backbone. We make significant contributions to transformer and self-attention architectures to translate images to 3d representations, and novel camera conditioning strategies to allow training on real-world unaligned datasets. In addition, we introduce a novel training paradigm swapping the role of reference frame between the conditioning image and the sampled noisy input. We evaluate our approach on the 3D task of generalized novel view synthesis from a single input image and show improvements over state-of-the-art 3D aware diffusion models and deterministic approaches, while generating diverse outputs.",
+        "arxiv_id": "2511.08823",
+        "ARXIVID": "2511.08823",
+        "COMMENT": "None of the criteria match this paper closely.",
+        "RELEVANCE": 3,
+        "NOVELTY": 7
+    },
+    "2511.08930": {
+        "authors": [
+            "Hanbo Cheng",
+            "Peng Wang",
+            "Kaixiang Lei",
+            "Qi Li",
+            "Zhen Zou",
+            "Pengfei Hu",
+            "Jun Du"
+        ],
+        "title": "From Structure to Detail: Hierarchical Distillation for Efficient Diffusion Model",
+        "abstract": "arXiv:2511.08930v1 Announce Type: new  Abstract: The inference latency of diffusion models remains a critical barrier to their real-time application. While trajectory-based and distribution-based step distillation methods offer solutions, they present a fundamental trade-off. Trajectory-based methods preserve global structure but act as a \"lossy compressor\", sacrificing high-frequency details. Conversely, distribution-based methods can achieve higher fidelity but often suffer from mode collapse and unstable training. This paper recasts them from independent paradigms into synergistic components within our novel Hierarchical Distillation (HD) framework. We leverage trajectory distillation not as a final generator, but to establish a structural ``sketch\", providing a near-optimal initialization for the subsequent distribution-based refinement stage. This strategy yields an ideal initial distribution that enhances the ceiling of overall performance. To further improve quality, we introduce and refine the adversarial training process. We find standard discriminator structures are ineffective at refining an already high-quality generator. To overcome this, we introduce the Adaptive Weighted Discriminator (AWD), tailored for the HD pipeline. By dynamically allocating token weights, AWD focuses on local imperfections, enabling efficient detail refinement. Our approach demonstrates state-of-the-art performance across diverse tasks. On ImageNet $256\\times256$, our single-step model achieves an FID of 2.26, rivaling its 250-step teacher. It also achieves promising results on the high-resolution text-to-image MJHQ benchmark, proving its generalizability. Our method establishes a robust new paradigm for high-fidelity, single-step diffusion models.",
+        "arxiv_id": "2511.08930",
+        "ARXIVID": "2511.08930",
+        "COMMENT": "None of the criteria match this paper closely.",
         "RELEVANCE": 3,
         "NOVELTY": 6
     },
-    "2511.07756": {
+    "2511.08704": {
         "authors": [
-            "Song Yan",
-            "Min Li",
-            "Bi Xinliang",
-            "Jian Yang",
-            "Yusen Zhang",
-            "Guanye Xiong",
-            "Yunwei Lan",
-            "Tao Zhang",
-            "Wei Zhai",
-            "Zheng-Jun Zha"
+            "Xinchen Yan",
+            "Chen Liang",
+            "Lijun Yu",
+            "Adams Wei Yu",
+            "Yifeng Lu",
+            "Quoc V. Le"
         ],
-        "title": "Beyond Randomness: Understand the Order of the Noise in Diffusion",
-        "abstract": "arXiv:2511.07756v1 Announce Type: new  Abstract: In text-driven content generation (T2C) diffusion model, semantic of generated content is mostly attributed to the process of text embedding and attention mechanism interaction. The initial noise of the generation process is typically characterized as a random element that contributes to the diversity of the generated content. Contrary to this view, this paper reveals that beneath the random surface of noise lies strong analyzable patterns. Specifically, this paper first conducts a comprehensive analysis of the impact of random noise on the model's generation. We found that noise not only contains rich semantic information, but also allows for the erasure of unwanted semantics from it in an extremely simple way based on information theory, and using the equivalence between the generation process of diffusion model and semantic injection to inject semantics into the cleaned noise. Then, we mathematically decipher these observations and propose a simple but efficient training-free and universal two-step \"Semantic Erasure-Injection\" process to modulate the initial noise in T2C diffusion model. Experimental results demonstrate that our method is consistently effective across various T2C models based on both DiT and UNet architectures and presents a novel perspective for optimizing the generation of diffusion model, providing a universal tool for consistent generation.",
-        "arxiv_id": "2511.07756",
-        "ARXIVID": "2511.07756",
-        "COMMENT": "",
+        "title": "Rethinking generative image pretraining: How far are we from scaling up next-pixel prediction?",
+        "abstract": "arXiv:2511.08704v1 Announce Type: new  Abstract: This paper investigates the scaling properties of autoregressive next-pixel prediction, a simple, end-to-end yet under-explored framework for unified vision models. Starting with images at resolutions of 32x32, we train a family of Transformers using IsoFlops profiles across compute budgets up to 7e19 FLOPs and evaluate three distinct target metrics: next-pixel prediction objective, ImageNet classification accuracy, and generation quality measured by Fr'echet Distance. First, optimal scaling strategy is critically task-dependent. At a fixed 32x32 resolution alone, the optimal scaling properties for image classification and image generation diverge, where generation optimal setup requires the data size grow three to five times faster than for the classification optimal setup. Second, as image resolution increases, the optimal scaling strategy indicates that the model size must grow much faster than data size. Surprisingly, by projecting our findings, we discover that the primary bottleneck is compute rather than the amount of training data. As compute continues to grow four to five times annually, we forecast the feasibility of pixel-by-pixel modeling of images within the next five years.",
+        "arxiv_id": "2511.08704",
+        "ARXIVID": "2511.08704",
+        "COMMENT": "None of the criteria match this paper closely.",
         "RELEVANCE": 3,
         "NOVELTY": 5
     }
