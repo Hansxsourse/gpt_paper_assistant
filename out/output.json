@@ -1,51 +1,20 @@
 {
-    "2511.08823": {
+    "2511.09870": {
         "authors": [
-            "Wonbong Jang",
-            "Jonathan Tremblay",
-            "Lourdes Agapito"
+            "Jia Lin",
+            "Xiaofei Zhou",
+            "Jiyuan Liu",
+            "Runmin Cong",
+            "Guodao Zhang",
+            "Zhi Liu",
+            "Jiyong Zhang"
         ],
-        "title": "DT-NVS: Diffusion Transformers for Novel View Synthesis",
-        "abstract": "arXiv:2511.08823v1 Announce Type: new  Abstract: Generating novel views of a natural scene, e.g., every-day scenes both indoors and outdoors, from a single view is an under-explored problem, even though it is an organic extension to the object-centric novel view synthesis. Existing diffusion-based approaches focus rather on small camera movements in real scenes or only consider unnatural object-centric scenes, limiting their potential applications in real-world settings. In this paper we move away from these constrained regimes and propose a 3D diffusion model trained with image-only losses on a large-scale dataset of real-world, multi-category, unaligned, and casually acquired videos of everyday scenes. We propose DT-NVS, a 3D-aware diffusion model for generalized novel view synthesis that exploits a transformer-based architecture backbone. We make significant contributions to transformer and self-attention architectures to translate images to 3d representations, and novel camera conditioning strategies to allow training on real-world unaligned datasets. In addition, we introduce a novel training paradigm swapping the role of reference frame between the conditioning image and the sampled noisy input. We evaluate our approach on the 3D task of generalized novel view synthesis from a single input image and show improvements over state-of-the-art 3D aware diffusion models and deterministic approaches, while generating diverse outputs.",
-        "arxiv_id": "2511.08823",
-        "ARXIVID": "2511.08823",
-        "COMMENT": "None of the criteria match this paper closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 7
-    },
-    "2511.08930": {
-        "authors": [
-            "Hanbo Cheng",
-            "Peng Wang",
-            "Kaixiang Lei",
-            "Qi Li",
-            "Zhen Zou",
-            "Pengfei Hu",
-            "Jun Du"
-        ],
-        "title": "From Structure to Detail: Hierarchical Distillation for Efficient Diffusion Model",
-        "abstract": "arXiv:2511.08930v1 Announce Type: new  Abstract: The inference latency of diffusion models remains a critical barrier to their real-time application. While trajectory-based and distribution-based step distillation methods offer solutions, they present a fundamental trade-off. Trajectory-based methods preserve global structure but act as a \"lossy compressor\", sacrificing high-frequency details. Conversely, distribution-based methods can achieve higher fidelity but often suffer from mode collapse and unstable training. This paper recasts them from independent paradigms into synergistic components within our novel Hierarchical Distillation (HD) framework. We leverage trajectory distillation not as a final generator, but to establish a structural ``sketch\", providing a near-optimal initialization for the subsequent distribution-based refinement stage. This strategy yields an ideal initial distribution that enhances the ceiling of overall performance. To further improve quality, we introduce and refine the adversarial training process. We find standard discriminator structures are ineffective at refining an already high-quality generator. To overcome this, we introduce the Adaptive Weighted Discriminator (AWD), tailored for the HD pipeline. By dynamically allocating token weights, AWD focuses on local imperfections, enabling efficient detail refinement. Our approach demonstrates state-of-the-art performance across diverse tasks. On ImageNet $256\\times256$, our single-step model achieves an FID of 2.26, rivaling its 250-step teacher. It also achieves promising results on the high-resolution text-to-image MJHQ benchmark, proving its generalizability. Our method establishes a robust new paradigm for high-fidelity, single-step diffusion models.",
-        "arxiv_id": "2511.08930",
-        "ARXIVID": "2511.08930",
-        "COMMENT": "None of the criteria match this paper closely.",
-        "RELEVANCE": 3,
+        "title": "SAM-DAQ: Segment Anything Model with Depth-guided Adaptive Queries for RGB-D Video Salient Object Detection",
+        "abstract": "arXiv:2511.09870v1 Announce Type: new  Abstract: Recently segment anything model (SAM) has attracted widespread concerns, and it is often treated as a vision foundation model for universal segmentation. Some researchers have attempted to directly apply the foundation model to the RGB-D video salient object detection (RGB-D VSOD) task, which often encounters three challenges, including the dependence on manual prompts, the high memory consumption of sequential adapters, and the computational burden of memory attention. To address the limitations, we propose a novel method, namely Segment Anything Model with Depth-guided Adaptive Queries (SAM-DAQ), which adapts SAM2 to pop-out salient objects from videos by seamlessly integrating depth and temporal cues within a unified framework. Firstly, we deploy a parallel adapter-based multi-modal image encoder (PAMIE), which incorporates several depth-guided parallel adapters (DPAs) in a skip-connection way. Remarkably, we fine-tune the frozen SAM encoder under prompt-free conditions, where the DPA utilizes depth cues to facilitate the fusion of multi-modal features. Secondly, we deploy a query-driven temporal memory (QTM) module, which unifies the memory bank and prompt embeddings into a learnable pipeline. Concretely, by leveraging both frame-level queries and video-level queries simultaneously, the QTM module can not only selectively extract temporal consistency features but also iteratively update the temporal representations of the queries. Extensive experiments are conducted on three RGB-D VSOD datasets, and the results show that the proposed SAM-DAQ consistently outperforms state-of-the-art methods in terms of all evaluation metrics.",
+        "arxiv_id": "2511.09870",
+        "ARXIVID": "2511.09870",
+        "COMMENT": "The paper proposes a unified framework for RGB-D video salient object detection by integrating depth and temporal cues, which aligns with the criteria for unified image/video generation and segmentation.",
+        "RELEVANCE": 5,
         "NOVELTY": 6
-    },
-    "2511.08704": {
-        "authors": [
-            "Xinchen Yan",
-            "Chen Liang",
-            "Lijun Yu",
-            "Adams Wei Yu",
-            "Yifeng Lu",
-            "Quoc V. Le"
-        ],
-        "title": "Rethinking generative image pretraining: How far are we from scaling up next-pixel prediction?",
-        "abstract": "arXiv:2511.08704v1 Announce Type: new  Abstract: This paper investigates the scaling properties of autoregressive next-pixel prediction, a simple, end-to-end yet under-explored framework for unified vision models. Starting with images at resolutions of 32x32, we train a family of Transformers using IsoFlops profiles across compute budgets up to 7e19 FLOPs and evaluate three distinct target metrics: next-pixel prediction objective, ImageNet classification accuracy, and generation quality measured by Fr'echet Distance. First, optimal scaling strategy is critically task-dependent. At a fixed 32x32 resolution alone, the optimal scaling properties for image classification and image generation diverge, where generation optimal setup requires the data size grow three to five times faster than for the classification optimal setup. Second, as image resolution increases, the optimal scaling strategy indicates that the model size must grow much faster than data size. Surprisingly, by projecting our findings, we discover that the primary bottleneck is compute rather than the amount of training data. As compute continues to grow four to five times annually, we forecast the feasibility of pixel-by-pixel modeling of images within the next five years.",
-        "arxiv_id": "2511.08704",
-        "ARXIVID": "2511.08704",
-        "COMMENT": "None of the criteria match this paper closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
     }
 }
