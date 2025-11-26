@@ -1,106 +1,37 @@
 {
-    "2511.19319": {
+    "2511.20211": {
         "authors": [
-            "Lingwei Dang",
-            "Zonghan Li",
-            "Juntong Li",
-            "Hongwen Zhang",
-            "Liang An",
-            "Yebin Liu",
-            "Qingyao Wu"
+            "Hao Yu",
+            "Jiabo Zhan",
+            "Zile Wang",
+            "Jinglin Wang",
+            "Huaisong Zhang",
+            "Hongyu Li",
+            "Xinrui Chen",
+            "Yongxian Wei",
+            "Chun Yuan"
         ],
-        "title": "SyncMV4D: Synchronized Multi-view Joint Diffusion of Appearance and Motion for Hand-Object Interaction Synthesis",
-        "abstract": "arXiv:2511.19319v1 Announce Type: new  Abstract: Hand-Object Interaction (HOI) generation plays a critical role in advancing applications across animation and robotics. Current video-based methods are predominantly single-view, which impedes comprehensive 3D geometry perception and often results in geometric distortions or unrealistic motion patterns. While 3D HOI approaches can generate dynamically plausible motions, their dependence on high-quality 3D data captured in controlled laboratory settings severely limits their generalization to real-world scenarios. To overcome these limitations, we introduce SyncMV4D, the first model that jointly generates synchronized multi-view HOI videos and 4D motions by unifying visual prior, motion dynamics, and multi-view geometry. Our framework features two core innovations: (1) a Multi-view Joint Diffusion (MJD) model that co-generates HOI videos and intermediate motions, and (2) a Diffusion Points Aligner (DPA) that refines the coarse intermediate motion into globally aligned 4D metric point tracks. To tightly couple 2D appearance with 4D dynamics, we establish a closed-loop, mutually enhancing cycle. During the diffusion denoising process, the generated video conditions the refinement of the 4D motion, while the aligned 4D point tracks are reprojected to guide next-step joint generation. Experimentally, our method demonstrates superior performance to state-of-the-art alternatives in visual realism, motion plausibility, and multi-view consistency.",
-        "arxiv_id": "2511.19319",
-        "ARXIVID": "2511.19319",
-        "COMMENT": "Criteria 2 matches closely as it discusses a unified diffusion model for multi-view joint diffusion of appearance and motion.",
+        "title": "OmniAlpha: A Sequence-to-Sequence Framework for Unified Multi-Task RGBA Generation",
+        "abstract": "arXiv:2511.20211v1 Announce Type: new  Abstract: Generative models have excelled in RGB synthesis, but real-world applications require RGBA manipulation. This has led to a fragmented landscape: specialized, single-task models handle alpha but lack versatility, while unified multi-task frameworks are confined to the RGB domain. To bridge this critical gap, we propose OmniAlpha, the first unified, multi-task generative framework for sequence-to-sequence RGBA image generation and editing. Its architecture features MSRoPE-BiL, a novel RoPE method with a bi-directionally extendable layer axis for its Diffusion Transformer (DiT) backbone, enabling the concurrent processing of multiple input and target RGBA layers. To power this framework, we introduce AlphaLayers, a new dataset of 1,000 high-quality, multi-layer triplets, built via a novel automated synthesis and filter pipeline. Jointly training OmniAlpha on this dataset across a comprehensive suite of 21 diverse tasks, extensive experiments demonstrate that our unified approach consistently outperforms strong, specialized baselines. Most notably, OmniAlpha achieves a dramatic 84.8% relative reduction in SAD for mask-free matting on AIM-500 and wins over 90% of human preferences in layer-conditioned completion. Our work proves that a unified, multi-task model can learn a superior shared representation for RGBA, paving the way for more powerful, layer-aware generative systems.",
+        "arxiv_id": "2511.20211",
+        "ARXIVID": "2511.20211",
+        "COMMENT": "The paper proposes a unified multi-task generative framework for RGBA image generation, which aligns with the criteria for unified image generation and segmentation.",
         "RELEVANCE": 5,
-        "NOVELTY": 6
+        "NOVELTY": 7
     },
-    "2511.18922": {
+    "2511.20646": {
         "authors": [
-            "Zhenxing Mi",
-            "Yuxin Wang",
-            "Dan Xu"
+            "Xiaoye Wang",
+            "Chen Tang",
+            "Xiangyu Yue",
+            "Wei-Hong Li"
         ],
-        "title": "One4D: Unified 4D Generation and Reconstruction via Decoupled LoRA Control",
-        "abstract": "arXiv:2511.18922v1 Announce Type: new  Abstract: We present One4D, a unified framework for 4D generation and reconstruction that produces dynamic 4D content as synchronized RGB frames and pointmaps. By consistently handling varying sparsities of conditioning frames through a Unified Masked Conditioning (UMC) mechanism, One4D can seamlessly transition between 4D generation from a single image, 4D reconstruction from a full video, and mixed generation and reconstruction from sparse frames. Our framework adapts a powerful video generation model for joint RGB and pointmap generation, with carefully designed network architectures. The commonly used diffusion finetuning strategies for depthmap or pointmap reconstruction often fail on joint RGB and pointmap generation, quickly degrading the base video model. To address this challenge, we introduce Decoupled LoRA Control (DLC), which employs two modality-specific LoRA adapters to form decoupled computation branches for RGB frames and pointmaps, connected by lightweight, zero-initialized control links that gradually learn mutual pixel-level consistency. Trained on a mixture of synthetic and real 4D datasets under modest computational budgets, One4D produces high-quality RGB frames and accurate pointmaps across both generation and reconstruction tasks. This work represents a step toward general, high-quality geometry-based 4D world modeling using video diffusion models. Project page: https://mizhenxing.github.io/One4D",
-        "arxiv_id": "2511.18922",
-        "ARXIVID": "2511.18922",
-        "COMMENT": "Criteria 1 matches closely as it discusses a unified framework for 4D generation and reconstruction, producing both RGB frames and pointmaps.",
-        "RELEVANCE": 5,
-        "NOVELTY": 6
-    },
-    "2511.18152": {
-        "authors": [
-            "Chunming He",
-            "Rihan Zhang",
-            "Zheng Chen",
-            "Bowen Yang",
-            "CHengyu Fang",
-            "Yunlong Lin",
-            "Fengyang Xiao",
-            "Sina Farsiu"
-        ],
-        "title": "UnfoldLDM: Deep Unfolding-based Blind Image Restoration with Latent Diffusion Priors",
-        "abstract": "arXiv:2511.18152v1 Announce Type: new  Abstract: Deep unfolding networks (DUNs) combine the interpretability of model-based methods with the learning ability of deep networks, yet remain limited for blind image restoration (BIR). Existing DUNs suffer from: (1) \\textbf{Degradation-specific dependency}, as their optimization frameworks are tied to a known degradation model, making them unsuitable for BIR tasks; and (2) \\textbf{Over-smoothing bias}, resulting from the direct feeding of gradient descent outputs, dominated by low-frequency content, into the proximal term, suppressing fine textures. To overcome these issues, we propose UnfoldLDM to integrate DUNs with latent diffusion model (LDM) for BIR. In each stage, UnfoldLDM employs a multi-granularity degradation-aware (MGDA) module as the gradient descent step. MGDA models BIR as an unknown degradation estimation problem and estimates both the holistic degradation matrix and its decomposed forms, enabling robust degradation removal. For the proximal step, we design a degradation-resistant LDM (DR-LDM) to extract compact degradation-invariant priors from the MGDA output. Guided by this prior, an over-smoothing correction transformer (OCFormer) explicitly recovers high-frequency components and enhances texture details. This unique combination ensures the final result is degradation-free and visually rich. Experiments show that our UnfoldLDM achieves a leading place on various BIR tasks and benefits downstream tasks. Moreover, our design is compatible with existing DUN-based methods, serving as a plug-and-play framework. Code will be released.",
-        "arxiv_id": "2511.18152",
-        "ARXIVID": "2511.18152",
-        "COMMENT": "",
+        "title": "3D-Aware Multi-Task Learning with Cross-View Correlations for Dense Scene Understanding",
+        "abstract": "arXiv:2511.20646v1 Announce Type: new  Abstract: This paper addresses the challenge of training a single network to jointly perform multiple dense prediction tasks, such as segmentation and depth estimation, i.e., multi-task learning (MTL). Current approaches mainly capture cross-task relations in the 2D image space, often leading to unstructured features lacking 3D-awareness. We argue that 3D-awareness is vital for modeling cross-task correlations essential for comprehensive scene understanding. We propose to address this problem by integrating correlations across views, i.e., cost volume, as geometric consistency in the MTL network. Specifically, we introduce a lightweight Cross-view Module (CvM), shared across tasks, to exchange information across views and capture cross-view correlations, integrated with a feature from MTL encoder for multi-task predictions. This module is architecture-agnostic and can be applied to both single and multi-view data. Extensive results on NYUv2 and PASCAL-Context demonstrate that our method effectively injects geometric consistency into existing MTL methods to improve performance.",
+        "arxiv_id": "2511.20646",
+        "ARXIVID": "2511.20646",
+        "COMMENT": "The paper addresses multi-task learning with a focus on segmentation and depth estimation, but does not propose a unified generative and segmentation model.",
         "RELEVANCE": 3,
         "NOVELTY": 5
-    },
-    "2511.18333": {
-        "authors": [
-            "Xuanke Shi",
-            "Boxuan Li",
-            "Xiaoyang Han",
-            "Zhongang Cai",
-            "Lei Yang",
-            "Dahua Lin",
-            "Quan Wang"
-        ],
-        "title": "ConsistCompose: Unified Multimodal Layout Control for Image Composition",
-        "abstract": "arXiv:2511.18333v1 Announce Type: new  Abstract: Unified multimodal models that couple visual understanding with image generation have advanced rapidly, yet most systems still focus on visual grounding-aligning language with image regions-while their generative counterpart, linguistic-embedded layout-grounded generation (LELG) for layout-controllable multi-instance generation, remains underexplored and limits precise compositional control. We present ConsistCompose, a unified multimodal framework that embeds layout coordinates directly into language prompts, enabling layout-controlled multi-instance image generation from Interleaved Image-Text within a single generative interface. We further construct ConsistCompose3M, a 3.4M multi-instance generation dataset with layout and identity annotations (2.6M text-guided and 0.8M image-guided data pairs) that provides large-scale supervision for layout-conditioned generation. Within this framework, LELG is instantiated through instance-coordinate binding prompts and coordinate-aware classifier-free guidance, which translate linguistic layout cues into precise spatial control without task-specific branches. Experiments on COCO-Position and MS-Bench show that ConsistCompose substantially improves spatial accuracy over layout-controlled baselines while preserving identity fidelity and competitive general multimodal understanding, establishing a unified paradigm for layout-controllable multimodal image generation.",
-        "arxiv_id": "2511.18333",
-        "ARXIVID": "2511.18333",
-        "COMMENT": "",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2511.18822": {
-        "authors": [
-            "Zhennan Chen",
-            "Junwei Zhu",
-            "Xu Chen",
-            "Jiangning Zhang",
-            "Xiaobin Hu",
-            "Hanzhen Zhao",
-            "Chengjie Wang",
-            "Jian Yang",
-            "Ying Tai"
-        ],
-        "title": "DiP: Taming Diffusion Models in Pixel Space",
-        "abstract": "arXiv:2511.18822v1 Announce Type: new  Abstract: Diffusion models face a fundamental trade-off between generation quality and computational efficiency. Latent Diffusion Models (LDMs) offer an efficient solution but suffer from potential information loss and non-end-to-end training. In contrast, existing pixel space models bypass VAEs but are computationally prohibitive for high-resolution synthesis. To resolve this dilemma, we propose DiP, an efficient pixel space diffusion framework. DiP decouples generation into a global and a local stage: a Diffusion Transformer (DiT) backbone operates on large patches for efficient global structure construction, while a co-trained lightweight Patch Detailer Head leverages contextual features to restore fine-grained local details. This synergistic design achieves computational efficiency comparable to LDMs without relying on a VAE. DiP is accomplished with up to 10$\\times$ faster inference speeds than previous method while increasing the total number of parameters by only 0.3%, and achieves an 1.90 FID score on ImageNet 256$\\times$256.",
-        "arxiv_id": "2511.18822",
-        "ARXIVID": "2511.18822",
-        "COMMENT": "",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2511.19434": {
-        "authors": [
-            "Yasin Esfandiari",
-            "Stefan Bauer",
-            "Sebastian U. Stich",
-            "Andrea Dittadi"
-        ],
-        "title": "Breaking the Likelihood-Quality Trade-off in Diffusion Models by Merging Pretrained Experts",
-        "abstract": "arXiv:2511.19434v1 Announce Type: new  Abstract: Diffusion models for image generation often exhibit a trade-off between perceptual sample quality and data likelihood: training objectives emphasizing high-noise denoising steps yield realistic images but poor likelihoods, whereas likelihood-oriented training overweights low-noise steps and harms visual fidelity. We introduce a simple plug-and-play sampling method that combines two pretrained diffusion experts by switching between them along the denoising trajectory. Specifically, we apply an image-quality expert at high noise levels to shape global structure, then switch to a likelihood expert at low noise levels to refine pixel statistics. The approach requires no retraining or fine-tuning -- only the choice of an intermediate switching step. On CIFAR-10 and ImageNet32, the merged model consistently matches or outperforms its base components, improving or preserving both likelihood and sample quality relative to each expert alone. These results demonstrate that expert switching across noise levels is an effective way to break the likelihood-quality trade-off in image diffusion models.",
-        "arxiv_id": "2511.19434",
-        "ARXIVID": "2511.19434",
-        "COMMENT": "",
-        "RELEVANCE": 3,
-        "NOVELTY": 4
     }
 }
