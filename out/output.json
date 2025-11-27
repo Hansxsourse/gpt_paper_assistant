@@ -1,37 +1,219 @@
 {
-    "2511.20211": {
+    "2511.21129": {
         "authors": [
-            "Hao Yu",
-            "Jiabo Zhan",
-            "Zile Wang",
-            "Jinglin Wang",
-            "Huaisong Zhang",
-            "Hongyu Li",
-            "Xinrui Chen",
-            "Yongxian Wei",
-            "Chun Yuan"
+            "Dianbing Xi",
+            "Jiepeng Wang",
+            "Yuanzhi Liang",
+            "Xi Qiu",
+            "Jialun Liu",
+            "Hao Pan",
+            "Yuchi Huo",
+            "Rui Wang",
+            "Haibin Huang",
+            "Chi Zhang",
+            "Xuelong Li"
         ],
-        "title": "OmniAlpha: A Sequence-to-Sequence Framework for Unified Multi-Task RGBA Generation",
-        "abstract": "arXiv:2511.20211v1 Announce Type: new  Abstract: Generative models have excelled in RGB synthesis, but real-world applications require RGBA manipulation. This has led to a fragmented landscape: specialized, single-task models handle alpha but lack versatility, while unified multi-task frameworks are confined to the RGB domain. To bridge this critical gap, we propose OmniAlpha, the first unified, multi-task generative framework for sequence-to-sequence RGBA image generation and editing. Its architecture features MSRoPE-BiL, a novel RoPE method with a bi-directionally extendable layer axis for its Diffusion Transformer (DiT) backbone, enabling the concurrent processing of multiple input and target RGBA layers. To power this framework, we introduce AlphaLayers, a new dataset of 1,000 high-quality, multi-layer triplets, built via a novel automated synthesis and filter pipeline. Jointly training OmniAlpha on this dataset across a comprehensive suite of 21 diverse tasks, extensive experiments demonstrate that our unified approach consistently outperforms strong, specialized baselines. Most notably, OmniAlpha achieves a dramatic 84.8% relative reduction in SAD for mask-free matting on AIM-500 and wins over 90% of human preferences in layer-conditioned completion. Our work proves that a unified, multi-task model can learn a superior shared representation for RGBA, paving the way for more powerful, layer-aware generative systems.",
-        "arxiv_id": "2511.20211",
-        "ARXIVID": "2511.20211",
-        "COMMENT": "The paper proposes a unified multi-task generative framework for RGBA image generation, which aligns with the criteria for unified image generation and segmentation.",
-        "RELEVANCE": 5,
-        "NOVELTY": 7
+        "title": "CtrlVDiff: Controllable Video Generation via Unified Multimodal Video Diffusion",
+        "abstract": "arXiv:2511.21129v1 Announce Type: new  Abstract: We tackle the dual challenges of video understanding and controllable video generation within a unified diffusion framework. Our key insights are two-fold: geometry-only cues (e.g., depth, edges) are insufficient: they specify layout but under-constrain appearance, materials, and illumination, limiting physically meaningful edits such as relighting or material swaps and often causing temporal drift. Enriching the model with additional graphics-based modalities (intrinsics and semantics) provides complementary constraints that both disambiguate understanding and enable precise, predictable control during generation.   However, building a single model that uses many heterogeneous cues introduces two core difficulties. Architecturally, the model must accept any subset of modalities, remain robust to missing inputs, and inject control signals without sacrificing temporal consistency. Data-wise, training demands large-scale, temporally aligned supervision that ties real videos to per-pixel multimodal annotations.   We then propose CtrlVDiff, a unified diffusion model trained with a Hybrid Modality Control Strategy (HMCS) that routes and fuses features from depth, normals, segmentation, edges, and graphics-based intrinsics (albedo, roughness, metallic), and re-renders videos from any chosen subset with strong temporal coherence. To enable this, we build MMVideo, a hybrid real-and-synthetic dataset aligned across modalities and captions. Across understanding and generation benchmarks, CtrlVDiff delivers superior controllability and fidelity, enabling layer-wise edits (relighting, material adjustment, object insertion) and surpassing state-of-the-art baselines while remaining robust when some modalities are unavailable.",
+        "arxiv_id": "2511.21129",
+        "ARXIVID": "2511.21129",
+        "COMMENT": "2",
+        "RELEVANCE": 10,
+        "NOVELTY": 8
     },
-    "2511.20646": {
+    "2511.21691": {
         "authors": [
-            "Xiaoye Wang",
-            "Chen Tang",
-            "Xiangyu Yue",
-            "Wei-Hong Li"
+            "Yusuf Dalva",
+            "Guocheng Gordon Qian",
+            "Maya Goldenberg",
+            "Tsai-Shien Chen",
+            "Kfir Aberman",
+            "Sergey Tulyakov",
+            "Pinar Yanardag",
+            "Kuan-Chieh Jackson Wang"
         ],
-        "title": "3D-Aware Multi-Task Learning with Cross-View Correlations for Dense Scene Understanding",
-        "abstract": "arXiv:2511.20646v1 Announce Type: new  Abstract: This paper addresses the challenge of training a single network to jointly perform multiple dense prediction tasks, such as segmentation and depth estimation, i.e., multi-task learning (MTL). Current approaches mainly capture cross-task relations in the 2D image space, often leading to unstructured features lacking 3D-awareness. We argue that 3D-awareness is vital for modeling cross-task correlations essential for comprehensive scene understanding. We propose to address this problem by integrating correlations across views, i.e., cost volume, as geometric consistency in the MTL network. Specifically, we introduce a lightweight Cross-view Module (CvM), shared across tasks, to exchange information across views and capture cross-view correlations, integrated with a feature from MTL encoder for multi-task predictions. This module is architecture-agnostic and can be applied to both single and multi-view data. Extensive results on NYUv2 and PASCAL-Context demonstrate that our method effectively injects geometric consistency into existing MTL methods to improve performance.",
-        "arxiv_id": "2511.20646",
-        "ARXIVID": "2511.20646",
-        "COMMENT": "The paper addresses multi-task learning with a focus on segmentation and depth estimation, but does not propose a unified generative and segmentation model.",
+        "title": "Canvas-to-Image: Compositional Image Generation with Multimodal Controls",
+        "abstract": "arXiv:2511.21691v1 Announce Type: new  Abstract: While modern diffusion models excel at generating high-quality and diverse images, they still struggle with high-fidelity compositional and multimodal control, particularly when users simultaneously specify text prompts, subject references, spatial arrangements, pose constraints, and layout annotations. We introduce Canvas-to-Image, a unified framework that consolidates these heterogeneous controls into a single canvas interface, enabling users to generate images that faithfully reflect their intent. Our key idea is to encode diverse control signals into a single composite canvas image that the model can directly interpret for integrated visual-spatial reasoning. We further curate a suite of multi-task datasets and propose a Multi-Task Canvas Training strategy that optimizes the diffusion model to jointly understand and integrate heterogeneous controls into text-to-image generation within a unified learning paradigm. This joint training enables Canvas-to-Image to reason across multiple control modalities rather than relying on task-specific heuristics, and it generalizes well to multi-control scenarios during inference. Extensive experiments show that Canvas-to-Image significantly outperforms state-of-the-art methods in identity preservation and control adherence across challenging benchmarks, including multi-person composition, pose-controlled composition, layout-constrained generation, and multi-control generation.",
+        "arxiv_id": "2511.21691",
+        "ARXIVID": "2511.21691",
+        "COMMENT": "The paper does not match any specific criteria closely. It focuses on a unified framework for compositional image generation with multimodal controls, but does not mention joint generation and segmentation or a multi-task diffusion model.",
+        "RELEVANCE": 3,
+        "NOVELTY": 6
+    },
+    "2511.21395": {
+        "authors": [
+            "Qixun Wang",
+            "Yang Shi",
+            "Yifei Wang",
+            "Yuanxing Zhang",
+            "Pengfei Wan",
+            "Kun Gai",
+            "Xianghua Ying",
+            "Yisen Wang"
+        ],
+        "title": "Monet: Reasoning in Latent Visual Space Beyond Images and Language",
+        "abstract": "arXiv:2511.21395v1 Announce Type: new  Abstract: \"Thinking with images\" has emerged as an effective paradigm for advancing visual reasoning, extending beyond text-only chains of thought by injecting visual evidence into intermediate reasoning steps. However, existing methods fall short of human-like abstract visual thinking, as their flexibility is fundamentally limited by external tools. In this work, we introduce Monet, a training framework that enables multimodal large language models (MLLMs) to reason directly within the latent visual space by generating continuous embeddings that function as intermediate visual thoughts. We identify two core challenges in training MLLMs for latent visual reasoning: high computational cost in latent-vision alignment and insufficient supervision over latent embeddings, and address them with a three-stage distillation-based supervised fine-tuning (SFT) pipeline. We further reveal a limitation of applying GRPO to latent reasoning: it primarily enhances text-based reasoning rather than latent reasoning. To overcome this, we propose VLPO (Visual-latent Policy Optimization), a reinforcement learning method that explicitly incorporates latent embeddings into policy gradient updates. To support SFT, we construct Monet-SFT-125K, a high-quality text-image interleaved CoT dataset containing 125K real-world, chart, OCR, and geometry CoTs. Our model, Monet-7B, shows consistent gains across real-world perception and reasoning benchmarks and exhibits strong out-of-distribution generalization on challenging abstract visual reasoning tasks. We also empirically analyze the role of each training component and discuss our early unsuccessful attempts, providing insights for future developments in visual latent reasoning. Our model, data, and code are available at https://github.com/NOVAglow646/Monet.",
+        "arxiv_id": "2511.21395",
+        "ARXIVID": "2511.21395",
+        "COMMENT": "",
+        "RELEVANCE": 3,
+        "NOVELTY": 6
+    },
+    "2511.20714": {
+        "authors": [
+            "Inferix Team",
+            "Tianyu Feng",
+            "Yizeng Han",
+            "Jiahao He",
+            "Yuanyu He",
+            "Xi Lin",
+            "Teng Liu",
+            "Hanfeng Lu",
+            "Jiasheng Tang",
+            "Wei Wang",
+            "Zhiyuan Wang",
+            "Jichao Wu",
+            "Mingyang Yang",
+            "Yinghao Yu",
+            "Zeyu Zhang",
+            "Bohan Zhuang"
+        ],
+        "title": "Inferix: A Block-Diffusion based Next-Generation Inference Engine for World Simulation",
+        "abstract": "arXiv:2511.20714v1 Announce Type: new  Abstract: World models serve as core simulators for fields such as agentic AI, embodied AI, and gaming, capable of generating long, physically realistic, and interactive high-quality videos. Moreover, scaling these models could unlock emergent capabilities in visual perception, understanding, and reasoning, paving the way for a new paradigm that moves beyond current LLM-centric vision foundation models. A key breakthrough empowering them is the semi-autoregressive (block-diffusion) decoding paradigm, which merges the strengths of diffusion and autoregressive methods by generating video tokens in block-applying diffusion within each block while conditioning on previous ones, resulting in more coherent and stable video sequences. Crucially, it overcomes limitations of standard video diffusion by reintroducing LLM-style KV Cache management, enabling efficient, variable-length, and high-quality generation.   Therefore, Inferix is specifically designed as a next-generation inference engine to enable immersive world synthesis through optimized semi-autoregressive decoding processes. This dedicated focus on world simulation distinctly sets it apart from systems engineered for high-concurrency scenarios (like vLLM or SGLang) and from classic video diffusion models (such as xDiTs). Inferix further enhances its offering with interactive video streaming and profiling, enabling real-time interaction and realistic simulation to accurately model world dynamics. Additionally, it supports efficient benchmarking through seamless integration of LV-Bench, a new fine-grained evaluation benchmark tailored for minute-long video generation scenarios. We hope the community will work together to advance Inferix and foster world model exploration.",
+        "arxiv_id": "2511.20714",
+        "ARXIVID": "2511.20714",
+        "COMMENT": "",
+        "RELEVANCE": 3,
+        "NOVELTY": 6
+    },
+    "2511.21113": {
+        "authors": [
+            "YuAn Wang",
+            "Xiaofan Li",
+            "Chi Huang",
+            "Wenhao Zhang",
+            "Hao Li",
+            "Bosheng Wang",
+            "Xun Sun",
+            "Jun Wang"
+        ],
+        "title": "FaithFusion: Harmonizing Reconstruction and Generation via Pixel-wise Information Gain",
+        "abstract": "arXiv:2511.21113v1 Announce Type: new  Abstract: In controllable driving-scene reconstruction and 3D scene generation, maintaining geometric fidelity while synthesizing visually plausible appearance under large viewpoint shifts is crucial. However, effective fusion of geometry-based 3DGS and appearance-driven diffusion models faces inherent challenges, as the absence of pixel-wise, 3D-consistent editing criteria often leads to over-restoration and geometric drift. To address these issues, we introduce \\textbf{FaithFusion}, a 3DGS-diffusion fusion framework driven by pixel-wise Expected Information Gain (EIG). EIG acts as a unified policy for coherent spatio-temporal synthesis: it guides diffusion as a spatial prior to refine high-uncertainty regions, while its pixel-level weighting distills the edits back into 3DGS. The resulting plug-and-play system is free from extra prior conditions and structural modifications.Extensive experiments on the Waymo dataset demonstrate that our approach attains SOTA performance across NTA-IoU, NTL-IoU, and FID, maintaining an FID of 107.47 even at 6 meters lane shift. Our code is available at https://github.com/wangyuanbiubiubiu/FaithFusion.",
+        "arxiv_id": "2511.21113",
+        "ARXIVID": "2511.21113",
+        "COMMENT": "The paper does not match any specific criteria closely. It discusses a fusion framework for 3D scene generation and reconstruction, but does not involve joint generation and segmentation or a multi-task diffusion model.",
         "RELEVANCE": 3,
         "NOVELTY": 5
+    },
+    "2511.21422": {
+        "authors": [
+            "Adeela Islam",
+            "Stefano Fiorini",
+            "Manuel Lecha",
+            "Theodore Tsesmelis",
+            "Stuart James",
+            "Pietro Morerio",
+            "Alessio Del Bue"
+        ],
+        "title": "E-M3RF: An Equivariant Multimodal 3D Re-assembly Framework",
+        "abstract": "arXiv:2511.21422v1 Announce Type: new  Abstract: 3D reassembly is a fundamental geometric problem, and in recent years it has increasingly been challenged by deep learning methods rather than classical optimization. While learning approaches have shown promising results, most still rely primarily on geometric features to assemble a whole from its parts. As a result, methods struggle when geometry alone is insufficient or ambiguous, for example, for small, eroded, or symmetric fragments. Additionally, solutions do not impose physical constraints that explicitly prevent overlapping assemblies. To address these limitations, we introduce E-M3RF, an equivariant multimodal 3D reassembly framework that takes as input the point clouds, containing both point positions and colors of fractured fragments, and predicts the transformations required to reassemble them using SE(3) flow matching. Each fragment is represented by both geometric and color features: i) 3D point positions are encoded as rotationconsistent geometric features using a rotation-equivariant encoder, ii) the colors at each 3D point are encoded with a transformer. The two feature sets are then combined to form a multimodal representation. We experimented on four datasets: two synthetic datasets, Breaking Bad and Fantastic Breaks, and two real-world cultural heritage datasets, RePAIR and Presious, demonstrating that E-M3RF on the RePAIR dataset reduces rotation error by 23.1% and translation error by 13.2%, while Chamfer Distance decreases by 18.4% compared to competing methods.",
+        "arxiv_id": "2511.21422",
+        "ARXIVID": "2511.21422",
+        "COMMENT": "",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2511.20996": {
+        "authors": [
+            "Jingxi Chen",
+            "Yixiao Zhang",
+            "Xiaoye Qian",
+            "Zongxia Li",
+            "Cornelia Fermuller",
+            "Caren Chen",
+            "Yiannis Aloimonos"
+        ],
+        "title": "From Inpainting to Layer Decomposition: Repurposing Generative Inpainting Models for Image Layer Decomposition",
+        "abstract": "arXiv:2511.20996v1 Announce Type: new  Abstract: Images can be viewed as layered compositions, foreground objects over background, with potential occlusions. This layered representation enables independent editing of elements, offering greater flexibility for content creation. Despite the progress in large generative models, decomposing a single image into layers remains challenging due to limited methods and data. We observe a strong connection between layer decomposition and in/outpainting tasks, and propose adapting a diffusion-based inpainting model for layer decomposition using lightweight finetuning. To further preserve detail in the latent space, we introduce a novel multi-modal context fusion module with linear attention complexity. Our model is trained purely on a synthetic dataset constructed from open-source assets and achieves superior performance in object removal and occlusion recovery, unlocking new possibilities in downstream editing and creative applications.",
+        "arxiv_id": "2511.20996",
+        "ARXIVID": "2511.20996",
+        "COMMENT": "",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2511.21592": {
+        "authors": [
+            "Haotian Xue",
+            "Qi Chen",
+            "Zhonghao Wang",
+            "Xun Huang",
+            "Eli Shechtman",
+            "Jinrong Xie",
+            "Yongxin Chen"
+        ],
+        "title": "MoGAN: Improving Motion Quality in Video Diffusion via Few-Step Motion Adversarial Post-Training",
+        "abstract": "arXiv:2511.21592v1 Announce Type: new  Abstract: Video diffusion models achieve strong frame-level fidelity but still struggle with motion coherence, dynamics and realism, often producing jitter, ghosting, or implausible dynamics. A key limitation is that the standard denoising MSE objective provides no direct supervision on temporal consistency, allowing models to achieve low loss while still generating poor motion. We propose MoGAN, a motion-centric post-training framework that improves motion realism without reward models or human preference data. Built atop a 3-step distilled video diffusion model, we train a DiT-based optical-flow discriminator to differentiate real from generated motion, combined with a distribution-matching regularizer to preserve visual fidelity. With experiments on Wan2.1-T2V-1.3B, MoGAN substantially improves motion quality across benchmarks. On VBench, MoGAN boosts motion score by +7.3% over the 50-step teacher and +13.3% over the 3-step DMD model. On VideoJAM-Bench, MoGAN improves motion score by +7.4% over the teacher and +8.8% over DMD, while maintaining comparable or even better aesthetic and image-quality scores. A human study further confirms that MoGAN is preferred for motion quality (52% vs. 38% for the teacher; 56% vs. 29% for DMD). Overall, MoGAN delivers significantly more realistic motion without sacrificing visual fidelity or efficiency, offering a practical path toward fast, high-quality video generation. Project webpage is: https://xavihart.github.io/mogan.",
+        "arxiv_id": "2511.21592",
+        "ARXIVID": "2511.21592",
+        "COMMENT": "",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2511.21191": {
+        "authors": [
+            "Yutao Tang",
+            "Cheng Zhao",
+            "Gaurav Mittal",
+            "Rohith Kukkala",
+            "Rama Chellappa",
+            "Cheng Peng",
+            "Mei Chen"
+        ],
+        "title": "Scenes as Tokens: Multi-Scale Normal Distributions Transform Tokenizer for General 3D Vision-Language Understanding",
+        "abstract": "arXiv:2511.21191v1 Announce Type: new  Abstract: Recent advances in 3D vision-language models (VLMs) highlight a strong potential for 3D scene understanding and reasoning. However, effectively tokenizing 3D scenes into holistic scene tokens, and leveraging these tokens across diverse 3D understanding tasks, remain highly challenging. We present NDTokenizer3D, a generalist 3D VLM that performs a wide range of 3D scene understanding tasks while naturally supporting human interactions, thereby bridging language-level reasoning with 3D spatial understanding. The core of our approach is a novel three-stage scene tokenization pipeline built upon a Multi-Scale Normal Distributions Transform (NDT) representation, paired with a Multi-Scale NDT Decoder (MSDec). Specifically, NDTokenizer3D first constructs a multi-scale NDT representation from raw high-resolution point clouds, preserving both global context and fine-grained geometric details. Next, the MSDec progressively fuses cross-scale NDT features, producing holistic scene tokens consumable by LLM endpoints. Beyond tokenization, MSDec is repurposed as a general interface for human-interactive prompting (points, boxes, masks) and segmentation-mask decoding, unifying diverse 3D scene understanding tasks within a single architecture. With this compact and unified design, NDTokenizer3D offers a fine-grained, general-purpose 3D VLM, achieving remarkable improvements in 3D Referring Segmentation, 3D Visual Question Answering, and 3D Dense Captioning.",
+        "arxiv_id": "2511.21191",
+        "ARXIVID": "2511.21191",
+        "COMMENT": "",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2511.21272": {
+        "authors": [
+            "Qingyun Li",
+            "Shuran Ma",
+            "Junwei Luo",
+            "Yi Yu",
+            "Yue Zhou",
+            "Fengxiang Wang",
+            "Xudong Lu",
+            "Xiaoxing Wang",
+            "Xin He",
+            "Yushi Chen",
+            "Xue Yang",
+            "Junchi Yan"
+        ],
+        "title": "Co-Training Vision Language Models for Remote Sensing Multi-task Learning",
+        "abstract": "arXiv:2511.21272v1 Announce Type: new  Abstract: With Transformers achieving outstanding performance on individual remote sensing (RS) tasks, we are now approaching the realization of a unified model that excels across multiple tasks through multi-task learning (MTL). Compared to single-task approaches, MTL methods offer improved generalization, enhanced scalability, and greater practical applicability. Recently, vision language models (VLMs) have achieved promising results in RS image understanding, grounding, and ultra-high-resolution (UHR) image reasoning, respectively. Moreover, the unified text-based interface demonstrates significant potential for MTL. Hence, in this work, we present RSCoVLM, a simple yet flexible VLM baseline for RS MTL. Firstly, we create the data curation engine, including data acquisition, offline processing and integrating, as well as online loading and weighting. This data engine effectively addresses complex RS data enviroment and generates flexible vision-language conversations. Furthermore, we propose a unified dynamic-resolution strategy to address the diverse image scales inherent in RS imagery. For UHR images, we introduce the Zoom-in Chain mechanism together with its corresponding dataset, LRS-VQA-Zoom. The strategies are flexible and effectively mitigate the computational burdens. Additionally, we significantly enhance the model's object detection capability and propose a novel evaluation protocol that ensures fair comparison between VLMs and conventional detection models. Extensive experiments demonstrate that RSCoVLM achieves state-of-the-art performance across diverse tasks, outperforming existing RS VLMs and even rivaling specialized expert models. All the training and evaluating tools, model weights, and datasets have been fully open-sourced to support reproducibility. We expect that this baseline will promote further progress toward general-purpose RS models.",
+        "arxiv_id": "2511.21272",
+        "ARXIVID": "2511.21272",
+        "COMMENT": "",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2511.20770": {
+        "authors": [
+            "Raghuveer Thirukovalluru",
+            "Xiaochuang Han",
+            "Bhuwan Dhingra",
+            "Emily Dinan",
+            "Maha Elbayad"
+        ],
+        "title": "Text-Guided Semantic Image Encoder",
+        "abstract": "arXiv:2511.20770v1 Announce Type: new  Abstract: Image encoders, a fundamental component of vision-language models (VLMs), are typically pretrained independently before being aligned with a language model. This standard paradigm results in encoders that process images agnostically, without regard to the specific downstream task or text query. To address this limitation, we propose the Text-Guided Semantic Image Encoder (TIE), which generates image representations conditioned on the input text query. VLMs equipped with TIE outperform their conventional counterparts by +1.5 and +1.3 points on average across nine image-to-text benchmarks at the 1B and 3B scales, respectively, with gains reaching up to 6 points on tasks such as DocVQA and InfoVQA. Moreover, TIE-based VLMs attain superior performance while utilizing only half as many image tiles (tokens), resulting in notably improved inference efficiency. TIE also generalizes well with generic queries, indicating that text-conditioned training effectively optimizes the encoder to capture key visual features. Qualitative analysis confirms that TIE consistently attends to query-relevant regions, enhancing both interpretability and query-specific grounding.",
+        "arxiv_id": "2511.20770",
+        "ARXIVID": "2511.20770",
+        "COMMENT": "",
+        "RELEVANCE": 3,
+        "NOVELTY": 4
     }
 }
