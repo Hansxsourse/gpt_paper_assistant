@@ -1,70 +1,48 @@
 {
-    "2511.22242": {
+    "2512.01975": {
         "authors": [
-            "Qingtao Yu",
-            "Changlin Song",
-            "Minghao Sun",
-            "Zhengyang Yu",
-            "Vinay Kumar Verma",
-            "Soumya Roy",
-            "Sumit Negi",
-            "Hongdong Li",
-            "Dylan Campbell"
+            "Xu Zhang",
+            "Jin Yuan",
+            "Hanwang Zhang",
+            "Guojin Zhong",
+            "Yongsheng Zang",
+            "Jiacheng Lin",
+            "Zhiyong Li"
         ],
-        "title": "TTSnap: Test-Time Scaling of Diffusion Models via Noise-Aware Pruning",
-        "abstract": "arXiv:2511.22242v1 Announce Type: new  Abstract: A prominent approach to test-time scaling for text-to-image diffusion models formulates the problem as a search over multiple noise seeds, selecting the one that maximizes a certain image-reward function. The effectiveness of this strategy heavily depends on the number and diversity of noise seeds explored. However, verifying each candidate is computationally expensive, because each must be fully denoised before a reward can be computed. This severely limits the number of samples that can be explored under a fixed budget. We propose test-time scaling with noise-aware pruning (TTSnap), a framework that prunes low-quality candidates without fully denoising them. The key challenge is that reward models are learned in the clean image domain, and the ranking of rewards predicted for intermediate estimates are often inconsistent with those predicted for clean images. To overcome this, we train noise-aware reward models via self-distillation to align the reward for intermediate estimates with that of the final clean images. To stabilize learning across different noise levels, we adopt a curriculum training strategy that progressively shifts the data domain from clean images to noise images. In addition, we introduce a new metric that measures reward alignment and computational budget utilization. Experiments demonstrate that our approach improves performance by over 16\\% compared with existing methods, enabling more efficient and effective test-time scaling. It also provides orthogonal gains when combined with post-training techniques and local test-time optimization. Code: https://github.com/TerrysLearning/TTSnap/.",
-        "arxiv_id": "2511.22242",
-        "ARXIVID": "2511.22242",
-        "COMMENT": "",
-        "RELEVANCE": 3,
-        "NOVELTY": 6
+        "title": "SGDiff: Scene Graph Guided Diffusion Model for Image Collaborative SegCaptioning",
+        "abstract": "arXiv:2512.01975v1 Announce Type: new  Abstract: Controllable image semantic understanding tasks, such as captioning or segmentation, necessitate users to input a prompt (e.g., text or bounding boxes) to predict a unique outcome, presenting challenges such as high-cost prompt input or limited information output. This paper introduces a new task ``Image Collaborative Segmentation and Captioning'' (SegCaptioning), which aims to translate a straightforward prompt, like a bounding box around an object, into diverse semantic interpretations represented by (caption, masks) pairs, allowing flexible result selection by users. This task poses significant challenges, including accurately capturing a user's intention from a minimal prompt while simultaneously predicting multiple semantically aligned caption words and masks. Technically, we propose a novel Scene Graph Guided Diffusion Model that leverages structured scene graph features for correlated mask-caption prediction. Initially, we introduce a Prompt-Centric Scene Graph Adaptor to map a user's prompt to a scene graph, effectively capturing his intention. Subsequently, we employ a diffusion process incorporating a Scene Graph Guided Bimodal Transformer to predict correlated caption-mask pairs by uncovering intricate correlations between them. To ensure accurate alignment, we design a Multi-Entities Contrastive Learning loss to explicitly align visual and textual entities by considering inter-modal similarity, resulting in well-aligned caption-mask pairs. Extensive experiments conducted on two datasets demonstrate that SGDiff achieves superior performance in SegCaptioning, yielding promising results for both captioning and segmentation tasks with minimal prompt input.",
+        "arxiv_id": "2512.01975",
+        "ARXIVID": "2512.01975",
+        "COMMENT": "Matches criterion 1 closely: joint generation and segmentation.",
+        "RELEVANCE": 10,
+        "NOVELTY": 7
     },
-    "2511.22170": {
+    "2512.01533": {
         "authors": [
-            "Delong Zhao",
-            "Qiang Huang",
-            "Di Yan",
-            "Yiqun Sun",
-            "Jun Yu"
+            "Hailong Yang",
+            "Te Zhang",
+            "Kup-sze Choi",
+            "Zhaohong Deng"
         ],
-        "title": "Partially Shared Concept Bottleneck Models",
-        "abstract": "arXiv:2511.22170v1 Announce Type: new  Abstract: Concept Bottleneck Models (CBMs) enhance interpretability by introducing a layer of human-understandable concepts between inputs and predictions. While recent methods automate concept generation using Large Language Models (LLMs) and Vision-Language Models (VLMs), they still face three fundamental challenges: poor visual grounding, concept redundancy, and the absence of principled metrics to balance predictive accuracy and concept compactness. We introduce PS-CBM, a Partially Shared CBM framework that addresses these limitations through three core components: (1) a multimodal concept generator that integrates LLM-derived semantics with exemplar-based visual cues; (2) a Partially Shared Concept Strategy that merges concepts based on activation patterns to balance specificity and compactness; and (3) Concept-Efficient Accuracy (CEA), a post-hoc metric that jointly captures both predictive accuracy and concept compactness. Extensive experiments on eleven diverse datasets show that PS-CBM consistently outperforms state-of-the-art CBMs, improving classification accuracy by 1.0%-7.4% and CEA by 2.0%-9.5%, while requiring significantly fewer concepts. These results underscore PS-CBM's effectiveness in achieving both high accuracy and strong interpretability.",
-        "arxiv_id": "2511.22170",
-        "ARXIVID": "2511.22170",
-        "COMMENT": "",
+        "title": "Diffusion Fuzzy System: Fuzzy Rule Guided Latent Multi-Path Diffusion Modeling",
+        "abstract": "arXiv:2512.01533v1 Announce Type: new  Abstract: Diffusion models have emerged as a leading technique for generating images due to their ability to create high-resolution and realistic images. Despite their strong performance, diffusion models still struggle in managing image collections with significant feature differences. They often fail to capture complex features and produce conflicting results. Research has attempted to address this issue by learning different regions of an image through multiple diffusion paths and then combining them. However, this approach leads to inefficient coordination among multiple paths and high computational costs. To tackle these issues, this paper presents a Diffusion Fuzzy System (DFS), a latent-space multi-path diffusion model guided by fuzzy rules. DFS offers several advantages. First, unlike traditional multi-path diffusion methods, DFS uses multiple diffusion paths, each dedicated to learning a specific class of image features. By assigning each path to a different feature type, DFS overcomes the limitations of multi-path models in capturing heterogeneous image features. Second, DFS employs rule-chain-based reasoning to dynamically steer the diffusion process and enable efficient coordination among multiple paths. Finally, DFS introduces a fuzzy membership-based latent-space compression mechanism to reduce the computational costs of multi-path diffusion effectively. We tested our method on three public datasets: LSUN Bedroom, LSUN Church, and MS COCO. The results show that DFS achieves more stable training and faster convergence than existing single-path and multi-path diffusion models. Additionally, DFS surpasses baseline models in both image quality and alignment between text and images, and also shows improved accuracy when comparing generated images to target references.",
+        "arxiv_id": "2512.01533",
+        "ARXIVID": "2512.01533",
+        "COMMENT": "No criteria match closely.",
         "RELEVANCE": 3,
         "NOVELTY": 5
     },
-    "2511.22699": {
+    "2512.00261": {
         "authors": [
-            "Image Team",
-            "Huanqia Cai",
-            "Sihan Cao",
-            "Ruoyi Du",
-            "Peng Gao",
-            "Steven Hoi",
-            "Shijie Huang",
-            "Zhaohui Hou",
-            "Dengyang Jiang",
-            "Xin Jin",
-            "Liangchen Li",
-            "Zhen Li",
-            "Zhong-Yu Li",
-            "David Liu",
-            "Dongyang Liu",
-            "Junhan Shi",
-            "Qilong Wu",
-            "Feng Yu",
-            "Chi Zhang",
-            "Shifeng Zhang",
-            "Shilin Zhou"
+            "Yuzhen Hu",
+            "Saurabh Prasad"
         ],
-        "title": "Z-Image: An Efficient Image Generation Foundation Model with Single-Stream Diffusion Transformer",
-        "abstract": "arXiv:2511.22699v1 Announce Type: new  Abstract: The landscape of high-performance image generation models is currently dominated by proprietary systems, such as Nano Banana Pro and Seedream 4.0. Leading open-source alternatives, including Qwen-Image, Hunyuan-Image-3.0 and FLUX.2, are characterized by massive parameter counts (20B to 80B), making them impractical for inference, and fine-tuning on consumer-grade hardware. To address this gap, we propose Z-Image, an efficient 6B-parameter foundation generative model built upon a Scalable Single-Stream Diffusion Transformer (S3-DiT) architecture that challenges the \"scale-at-all-costs\" paradigm. By systematically optimizing the entire model lifecycle -- from a curated data infrastructure to a streamlined training curriculum -- we complete the full training workflow in just 314K H800 GPU hours (approx. $630K). Our few-step distillation scheme with reward post-training further yields Z-Image-Turbo, offering both sub-second inference latency on an enterprise-grade H800 GPU and compatibility with consumer-grade hardware (<16GB VRAM). Additionally, our omni-pre-training paradigm also enables efficient training of Z-Image-Edit, an editing model with impressive instruction-following capabilities. Both qualitative and quantitative experiments demonstrate that our model achieves performance comparable to or surpassing that of leading competitors across various dimensions. Most notably, Z-Image exhibits exceptional capabilities in photorealistic image generation and bilingual text rendering, delivering results that rival top-tier commercial models, thereby demonstrating that state-of-the-art results are achievable with significantly reduced computational overhead. We publicly release our code, weights, and online demo to foster the development of accessible, budget-friendly, yet state-of-the-art generative models.",
-        "arxiv_id": "2511.22699",
-        "ARXIVID": "2511.22699",
-        "COMMENT": "",
+        "title": "UniDiff: Parameter-Efficient Adaptation of Diffusion Models for Land Cover Classification with Multi-Modal Remotely Sensed Imagery and Sparse Annotations",
+        "abstract": "arXiv:2512.00261v1 Announce Type: new  Abstract: Sparse annotations fundamentally constrain multimodal remote sensing: even recent state-of-the-art supervised methods such as MSFMamba are limited by the availability of labeled data, restricting their practical deployment despite architectural advances. ImageNet-pretrained models provide rich visual representations, but adapting them to heterogeneous modalities such as hyperspectral imaging (HSI) and synthetic aperture radar (SAR) without large labeled datasets remains challenging. We propose UniDiff, a parameter-efficient framework that adapts a single ImageNet-pretrained diffusion model to multiple sensing modalities using only target-domain data. UniDiff combines FiLM-based timestep-modality conditioning, parameter-efficient adaptation of approximately 5% of parameters, and pseudo-RGB anchoring to preserve pre-trained representations and prevent catastrophic forgetting. This design enables effective feature extraction from remote sensing data under sparse annotations. Our results with two established multi-modal benchmarking datasets demonstrate that unsupervised adaptation of a pre-trained diffusion model effectively mitigates annotation constraints and achieves effective fusion of multi-modal remotely sensed data.",
+        "arxiv_id": "2512.00261",
+        "ARXIVID": "2512.00261",
+        "COMMENT": "No criteria match closely.",
         "RELEVANCE": 3,
-        "NOVELTY": 5
+        "NOVELTY": 4
     }
 }
