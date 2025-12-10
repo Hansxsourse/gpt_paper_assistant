@@ -1,77 +1,109 @@
 {
-    "2512.07062": {
+    "2512.08924": {
         "authors": [
-            "Changliang Xia",
-            "Chengyou Jia",
-            "Minnan Luo",
-            "Zhuohang Dang",
-            "Xin Shen",
-            "Bowen Ping"
+            "Chuhan Zhang",
+            "Guillaume Le Moing",
+            "Skanda Koppula",
+            "Ignacio Rocco",
+            "Liliane Momeni",
+            "Junyu Xie",
+            "Shuyang Sun",
+            "Rahul Sukthankar",
+            "Jo\\\"elle K Barral",
+            "Raia Hadsell",
+            "Zoubin Ghahramani",
+            "Andrew Zisserman",
+            "Junlin Zhang",
+            "Mehdi SM Sajjadi"
         ],
-        "title": "$\\mathrm{D}^{\\mathrm{3}}$-Predictor: Noise-Free Deterministic Diffusion for Dense Prediction",
-        "abstract": "arXiv:2512.07062v1 Announce Type: new  Abstract: Although diffusion models with strong visual priors have emerged as powerful dense prediction backboens, they overlook a core limitation: the stochastic noise at the core of diffusion sampling is inherently misaligned with dense prediction that requires a deterministic mapping from image to geometry. In this paper, we show that this stochastic noise corrupts fine-grained spatial cues and pushes the model toward timestep-specific noise objectives, consequently destroying meaningful geometric structure mappings. To address this, we introduce $\\mathrm{D}^{\\mathrm{3}}$-Predictor, a noise-free deterministic framework built by reformulating a pretrained diffusion model without stochasticity noise. Instead of relying on noisy inputs to leverage diffusion priors, $\\mathrm{D}^{\\mathrm{3}}$-Predictor views the pretrained diffusion network as an ensemble of timestep-dependent visual experts and self-supervisedly aggregates their heterogeneous priors into a single, clean, and complete geometric prior. Meanwhile, we utilize task-specific supervision to seamlessly adapt this noise-free prior to dense prediction tasks. Extensive experiments on various dense prediction tasks demonstrate that $\\mathrm{D}^{\\mathrm{3}}$-Predictor achieves competitive or state-of-the-art performance in diverse scenarios. In addition, it requires less than half the training data previously used and efficiently performs inference in a single step. Our code, data, and checkpoints are publicly available at https://x-gengroup.github.io/HomePage_D3-Predictor/.",
-        "arxiv_id": "2512.07062",
-        "ARXIVID": "2512.07062",
-        "COMMENT": "The paper introduces D3-Predictor, a noise-free deterministic framework for dense prediction using a pretrained diffusion model. It aligns with the criterion of unified diffusion models for multiple vision tasks.",
-        "RELEVANCE": 5,
+        "title": "Efficiently Reconstructing Dynamic Scenes One D4RT at a Time",
+        "abstract": "arXiv:2512.08924v1 Announce Type: new  Abstract: Understanding and reconstructing the complex geometry and motion of dynamic scenes from video remains a formidable challenge in computer vision. This paper introduces D4RT, a simple yet powerful feedforward model designed to efficiently solve this task. D4RT utilizes a unified transformer architecture to jointly infer depth, spatio-temporal correspondence, and full camera parameters from a single video. Its core innovation is a novel querying mechanism that sidesteps the heavy computation of dense, per-frame decoding and the complexity of managing multiple, task-specific decoders. Our decoding interface allows the model to independently and flexibly probe the 3D position of any point in space and time. The result is a lightweight and highly scalable method that enables remarkably efficient training and inference. We demonstrate that our approach sets a new state of the art, outperforming previous methods across a wide spectrum of 4D reconstruction tasks. We refer to the project webpage for animated results: https://d4rt-paper.github.io/.",
+        "arxiv_id": "2512.08924",
+        "ARXIVID": "2512.08924",
+        "COMMENT": "No criteria match closely.",
+        "RELEVANCE": 3,
         "NOVELTY": 7
     },
-    "2512.07568": {
+    "2512.08765": {
         "authors": [
-            "Xuecheng Li",
-            "Weikuan Jia",
-            "Alisher Kurbonaliev",
-            "Qurbonaliev Alisher",
-            "Khudzhamkulov Rustam",
-            "Ismoilov Shuhratjon",
-            "Eshmatov Javhariddin",
-            "Yuanjie Zheng"
+            "Ruihang Chu",
+            "Yefei He",
+            "Zhekai Chen",
+            "Shiwei Zhang",
+            "Xiaogang Xu",
+            "Bin Xia",
+            "Dingdong Wang",
+            "Hongwei Yi",
+            "Xihui Liu",
+            "Hengshuang Zhao",
+            "Yu Liu",
+            "Yingya Zhang",
+            "Yujiu Yang"
         ],
-        "title": "Dual-Stream Cross-Modal Representation Learning via Residual Semantic Decorrelation",
-        "abstract": "arXiv:2512.07568v1 Announce Type: new  Abstract: Cross-modal learning has become a fundamental paradigm for integrating heterogeneous information sources such as images, text, and structured attributes. However, multimodal representations often suffer from modality dominance, redundant information coupling, and spurious cross-modal correlations, leading to suboptimal generalization and limited interpretability. In particular, high-variance modalities tend to overshadow weaker but semantically important signals, while na\\\"ive fusion strategies entangle modality-shared and modality-specific factors in an uncontrolled manner. This makes it difficult to understand which modality actually drives a prediction and to maintain robustness when some modalities are noisy or missing. To address these challenges, we propose a Dual-Stream Residual Semantic Decorrelation Network (DSRSD-Net), a simple yet effective framework that disentangles modality-specific and modality-shared information through residual decomposition and explicit semantic decorrelation constraints. DSRSD-Net introduces: (1) a dual-stream representation learning module that separates intra-modal (private) and inter-modal (shared) latent factors via residual projection; (2) a residual semantic alignment head that maps shared factors from different modalities into a common space using a combination of contrastive and regression-style objectives; and (3) a decorrelation and orthogonality loss that regularizes the covariance structure of the shared space while enforcing orthogonality between shared and private streams, thereby suppressing cross-modal redundancy and preventing feature collapse. Experimental results on two large-scale educational benchmarks demonstrate that DSRSD-Net consistently improves next-step prediction and final outcome prediction over strong single-modality, early-fusion, late-fusion, and co-attention baselines.",
-        "arxiv_id": "2512.07568",
-        "ARXIVID": "2512.07568",
-        "COMMENT": "The paper proposes DSRSD-Net for cross-modal representation learning, focusing on disentangling modality-specific and shared information. It does not address joint generation and segmentation or unified diffusion models.",
+        "title": "Wan-Move: Motion-controllable Video Generation via Latent Trajectory Guidance",
+        "abstract": "arXiv:2512.08765v1 Announce Type: new  Abstract: We present Wan-Move, a simple and scalable framework that brings motion control to video generative models. Existing motion-controllable methods typically suffer from coarse control granularity and limited scalability, leaving their outputs insufficient for practical use. We narrow this gap by achieving precise and high-quality motion control. Our core idea is to directly make the original condition features motion-aware for guiding video synthesis. To this end, we first represent object motions with dense point trajectories, allowing fine-grained control over the scene. We then project these trajectories into latent space and propagate the first frame's features along each trajectory, producing an aligned spatiotemporal feature map that tells how each scene element should move. This feature map serves as the updated latent condition, which is naturally integrated into the off-the-shelf image-to-video model, e.g., Wan-I2V-14B, as motion guidance without any architecture change. It removes the need for auxiliary motion encoders and makes fine-tuning base models easily scalable. Through scaled training, Wan-Move generates 5-second, 480p videos whose motion controllability rivals Kling 1.5 Pro's commercial Motion Brush, as indicated by user studies. To support comprehensive evaluation, we further design MoveBench, a rigorously curated benchmark featuring diverse content categories and hybrid-verified annotations. It is distinguished by larger data volume, longer video durations, and high-quality motion annotations. Extensive experiments on MoveBench and the public dataset consistently show Wan-Move's superior motion quality. Code, models, and benchmark data are made publicly available.",
+        "arxiv_id": "2512.08765",
+        "ARXIVID": "2512.08765",
+        "COMMENT": "No criteria match closely.",
         "RELEVANCE": 3,
         "NOVELTY": 6
     },
-    "2512.06251": {
+    "2512.08648": {
         "authors": [
-            "Fangzhou Lin",
-            "Yuping Wang",
-            "Yuliang Guo",
-            "Zixun Huang",
-            "Xinyu Huang",
-            "Haichong Zhang",
-            "Kazunori Yamada",
-            "Zhengzhong Tu",
-            "Liu Ren",
-            "Ziming Zhang"
+            "Shaofeng Zhang",
+            "Xuanqi Chen",
+            "Ning Liao",
+            "Haoxiang Zhao",
+            "Xiaoxing Wang",
+            "Haoru Tan",
+            "Sitong Wu",
+            "Xiaosong Jia",
+            "Qi Fan",
+            "Junchi Yan"
         ],
-        "title": "NexusFlow: Unifying Disparate Tasks under Partial Supervision via Invertible Flow Networks",
-        "abstract": "arXiv:2512.06251v1 Announce Type: new  Abstract: Partially Supervised Multi-Task Learning (PS-MTL) aims to leverage knowledge across tasks when annotations are incomplete. Existing approaches, however, have largely focused on the simpler setting of homogeneous, dense prediction tasks, leaving the more realistic challenge of learning from structurally diverse tasks unexplored. To this end, we introduce NexusFlow, a novel, lightweight, and plug-and-play framework effective in both settings. NexusFlow introduces a set of surrogate networks with invertible coupling layers to align the latent feature distributions of tasks, creating a unified representation that enables effective knowledge transfer. The coupling layers are bijective, preserving information while mapping features into a shared canonical space. This invertibility avoids representational collapse and enables alignment across structurally different tasks without reducing expressive capacity. We first evaluate NexusFlow on the core challenge of domain-partitioned autonomous driving, where dense map reconstruction and sparse multi-object tracking are supervised in different geographic regions, creating both structural disparity and a strong domain gap. NexusFlow sets a new state-of-the-art result on nuScenes, outperforming strong partially supervised baselines. To demonstrate generality, we further test NexusFlow on NYUv2 using three homogeneous dense prediction tasks, segmentation, depth, and surface normals, as a representative N-task PS-MTL scenario. NexusFlow yields consistent gains across all tasks, confirming its broad applicability.",
-        "arxiv_id": "2512.06251",
-        "ARXIVID": "2512.06251",
-        "COMMENT": "The paper introduces a novel framework, NexusFlow, for partially supervised multi-task learning, which aligns latent feature distributions across tasks using invertible flow networks. However, it does not specifically address joint image/video generation and segmentation or unified diffusion models.",
+        "title": "Repulsor: Accelerating Generative Modeling with a Contrastive Memory Bank",
+        "abstract": "arXiv:2512.08648v1 Announce Type: new  Abstract: The dominance of denoising generative models (e.g., diffusion, flow-matching) in visual synthesis is tempered by their substantial training costs and inefficiencies in representation learning. While injecting discriminative representations via auxiliary alignment has proven effective, this approach still faces key limitations: the reliance on external, pre-trained encoders introduces overhead and domain shift. A dispersed-based strategy that encourages strong separation among in-batch latent representations alleviates this specific dependency. To assess the effect of the number of negative samples in generative modeling, we propose {\\mname}, a plug-and-play training framework that requires no external encoders. Our method integrates a memory bank mechanism that maintains a large, dynamically updated queue of negative samples across training iterations. This decouples the number of negatives from the mini-batch size, providing abundant and high-quality negatives for a contrastive objective without a multiplicative increase in computational cost. A low-dimensional projection head is used to further minimize memory and bandwidth overhead. {\\mname} offers three principal advantages: (1) it is self-contained, eliminating dependency on pretrained vision foundation models and their associated forward-pass overhead; (2) it introduces no additional parameters or computational cost during inference; and (3) it enables substantially faster convergence, achieving superior generative quality more efficiently. On ImageNet-256, {\\mname} achieves a state-of-the-art FID of \\textbf{2.40} within 400k steps, significantly outperforming comparable methods.",
+        "arxiv_id": "2512.08648",
+        "ARXIVID": "2512.08648",
+        "COMMENT": "No criteria match closely.",
         "RELEVANCE": 3,
         "NOVELTY": 6
     },
-    "2512.06802": {
+    "2512.08897": {
         "authors": [
-            "Yutong Wang",
-            "Haiyu Zhang",
-            "Tianfan Xue",
-            "Yu Qiao",
-            "Yaohui Wang",
-            "Chang Xu",
-            "Xinyuan Chen"
+            "Zeyang Liu",
+            "Le Wang",
+            "Sanping Zhou",
+            "Yuxuan Wu",
+            "Xiaolong Sun",
+            "Gang Hua",
+            "Haoxiang Li"
         ],
-        "title": "VDOT: Efficient Unified Video Creation via Optimal Transport Distillation",
-        "abstract": "arXiv:2512.06802v1 Announce Type: new  Abstract: The rapid development of generative models has significantly advanced image and video applications. Among these, video creation, aimed at generating videos under various conditions, has gained substantial attention. However, existing video creation models either focus solely on a few specific conditions or suffer from excessively long generation times due to complex model inference, making them impractical for real-world applications. To mitigate these issues, we propose an efficient unified video creation model, named VDOT. Concretely, we model the training process with the distribution matching distillation (DMD) paradigm. Instead of using the Kullback-Leibler (KL) minimization, we additionally employ a novel computational optimal transport (OT) technique to optimize the discrepancy between the real and fake score distributions. The OT distance inherently imposes geometric constraints, mitigating potential zero-forcing or gradient collapse issues that may arise during KL-based distillation within the few-step generation scenario, and thus, enhances the efficiency and stability of the distillation process. Further, we integrate a discriminator to enable the model to perceive real video data, thereby enhancing the quality of generated videos. To support training unified video creation models, we propose a fully automated pipeline for video data annotation and filtering that accommodates multiple video creation tasks. Meanwhile, we curate a unified testing benchmark, UVCBench, to standardize evaluation. Experiments demonstrate that our 4-step VDOT outperforms or matches other baselines with 100 denoising steps.",
-        "arxiv_id": "2512.06802",
-        "ARXIVID": "2512.06802",
-        "COMMENT": "The paper proposes VDOT, a unified video creation model using optimal transport distillation. It focuses on video generation efficiency and quality but does not address joint generation and segmentation or multi-task diffusion models.",
+        "title": "UniLayDiff: A Unified Diffusion Transformer for Content-Aware Layout Generation",
+        "abstract": "arXiv:2512.08897v1 Announce Type: new  Abstract: Content-aware layout generation is a critical task in graphic design automation, focused on creating visually appealing arrangements of elements that seamlessly blend with a given background image. The variety of real-world applications makes it highly challenging to develop a single model capable of unifying the diverse range of input-constrained generation sub-tasks, such as those conditioned by element types, sizes, or their relationships. Current methods either address only a subset of these tasks or necessitate separate model parameters for different conditions, failing to offer a truly unified solution. In this paper, we propose UniLayDiff: a Unified Diffusion Transformer, that for the first time, addresses various content-aware layout generation tasks with a single, end-to-end trainable model. Specifically, we treat layout constraints as a distinct modality and employ Multi-Modal Diffusion Transformer framework to capture the complex interplay between the background image, layout elements, and diverse constraints. Moreover, we integrate relation constraints through fine-tuning the model with LoRA after pretraining the model on other tasks. Such a schema not only achieves unified conditional generation but also enhances overall layout quality. Extensive experiments demonstrate that UniLayDiff achieves state-of-the-art performance across from unconditional to various conditional generation tasks and, to the best of our knowledge, is the first model to unify the full range of content-aware layout generation tasks.",
+        "arxiv_id": "2512.08897",
+        "ARXIVID": "2512.08897",
+        "COMMENT": "No criteria match closely.",
         "RELEVANCE": 3,
-        "NOVELTY": 5
+        "NOVELTY": 6
+    },
+    "2512.08931": {
+        "authors": [
+            "Yixuan Zhu",
+            "Jiaqi Feng",
+            "Wenzhao Zheng",
+            "Yuan Gao",
+            "Xin Tao",
+            "Pengfei Wan",
+            "Jie Zhou",
+            "Jiwen Lu"
+        ],
+        "title": "Astra: General Interactive World Model with Autoregressive Denoising",
+        "abstract": "arXiv:2512.08931v1 Announce Type: new  Abstract: Recent advances in diffusion transformers have empowered video generation models to generate high-quality video clips from texts or images. However, world models with the ability to predict long-horizon futures from past observations and actions remain underexplored, especially for general-purpose scenarios and various forms of actions. To bridge this gap, we introduce Astra, an interactive general world model that generates real-world futures for diverse scenarios (e.g., autonomous driving, robot grasping) with precise action interactions (e.g., camera motion, robot action). We propose an autoregressive denoising architecture and use temporal causal attention to aggregate past observations and support streaming outputs. We use a noise-augmented history memory to avoid over-reliance on past frames to balance responsiveness with temporal coherence. For precise action control, we introduce an action-aware adapter that directly injects action signals into the denoising process. We further develop a mixture of action experts that dynamically route heterogeneous action modalities, enhancing versatility across diverse real-world tasks such as exploration, manipulation, and camera control. Astra achieves interactive, consistent, and general long-term video prediction and supports various forms of interactions. Experiments across multiple datasets demonstrate the improvements of Astra in fidelity, long-range prediction, and action alignment over existing state-of-the-art world models.",
+        "arxiv_id": "2512.08931",
+        "ARXIVID": "2512.08931",
+        "COMMENT": "No criteria match closely.",
+        "RELEVANCE": 3,
+        "NOVELTY": 6
     }
 }
