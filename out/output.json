@@ -1,108 +1,39 @@
 {
-    "2512.08924": {
+    "2512.09247": {
         "authors": [
-            "Chuhan Zhang",
-            "Guillaume Le Moing",
-            "Skanda Koppula",
-            "Ignacio Rocco",
-            "Liliane Momeni",
-            "Junyu Xie",
-            "Shuyang Sun",
-            "Rahul Sukthankar",
-            "Jo\\\"elle K Barral",
-            "Raia Hadsell",
-            "Zoubin Ghahramani",
-            "Andrew Zisserman",
-            "Junlin Zhang",
-            "Mehdi SM Sajjadi"
+            "Cheng Liu",
+            "Yiren Song",
+            "Haofan Wang",
+            "Mike Zheng Shou"
         ],
-        "title": "Efficiently Reconstructing Dynamic Scenes One D4RT at a Time",
-        "abstract": "arXiv:2512.08924v1 Announce Type: new  Abstract: Understanding and reconstructing the complex geometry and motion of dynamic scenes from video remains a formidable challenge in computer vision. This paper introduces D4RT, a simple yet powerful feedforward model designed to efficiently solve this task. D4RT utilizes a unified transformer architecture to jointly infer depth, spatio-temporal correspondence, and full camera parameters from a single video. Its core innovation is a novel querying mechanism that sidesteps the heavy computation of dense, per-frame decoding and the complexity of managing multiple, task-specific decoders. Our decoding interface allows the model to independently and flexibly probe the 3D position of any point in space and time. The result is a lightweight and highly scalable method that enables remarkably efficient training and inference. We demonstrate that our approach sets a new state of the art, outperforming previous methods across a wide spectrum of 4D reconstruction tasks. We refer to the project webpage for animated results: https://d4rt-paper.github.io/.",
-        "arxiv_id": "2512.08924",
-        "ARXIVID": "2512.08924",
-        "COMMENT": "No criteria match closely.",
+        "title": "OmniPSD: Layered PSD Generation with Diffusion Transformer",
+        "abstract": "arXiv:2512.09247v1 Announce Type: new  Abstract: Recent advances in diffusion models have greatly improved image generation and editing, yet generating or reconstructing layered PSD files with transparent alpha channels remains highly challenging. We propose OmniPSD, a unified diffusion framework built upon the Flux ecosystem that enables both text-to-PSD generation and image-to-PSD decomposition through in-context learning. For text-to-PSD generation, OmniPSD arranges multiple target layers spatially into a single canvas and learns their compositional relationships through spatial attention, producing semantically coherent and hierarchically structured layers. For image-to-PSD decomposition, it performs iterative in-context editing, progressively extracting and erasing textual and foreground components to reconstruct editable PSD layers from a single flattened image. An RGBA-VAE is employed as an auxiliary representation module to preserve transparency without affecting structure learning. Extensive experiments on our new RGBA-layered dataset demonstrate that OmniPSD achieves high-fidelity generation, structural consistency, and transparency awareness, offering a new paradigm for layered design generation and decomposition with diffusion transformers.",
+        "arxiv_id": "2512.09247",
+        "ARXIVID": "2512.09247",
+        "COMMENT": "The paper does not match any specific criteria closely.",
         "RELEVANCE": 3,
         "NOVELTY": 7
     },
-    "2512.08765": {
+    "2512.09924": {
         "authors": [
-            "Ruihang Chu",
-            "Yefei He",
-            "Zhekai Chen",
+            "Xinyu Liu",
+            "Hangjie Yuan",
+            "Yujie Wei",
+            "Jiazheng Xing",
+            "Yujin Han",
+            "Jiahao Pan",
+            "Yanbiao Ma",
+            "Chi-Min Chan",
+            "Kang Zhao",
             "Shiwei Zhang",
-            "Xiaogang Xu",
-            "Bin Xia",
-            "Dingdong Wang",
-            "Hongwei Yi",
-            "Xihui Liu",
-            "Hengshuang Zhao",
-            "Yu Liu",
-            "Yingya Zhang",
-            "Yujiu Yang"
+            "Wenhan Luo",
+            "Yike Guo"
         ],
-        "title": "Wan-Move: Motion-controllable Video Generation via Latent Trajectory Guidance",
-        "abstract": "arXiv:2512.08765v1 Announce Type: new  Abstract: We present Wan-Move, a simple and scalable framework that brings motion control to video generative models. Existing motion-controllable methods typically suffer from coarse control granularity and limited scalability, leaving their outputs insufficient for practical use. We narrow this gap by achieving precise and high-quality motion control. Our core idea is to directly make the original condition features motion-aware for guiding video synthesis. To this end, we first represent object motions with dense point trajectories, allowing fine-grained control over the scene. We then project these trajectories into latent space and propagate the first frame's features along each trajectory, producing an aligned spatiotemporal feature map that tells how each scene element should move. This feature map serves as the updated latent condition, which is naturally integrated into the off-the-shelf image-to-video model, e.g., Wan-I2V-14B, as motion guidance without any architecture change. It removes the need for auxiliary motion encoders and makes fine-tuning base models easily scalable. Through scaled training, Wan-Move generates 5-second, 480p videos whose motion controllability rivals Kling 1.5 Pro's commercial Motion Brush, as indicated by user studies. To support comprehensive evaluation, we further design MoveBench, a rigorously curated benchmark featuring diverse content categories and hybrid-verified annotations. It is distinguished by larger data volume, longer video durations, and high-quality motion annotations. Extensive experiments on MoveBench and the public dataset consistently show Wan-Move's superior motion quality. Code, models, and benchmark data are made publicly available.",
-        "arxiv_id": "2512.08765",
-        "ARXIVID": "2512.08765",
-        "COMMENT": "No criteria match closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 6
-    },
-    "2512.08648": {
-        "authors": [
-            "Shaofeng Zhang",
-            "Xuanqi Chen",
-            "Ning Liao",
-            "Haoxiang Zhao",
-            "Xiaoxing Wang",
-            "Haoru Tan",
-            "Sitong Wu",
-            "Xiaosong Jia",
-            "Qi Fan",
-            "Junchi Yan"
-        ],
-        "title": "Repulsor: Accelerating Generative Modeling with a Contrastive Memory Bank",
-        "abstract": "arXiv:2512.08648v1 Announce Type: new  Abstract: The dominance of denoising generative models (e.g., diffusion, flow-matching) in visual synthesis is tempered by their substantial training costs and inefficiencies in representation learning. While injecting discriminative representations via auxiliary alignment has proven effective, this approach still faces key limitations: the reliance on external, pre-trained encoders introduces overhead and domain shift. A dispersed-based strategy that encourages strong separation among in-batch latent representations alleviates this specific dependency. To assess the effect of the number of negative samples in generative modeling, we propose {\\mname}, a plug-and-play training framework that requires no external encoders. Our method integrates a memory bank mechanism that maintains a large, dynamically updated queue of negative samples across training iterations. This decouples the number of negatives from the mini-batch size, providing abundant and high-quality negatives for a contrastive objective without a multiplicative increase in computational cost. A low-dimensional projection head is used to further minimize memory and bandwidth overhead. {\\mname} offers three principal advantages: (1) it is self-contained, eliminating dependency on pretrained vision foundation models and their associated forward-pass overhead; (2) it introduces no additional parameters or computational cost during inference; and (3) it enables substantially faster convergence, achieving superior generative quality more efficiently. On ImageNet-256, {\\mname} achieves a state-of-the-art FID of \\textbf{2.40} within 400k steps, significantly outperforming comparable methods.",
-        "arxiv_id": "2512.08648",
-        "ARXIVID": "2512.08648",
-        "COMMENT": "No criteria match closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 6
-    },
-    "2512.08897": {
-        "authors": [
-            "Zeyang Liu",
-            "Le Wang",
-            "Sanping Zhou",
-            "Yuxuan Wu",
-            "Xiaolong Sun",
-            "Gang Hua",
-            "Haoxiang Li"
-        ],
-        "title": "UniLayDiff: A Unified Diffusion Transformer for Content-Aware Layout Generation",
-        "abstract": "arXiv:2512.08897v1 Announce Type: new  Abstract: Content-aware layout generation is a critical task in graphic design automation, focused on creating visually appealing arrangements of elements that seamlessly blend with a given background image. The variety of real-world applications makes it highly challenging to develop a single model capable of unifying the diverse range of input-constrained generation sub-tasks, such as those conditioned by element types, sizes, or their relationships. Current methods either address only a subset of these tasks or necessitate separate model parameters for different conditions, failing to offer a truly unified solution. In this paper, we propose UniLayDiff: a Unified Diffusion Transformer, that for the first time, addresses various content-aware layout generation tasks with a single, end-to-end trainable model. Specifically, we treat layout constraints as a distinct modality and employ Multi-Modal Diffusion Transformer framework to capture the complex interplay between the background image, layout elements, and diverse constraints. Moreover, we integrate relation constraints through fine-tuning the model with LoRA after pretraining the model on other tasks. Such a schema not only achieves unified conditional generation but also enhances overall layout quality. Extensive experiments demonstrate that UniLayDiff achieves state-of-the-art performance across from unconditional to various conditional generation tasks and, to the best of our knowledge, is the first model to unify the full range of content-aware layout generation tasks.",
-        "arxiv_id": "2512.08897",
-        "ARXIVID": "2512.08897",
-        "COMMENT": "No criteria match closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 6
-    },
-    "2512.08931": {
-        "authors": [
-            "Yixuan Zhu",
-            "Jiaqi Feng",
-            "Wenzhao Zheng",
-            "Yuan Gao",
-            "Xin Tao",
-            "Pengfei Wan",
-            "Jie Zhou",
-            "Jiwen Lu"
-        ],
-        "title": "Astra: General Interactive World Model with Autoregressive Denoising",
-        "abstract": "arXiv:2512.08931v1 Announce Type: new  Abstract: Recent advances in diffusion transformers have empowered video generation models to generate high-quality video clips from texts or images. However, world models with the ability to predict long-horizon futures from past observations and actions remain underexplored, especially for general-purpose scenarios and various forms of actions. To bridge this gap, we introduce Astra, an interactive general world model that generates real-world futures for diverse scenarios (e.g., autonomous driving, robot grasping) with precise action interactions (e.g., camera motion, robot action). We propose an autoregressive denoising architecture and use temporal causal attention to aggregate past observations and support streaming outputs. We use a noise-augmented history memory to avoid over-reliance on past frames to balance responsiveness with temporal coherence. For precise action control, we introduce an action-aware adapter that directly injects action signals into the denoising process. We further develop a mixture of action experts that dynamically route heterogeneous action modalities, enhancing versatility across diverse real-world tasks such as exploration, manipulation, and camera control. Astra achieves interactive, consistent, and general long-term video prediction and supports various forms of interactions. Experiments across multiple datasets demonstrate the improvements of Astra in fidelity, long-range prediction, and action alignment over existing state-of-the-art world models.",
-        "arxiv_id": "2512.08931",
-        "ARXIVID": "2512.08931",
-        "COMMENT": "No criteria match closely.",
+        "title": "ReViSE: Towards Reason-Informed Video Editing in Unified Models with Self-Reflective Learning",
+        "abstract": "arXiv:2512.09924v1 Announce Type: new  Abstract: Video unified models exhibit strong capabilities in understanding and generation, yet they struggle with reason-informed visual editing even when equipped with powerful internal vision-language models (VLMs). We attribute this gap to two factors: 1) existing datasets are inadequate for training and evaluating reasoning-aware video editing, and 2) an inherent disconnect between the models' reasoning and editing capabilities, which prevents the rich understanding from effectively instructing the editing process. Bridging this gap requires an integrated framework that connects reasoning with visual transformation. To address this gap, we introduce the Reason-Informed Video Editing (RVE) task, which requires reasoning about physical plausibility and causal dynamics during editing. To support systematic evaluation, we construct RVE-Bench, a comprehensive benchmark with two complementary subsets: Reasoning-Informed Video Editing and In-Context Video Generation. These subsets cover diverse reasoning dimensions and real-world editing scenarios. Building upon this foundation, we propose the ReViSE, a Self-Reflective Reasoning (SRF) framework that unifies generation and evaluation within a single architecture. The model's internal VLM provides intrinsic feedback by assessing whether the edited video logically satisfies the given instruction. The differential feedback that refines the generator's reasoning behavior during training. Extensive experiments on RVE-Bench demonstrate that ReViSE significantly enhances editing accuracy and visual fidelity, achieving a 32% improvement of the Overall score in the reasoning-informed video editing subset over state-of-the-art methods.",
+        "arxiv_id": "2512.09924",
+        "ARXIVID": "2512.09924",
+        "COMMENT": "The paper does not match any specific criteria closely.",
         "RELEVANCE": 3,
         "NOVELTY": 6
     }
