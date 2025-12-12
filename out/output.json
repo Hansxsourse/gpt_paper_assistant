@@ -1,40 +1,25 @@
 {
-    "2512.09247": {
+    "2512.10041": {
         "authors": [
-            "Cheng Liu",
-            "Yiren Song",
-            "Haofan Wang",
-            "Mike Zheng Shou"
+            "Yihao Liu",
+            "Chenyu Gao",
+            "Lianrui Zuo",
+            "Michael E. Kim",
+            "Brian D. Boyd",
+            "Lisa L. Barnes",
+            "Walter A. Kukull",
+            "Lori L. Beason-Held",
+            "Susan M. Resnick",
+            "Timothy J. Hohman",
+            "Warren D. Taylor",
+            "Bennett A. Landman"
         ],
-        "title": "OmniPSD: Layered PSD Generation with Diffusion Transformer",
-        "abstract": "arXiv:2512.09247v1 Announce Type: new  Abstract: Recent advances in diffusion models have greatly improved image generation and editing, yet generating or reconstructing layered PSD files with transparent alpha channels remains highly challenging. We propose OmniPSD, a unified diffusion framework built upon the Flux ecosystem that enables both text-to-PSD generation and image-to-PSD decomposition through in-context learning. For text-to-PSD generation, OmniPSD arranges multiple target layers spatially into a single canvas and learns their compositional relationships through spatial attention, producing semantically coherent and hierarchically structured layers. For image-to-PSD decomposition, it performs iterative in-context editing, progressively extracting and erasing textual and foreground components to reconstruct editable PSD layers from a single flattened image. An RGBA-VAE is employed as an auxiliary representation module to preserve transparency without affecting structure learning. Extensive experiments on our new RGBA-layered dataset demonstrate that OmniPSD achieves high-fidelity generation, structural consistency, and transparency awareness, offering a new paradigm for layered design generation and decomposition with diffusion transformers.",
-        "arxiv_id": "2512.09247",
-        "ARXIVID": "2512.09247",
-        "COMMENT": "The paper does not match any specific criteria closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 7
-    },
-    "2512.09924": {
-        "authors": [
-            "Xinyu Liu",
-            "Hangjie Yuan",
-            "Yujie Wei",
-            "Jiazheng Xing",
-            "Yujin Han",
-            "Jiahao Pan",
-            "Yanbiao Ma",
-            "Chi-Min Chan",
-            "Kang Zhao",
-            "Shiwei Zhang",
-            "Wenhan Luo",
-            "Yike Guo"
-        ],
-        "title": "ReViSE: Towards Reason-Informed Video Editing in Unified Models with Self-Reflective Learning",
-        "abstract": "arXiv:2512.09924v1 Announce Type: new  Abstract: Video unified models exhibit strong capabilities in understanding and generation, yet they struggle with reason-informed visual editing even when equipped with powerful internal vision-language models (VLMs). We attribute this gap to two factors: 1) existing datasets are inadequate for training and evaluating reasoning-aware video editing, and 2) an inherent disconnect between the models' reasoning and editing capabilities, which prevents the rich understanding from effectively instructing the editing process. Bridging this gap requires an integrated framework that connects reasoning with visual transformation. To address this gap, we introduce the Reason-Informed Video Editing (RVE) task, which requires reasoning about physical plausibility and causal dynamics during editing. To support systematic evaluation, we construct RVE-Bench, a comprehensive benchmark with two complementary subsets: Reasoning-Informed Video Editing and In-Context Video Generation. These subsets cover diverse reasoning dimensions and real-world editing scenarios. Building upon this foundation, we propose the ReViSE, a Self-Reflective Reasoning (SRF) framework that unifies generation and evaluation within a single architecture. The model's internal VLM provides intrinsic feedback by assessing whether the edited video logically satisfies the given instruction. The differential feedback that refines the generator's reasoning behavior during training. Extensive experiments on RVE-Bench demonstrate that ReViSE significantly enhances editing accuracy and visual fidelity, achieving a 32% improvement of the Overall score in the reasoning-informed video editing subset over state-of-the-art methods.",
-        "arxiv_id": "2512.09924",
-        "ARXIVID": "2512.09924",
-        "COMMENT": "The paper does not match any specific criteria closely.",
-        "RELEVANCE": 3,
+        "title": "MetaVoxel: Joint Diffusion Modeling of Imaging and Clinical Metadata",
+        "abstract": "arXiv:2512.10041v1 Announce Type: new  Abstract: Modern deep learning methods have achieved impressive results across tasks from disease classification, estimating continuous biomarkers, to generating realistic medical images. Most of these approaches are trained to model conditional distributions defined by a specific predictive direction with a specific set of input variables. We introduce MetaVoxel, a generative joint diffusion modeling framework that models the joint distribution over imaging data and clinical metadata by learning a single diffusion process spanning all variables. By capturing the joint distribution, MetaVoxel unifies tasks that traditionally require separate conditional models and supports flexible zero-shot inference using arbitrary subsets of inputs without task-specific retraining. Using more than 10,000 T1-weighted MRI scans paired with clinical metadata from nine datasets, we show that a single MetaVoxel model can perform image generation, age estimation, and sex prediction, achieving performance comparable to established task-specific baselines. Additional experiments highlight its capabilities for flexible inference.Together, these findings demonstrate that joint multimodal diffusion offers a promising direction for unifying medical AI models and enabling broader clinical applicability.",
+        "arxiv_id": "2512.10041",
+        "ARXIVID": "2512.10041",
+        "COMMENT": "2",
+        "RELEVANCE": 5,
         "NOVELTY": 6
     }
 }
