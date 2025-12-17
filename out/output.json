@@ -1,64 +1,19 @@
 {
-    "2512.12598": {
+    "2512.14099": {
         "authors": [
-            "Cong Xie",
-            "Che Wang",
-            "Yan Zhang",
-            "Zheng Pan",
-            "Han Zou",
-            "Zhenpeng Zhan"
+            "Ruishu Zhu",
+            "Zhihao Huang",
+            "Jiacheng Sun",
+            "Ping Luo",
+            "Hongyuan Zhang",
+            "Xuelong Li"
         ],
-        "title": "Geometry-Aware Scene-Consistent Image Generation",
-        "abstract": "arXiv:2512.12598v1 Announce Type: new  Abstract: We study geometry-aware scene-consistent image generation: given a reference scene image and a text condition specifying an entity to be generated in the scene and its spatial relation to the scene, the goal is to synthesize an output image that preserves the same physical environment as the reference scene while correctly generating the entity according to the spatial relation described in the text. Existing methods struggle to balance scene preservation with prompt adherence: they either replicate the scene with high fidelity but poor responsiveness to the prompt, or prioritize prompt compliance at the expense of scene consistency. To resolve this trade-off, we introduce two key contributions: (i) a scene-consistent data construction pipeline that generates diverse, geometrically-grounded training pairs, and (ii) a novel geometry-guided attention loss that leverages cross-view cues to regularize the model's spatial reasoning. Experiments on our scene-consistent benchmark show that our approach achieves better scene alignment and text-image consistency than state-of-the-art baselines, according to both automatic metrics and human preference studies. Our method produces geometrically coherent images with diverse compositions that remain faithful to the textual instructions and the underlying scene structure.",
-        "arxiv_id": "2512.12598",
-        "ARXIVID": "2512.12598",
-        "COMMENT": "No criteria match closely.",
+        "title": "ViewMask-1-to-3: Multi-View Consistent Image Generation via Multimodal Diffusion Models",
+        "abstract": "arXiv:2512.14099v1 Announce Type: new  Abstract: Multi-view image generation from a single image and text description remains challenging due to the difficulty of maintaining geometric consistency across different viewpoints. Existing approaches typically rely on 3D-aware architectures or specialized diffusion models that require extensive multi-view training data and complex geometric priors. In this work, we introduce ViewMask-1-to-3, a pioneering approach to apply discrete diffusion models to multi-view image generation. Unlike continuous diffusion methods that operate in latent spaces, ViewMask-1-to-3 formulates multi-view synthesis as a discrete sequence modeling problem, where each viewpoint is represented as visual tokens obtained through MAGVIT-v2 tokenization. By unifying language and vision through masked token prediction, our approach enables progressive generation of multiple viewpoints through iterative token unmasking with text input. ViewMask-1-to-3 achieves cross-view consistency through simple random masking combined with self-attention, eliminating the requirement for complex 3D geometric constraints or specialized attention architectures. Our approach demonstrates that discrete diffusion provides a viable and simple alternative to existing multi-view generation methods, ranking first on average across GSO and 3D-FUTURE datasets in terms of PSNR, SSIM, and LPIPS, while maintaining architectural simplicity.",
+        "arxiv_id": "2512.14099",
+        "ARXIVID": "2512.14099",
+        "COMMENT": "The paper does not match any of the specific criteria closely. It focuses on multi-view image generation using discrete diffusion models, which does not involve joint generation and segmentation, unified diffusion models for multiple tasks, or image/video matting.",
         "RELEVANCE": 3,
         "NOVELTY": 6
-    },
-    "2512.12675": {
-        "authors": [
-            "Yuran Wang",
-            "Bohan Zeng",
-            "Chengzhuo Tong",
-            "Wenxuan Liu",
-            "Yang Shi",
-            "Xiaochen Ma",
-            "Hao Liang",
-            "Yuanxing Zhang",
-            "Wentao Zhang"
-        ],
-        "title": "Scone: Bridging Composition and Distinction in Subject-Driven Image Generation via Unified Understanding-Generation Modeling",
-        "abstract": "arXiv:2512.12675v1 Announce Type: new  Abstract: Subject-driven image generation has advanced from single- to multi-subject composition, while neglecting distinction, the ability to identify and generate the correct subject when inputs contain multiple candidates. This limitation restricts effectiveness in complex, realistic visual settings. We propose Scone, a unified understanding-generation method that integrates composition and distinction. Scone enables the understanding expert to act as a semantic bridge, conveying semantic information and guiding the generation expert to preserve subject identity while minimizing interference. A two-stage training scheme first learns composition, then enhances distinction through semantic alignment and attention-based masking. We also introduce SconeEval, a benchmark for evaluating both composition and distinction across diverse scenarios. Experiments demonstrate that Scone outperforms existing open-source models in composition and distinction tasks on two benchmarks. Our model, benchmark, and training data are available at: https://github.com/Ryann-Ran/Scone.",
-        "arxiv_id": "2512.12675",
-        "ARXIVID": "2512.12675",
-        "COMMENT": "No criteria match closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 6
-    },
-    "2512.13164": {
-        "authors": [
-            "Xianchao Guan",
-            "Zhiyuan Fan",
-            "Yifeng Wang",
-            "Fuqiang Chen",
-            "Yanjiang Zhou",
-            "Zengyang Che",
-            "Hongxue Meng",
-            "Xin Li",
-            "Yaowei Wang",
-            "Hongpeng Wang",
-            "Min Zhang",
-            "Heng Tao Shen",
-            "Zheng Zhang",
-            "Yongbing Zhang"
-        ],
-        "title": "A Semantically Enhanced Generative Foundation Model Improves Pathological Image Synthesis",
-        "abstract": "arXiv:2512.13164v1 Announce Type: new  Abstract: The development of clinical-grade artificial intelligence in pathology is limited by the scarcity of diverse, high-quality annotated datasets. Generative models offer a potential solution but suffer from semantic instability and morphological hallucinations that compromise diagnostic reliability. To address this challenge, we introduce a Correlation-Regulated Alignment Framework for Tissue Synthesis (CRAFTS), the first generative foundation model for pathology-specific text-to-image synthesis. By leveraging a dual-stage training strategy on approximately 2.8 million image-caption pairs, CRAFTS incorporates a novel alignment mechanism that suppresses semantic drift to ensure biological accuracy. This model generates diverse pathological images spanning 30 cancer types, with quality rigorously validated by objective metrics and pathologist evaluations. Furthermore, CRAFTS-augmented datasets enhance the performance across various clinical tasks, including classification, cross-modal retrieval, self-supervised learning, and visual question answering. In addition, coupling CRAFTS with ControlNet enables precise control over tissue architecture from inputs such as nuclear segmentation masks and fluorescence images. By overcoming the critical barriers of data scarcity and privacy concerns, CRAFTS provides a limitless source of diverse, annotated histology data, effectively unlocking the creation of robust diagnostic tools for rare and complex cancer phenotypes.",
-        "arxiv_id": "2512.13164",
-        "ARXIVID": "2512.13164",
-        "COMMENT": "No criteria match closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
     }
 }
