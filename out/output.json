@@ -1,60 +1,35 @@
 {
-    "2512.15577": {
+    "2512.16670": {
         "authors": [
-            "Zhipeng Du",
-            "Duolikun Danier",
-            "Jan Eric Lenssen",
-            "Hakan Bilen"
+            "Ole Beisswenger",
+            "Jan-Niklas Dihlmann",
+            "Hendrik P. A. Lensch"
         ],
-        "title": "MoonSeg3R: Monocular Online Zero-Shot Segment Anything in 3D with Reconstructive Foundation Priors",
-        "abstract": "arXiv:2512.15577v1 Announce Type: new  Abstract: In this paper, we focus on online zero-shot monocular 3D instance segmentation, a novel practical setting where existing approaches fail to perform because they rely on posed RGB-D sequences. To overcome this limitation, we leverage CUT3R, a recent Reconstructive Foundation Model (RFM), to provide reliable geometric priors from a single RGB stream. We propose MoonSeg3R, which introduces three key components: (1) a self-supervised query refinement module with spatial-semantic distillation that transforms segmentation masks from 2D visual foundation models (VFMs) into discriminative 3D queries; (2) a 3D query index memory that provides temporal consistency by retrieving contextual queries; and (3) a state-distribution token from CUT3R that acts as a mask identity descriptor to strengthen cross-frame fusion. Experiments on ScanNet200 and SceneNN show that MoonSeg3R is the first method to enable online monocular 3D segmentation and achieves performance competitive with state-of-the-art RGB-D-based systems. Code and models will be released.",
-        "arxiv_id": "2512.15577",
-        "ARXIVID": "2512.15577",
-        "COMMENT": "The paper does not match any specific criteria closely.",
-        "RELEVANCE": 3,
+        "title": "FrameDiffuser: G-Buffer-Conditioned Diffusion for Neural Forward Frame Rendering",
+        "abstract": "arXiv:2512.16670v1 Announce Type: new  Abstract: Neural rendering for interactive applications requires translating geometric and material properties (G-buffer) to photorealistic images with realistic lighting on a frame-by-frame basis. While recent diffusion-based approaches show promise for G-buffer-conditioned image synthesis, they face critical limitations: single-image models like RGBX generate frames independently without temporal consistency, while video models like DiffusionRenderer are too computationally expensive for most consumer gaming sets ups and require complete sequences upfront, making them unsuitable for interactive applications where future frames depend on user input. We introduce FrameDiffuser, an autoregressive neural rendering framework that generates temporally consistent, photorealistic frames by conditioning on G-buffer data and the models own previous output. After an initial frame, FrameDiffuser operates purely on incoming G-buffer data, comprising geometry, materials, and surface properties, while using its previously generated frame for temporal guidance, maintaining stable, temporal consistent generation over hundreds to thousands of frames. Our dual-conditioning architecture combines ControlNet for structural guidance with ControlLoRA for temporal coherence. A three-stage training strategy enables stable autoregressive generation. We specialize our model to individual environments, prioritizing consistency and inference speed over broad generalization, demonstrating that environment-specific training achieves superior photorealistic quality with accurate lighting, shadows, and reflections compared to generalized approaches.",
+        "arxiv_id": "2512.16670",
+        "ARXIVID": "2512.16670",
+        "COMMENT": "Matches criteria 2 closely as it introduces a diffusion model for multiple vision tasks including image generation and segmentation.",
+        "RELEVANCE": 5,
         "NOVELTY": 6
     },
-    "2512.15110": {
+    "2512.16023": {
         "authors": [
-            "Jialong Zuo",
-            "Haoyou Deng",
-            "Hanyu Zhou",
-            "Jiaxin Zhu",
-            "Yicheng Zhang",
-            "Yiwei Zhang",
-            "Yongxin Yan",
-            "Kaixing Huang",
-            "Weisen Chen",
-            "Yongtai Deng",
-            "Rui Jin",
-            "Nong Sang",
-            "Changxin Gao"
+            "Liudi Yang",
+            "Yang Bai",
+            "George Eskandar",
+            "Fengyi Shen",
+            "Mohammad Altillawi",
+            "Dong Chen",
+            "Ziyuan Liu",
+            "Abhinav Valada"
         ],
-        "title": "Is Nano Banana Pro a Low-Level Vision All-Rounder? A Comprehensive Evaluation on 14 Tasks and 40 Datasets",
-        "abstract": "arXiv:2512.15110v1 Announce Type: new  Abstract: The rapid evolution of text-to-image generation models has revolutionized visual content creation. While commercial products like Nano Banana Pro have garnered significant attention, their potential as generalist solvers for traditional low-level vision challenges remains largely underexplored. In this study, we investigate the critical question: Is Nano Banana Pro a Low-Level Vision All-Rounder? We conducted a comprehensive zero-shot evaluation across 14 distinct low-level tasks spanning 40 diverse datasets. By utilizing simple textual prompts without fine-tuning, we benchmarked Nano Banana Pro against state-of-the-art specialist models. Our extensive analysis reveals a distinct performance dichotomy: while \\textbf{Nano Banana Pro demonstrates superior subjective visual quality}, often hallucinating plausible high-frequency details that surpass specialist models, it lags behind in traditional reference-based quantitative metrics. We attribute this discrepancy to the inherent stochasticity of generative models, which struggle to maintain the strict pixel-level consistency required by conventional metrics. This report identifies Nano Banana Pro as a capable zero-shot contender for low-level vision tasks, while highlighting that achieving the high fidelity of domain specialists remains a significant hurdle.",
-        "arxiv_id": "2512.15110",
-        "ARXIVID": "2512.15110",
-        "COMMENT": "The paper does not match any specific criteria closely.",
+        "title": "CoVAR: Co-generation of Video and Action for Robotic Manipulation via Multi-Modal Diffusion",
+        "abstract": "arXiv:2512.16023v1 Announce Type: new  Abstract: We present a method to generate video-action pairs that follow text instructions, starting from an initial image observation and the robot's joint states. Our approach automatically provides action labels for video diffusion models, overcoming the common lack of action annotations and enabling their full use for robotic policy learning. Existing methods either adopt two-stage pipelines, which limit tightly coupled cross-modal information sharing, or rely on adapting a single-modal diffusion model for a joint distribution that cannot fully leverage pretrained video knowledge. To overcome these limitations, we (1) extend a pretrained video diffusion model with a parallel, dedicated action diffusion model that preserves pretrained knowledge, (2) introduce a Bridge Attention mechanism to enable effective cross-modal interaction, and (3) design an action refinement module to convert coarse actions into precise controls for low-resolution datasets. Extensive evaluations on multiple public benchmarks and real-world datasets demonstrate that our method generates higher-quality videos, more accurate actions, and significantly outperforms existing baselines, offering a scalable framework for leveraging large-scale video data for robotic learning.",
+        "arxiv_id": "2512.16023",
+        "ARXIVID": "2512.16023",
+        "COMMENT": "The paper does not match any of the specific criteria closely. It focuses on video-action pair generation for robotic manipulation using a multi-modal diffusion model, which does not align with the criteria of unified image/video generation and segmentation, unified diffusion models for multiple vision tasks, or image/video matting.",
         "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2512.15702": {
-        "authors": [
-            "Yuwei Guo",
-            "Ceyuan Yang",
-            "Hao He",
-            "Yang Zhao",
-            "Meng Wei",
-            "Zhenheng Yang",
-            "Weilin Huang",
-            "Dahua Lin"
-        ],
-        "title": "End-to-End Training for Autoregressive Video Diffusion via Self-Resampling",
-        "abstract": "arXiv:2512.15702v1 Announce Type: new  Abstract: Autoregressive video diffusion models hold promise for world simulation but are vulnerable to exposure bias arising from the train-test mismatch. While recent works address this via post-training, they typically rely on a bidirectional teacher model or online discriminator. To achieve an end-to-end solution, we introduce Resampling Forcing, a teacher-free framework that enables training autoregressive video models from scratch and at scale. Central to our approach is a self-resampling scheme that simulates inference-time model errors on history frames during training. Conditioned on these degraded histories, a sparse causal mask enforces temporal causality while enabling parallel training with frame-level diffusion loss. To facilitate efficient long-horizon generation, we further introduce history routing, a parameter-free mechanism that dynamically retrieves the top-k most relevant history frames for each query. Experiments demonstrate that our approach achieves performance comparable to distillation-based baselines while exhibiting superior temporal consistency on longer videos owing to native-length training.",
-        "arxiv_id": "2512.15702",
-        "ARXIVID": "2512.15702",
-        "COMMENT": "The paper does not match any specific criteria closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
+        "NOVELTY": 6
     }
 }
