@@ -1,35 +1,48 @@
 {
-    "2512.16670": {
+    "2512.17573": {
         "authors": [
-            "Ole Beisswenger",
-            "Jan-Niklas Dihlmann",
-            "Hendrik P. A. Lensch"
+            "Qilong Wang",
+            "Xiaofan Ming",
+            "Zhenyi Lin",
+            "Jinwen Li",
+            "Dongwei Ren",
+            "Wangmeng Zuo",
+            "Qinghua Hu"
         ],
-        "title": "FrameDiffuser: G-Buffer-Conditioned Diffusion for Neural Forward Frame Rendering",
-        "abstract": "arXiv:2512.16670v1 Announce Type: new  Abstract: Neural rendering for interactive applications requires translating geometric and material properties (G-buffer) to photorealistic images with realistic lighting on a frame-by-frame basis. While recent diffusion-based approaches show promise for G-buffer-conditioned image synthesis, they face critical limitations: single-image models like RGBX generate frames independently without temporal consistency, while video models like DiffusionRenderer are too computationally expensive for most consumer gaming sets ups and require complete sequences upfront, making them unsuitable for interactive applications where future frames depend on user input. We introduce FrameDiffuser, an autoregressive neural rendering framework that generates temporally consistent, photorealistic frames by conditioning on G-buffer data and the models own previous output. After an initial frame, FrameDiffuser operates purely on incoming G-buffer data, comprising geometry, materials, and surface properties, while using its previously generated frame for temporal guidance, maintaining stable, temporal consistent generation over hundreds to thousands of frames. Our dual-conditioning architecture combines ControlNet for structural guidance with ControlLoRA for temporal coherence. A three-stage training strategy enables stable autoregressive generation. We specialize our model to individual environments, prioritizing consistency and inference speed over broad generalization, demonstrating that environment-specific training achieves superior photorealistic quality with accurate lighting, shadows, and reflections compared to generalized approaches.",
-        "arxiv_id": "2512.16670",
-        "ARXIVID": "2512.16670",
-        "COMMENT": "Matches criteria 2 closely as it introduces a diffusion model for multiple vision tasks including image generation and segmentation.",
+        "title": "RoomEditor++: A Parameter-Sharing Diffusion Architecture for High-Fidelity Furniture Synthesis",
+        "abstract": "arXiv:2512.17573v1 Announce Type: new  Abstract: Virtual furniture synthesis, which seamlessly integrates reference objects into indoor scenes while maintaining geometric coherence and visual realism, holds substantial promise for home design and e-commerce applications. However, this field remains underexplored due to the scarcity of reproducible benchmarks and the limitations of existing image composition methods in achieving high-fidelity furniture synthesis while preserving background integrity. To overcome these challenges, we first present RoomBench++, a comprehensive and publicly available benchmark dataset tailored for this task. It consists of 112,851 training pairs and 1,832 testing pairs drawn from both real-world indoor videos and realistic home design renderings, thereby supporting robust training and evaluation under practical conditions. Then, we propose RoomEditor++, a versatile diffusion-based architecture featuring a parameter-sharing dual diffusion backbone, which is compatible with both U-Net and DiT architectures. This design unifies the feature extraction and inpainting processes for reference and background images. Our in-depth analysis reveals that the parameter-sharing mechanism enforces aligned feature representations, facilitating precise geometric transformations, texture preservation, and seamless integration. Extensive experiments validate that RoomEditor++ is superior over state-of-the-art approaches in terms of quantitative metrics, qualitative assessments, and human preference studies, while highlighting its strong generalization to unseen indoor scenes and general scenes without task-specific fine-tuning. The dataset and source code are available at \\url{https://github.com/stonecutter-21/roomeditor}.",
+        "arxiv_id": "2512.17573",
+        "ARXIVID": "2512.17573",
+        "COMMENT": "2",
         "RELEVANCE": 5,
         "NOVELTY": 6
     },
-    "2512.16023": {
+    "2512.17224": {
         "authors": [
-            "Liudi Yang",
-            "Yang Bai",
-            "George Eskandar",
-            "Fengyi Shen",
-            "Mohammad Altillawi",
-            "Dong Chen",
-            "Ziyuan Liu",
-            "Abhinav Valada"
+            "Xuyang Li",
+            "Chenyu Li",
+            "Danfeng Hong"
         ],
-        "title": "CoVAR: Co-generation of Video and Action for Robotic Manipulation via Multi-Modal Diffusion",
-        "abstract": "arXiv:2512.16023v1 Announce Type: new  Abstract: We present a method to generate video-action pairs that follow text instructions, starting from an initial image observation and the robot's joint states. Our approach automatically provides action labels for video diffusion models, overcoming the common lack of action annotations and enabling their full use for robotic policy learning. Existing methods either adopt two-stage pipelines, which limit tightly coupled cross-modal information sharing, or rely on adapting a single-modal diffusion model for a joint distribution that cannot fully leverage pretrained video knowledge. To overcome these limitations, we (1) extend a pretrained video diffusion model with a parallel, dedicated action diffusion model that preserves pretrained knowledge, (2) introduce a Bridge Attention mechanism to enable effective cross-modal interaction, and (3) design an action refinement module to convert coarse actions into precise controls for low-resolution datasets. Extensive evaluations on multiple public benchmarks and real-world datasets demonstrate that our method generates higher-quality videos, more accurate actions, and significantly outperforms existing baselines, offering a scalable framework for leveraging large-scale video data for robotic learning.",
-        "arxiv_id": "2512.16023",
-        "ARXIVID": "2512.16023",
-        "COMMENT": "The paper does not match any of the specific criteria closely. It focuses on video-action pair generation for robotic manipulation using a multi-modal diffusion model, which does not align with the criteria of unified image/video generation and segmentation, unified diffusion models for multiple vision tasks, or image/video matting.",
+        "title": "Any-Optical-Model: A Universal Foundation Model for Optical Remote Sensing",
+        "abstract": "arXiv:2512.17224v1 Announce Type: new  Abstract: Optical satellites, with their diverse band layouts and ground sampling distances, supply indispensable evidence for tasks ranging from ecosystem surveillance to emergency response. However, significant discrepancies in band composition and spatial resolution across different optical sensors present major challenges for existing Remote Sensing Foundation Models (RSFMs). These models are typically pretrained on fixed band configurations and resolutions, making them vulnerable to real world scenarios involving missing bands, cross sensor fusion, and unseen spatial scales, thereby limiting their generalization and practical deployment. To address these limitations, we propose Any Optical Model (AOM), a universal RSFM explicitly designed to accommodate arbitrary band compositions, sensor types, and resolution scales. To preserve distinctive spectral characteristics even when bands are missing or newly introduced, AOM introduces a spectrum-independent tokenizer that assigns each channel a dedicated band embedding, enabling explicit encoding of spectral identity. To effectively capture texture and contextual patterns from sub-meter to hundred-meter imagery, we design a multi-scale adaptive patch embedding mechanism that dynamically modulates the receptive field. Furthermore, to maintain global semantic consistency across varying resolutions, AOM incorporates a multi-scale semantic alignment mechanism alongside a channel-wise self-supervised masking and reconstruction pretraining strategy that jointly models spectral-spatial relationships. Extensive experiments on over 10 public datasets, including those from Sentinel-2, Landsat, and HLS, demonstrate that AOM consistently achieves state-of-the-art (SOTA) performance under challenging conditions such as band missing, cross sensor, and cross resolution settings.",
+        "arxiv_id": "2512.17224",
+        "ARXIVID": "2512.17224",
+        "COMMENT": "",
         "RELEVANCE": 3,
-        "NOVELTY": 6
+        "NOVELTY": 5
+    },
+    "2512.17459": {
+        "authors": [
+            "Tobias Sautter",
+            "Jan-Niklas Dihlmann",
+            "Hendrik P. A. Lensch"
+        ],
+        "title": "3D-RE-GEN: 3D Reconstruction of Indoor Scenes with a Generative Framework",
+        "abstract": "arXiv:2512.17459v1 Announce Type: new  Abstract: Recent advances in 3D scene generation produce visually appealing output, but current representations hinder artists' workflows that require modifiable 3D textured mesh scenes for visual effects and game development. Despite significant advances, current textured mesh scene reconstruction methods are far from artist ready, suffering from incorrect object decomposition, inaccurate spatial relationships, and missing backgrounds. We present 3D-RE-GEN, a compositional framework that reconstructs a single image into textured 3D objects and a background. We show that combining state of the art models from specific domains achieves state of the art scene reconstruction performance, addressing artists' requirements.   Our reconstruction pipeline integrates models for asset detection, reconstruction, and placement, pushing certain models beyond their originally intended domains. Obtaining occluded objects is treated as an image editing task with generative models to infer and reconstruct with scene level reasoning under consistent lighting and geometry. Unlike current methods, 3D-RE-GEN generates a comprehensive background that spatially constrains objects during optimization and provides a foundation for realistic lighting and simulation tasks in visual effects and games. To obtain physically realistic layouts, we employ a novel 4-DoF differentiable optimization that aligns reconstructed objects with the estimated ground plane. 3D-RE-GEN~achieves state of the art performance in single image 3D scene reconstruction, producing coherent, modifiable scenes through compositional generation guided by precise camera recovery and spatial optimization.",
+        "arxiv_id": "2512.17459",
+        "ARXIVID": "2512.17459",
+        "COMMENT": "",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
     }
 }
