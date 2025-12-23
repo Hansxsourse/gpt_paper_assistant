@@ -1,47 +1,35 @@
 {
-    "2512.17573": {
+    "2512.17504": {
         "authors": [
-            "Qilong Wang",
-            "Xiaofan Ming",
-            "Zhenyi Lin",
-            "Jinwen Li",
-            "Dongwei Ren",
-            "Wangmeng Zuo",
-            "Qinghua Hu"
+            "Hoiyeong Jin",
+            "Hyojin Jang",
+            "Jeongho Kim",
+            "Junha Hyung",
+            "Kinam Kim",
+            "Dongjin Kim",
+            "Huijin Choi",
+            "Hyeonji Kim",
+            "Jaegul Choo"
         ],
-        "title": "RoomEditor++: A Parameter-Sharing Diffusion Architecture for High-Fidelity Furniture Synthesis",
-        "abstract": "arXiv:2512.17573v1 Announce Type: new  Abstract: Virtual furniture synthesis, which seamlessly integrates reference objects into indoor scenes while maintaining geometric coherence and visual realism, holds substantial promise for home design and e-commerce applications. However, this field remains underexplored due to the scarcity of reproducible benchmarks and the limitations of existing image composition methods in achieving high-fidelity furniture synthesis while preserving background integrity. To overcome these challenges, we first present RoomBench++, a comprehensive and publicly available benchmark dataset tailored for this task. It consists of 112,851 training pairs and 1,832 testing pairs drawn from both real-world indoor videos and realistic home design renderings, thereby supporting robust training and evaluation under practical conditions. Then, we propose RoomEditor++, a versatile diffusion-based architecture featuring a parameter-sharing dual diffusion backbone, which is compatible with both U-Net and DiT architectures. This design unifies the feature extraction and inpainting processes for reference and background images. Our in-depth analysis reveals that the parameter-sharing mechanism enforces aligned feature representations, facilitating precise geometric transformations, texture preservation, and seamless integration. Extensive experiments validate that RoomEditor++ is superior over state-of-the-art approaches in terms of quantitative metrics, qualitative assessments, and human preference studies, while highlighting its strong generalization to unseen indoor scenes and general scenes without task-specific fine-tuning. The dataset and source code are available at \\url{https://github.com/stonecutter-21/roomeditor}.",
-        "arxiv_id": "2512.17573",
-        "ARXIVID": "2512.17573",
-        "COMMENT": "2",
-        "RELEVANCE": 5,
+        "title": "InsertAnywhere: Bridging 4D Scene Geometry and Diffusion Models for Realistic Video Object Insertion",
+        "abstract": "arXiv:2512.17504v1 Announce Type: new  Abstract: Recent advances in diffusion-based video generation have opened new possibilities for controllable video editing, yet realistic video object insertion (VOI) remains challenging due to limited 4D scene understanding and inadequate handling of occlusion and lighting effects. We present InsertAnywhere, a new VOI framework that achieves geometrically consistent object placement and appearance-faithful video synthesis. Our method begins with a 4D aware mask generation module that reconstructs the scene geometry and propagates user specified object placement across frames while maintaining temporal coherence and occlusion consistency. Building upon this spatial foundation, we extend a diffusion based video generation model to jointly synthesize the inserted object and its surrounding local variations such as illumination and shading. To enable supervised training, we introduce ROSE++, an illumination aware synthetic dataset constructed by transforming the ROSE object removal dataset into triplets of object removed video, object present video, and a VLM generated reference image. Through extensive experiments, we demonstrate that our framework produces geometrically plausible and visually coherent object insertions across diverse real world scenarios, significantly outperforming existing research and commercial models.",
+        "arxiv_id": "2512.17504",
+        "ARXIVID": "2512.17504",
+        "COMMENT": "The paper does not match any specific criteria closely.",
+        "RELEVANCE": 3,
         "NOVELTY": 6
     },
-    "2512.17224": {
+    "2512.17323": {
         "authors": [
-            "Xuyang Li",
-            "Chenyu Li",
-            "Danfeng Hong"
+            "Jiyun Kong",
+            "Jun-Hyuk Kim",
+            "Jong-Seok Lee"
         ],
-        "title": "Any-Optical-Model: A Universal Foundation Model for Optical Remote Sensing",
-        "abstract": "arXiv:2512.17224v1 Announce Type: new  Abstract: Optical satellites, with their diverse band layouts and ground sampling distances, supply indispensable evidence for tasks ranging from ecosystem surveillance to emergency response. However, significant discrepancies in band composition and spatial resolution across different optical sensors present major challenges for existing Remote Sensing Foundation Models (RSFMs). These models are typically pretrained on fixed band configurations and resolutions, making them vulnerable to real world scenarios involving missing bands, cross sensor fusion, and unseen spatial scales, thereby limiting their generalization and practical deployment. To address these limitations, we propose Any Optical Model (AOM), a universal RSFM explicitly designed to accommodate arbitrary band compositions, sensor types, and resolution scales. To preserve distinctive spectral characteristics even when bands are missing or newly introduced, AOM introduces a spectrum-independent tokenizer that assigns each channel a dedicated band embedding, enabling explicit encoding of spectral identity. To effectively capture texture and contextual patterns from sub-meter to hundred-meter imagery, we design a multi-scale adaptive patch embedding mechanism that dynamically modulates the receptive field. Furthermore, to maintain global semantic consistency across varying resolutions, AOM incorporates a multi-scale semantic alignment mechanism alongside a channel-wise self-supervised masking and reconstruction pretraining strategy that jointly models spectral-spatial relationships. Extensive experiments on over 10 public datasets, including those from Sentinel-2, Landsat, and HLS, demonstrate that AOM consistently achieves state-of-the-art (SOTA) performance under challenging conditions such as band missing, cross sensor, and cross resolution settings.",
-        "arxiv_id": "2512.17224",
-        "ARXIVID": "2512.17224",
-        "COMMENT": "",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2512.17459": {
-        "authors": [
-            "Tobias Sautter",
-            "Jan-Niklas Dihlmann",
-            "Hendrik P. A. Lensch"
-        ],
-        "title": "3D-RE-GEN: 3D Reconstruction of Indoor Scenes with a Generative Framework",
-        "abstract": "arXiv:2512.17459v1 Announce Type: new  Abstract: Recent advances in 3D scene generation produce visually appealing output, but current representations hinder artists' workflows that require modifiable 3D textured mesh scenes for visual effects and game development. Despite significant advances, current textured mesh scene reconstruction methods are far from artist ready, suffering from incorrect object decomposition, inaccurate spatial relationships, and missing backgrounds. We present 3D-RE-GEN, a compositional framework that reconstructs a single image into textured 3D objects and a background. We show that combining state of the art models from specific domains achieves state of the art scene reconstruction performance, addressing artists' requirements.   Our reconstruction pipeline integrates models for asset detection, reconstruction, and placement, pushing certain models beyond their originally intended domains. Obtaining occluded objects is treated as an image editing task with generative models to infer and reconstruct with scene level reasoning under consistent lighting and geometry. Unlike current methods, 3D-RE-GEN generates a comprehensive background that spatially constrains objects during optimization and provides a foundation for realistic lighting and simulation tasks in visual effects and games. To obtain physically realistic layouts, we employ a novel 4-DoF differentiable optimization that aligns reconstructed objects with the estimated ground plane. 3D-RE-GEN~achieves state of the art performance in single image 3D scene reconstruction, producing coherent, modifiable scenes through compositional generation guided by precise camera recovery and spatial optimization.",
-        "arxiv_id": "2512.17459",
-        "ARXIVID": "2512.17459",
-        "COMMENT": "",
+        "title": "DESSERT: Diffusion-based Event-driven Single-frame Synthesis via Residual Training",
+        "abstract": "arXiv:2512.17323v1 Announce Type: new  Abstract: Video frame prediction extrapolates future frames from previous frames, but suffers from prediction errors in dynamic scenes due to the lack of information about the next frame. Event cameras address this limitation by capturing per-pixel brightness changes asynchronously with high temporal resolution. Prior research on event-based video frame prediction has leveraged motion information from event data, often by predicting event-based optical flow and reconstructing frames via pixel warping. However, such approaches introduce holes and blurring when pixel displacement is inaccurate. To overcome this limitation, we propose DESSERT, a diffusion-based event-driven single-frame synthesis framework via residual training. Leveraging a pre-trained Stable Diffusion model, our method is trained on inter-frame residuals to ensure temporal consistency. The training pipeline consists of two stages: (1) an Event-to-Residual Alignment Variational Autoencoder (ER-VAE) that aligns the event frame between anchor and target frames with the corresponding residual, and (2) a diffusion model that denoises the residual latent conditioned on event data. Furthermore, we introduce Diverse-Length Temporal (DLT) augmentation, which improves robustness by training on frame segments of varying temporal lengths. Experimental results demonstrate that our method outperforms existing event-based reconstruction, image-based video frame prediction, event-based video frame prediction, and one-sided event-based video frame interpolation methods, producing sharper and more temporally consistent frame synthesis.",
+        "arxiv_id": "2512.17323",
+        "ARXIVID": "2512.17323",
+        "COMMENT": "The paper does not match any specific criteria closely.",
         "RELEVANCE": 3,
         "NOVELTY": 5
     }
