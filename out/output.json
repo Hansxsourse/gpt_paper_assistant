@@ -1,34 +1,19 @@
 {
-    "2512.20107": {
+    "2512.21218": {
         "authors": [
-            "Thanh-Tung Le",
-            "Tuan Pham",
-            "Tung Nguyen",
-            "Deying Kong",
-            "Xiaohui Xie",
-            "Stephan Mandt"
+            "Kelvin Li",
+            "Chuyi Shang",
+            "Leonid Karlinsky",
+            "Rogerio Feris",
+            "Trevor Darrell",
+            "Roei Herzig"
         ],
-        "title": "UMAMI: Unifying Masked Autoregressive Models and Deterministic Rendering for View Synthesis",
-        "abstract": "arXiv:2512.20107v1 Announce Type: new  Abstract: Novel view synthesis (NVS) seeks to render photorealistic, 3D-consistent images of a scene from unseen camera poses given only a sparse set of posed views. Existing deterministic networks render observed regions quickly but blur unobserved areas, whereas stochastic diffusion-based methods hallucinate plausible content yet incur heavy training- and inference-time costs. In this paper, we propose a hybrid framework that unifies the strengths of both paradigms. A bidirectional transformer encodes multi-view image tokens and Plucker-ray embeddings, producing a shared latent representation. Two lightweight heads then act on this representation: (i) a feed-forward regression head that renders pixels where geometry is well constrained, and (ii) a masked autoregressive diffusion head that completes occluded or unseen regions. The entire model is trained end-to-end with joint photometric and diffusion losses, without handcrafted 3D inductive biases, enabling scalability across diverse scenes. Experiments demonstrate that our method attains state-of-the-art image quality while reducing rendering time by an order of magnitude compared with fully generative baselines.",
-        "arxiv_id": "2512.20107",
-        "ARXIVID": "2512.20107",
-        "COMMENT": "The paper proposes a unified framework for novel view synthesis using a hybrid approach combining deterministic and stochastic methods, which aligns with the interest in unified architectures.",
+        "title": "Latent Implicit Visual Reasoning",
+        "abstract": "arXiv:2512.21218v1 Announce Type: new  Abstract: While Large Multimodal Models (LMMs) have made significant progress, they remain largely text-centric, relying on language as their core reasoning modality. As a result, they are limited in their ability to handle reasoning tasks that are predominantly visual. Recent approaches have sought to address this by supervising intermediate visual steps with helper images, depth maps, or image crops. However, these strategies impose restrictive priors on what \"useful\" visual abstractions look like, add heavy annotation costs, and struggle to generalize across tasks. To address this critical limitation, we propose a task-agnostic mechanism that trains LMMs to discover and use visual reasoning tokens without explicit supervision. These tokens attend globally and re-encode the image in a task-adaptive way, enabling the model to extract relevant visual information without hand-crafted supervision. Our approach outperforms direct fine-tuning and achieves state-of-the-art results on a diverse range of vision-centric tasks -- including those where intermediate abstractions are hard to specify -- while also generalizing to multi-task instruction tuning.",
+        "arxiv_id": "2512.21218",
+        "ARXIVID": "2512.21218",
+        "COMMENT": "",
         "RELEVANCE": 3,
         "NOVELTY": 6
-    },
-    "2512.19823": {
-        "authors": [
-            "SaiKiran Tedla",
-            "Zhoutong Zhang",
-            "Xuaner Zhang",
-            "Shumian Xin"
-        ],
-        "title": "Learning to Refocus with Video Diffusion Models",
-        "abstract": "arXiv:2512.19823v1 Announce Type: new  Abstract: Focus is a cornerstone of photography, yet autofocus systems often fail to capture the intended subject, and users frequently wish to adjust focus after capture. We introduce a novel method for realistic post-capture refocusing using video diffusion models. From a single defocused image, our approach generates a perceptually accurate focal stack, represented as a video sequence, enabling interactive refocusing and unlocking a range of downstream applications. We release a large-scale focal stack dataset acquired under diverse real-world smartphone conditions to support this work and future research. Our method consistently outperforms existing approaches in both perceptual quality and robustness across challenging scenarios, paving the way for more advanced focus-editing capabilities in everyday photography. Code and data are available at www.learn2refocus.github.io",
-        "arxiv_id": "2512.19823",
-        "ARXIVID": "2512.19823",
-        "COMMENT": "The paper introduces a novel method for post-capture refocusing using video diffusion models, which is related to the interest in diffusion models but does not match the specific criteria.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
     }
 }
