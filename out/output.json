@@ -1,19 +1,93 @@
 {
-    "2512.21218": {
+    "2512.21618": {
         "authors": [
-            "Kelvin Li",
-            "Chuyi Shang",
-            "Leonid Karlinsky",
-            "Rogerio Feris",
-            "Trevor Darrell",
-            "Roei Herzig"
+            "Zhiyuan Liu",
+            "Daocheng Fu",
+            "Pinlong Cai",
+            "Lening Wang",
+            "Ying Liu",
+            "Yilong Ren",
+            "Botian Shi",
+            "Jianqiang Wang"
         ],
-        "title": "Latent Implicit Visual Reasoning",
-        "abstract": "arXiv:2512.21218v1 Announce Type: new  Abstract: While Large Multimodal Models (LMMs) have made significant progress, they remain largely text-centric, relying on language as their core reasoning modality. As a result, they are limited in their ability to handle reasoning tasks that are predominantly visual. Recent approaches have sought to address this by supervising intermediate visual steps with helper images, depth maps, or image crops. However, these strategies impose restrictive priors on what \"useful\" visual abstractions look like, add heavy annotation costs, and struggle to generalize across tasks. To address this critical limitation, we propose a task-agnostic mechanism that trains LMMs to discover and use visual reasoning tokens without explicit supervision. These tokens attend globally and re-encode the image in a task-adaptive way, enabling the model to extract relevant visual information without hand-crafted supervision. Our approach outperforms direct fine-tuning and achieves state-of-the-art results on a diverse range of vision-centric tasks -- including those where intermediate abstractions are hard to specify -- while also generalizing to multi-task instruction tuning.",
-        "arxiv_id": "2512.21218",
-        "ARXIVID": "2512.21218",
+        "title": "SymDrive: Realistic and Controllable Driving Simulator via Symmetric Auto-regressive Online Restoration",
+        "abstract": "arXiv:2512.21618v1 Announce Type: new  Abstract: High-fidelity and controllable 3D simulation is essential for addressing the long-tail data scarcity in Autonomous Driving (AD), yet existing methods struggle to simultaneously achieve photorealistic rendering and interactive traffic editing. Current approaches often falter in large-angle novel view synthesis and suffer from geometric or lighting artifacts during asset manipulation. To address these challenges, we propose SymDrive, a unified diffusion-based framework capable of joint high-quality rendering and scene editing. We introduce a Symmetric Auto-regressive Online Restoration paradigm, which constructs paired symmetric views to recover fine-grained details via a ground-truth-guided dual-view formulation and utilizes an auto-regressive strategy for consistent lateral view generation. Furthermore, we leverage this restoration capability to enable a training-free harmonization mechanism, treating vehicle insertion as context-aware inpainting to ensure seamless lighting and shadow consistency. Extensive experiments demonstrate that SymDrive achieves state-of-the-art performance in both novel-view enhancement and realistic 3D vehicle insertion.",
+        "arxiv_id": "2512.21618",
+        "ARXIVID": "2512.21618",
+        "COMMENT": "2",
+        "RELEVANCE": 5,
+        "NOVELTY": 6
+    },
+    "2512.22096": {
+        "authors": [
+            "Xiaofeng Mao",
+            "Zhen Li",
+            "Chuanhao Li",
+            "Xiaojie Xu",
+            "Kaining Ying",
+            "Tong He",
+            "Jiangmiao Pang",
+            "Yu Qiao",
+            "Kaipeng Zhang"
+        ],
+        "title": "Yume-1.5: A Text-Controlled Interactive World Generation Model",
+        "abstract": "arXiv:2512.22096v1 Announce Type: new  Abstract: Recent approaches have demonstrated the promise of using diffusion models to generate interactive and explorable worlds. However, most of these methods face critical challenges such as excessively large parameter sizes, reliance on lengthy inference steps, and rapidly growing historical context, which severely limit real-time performance and lack text-controlled generation capabilities. To address these challenges, we propose \\method, a novel framework designed to generate realistic, interactive, and continuous worlds from a single image or text prompt. \\method achieves this through a carefully designed framework that supports keyboard-based exploration of the generated worlds. The framework comprises three core components: (1) a long-video generation framework integrating unified context compression with linear attention; (2) a real-time streaming acceleration strategy powered by bidirectional attention distillation and an enhanced text embedding scheme; (3) a text-controlled method for generating world events. We have provided the codebase in the supplementary material.",
+        "arxiv_id": "2512.22096",
+        "ARXIVID": "2512.22096",
         "COMMENT": "",
         "RELEVANCE": 3,
-        "NOVELTY": 6
+        "NOVELTY": 5
+    },
+    "2512.21734": {
+        "authors": [
+            "Steven Xiao",
+            "XIndi Zhang",
+            "Dechao Meng",
+            "Qi Wang",
+            "Peng Zhang",
+            "Bang Zhang"
+        ],
+        "title": "Knot Forcing: Taming Autoregressive Video Diffusion Models for Real-time Infinite Interactive Portrait Animation",
+        "abstract": "arXiv:2512.21734v1 Announce Type: new  Abstract: Real-time portrait animation is essential for interactive applications such as virtual assistants and live avatars, requiring high visual fidelity, temporal coherence, ultra-low latency, and responsive control from dynamic inputs like reference images and driving signals. While diffusion-based models achieve strong quality, their non-causal nature hinders streaming deployment. Causal autoregressive video generation approaches enable efficient frame-by-frame generation but suffer from error accumulation, motion discontinuities at chunk boundaries, and degraded long-term consistency. In this work, we present a novel streaming framework named Knot Forcing for real-time portrait animation that addresses these challenges through three key designs: (1) a chunk-wise generation strategy with global identity preservation via cached KV states of the reference image and local temporal modeling using sliding window attention; (2) a temporal knot module that overlaps adjacent chunks and propagates spatio-temporal cues via image-to-video conditioning to smooth inter-chunk motion transitions; and (3) A \"running ahead\" mechanism that dynamically updates the reference frame's temporal coordinate during inference, keeping its semantic context ahead of the current rollout frame to support long-term coherence. Knot Forcing enables high-fidelity, temporally consistent, and interactive portrait animation over infinite sequences, achieving real-time performance with strong visual stability on consumer-grade GPUs.",
+        "arxiv_id": "2512.21734",
+        "ARXIVID": "2512.21734",
+        "COMMENT": "",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2512.22065": {
+        "authors": [
+            "Zhiyao Sun",
+            "Ziqiao Peng",
+            "Yifeng Ma",
+            "Yi Chen",
+            "Zhengguang Zhou",
+            "Zixiang Zhou",
+            "Guozhen Zhang",
+            "Youliang Zhang",
+            "Yuan Zhou",
+            "Qinglin Lu",
+            "Yong-Jin Liu"
+        ],
+        "title": "StreamAvatar: Streaming Diffusion Models for Real-Time Interactive Human Avatars",
+        "abstract": "arXiv:2512.22065v1 Announce Type: new  Abstract: Real-time, streaming interactive avatars represent a critical yet challenging goal in digital human research. Although diffusion-based human avatar generation methods achieve remarkable success, their non-causal architecture and high computational costs make them unsuitable for streaming. Moreover, existing interactive approaches are typically limited to head-and-shoulder region, limiting their ability to produce gestures and body motions. To address these challenges, we propose a two-stage autoregressive adaptation and acceleration framework that applies autoregressive distillation and adversarial refinement to adapt a high-fidelity human video diffusion model for real-time, interactive streaming. To ensure long-term stability and consistency, we introduce three key components: a Reference Sink, a Reference-Anchored Positional Re-encoding (RAPR) strategy, and a Consistency-Aware Discriminator. Building on this framework, we develop a one-shot, interactive, human avatar model capable of generating both natural talking and listening behaviors with coherent gestures. Extensive experiments demonstrate that our method achieves state-of-the-art performance, surpassing existing approaches in generation quality, real-time efficiency, and interaction naturalness. Project page: https://streamavatar.github.io .",
+        "arxiv_id": "2512.22065",
+        "ARXIVID": "2512.22065",
+        "COMMENT": "",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2512.21776": {
+        "authors": [
+            "Jingbo Yang",
+            "Adrian G. Bors"
+        ],
+        "title": "Inference-based GAN Video Generation",
+        "abstract": "arXiv:2512.21776v1 Announce Type: new  Abstract: Video generation has seen remarkable progresses thanks to advancements in generative deep learning. Generated videos should not only display coherent and continuous movement but also meaningful movement in successions of scenes. Generating models such as Generative Adversarial Networks (GANs) or Variational Autoencoders (VAEs) and more recently Diffusion Networks have been used for generating short video sequences, usually of up to 16 frames. In this paper, we first propose a new type of video generator by enabling adversarial-based unconditional video generators with a variational encoder, akin to a VAE-GAN hybrid structure, in order to enable the generation process with inference capabilities. The proposed model, as in other video deep learning-based processing frameworks, incorporates two processing branches, one for content and another for movement. However, existing models struggle with the temporal scaling of the generated videos. In classical approaches when aiming to increase the generated video length, the resulting video quality degrades, particularly when considering generating significantly long sequences. To overcome this limitation, our research study extends the initially proposed VAE-GAN video generation model by employing a novel, memory-efficient approach to generate long videos composed of hundreds or thousands of frames ensuring their temporal continuity, consistency and dynamics. Our approach leverages a Markov chain framework with a recall mechanism, with each state representing a VAE-GAN short-length video generator. This setup allows for the sequential connection of generated video sub-sequences, enabling temporal dependencies, resulting in meaningful long video sequences.",
+        "arxiv_id": "2512.21776",
+        "ARXIVID": "2512.21776",
+        "COMMENT": "",
+        "RELEVANCE": 3,
+        "NOVELTY": 4
     }
 }
