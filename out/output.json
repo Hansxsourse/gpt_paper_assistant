@@ -1,20 +1,32 @@
 {
-    "2512.25075": {
+    "2601.00328": {
         "authors": [
-            "Zhening Huang",
-            "Hyeonho Jeong",
-            "Xuelin Chen",
-            "Yulia Gryaditskaya",
-            "Tuanfeng Y. Wang",
-            "Joan Lasenby",
-            "Chun-Hao Huang"
+            "Yingzhi Tang",
+            "Qijian Zhang",
+            "Junhui Hou"
         ],
-        "title": "SpaceTimePilot: Generative Rendering of Dynamic Scenes Across Space and Time",
-        "abstract": "arXiv:2512.25075v1 Announce Type: new  Abstract: We present SpaceTimePilot, a video diffusion model that disentangles space and time for controllable generative rendering. Given a monocular video, SpaceTimePilot can independently alter the camera viewpoint and the motion sequence within the generative process, re-rendering the scene for continuous and arbitrary exploration across space and time. To achieve this, we introduce an effective animation time-embedding mechanism in the diffusion process, allowing explicit control of the output video's motion sequence with respect to that of the source video. As no datasets provide paired videos of the same dynamic scene with continuous temporal variations, we propose a simple yet effective temporal-warping training scheme that repurposes existing multi-view datasets to mimic temporal differences. This strategy effectively supervises the model to learn temporal control and achieve robust space-time disentanglement. To further enhance the precision of dual control, we introduce two additional components: an improved camera-conditioning mechanism that allows altering the camera from the first frame, and CamxTime, the first synthetic space-and-time full-coverage rendering dataset that provides fully free space-time video trajectories within a scene. Joint training on the temporal-warping scheme and the CamxTime dataset yields more precise temporal control. We evaluate SpaceTimePilot on both real-world and synthetic data, demonstrating clear space-time disentanglement and strong results compared to prior work. Project page: https://zheninghuang.github.io/Space-Time-Pilot/ Code: https://github.com/ZheningHuang/spacetimepilot",
-        "arxiv_id": "2512.25075",
-        "ARXIVID": "2512.25075",
-        "COMMENT": "The paper does not match any of the specific criteria. It focuses on a video diffusion model for generative rendering with space-time disentanglement, which does not involve joint generation and segmentation, unified diffusion models for multiple tasks, or image/video matting.",
+        "title": "Joint Geometry-Appearance Human Reconstruction in a Unified Latent Space via Bridge Diffusion",
+        "abstract": "arXiv:2601.00328v1 Announce Type: new  Abstract: Achieving consistent and high-fidelity geometry and appearance reconstruction of 3D digital humans from a single RGB image is inherently a challenging task. Existing studies typically resort to decoupled pipelines for geometry estimation and appearance synthesis, often hindering unified reconstruction and causing inconsistencies. This paper introduces \\textbf{JGA-LBD}, a novel framework that unifies the modeling of geometry and appearance into a joint latent representation and formulates the generation process as bridge diffusion. Observing that directly integrating heterogeneous input conditions (e.g., depth maps, SMPL models) leads to substantial training difficulties, we unify all conditions into the 3D Gaussian representations, which can be further compressed into a unified latent space through a shared sparse variational autoencoder (VAE). Subsequently, the specialized form of bridge diffusion enables to start with a partial observation of the target latent code and solely focuses on inferring the missing components. Finally, a dedicated decoding module extracts the complete 3D human geometric structure and renders novel views from the inferred latent representation. Experiments demonstrate that JGA-LBD outperforms current state-of-the-art approaches in terms of both geometry fidelity and appearance quality, including challenging in-the-wild scenarios. Our code will be made publicly available at https://github.com/haiantyz/JGA-LBD.",
+        "arxiv_id": "2601.00328",
+        "ARXIVID": "2601.00328",
+        "COMMENT": "The paper introduces a unified framework for joint geometry and appearance reconstruction using bridge diffusion, which aligns with the unified diffusion models criterion.",
+        "RELEVANCE": 5,
+        "NOVELTY": 7
+    },
+    "2601.00090": {
+        "authors": [
+            "Anne Harrington",
+            "A. Sophia Koepke",
+            "Shyamgopal Karthik",
+            "Trevor Darrell",
+            "Alexei A. Efros"
+        ],
+        "title": "It's Never Too Late: Noise Optimization for Collapse Recovery in Trained Diffusion Models",
+        "abstract": "arXiv:2601.00090v1 Announce Type: new  Abstract: Contemporary text-to-image models exhibit a surprising degree of mode collapse, as can be seen when sampling several images given the same text prompt. While previous work has attempted to address this issue by steering the model using guidance mechanisms, or by generating a large pool of candidates and refining them, in this work we take a different direction and aim for diversity in generations via noise optimization. Specifically, we show that a simple noise optimization objective can mitigate mode collapse while preserving the fidelity of the base model. We also analyze the frequency characteristics of the noise and show that alternative noise initializations with different frequency profiles can improve both optimization and search. Our experiments demonstrate that noise optimization yields superior results in terms of generation quality and variety.",
+        "arxiv_id": "2601.00090",
+        "ARXIVID": "2601.00090",
+        "COMMENT": "The paper focuses on noise optimization for improving diversity in text-to-image diffusion models, which does not match any specific criteria.",
         "RELEVANCE": 3,
-        "NOVELTY": 6
+        "NOVELTY": 5
     }
 }
