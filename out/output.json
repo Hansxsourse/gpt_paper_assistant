@@ -1,68 +1,57 @@
 {
-    "2601.03955": {
+    "2601.05138": {
         "authors": [
-            "Xu Zhang",
-            "Cheng Da",
-            "Huan Yang",
-            "Kun Gai",
-            "Ming Lu",
-            "Zhan Ma"
+            "Sixiao Zheng",
+            "Minghao Yin",
+            "Wenbo Hu",
+            "Xiaoyu Li",
+            "Ying Shan",
+            "Yanwei Fu"
         ],
-        "title": "ResTok: Learning Hierarchical Residuals in 1D Visual Tokenizers for Autoregressive Image Generation",
-        "abstract": "arXiv:2601.03955v1 Announce Type: new  Abstract: Existing 1D visual tokenizers for autoregressive (AR) generation largely follow the design principles of language modeling, as they are built directly upon transformers whose priors originate in language, yielding single-hierarchy latent tokens and treating visual data as flat sequential token streams. However, this language-like formulation overlooks key properties of vision, particularly the hierarchical and residual network designs that have long been essential for convergence and efficiency in visual models. To bring \"vision\" back to vision, we propose the Residual Tokenizer (ResTok), a 1D visual tokenizer that builds hierarchical residuals for both image tokens and latent tokens. The hierarchical representations obtained through progressively merging enable cross-level feature fusion at each layer, substantially enhancing representational capacity. Meanwhile, the semantic residuals between hierarchies prevent information overlap, yielding more concentrated latent distributions that are easier for AR modeling. Cross-level bindings consequently emerge without any explicit constraints. To accelerate the generation process, we further introduce a hierarchical AR generator that substantially reduces sampling steps by predicting an entire level of latent tokens at once rather than generating them strictly token-by-token. Extensive experiments demonstrate that restoring hierarchical residual priors in visual tokenization significantly improves AR image generation, achieving a gFID of 2.34 on ImageNet-256 with only 9 sampling steps. Code is available at https://github.com/Kwai-Kolors/ResTok.",
-        "arxiv_id": "2601.03955",
-        "ARXIVID": "2601.03955",
-        "COMMENT": "",
+        "title": "VerseCrafter: Dynamic Realistic Video World Model with 4D Geometric Control",
+        "abstract": "arXiv:2601.05138v1 Announce Type: new  Abstract: Video world models aim to simulate dynamic, real-world environments, yet existing methods struggle to provide unified and precise control over camera and multi-object motion, as videos inherently operate dynamics in the projected 2D image plane. To bridge this gap, we introduce VerseCrafter, a 4D-aware video world model that enables explicit and coherent control over both camera and object dynamics within a unified 4D geometric world state. Our approach is centered on a novel 4D Geometric Control representation, which encodes the world state through a static background point cloud and per-object 3D Gaussian trajectories. This representation captures not only an object's path but also its probabilistic 3D occupancy over time, offering a flexible, category-agnostic alternative to rigid bounding boxes or parametric models. These 4D controls are rendered into conditioning signals for a pretrained video diffusion model, enabling the generation of high-fidelity, view-consistent videos that precisely adhere to the specified dynamics. Unfortunately, another major challenge lies in the scarcity of large-scale training data with explicit 4D annotations. We address this by developing an automatic data engine that extracts the required 4D controls from in-the-wild videos, allowing us to train our model on a massive and diverse dataset.",
+        "arxiv_id": "2601.05138",
+        "ARXIVID": "2601.05138",
+        "COMMENT": "The paper does not match any specific criteria closely.",
         "RELEVANCE": 3,
         "NOVELTY": 6
     },
-    "2601.03959": {
+    "2601.04339": {
         "authors": [
-            "Enes Duran",
-            "Nikos Athanasiou",
-            "Muhammed Kocabas",
-            "Michael J. Black",
-            "Omid Taheri"
+            "Jiahui Chen",
+            "Philippe Hansen-Estruch",
+            "Xiaochuang Han",
+            "Yushi Hu",
+            "Emily Dinan",
+            "Amita Kamath",
+            "Michal Drozdzal",
+            "Reyhane Askari-Hemmat",
+            "Luke Zettlemoyer",
+            "Marjan Ghazvininejad"
         ],
-        "title": "FUSION: Full-Body Unified Motion Prior for Body and Hands via Diffusion",
-        "abstract": "arXiv:2601.03959v1 Announce Type: new  Abstract: Hands are central to interacting with our surroundings and conveying gestures, making their inclusion essential for full-body motion synthesis. Despite this, existing human motion synthesis methods fall short: some ignore hand motions entirely, while others generate full-body motions only for narrowly scoped tasks under highly constrained settings. A key obstacle is the lack of large-scale datasets that jointly capture diverse full-body motion with detailed hand articulation. While some datasets capture both, they are limited in scale and diversity. Conversely, large-scale datasets typically focus either on body motion without hands or on hand motions without the body. To overcome this, we curate and unify existing hand motion datasets with large-scale body motion data to generate full-body sequences that capture both hand and body. We then propose the first diffusion-based unconditional full-body motion prior, FUSION, which jointly models body and hand motion. Despite using a pose-based motion representation, FUSION surpasses state-of-the-art skeletal control models on the Keypoint Tracking task in the HumanML3D dataset and achieves superior motion naturalness. Beyond standard benchmarks, we demonstrate that FUSION can go beyond typical uses of motion priors through two applications: (1) generating detailed full-body motion including fingers during interaction given the motion of an object, and (2) generating Self-Interaction motions using an LLM to transform natural language cues into actionable motion constraints. For these applications, we develop an optimization pipeline that refines the latent space of our diffusion model to generate task-specific motions. Experiments on these tasks highlight precise control over hand motion while maintaining plausible full-body coordination. The code will be public.",
-        "arxiv_id": "2601.03959",
-        "ARXIVID": "2601.03959",
-        "COMMENT": "",
+        "title": "Unified Text-Image Generation with Weakness-Targeted Post-Training",
+        "abstract": "arXiv:2601.04339v1 Announce Type: new  Abstract: Unified multimodal generation architectures that jointly produce text and images have recently emerged as a promising direction for text-to-image (T2I) synthesis. However, many existing systems rely on explicit modality switching, generating reasoning text before switching manually to image generation. This separate, sequential inference process limits cross-modal coupling and prohibits automatic multimodal generation. This work explores post-training to achieve fully unified text-image generation, where models autonomously transition from textual reasoning to visual synthesis within a single inference process. We examine the impact of joint text-image generation on T2I performance and the relative importance of each modality during post-training. We additionally explore different post-training data strategies, showing that a targeted dataset addressing specific limitations achieves superior results compared to broad image-caption corpora or benchmark-aligned data. Using offline, reward-weighted post-training with fully self-generated synthetic data, our approach enables improvements in multimodal image generation across four diverse T2I benchmarks, demonstrating the effectiveness of reward-weighting both modalities and strategically designed post-training data.",
+        "arxiv_id": "2601.04339",
+        "ARXIVID": "2601.04339",
+        "COMMENT": "The paper does not match any specific criteria closely.",
         "RELEVANCE": 3,
         "NOVELTY": 6
     },
-    "2601.04153": {
+    "2601.04706": {
         "authors": [
-            "Yifan Wang",
-            "Yanyu Li",
-            "Sergey Tulyakov",
-            "Yun Fu",
-            "Anil Kag"
+            "Yanbing Zeng",
+            "Jia Wang",
+            "Hanghang Ma",
+            "Junqiang Wu",
+            "Jie Zhu",
+            "Xiaoming Wei",
+            "Jie Hu"
         ],
-        "title": "Diffusion-DRF: Differentiable Reward Flow for Video Diffusion Fine-Tuning",
-        "abstract": "arXiv:2601.04153v1 Announce Type: new  Abstract: Direct Preference Optimization (DPO) has recently improved Text-to-Video (T2V) generation by enhancing visual fidelity and text alignment. However, current methods rely on non-differentiable preference signals from human annotations or learned reward models. This reliance makes training label-intensive, bias-prone, and easy-to-game, which often triggers reward hacking and unstable training. We propose Diffusion-DRF, a differentiable reward flow for fine-tuning video diffusion models using a frozen, off-the-shelf Vision-Language Model (VLM) as a training-free critic. Diffusion-DRF directly backpropagates VLM feedback through the diffusion denoising chain, converting logit-level responses into token-aware gradients for optimization. We propose an automated, aspect-structured prompting pipeline to obtain reliable multi-dimensional VLM feedback, while gradient checkpointing enables efficient updates through the final denoising steps. Diffusion-DRF improves video quality and semantic alignment while mitigating reward hacking and collapse -- without additional reward models or preference datasets. It is model-agnostic and readily generalizes to other diffusion-based generative tasks.",
-        "arxiv_id": "2601.04153",
-        "ARXIVID": "2601.04153",
-        "COMMENT": "",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
-    },
-    "2601.04068": {
-        "authors": [
-            "Zitong Huang",
-            "Kaidong Zhang",
-            "Yukang Ding",
-            "Chao Gao",
-            "Rui Ding",
-            "Ying Chen",
-            "Wangmeng Zuo"
-        ],
-        "title": "Mind the Generative Details: Direct Localized Detail Preference Optimization for Video Diffusion Models",
-        "abstract": "arXiv:2601.04068v1 Announce Type: new  Abstract: Aligning text-to-video diffusion models with human preferences is crucial for generating high-quality videos. Existing Direct Preference Otimization (DPO) methods rely on multi-sample ranking and task-specific critic models, which is inefficient and often yields ambiguous global supervision. To address these limitations, we propose LocalDPO, a novel post-training framework that constructs localized preference pairs from real videos and optimizes alignment at the spatio-temporal region level. We design an automated pipeline to efficiently collect preference pair data that generates preference pairs with a single inference per prompt, eliminating the need for external critic models or manual annotation. Specifically, we treat high-quality real videos as positive samples and generate corresponding negatives by locally corrupting them with random spatio-temporal masks and restoring only the masked regions using the frozen base model. During training, we introduce a region-aware DPO loss that restricts preference learning to corrupted areas for rapid convergence. Experiments on Wan2.1 and CogVideoX demonstrate that LocalDPO consistently improves video fidelity, temporal coherence and human preference scores over other post-training approaches, establishing a more efficient and fine-grained paradigm for video generator alignment.",
-        "arxiv_id": "2601.04068",
-        "ARXIVID": "2601.04068",
-        "COMMENT": "",
+        "title": "Forge-and-Quench: Enhancing Image Generation for Higher Fidelity in Unified Multimodal Models",
+        "abstract": "arXiv:2601.04706v1 Announce Type: new  Abstract: Integrating image generation and understanding into a single framework has become a pivotal goal in the multimodal domain. However, how understanding can effectively assist generation has not been fully explored. Unlike previous works that focus on leveraging reasoning abilities and world knowledge from understanding models, this paper introduces a novel perspective: leveraging understanding to enhance the fidelity and detail richness of generated images. To this end, we propose Forge-and-Quench, a new unified framework that puts this principle into practice. In the generation process of our framework, an MLLM first reasons over the entire conversational context, including text instructions, to produce an enhanced text instruction. This refined instruction is then mapped to a virtual visual representation, termed the Bridge Feature, via a novel Bridge Adapter. This feature acts as a crucial link, forging insights from the understanding model to quench and refine the generation process. It is subsequently injected into the T2I backbone as a visual guidance signal, alongside the enhanced text instruction that replaces the original input. To validate this paradigm, we conduct comprehensive studies on the design of the Bridge Feature and Bridge Adapter. Our framework demonstrates exceptional extensibility and flexibility, enabling efficient migration across different MLLM and T2I models with significant savings in training overhead, all without compromising the MLLM's inherent multimodal understanding capabilities. Experiments show that Forge-and-Quench significantly improves image fidelity and detail across multiple models, while also maintaining instruction-following accuracy and enhancing world knowledge application. Models and codes are available at https://github.com/YanbingZeng/Forge-and-Quench.",
+        "arxiv_id": "2601.04706",
+        "ARXIVID": "2601.04706",
+        "COMMENT": "The paper does not match any specific criteria closely.",
         "RELEVANCE": 3,
         "NOVELTY": 5
     }
