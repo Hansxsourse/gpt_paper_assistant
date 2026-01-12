@@ -1,58 +1,79 @@
 {
-    "2601.05138": {
+    "2601.05810": {
         "authors": [
-            "Sixiao Zheng",
-            "Minghao Yin",
-            "Wenbo Hu",
-            "Xiaoyu Li",
-            "Ying Shan",
-            "Yanwei Fu"
+            "ChunTeng Chen",
+            "YiChen Hsu",
+            "YiWen Liu",
+            "WeiFang Sun",
+            "TsaiChing Ni",
+            "ChunYi Lee",
+            "Min Sun",
+            "YuanFu Yang"
         ],
-        "title": "VerseCrafter: Dynamic Realistic Video World Model with 4D Geometric Control",
-        "abstract": "arXiv:2601.05138v1 Announce Type: new  Abstract: Video world models aim to simulate dynamic, real-world environments, yet existing methods struggle to provide unified and precise control over camera and multi-object motion, as videos inherently operate dynamics in the projected 2D image plane. To bridge this gap, we introduce VerseCrafter, a 4D-aware video world model that enables explicit and coherent control over both camera and object dynamics within a unified 4D geometric world state. Our approach is centered on a novel 4D Geometric Control representation, which encodes the world state through a static background point cloud and per-object 3D Gaussian trajectories. This representation captures not only an object's path but also its probabilistic 3D occupancy over time, offering a flexible, category-agnostic alternative to rigid bounding boxes or parametric models. These 4D controls are rendered into conditioning signals for a pretrained video diffusion model, enabling the generation of high-fidelity, view-consistent videos that precisely adhere to the specified dynamics. Unfortunately, another major challenge lies in the scarcity of large-scale training data with explicit 4D annotations. We address this by developing an automatic data engine that extracts the required 4D controls from in-the-wild videos, allowing us to train our model on a massive and diverse dataset.",
-        "arxiv_id": "2601.05138",
-        "ARXIVID": "2601.05138",
-        "COMMENT": "The paper does not match any specific criteria closely.",
+        "title": "SceneFoundry: Generating Interactive Infinite 3D Worlds",
+        "abstract": "arXiv:2601.05810v1 Announce Type: new  Abstract: The ability to automatically generate large-scale, interactive, and physically realistic 3D environments is crucial for advancing robotic learning and embodied intelligence. However, existing generative approaches often fail to capture the functional complexity of real-world interiors, particularly those containing articulated objects with movable parts essential for manipulation and navigation. This paper presents SceneFoundry, a language-guided diffusion framework that generates apartment-scale 3D worlds with functionally articulated furniture and semantically diverse layouts for robotic training. From natural language prompts, an LLM module controls floor layout generation, while diffusion-based posterior sampling efficiently populates the scene with articulated assets from large-scale 3D repositories. To ensure physical usability, SceneFoundry employs differentiable guidance functions to regulate object quantity, prevent articulation collisions, and maintain sufficient walkable space for robotic navigation. Extensive experiments demonstrate that our framework generates structurally valid, semantically coherent, and functionally interactive environments across diverse scene types and conditions, enabling scalable embodied AI research.",
+        "arxiv_id": "2601.05810",
+        "ARXIVID": "2601.05810",
+        "COMMENT": "The paper does not match any specific criteria closely. It presents a framework for generating 3D worlds but does not involve joint generation and segmentation or a unified diffusion model for multiple tasks.",
         "RELEVANCE": 3,
         "NOVELTY": 6
     },
-    "2601.04339": {
+    "2601.05823": {
         "authors": [
-            "Jiahui Chen",
-            "Philippe Hansen-Estruch",
-            "Xiaochuang Han",
-            "Yushi Hu",
-            "Emily Dinan",
-            "Amita Kamath",
-            "Michal Drozdzal",
-            "Reyhane Askari-Hemmat",
-            "Luke Zettlemoyer",
-            "Marjan Ghazvininejad"
+            "John Page",
+            "Xuesong Niu",
+            "Kai Wu",
+            "Kun Gai"
         ],
-        "title": "Unified Text-Image Generation with Weakness-Targeted Post-Training",
-        "abstract": "arXiv:2601.04339v1 Announce Type: new  Abstract: Unified multimodal generation architectures that jointly produce text and images have recently emerged as a promising direction for text-to-image (T2I) synthesis. However, many existing systems rely on explicit modality switching, generating reasoning text before switching manually to image generation. This separate, sequential inference process limits cross-modal coupling and prohibits automatic multimodal generation. This work explores post-training to achieve fully unified text-image generation, where models autonomously transition from textual reasoning to visual synthesis within a single inference process. We examine the impact of joint text-image generation on T2I performance and the relative importance of each modality during post-training. We additionally explore different post-training data strategies, showing that a targeted dataset addressing specific limitations achieves superior results compared to broad image-caption corpora or benchmark-aligned data. Using offline, reward-weighted post-training with fully self-generated synthetic data, our approach enables improvements in multimodal image generation across four diverse T2I benchmarks, demonstrating the effectiveness of reward-weighting both modalities and strategically designed post-training data.",
-        "arxiv_id": "2601.04339",
-        "ARXIVID": "2601.04339",
-        "COMMENT": "The paper does not match any specific criteria closely.",
-        "RELEVANCE": 3,
-        "NOVELTY": 6
-    },
-    "2601.04706": {
-        "authors": [
-            "Yanbing Zeng",
-            "Jia Wang",
-            "Hanghang Ma",
-            "Junqiang Wu",
-            "Jie Zhu",
-            "Xiaoming Wei",
-            "Jie Hu"
-        ],
-        "title": "Forge-and-Quench: Enhancing Image Generation for Higher Fidelity in Unified Multimodal Models",
-        "abstract": "arXiv:2601.04706v1 Announce Type: new  Abstract: Integrating image generation and understanding into a single framework has become a pivotal goal in the multimodal domain. However, how understanding can effectively assist generation has not been fully explored. Unlike previous works that focus on leveraging reasoning abilities and world knowledge from understanding models, this paper introduces a novel perspective: leveraging understanding to enhance the fidelity and detail richness of generated images. To this end, we propose Forge-and-Quench, a new unified framework that puts this principle into practice. In the generation process of our framework, an MLLM first reasons over the entire conversational context, including text instructions, to produce an enhanced text instruction. This refined instruction is then mapped to a virtual visual representation, termed the Bridge Feature, via a novel Bridge Adapter. This feature acts as a crucial link, forging insights from the understanding model to quench and refine the generation process. It is subsequently injected into the T2I backbone as a visual guidance signal, alongside the enhanced text instruction that replaces the original input. To validate this paradigm, we conduct comprehensive studies on the design of the Bridge Feature and Bridge Adapter. Our framework demonstrates exceptional extensibility and flexibility, enabling efficient migration across different MLLM and T2I models with significant savings in training overhead, all without compromising the MLLM's inherent multimodal understanding capabilities. Experiments show that Forge-and-Quench significantly improves image fidelity and detail across multiple models, while also maintaining instruction-following accuracy and enhancing world knowledge application. Models and codes are available at https://github.com/YanbingZeng/Forge-and-Quench.",
-        "arxiv_id": "2601.04706",
-        "ARXIVID": "2601.04706",
-        "COMMENT": "The paper does not match any specific criteria closely.",
+        "title": "Boosting Latent Diffusion Models via Disentangled Representation Alignment",
+        "abstract": "arXiv:2601.05823v1 Announce Type: new  Abstract: Latent Diffusion Models (LDMs) generate high-quality images by operating in a compressed latent space, typically obtained through image tokenizers such as Variational Autoencoders (VAEs). In pursuit of a generation-friendly VAE, recent studies have explored leveraging Vision Foundation Models (VFMs) as representation alignment targets for VAEs, mirroring the approach commonly adopted for LDMs. Although this yields certain performance gains, using the same alignment target for both VAEs and LDMs overlooks their fundamentally different representational requirements. We advocate that while LDMs benefit from latents retaining high-level semantic concepts, VAEs should excel in semantic disentanglement, enabling encoding of attribute-level information in a structured way. To address this, we propose the Semantic disentangled VAE (Send-VAE), explicitly optimized for disentangled representation learning through aligning its latent space with the semantic hierarchy of pre-trained VFMs. Our approach employs a non-linear mapper network to transform VAE latents, aligning them with VFMs to bridge the gap between attribute-level disentanglement and high-level semantics, facilitating effective guidance for VAE learning. We evaluate semantic disentanglement via linear probing on attribute prediction tasks, showing strong correlation with improved generation performance. Finally, using Send-VAE, we train flow-based transformers SiTs; experiments show Send-VAE significantly speeds up training and achieves a state-of-the-art FID of 1.21 and 1.75 with and without classifier-free guidance on ImageNet 256x256.",
+        "arxiv_id": "2601.05823",
+        "ARXIVID": "2601.05823",
+        "COMMENT": "The paper does not match any specific criteria closely. It focuses on improving latent diffusion models with disentangled representation alignment but does not propose a unified framework for multiple tasks.",
         "RELEVANCE": 3,
         "NOVELTY": 5
+    },
+    "2601.05546": {
+        "authors": [
+            "Yanfeng Li",
+            "Yue Sun",
+            "Keren Fu",
+            "Sio-Kei Im",
+            "Xiaoming Liu",
+            "Guangtao Zhai",
+            "Xiaohong Liu",
+            "Tao Tan"
+        ],
+        "title": "MoGen: A Unified Collaborative Framework for Controllable Multi-Object Image Generation",
+        "abstract": "arXiv:2601.05546v1 Announce Type: new  Abstract: Existing multi-object image generation methods face difficulties in achieving precise alignment between localized image generation regions and their corresponding semantics based on language descriptions, frequently resulting in inconsistent object quantities and attribute aliasing. To mitigate this limitation, mainstream approaches typically rely on external control signals to explicitly constrain the spatial layout, local semantic and visual attributes of images. However, this strong dependency makes the input format rigid, rendering it incompatible with the heterogeneous resource conditions of users and diverse constraint requirements. To address these challenges, we propose MoGen, a user-friendly multi-object image generation method. First, we design a Regional Semantic Anchor (RSA) module that precisely anchors phrase units in language descriptions to their corresponding image regions during the generation process, enabling text-to-image generation that follows quantity specifications for multiple objects. Building upon this foundation, we further introduce an Adaptive Multi-modal Guidance (AMG) module, which adaptively parses and integrates various combinations of multi-source control signals to formulate corresponding structured intent. This intent subsequently guides selective constraints on scene layouts and object attributes, achieving dynamic fine-grained control. Experimental results demonstrate that MoGen significantly outperforms existing methods in generation quality, quantity consistency, and fine-grained control, while exhibiting superior accessibility and control flexibility. Code is available at: https://github.com/Tear-kitty/MoGen/tree/master.",
+        "arxiv_id": "2601.05546",
+        "ARXIVID": "2601.05546",
+        "COMMENT": "The paper does not match any specific criteria closely. It focuses on multi-object image generation with semantic alignment but does not mention joint generation and segmentation or a unified framework for multiple tasks.",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2601.05729": {
+        "authors": [
+            "Jin Wang",
+            "Jianxiang Lu",
+            "Guangzheng Xu",
+            "Comi Chen",
+            "Haoyu Yang",
+            "Linqing Wang",
+            "Peng Chen",
+            "Mingtao Chen",
+            "Zhichao Hu",
+            "Longhuang Wu",
+            "Shuai Shao",
+            "Qinglin Lu",
+            "Ping Luo"
+        ],
+        "title": "TAGRPO: Boosting GRPO on Image-to-Video Generation with Direct Trajectory Alignment",
+        "abstract": "arXiv:2601.05729v1 Announce Type: new  Abstract: Recent studies have demonstrated the efficacy of integrating Group Relative Policy Optimization (GRPO) into flow matching models, particularly for text-to-image and text-to-video generation. However, we find that directly applying these techniques to image-to-video (I2V) models often fails to yield consistent reward improvements. To address this limitation, we present TAGRPO, a robust post-training framework for I2V models inspired by contrastive learning. Our approach is grounded in the observation that rollout videos generated from identical initial noise provide superior guidance for optimization. Leveraging this insight, we propose a novel GRPO loss applied to intermediate latents, encouraging direct alignment with high-reward trajectories while maximizing distance from low-reward counterparts. Furthermore, we introduce a memory bank for rollout videos to enhance diversity and reduce computational overhead. Despite its simplicity, TAGRPO achieves significant improvements over DanceGRPO in I2V generation.",
+        "arxiv_id": "2601.05729",
+        "ARXIVID": "2601.05729",
+        "COMMENT": "The paper does not match any specific criteria closely. It discusses image-to-video generation improvements but does not involve joint generation and segmentation or a unified diffusion model for multiple tasks.",
+        "RELEVANCE": 3,
+        "NOVELTY": 4
     }
 }
