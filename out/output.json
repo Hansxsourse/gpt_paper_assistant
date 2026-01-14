@@ -1,19 +1,34 @@
 {
-    "2601.07287": {
+    "2601.08831": {
         "authors": [
-            "Yuanyang Yin",
-            "Yufan Deng",
-            "Shenghai Yuan",
-            "Kaipeng Zhang",
-            "Xiao Yang",
-            "Feng Zhao"
+            "Yang-Che Sun",
+            "Cheng Sun",
+            "Chin-Yang Lin",
+            "Fu-En Yang",
+            "Min-Hung Chen",
+            "Yen-Yu Lin",
+            "Yu-Lun Liu"
         ],
-        "title": "Focal Guidance: Unlocking Controllability from Semantic-Weak Layers in Video Diffusion Models",
-        "abstract": "arXiv:2601.07287v1 Announce Type: new  Abstract: The task of Image-to-Video (I2V) generation aims to synthesize a video from a reference image and a text prompt. This requires diffusion models to reconcile high-frequency visual constraints and low-frequency textual guidance during the denoising process. However, while existing I2V models prioritize visual consistency, how to effectively couple this dual guidance to ensure strong adherence to the text prompt remains underexplored. In this work, we observe that in Diffusion Transformer (DiT)-based I2V models, certain intermediate layers exhibit weak semantic responses (termed Semantic-Weak Layers), as indicated by a measurable drop in text-visual similarity. We attribute this to a phenomenon called Condition Isolation, where attention to visual features becomes partially detached from text guidance and overly relies on learned visual priors. To address this, we propose Focal Guidance (FG), which enhances the controllability from Semantic-Weak Layers. FG comprises two mechanisms: (1) Fine-grained Semantic Guidance (FSG) leverages CLIP to identify key regions in the reference frame and uses them as anchors to guide Semantic-Weak Layers. (2) Attention Cache transfers attention maps from semantically responsive layers to Semantic-Weak Layers, injecting explicit semantic signals and alleviating their over-reliance on the model's learned visual priors, thereby enhancing adherence to textual instructions. To further validate our approach and address the lack of evaluation in this direction, we introduce a benchmark for assessing instruction following in I2V models. On this benchmark, Focal Guidance proves its effectiveness and generalizability, raising the total score on Wan2.1-I2V to 0.7250 (+3.97\\%) and boosting the MMDiT-based HunyuanVideo-I2V to 0.5571 (+7.44\\%).",
-        "arxiv_id": "2601.07287",
-        "ARXIVID": "2601.07287",
-        "COMMENT": "2",
-        "RELEVANCE": 5,
+        "title": "3AM: Segment Anything with Geometric Consistency in Videos",
+        "abstract": "arXiv:2601.08831v1 Announce Type: new  Abstract: Video object segmentation methods like SAM2 achieve strong performance through memory-based architectures but struggle under large viewpoint changes due to reliance on appearance features. Traditional 3D instance segmentation methods address viewpoint consistency but require camera poses, depth maps, and expensive preprocessing. We introduce 3AM, a training-time enhancement that integrates 3D-aware features from MUSt3R into SAM2. Our lightweight Feature Merger fuses multi-level MUSt3R features that encode implicit geometric correspondence. Combined with SAM2's appearance features, the model achieves geometry-consistent recognition grounded in both spatial position and visual similarity. We propose a field-of-view aware sampling strategy ensuring frames observe spatially consistent object regions for reliable 3D correspondence learning. Critically, our method requires only RGB input at inference, with no camera poses or preprocessing. On challenging datasets with wide-baseline motion (ScanNet++, Replica), 3AM substantially outperforms SAM2 and extensions, achieving 90.6% IoU and 71.7% Positive IoU on ScanNet++'s Selected Subset, improving over state-of-the-art VOS methods by +15.9 and +30.4 points. Project page: https://jayisaking.github.io/3AM-Page/",
+        "arxiv_id": "2601.08831",
+        "ARXIVID": "2601.08831",
+        "COMMENT": "",
+        "RELEVANCE": 3,
         "NOVELTY": 6
+    },
+    "2601.08022": {
+        "authors": [
+            "Samet Hicsonmez",
+            "Abd El Rahman Shabayek",
+            "Djamila Aouada"
+        ],
+        "title": "Training Free Zero-Shot Visual Anomaly Localization via Diffusion Inversion",
+        "abstract": "arXiv:2601.08022v1 Announce Type: new  Abstract: Zero-Shot image Anomaly Detection (ZSAD) aims to detect and localise anomalies without access to any normal training samples of the target data. While recent ZSAD approaches leverage additional modalities such as language to generate fine-grained prompts for localisation, vision-only methods remain limited to image-level classification, lacking spatial precision. In this work, we introduce a simple yet effective training-free vision-only ZSAD framework that circumvents the need for fine-grained prompts by leveraging the inversion of a pretrained Denoising Diffusion Implicit Model (DDIM). Specifically, given an input image and a generic text description (e.g., \"an image of an [object class]\"), we invert the image to obtain latent representations and initiate the denoising process from a fixed intermediate timestep to reconstruct the image. Since the underlying diffusion model is trained solely on normal data, this process yields a normal-looking reconstruction. The discrepancy between the input image and the reconstructed one highlights potential anomalies. Our method achieves state-of-the-art performance on VISA dataset, demonstrating strong localisation capabilities without auxiliary modalities and facilitating a shift away from prompt dependence for zero-shot anomaly detection research. Code is available at https://github.com/giddyyupp/DIVAD.",
+        "arxiv_id": "2601.08022",
+        "ARXIVID": "2601.08022",
+        "COMMENT": "",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
     }
 }
