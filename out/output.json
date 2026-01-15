@@ -1,33 +1,39 @@
 {
-    "2601.08831": {
+    "2601.08881": {
         "authors": [
-            "Yang-Che Sun",
-            "Cheng Sun",
-            "Chin-Yang Lin",
-            "Fu-En Yang",
-            "Min-Hung Chen",
-            "Yen-Yu Lin",
-            "Yu-Lun Liu"
+            "Yu Xu",
+            "Hongbin Yan",
+            "Juan Cao",
+            "Yiji Cheng",
+            "Tiankai Hang",
+            "Runze He",
+            "Zijin Yin",
+            "Shiyi Zhang",
+            "Yuxin Zhang",
+            "Jintao Li",
+            "Chunyu Wang",
+            "Qinglin Lu",
+            "Tong-Yee Lee",
+            "Fan Tang"
         ],
-        "title": "3AM: Segment Anything with Geometric Consistency in Videos",
-        "abstract": "arXiv:2601.08831v1 Announce Type: new  Abstract: Video object segmentation methods like SAM2 achieve strong performance through memory-based architectures but struggle under large viewpoint changes due to reliance on appearance features. Traditional 3D instance segmentation methods address viewpoint consistency but require camera poses, depth maps, and expensive preprocessing. We introduce 3AM, a training-time enhancement that integrates 3D-aware features from MUSt3R into SAM2. Our lightweight Feature Merger fuses multi-level MUSt3R features that encode implicit geometric correspondence. Combined with SAM2's appearance features, the model achieves geometry-consistent recognition grounded in both spatial position and visual similarity. We propose a field-of-view aware sampling strategy ensuring frames observe spatially consistent object regions for reliable 3D correspondence learning. Critically, our method requires only RGB input at inference, with no camera poses or preprocessing. On challenging datasets with wide-baseline motion (ScanNet++, Replica), 3AM substantially outperforms SAM2 and extensions, achieving 90.6% IoU and 71.7% Positive IoU on ScanNet++'s Selected Subset, improving over state-of-the-art VOS methods by +15.9 and +30.4 points. Project page: https://jayisaking.github.io/3AM-Page/",
-        "arxiv_id": "2601.08831",
-        "ARXIVID": "2601.08831",
-        "COMMENT": "",
-        "RELEVANCE": 3,
+        "title": "TAG-MoE: Task-Aware Gating for Unified Generative Mixture-of-Experts",
+        "abstract": "arXiv:2601.08881v1 Announce Type: new  Abstract: Unified image generation and editing models suffer from severe task interference in dense diffusion transformers architectures, where a shared parameter space must compromise between conflicting objectives (e.g., local editing v.s. subject-driven generation). While the sparse Mixture-of-Experts (MoE) paradigm is a promising solution, its gating networks remain task-agnostic, operating based on local features, unaware of global task intent. This task-agnostic nature prevents meaningful specialization and fails to resolve the underlying task interference. In this paper, we propose a novel framework to inject semantic intent into MoE routing. We introduce a Hierarchical Task Semantic Annotation scheme to create structured task descriptors (e.g., scope, type, preservation). We then design Predictive Alignment Regularization to align internal routing decisions with the task's high-level semantics. This regularization evolves the gating network from a task-agnostic executor to a dispatch center. Our model effectively mitigates task interference, outperforming dense baselines in fidelity and quality, and our analysis shows that experts naturally develop clear and semantically correlated specializations.",
+        "arxiv_id": "2601.08881",
+        "ARXIVID": "2601.08881",
+        "COMMENT": "Matches criterion 2: Unified Diffusion Models for multi-task vision tasks.",
+        "RELEVANCE": 5,
         "NOVELTY": 6
     },
-    "2601.08022": {
+    "2601.09213": {
         "authors": [
-            "Samet Hicsonmez",
-            "Abd El Rahman Shabayek",
-            "Djamila Aouada"
+            "Jialu Li",
+            "Taiyan Zhou"
         ],
-        "title": "Training Free Zero-Shot Visual Anomaly Localization via Diffusion Inversion",
-        "abstract": "arXiv:2601.08022v1 Announce Type: new  Abstract: Zero-Shot image Anomaly Detection (ZSAD) aims to detect and localise anomalies without access to any normal training samples of the target data. While recent ZSAD approaches leverage additional modalities such as language to generate fine-grained prompts for localisation, vision-only methods remain limited to image-level classification, lacking spatial precision. In this work, we introduce a simple yet effective training-free vision-only ZSAD framework that circumvents the need for fine-grained prompts by leveraging the inversion of a pretrained Denoising Diffusion Implicit Model (DDIM). Specifically, given an input image and a generic text description (e.g., \"an image of an [object class]\"), we invert the image to obtain latent representations and initiate the denoising process from a fixed intermediate timestep to reconstruct the image. Since the underlying diffusion model is trained solely on normal data, this process yields a normal-looking reconstruction. The discrepancy between the input image and the reconstructed one highlights potential anomalies. Our method achieves state-of-the-art performance on VISA dataset, demonstrating strong localisation capabilities without auxiliary modalities and facilitating a shift away from prompt dependence for zero-shot anomaly detection research. Code is available at https://github.com/giddyyupp/DIVAD.",
-        "arxiv_id": "2601.08022",
-        "ARXIVID": "2601.08022",
-        "COMMENT": "",
+        "title": "SpikeVAEDiff: Neural Spike-based Natural Visual Scene Reconstruction via VD-VAE and Versatile Diffusion",
+        "abstract": "arXiv:2601.09213v1 Announce Type: new  Abstract: Reconstructing natural visual scenes from neural activity is a key challenge in neuroscience and computer vision. We present SpikeVAEDiff, a novel two-stage framework that combines a Very Deep Variational Autoencoder (VDVAE) and the Versatile Diffusion model to generate high-resolution and semantically meaningful image reconstructions from neural spike data. In the first stage, VDVAE produces low-resolution preliminary reconstructions by mapping neural spike signals to latent representations. In the second stage, regression models map neural spike signals to CLIP-Vision and CLIP-Text features, enabling Versatile Diffusion to refine the images via image-to-image generation.   We evaluate our approach on the Allen Visual Coding-Neuropixels dataset and analyze different brain regions. Our results show that the VISI region exhibits the most prominent activation and plays a key role in reconstruction quality. We present both successful and unsuccessful reconstruction examples, reflecting the challenges of decoding neural activity. Compared with fMRI-based approaches, spike data provides superior temporal and spatial resolution. We further validate the effectiveness of the VDVAE model and conduct ablation studies demonstrating that data from specific brain regions significantly enhances reconstruction performance.",
+        "arxiv_id": "2601.09213",
+        "ARXIVID": "2601.09213",
+        "COMMENT": "Does not match any specific criteria closely.",
         "RELEVANCE": 3,
         "NOVELTY": 5
     }
