@@ -1,47 +1,72 @@
 {
-    "2601.11522": {
+    "2601.12080": {
         "authors": [
-            "Ruiheng Zhang",
-            "Jingfeng Yao",
-            "Huangxuan Zhao",
-            "Hao Yan",
-            "Xiao He",
-            "Lei Chen",
-            "Zhou Wei",
-            "Yong Luo",
-            "Zengmao Wang",
-            "Lefei Zhang",
-            "Dacheng Tao",
-            "Bo Du"
+            "Haipeng Zhou",
+            "Zhaohu Xing",
+            "Hongqiu Wang",
+            "Jun Ma",
+            "Ping Li",
+            "Lei Zhu"
         ],
-        "title": "UniX: Unifying Autoregression and Diffusion for Chest X-Ray Understanding and Generation",
-        "abstract": "arXiv:2601.11522v1 Announce Type: new  Abstract: Despite recent progress, medical foundation models still struggle to unify visual understanding and generation, as these tasks have inherently conflicting goals: semantic abstraction versus pixel-level reconstruction. Existing approaches, typically based on parameter-shared autoregressive architectures, frequently lead to compromised performance in one or both tasks. To address this, we present UniX, a next-generation unified medical foundation model for chest X-ray understanding and generation. UniX decouples the two tasks into an autoregressive branch for understanding and a diffusion branch for high-fidelity generation. Crucially, a cross-modal self-attention mechanism is introduced to dynamically guide the generation process with understanding features. Coupled with a rigorous data cleaning pipeline and a multi-stage training strategy, this architecture enables synergistic collaboration between tasks while leveraging the strengths of diffusion models for superior generation. On two representative benchmarks, UniX achieves a 46.1% improvement in understanding performance (Micro-F1) and a 24.2% gain in generation quality (FD-RadDino), using only a quarter of the parameters of LLM-CXR. By achieving performance on par with task-specific models, our work establishes a scalable paradigm for synergistic medical image understanding and generation. Codes and models are available at https://github.com/ZrH42/UniX.",
-        "arxiv_id": "2601.11522",
-        "ARXIVID": "2601.11522",
-        "COMMENT": "Matches criterion 2: Unified Diffusion Models for multiple vision tasks",
+        "title": "Toward Real-World High-Precision Image Matting and Segmentation",
+        "abstract": "arXiv:2601.12080v1 Announce Type: new  Abstract: High-precision scene parsing tasks, including image matting and dichotomous segmentation, aim to accurately predict masks with extremely fine details (such as hair). Most existing methods focus on salient, single foreground objects. While interactive methods allow for target adjustment, their class-agnostic design restricts generalization across different categories. Furthermore, the scarcity of high-quality annotation has led to a reliance on inharmonious synthetic data, resulting in poor generalization to real-world scenarios. To this end, we propose a Foreground Consistent Learning model, dubbed as FCLM, to address the aforementioned issues. Specifically, we first introduce a Depth-Aware Distillation strategy where we transfer the depth-related knowledge for better foreground representation. Considering the data dilemma, we term the processing of synthetic data as domain adaptation problem where we propose a domain-invariant learning strategy to focus on foreground learning. To support interactive prediction, we contribute an Object-Oriented Decoder that can receive both visual and language prompts to predict the referring target. Experimental results show that our method quantitatively and qualitatively outperforms SOTA methods.",
+        "arxiv_id": "2601.12080",
+        "ARXIVID": "2601.12080",
+        "COMMENT": "The paper addresses image matting and segmentation, focusing on high-precision masks and proposing a novel model, which matches the image matting criterion.",
         "RELEVANCE": 5,
-        "NOVELTY": 7
+        "NOVELTY": 5
     },
-    "2601.11194": {
+    "2601.14253": {
         "authors": [
-            "Boyi Pang",
-            "Savva Ignatyev",
-            "Vladimir Ippolitov",
-            "Ramil Khafizov",
-            "Yurii Melnik",
-            "Oleg Voynov",
-            "Maksim Nakhodnov",
-            "Aibek Alanov",
-            "Xiaopeng Fan",
-            "Peter Wonka",
-            "Evgeny Burnaev"
+            "Hongyuan Chen",
+            "Xingyu Chen",
+            "Youjia Zhang",
+            "Zexiang Xu",
+            "Anpei Chen"
         ],
-        "title": "ATATA: One Algorithm to Align Them All",
-        "abstract": "arXiv:2601.11194v1 Announce Type: new  Abstract: We suggest a new multi-modal algorithm for joint inference of paired structurally aligned samples with Rectified Flow models. While some existing methods propose a codependent generation process, they do not view the problem of joint generation from a structural alignment perspective. Recent work uses Score Distillation Sampling to generate aligned 3D models, but SDS is known to be time-consuming, prone to mode collapse, and often provides cartoonish results. By contrast, our suggested approach relies on the joint transport of a segment in the sample space, yielding faster computation at inference time. Our approach can be built on top of an arbitrary Rectified Flow model operating on the structured latent space. We show the applicability of our method to the domains of image, video, and 3D shape generation using state-of-the-art baselines and evaluate it against both editing-based and joint inference-based competing approaches. We demonstrate a high degree of structural alignment for the sample pairs obtained with our method and a high visual quality of the samples. Our method improves the state-of-the-art for image and video generation pipelines. For 3D generation, it is able to show comparable quality while working orders of magnitude faster.",
-        "arxiv_id": "2601.11194",
-        "ARXIVID": "2601.11194",
-        "COMMENT": "Does not match any specific criteria",
+        "title": "Motion 3-to-4: 3D Motion Reconstruction for 4D Synthesis",
+        "abstract": "arXiv:2601.14253v1 Announce Type: new  Abstract: We present Motion 3-to-4, a feed-forward framework for synthesising high-quality 4D dynamic objects from a single monocular video and an optional 3D reference mesh. While recent advances have significantly improved 2D, video, and 3D content generation, 4D synthesis remains difficult due to limited training data and the inherent ambiguity of recovering geometry and motion from a monocular viewpoint. Motion 3-to-4 addresses these challenges by decomposing 4D synthesis into static 3D shape generation and motion reconstruction. Using a canonical reference mesh, our model learns a compact motion latent representation and predicts per-frame vertex trajectories to recover complete, temporally coherent geometry. A scalable frame-wise transformer further enables robustness to varying sequence lengths. Evaluations on both standard benchmarks and a new dataset with accurate ground-truth geometry show that Motion 3-to-4 delivers superior fidelity and spatial consistency compared to prior work. Project page is available at https://motion3-to-4.github.io/.",
+        "arxiv_id": "2601.14253",
+        "ARXIVID": "2601.14253",
+        "COMMENT": "The paper focuses on 4D synthesis from monocular video, which does not match any specific criteria but is related to generative modeling.",
         "RELEVANCE": 3,
         "NOVELTY": 6
+    },
+    "2601.12761": {
+        "authors": [
+            "Tianqi Zhang",
+            "Ziyi Wang",
+            "Wenzhao Zheng",
+            "Weiliang Chen",
+            "Yuanhui Huang",
+            "Zhengyang Huang",
+            "Jie Zhou",
+            "Jiwen Lu"
+        ],
+        "title": "Moaw: Unleashing Motion Awareness for Video Diffusion Models",
+        "abstract": "arXiv:2601.12761v1 Announce Type: new  Abstract: Video diffusion models, trained on large-scale datasets, naturally capture correspondences of shared features across frames. Recent works have exploited this property for tasks such as optical flow prediction and tracking in a zero-shot setting. Motivated by these findings, we investigate whether supervised training can more fully harness the tracking capability of video diffusion models. To this end, we propose Moaw, a framework that unleashes motion awareness for video diffusion models and leverages it to facilitate motion transfer. Specifically, we train a diffusion model for motion perception, shifting its modality from image-to-video generation to video-to-dense-tracking. We then construct a motion-labeled dataset to identify features that encode the strongest motion information, and inject them into a structurally identical video generation model. Owing to the homogeneity between the two networks, these features can be naturally adapted in a zero-shot manner, enabling motion transfer without additional adapters. Our work provides a new paradigm for bridging generative modeling and motion understanding, paving the way for more unified and controllable video learning frameworks.",
+        "arxiv_id": "2601.12761",
+        "ARXIVID": "2601.12761",
+        "COMMENT": "The paper proposes a framework for video diffusion models that bridges generative modeling and motion understanding, which aligns with the interest in unified frameworks.",
+        "RELEVANCE": 3,
+        "NOVELTY": 6
+    },
+    "2601.13837": {
+        "authors": [
+            "Xinya Ji",
+            "Sebastian Weiss",
+            "Manuel Kansy",
+            "Jacek Naruniec",
+            "Xun Cao",
+            "Barbara Solenthaler",
+            "Derek Bradley"
+        ],
+        "title": "FastGHA: Generalized Few-Shot 3D Gaussian Head Avatars with Real-Time Animation",
+        "abstract": "arXiv:2601.13837v1 Announce Type: new  Abstract: Despite recent progress in 3D Gaussian-based head avatar modeling, efficiently generating high fidelity avatars remains a challenge. Current methods typically rely on extensive multi-view capture setups or monocular videos with per-identity optimization during inference, limiting their scalability and ease of use on unseen subjects. To overcome these efficiency drawbacks, we propose \\OURS, a feed-forward method to generate high-quality Gaussian head avatars from only a few input images while supporting real-time animation. Our approach directly learns a per-pixel Gaussian representation from the input images, and aggregates multi-view information using a transformer-based encoder that fuses image features from both DINOv3 and Stable Diffusion VAE. For real-time animation, we extend the explicit Gaussian representations with per-Gaussian features and introduce a lightweight MLP-based dynamic network to predict 3D Gaussian deformations from expression codes. Furthermore, to enhance geometric smoothness of the 3D head, we employ point maps from a pre-trained large reconstruction model as geometry supervision. Experiments show that our approach significantly outperforms existing methods in both rendering quality and inference efficiency, while supporting real-time dynamic avatar animation.",
+        "arxiv_id": "2601.13837",
+        "ARXIVID": "2601.13837",
+        "COMMENT": "The paper discusses generating 3D Gaussian head avatars, which is related to generative modeling but does not match any specific criteria.",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
     }
 }
