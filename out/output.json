@@ -1,72 +1,21 @@
 {
-    "2601.12080": {
+    "2601.15250": {
         "authors": [
-            "Haipeng Zhou",
-            "Zhaohu Xing",
-            "Hongqiu Wang",
-            "Jun Ma",
-            "Ping Li",
-            "Lei Zhu"
+            "Zichen Xi",
+            "Hao-Xiang Chen",
+            "Nan Xue",
+            "Hongyu Yan",
+            "Qi-Yuan Feng",
+            "Levent Burak Kara",
+            "Joaquim Jorge",
+            "Qun-Ce Xu"
         ],
-        "title": "Toward Real-World High-Precision Image Matting and Segmentation",
-        "abstract": "arXiv:2601.12080v1 Announce Type: new  Abstract: High-precision scene parsing tasks, including image matting and dichotomous segmentation, aim to accurately predict masks with extremely fine details (such as hair). Most existing methods focus on salient, single foreground objects. While interactive methods allow for target adjustment, their class-agnostic design restricts generalization across different categories. Furthermore, the scarcity of high-quality annotation has led to a reliance on inharmonious synthetic data, resulting in poor generalization to real-world scenarios. To this end, we propose a Foreground Consistent Learning model, dubbed as FCLM, to address the aforementioned issues. Specifically, we first introduce a Depth-Aware Distillation strategy where we transfer the depth-related knowledge for better foreground representation. Considering the data dilemma, we term the processing of synthetic data as domain adaptation problem where we propose a domain-invariant learning strategy to focus on foreground learning. To support interactive prediction, we contribute an Object-Oriented Decoder that can receive both visual and language prompts to predict the referring target. Experimental results show that our method quantitatively and qualitatively outperforms SOTA methods.",
-        "arxiv_id": "2601.12080",
-        "ARXIVID": "2601.12080",
-        "COMMENT": "The paper addresses image matting and segmentation, focusing on high-precision masks and proposing a novel model, which matches the image matting criterion.",
+        "title": "FlowSSC: Universal Generative Monocular Semantic Scene Completion via One-Step Latent Diffusion",
+        "abstract": "arXiv:2601.15250v1 Announce Type: new  Abstract: Semantic Scene Completion (SSC) from monocular RGB images is a fundamental yet challenging task due to the inherent ambiguity of inferring occluded 3D geometry from a single view. While feed-forward methods have made progress, they often struggle to generate plausible details in occluded regions and preserve the fundamental spatial relationships of objects. Such accurate generative reasoning capability for the entire 3D space is critical in real-world applications. In this paper, we present FlowSSC, the first generative framework applied directly to monocular semantic scene completion. FlowSSC treats the SSC task as a conditional generation problem and can seamlessly integrate with existing feed-forward SSC methods to significantly boost their performance. To achieve real-time inference without compromising quality, we introduce Shortcut Flow-matching that operates in a compact triplane latent space. Unlike standard diffusion models that require hundreds of steps, our method utilizes a shortcut mechanism to achieve high-fidelity generation in a single step, enabling practical deployment in autonomous systems. Extensive experiments on SemanticKITTI demonstrate that FlowSSC achieves state-of-the-art performance, significantly outperforming existing baselines.",
+        "arxiv_id": "2601.15250",
+        "ARXIVID": "2601.15250",
+        "COMMENT": "Matches criterion 2 closely as it introduces a diffusion model for semantic scene completion, a task involving both generation and segmentation.",
         "RELEVANCE": 5,
-        "NOVELTY": 5
-    },
-    "2601.14253": {
-        "authors": [
-            "Hongyuan Chen",
-            "Xingyu Chen",
-            "Youjia Zhang",
-            "Zexiang Xu",
-            "Anpei Chen"
-        ],
-        "title": "Motion 3-to-4: 3D Motion Reconstruction for 4D Synthesis",
-        "abstract": "arXiv:2601.14253v1 Announce Type: new  Abstract: We present Motion 3-to-4, a feed-forward framework for synthesising high-quality 4D dynamic objects from a single monocular video and an optional 3D reference mesh. While recent advances have significantly improved 2D, video, and 3D content generation, 4D synthesis remains difficult due to limited training data and the inherent ambiguity of recovering geometry and motion from a monocular viewpoint. Motion 3-to-4 addresses these challenges by decomposing 4D synthesis into static 3D shape generation and motion reconstruction. Using a canonical reference mesh, our model learns a compact motion latent representation and predicts per-frame vertex trajectories to recover complete, temporally coherent geometry. A scalable frame-wise transformer further enables robustness to varying sequence lengths. Evaluations on both standard benchmarks and a new dataset with accurate ground-truth geometry show that Motion 3-to-4 delivers superior fidelity and spatial consistency compared to prior work. Project page is available at https://motion3-to-4.github.io/.",
-        "arxiv_id": "2601.14253",
-        "ARXIVID": "2601.14253",
-        "COMMENT": "The paper focuses on 4D synthesis from monocular video, which does not match any specific criteria but is related to generative modeling.",
-        "RELEVANCE": 3,
-        "NOVELTY": 6
-    },
-    "2601.12761": {
-        "authors": [
-            "Tianqi Zhang",
-            "Ziyi Wang",
-            "Wenzhao Zheng",
-            "Weiliang Chen",
-            "Yuanhui Huang",
-            "Zhengyang Huang",
-            "Jie Zhou",
-            "Jiwen Lu"
-        ],
-        "title": "Moaw: Unleashing Motion Awareness for Video Diffusion Models",
-        "abstract": "arXiv:2601.12761v1 Announce Type: new  Abstract: Video diffusion models, trained on large-scale datasets, naturally capture correspondences of shared features across frames. Recent works have exploited this property for tasks such as optical flow prediction and tracking in a zero-shot setting. Motivated by these findings, we investigate whether supervised training can more fully harness the tracking capability of video diffusion models. To this end, we propose Moaw, a framework that unleashes motion awareness for video diffusion models and leverages it to facilitate motion transfer. Specifically, we train a diffusion model for motion perception, shifting its modality from image-to-video generation to video-to-dense-tracking. We then construct a motion-labeled dataset to identify features that encode the strongest motion information, and inject them into a structurally identical video generation model. Owing to the homogeneity between the two networks, these features can be naturally adapted in a zero-shot manner, enabling motion transfer without additional adapters. Our work provides a new paradigm for bridging generative modeling and motion understanding, paving the way for more unified and controllable video learning frameworks.",
-        "arxiv_id": "2601.12761",
-        "ARXIVID": "2601.12761",
-        "COMMENT": "The paper proposes a framework for video diffusion models that bridges generative modeling and motion understanding, which aligns with the interest in unified frameworks.",
-        "RELEVANCE": 3,
-        "NOVELTY": 6
-    },
-    "2601.13837": {
-        "authors": [
-            "Xinya Ji",
-            "Sebastian Weiss",
-            "Manuel Kansy",
-            "Jacek Naruniec",
-            "Xun Cao",
-            "Barbara Solenthaler",
-            "Derek Bradley"
-        ],
-        "title": "FastGHA: Generalized Few-Shot 3D Gaussian Head Avatars with Real-Time Animation",
-        "abstract": "arXiv:2601.13837v1 Announce Type: new  Abstract: Despite recent progress in 3D Gaussian-based head avatar modeling, efficiently generating high fidelity avatars remains a challenge. Current methods typically rely on extensive multi-view capture setups or monocular videos with per-identity optimization during inference, limiting their scalability and ease of use on unseen subjects. To overcome these efficiency drawbacks, we propose \\OURS, a feed-forward method to generate high-quality Gaussian head avatars from only a few input images while supporting real-time animation. Our approach directly learns a per-pixel Gaussian representation from the input images, and aggregates multi-view information using a transformer-based encoder that fuses image features from both DINOv3 and Stable Diffusion VAE. For real-time animation, we extend the explicit Gaussian representations with per-Gaussian features and introduce a lightweight MLP-based dynamic network to predict 3D Gaussian deformations from expression codes. Furthermore, to enhance geometric smoothness of the 3D head, we employ point maps from a pre-trained large reconstruction model as geometry supervision. Experiments show that our approach significantly outperforms existing methods in both rendering quality and inference efficiency, while supporting real-time dynamic avatar animation.",
-        "arxiv_id": "2601.13837",
-        "ARXIVID": "2601.13837",
-        "COMMENT": "The paper discusses generating 3D Gaussian head avatars, which is related to generative modeling but does not match any specific criteria.",
-        "RELEVANCE": 3,
-        "NOVELTY": 5
+        "NOVELTY": 7
     }
 }
