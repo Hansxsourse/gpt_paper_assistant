@@ -1,21 +1,116 @@
 {
-    "2601.15250": {
+    "2601.16060": {
         "authors": [
-            "Zichen Xi",
-            "Hao-Xiang Chen",
-            "Nan Xue",
-            "Hongyu Yan",
-            "Qi-Yuan Feng",
-            "Levent Burak Kara",
-            "Joaquim Jorge",
-            "Qun-Ce Xu"
+            "Yuan Lin",
+            "Murong Xu",
+            "Marc H\\\"olle",
+            "Chinmay Prabhakar",
+            "Andreas Maier",
+            "Vasileios Belagiannis",
+            "Bjoern Menze",
+            "Suprosanna Shit"
         ],
-        "title": "FlowSSC: Universal Generative Monocular Semantic Scene Completion via One-Step Latent Diffusion",
-        "abstract": "arXiv:2601.15250v1 Announce Type: new  Abstract: Semantic Scene Completion (SSC) from monocular RGB images is a fundamental yet challenging task due to the inherent ambiguity of inferring occluded 3D geometry from a single view. While feed-forward methods have made progress, they often struggle to generate plausible details in occluded regions and preserve the fundamental spatial relationships of objects. Such accurate generative reasoning capability for the entire 3D space is critical in real-world applications. In this paper, we present FlowSSC, the first generative framework applied directly to monocular semantic scene completion. FlowSSC treats the SSC task as a conditional generation problem and can seamlessly integrate with existing feed-forward SSC methods to significantly boost their performance. To achieve real-time inference without compromising quality, we introduce Shortcut Flow-matching that operates in a compact triplane latent space. Unlike standard diffusion models that require hundreds of steps, our method utilizes a shortcut mechanism to achieve high-fidelity generation in a single step, enabling practical deployment in autonomous systems. Extensive experiments on SemanticKITTI demonstrate that FlowSSC achieves state-of-the-art performance, significantly outperforming existing baselines.",
-        "arxiv_id": "2601.15250",
-        "ARXIVID": "2601.15250",
-        "COMMENT": "Matches criterion 2 closely as it introduces a diffusion model for semantic scene completion, a task involving both generation and segmentation.",
+        "title": "ProGiDiff: Prompt-Guided Diffusion-Based Medical Image Segmentation",
+        "abstract": "arXiv:2601.16060v1 Announce Type: new  Abstract: Widely adopted medical image segmentation methods, although efficient, are primarily deterministic and remain poorly amenable to natural language prompts. Thus, they lack the capability to estimate multiple proposals, human interaction, and cross-modality adaptation. Recently, text-to-image diffusion models have shown potential to bridge the gap. However, training them from scratch requires a large dataset-a limitation for medical image segmentation. Furthermore, they are often limited to binary segmentation and cannot be conditioned on a natural language prompt. To this end, we propose a novel framework called ProGiDiff that leverages existing image generation models for medical image segmentation purposes. Specifically, we propose a ControlNet-style conditioning mechanism with a custom encoder, suitable for image conditioning, to steer a pre-trained diffusion model to output segmentation masks. It naturally extends to a multi-class setting simply by prompting the target organ. Our experiment on organ segmentation from CT images demonstrates strong performance compared to previous methods and could greatly benefit from an expert-in-the-loop setting to leverage multiple proposals. Importantly, we demonstrate that the learned conditioning mechanism can be easily transferred through low-rank, few-shot adaptation to segment MR images.",
+        "arxiv_id": "2601.16060",
+        "ARXIVID": "2601.16060",
+        "COMMENT": "The paper proposes a novel framework called ProGiDiff that leverages existing image generation models for medical image segmentation purposes, which aligns with criterion 2.",
         "RELEVANCE": 5,
-        "NOVELTY": 7
+        "NOVELTY": 6
+    },
+    "2601.16208": {
+        "authors": [
+            "Shengbang Tong",
+            "Boyang Zheng",
+            "Ziteng Wang",
+            "Bingda Tang",
+            "Nanye Ma",
+            "Ellis Brown",
+            "Jihan Yang",
+            "Rob Fergus",
+            "Yann LeCun",
+            "Saining Xie"
+        ],
+        "title": "Scaling Text-to-Image Diffusion Transformers with Representation Autoencoders",
+        "abstract": "arXiv:2601.16208v1 Announce Type: new  Abstract: Representation Autoencoders (RAEs) have shown distinct advantages in diffusion modeling on ImageNet by training in high-dimensional semantic latent spaces. In this work, we investigate whether this framework can scale to large-scale, freeform text-to-image (T2I) generation. We first scale RAE decoders on the frozen representation encoder (SigLIP-2) beyond ImageNet by training on web, synthetic, and text-rendering data, finding that while scale improves general fidelity, targeted data composition is essential for specific domains like text. We then rigorously stress-test the RAE design choices originally proposed for ImageNet. Our analysis reveals that scaling simplifies the framework: while dimension-dependent noise scheduling remains critical, architectural complexities such as wide diffusion heads and noise-augmented decoding offer negligible benefits at scale Building on this simplified framework, we conduct a controlled comparison of RAE against the state-of-the-art FLUX VAE across diffusion transformer scales from 0.5B to 9.8B parameters. RAEs consistently outperform VAEs during pretraining across all model scales. Further, during finetuning on high-quality datasets, VAE-based models catastrophically overfit after 64 epochs, while RAE models remain stable through 256 epochs and achieve consistently better performance. Across all experiments, RAE-based diffusion models demonstrate faster convergence and better generation quality, establishing RAEs as a simpler and stronger foundation than VAEs for large-scale T2I generation. Additionally, because both visual understanding and generation can operate in a shared representation space, the multimodal model can directly reason over generated latents, opening new possibilities for unified models.",
+        "arxiv_id": "2601.16208",
+        "ARXIVID": "2601.16208",
+        "COMMENT": "The paper discusses scaling text-to-image diffusion transformers with representation autoencoders, which does not match any specific criteria.",
+        "RELEVANCE": 3,
+        "NOVELTY": 6
+    },
+    "2601.15643": {
+        "authors": [
+            "Bo Yuan",
+            "Danpei Zhao",
+            "Wentao Li",
+            "Tian Li",
+            "Zhiguo Jiang"
+        ],
+        "title": "Evolving Without Ending: Unifying Multimodal Incremental Learning for Continual Panoptic Perception",
+        "abstract": "arXiv:2601.15643v1 Announce Type: new  Abstract: Continual learning (CL) is a great endeavour in developing intelligent perception AI systems. However, the pioneer research has predominantly focus on single-task CL, which restricts the potential in multi-task and multimodal scenarios. Beyond the well-known issue of catastrophic forgetting, the multi-task CL also brings semantic obfuscation across multimodal alignment, leading to severe model degradation during incremental training steps. In this paper, we extend CL to continual panoptic perception (CPP), integrating multimodal and multi-task CL to enhance comprehensive image perception through pixel-level, instance-level, and image-level joint interpretation. We formalize the CL task in multimodal scenarios and propose an end-to-end continual panoptic perception model. Concretely, CPP model features a collaborative cross-modal encoder (CCE) for multimodal embedding. We also propose a malleable knowledge inheritance module via contrastive feature distillation and instance distillation, addressing catastrophic forgetting from task-interactive boosting manner. Furthermore, we propose a cross-modal consistency constraint and develop CPP+, ensuring multimodal semantic alignment for model updating under multi-task incremental scenarios. Additionally, our proposed model incorporates an asymmetric pseudo-labeling manner, enabling model evolving without exemplar replay. Extensive experiments on multimodal datasets and diverse CL tasks demonstrate the superiority of the proposed model, particularly in fine-grained CL tasks.",
+        "arxiv_id": "2601.15643",
+        "ARXIVID": "2601.15643",
+        "COMMENT": "The paper discusses a continual panoptic perception model integrating multimodal and multi-task learning, which does not match any specific criteria.",
+        "RELEVANCE": 3,
+        "NOVELTY": 6
+    },
+    "2601.15772": {
+        "authors": [
+            "Yuhan Chen",
+            "Wenxuan Yu",
+            "Guofa Li",
+            "Yijun Xu",
+            "Ying Fang",
+            "Yicui Shi",
+            "Long Cao",
+            "Wenbo Chu",
+            "Keqiang Li"
+        ],
+        "title": "LL-GaussianImage: Efficient Image Representation for Zero-shot Low-Light Enhancement with 2D Gaussian Splatting",
+        "abstract": "arXiv:2601.15772v1 Announce Type: new  Abstract: 2D Gaussian Splatting (2DGS) is an emerging explicit scene representation method with significant potential for image compression due to high fidelity and high compression ratios. However, existing low-light enhancement algorithms operate predominantly within the pixel domain. Processing 2DGS-compressed images necessitates a cumbersome decompression-enhancement-recompression pipeline, which compromises efficiency and introduces secondary degradation. To address these limitations, we propose LL-GaussianImage, the first zero-shot unsupervised framework designed for low-light enhancement directly within the 2DGS compressed representation domain. Three primary advantages are offered by this framework. First, a semantic-guided Mixture-of-Experts enhancement framework is designed. Dynamic adaptive transformations are applied to the sparse attribute space of 2DGS using rendered images as guidance to enable compression-as-enhancement without full decompression to a pixel grid. Second, a multi-objective collaborative loss function system is established to strictly constrain smoothness and fidelity during enhancement, suppressing artifacts while improving visual quality. Third, a two-stage optimization process is utilized to achieve reconstruction-as-enhancement. The accuracy of the base representation is ensured through single-scale reconstruction and network robustness is enhanced. High-quality enhancement of low-light images is achieved while high compression ratios are maintained. The feasibility and superiority of the paradigm for direct processing within the compressed representation domain are validated through experimental results.",
+        "arxiv_id": "2601.15772",
+        "ARXIVID": "2601.15772",
+        "COMMENT": "The paper proposes LL-GaussianImage, a framework for low-light enhancement within the 2DGS compressed representation domain, which does not match any specific criteria.",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2601.16214": {
+        "authors": [
+            "Wenhang Ge",
+            "Guibao Shen",
+            "Jiawei Feng",
+            "Luozhou Wang",
+            "Hao Lu",
+            "Xingye Tian",
+            "Xin Tao",
+            "Ying-Cong Chen"
+        ],
+        "title": "CamPilot: Improving Camera Control in Video Diffusion Model with Efficient Camera Reward Feedback",
+        "abstract": "arXiv:2601.16214v1 Announce Type: new  Abstract: Recent advances in camera-controlled video diffusion models have significantly improved video-camera alignment. However, the camera controllability still remains limited. In this work, we build upon Reward Feedback Learning and aim to further improve camera controllability. However, directly borrowing existing ReFL approaches faces several challenges. First, current reward models lack the capacity to assess video-camera alignment. Second, decoding latent into RGB videos for reward computation introduces substantial computational overhead. Third, 3D geometric information is typically neglected during video decoding. To address these limitations, we introduce an efficient camera-aware 3D decoder that decodes video latent into 3D representations for reward quantization. Specifically, video latent along with the camera pose are decoded into 3D Gaussians. In this process, the camera pose not only acts as input, but also serves as a projection parameter. Misalignment between the video latent and camera pose will cause geometric distortions in the 3D structure, resulting in blurry renderings. Based on this property, we explicitly optimize pixel-level consistency between the rendered novel views and ground-truth ones as reward. To accommodate the stochastic nature, we further introduce a visibility term that selectively supervises only deterministic regions derived via geometric warping. Extensive experiments conducted on RealEstate10K and WorldScore benchmarks demonstrate the effectiveness of our proposed method. Project page: \\href{https://a-bigbao.github.io/CamPilot/}{CamPilot Page}.",
+        "arxiv_id": "2601.16214",
+        "ARXIVID": "2601.16214",
+        "COMMENT": "The paper focuses on improving camera control in video diffusion models, which does not match any specific criteria.",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2601.15507": {
+        "authors": [
+            "Jinrui Yang",
+            "Qing Liu",
+            "Yijun Li",
+            "Mengwei Ren",
+            "Letian Zhang",
+            "Zhe Lin",
+            "Cihang Xie",
+            "Yuyin Zhou"
+        ],
+        "title": "Controllable Layered Image Generation for Real-World Editing",
+        "abstract": "arXiv:2601.15507v1 Announce Type: new  Abstract: Recent image generation models have shown impressive progress, yet they often struggle to yield controllable and consistent results when users attempt to edit specific elements within an existing image. Layered representations enable flexible, user-driven content creation, but existing approaches often fail to produce layers with coherent compositing relationships, and their object layers typically lack realistic visual effects such as shadows and reflections. To overcome these limitations, we propose LASAGNA, a novel, unified framework that generates an image jointly with its composing layers--a photorealistic background and a high-quality transparent foreground with compelling visual effects. Unlike prior work, LASAGNA efficiently learns correct image composition from a wide range of conditioning inputs--text prompts, foreground, background, and location masks--offering greater controllability for real-world applications. To enable this, we introduce LASAGNA-48K, a new dataset composed of clean backgrounds and RGBA foregrounds with physically grounded visual effects. We also propose LASAGNABENCH, the first benchmark for layer editing. We demonstrate that LASAGNA excels in generating highly consistent and coherent results across multiple image layers simultaneously, enabling diverse post-editing applications that accurately preserve identity and visual effects. LASAGNA-48K and LASAGNABENCH will be publicly released to foster open research in the community. The project page is https://rayjryang.github.io/LASAGNA-Page/.",
+        "arxiv_id": "2601.15507",
+        "ARXIVID": "2601.15507",
+        "COMMENT": "The paper introduces LASAGNA, a unified framework for generating images with layered representations, which does not match any specific criteria.",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
     }
 }
