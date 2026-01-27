@@ -1,1 +1,22 @@
-{}
+{
+    "2601.17830": {
+        "authors": [
+            "Mengmeng Wang",
+            "Dengyang Jiang",
+            "Liuzhuozheng Li",
+            "Yucheng Lin",
+            "Guojiang Shen",
+            "Xiangjie Kong",
+            "Yong Liu",
+            "Guang Dai",
+            "Jingdong Wang"
+        ],
+        "title": "VAE-REPA: Variational Autoencoder Representation Alignment for Efficient Diffusion Training",
+        "abstract": "arXiv:2601.17830v1 Announce Type: new  Abstract: Denoising-based diffusion transformers, despite their strong generation performance, suffer from inefficient training convergence. Existing methods addressing this issue, such as REPA (relying on external representation encoders) or SRA (requiring dual-model setups), inevitably incur heavy computational overhead during training due to external dependencies. To tackle these challenges, this paper proposes \\textbf{\\namex}, a lightweight intrinsic guidance framework for efficient diffusion training. \\name leverages off-the-shelf pre-trained Variational Autoencoder (VAE) features: their reconstruction property ensures inherent encoding of visual priors like rich texture details, structural patterns, and basic semantic information. Specifically, \\name aligns the intermediate latent features of diffusion transformers with VAE features via a lightweight projection layer, supervised by a feature alignment loss. This design accelerates training without extra representation encoders or dual-model maintenance, resulting in a simple yet effective pipeline. Extensive experiments demonstrate that \\name improves both generation quality and training convergence speed compared to vanilla diffusion transformers, matches or outperforms state-of-the-art acceleration methods, and incurs merely 4\\% extra GFLOPs with zero additional cost for external guidance models.",
+        "arxiv_id": "2601.17830",
+        "ARXIVID": "2601.17830",
+        "COMMENT": "2",
+        "RELEVANCE": 5,
+        "NOVELTY": 6
+    }
+}
