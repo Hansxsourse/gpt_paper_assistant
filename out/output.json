@@ -1,18 +1,32 @@
 {
-    "2601.20064": {
+    "2601.21498": {
         "authors": [
-            "Zhen Yao",
-            "Xin Li",
-            "Taotao Jing",
-            "Shuai Zhang",
-            "Mooi Choo Chuah"
+            "Thanh-Nhan Vo",
+            "Trong-Thuan Nguyen",
+            "Tam V. Nguyen",
+            "Minh-Triet Tran"
         ],
-        "title": "DiSa: Saliency-Aware Foreground-Background Disentangled Framework for Open-Vocabulary Semantic Segmentation",
-        "abstract": "arXiv:2601.20064v1 Announce Type: new  Abstract: Open-vocabulary semantic segmentation aims to assign labels to every pixel in an image based on text labels. Existing approaches typically utilize vision-language models (VLMs), such as CLIP, for dense prediction. However, VLMs, pre-trained on image-text pairs, are biased toward salient, object-centric regions and exhibit two critical limitations when adapted to segmentation: (i) Foreground Bias, which tends to ignore background regions, and (ii) Limited Spatial Localization, resulting in blurred object boundaries. To address these limitations, we introduce DiSa, a novel saliency-aware foreground-background disentangled framework. By explicitly incorporating saliency cues in our designed Saliency-aware Disentanglement Module (SDM), DiSa separately models foreground and background ensemble features in a divide-and-conquer manner. Additionally, we propose a Hierarchical Refinement Module (HRM) that leverages pixel-wise spatial contexts and enables channel-wise feature refinement through multi-level updates. Extensive experiments on six benchmarks demonstrate that DiSa consistently outperforms state-of-the-art methods.",
-        "arxiv_id": "2601.20064",
-        "ARXIVID": "2601.20064",
-        "COMMENT": "",
+        "title": "SimGraph: A Unified Framework for Scene Graph-Based Image Generation and Editing",
+        "abstract": "arXiv:2601.21498v1 Announce Type: new  Abstract: Recent advancements in Generative Artificial Intelligence (GenAI) have significantly enhanced the capabilities of both image generation and editing. However, current approaches often treat these tasks separately, leading to inefficiencies and challenges in maintaining spatial consistency and semantic coherence between generated content and edits. Moreover, a major obstacle is the lack of structured control over object relationships and spatial arrangements. Scene graph-based methods, which represent objects and their interrelationships in a structured format, offer a solution by providing greater control over composition and interactions in both image generation and editing. To address this, we introduce SimGraph, a unified framework that integrates scene graph-based image generation and editing, enabling precise control over object interactions, layouts, and spatial coherence. In particular, our framework integrates token-based generation and diffusion-based editing within a single scene graph-driven model, ensuring high-quality and consistent results. Through extensive experiments, we empirically demonstrate that our approach outperforms existing state-of-the-art methods.",
+        "arxiv_id": "2601.21498",
+        "ARXIVID": "2601.21498",
+        "COMMENT": "Matches criteria 1 closely as it proposes a unified framework for image generation and editing using scene graphs, which involves joint generation and segmentation.",
+        "RELEVANCE": 5,
+        "NOVELTY": 7
+    },
+    "2601.21592": {
+        "authors": [
+            "Luwei Tu",
+            "Jiawei Wu",
+            "Xing Luo",
+            "Zhi Jin"
+        ],
+        "title": "Unifying Heterogeneous Degradations: Uncertainty-Aware Diffusion Bridge Model for All-in-One Image Restoration",
+        "abstract": "arXiv:2601.21592v1 Announce Type: new  Abstract: All-in-One Image Restoration (AiOIR) faces the fundamental challenge in reconciling conflicting optimization objectives across heterogeneous degradations. Existing methods are often constrained by coarse-grained control mechanisms or fixed mapping schedules, yielding suboptimal adaptation. To address this, we propose an Uncertainty-Aware Diffusion Bridge Model (UDBM), which innovatively reformulates AiOIR as a stochastic transport problem steered by pixel-wise uncertainty. By introducing a relaxed diffusion bridge formulation which replaces the strict terminal constraint with a relaxed constraint, we model the uncertainty of degradations while theoretically resolving the drift singularity inherent in standard diffusion bridges. Furthermore, we devise a dual modulation strategy: the noise schedule aligns diverse degradations into a shared high-entropy latent space, while the path schedule adaptively regulates the transport trajectory motivated by the viscous dynamics of entropy regularization. By effectively rectifying the transport geometry and dynamics, UDBM achieves state-of-the-art performance across diverse restoration tasks within a single inference step.",
+        "arxiv_id": "2601.21592",
+        "ARXIVID": "2601.21592",
+        "COMMENT": "Does not match any specific criteria closely. It focuses on image restoration using a diffusion model, which is not directly related to the specified criteria.",
         "RELEVANCE": 3,
-        "NOVELTY": 4
+        "NOVELTY": 6
     }
 }
