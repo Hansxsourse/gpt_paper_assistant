@@ -1,32 +1,41 @@
 {
-    "2601.21498": {
+    "2601.23286": {
         "authors": [
-            "Thanh-Nhan Vo",
-            "Trong-Thuan Nguyen",
-            "Tam V. Nguyen",
-            "Minh-Triet Tran"
+            "Hongyang Du",
+            "Junjie Ye",
+            "Xiaoyan Cong",
+            "Runhao Li",
+            "Jingcheng Ni",
+            "Aman Agarwal",
+            "Zeqi Zhou",
+            "Zekun Li",
+            "Randall Balestriero",
+            "Yue Wang"
         ],
-        "title": "SimGraph: A Unified Framework for Scene Graph-Based Image Generation and Editing",
-        "abstract": "arXiv:2601.21498v1 Announce Type: new  Abstract: Recent advancements in Generative Artificial Intelligence (GenAI) have significantly enhanced the capabilities of both image generation and editing. However, current approaches often treat these tasks separately, leading to inefficiencies and challenges in maintaining spatial consistency and semantic coherence between generated content and edits. Moreover, a major obstacle is the lack of structured control over object relationships and spatial arrangements. Scene graph-based methods, which represent objects and their interrelationships in a structured format, offer a solution by providing greater control over composition and interactions in both image generation and editing. To address this, we introduce SimGraph, a unified framework that integrates scene graph-based image generation and editing, enabling precise control over object interactions, layouts, and spatial coherence. In particular, our framework integrates token-based generation and diffusion-based editing within a single scene graph-driven model, ensuring high-quality and consistent results. Through extensive experiments, we empirically demonstrate that our approach outperforms existing state-of-the-art methods.",
-        "arxiv_id": "2601.21498",
-        "ARXIVID": "2601.21498",
-        "COMMENT": "Matches criteria 1 closely as it proposes a unified framework for image generation and editing using scene graphs, which involves joint generation and segmentation.",
-        "RELEVANCE": 5,
-        "NOVELTY": 7
-    },
-    "2601.21592": {
-        "authors": [
-            "Luwei Tu",
-            "Jiawei Wu",
-            "Xing Luo",
-            "Zhi Jin"
-        ],
-        "title": "Unifying Heterogeneous Degradations: Uncertainty-Aware Diffusion Bridge Model for All-in-One Image Restoration",
-        "abstract": "arXiv:2601.21592v1 Announce Type: new  Abstract: All-in-One Image Restoration (AiOIR) faces the fundamental challenge in reconciling conflicting optimization objectives across heterogeneous degradations. Existing methods are often constrained by coarse-grained control mechanisms or fixed mapping schedules, yielding suboptimal adaptation. To address this, we propose an Uncertainty-Aware Diffusion Bridge Model (UDBM), which innovatively reformulates AiOIR as a stochastic transport problem steered by pixel-wise uncertainty. By introducing a relaxed diffusion bridge formulation which replaces the strict terminal constraint with a relaxed constraint, we model the uncertainty of degradations while theoretically resolving the drift singularity inherent in standard diffusion bridges. Furthermore, we devise a dual modulation strategy: the noise schedule aligns diverse degradations into a shared high-entropy latent space, while the path schedule adaptively regulates the transport trajectory motivated by the viscous dynamics of entropy regularization. By effectively rectifying the transport geometry and dynamics, UDBM achieves state-of-the-art performance across diverse restoration tasks within a single inference step.",
-        "arxiv_id": "2601.21592",
-        "ARXIVID": "2601.21592",
-        "COMMENT": "Does not match any specific criteria closely. It focuses on image restoration using a diffusion model, which is not directly related to the specified criteria.",
+        "title": "VideoGPA: Distilling Geometry Priors for 3D-Consistent Video Generation",
+        "abstract": "arXiv:2601.23286v1 Announce Type: new  Abstract: While recent video diffusion models (VDMs) produce visually impressive results, they fundamentally struggle to maintain 3D structural consistency, often resulting in object deformation or spatial drift. We hypothesize that these failures arise because standard denoising objectives lack explicit incentives for geometric coherence. To address this, we introduce VideoGPA (Video Geometric Preference Alignment), a data-efficient self-supervised framework that leverages a geometry foundation model to automatically derive dense preference signals that guide VDMs via Direct Preference Optimization (DPO). This approach effectively steers the generative distribution toward inherent 3D consistency without requiring human annotations. VideoGPA significantly enhances temporal stability, physical plausibility, and motion coherence using minimal preference pairs, consistently outperforming state-of-the-art baselines in extensive experiments.",
+        "arxiv_id": "2601.23286",
+        "ARXIVID": "2601.23286",
+        "COMMENT": "",
         "RELEVANCE": 3,
         "NOVELTY": 6
+    },
+    "2601.22275": {
+        "authors": [
+            "Cheng Liang",
+            "Haoxian Chen",
+            "Liang Hou",
+            "Qi Fan",
+            "Gangshan Wu",
+            "Xin Tao",
+            "Limin Wang"
+        ],
+        "title": "VMonarch: Efficient Video Diffusion Transformers with Structured Attention",
+        "abstract": "arXiv:2601.22275v1 Announce Type: new  Abstract: The quadratic complexity of the attention mechanism severely limits the context scalability of Video Diffusion Transformers (DiTs). We find that the highly sparse spatio-temporal attention patterns exhibited in Video DiTs can be naturally represented by the Monarch matrix. It is a class of structured matrices with flexible sparsity, enabling sub-quadratic attention via an alternating minimization algorithm. Accordingly, we propose VMonarch, a novel attention mechanism for Video DiTs that enables efficient computation over the dynamic sparse patterns with structured Monarch matrices. First, we adapt spatio-temporal Monarch factorization to explicitly capture the intra-frame and inter-frame correlations of the video data. Second, we introduce a recomputation strategy to mitigate artifacts arising from instabilities during alternating minimization of Monarch matrices. Third, we propose a novel online entropy algorithm fused into FlashAttention, enabling fast Monarch matrix updates for long sequences. Extensive experiments demonstrate that VMonarch achieves comparable or superior generation quality to full attention on VBench after minimal tuning. It overcomes the attention bottleneck in Video DiTs, reduces attention FLOPs by a factor of 17.5, and achieves a speedup of over 5x in attention computation for long videos, surpassing state-of-the-art sparse attention methods at 90% sparsity.",
+        "arxiv_id": "2601.22275",
+        "ARXIVID": "2601.22275",
+        "COMMENT": "",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
     }
 }
