@@ -1,39 +1,77 @@
 {
-    "2602.05218": {
+    "2602.06959": {
         "authors": [
-            "Jiahao Nie",
-            "Yun Xing",
-            "Wenbin An",
-            "Qingsong Zhao",
-            "Jiawei Shao",
-            "Yap-Peng Tan",
-            "Alex C. Kot",
-            "Shijian Lu",
-            "Xuelong Li"
+            "Kaiyi Huang",
+            "Yukun Huang",
+            "Yu Li",
+            "Jianhong Bai",
+            "Xintao Wang",
+            "Zinan Lin",
+            "Xuefei Ning",
+            "Jiwen Yu",
+            "Pengfei Wan",
+            "Yu Wang",
+            "Xihui Liu"
         ],
-        "title": "Boosting SAM for Cross-Domain Few-Shot Segmentation via Conditional Point Sparsification",
-        "abstract": "arXiv:2602.05218v1 Announce Type: new  Abstract: Motivated by the success of the Segment Anything Model (SAM) in promptable segmentation, recent studies leverage SAM to develop training-free solutions for few-shot segmentation, which aims to predict object masks in the target image based on a few reference exemplars. These SAM-based methods typically rely on point matching between reference and target images and use the matched dense points as prompts for mask prediction. However, we observe that dense points perform poorly in Cross-Domain Few-Shot Segmentation (CD-FSS), where target images are from medical or satellite domains. We attribute this issue to large domain shifts that disrupt the point-image interactions learned by SAM, and find that point density plays a crucial role under such conditions. To address this challenge, we propose Conditional Point Sparsification (CPS), a training-free approach that adaptively guides SAM interactions for cross-domain images based on reference exemplars. Leveraging ground-truth masks, the reference images provide reliable guidance for adaptively sparsifying dense matched points, enabling more accurate segmentation results. Extensive experiments demonstrate that CPS outperforms existing training-free SAM-based methods across diverse CD-FSS datasets.",
-        "arxiv_id": "2602.05218",
-        "ARXIVID": "2602.05218",
-        "COMMENT": "",
+        "title": "CineScene: Implicit 3D as Effective Scene Representation for Cinematic Video Generation",
+        "abstract": "arXiv:2602.06959v1 Announce Type: new  Abstract: Cinematic video production requires control over scene-subject composition and camera movement, but live-action shooting remains costly due to the need for constructing physical sets. To address this, we introduce the task of cinematic video generation with decoupled scene context: given multiple images of a static environment, the goal is to synthesize high-quality videos featuring dynamic subject while preserving the underlying scene consistency and following a user-specified camera trajectory. We present CineScene, a framework that leverages implicit 3D-aware scene representation for cinematic video generation. Our key innovation is a novel context conditioning mechanism that injects 3D-aware features in an implicit way: By encoding scene images into visual representations through VGGT, CineScene injects spatial priors into a pretrained text-to-video generation model by additional context concatenation, enabling camera-controlled video synthesis with consistent scenes and dynamic subjects. To further enhance the model's robustness, we introduce a simple yet effective random-shuffling strategy for the input scene images during training. To address the lack of training data, we construct a scene-decoupled dataset with Unreal Engine 5, containing paired videos of scenes with and without dynamic subjects, panoramic images representing the underlying static scene, along with their camera trajectories. Experiments show that CineScene achieves state-of-the-art performance in scene-consistent cinematic video generation, handling large camera movements and demonstrating generalization across diverse environments.",
+        "arxiv_id": "2602.06959",
+        "ARXIVID": "2602.06959",
+        "COMMENT": "The paper does not match any specific criteria closely.",
+        "RELEVANCE": 3,
+        "NOVELTY": 6
+    },
+    "2602.06871": {
+        "authors": [
+            "Mohammadreza Salehi",
+            "Mehdi Noroozi",
+            "Luca Morreale",
+            "Ruchika Chavhan",
+            "Malcolm Chadwick",
+            "Alberto Gil Ramos",
+            "Abhinav Mehrotra"
+        ],
+        "title": "RFDM: Residual Flow Diffusion Model for Efficient Causal Video Editing",
+        "abstract": "arXiv:2602.06871v1 Announce Type: new  Abstract: Instructional video editing applies edits to an input video using only text prompts, enabling intuitive natural-language control. Despite rapid progress, most methods still require fixed-length inputs and substantial compute. Meanwhile, autoregressive video generation enables efficient variable-length synthesis, yet remains under-explored for video editing. We introduce a causal, efficient video editing model that edits variable-length videos frame by frame. For efficiency, we start from a 2D image-to-image (I2I) diffusion model and adapt it to video-to-video (V2V) editing by conditioning the edit at time step t on the model's prediction at t-1. To leverage videos' temporal redundancy, we propose a new I2I diffusion forward process formulation that encourages the model to predict the residual between the target output and the previous prediction. We call this Residual Flow Diffusion Model (RFDM), which focuses the denoising process on changes between consecutive frames. Moreover, we propose a new benchmark that better ranks state-of-the-art methods for editing tasks. Trained on paired video data for global/local style transfer and object removal, RFDM surpasses I2I-based methods and competes with fully spatiotemporal (3D) V2V models, while matching the compute of image models and scaling independently of input video length. More content can be found in: https://smsd75.github.io/RFDM_page/",
+        "arxiv_id": "2602.06871",
+        "ARXIVID": "2602.06871",
+        "COMMENT": "The paper does not match any specific criteria closely.",
         "RELEVANCE": 3,
         "NOVELTY": 5
     },
-    "2602.05966": {
+    "2602.06886": {
         "authors": [
-            "Mirlan Karimov",
-            "Teodora Spasojevic",
-            "Markus Braun",
-            "Julian Wiederer",
-            "Vasileios Belagiannis",
-            "Marc Pollefeys"
+            "Yuxuan Yao",
+            "Yuxuan Chen",
+            "Hui Li",
+            "Kaihui Cheng",
+            "Qipeng Guo",
+            "Yuwei Sun",
+            "Zilong Dong",
+            "Jingdong Wang",
+            "Siyu Zhu"
         ],
-        "title": "LSA: Localized Semantic Alignment for Enhancing Temporal Consistency in Traffic Video Generation",
-        "abstract": "arXiv:2602.05966v1 Announce Type: new  Abstract: Controllable video generation has emerged as a versatile tool for autonomous driving, enabling realistic synthesis of traffic scenarios. However, existing methods depend on control signals at inference time to guide the generative model towards temporally consistent generation of dynamic objects, limiting their utility as scalable and generalizable data engines. In this work, we propose Localized Semantic Alignment (LSA), a simple yet effective framework for fine-tuning pre-trained video generation models. LSA enhances temporal consistency by aligning semantic features between ground-truth and generated video clips. Specifically, we compare the output of an off-the-shelf feature extraction model between the ground-truth and generated video clips localized around dynamic objects inducing a semantic feature consistency loss. We fine-tune the base model by combining this loss with the standard diffusion loss. The model fine-tuned for a single epoch with our novel loss outperforms the baselines in common video generation evaluation metrics. To further test the temporal consistency in generated videos we adapt two additional metrics from object detection task, namely mAP and mIoU. Extensive experiments on nuScenes and KITTI datasets show the effectiveness of our approach in enhancing temporal consistency in video generation without the need for external control signals during inference and any computational overheads.",
-        "arxiv_id": "2602.05966",
-        "ARXIVID": "2602.05966",
-        "COMMENT": "",
+        "title": "Prompt Reinjection: Alleviating Prompt Forgetting in Multimodal Diffusion Transformers",
+        "abstract": "arXiv:2602.06886v1 Announce Type: new  Abstract: Multimodal Diffusion Transformers (MMDiTs) for text-to-image generation maintain separate text and image branches, with bidirectional information flow between text tokens and visual latents throughout denoising. In this setting, we observe a prompt forgetting phenomenon: the semantics of the prompt representation in the text branch is progressively forgotten as depth increases. We further verify this effect on three representative MMDiTs--SD3, SD3.5, and FLUX.1 by probing linguistic attributes of the representations over the layers in the text branch. Motivated by these findings, we introduce a training-free approach, prompt reinjection, which reinjects prompt representations from early layers into later layers to alleviate this forgetting. Experiments on GenEval, DPG, and T2I-CompBench++ show consistent gains in instruction-following capability, along with improvements on metrics capturing preference, aesthetics, and overall text--image generation quality.",
+        "arxiv_id": "2602.06886",
+        "ARXIVID": "2602.06886",
+        "COMMENT": "The paper does not match any specific criteria closely.",
         "RELEVANCE": 3,
         "NOVELTY": 5
+    },
+    "2602.06335": {
+        "authors": [
+            "Yihan Shang",
+            "Wei Wang",
+            "Chao Huang",
+            "Xinghui Dong"
+        ],
+        "title": "SPDA-SAM: A Self-prompted Depth-Aware Segment Anything Model for Instance Segmentation",
+        "abstract": "arXiv:2602.06335v1 Announce Type: new  Abstract: Recently, Segment Anything Model (SAM) has demonstrated strong generalizability in various instance segmentation tasks. However, its performance is severely dependent on the quality of manual prompts. In addition, the RGB images that instance segmentation methods normally use inherently lack depth information. As a result, the ability of these methods to perceive spatial structures and delineate object boundaries is hindered. To address these challenges, we propose a Self-prompted Depth-Aware SAM (SPDA-SAM) for instance segmentation. Specifically, we design a Semantic-Spatial Self-prompt Module (SSSPM) which extracts the semantic and spatial prompts from the image encoder and the mask decoder of SAM, respectively. Furthermore, we introduce a Coarse-to-Fine RGB-D Fusion Module (C2FFM), in which the features extracted from a monocular RGB image and the depth map estimated from it are fused. In particular, the structural information in the depth map is used to provide coarse-grained guidance to feature fusion, while local variations in depth are encoded in order to fuse fine-grained feature representations. To our knowledge, SAM has not been explored in such self-prompted and depth-aware manners. Experimental results demonstrate that our SPDA-SAM outperforms its state-of-the-art counterparts across twelve different data sets. These promising results should be due to the guidance of the self-prompts and the compensation for the spatial information loss by the coarse-to-fine RGB-D fusion operation.",
+        "arxiv_id": "2602.06335",
+        "ARXIVID": "2602.06335",
+        "COMMENT": "The paper does not match any specific criteria closely.",
+        "RELEVANCE": 3,
+        "NOVELTY": 4
     }
 }
