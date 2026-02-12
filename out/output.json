@@ -1,55 +1,65 @@
 {
-    "2602.09609": {
+    "2602.10326": {
         "authors": [
-            "Jialun Liu",
-            "Yukuo Ma",
-            "Xiao Cao",
-            "Tian Li",
-            "Gonghu Shang",
-            "Haibin Huang",
-            "Chi Zhang",
-            "Xuelong Li",
-            "Cong Liu",
-            "Junqi Liu",
-            "Jiakui Hu",
-            "Robby T. Tan",
-            "Shiwen Zhang",
-            "Liying Yang",
-            "Xiaoyan Yang",
-            "Qizhen Weng",
-            "Xiangzhen Chang",
-            "Yuanzhi Liang",
-            "Yifan Xu",
-            "Zhiyong Huang",
-            "Zuoxin Li",
-            "Xuelong Li"
+            "Juyeop Han",
+            "Lukas Lao Beyer",
+            "Sertac Karaman"
         ],
-        "title": "Tele-Omni: a Unified Multimodal Framework for Video Generation and Editing",
-        "abstract": "arXiv:2602.09609v1 Announce Type: new  Abstract: Recent advances in diffusion-based video generation have substantially improved visual fidelity and temporal coherence. However, most existing approaches remain task-specific and rely primarily on textual instructions, limiting their ability to handle multimodal inputs, contextual references, and diverse video generation and editing scenarios within a unified framework. Moreover, many video editing methods depend on carefully engineered pipelines tailored to individual operations, which hinders scalability and composability. In this paper, we propose Tele-Omni, a unified multimodal framework for video generation and editing that follows multimodal instructions, including text, images, and reference videos, within a single model. Tele-Omni leverages pretrained multimodal large language models to parse heterogeneous instructions and infer structured generation or editing intents, while diffusion-based generators perform high-quality video synthesis conditioned on these structured signals. To enable joint training across heterogeneous video tasks, we introduce a task-aware data processing pipeline that unifies multimodal inputs into a structured instruction format while preserving task-specific constraints. Tele-Omni supports a wide range of video-centric tasks, including text-to-video generation, image-to-video generation, first-last-frame video generation, in-context video generation, and in-context video editing. By decoupling instruction parsing from video synthesis and combining it with task-aware data design, Tele-Omni achieves flexible multimodal control while maintaining strong temporal coherence and visual consistency. Experimental results demonstrate that Tele-Omni achieves competitive performance across multiple tasks.",
-        "arxiv_id": "2602.09609",
-        "ARXIVID": "2602.09609",
-        "COMMENT": "Matches criterion 2 closely as it proposes a unified multimodal framework for video generation and editing using diffusion-based generators, which aligns with the unified diffusion models for multiple vision tasks.",
-        "RELEVANCE": 5,
-        "NOVELTY": 7
-    },
-    "2602.09268": {
-        "authors": [
-            "Nikita Starodubcev",
-            "Daniil Pakhomov",
-            "Zongze Wu",
-            "Ilya Drobyshevskiy",
-            "Yuchen Liu",
-            "Zhonghao Wang",
-            "Yuqian Zhou",
-            "Zhe Lin",
-            "Dmitry Baranchuk"
-        ],
-        "title": "Rethinking Global Text Conditioning in Diffusion Transformers",
-        "abstract": "arXiv:2602.09268v1 Announce Type: new  Abstract: Diffusion transformers typically incorporate textual information via attention layers and a modulation mechanism using a pooled text embedding. Nevertheless, recent approaches discard modulation-based text conditioning and rely exclusively on attention. In this paper, we address whether modulation-based text conditioning is necessary and whether it can provide any performance advantage. Our analysis shows that, in its conventional usage, the pooled embedding contributes little to overall performance, suggesting that attention alone is generally sufficient for faithfully propagating prompt information. However, we reveal that the pooled embedding can provide significant gains when used from a different perspective-serving as guidance and enabling controllable shifts toward more desirable properties. This approach is training-free, simple to implement, incurs negligible runtime overhead, and can be applied to various diffusion models, bringing improvements across diverse tasks, including text-to-image/video generation and image editing.",
-        "arxiv_id": "2602.09268",
-        "ARXIVID": "2602.09268",
-        "COMMENT": "Does not match any specific criteria closely. The paper focuses on text conditioning in diffusion transformers, which is not directly related to the unified diffusion models for multiple vision tasks.",
+        "title": "Flow Matching with Uncertainty Quantification and Guidance",
+        "abstract": "arXiv:2602.10326v1 Announce Type: new  Abstract: Despite the remarkable success of sampling-based generative models such as flow matching, they can still produce samples of inconsistent or degraded quality. To assess sample reliability and generate higher-quality outputs, we propose uncertainty-aware flow matching (UA-Flow), a lightweight extension of flow matching that predicts the velocity field together with heteroscedastic uncertainty. UA-Flow estimates per-sample uncertainty by propagating velocity uncertainty through the flow dynamics. These uncertainty estimates act as a reliability signal for individual samples, and we further use them to steer generation via uncertainty-aware classifier guidance and classifier-free guidance. Experiments on image generation show that UA-Flow produces uncertainty signals more highly correlated with sample fidelity than baseline methods, and that uncertainty-guided sampling further improves generation quality.",
+        "arxiv_id": "2602.10326",
+        "ARXIVID": "2602.10326",
+        "COMMENT": "",
         "RELEVANCE": 3,
-        "NOVELTY": 6
+        "NOVELTY": 5
+    },
+    "2602.10221": {
+        "authors": [
+            "El Hadji S. Diop",
+            "Thierno Fall",
+            "Mohamed Daoudi"
+        ],
+        "title": "DEGMC: Denoising Diffusion Models Based on Riemannian Equivariant Group Morphological Convolutions",
+        "abstract": "arXiv:2602.10221v1 Announce Type: new  Abstract: In this work, we address two major issues in recent Denoising Diffusion Probabilistic Models (DDPM): {\\bf 1)} geometric key feature extraction and {\\bf 2)} network equivariance. Since the DDPM prediction network relies on the U-net architecture, which is theoretically only translation equivariant, we introduce a geometric approach combined with an equivariance property of the more general Euclidean group, which includes rotations, reflections, and permutations. We introduce the notion of group morphological convolutions in Riemannian manifolds, which are derived from the viscosity solutions of first-order Hamilton-Jacobi-type partial differential equations (PDEs) that act as morphological multiscale dilations and erosions. We add a convection term to the model and solve it using the method of characteristics. This helps us better capture nonlinearities, represent thin geometric structures, and incorporate symmetries into the learning process. Experimental results on the MNIST, RotoMNIST, and CIFAR-10 datasets show noticeable improvements compared to the baseline DDPM model.",
+        "arxiv_id": "2602.10221",
+        "ARXIVID": "2602.10221",
+        "COMMENT": "",
+        "RELEVANCE": 3,
+        "NOVELTY": 5
+    },
+    "2602.11105": {
+        "authors": [
+            "Divya Jyoti Bajpai",
+            "Dhruv Bhardwaj",
+            "Soumya Roy",
+            "Tejas Duseja",
+            "Harsh Agarwal",
+            "Aashay Sandansing",
+            "Manjesh Kumar Hanawal"
+        ],
+        "title": "FastFlow: Accelerating The Generative Flow Matching Models with Bandit Inference",
+        "abstract": "arXiv:2602.11105v1 Announce Type: new  Abstract: Flow-matching models deliver state-of-the-art fidelity in image and video generation, but the inherent sequential denoising process renders them slower. Existing acceleration methods like distillation, trajectory truncation, and consistency approaches are static, require retraining, and often fail to generalize across tasks. We propose FastFlow, a plug-and-play adaptive inference framework that accelerates generation in flow matching models. FastFlow identifies denoising steps that produce only minor adjustments to the denoising path and approximates them without using the full neural network models used for velocity predictions. The approximation utilizes finite-difference velocity estimates from prior predictions to efficiently extrapolate future states, enabling faster advancements along the denoising path at zero compute cost. This enables skipping computation at intermediary steps. We model the decision of how many steps to safely skip before requiring a full model computation as a multi-armed bandit problem. The bandit learns the optimal skips to balance speed with performance. FastFlow integrates seamlessly with existing pipelines and generalizes across image generation, video generation, and editing tasks. Experiments demonstrate a speedup of over 2.6x while maintaining high-quality outputs. The source code for this work can be found at https://github.com/Div290/FastFlow.",
+        "arxiv_id": "2602.11105",
+        "ARXIVID": "2602.11105",
+        "COMMENT": "",
+        "RELEVANCE": 3,
+        "NOVELTY": 4
+    },
+    "2602.10764": {
+        "authors": [
+            "Linwei Dong",
+            "Ruoyu Guo",
+            "Ge Bai",
+            "Zehuan Yuan",
+            "Yawei Luo",
+            "Changqing Zou"
+        ],
+        "title": "Dual-End Consistency Model",
+        "abstract": "arXiv:2602.10764v1 Announce Type: new  Abstract: The slow iterative sampling nature remains a major bottleneck for the practical deployment of diffusion and flow-based generative models. While consistency models (CMs) represent a state-of-the-art distillation-based approach for efficient generation, their large-scale application is still limited by two key issues: training instability and inflexible sampling. Existing methods seek to mitigate these problems through architectural adjustments or regularized objectives, yet overlook the critical reliance on trajectory selection. In this work, we first conduct an analysis on these two limitations: training instability originates from loss divergence induced by unstable self-supervised term, whereas sampling inflexibility arises from error accumulation. Based on these insights and analysis, we propose the Dual-End Consistency Model (DE-CM) that selects vital sub-trajectory clusters to achieve stable and effective training. DE-CM decomposes the PF-ODE trajectory and selects three critical sub-trajectories as optimization targets. Specifically, our approach leverages continuous-time CMs objectives to achieve few-step distillation and utilizes flow matching as a boundary regularizer to stabilize the training process. Furthermore, we propose a novel noise-to-noisy (N2N) mapping that can map noise to any point, thereby alleviating the error accumulation in the first step. Extensive experimental results show the effectiveness of our method: it achieves a state-of-the-art FID score of 1.70 in one-step generation on the ImageNet 256x256 dataset, outperforming existing CM-based one-step approaches.",
+        "arxiv_id": "2602.10764",
+        "ARXIVID": "2602.10764",
+        "COMMENT": "",
+        "RELEVANCE": 3,
+        "NOVELTY": 4
     }
 }
