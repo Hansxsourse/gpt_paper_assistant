@@ -1,65 +1,144 @@
 {
-    "2602.10326": {
+    "2602.11942": {
         "authors": [
-            "Juyeop Han",
-            "Lukas Lao Beyer",
-            "Sertac Karaman"
+            "Soufiane Ben Haddou",
+            "Laura Alvarez-Florez",
+            "Erik J. Bekkers",
+            "Fleur V. Y. Tjong",
+            "Ahmad S. Amin",
+            "Connie R. Bezzina",
+            "Ivana I\\v{s}gum"
         ],
-        "title": "Flow Matching with Uncertainty Quantification and Guidance",
-        "abstract": "arXiv:2602.10326v1 Announce Type: new  Abstract: Despite the remarkable success of sampling-based generative models such as flow matching, they can still produce samples of inconsistent or degraded quality. To assess sample reliability and generate higher-quality outputs, we propose uncertainty-aware flow matching (UA-Flow), a lightweight extension of flow matching that predicts the velocity field together with heteroscedastic uncertainty. UA-Flow estimates per-sample uncertainty by propagating velocity uncertainty through the flow dynamics. These uncertainty estimates act as a reliability signal for individual samples, and we further use them to steer generation via uncertainty-aware classifier guidance and classifier-free guidance. Experiments on image generation show that UA-Flow produces uncertainty signals more highly correlated with sample fidelity than baseline methods, and that uncertainty-guided sampling further improves generation quality.",
-        "arxiv_id": "2602.10326",
-        "ARXIVID": "2602.10326",
-        "COMMENT": "",
+        "title": "Synthesis of Late Gadolinium Enhancement Images via Implicit Neural Representations for Cardiac Scar Segmentation",
+        "abstract": "arXiv:2602.11942v1 Announce Type: new  Abstract: Late gadolinium enhancement (LGE) imaging is the clinical standard for myocardial scar assessment, but limited annotated datasets hinder the development of automated segmentation methods. We propose a novel framework that synthesises both LGE images and their corresponding segmentation masks using implicit neural representations (INRs) combined with denoising diffusion models. Our approach first trains INRs to capture continuous spatial representations of LGE data and associated myocardium and fibrosis masks. These INRs are then compressed into compact latent embeddings, preserving essential anatomical information. A diffusion model operates on this latent space to generate new representations, which are decoded into synthetic LGE images with anatomically consistent segmentation masks. Experiments on 133 cardiac MRI scans suggest that augmenting training data with 200 synthetic volumes contributes to improved fibrosis segmentation performance, with the Dice score showing an increase from 0.509 to 0.524. Our approach provides an annotation-free method to help mitigate data scarcity.The code for this research is publicly available.",
+        "arxiv_id": "2602.11942",
+        "ARXIVID": "2602.11942",
+        "COMMENT": "Matches criterion 1: Unified Image/Video Generation and Segmentation",
+        "RELEVANCE": 5,
+        "NOVELTY": 6
+    },
+    "2602.11401": {
+        "authors": [
+            "Alan Baade",
+            "Eric Ryan Chan",
+            "Kyle Sargent",
+            "Changan Chen",
+            "Justin Johnson",
+            "Ehsan Adeli",
+            "Li Fei-Fei"
+        ],
+        "title": "Latent Forcing: Reordering the Diffusion Trajectory for Pixel-Space Image Generation",
+        "abstract": "arXiv:2602.11401v1 Announce Type: new  Abstract: Latent diffusion models excel at generating high-quality images but lose the benefits of end-to-end modeling. They discard information during image encoding, require a separately trained decoder, and model an auxiliary distribution to the raw data. In this paper, we propose Latent Forcing, a simple modification to existing architectures that achieves the efficiency of latent diffusion while operating on raw natural images. Our approach orders the denoising trajectory by jointly processing latents and pixels with separately tuned noise schedules. This allows the latents to act as a scratchpad for intermediate computation before high-frequency pixel features are generated. We find that the order of conditioning signals is critical, and we analyze this to explain differences between REPA distillation in the tokenizer and the diffusion model, conditional versus unconditional generation, and how tokenizer reconstruction quality relates to diffusability. Applied to ImageNet, Latent Forcing achieves a new state-of-the-art for diffusion transformer-based pixel generation at our compute scale.",
+        "arxiv_id": "2602.11401",
+        "ARXIVID": "2602.11401",
+        "COMMENT": "Matches criterion 2: Unified Diffusion Models for multiple vision tasks",
+        "RELEVANCE": 5,
+        "NOVELTY": 6
+    },
+    "2602.11703": {
+        "authors": [
+            "Qiwen Xu",
+            "David R\\\"ugamer",
+            "Holger Wenz",
+            "Johann Fontana",
+            "Nora Meggyeshazi",
+            "Andreas Bender",
+            "M\\'at\\'e E. Maros"
+        ],
+        "title": "Semantically Conditioned Diffusion Models for Cerebral DSA Synthesis",
+        "abstract": "arXiv:2602.11703v1 Announce Type: new  Abstract: Digital subtraction angiography (DSA) plays a central role in the diagnosis and treatment of cerebrovascular disease, yet its invasive nature and high acquisition cost severely limit large-scale data collection and public data sharing. Therefore, we developed a semantically conditioned latent diffusion model (LDM) that synthesizes arterial-phase cerebral DSA frames under explicit control of anatomical circulation (anterior vs.\\ posterior) and canonical C-arm positions. We curated a large single-centre DSA dataset of 99,349 frames and trained a conditional LDM using text embeddings that encoded anatomy and acquisition geometry. To assess clinical realism, four medical experts, including two neuroradiologists, one neurosurgeon, and one internal medicine expert, systematically rated 400 synthetic DSA images using a 5-grade Likert scale for evaluating proximal large, medium, and small peripheral vessels. The generated images achieved image-wise overall Likert scores ranging from 3.1 to 3.3, with high inter-rater reliability (ICC(2,k) = 0.80--0.87). Distributional similarity to real DSA frames was supported by a low median Fr\\'echet inception distance (FID) of 15.27. Our results indicate that semantically controlled LDMs can produce realistic synthetic DSAs suitable for downstream algorithm development, research, and training.",
+        "arxiv_id": "2602.11703",
+        "ARXIVID": "2602.11703",
+        "COMMENT": "Matches criterion 2: Unified Diffusion Models for multiple vision tasks",
+        "RELEVANCE": 5,
+        "NOVELTY": 5
+    },
+    "2602.12221": {
+        "authors": [
+            "Onkar Susladkar",
+            "Tushar Prakash",
+            "Gayatri Deshmukh",
+            "Kiet A. Nguyen",
+            "Jiaxun Zhang",
+            "Adheesh Juvekar",
+            "Tianshu Bao",
+            "Lin Chai",
+            "Sparsh Mittal",
+            "Inderjit S Dhillon",
+            "Ismini Lourentzou"
+        ],
+        "title": "Best of Both Worlds: Multimodal Reasoning and Generation via Unified Discrete Flow Matching",
+        "abstract": "arXiv:2602.12221v1 Announce Type: new  Abstract: We propose UniDFlow, a unified discrete flow-matching framework for multimodal understanding, generation, and editing. It decouples understanding and generation via task-specific low-rank adapters, avoiding objective interference and representation entanglement, while a novel reference-based multimodal preference alignment optimizes relative outcomes under identical conditioning, improving faithfulness and controllability without large-scale retraining. UniDFlpw achieves SOTA performance across eight benchmarks and exhibits strong zero-shot generalization to tasks including inpainting, in-context image generation, reference-based editing, and compositional generation, despite no explicit task-specific training.",
+        "arxiv_id": "2602.12221",
+        "ARXIVID": "2602.12221",
+        "COMMENT": "Does not match any specific criterion",
+        "RELEVANCE": 3,
+        "NOVELTY": 6
+    },
+    "2602.12205": {
+        "authors": [
+            "Dianyi Wang",
+            "Ruihang Li",
+            "Feng Han",
+            "Chaofan Ma",
+            "Wei Song",
+            "Siyuan Wang",
+            "Yibin Wang",
+            "Yi Xin",
+            "Hongjian Liu",
+            "Zhixiong Zhang",
+            "Shengyuan Ding",
+            "Tianhang Wang",
+            "Zhenglin Cheng",
+            "Tao Lin",
+            "Cheng Jin",
+            "Kaicheng Yu",
+            "Jingjing Chen",
+            "Wenjie Wang",
+            "Zhongyu Wei",
+            "Jiaqi Wang"
+        ],
+        "title": "DeepGen 1.0: A Lightweight Unified Multimodal Model for Advancing Image Generation and Editing",
+        "abstract": "arXiv:2602.12205v1 Announce Type: new  Abstract: Current unified multimodal models for image generation and editing typically rely on massive parameter scales (e.g., >10B), entailing prohibitive training costs and deployment footprints. In this work, we present DeepGen 1.0, a lightweight 5B unified model that achieves comprehensive capabilities competitive with or surpassing much larger counterparts. To overcome the limitations of compact models in semantic understanding and fine-grained control, we introduce Stacked Channel Bridging (SCB), a deep alignment framework that extracts hierarchical features from multiple VLM layers and fuses them with learnable 'think tokens' to provide the generative backbone with structured, reasoning-rich guidance. We further design a data-centric training strategy spanning three progressive stages: (1) Alignment Pre-training on large-scale image-text pairs and editing triplets to synchronize VLM and DiT representations, (2) Joint Supervised Fine-tuning on a high-quality mixture of generation, editing, and reasoning tasks to foster omni-capabilities, and (3) Reinforcement Learning with MR-GRPO, which leverages a mixture of reward functions and supervision signals, resulting in substantial gains in generation quality and alignment with human preferences, while maintaining stable training progress and avoiding visual artifacts. Despite being trained on only ~50M samples, DeepGen 1.0 achieves leading performance across diverse benchmarks, surpassing the 80B HunyuanImage by 28% on WISE and the 27B Qwen-Image-Edit by 37% on UniREditBench. By open-sourcing our training code, weights, and datasets, we provide an efficient, high-performance alternative to democratize unified multimodal research.",
+        "arxiv_id": "2602.12205",
+        "ARXIVID": "2602.12205",
+        "COMMENT": "Does not match any specific criterion",
         "RELEVANCE": 3,
         "NOVELTY": 5
     },
-    "2602.10221": {
+    "2602.11845": {
         "authors": [
-            "El Hadji S. Diop",
-            "Thierno Fall",
-            "Mohamed Daoudi"
+            "Qisen Wang",
+            "Yifan Zhao",
+            "Jia Li"
         ],
-        "title": "DEGMC: Denoising Diffusion Models Based on Riemannian Equivariant Group Morphological Convolutions",
-        "abstract": "arXiv:2602.10221v1 Announce Type: new  Abstract: In this work, we address two major issues in recent Denoising Diffusion Probabilistic Models (DDPM): {\\bf 1)} geometric key feature extraction and {\\bf 2)} network equivariance. Since the DDPM prediction network relies on the U-net architecture, which is theoretically only translation equivariant, we introduce a geometric approach combined with an equivariance property of the more general Euclidean group, which includes rotations, reflections, and permutations. We introduce the notion of group morphological convolutions in Riemannian manifolds, which are derived from the viscosity solutions of first-order Hamilton-Jacobi-type partial differential equations (PDEs) that act as morphological multiscale dilations and erosions. We add a convection term to the model and solve it using the method of characteristics. This helps us better capture nonlinearities, represent thin geometric structures, and incorporate symmetries into the learning process. Experimental results on the MNIST, RotoMNIST, and CIFAR-10 datasets show noticeable improvements compared to the baseline DDPM model.",
-        "arxiv_id": "2602.10221",
-        "ARXIVID": "2602.10221",
-        "COMMENT": "",
+        "title": "WorldTree: Towards 4D Dynamic Worlds from Monocular Video using Tree-Chains",
+        "abstract": "arXiv:2602.11845v1 Announce Type: new  Abstract: Dynamic reconstruction has achieved remarkable progress, but there remain challenges in monocular input for more practical applications. The prevailing works attempt to construct efficient motion representations, but lack a unified spatiotemporal decomposition framework, suffering from either holistic temporal optimization or coupled hierarchical spatial composition. To this end, we propose WorldTree, a unified framework comprising Temporal Partition Tree (TPT) that enables coarse-to-fine optimization based on the inheritance-based partition tree structure for hierarchical temporal decomposition, and Spatial Ancestral Chains (SAC) that recursively query ancestral hierarchical structure to provide complementary spatial dynamics while specializing motion representations across ancestral nodes. Experimental results on different datasets indicate that our proposed method achieves 8.26% improvement of LPIPS on NVIDIA-LS and 9.09% improvement of mLPIPS on DyCheck compared to the second-best method. Code: https://github.com/iCVTEAM/WorldTree.",
+        "arxiv_id": "2602.11845",
+        "ARXIVID": "2602.11845",
+        "COMMENT": "Does not match any specific criterion",
         "RELEVANCE": 3,
         "NOVELTY": 5
     },
-    "2602.11105": {
+    "2602.12160": {
         "authors": [
-            "Divya Jyoti Bajpai",
-            "Dhruv Bhardwaj",
-            "Soumya Roy",
-            "Tejas Duseja",
-            "Harsh Agarwal",
-            "Aashay Sandansing",
-            "Manjesh Kumar Hanawal"
+            "Xu Guo",
+            "Fulong Ye",
+            "Qichao Sun",
+            "Liyang Chen",
+            "Bingchuan Li",
+            "Pengze Zhang",
+            "Jiawei Liu",
+            "Songtao Zhao",
+            "Qian He",
+            "Xiangwang Hou"
         ],
-        "title": "FastFlow: Accelerating The Generative Flow Matching Models with Bandit Inference",
-        "abstract": "arXiv:2602.11105v1 Announce Type: new  Abstract: Flow-matching models deliver state-of-the-art fidelity in image and video generation, but the inherent sequential denoising process renders them slower. Existing acceleration methods like distillation, trajectory truncation, and consistency approaches are static, require retraining, and often fail to generalize across tasks. We propose FastFlow, a plug-and-play adaptive inference framework that accelerates generation in flow matching models. FastFlow identifies denoising steps that produce only minor adjustments to the denoising path and approximates them without using the full neural network models used for velocity predictions. The approximation utilizes finite-difference velocity estimates from prior predictions to efficiently extrapolate future states, enabling faster advancements along the denoising path at zero compute cost. This enables skipping computation at intermediary steps. We model the decision of how many steps to safely skip before requiring a full model computation as a multi-armed bandit problem. The bandit learns the optimal skips to balance speed with performance. FastFlow integrates seamlessly with existing pipelines and generalizes across image generation, video generation, and editing tasks. Experiments demonstrate a speedup of over 2.6x while maintaining high-quality outputs. The source code for this work can be found at https://github.com/Div290/FastFlow.",
-        "arxiv_id": "2602.11105",
-        "ARXIVID": "2602.11105",
-        "COMMENT": "",
+        "title": "DreamID-Omni: Unified Framework for Controllable Human-Centric Audio-Video Generation",
+        "abstract": "arXiv:2602.12160v1 Announce Type: new  Abstract: Recent advancements in foundation models have revolutionized joint audio-video generation. However, existing approaches typically treat human-centric tasks including reference-based audio-video generation (R2AV), video editing (RV2AV) and audio-driven video animation (RA2V) as isolated objectives. Furthermore, achieving precise, disentangled control over multiple character identities and voice timbres within a single framework remains an open challenge. In this paper, we propose DreamID-Omni, a unified framework for controllable human-centric audio-video generation. Specifically, we design a Symmetric Conditional Diffusion Transformer that integrates heterogeneous conditioning signals via a symmetric conditional injection scheme. To resolve the pervasive identity-timbre binding failures and speaker confusion in multi-person scenarios, we introduce a Dual-Level Disentanglement strategy: Synchronized RoPE at the signal level to ensure rigid attention-space binding, and Structured Captions at the semantic level to establish explicit attribute-subject mappings. Furthermore, we devise a Multi-Task Progressive Training scheme that leverages weakly-constrained generative priors to regularize strongly-constrained tasks, preventing overfitting and harmonizing disparate objectives. Extensive experiments demonstrate that DreamID-Omni achieves comprehensive state-of-the-art performance across video, audio, and audio-visual consistency, even outperforming leading proprietary commercial models. We will release our code to bridge the gap between academic research and commercial-grade applications.",
+        "arxiv_id": "2602.12160",
+        "ARXIVID": "2602.12160",
+        "COMMENT": "Does not match any specific criterion",
         "RELEVANCE": 3,
-        "NOVELTY": 4
-    },
-    "2602.10764": {
-        "authors": [
-            "Linwei Dong",
-            "Ruoyu Guo",
-            "Ge Bai",
-            "Zehuan Yuan",
-            "Yawei Luo",
-            "Changqing Zou"
-        ],
-        "title": "Dual-End Consistency Model",
-        "abstract": "arXiv:2602.10764v1 Announce Type: new  Abstract: The slow iterative sampling nature remains a major bottleneck for the practical deployment of diffusion and flow-based generative models. While consistency models (CMs) represent a state-of-the-art distillation-based approach for efficient generation, their large-scale application is still limited by two key issues: training instability and inflexible sampling. Existing methods seek to mitigate these problems through architectural adjustments or regularized objectives, yet overlook the critical reliance on trajectory selection. In this work, we first conduct an analysis on these two limitations: training instability originates from loss divergence induced by unstable self-supervised term, whereas sampling inflexibility arises from error accumulation. Based on these insights and analysis, we propose the Dual-End Consistency Model (DE-CM) that selects vital sub-trajectory clusters to achieve stable and effective training. DE-CM decomposes the PF-ODE trajectory and selects three critical sub-trajectories as optimization targets. Specifically, our approach leverages continuous-time CMs objectives to achieve few-step distillation and utilizes flow matching as a boundary regularizer to stabilize the training process. Furthermore, we propose a novel noise-to-noisy (N2N) mapping that can map noise to any point, thereby alleviating the error accumulation in the first step. Extensive experimental results show the effectiveness of our method: it achieves a state-of-the-art FID score of 1.70 in one-step generation on the ImageNet 256x256 dataset, outperforming existing CM-based one-step approaches.",
-        "arxiv_id": "2602.10764",
-        "ARXIVID": "2602.10764",
-        "COMMENT": "",
-        "RELEVANCE": 3,
-        "NOVELTY": 4
+        "NOVELTY": 5
     }
 }
